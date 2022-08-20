@@ -1,16 +1,27 @@
 import { Table, Entity } from 'dynamodb-toolbox';
 import DynamoDB from 'aws-sdk/clients/dynamodb';
 
-export type User = {
-  pk: string;
-  sk: string;
-  name: string;
-  emailVerified: boolean;
+export type Post = {
+  blog: string;
+  id: string;
+  title: string;
+  datePublished: string;
 };
 
-export type UserKey = {
-  pk: string;
-  sk: string;
+export type Tag = {
+  postId: string;
+  tagId: string;
+  title: string;
+};
+
+export type PostKey = {
+  blog: string;
+  datePublished: string;
+};
+
+export type TagKey = {
+  postId: string;
+  tag: string;
 };
 
 export function createTable<Name extends string>(
@@ -25,16 +36,32 @@ export function createTable<Name extends string>(
   });
 }
 
-export function UserEntity<Name extends string>(
+export function PostEntity<Name extends string>(
   table: Table<Name, 'pk', 'sk'>
-): Entity<User, UserKey, typeof table> {
-  const e = new Entity<User, UserKey, typeof table>({
-    name: 'User',
+): Entity<Post, PostKey, typeof table> {
+  const e = new Entity<Post, PostKey, typeof table>({
+    name: 'Post',
     attributes: {
-      pk: { partitionKey: true },
-      sk: { hidden: true, sortKey: true },
-      name: { type: 'string', required: true },
-      emailVerified: { type: 'boolean', required: true },
+      blog: { partitionKey: true },
+      id: { type: 'string' },
+      title: { type: 'string' },
+      datePublished: { type: 'string', sortKey: true },
+    },
+    table,
+  } as const);
+
+  return e;
+}
+
+export function TagEntity<Name extends string>(
+  table: Table<Name, 'pk', 'sk'>
+): Entity<Tag, TagKey, typeof table> {
+  const e = new Entity<Tag, TagKey, typeof table>({
+    name: 'Tag',
+    attributes: {
+      postId: { partitionKey: true },
+      tagId: { type: 'string', sortKey: true },
+      title: { type: 'string' },
     },
     table,
   } as const);
