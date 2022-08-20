@@ -3277,6 +3277,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/marked@npm:^4":
+  version: 4.0.5
+  resolution: "@types/marked@npm:4.0.5"
+  checksum: 19fa294997695b82a5620da305dfab4fcfce996b34884c604198145820c4502efc46bd1d275bd9a7fcf1930ab865e584572746bd957031be1860c9546af40340
+  languageName: node
+  linkType: hard
+
 "@types/mime@npm:*":
   version: 2.0.3
   resolution: "@types/mime@npm:2.0.3"
@@ -4405,6 +4412,27 @@ __metadata:
   checksum: 1d32ec6747611e88a5f55b49df0fb38d1d6a3824e451b760a1b7ca87d22874f638d784a6dbdd2b7eba01d7dea6e48e2cce4848bd2e8b48f1f53013605ddef08b
   languageName: node
   linkType: hard
+
+"article-cli@workspace:packages/article-cli":
+  version: 0.0.0-use.local
+  resolution: "article-cli@workspace:packages/article-cli"
+  dependencies:
+    "@types/jest": ^27.5.1
+    "@types/marked": ^4
+    "@types/node": ^17.0.33
+    commander: ^9.4.0
+    db-blog: "workspace:^"
+    fast-glob: ^3.2.11
+    gray-matter: ^4.0.3
+    jest: ^28.1.0
+    marked: ^4.0.18
+    rimraf: ^3.0.2
+    source-map-support: ^0.5.21
+    ts-jest: ^28.0.2
+    ts-node: ^10.9.1
+    typescript: ^4.7.4
+  languageName: unknown
+  linkType: soft
 
 "asn1.js@npm:^5.2.0":
   version: 5.4.1
@@ -5666,6 +5694,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"commander@npm:^9.4.0":
+  version: 9.4.0
+  resolution: "commander@npm:9.4.0"
+  checksum: a322de584a6ccd1ea83c24f6a660e52d16ffbe2613fcfbb8d2cc68bc9dec637492456d754fe8bb5b039ad843ed8e04fb0b107e581a75f62cde9e1a0ab1546e09
+  languageName: node
+  linkType: hard
+
 "commander@npm:~7.2.0":
   version: 7.2.0
   resolution: "commander@npm:7.2.0"
@@ -6263,7 +6298,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"db-blog@workspace:packages/db-blog":
+"db-blog@workspace:^, db-blog@workspace:packages/db-blog":
   version: 0.0.0-use.local
   resolution: "db-blog@workspace:packages/db-blog"
   dependencies:
@@ -8047,6 +8082,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fast-glob@npm:^3.2.11":
+  version: 3.2.11
+  resolution: "fast-glob@npm:3.2.11"
+  dependencies:
+    "@nodelib/fs.stat": ^2.0.2
+    "@nodelib/fs.walk": ^1.2.3
+    glob-parent: ^5.1.2
+    merge2: ^1.3.0
+    micromatch: ^4.0.4
+  checksum: f473105324a7780a20c06de842e15ddbb41d3cb7e71d1e4fe6e8373204f22245d54f5ab9e2061e6a1c613047345954d29b022e0e76f5c28b1df9858179a0e6d7
+  languageName: node
+  linkType: hard
+
 "fast-json-stable-stringify@npm:2.x, fast-json-stable-stringify@npm:^2.0.0":
   version: 2.1.0
   resolution: "fast-json-stable-stringify@npm:2.1.0"
@@ -8840,7 +8888,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gray-matter@npm:^4.0.2":
+"gray-matter@npm:^4.0.2, gray-matter@npm:^4.0.3":
   version: 4.0.3
   resolution: "gray-matter@npm:4.0.3"
   dependencies:
@@ -12095,6 +12143,15 @@ __metadata:
   version: 1.0.4
   resolution: "markdown-escapes@npm:1.0.4"
   checksum: 6833a93d72d3f70a500658872312c6fa8015c20cc835a85ae6901fa232683fbc6ed7118ebe920fea7c80039a560f339c026597d96eee0e9de602a36921804997
+  languageName: node
+  linkType: hard
+
+"marked@npm:^4.0.18":
+  version: 4.0.18
+  resolution: "marked@npm:4.0.18"
+  bin:
+    marked: bin/marked.js
+  checksum: a13e886d5059a8500a6fd552feecc16e18fc3636aa491fce372384b1fdea67e323d67ac49f7618f6977e66ca96e39f27400eb5c1273d5ee9c2301e8c33e90dce
   languageName: node
   linkType: hard
 

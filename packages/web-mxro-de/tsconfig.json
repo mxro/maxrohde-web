@@ -9,7 +9,7 @@
     "outDir": "dist",
     "baseUrl": ".",
     "jsx": "preserve",
-    "incremental": false,
+    "incremental": true,
     "module": "esnext",
     "noEmit":false,
     "moduleResolution": "node",

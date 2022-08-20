@@ -5,7 +5,7 @@ import { stopLocalDynamoDB, connectTable } from './table';
 jest.setTimeout(60000);
 
 describe('DynamoDB Table', () => {
-  it('Should be able to write and read an entity with entities', async () => {
+  it('Should be able to write and read to the table with entities', async () => {
     const table = await connectTable();
     const Posts = PostEntity(table);
 
@@ -28,7 +28,13 @@ describe('DynamoDB Table', () => {
     await Tags.put({
       postId: 'post-1',
       tagId: 'tag-1',
-      title: 'Tag 1  ',
+      title: 'Tag 1',
+    });
+
+    await Tags.put({
+      postId: 'post-1',
+      tagId: 'tag-2',
+      title: 'Tag 2',
     });
 
     const postQueryResult = await Posts.query('blog1', {
