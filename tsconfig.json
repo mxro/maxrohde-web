@@ -30,6 +30,9 @@
   "include": [],
   "references": [
     {
+      "path": "packages/db-analytics"
+    },
+    {
       "path": "packages/db-blog"
     },
     {
@@ -37,6 +40,9 @@
     },
     {
       "path": "packages/web-maxrohde-com"
+    },
+    {
+      "path": "packages/web-mxro-de"
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "dynamodb",
+  "template": "dynamodb",
+  "templateVersion": "0.1.6",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "dev",
+      "configuration": {
+        "tableName": "analytics"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2"
+    }
+  ]
+}
