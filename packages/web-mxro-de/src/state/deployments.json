@@ -5,12 +5,12 @@
       "edge_function_name": {
         "sensitive": false,
         "type": "string",
-        "value": "mxro-de-edge"
+        "value": "mxro-de-edge-new"
       },
       "website_cdn_root_id": {
         "sensitive": false,
         "type": "string",
-        "value": "ERODEJ5NSDNU0"
+        "value": "EN5ECGYX8AHUN"
       }
     }
   }

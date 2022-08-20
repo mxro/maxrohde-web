@@ -8,6 +8,13 @@ const nextConfig = {
   webpack: (config, options) => {
     return config;
   },
+  eslint: {
+    // ESLint managed on the workspace level
+    ignoreDuringBuilds: true,
+  },
+  images: {
+    disableStaticImages: true,
+  },
 };
 
 const config = withPlugins([[images]], nextConfig);

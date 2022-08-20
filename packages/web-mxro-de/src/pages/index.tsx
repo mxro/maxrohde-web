@@ -25,7 +25,7 @@ const HomePage = (): JSX.Element => {
       <Container>
         <Row>
           <Col xs={7} className="">
-            <Image src={RoseBushes}></Image>
+            <img src={RoseBushes as any}></img>
           </Col>
           <Col
             xs={4}
