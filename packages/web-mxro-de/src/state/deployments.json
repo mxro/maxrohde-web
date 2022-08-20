@@ -1,0 +1,17 @@
+[
+  {
+    "name": "prod",
+    "terraform": {
+      "edge_function_name": {
+        "sensitive": false,
+        "type": "string",
+        "value": "mxro-de-edge"
+      },
+      "website_cdn_root_id": {
+        "sensitive": false,
+        "type": "string",
+        "value": "ERODEJ5NSDNU0"
+      }
+    }
+  }
+]

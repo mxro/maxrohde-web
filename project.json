@@ -1,0 +1,27 @@
+{
+  "packages": [
+    {
+      "packageName": "server-side-rendering",
+      "templateReference": {
+        "templateName": "server-side-rendering"
+      }
+    },
+    {
+      "packageName": "dynamodb",
+      "templateReference": {
+        "templateName": "dynamodb"
+      }
+    },
+    {
+      "packageName": "email-send",
+      "templateReference": {
+        "templateName": "email-send"
+      }
+    }
+  ],
+  "rootTemplateReference": {
+    "templateName": "yarn-pnp-monorepo"
+  },
+  "createdAt": "2022-08-19T23:50:51.420Z",
+  "projectName": "max-rohde-homepage"
+}

@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": [
+    "./src/**/*",
+    "./src/typings.d.ts"
+  ],
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": ".",
+    "jsx": "preserve"
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

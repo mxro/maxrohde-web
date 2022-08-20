@@ -1,0 +1,17 @@
+{
+  "extends": "./../../tsconfig.base.json",
+  "include": [
+    "./src/**/*",
+    "./src/typings.d.ts"
+  ],
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": ".",
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
+    "jsx": "react"
+  }
+}

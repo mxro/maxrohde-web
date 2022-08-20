@@ -1,0 +1,20 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "server-side-rendering",
+  "template": "server-side-rendering",
+  "templateVersion": "0.1.1",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "dev",
+      "configuration": {
+        "lambdas": {},
+        "hostedZoneDomain": "mxro.de",
+        "domain": "dev.home.mxro.de",
+        "lambdaNamePrefix": "dev-home"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2"
+    }
+  ]
+}

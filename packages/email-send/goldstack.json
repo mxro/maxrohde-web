@@ -1,0 +1,18 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "email-send",
+  "template": "email-send",
+  "templateVersion": "0.1.63",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "dev",
+      "configuration": {
+        "hostedZoneDomain": "mxro.de",
+        "domain": "dev.home.mxro.de"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2"
+    }
+  ]
+}
