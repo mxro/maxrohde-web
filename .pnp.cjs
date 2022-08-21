@@ -5457,6 +5457,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node", "npm:17.0.33"],\
             ["commander", "npm:9.4.0"],\
             ["db-blog", "workspace:packages/db-blog"],\
+            ["dynamodb-toolbox", "npm:0.4.3"],\
             ["fast-glob", "npm:3.2.11"],\
             ["gray-matter", "npm:4.0.3"],\
             ["jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:28.1.0"],\

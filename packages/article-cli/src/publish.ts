@@ -2,7 +2,8 @@ import fg from 'fast-glob';
 import config from './config.json';
 import { parseMarkdown } from './markdown';
 
-import { PostEntity, TagEntity, Table } from 'db-blog';
+import { PostEntity, TagEntity, Table, deepCopy } from 'db-blog';
+import { Entity } from 'dynamodb-toolbox';
 
 export interface PublishArgs {
   fileNamePattern: string;
@@ -33,18 +34,23 @@ export const publish = async (args: PublishArgs): Promise<void> => {
         blog: 'maxrohde.com',
         title: post.metadata.title,
         id: post.slug,
+        coverImage: post.metadata.coverImage,
         datePublished: new Date().toISOString(),
       });
     })
   );
 
-  const Tags = TagEntity(args.table);
+  const Tags = new Entity({
+    ...deepCopy(TagEntity),
+    table: args.table,
+  } as const);
 
   await Promise.all(
     parsed.map(async (post) => {
       return Promise.all(
         post.metadata.tags.map((tag: string) => {
           return Tags.put({
+            blog: 'maxrohde.com',
             postId: post.slug,
             title: tag,
             tagId: tag,

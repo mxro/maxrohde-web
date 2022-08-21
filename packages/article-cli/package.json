@@ -17,6 +17,7 @@
   "dependencies": {
     "commander": "^9.4.0",
     "db-blog": "workspace:^",
+    "dynamodb-toolbox": "^0.4.3",
     "fast-glob": "^3.2.11",
     "gray-matter": "^4.0.3",
     "marked": "^4.0.18"

@@ -4422,6 +4422,7 @@ __metadata:
     "@types/node": ^17.0.33
     commander: ^9.4.0
     db-blog: "workspace:^"
+    dynamodb-toolbox: ^0.4.3
     fast-glob: ^3.2.11
     gray-matter: ^4.0.3
     jest: ^28.1.0
