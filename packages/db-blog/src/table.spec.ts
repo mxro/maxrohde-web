@@ -1,3 +1,4 @@
+import { Entity } from 'dynamodb-toolbox';
 import { PostEntity, TagEntity } from './entities';
 import { stopLocalDynamoDB, connectTable } from './table';
 
@@ -23,7 +24,10 @@ describe('DynamoDB Table', () => {
       datePublished: new Date().toISOString(),
     });
 
-    const Tags = TagEntity(table);
+    const Tags = new Entity({
+      ...TagEntity,
+      table,
+    });
 
     await Tags.put({
       postId: 'post-1',

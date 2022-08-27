@@ -21,7 +21,7 @@ import { publish } from './publish';
     .action(async (pattern, options) => {
       const dry = options.dry || false;
       const fileNamePattern = pattern;
-      await publish({ fileNamePattern, dry });
+      await publish({ fileNamePattern, dry, table: {} as any });
     });
 
   program.parse();

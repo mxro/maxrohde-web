@@ -30,10 +30,25 @@
   "include": [],
   "references": [
     {
-      "path": "../utils/packages/utils-nodemonx"
+      "path": "packages/article-cli"
     },
     {
-      "path": "../utils/packages/utils-typescript-references"
+      "path": "packages/db-analytics"
+    },
+    {
+      "path": "packages/db-blog"
+    },
+    {
+      "path": "packages/db-notion"
+    },
+    {
+      "path": "packages/email-send"
+    },
+    {
+      "path": "packages/web-maxrohde-com"
+    },
+    {
+      "path": "packages/web-mxro-de"
     }
   ]
 }
