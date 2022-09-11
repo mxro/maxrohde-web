@@ -8,7 +8,7 @@ jest.setTimeout(120000);
 describe('DynamoDB Table', () => {
   it('Should be able to write and read to the table with entities', async () => {
     const table = await connectTable();
-    const Posts = PostEntity(table);
+    const Posts = new Entity({ ...deepCopy(PostEntity), table } as const);
 
     await Posts.put({
       blog: 'blog1',

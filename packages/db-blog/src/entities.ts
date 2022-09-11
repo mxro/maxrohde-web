@@ -28,21 +28,16 @@ export type Post = {
   datePublished: string;
 };
 
-export function PostEntity(table: Table): Entity<Post, PostKey, typeof table> {
-  const e = new Entity<Post, PostKey, typeof table>({
-    name: 'Post',
-    attributes: {
-      blog: { partitionKey: true },
-      id: { type: 'string' },
-      title: { type: 'string' },
-      coverImage: { type: 'string' },
-      datePublished: { type: 'string', sortKey: true },
-    },
-    table,
-  } as const);
-
-  return e;
-}
+export const PostEntity = {
+  name: 'Post',
+  attributes: {
+    blog: { partitionKey: true },
+    id: { type: 'string' },
+    title: { type: 'string' },
+    coverImage: { type: 'string' },
+    datePublished: { type: 'string', sortKey: true },
+  },
+} as const;
 
 export const TagPK = (data: { blog: string; postId: string }): string =>
   `${data.blog}#${data.postId}`;
