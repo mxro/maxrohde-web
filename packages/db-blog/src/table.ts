@@ -13,9 +13,7 @@ import { createTable } from './entities';
 import { createMigrations } from './migrations';
 
 export * from './entities';
-
 export type Table = ToolboxTable<string, 'pk', 'sk'>;
-
 export const connect = async (deploymentName?: string): Promise<DynamoDB> => {
   return await templateConnect({
     goldstackConfig,

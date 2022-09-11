@@ -71,17 +71,10 @@ When defining a new page in the `src/routes` folder by adding a new TypeScript, 
 
 ```typescript
 import React, { useState } from 'react';
+import { SSRHandler } from '@goldstack/template-ssr';
 
-import {
-  Handler,
-  APIGatewayProxyEventV2,
-  APIGatewayProxyResultV2,
-} from 'aws-lambda';
-
-import { renderDocument } from './../_document';
-import { renderPage, hydrate } from '@goldstack/template-ssr';
-
-type ProxyHandler = Handler<APIGatewayProxyEventV2, APIGatewayProxyResultV2>;
+import { renderPage, hydrate } from './../render';
+import styles from './$index.module.css';
 
 const Index = (props: { message: string }): JSX.Element => {
   return (
@@ -99,8 +92,7 @@ export const handler: ProxyHandler = async (event, context) => {
       message: 'Hi there',
     },
     entryPoint: __filename,
-    event,
-    renderDocument,
+    event: event,
   });
 };
 
@@ -307,6 +299,20 @@ This template can be packaged up and deployed to the deployments specified in `g
 ```bash
 yarn deploy [deploymentName]
 ```
+
+You can deploy each of the routes individually since they are all packaged up into individual lambdas. Provide a pattern that matches the filename/path of the route you want to deploy:
+
+```bash
+yarn deploy [deployment] [route pattern]
+```
+
+For instance, in order to deploy the `$index.tsx` route:
+
+```bash
+yarn deploy [deployment] index
+```
+
+Matching is performed using [minimatch](https://www.npmjs.com/package/minimatch) and a `*` is assumed at the start and end of the pattern provided.
 
 ## Guides and How To
 

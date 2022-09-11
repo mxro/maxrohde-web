@@ -1,10 +1,10 @@
 import { Entity } from 'dynamodb-toolbox';
 import { PostEntity, TagEntity } from './entities';
-import { stopLocalDynamoDB, connectTable } from './table';
+import deepCopy from 'deep-copy';
+import { connectTable, stopLocalDynamoDB } from './table';
 
 // needs to be long to download Docker image etc.
-jest.setTimeout(60000);
-
+jest.setTimeout(120000);
 describe('DynamoDB Table', () => {
   it('Should be able to write and read to the table with entities', async () => {
     const table = await connectTable();
@@ -25,7 +25,7 @@ describe('DynamoDB Table', () => {
     });
 
     const Tags = new Entity({
-      ...TagEntity,
+      ...deepCopy(TagEntity),
       table,
     });
 

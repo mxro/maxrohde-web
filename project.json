@@ -1,9 +1,16 @@
 {
+  "projectName": "maxrohde-web",
   "packages": [
     {
       "packageName": "server-side-rendering",
       "templateReference": {
         "templateName": "server-side-rendering"
+      }
+    },
+    {
+      "packageName": "s3",
+      "templateReference": {
+        "templateName": "s3"
       }
     },
     {
@@ -22,6 +29,5 @@
   "rootTemplateReference": {
     "templateName": "yarn-pnp-monorepo"
   },
-  "createdAt": "2022-08-19T23:50:51.420Z",
-  "projectName": "max-rohde-homepage"
+  "createdAt": "2022-09-11T23:18:18.902Z"
 }

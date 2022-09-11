@@ -1,14 +1,14 @@
 {
   "$schema": "./schemas/package.schema.json",
-  "name": "dynamodb",
+  "name": "db-blog",
   "template": "dynamodb",
-  "templateVersion": "0.1.6",
+  "templateVersion": "0.1.10",
   "configuration": {},
   "deployments": [
     {
       "name": "dev",
       "configuration": {
-        "tableName": "articles"
+        "tableName": "maxrohde-blog"
       },
       "awsUser": "awsUser",
       "awsRegion": "us-west-2"

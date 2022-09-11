@@ -576,17 +576,10 @@
   <pre
     class="language-typescript language-typescript"
   ><code class="language-typescript"><span class="token keyword">import</span> <span class="token maybe-class-name">React</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> useState <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> <span class="token maybe-class-name">SSRHandler</span> <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@goldstack/template-ssr'</span><span class="token punctuation">;</span>
 
-<span class="token keyword">import</span> <span class="token punctuation">{</span>
-  <span class="token maybe-class-name">Handler</span><span class="token punctuation">,</span>
-  <span class="token maybe-class-name">APIGatewayProxyEventV2</span><span class="token punctuation">,</span>
-  <span class="token maybe-class-name">APIGatewayProxyResultV2</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'aws-lambda'</span><span class="token punctuation">;</span>
-
-<span class="token keyword">import</span> <span class="token punctuation">{</span> renderDocument <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./../_document'</span><span class="token punctuation">;</span>
-<span class="token keyword">import</span> <span class="token punctuation">{</span> renderPage<span class="token punctuation">,</span> hydrate <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@goldstack/template-ssr'</span><span class="token punctuation">;</span>
-
-<span class="token keyword">type</span> <span class="token maybe-class-name">ProxyHandler</span> <span class="token operator">=</span> <span class="token maybe-class-name">Handler</span><span class="token operator">&#x3C;</span><span class="token maybe-class-name">APIGatewayProxyEventV2</span><span class="token punctuation">,</span> <span class="token maybe-class-name">APIGatewayProxyResultV2</span><span class="token operator">></span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> renderPage<span class="token punctuation">,</span> hydrate <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./../render'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> styles <span class="token keyword">from</span> <span class="token string">'./$index.module.css'</span><span class="token punctuation">;</span>
 
 <span class="token keyword">const</span> <span class="token maybe-class-name">Index</span> <span class="token operator">=</span> <span class="token punctuation">(</span>props<span class="token punctuation">:</span> <span class="token punctuation">{</span> message<span class="token punctuation">:</span> <span class="token builtin">string</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token constant">JSX</span><span class="token punctuation">.</span><span class="token parameter"><span class="token maybe-class-name">Element</span></span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
   <span class="token keyword">return</span> <span class="token punctuation">(</span>
@@ -604,8 +597,7 @@
       message<span class="token punctuation">:</span> <span class="token string">'Hi there'</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
     entryPoint<span class="token punctuation">:</span> __filename<span class="token punctuation">,</span>
-    event<span class="token punctuation">,</span>
-    renderDocument<span class="token punctuation">,</span>
+    event<span class="token punctuation">:</span> event<span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
 
@@ -1463,6 +1455,35 @@ jest<span class="token punctuation">.</span><span class="token method function p
 </code></pre>
 </div>
 <p></p>
+<p>
+  You can deploy each of the routes individually since they are all packaged up
+  into individual lambdas. Provide a pattern that matches the filename/path of
+  the route you want to deploy:
+</p>
+<pre
+  class="language-bash"
+><code class="language-bash"><span class="token function">yarn</span> deploy <span class="token punctuation">[</span>deployment<span class="token punctuation">]</span> <span class="token punctuation">[</span>route pattern<span class="token punctuation">]</span>
+</code></pre>
+<p>
+  For instance, in order to deploy the
+  <code class="inline">$index.tsx</code> route:
+</p>
+<pre
+  class="language-bash"
+><code class="language-bash"><span class="token function">yarn</span> deploy <span class="token punctuation">[</span>deployment<span class="token punctuation">]</span> index
+</code></pre>
+<p>
+  Matching is performed using
+  <a
+    href="https://www.npmjs.com/package/minimatch"
+    class="absolute"
+    target="_blank"
+    rel="noopener noreferrer"
+    >minimatch</a
+  >
+  and a <code class="inline">*</code> is assumed at the start and end of the
+  pattern provided.
+</p>
 <h2 class="heading">
   <span id="guides-and-how-to"></span
   ><a href="#guides-and-how-to">Guides and How To</a

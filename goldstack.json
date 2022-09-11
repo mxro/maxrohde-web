@@ -1,8 +1,8 @@
 {
   "$schema": "./schemas/package.schema.json",
-  "templateVersion": "0.1.76",
+  "templateVersion": "0.1.79",
   "template": "yarn-pnp-monorepo",
-  "name": "",
+  "name": "maxrohde-web",
   "configuration": {},
   "deployments": []
 }

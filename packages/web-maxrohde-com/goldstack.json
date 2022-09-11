@@ -2,16 +2,16 @@
   "$schema": "./schemas/package.schema.json",
   "name": "server-side-rendering",
   "template": "server-side-rendering",
-  "templateVersion": "0.1.1",
+  "templateVersion": "0.1.5",
   "configuration": {},
   "deployments": [
     {
       "name": "dev",
       "configuration": {
         "lambdas": {},
-        "hostedZoneDomain": "mxro.de",
+        "lambdaNamePrefix": "maxrohde",
         "domain": "dev.home.mxro.de",
-        "lambdaNamePrefix": "dev-home"
+        "hostedZoneDomain": "mxro.de"
       },
       "awsUser": "awsUser",
       "awsRegion": "us-west-2"
