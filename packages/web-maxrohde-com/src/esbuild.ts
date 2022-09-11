@@ -2,6 +2,9 @@ import { pnpPlugin } from '@yarnpkg/esbuild-plugin-pnp';
 
 import cssPlugin from 'esbuild-css-modules-client-plugin';
 
+import autoprefixer from 'autoprefixer';
+import tailwindcss from 'tailwindcss';
+
 import type { BuildOptions } from 'esbuild';
 
 import type { ESBuildConfiguration } from '@goldstack/template-ssr';
@@ -13,6 +16,9 @@ export const esbuildConfig = (): ESBuildConfiguration => {
         plugins: [
           cssPlugin({
             excludeCSSInject: !includeCss,
+            cssConfig: {
+              plugins: [autoprefixer] as any,
+            },
           }),
           pnpPlugin(),
         ],
