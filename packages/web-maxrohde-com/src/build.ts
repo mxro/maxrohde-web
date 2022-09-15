@@ -2,10 +2,12 @@
 /* esbuild-ignore server */
 
 import { pnpPlugin } from '@yarnpkg/esbuild-plugin-pnp';
-
+import tailwindPlugin from './tailwindPlugin';
 import cssPlugin from 'esbuild-css-modules-client-plugin';
 
 import ignorePlugin from 'esbuild-ignore-with-comments-plugin';
+
+import fs from 'fs';
 
 import type { BuildOptions } from 'esbuild';
 
@@ -36,6 +38,10 @@ const buildConfig = (): BuildConfiguration => {
             cssConfig: {
               plugins: [],
             },
+          }),
+          tailwindPlugin({
+            css: fs.readFileSync('./src/root.css').toString(),
+            staticFileMapper: getStaticFileMapper(),
           }),
           pnpPlugin(),
         ],
