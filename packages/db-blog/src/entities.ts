@@ -28,49 +28,75 @@ export type Post = {
   datePublished: string;
 };
 
+export const PostPK = (data: { blog: string }): string => `${data.blog}#Post`;
+
 export const PostEntity = {
   name: 'Post',
   attributes: {
-    blog: { partitionKey: true },
-    id: { type: 'string' },
+    pk: {
+      default: PostPK,
+      type: 'string',
+      partitionKey: true,
+    },
+    blog: { type: 'string', required: 'always' },
+    id: { type: 'string', required: 'always' },
     title: { type: 'string' },
     coverImage: { type: 'string' },
     datePublished: { type: 'string', sortKey: true },
   },
 } as const;
 
-export const TagPK = (data: { blog: string; postId: string }): string =>
-  `${data.blog}#${data.postId}`;
+export const TagPK = (data: { blog: string }): string => `${data.blog}#Tag`;
 
 export const TagEntity = {
   name: 'Tag',
   attributes: {
     pk: {
       partitionKey: true,
-      hidden: true,
+      type: 'string',
       default: TagPK,
     },
-    tagId: { sortKey: true },
-    blog: { type: 'string' },
-    postId: { type: 'string' },
-    title: { type: 'string' },
+    blog: { type: 'string', required: 'always' },
+    id: {
+      type: 'string',
+      sortKey: true,
+    },
+    title: { type: 'string', required: 'always' },
   },
 } as const;
 
-export const CategoryPK = (data: { blog: string; postId: string }): string =>
+export const TagMappingPK = (data: { blog: string; postId: string }): string =>
   `${data.blog}#${data.postId}`;
 
-export const CategoryEntity = {
+export const TagMappingEntity = {
+  name: 'TagMapping',
+  attributes: {
+    pk: {
+      partitionKey: true,
+      hidden: true,
+      default: TagMappingPK,
+    },
+    tagId: { sortKey: true },
+    blog: { type: 'string', required: 'always' },
+    postId: { type: 'string', required: 'always' },
+  },
+} as const;
+
+export const CategoryMappingPK = (data: {
+  blog: string;
+  postId: string;
+}): string => `${data.blog}#${data.postId}`;
+
+export const CategoryMappingEntity = {
   name: 'Category',
   attributes: {
     pk: {
       partitionKey: true,
       hidden: true,
-      default: TagPK,
+      default: CategoryMappingPK,
     },
     categoryId: { sortKey: true },
-    blog: { type: 'string' },
+    blog: { type: 'string', required: 'always' },
     postId: { type: 'string' },
-    title: { type: 'string' },
   },
 } as const;

@@ -1,5 +1,10 @@
 import { Entity } from 'dynamodb-toolbox';
-import { PostEntity, TagEntity } from './entities';
+import {
+  PostEntity,
+  TagMappingEntity,
+  TagEntity,
+  TagMappingPK,
+} from './entities';
 import deepCopy from 'deep-copy';
 import { connectTable, stopLocalDynamoDB } from './table';
 
@@ -30,15 +35,32 @@ describe('DynamoDB Table', () => {
     });
 
     await Tags.put({
-      postId: 'post-1',
-      tagId: 'tag-1',
-      title: 'Tag 1',
+      blog: 'blog1',
+      id: 'tag-1',
+      title: 'First tag',
     });
 
     await Tags.put({
+      blog: 'blog1',
+      id: 'tag-2',
+      title: 'Second tag',
+    });
+
+    const TagMappings = new Entity({
+      ...deepCopy(TagMappingEntity),
+      table,
+    });
+
+    await TagMappings.put({
+      blog: 'blog1',
+      postId: 'post-1',
+      tagId: 'tag-1',
+    });
+
+    await TagMappings.put({
+      blog: 'blog1',
       postId: 'post-1',
       tagId: 'tag-2',
-      title: 'Tag 2',
     });
 
     const postQueryResult = await Posts.query('blog1', {
@@ -50,16 +72,23 @@ describe('DynamoDB Table', () => {
       throw new Error('No items found');
     }
     for (const item of postQueryResult.Items) {
-      console.log(item.title);
-      const tagsResult = await Tags.query(item.id, { limit: 100 });
+      console.log(item);
+      const tagsResult = await TagMappings.query(
+        TagMappingPK({ blog: 'blog1', postId: item.id }),
+        {
+          limit: 100,
+        }
+      );
       console.log(
         'tags: ',
-        tagsResult.Items?.map((i) => i.title).join(', ') || 'none'
+        tagsResult.Items?.map((i) => i.tagId).join(', ') || 'none'
       );
     }
   });
 
   afterAll(async () => {
-    await stopLocalDynamoDB();
+    if (!(process.env.STOP_SERVER === 'false')) {
+      await stopLocalDynamoDB();
+    }
   });
 });
