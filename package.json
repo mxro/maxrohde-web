@@ -42,5 +42,6 @@
     "typescript": "^4.7.4"
   },
   "author": "",
-  "license": ""
+  "license": "",
+  "packageManager": "yarn@3.2.3"
 }

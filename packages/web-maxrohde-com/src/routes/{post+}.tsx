@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SSRHandler } from '@goldstack/template-ssr';
 
-import { renderPage, hydrate } from '../../render';
+import { renderPage, hydrate } from '../render';
 import styles from './$index.module.css';
 
 const Index = (): JSX.Element => {
