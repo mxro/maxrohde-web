@@ -56,3 +56,21 @@ export const TagEntity = {
     title: { type: 'string' },
   },
 } as const;
+
+export const CategoryPK = (data: { blog: string; postId: string }): string =>
+  `${data.blog}#${data.postId}`;
+
+export const CategoryEntity = {
+  name: 'Category',
+  attributes: {
+    pk: {
+      partitionKey: true,
+      hidden: true,
+      default: TagPK,
+    },
+    categoryId: { sortKey: true },
+    blog: { type: 'string' },
+    postId: { type: 'string' },
+    title: { type: 'string' },
+  },
+} as const;

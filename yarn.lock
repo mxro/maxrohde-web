@@ -1050,7 +1050,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@goldstack/template-dynamodb@npm:0.2.3":
+"@goldstack/template-dynamodb@npm:0.2.3, @goldstack/template-dynamodb@npm:^0.2.3":
   version: 0.2.3
   resolution: "@goldstack/template-dynamodb@npm:0.2.3"
   dependencies:
@@ -6625,7 +6625,7 @@ __metadata:
   resolution: "db-blog@workspace:packages/db-blog"
   dependencies:
     "@aws-sdk/util-dynamodb": ^3.87.0
-    "@goldstack/template-dynamodb": 0.2.3
+    "@goldstack/template-dynamodb": ^0.2.3
     "@goldstack/template-dynamodb-cli": 0.5.3
     "@types/jest": ^29.0.1
     "@types/node": ^18.7.13
