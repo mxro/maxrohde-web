@@ -15,17 +15,17 @@ export function createTable(
   });
 }
 
-export type PostKey = {
-  blog: string;
-  datePublished: string;
-};
-
 export type Post = {
   blog: string;
   id: string;
+  path: string;
   title: string;
   coverImage?: string;
   datePublished: string;
+  contentHtml: string;
+  authorEmail: string;
+  tags?: string;
+  contentMarkdown: string;
 };
 
 export const PostPK = (data: { blog: string }): string => `${data.blog}#Post`;
@@ -40,8 +40,13 @@ export const PostEntity = {
     },
     blog: { type: 'string', required: 'always' },
     id: { type: 'string', required: 'always' },
-    title: { type: 'string' },
+    path: { type: 'string', required: 'always' },
+    authorEmail: { type: 'string', required: 'always' },
+    title: { type: 'string', required: 'always' },
     coverImage: { type: 'string' },
+    tags: { type: 'string' },
+    contentHtml: { type: 'string', required: 'always' },
+    contentMarkdown: { type: 'string', required: 'always' },
     datePublished: { type: 'string', sortKey: true },
   },
 } as const;

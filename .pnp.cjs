@@ -8049,6 +8049,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@aws-sdk/util-dynamodb", "npm:3.87.0"],\
             ["@goldstack/template-dynamodb", "npm:0.2.3"],\
             ["@goldstack/template-dynamodb-cli", "npm:0.5.3"],\
+            ["@goldstack/utils-sh", "npm:0.5.2"],\
             ["@types/ejs", "npm:3.1.1"],\
             ["@types/jest", "npm:29.0.1"],\
             ["@types/node", "npm:18.7.13"],\

@@ -1579,7 +1579,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@goldstack/utils-sh@npm:0.5.2":
+"@goldstack/utils-sh@npm:0.5.2, @goldstack/utils-sh@npm:^0.5.2":
   version: 0.5.2
   resolution: "@goldstack/utils-sh@npm:0.5.2"
   dependencies:
@@ -6706,6 +6706,7 @@ __metadata:
     "@aws-sdk/util-dynamodb": ^3.87.0
     "@goldstack/template-dynamodb": ^0.2.3
     "@goldstack/template-dynamodb-cli": 0.5.3
+    "@goldstack/utils-sh": ^0.5.2
     "@types/ejs": ^3
     "@types/jest": ^29.0.1
     "@types/node": ^18.7.13

@@ -12,8 +12,11 @@ import goldstackSchema from './../schemas/package.schema.json';
 import { createTable } from './entities';
 import { createMigrations } from './migrations';
 
-export * from './entities';
+import deepCopy from 'deep-copy';
 
+export { deepCopy };
+
+export * from './entities';
 export type Table = ToolboxTable<string, 'pk', 'sk'>;
 
 export const connect = async (deploymentName?: string): Promise<DynamoDB> => {
