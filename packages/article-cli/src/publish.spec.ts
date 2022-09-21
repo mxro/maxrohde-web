@@ -38,6 +38,8 @@ describe('Article publishing', () => {
       {
         reverse: true,
         limit: 10,
+        index: 'path-index',
+        eq: '2022/01/16/memory-system-part-4-symbolic-systems',
       }
     );
 
@@ -45,21 +47,22 @@ describe('Article publishing', () => {
       throw new Error('No items found');
     }
 
-    expect(postQueryResult.Count).toEqual(2);
+    expect(postQueryResult.Count).toEqual(1);
 
-    for (const item of postQueryResult.Items) {
-      // expect(item.id).toEqual('six-virtues-according-to-positive-psychology');
+    const item = postQueryResult.Items[0];
+    expect(item.path).toEqual(
+      '2022/01/16/memory-system-part-4-symbolic-systems'
+    );
 
-      const TagMappings = new Entity({
-        ...deepCopy(TagMappingEntity),
-        table,
-      } as const);
-      const tagsResult = await TagMappings.query(
-        TagMappingPK({ blog: 'maxrohde.com', postId: item.id }),
-        { limit: 100 }
-      );
-      // expect(tagsResult.Count).toEqual(4);
-    }
+    const TagMappings = new Entity({
+      ...deepCopy(TagMappingEntity),
+      table,
+    } as const);
+    const tagsResult = await TagMappings.query(
+      TagMappingPK({ blog: 'maxrohde.com', postPath: item.path }),
+      { limit: 100 }
+    );
+    expect(tagsResult.Count).toEqual(3);
   });
   afterAll(async () => {
     if (!(process.env.STOP_SERVER === 'false')) {

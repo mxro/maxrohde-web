@@ -12,12 +12,14 @@ export function createTable(
     partitionKey: 'pk',
     sortKey: 'sk',
     DocumentClient: dynamoDB,
+    indexes: {
+      'path-index': { partitionKey: 'pk', sortKey: 'path' },
+    },
   });
 }
 
 export type Post = {
   blog: string;
-  id: string;
   path: string;
   title: string;
   coverImage?: string;
@@ -39,7 +41,6 @@ export const PostEntity = {
       partitionKey: true,
     },
     blog: { type: 'string', required: 'always' },
-    id: { type: 'string', required: 'always' },
     path: { type: 'string', required: 'always' },
     authorEmail: { type: 'string', required: 'always' },
     title: { type: 'string', required: 'always' },
@@ -70,8 +71,10 @@ export const TagEntity = {
   },
 } as const;
 
-export const TagMappingPK = (data: { blog: string; postId: string }): string =>
-  `${data.blog}#${data.postId}`;
+export const TagMappingPK = (data: {
+  blog: string;
+  postPath: string;
+}): string => `${data.blog}#${data.postPath}`;
 
 export const TagMappingEntity = {
   name: 'TagMapping',
@@ -83,7 +86,7 @@ export const TagMappingEntity = {
     },
     tagId: { sortKey: true },
     blog: { type: 'string', required: 'always' },
-    postId: { type: 'string', required: 'always' },
+    postPath: { type: 'string', required: 'always' },
   },
 } as const;
 
@@ -102,6 +105,6 @@ export const CategoryMappingEntity = {
     },
     categoryId: { sortKey: true },
     blog: { type: 'string', required: 'always' },
-    postId: { type: 'string' },
+    postPath: { type: 'string' },
   },
 } as const;

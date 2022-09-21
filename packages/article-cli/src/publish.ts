@@ -5,8 +5,6 @@ import { parseMarkdown } from './markdown';
 import { PostEntity, TagMappingEntity, Table, deepCopy } from 'db-blog';
 import { Entity } from 'dynamodb-toolbox';
 
-import { relative } from 'path';
-
 export interface PublishArgs {
   fileNamePattern: string;
   dry: boolean;
@@ -55,7 +53,6 @@ export const publish = async (args: PublishArgs): Promise<void> => {
       return Posts.put({
         blog: 'maxrohde.com',
         title: post.metadata.title,
-        id: post.slug,
         contentHtml: post.html,
         path: result.path,
         contentMarkdown: post.markdown,
@@ -79,7 +76,7 @@ export const publish = async (args: PublishArgs): Promise<void> => {
         post.metadata.tags.map((tag: string) => {
           return TagMappings.put({
             blog: 'maxrohde.com',
-            postId: post.slug,
+            postPath: result.path,
             tagId: tag,
           });
         })
