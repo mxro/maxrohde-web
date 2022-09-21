@@ -19,7 +19,6 @@ describe('DynamoDB Table', () => {
 
     await Posts.put({
       blog: 'blog1',
-      id: 'post-1',
       title: 'Post 1',
       authorEmail: 'dummy@dummy.com',
       contentHtml: '<p>Post 1</p>',
@@ -31,7 +30,6 @@ describe('DynamoDB Table', () => {
 
     await Posts.put({
       blog: 'blog1',
-      id: 'post-2',
       title: 'Post 2',
       path: '2022/09/18/post-2',
       authorEmail: 'dummy@dummy.com',
@@ -64,13 +62,13 @@ describe('DynamoDB Table', () => {
 
     await TagMappings.put({
       blog: 'blog1',
-      postId: 'post-1',
+      postPath: '2022/09/18/post-1',
       tagId: 'tag-1',
     });
 
     await TagMappings.put({
       blog: 'blog1',
-      postId: 'post-1',
+      postPath: '2022/09/18/post-2',
       tagId: 'tag-2',
     });
 
@@ -84,7 +82,7 @@ describe('DynamoDB Table', () => {
     }
     for (const item of postQueryResult.Items as Post[]) {
       const tagsResult = await TagMappings.query(
-        TagMappingPK({ blog: 'blog1', postId: item.id }),
+        TagMappingPK({ blog: 'blog1', postPath: item.path }),
         {
           limit: 100,
         }

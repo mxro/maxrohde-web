@@ -22362,6 +22362,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["autoprefixer", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:10.4.11"],\
             ["concurrently", "npm:7.3.0"],\
             ["date-fns", "npm:2.28.0"],\
+            ["db-blog", "workspace:packages/db-blog"],\
             ["esbuild", "npm:0.15.5"],\
             ["esbuild-css-modules-client-plugin", "npm:0.3.2"],\
             ["esbuild-ignore-with-comments-plugin", "npm:0.3.2"],\
