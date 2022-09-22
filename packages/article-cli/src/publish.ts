@@ -6,6 +6,7 @@ import { PostEntity, TagMappingEntity, Table, deepCopy } from 'db-blog';
 import { Entity } from 'dynamodb-toolbox';
 
 import { convert as htmlToText } from 'html-to-text';
+import { fixCoverImageLink } from './images';
 
 export interface PublishArgs {
   fileNamePattern: string;
@@ -68,7 +69,7 @@ export const publish = async (args: PublishArgs): Promise<void> => {
         contentMarkdown: post.markdown,
         authorEmail: 'max@temp.com',
         tags: post.metadata.tags.join(','),
-        coverImage: post.metadata.coverImage,
+        coverImage: fixCoverImageLink(post.metadata.coverImage),
         datePublished: new Date(post.metadata.date).toISOString(),
       });
     })

@@ -2,6 +2,7 @@ import matter from 'gray-matter';
 import { promises as fs } from 'node:fs';
 import path from 'path';
 import { marked } from 'marked';
+import { fixContentLinks } from './images';
 
 export interface ParseMarkdownResult {
   metadata: any;
@@ -13,7 +14,9 @@ export interface ParseMarkdownResult {
 export const parseMarkdown = async (
   filename: string
 ): Promise<ParseMarkdownResult> => {
-  const parsed = matter((await fs.readFile(filename)).toString('utf8'));
+  const parsed = matter(
+    fixContentLinks((await fs.readFile(filename)).toString('utf8'))
+  );
   const markdown = parsed.content;
   const metadata = parsed.data;
   const html = marked.parse(markdown);
