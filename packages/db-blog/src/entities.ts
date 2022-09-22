@@ -25,6 +25,7 @@ export type Post = {
   coverImage?: string;
   datePublished: string;
   contentHtml: string;
+  summary: string;
   authorEmail: string;
   tags?: string;
   contentMarkdown: string;
@@ -42,6 +43,7 @@ export const PostEntity = {
     },
     blog: { type: 'string', required: 'always' },
     path: { type: 'string', required: 'always' },
+    summary: { type: 'string', required: 'always' },
     authorEmail: { type: 'string', required: 'always' },
     title: { type: 'string', required: 'always' },
     coverImage: { type: 'string' },

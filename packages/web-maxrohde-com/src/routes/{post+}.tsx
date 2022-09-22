@@ -13,7 +13,7 @@ import { renderPost } from '../ssr/renderPost';
 
 import type { Post as PostType } from 'db-blog';
 
-import Post from '../components/Post';
+import PostPage from '../components/PostPage';
 
 export interface PostProps {
   post?: PostType;
@@ -25,6 +25,6 @@ export const handler: SSRHandler = async (event, context) => {
   return renderPost({ event });
 };
 
-hydrate(Post);
+hydrate(PostPage);
 
-export default Post;
+export default PostPage;

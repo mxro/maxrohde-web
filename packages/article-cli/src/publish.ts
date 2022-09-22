@@ -5,6 +5,8 @@ import { parseMarkdown } from './markdown';
 import { PostEntity, TagMappingEntity, Table, deepCopy } from 'db-blog';
 import { Entity } from 'dynamodb-toolbox';
 
+import { convert as htmlToText } from 'html-to-text';
+
 export interface PublishArgs {
   fileNamePattern: string;
   dry: boolean;
@@ -54,6 +56,14 @@ export const publish = async (args: PublishArgs): Promise<void> => {
         blog: 'maxrohde.com',
         title: post.metadata.title,
         contentHtml: post.html,
+        summary:
+          htmlToText(post.html, {
+            wordwrap: false,
+            selectors: [
+              { selector: 'a', options: { ignoreHref: true } },
+              { selector: 'img', format: 'skip' },
+            ],
+          }).slice(0, 150) + '...',
         path: result.path,
         contentMarkdown: post.markdown,
         authorEmail: 'max@temp.com',
