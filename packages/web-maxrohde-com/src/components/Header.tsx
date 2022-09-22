@@ -14,8 +14,8 @@ const Header = (): JSX.Element => {
                 <span className="sr-only">Code of Joy</span>
                 <img
                   className="h-16 w-16 rounded-full"
-                  src="/_goldstack/static/img/2022-09/max.jpg"
-                  alt=""
+                  src="/_goldstack/static/img/2022/09/max.jpg"
+                  alt="Max Rohde portrait"
                 />
               </a>
             </div>
