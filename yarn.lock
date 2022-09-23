@@ -4879,6 +4879,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"aws-sdk@npm:^2.1222.0":
+  version: 2.1222.0
+  resolution: "aws-sdk@npm:2.1222.0"
+  dependencies:
+    buffer: 4.9.2
+    events: 1.1.1
+    ieee754: 1.1.13
+    jmespath: 0.16.0
+    querystring: 0.2.0
+    sax: 1.2.1
+    url: 0.10.3
+    util: ^0.12.4
+    uuid: 8.0.0
+    xml2js: 0.4.19
+  checksum: 2dc98ef933883f398d95b2fc826e9036c70273b6808d7a86aabca5655b0883fd034272b7af1701d23100836996419439ecda48e8caa556639e007b2d85272750
+  languageName: node
+  linkType: hard
+
 "aws-sdk@npm:^2.851.0":
   version: 2.1218.0
   resolution: "aws-sdk@npm:2.1218.0"
@@ -6729,7 +6747,7 @@ __metadata:
     "@types/ejs": ^3
     "@types/jest": ^29.0.1
     "@types/node": ^18.7.13
-    aws-sdk: 2.1055.0
+    aws-sdk: ^2.1222.0
     deep-copy: ^1.4.2
     dynamodb-admin: ^4.4.0
     dynamodb-toolbox: ^0.4.3
@@ -6751,7 +6769,7 @@ __metadata:
     "@notionhq/client": ^2.1.1
     "@types/jest": ^27.5.1
     "@types/node": ^17.0.33
-    aws-sdk: 2.1055.0
+    aws-sdk: ^2.1222.0
     jest: ^28.1.0
     rimraf: ^3.0.2
     source-map-support: ^0.5.21
@@ -7513,7 +7531,7 @@ __metadata:
     "@goldstack/utils-sh": 0.5.2
     "@types/jest": ^29.0.1
     "@types/node": ^18.7.13
-    aws-sdk: 2.1055.0
+    aws-sdk: ^2.1222.0
     jest: ^28.1.0
     nodemon: ^2.0.15
     rimraf: ^3.0.2
@@ -19674,6 +19692,7 @@ resolve@^1.20.0:
     "@types/testing-library__react": ^10.2.0
     "@yarnpkg/esbuild-plugin-pnp": ^3.0.0-rc.15
     autoprefixer: ^10.4.11
+    aws-sdk: ^2.1222.0
     concurrently: ^7.3.0
     date-fns: ^2.28.0
     db-blog: "workspace:^"

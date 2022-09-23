@@ -14,7 +14,7 @@ const Index = (props: IndexProps): JSX.Element => {
     <>
       <Header></Header>
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <h1 className="text-3xl font-extrabold pt-24 pb-24">Latest Posts</h1>
+        <h1 className="text-3xl font-extrabold pt-24 pb-12">Latest Posts</h1>
         <div className="pb-24">
           <BlogList items={props.posts}></BlogList>
         </div>

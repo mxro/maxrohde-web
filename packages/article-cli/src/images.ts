@@ -1,5 +1,5 @@
 export function fixCoverImageLink(link: string): string {
-  return `_goldstack/static/img/cover/${link}`;
+  return `/_goldstack/static/img/cover/${link}`;
 }
 
 export function fixContentLinks(markdown: string): string {

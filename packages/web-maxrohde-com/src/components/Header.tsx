@@ -10,7 +10,7 @@ const Header = (): JSX.Element => {
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="#">
+              <a href="/">
                 <span className="sr-only">Code of Joy</span>
                 <img
                   className="h-16 w-16 rounded-full"
@@ -44,7 +44,9 @@ const Header = (): JSX.Element => {
               </button>
             </div>
             <nav className="hidden space-x-10 md:flex">
-              <h1 className="text-2xl">Code of Joy</h1>
+              <a href="/">
+                <h1 className="text-2xl">Code of Joy</h1>
+              </a>
               <h2
                 className="text-sm align-bottom"
                 style={{ marginTop: '0.75rem' }}

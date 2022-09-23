@@ -5,6 +5,7 @@ export interface BlogListItemProps {
   datePublished: string;
   tags?: string;
   path: string;
+  coverImage?: string;
   summary: string;
 }
 
@@ -31,12 +32,9 @@ const BlogListItem = (props: BlogListItemProps): JSX.Element => {
     <>
       <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
         <dl>
-          <dt className="sr-only">Published on</dt>
-          <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-            <time dateTime={props.datePublished}>
-              {new Date(props.datePublished).toLocaleDateString()}
-            </time>
-          </dd>
+          {props.coverImage && (
+            <img className="w-64" src={props.coverImage}></img>
+          )}
         </dl>
         <div className="space-y-5 xl:col-span-3">
           <div className="space-y-6">
@@ -48,6 +46,14 @@ const BlogListItem = (props: BlogListItemProps): JSX.Element => {
                 >
                   {props.title}
                 </a>
+                <span className="float-right">
+                  <dt className="sr-only">Published on</dt>
+                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                    <time dateTime={props.datePublished}>
+                      {new Date(props.datePublished).toLocaleDateString()}
+                    </time>
+                  </dd>
+                </span>
               </h2>
               <div className="flex flex-wrap">
                 {props.tags &&

@@ -7,7 +7,14 @@ import {
 import { renderPage } from '../render';
 import { PostProps } from '../routes/{post+}';
 
-import { connectTable, Entity, deepCopy, PostEntity, PostPK } from 'db-blog';
+import {
+  connectTable,
+  Entity,
+  deepCopy,
+  PostEntity,
+  PostPK,
+  connect,
+} from 'db-blog';
 
 import PostPage from '../components/PostPage';
 import ErrorPage, { ErrorPageProps } from '../components/ErrorPage';
@@ -40,8 +47,7 @@ export async function renderPost({
   }
   return renderPage<PostProps>({
     component: PostPage,
-    appendToHead:
-      '<title>Max Rohde&#39;s Blog - Code &amp; Contemplations</title>',
+    appendToHead: `<title>${postQueryResult.Items[0].title} - Code of Joy</title>`,
     properties: {
       post: postQueryResult.Items[0],
       exists: true,

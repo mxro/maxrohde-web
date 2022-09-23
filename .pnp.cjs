@@ -5974,6 +5974,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["xml2js", "npm:0.4.19"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:2.1222.0", {\
+          "packageLocation": "./.yarn/cache/aws-sdk-npm-2.1222.0-957e2db879-2dc98ef933.zip/node_modules/aws-sdk/",\
+          "packageDependencies": [\
+            ["aws-sdk", "npm:2.1222.0"],\
+            ["buffer", "npm:4.9.2"],\
+            ["events", "npm:1.1.1"],\
+            ["ieee754", "npm:1.1.13"],\
+            ["jmespath", "npm:0.16.0"],\
+            ["querystring", "npm:0.2.0"],\
+            ["sax", "npm:1.2.1"],\
+            ["url", "npm:0.10.3"],\
+            ["util", "npm:0.12.4"],\
+            ["uuid", "npm:8.0.0"],\
+            ["xml2js", "npm:0.4.19"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["aws-sign2", [\
@@ -8075,7 +8092,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/ejs", "npm:3.1.1"],\
             ["@types/jest", "npm:29.0.1"],\
             ["@types/node", "npm:18.7.13"],\
-            ["aws-sdk", "npm:2.1055.0"],\
+            ["aws-sdk", "npm:2.1222.0"],\
             ["deep-copy", "npm:1.4.2"],\
             ["dynamodb-admin", "npm:4.4.0"],\
             ["dynamodb-toolbox", "npm:0.4.3"],\
@@ -8099,7 +8116,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@notionhq/client", "npm:2.2.0"],\
             ["@types/jest", "npm:27.5.2"],\
             ["@types/node", "npm:17.0.45"],\
-            ["aws-sdk", "npm:2.1055.0"],\
+            ["aws-sdk", "npm:2.1222.0"],\
             ["jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:28.1.0"],\
             ["rimraf", "npm:3.0.2"],\
             ["source-map-support", "npm:0.5.21"],\
@@ -9012,7 +9029,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/utils-sh", "npm:0.5.2"],\
             ["@types/jest", "npm:29.0.1"],\
             ["@types/node", "npm:18.7.13"],\
-            ["aws-sdk", "npm:2.1055.0"],\
+            ["aws-sdk", "npm:2.1222.0"],\
             ["jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:28.1.0"],\
             ["nodemon", "npm:2.0.15"],\
             ["rimraf", "npm:3.0.2"],\
@@ -22524,6 +22541,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/testing-library__react", "npm:10.2.0"],\
             ["@yarnpkg/esbuild-plugin-pnp", "virtual:5e8f0b9075f5293a36abaa33c5d9196b855bf217d9af144f2ab8e990aa2ff8cef4bfd113a84f84420b1b48c5fc2b9d54e29a14f1d27405bf163c35df5a36b0f2#npm:3.0.0-rc.15"],\
             ["autoprefixer", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:10.4.11"],\
+            ["aws-sdk", "npm:2.1222.0"],\
             ["concurrently", "npm:7.3.0"],\
             ["date-fns", "npm:2.28.0"],\
             ["db-blog", "workspace:packages/db-blog"],\

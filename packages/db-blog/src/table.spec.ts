@@ -22,6 +22,7 @@ describe('DynamoDB Table', () => {
       title: 'Post 1',
       authorEmail: 'dummy@dummy.com',
       contentHtml: '<p>Post 1</p>',
+      summary: 'summary1',
       contentMarkdown: 'Post 1',
       path: '2022/09/18/post-1',
       tags: 'tag-1,tag-2',
@@ -32,6 +33,7 @@ describe('DynamoDB Table', () => {
       blog: 'blog1',
       title: 'Post 2',
       path: '2022/09/18/post-2',
+      summary: 'summary2',
       authorEmail: 'dummy@dummy.com',
       contentHtml: '<p>Post 2</p>',
       contentMarkdown: 'Post 2',
@@ -80,18 +82,13 @@ describe('DynamoDB Table', () => {
     if (!postQueryResult.Items) {
       throw new Error('No items found');
     }
-    for (const item of postQueryResult.Items as Post[]) {
-      const tagsResult = await TagMappings.query(
-        TagMappingPK({ blog: 'blog1', postPath: item.path }),
-        {
-          limit: 100,
-        }
-      );
-      console.log(
-        'tags: ',
-        tagsResult.Items?.map((i) => i.tagId).join(', ') || 'none'
-      );
-    }
+    const tagsResult = await TagMappings.query(
+      TagMappingPK({ blog: 'blog1', tagId: 'tag-1' }),
+      {
+        limit: 100,
+      }
+    );
+    expect(tagsResult.Count).toEqual(1);
   });
 
   afterAll(async () => {

@@ -8,6 +8,7 @@ tags:
   - "books"
   - "life"
   - "self-improvement"
+  - "test"
 coverImage: "sasha-freemind-pv5weeyxmwu-unsplash.jpg"
 ---
 
