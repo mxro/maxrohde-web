@@ -4,7 +4,7 @@
   "sideEffects": false,
   "main": "src/articleCli.ts",
   "scripts": {
-    "article": "ts-node src/main.ts",
+    "article": "ts-node --transpile-only src/main.ts",
     "build": "yarn clean && yarn compile",
     "clean": "rimraf dist/",
     "compile": "tsc -p tsconfig.json",

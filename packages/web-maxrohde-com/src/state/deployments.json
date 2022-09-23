@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "name": "dev",
+    "terraform": {
+      "gateway_url": {
+        "sensitive": false,
+        "type": "string",
+        "value": "https://oew0qqd9uh.execute-api.us-west-2.amazonaws.com"
+      },
+      "public_files_bucket": {
+        "sensitive": false,
+        "type": "string",
+        "value": "dev.home.mxro.de-public-files-5658ae0f"
+      },
+      "static_files_bucket": {
+        "sensitive": false,
+        "type": "string",
+        "value": "dev.home.mxro.de-static-files-5658ae0f"
+      }
+    }
+  }
+]

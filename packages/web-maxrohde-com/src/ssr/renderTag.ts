@@ -68,6 +68,10 @@ export async function renderTag({
     })
     .promise();
 
+  console.log(
+    'ConsumedCapacity for loading posts',
+    postQueryResult.ConsumedCapacity
+  );
   // const postQueryResult = await dynamodb.batchGetItem({
   //   RequestItems: {
   //   await getTableName():
@@ -75,7 +79,6 @@ export async function renderTag({
   //   IndexName: 'path-index',
   // });
 
-  // console.log(postQueryResult.ConsumedCapacity);
   // const postQueryResult = await dynamodb
   //   .query({
   //     ExpressionAttributeValues: {

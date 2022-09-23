@@ -8,13 +8,31 @@
     {
       "name": "dev",
       "configuration": {
-        "lambdas": {},
+        "lambdas": {
+          "ANY /": {
+            "function_name": "maxrohde--__index",
+            "route": "ANY /"
+          },
+          "ANY /about": {
+            "function_name": "maxrohde-about",
+            "route": "ANY /about"
+          },
+          "ANY /tags/{id}": {
+            "function_name": "maxrohde-tags-_id_",
+            "route": "ANY /tags/{id}"
+          },
+          "ANY /{post+}": {
+            "function_name": "maxrohde-_post__",
+            "route": "ANY /{post+}"
+          }
+        },
         "lambdaNamePrefix": "maxrohde",
         "domain": "dev.home.mxro.de",
         "hostedZoneDomain": "mxro.de"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2"
+      "awsRegion": "us-west-2",
+      "tfStateKey": "server-side-rendering-dev-946fcb843ad1d06f7e18.tfstate"
     }
   ]
 }

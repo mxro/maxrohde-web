@@ -11,7 +11,7 @@ const PostPage = (props: PostProps): JSX.Element => {
     <>
       <Header></Header>
 
-      <div className="relative bg-white pt-16">
+      <div className="relative bg-white pt-16 border-b-grey-lighter pb-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <article className="prose lg:prose-xl">
             <h1>{props.post.title}</h1>

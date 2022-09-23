@@ -7,7 +7,7 @@ import { Entity } from 'dynamodb-toolbox';
 
 import { convert as htmlToText } from 'html-to-text';
 import { fixCoverImageLink } from './images';
-
+import { resolve } from 'path';
 export interface PublishArgs {
   fileNamePattern: string;
   dry: boolean;
@@ -33,12 +33,17 @@ export function extractPathElements(filename: string): string[] {
 
 export const publish = async (args: PublishArgs): Promise<void> => {
   const contentDir = args.directoryToScan || config['defaultContentDir'];
+  const pattern = `**/*${args.fileNamePattern}*`;
+  console.log(`Searching for articles in ${resolve(contentDir)}`);
+  console.log(`  using pattern: [${pattern}]`);
   const matches = (
-    await fg([`**/${args.fileNamePattern}*`], {
+    await fg([pattern], {
       cwd: contentDir,
+      onlyDirectories: true,
     })
-  ).map((path) => `${contentDir}/${path}`);
+  ).map((path) => `${contentDir}/${path}/index.md`);
 
+  console.log(matches);
   const results = await Promise.all(
     matches.map(async (filename) => {
       return {
@@ -53,6 +58,7 @@ export const publish = async (args: PublishArgs): Promise<void> => {
   await Promise.all(
     results.map(async (result) => {
       const post = result.post;
+      console.log('Publishing article:', result.path);
       return Posts.put({
         blog: 'maxrohde.com',
         title: post.metadata.title,

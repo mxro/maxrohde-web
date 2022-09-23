@@ -11,7 +11,8 @@
         "tableName": "maxrohde-blog"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2"
+      "awsRegion": "us-west-2",
+      "tfStateKey": "db-blog-dev-805d05f56f47931fe5be.tfstate"
     }
   ]
 }

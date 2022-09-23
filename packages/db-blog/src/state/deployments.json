@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "name": "dev",
+    "terraform": {
+      "table_arn": {
+        "sensitive": false,
+        "type": "string",
+        "value": "arn:aws:dynamodb:us-west-2:444001402733:table/maxrohde-blog"
+      },
+      "table_name": {
+        "sensitive": false,
+        "type": "string",
+        "value": "maxrohde-blog"
+      }
+    }
+  }
+]

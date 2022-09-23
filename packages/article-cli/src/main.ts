@@ -1,4 +1,5 @@
 import { Command } from 'commander';
+import { connectTable } from 'db-blog';
 
 import packageJson from './../package.json';
 import { publish } from './publish';
@@ -16,12 +17,17 @@ import { publish } from './publish';
     .description('Publishes an article')
     .argument('<filename>', 'The filename of the article to publish')
     .option('-s, --dry', 'Dry run - do not publish')
-    .option('-e, --env', 'Environment to use')
-    .option('-s, --separator <char>', 'separator character', ',')
+    .requiredOption('-e, --env <env>', 'Environment to use')
     .action(async (pattern, options) => {
       const dry = options.dry || false;
       const fileNamePattern = pattern;
-      await publish({ fileNamePattern, dry, table: {} as any });
+
+      const env = options.env;
+      const table = await connectTable({
+        deploymentName: env,
+      });
+
+      await publish({ fileNamePattern, dry, table });
     });
 
   program.parse();

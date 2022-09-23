@@ -9,7 +9,7 @@ import type {
 type SSRHandler = Handler<APIGatewayProxyEventV2, APIGatewayProxyResultV2>;
 
 import { hydrate } from '../render';
-import { renderPost } from '../ssr/renderPost';
+import * as renderPost from '../ssr/renderPost';
 
 import type { Post as PostType } from 'db-blog';
 
@@ -22,7 +22,7 @@ export interface PostProps {
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const handler: SSRHandler = async (event, context) => {
-  return renderPost({ event });
+  return renderPost.renderPost({ event });
 };
 
 hydrate(PostPage);
