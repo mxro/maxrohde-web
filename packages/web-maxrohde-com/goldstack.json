@@ -17,6 +17,14 @@
             "function_name": "maxrohde-about",
             "route": "ANY /about"
           },
+          "ANY /robots.txt": {
+            "function_name": "maxrohde-robots_txt",
+            "route": "ANY /robots.txt"
+          },
+          "ANY /sitemap.xml": {
+            "function_name": "maxrohde-sitemap_xml",
+            "route": "ANY /sitemap.xml"
+          },
           "ANY /tags/{id}": {
             "function_name": "maxrohde-tags-_id_",
             "route": "ANY /tags/{id}"
