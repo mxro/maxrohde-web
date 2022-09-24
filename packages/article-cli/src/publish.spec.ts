@@ -59,10 +59,10 @@ describe('Article publishing', () => {
       table,
     } as const);
     const tagsResult = await TagMappings.query(
-      TagMappingPK({ blog: 'maxrohde.com', postPath: item.path }),
+      TagMappingPK({ blog: 'maxrohde.com', tagId: 'zodiac' }),
       { limit: 100 }
     );
-    expect(tagsResult.Count).toEqual(3);
+    expect(tagsResult.Count).toEqual(1);
   });
   afterAll(async () => {
     if (!(process.env.STOP_SERVER === 'false')) {

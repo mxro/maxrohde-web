@@ -1625,6 +1625,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["handlebars", "npm:4.7.7"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:0.4.4", {\
+          "packageLocation": "./.yarn/cache/@goldstack-infra-aws-npm-0.4.4-307e597f17-a2ca084a36.zip/node_modules/@goldstack/infra-aws/",\
+          "packageDependencies": [\
+            ["@goldstack/infra-aws", "npm:0.4.4"],\
+            ["@goldstack/infra", "npm:0.4.2"],\
+            ["@goldstack/utils-config", "npm:0.4.2"],\
+            ["@goldstack/utils-log", "npm:0.3.2"],\
+            ["@goldstack/utils-package", "npm:0.4.2"],\
+            ["@goldstack/utils-sh", "npm:0.5.2"],\
+            ["aws-sdk", "npm:2.1222.0"],\
+            ["axios", "npm:0.21.2"],\
+            ["handlebars", "npm:4.7.7"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@goldstack/nodemonx", [\
@@ -1641,18 +1656,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@goldstack/template-dynamodb", [\
-        ["npm:0.2.3", {\
-          "packageLocation": "./.yarn/cache/@goldstack-template-dynamodb-npm-0.2.3-9a02239de4-d985a7e735.zip/node_modules/@goldstack/template-dynamodb/",\
+        ["npm:0.2.5", {\
+          "packageLocation": "./.yarn/cache/@goldstack-template-dynamodb-npm-0.2.5-a49edfe457-5481173db8.zip/node_modules/@goldstack/template-dynamodb/",\
           "packageDependencies": [\
-            ["@goldstack/template-dynamodb", "npm:0.2.3"],\
+            ["@goldstack/template-dynamodb", "npm:0.2.5"],\
             ["@aws-sdk/util-dynamodb", "npm:3.87.0"],\
             ["@goldstack/infra", "npm:0.4.2"],\
-            ["@goldstack/infra-aws", "npm:0.4.3"],\
+            ["@goldstack/infra-aws", "npm:0.4.4"],\
             ["@goldstack/utils-esbuild", "npm:0.5.2"],\
             ["@goldstack/utils-package", "npm:0.4.2"],\
             ["@goldstack/utils-package-config-embedded", "npm:0.5.2"],\
-            ["@goldstack/utils-terraform", "npm:0.4.3"],\
-            ["aws-sdk", "npm:2.1055.0"],\
+            ["@goldstack/utils-terraform", "npm:0.4.4"],\
+            ["aws-sdk", "npm:2.1222.0"],\
             ["testcontainers", "npm:8.12.0"],\
             ["umzug", "npm:3.1.1"]\
           ],\
@@ -1660,17 +1675,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@goldstack/template-dynamodb-cli", [\
-        ["npm:0.5.3", {\
-          "packageLocation": "./.yarn/cache/@goldstack-template-dynamodb-cli-npm-0.5.3-428d2df5f6-0666dd0f33.zip/node_modules/@goldstack/template-dynamodb-cli/",\
+        ["npm:0.5.5", {\
+          "packageLocation": "./.yarn/cache/@goldstack-template-dynamodb-cli-npm-0.5.5-85cb8299f3-54e5d6656a.zip/node_modules/@goldstack/template-dynamodb-cli/",\
           "packageDependencies": [\
-            ["@goldstack/template-dynamodb-cli", "npm:0.5.3"],\
-            ["@goldstack/template-dynamodb", "npm:0.2.3"],\
+            ["@goldstack/template-dynamodb-cli", "npm:0.5.5"],\
+            ["@goldstack/template-dynamodb", "npm:0.2.5"],\
             ["@goldstack/utils-cli", "npm:0.3.2"],\
             ["@goldstack/utils-package", "npm:0.4.2"],\
             ["@goldstack/utils-package-config", "npm:0.4.2"],\
             ["@goldstack/utils-sh", "npm:0.5.2"],\
-            ["@goldstack/utils-terraform", "npm:0.4.3"],\
-            ["@goldstack/utils-terraform-aws", "npm:0.4.3"],\
+            ["@goldstack/utils-terraform", "npm:0.4.4"],\
+            ["@goldstack/utils-terraform-aws", "npm:0.4.4"],\
             ["source-map-support", "npm:0.5.21"],\
             ["umzug", "npm:3.1.1"],\
             ["yargs", "npm:17.5.1"]\
@@ -1759,6 +1774,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["source-map-support", "npm:0.5.21"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:0.3.7", {\
+          "packageLocation": "./.yarn/cache/@goldstack-template-ssr-npm-0.3.7-3f2aa5bf68-f68af31e2e.zip/node_modules/@goldstack/template-ssr/",\
+          "packageDependencies": [\
+            ["@goldstack/template-ssr", "npm:0.3.7"],\
+            ["@goldstack/infra", "npm:0.4.2"],\
+            ["@goldstack/infra-aws", "npm:0.4.4"],\
+            ["@goldstack/template-ssr-server", "npm:0.3.7"],\
+            ["@goldstack/utils-aws-lambda", "npm:0.3.4"],\
+            ["@goldstack/utils-esbuild", "npm:0.5.2"],\
+            ["@goldstack/utils-package", "npm:0.4.2"],\
+            ["@goldstack/utils-package-config-embedded", "npm:0.5.2"],\
+            ["@goldstack/utils-template", "npm:0.4.2"],\
+            ["@goldstack/utils-terraform", "npm:0.4.4"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:fd4323ccd2313b3d04a02b371fa497209321e36863b1fd36482da9e9f468f37dcc1c8e7c33d3572dc27b9600f548d26696615d9daca5b6fa024c4e43a9231f81#npm:18.2.0"],\
+            ["source-map-support", "npm:0.5.21"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@goldstack/template-ssr-cli", [\
@@ -1811,6 +1845,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["static-file-mapper", "npm:0.3.3"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:0.3.7", {\
+          "packageLocation": "./.yarn/cache/@goldstack-template-ssr-server-npm-0.3.7-a360115335-ca1b956750.zip/node_modules/@goldstack/template-ssr-server/",\
+          "packageDependencies": [\
+            ["@goldstack/template-ssr-server", "npm:0.3.7"],\
+            ["@goldstack/infra", "npm:0.4.2"],\
+            ["@goldstack/infra-aws", "npm:0.4.4"],\
+            ["@goldstack/template-ssr-server-compile-bundle", "npm:0.3.5"],\
+            ["@goldstack/utils-aws-lambda", "npm:0.3.4"],\
+            ["@goldstack/utils-esbuild", "npm:0.5.2"],\
+            ["@goldstack/utils-package", "npm:0.4.2"],\
+            ["@goldstack/utils-package-config-embedded", "npm:0.5.2"],\
+            ["@goldstack/utils-sh", "npm:0.5.2"],\
+            ["@goldstack/utils-template", "npm:0.4.2"],\
+            ["@goldstack/utils-terraform", "npm:0.4.4"],\
+            ["lambda-compression", "npm:0.2.2"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:fd4323ccd2313b3d04a02b371fa497209321e36863b1fd36482da9e9f468f37dcc1c8e7c33d3572dc27b9600f548d26696615d9daca5b6fa024c4e43a9231f81#npm:18.2.0"],\
+            ["source-map-support", "npm:0.5.21"],\
+            ["static-file-mapper", "npm:0.3.3"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@goldstack/template-ssr-server-compile-bundle", [\
@@ -1827,6 +1883,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/utils-sh", "npm:0.5.2"],\
             ["@goldstack/utils-template", "npm:0.4.2"],\
             ["@goldstack/utils-terraform", "npm:0.4.3"],\
+            ["esbuild", "npm:0.15.5"],\
+            ["lambda-compression", "npm:0.2.2"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:fd4323ccd2313b3d04a02b371fa497209321e36863b1fd36482da9e9f468f37dcc1c8e7c33d3572dc27b9600f548d26696615d9daca5b6fa024c4e43a9231f81#npm:18.2.0"],\
+            ["source-map-support", "npm:0.5.21"],\
+            ["static-file-mapper-build", "npm:0.3.3"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:0.3.5", {\
+          "packageLocation": "./.yarn/cache/@goldstack-template-ssr-server-compile-bundle-npm-0.3.5-ec63f41e52-1397c64e45.zip/node_modules/@goldstack/template-ssr-server-compile-bundle/",\
+          "packageDependencies": [\
+            ["@goldstack/template-ssr-server-compile-bundle", "npm:0.3.5"],\
+            ["@goldstack/infra", "npm:0.4.2"],\
+            ["@goldstack/infra-aws", "npm:0.4.4"],\
+            ["@goldstack/utils-aws-lambda", "npm:0.3.4"],\
+            ["@goldstack/utils-esbuild", "npm:0.5.2"],\
+            ["@goldstack/utils-package", "npm:0.4.2"],\
+            ["@goldstack/utils-package-config-embedded", "npm:0.5.2"],\
+            ["@goldstack/utils-sh", "npm:0.5.2"],\
+            ["@goldstack/utils-template", "npm:0.4.2"],\
+            ["@goldstack/utils-terraform", "npm:0.4.4"],\
             ["esbuild", "npm:0.15.5"],\
             ["lambda-compression", "npm:0.2.2"],\
             ["react", "npm:18.2.0"],\
@@ -1885,6 +1963,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["aws-sdk", "npm:2.1055.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:0.4.4", {\
+          "packageLocation": "./.yarn/cache/@goldstack-utils-aws-cli-npm-0.4.4-3dad1cd7e1-24f03d41d1.zip/node_modules/@goldstack/utils-aws-cli/",\
+          "packageDependencies": [\
+            ["@goldstack/utils-aws-cli", "npm:0.4.4"],\
+            ["@goldstack/infra-aws", "npm:0.4.4"],\
+            ["@goldstack/utils-docker", "npm:0.4.2"],\
+            ["@goldstack/utils-log", "npm:0.3.2"],\
+            ["@goldstack/utils-sh", "npm:0.5.2"],\
+            ["aws-sdk", "npm:2.1222.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@goldstack/utils-aws-http-api-local", [\
@@ -1929,6 +2019,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/esbuild-plugin-pnp", "virtual:5e8f0b9075f5293a36abaa33c5d9196b855bf217d9af144f2ab8e990aa2ff8cef4bfd113a84f84420b1b48c5fc2b9d54e29a14f1d27405bf163c35df5a36b0f2#npm:3.0.0-rc.15"],\
             ["archiver", "npm:5.3.1"],\
             ["aws-sdk", "npm:2.1055.0"],\
+            ["esbuild", "npm:0.15.5"],\
+            ["esbuild-css-modules-client-plugin", "npm:0.3.2"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:0.3.4", {\
+          "packageLocation": "./.yarn/cache/@goldstack-utils-aws-lambda-npm-0.3.4-36854d2ebe-e609251893.zip/node_modules/@goldstack/utils-aws-lambda/",\
+          "packageDependencies": [\
+            ["@goldstack/utils-aws-lambda", "npm:0.3.4"],\
+            ["@goldstack/infra-aws", "npm:0.4.4"],\
+            ["@goldstack/utils-aws-cli", "npm:0.4.4"],\
+            ["@goldstack/utils-log", "npm:0.3.2"],\
+            ["@goldstack/utils-sh", "npm:0.5.2"],\
+            ["@yarnpkg/esbuild-plugin-pnp", "virtual:5e8f0b9075f5293a36abaa33c5d9196b855bf217d9af144f2ab8e990aa2ff8cef4bfd113a84f84420b1b48c5fc2b9d54e29a14f1d27405bf163c35df5a36b0f2#npm:3.0.0-rc.15"],\
+            ["archiver", "npm:5.3.1"],\
+            ["aws-sdk", "npm:2.1222.0"],\
             ["esbuild", "npm:0.15.5"],\
             ["esbuild-css-modules-client-plugin", "npm:0.3.2"]\
           ],\
@@ -2264,6 +2370,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["yargs", "npm:17.5.1"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:0.4.4", {\
+          "packageLocation": "./.yarn/cache/@goldstack-utils-terraform-npm-0.4.4-3403c54715-77e793a1a8.zip/node_modules/@goldstack/utils-terraform/",\
+          "packageDependencies": [\
+            ["@goldstack/utils-terraform", "npm:0.4.4"],\
+            ["@goldstack/infra", "npm:0.4.2"],\
+            ["@goldstack/infra-aws", "npm:0.4.4"],\
+            ["@goldstack/utils-config", "npm:0.4.2"],\
+            ["@goldstack/utils-docker", "npm:0.4.2"],\
+            ["@goldstack/utils-log", "npm:0.3.2"],\
+            ["@goldstack/utils-package", "npm:0.4.2"],\
+            ["@goldstack/utils-sh", "npm:0.5.2"],\
+            ["json-stable-stringify", "npm:1.0.1"],\
+            ["prompt-sync", "npm:4.2.0"],\
+            ["yargs", "npm:17.5.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@goldstack/utils-terraform-aws", [\
@@ -2292,6 +2415,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/utils-sh", "npm:0.5.2"],\
             ["@goldstack/utils-terraform", "npm:0.4.3"],\
             ["aws-sdk", "npm:2.1055.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:0.4.4", {\
+          "packageLocation": "./.yarn/cache/@goldstack-utils-terraform-aws-npm-0.4.4-280b0b020b-c870aebdbc.zip/node_modules/@goldstack/utils-terraform-aws/",\
+          "packageDependencies": [\
+            ["@goldstack/utils-terraform-aws", "npm:0.4.4"],\
+            ["@goldstack/infra-aws", "npm:0.4.4"],\
+            ["@goldstack/utils-config", "npm:0.4.2"],\
+            ["@goldstack/utils-log", "npm:0.3.2"],\
+            ["@goldstack/utils-package", "npm:0.4.2"],\
+            ["@goldstack/utils-sh", "npm:0.5.2"],\
+            ["@goldstack/utils-terraform", "npm:0.4.4"],\
+            ["aws-sdk", "npm:2.1222.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3357,6 +3494,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@selderee/plugin-htmlparser2", [\
+        ["npm:0.6.0", {\
+          "packageLocation": "./.yarn/cache/@selderee-plugin-htmlparser2-npm-0.6.0-4d2d338a7e-3138bec99c.zip/node_modules/@selderee/plugin-htmlparser2/",\
+          "packageDependencies": [\
+            ["@selderee/plugin-htmlparser2", "npm:0.6.0"],\
+            ["domhandler", "npm:4.3.1"],\
+            ["selderee", "npm:0.6.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@sinclair/typebox", [\
         ["npm:0.23.5", {\
           "packageLocation": "./.yarn/cache/@sinclair-typebox-npm-0.23.5-10c003c068-c96056d35d.zip/node_modules/@sinclair/typebox/",\
@@ -4210,6 +4358,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@types/graceful-fs", "npm:4.1.5"],\
             ["@types/node", "npm:14.0.13"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/html-to-text", [\
+        ["npm:8.1.1", {\
+          "packageLocation": "./.yarn/cache/@types-html-to-text-npm-8.1.1-836a823753-7c609b3359.zip/node_modules/@types/html-to-text/",\
+          "packageDependencies": [\
+            ["@types/html-to-text", "npm:8.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5757,6 +5914,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/article-cli/",\
           "packageDependencies": [\
             ["article-cli", "workspace:packages/article-cli"],\
+            ["@types/html-to-text", "npm:8.1.1"],\
             ["@types/jest", "npm:27.5.2"],\
             ["@types/marked", "npm:4.0.7"],\
             ["@types/node", "npm:17.0.45"],\
@@ -5765,6 +5923,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dynamodb-toolbox", "npm:0.4.3"],\
             ["fast-glob", "npm:3.2.12"],\
             ["gray-matter", "npm:4.0.3"],\
+            ["html-to-text", "npm:8.2.1"],\
             ["jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:28.1.0"],\
             ["marked", "npm:4.1.0"],\
             ["rimraf", "npm:3.0.2"],\
@@ -5940,6 +6099,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/aws-sdk-npm-2.1218.0-546287d9ad-e1bb41bf8b.zip/node_modules/aws-sdk/",\
           "packageDependencies": [\
             ["aws-sdk", "npm:2.1218.0"],\
+            ["buffer", "npm:4.9.2"],\
+            ["events", "npm:1.1.1"],\
+            ["ieee754", "npm:1.1.13"],\
+            ["jmespath", "npm:0.16.0"],\
+            ["querystring", "npm:0.2.0"],\
+            ["sax", "npm:1.2.1"],\
+            ["url", "npm:0.10.3"],\
+            ["util", "npm:0.12.4"],\
+            ["uuid", "npm:8.0.0"],\
+            ["xml2js", "npm:0.4.19"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.1222.0", {\
+          "packageLocation": "./.yarn/cache/aws-sdk-npm-2.1222.0-957e2db879-2dc98ef933.zip/node_modules/aws-sdk/",\
+          "packageDependencies": [\
+            ["aws-sdk", "npm:2.1222.0"],\
             ["buffer", "npm:4.9.2"],\
             ["events", "npm:1.1.1"],\
             ["ieee754", "npm:1.1.13"],\
@@ -8047,13 +8223,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["db-blog", "workspace:packages/db-blog"],\
             ["@aws-sdk/util-dynamodb", "npm:3.87.0"],\
-            ["@goldstack/template-dynamodb", "npm:0.2.3"],\
-            ["@goldstack/template-dynamodb-cli", "npm:0.5.3"],\
+            ["@goldstack/template-dynamodb", "npm:0.2.5"],\
+            ["@goldstack/template-dynamodb-cli", "npm:0.5.5"],\
             ["@goldstack/utils-sh", "npm:0.5.2"],\
             ["@types/ejs", "npm:3.1.1"],\
             ["@types/jest", "npm:29.0.1"],\
             ["@types/node", "npm:18.7.13"],\
-            ["aws-sdk", "npm:2.1055.0"],\
+            ["aws-sdk", "npm:2.1222.0"],\
             ["deep-copy", "npm:1.4.2"],\
             ["dynamodb-admin", "npm:4.4.0"],\
             ["dynamodb-toolbox", "npm:0.4.3"],\
@@ -8077,7 +8253,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@notionhq/client", "npm:2.2.0"],\
             ["@types/jest", "npm:27.5.2"],\
             ["@types/node", "npm:17.0.45"],\
-            ["aws-sdk", "npm:2.1055.0"],\
+            ["aws-sdk", "npm:2.1222.0"],\
             ["jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:28.1.0"],\
             ["rimraf", "npm:3.0.2"],\
             ["source-map-support", "npm:0.5.21"],\
@@ -8605,6 +8781,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["discontinuous-range", [\
+        ["npm:1.0.0", {\
+          "packageLocation": "./.yarn/cache/discontinuous-range-npm-1.0.0-572abfd975-8ee88d7082.zip/node_modules/discontinuous-range/",\
+          "packageDependencies": [\
+            ["discontinuous-range", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["dlv", [\
         ["npm:1.1.3", {\
           "packageLocation": "./.yarn/cache/dlv-npm-1.1.3-187c903a21-d7381bca22.zip/node_modules/dlv/",\
@@ -8702,6 +8887,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["entities", "npm:2.0.3"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:1.4.1", {\
+          "packageLocation": "./.yarn/cache/dom-serializer-npm-1.4.1-ebb24349c1-fbb0b01f87.zip/node_modules/dom-serializer/",\
+          "packageDependencies": [\
+            ["dom-serializer", "npm:1.4.1"],\
+            ["domelementtype", "npm:2.0.1"],\
+            ["domhandler", "npm:4.3.1"],\
+            ["entities", "npm:2.0.3"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["domain-browser", [\
@@ -8725,6 +8920,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/domelementtype-npm-2.0.1-23794ee948-940c62d1c4.zip/node_modules/domelementtype/",\
           "packageDependencies": [\
             ["domelementtype", "npm:2.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.3.0", {\
+          "packageLocation": "./.yarn/cache/domelementtype-npm-2.3.0-02de7cbfba-ee837a318f.zip/node_modules/domelementtype/",\
+          "packageDependencies": [\
+            ["domelementtype", "npm:2.3.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8763,6 +8965,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["domelementtype", "npm:2.0.1"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:4.3.1", {\
+          "packageLocation": "./.yarn/cache/domhandler-npm-4.3.1-493539c1ca-4c665ceed0.zip/node_modules/domhandler/",\
+          "packageDependencies": [\
+            ["domhandler", "npm:4.3.1"],\
+            ["domelementtype", "npm:2.3.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["domutils", [\
@@ -8782,6 +8992,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dom-serializer", "npm:0.2.2"],\
             ["domelementtype", "npm:2.0.1"],\
             ["domhandler", "npm:3.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.8.0", {\
+          "packageLocation": "./.yarn/cache/domutils-npm-2.8.0-0325139e5c-abf7434315.zip/node_modules/domutils/",\
+          "packageDependencies": [\
+            ["domutils", "npm:2.8.0"],\
+            ["dom-serializer", "npm:1.4.1"],\
+            ["domelementtype", "npm:2.3.0"],\
+            ["domhandler", "npm:4.3.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -8946,7 +9166,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/utils-sh", "npm:0.5.2"],\
             ["@types/jest", "npm:29.0.1"],\
             ["@types/node", "npm:18.7.13"],\
-            ["aws-sdk", "npm:2.1055.0"],\
+            ["aws-sdk", "npm:2.1222.0"],\
             ["jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:28.1.0"],\
             ["nodemon", "npm:2.0.15"],\
             ["rimraf", "npm:3.0.2"],\
@@ -11774,6 +11994,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["he", [\
+        ["npm:1.2.0", {\
+          "packageLocation": "./.yarn/cache/he-npm-1.2.0-3b73a2ff07-3d4d6babcc.zip/node_modules/he/",\
+          "packageDependencies": [\
+            ["he", "npm:1.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["hmac-drbg", [\
         ["npm:1.0.1", {\
           "packageLocation": "./.yarn/cache/hmac-drbg-npm-1.0.1-3499ad31cd-bd30b6a68d.zip/node_modules/hmac-drbg/",\
@@ -11822,6 +12051,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["html-to-text", [\
+        ["npm:8.2.1", {\
+          "packageLocation": "./.yarn/cache/html-to-text-npm-8.2.1-866085fa97-ff4cc1d355.zip/node_modules/html-to-text/",\
+          "packageDependencies": [\
+            ["html-to-text", "npm:8.2.1"],\
+            ["@selderee/plugin-htmlparser2", "npm:0.6.0"],\
+            ["deepmerge", "npm:4.2.2"],\
+            ["he", "npm:1.2.0"],\
+            ["htmlparser2", "npm:6.1.0"],\
+            ["minimist", "npm:1.2.6"],\
+            ["selderee", "npm:0.6.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["html-void-elements", [\
         ["npm:1.0.5", {\
           "packageLocation": "./.yarn/cache/html-void-elements-npm-1.0.5-64f7ffca37-1a56f4f6cf.zip/node_modules/html-void-elements/",\
@@ -11851,6 +12095,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["domelementtype", "npm:2.0.1"],\
             ["domhandler", "npm:3.0.0"],\
             ["domutils", "npm:2.1.0"],\
+            ["entities", "npm:2.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:6.1.0", {\
+          "packageLocation": "./.yarn/cache/htmlparser2-npm-6.1.0-4ef89ab31e-81a7b3d9c3.zip/node_modules/htmlparser2/",\
+          "packageDependencies": [\
+            ["htmlparser2", "npm:6.1.0"],\
+            ["domelementtype", "npm:2.0.1"],\
+            ["domhandler", "npm:4.3.1"],\
+            ["domutils", "npm:2.8.0"],\
             ["entities", "npm:2.0.3"]\
           ],\
           "linkType": "HARD"\
@@ -15769,6 +16024,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["moo", [\
+        ["npm:0.5.1", {\
+          "packageLocation": "./.yarn/cache/moo-npm-0.5.1-6281c30315-2d8c013f1f.zip/node_modules/moo/",\
+          "packageDependencies": [\
+            ["moo", "npm:0.5.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["move-concurrently", [\
         ["npm:1.0.1", {\
           "packageLocation": "./.yarn/cache/move-concurrently-npm-1.0.1-e1e3c7e2cf-4ea3296c15.zip/node_modules/move-concurrently/",\
@@ -15875,6 +16139,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/ncp-npm-2.0.0-2121969339-ea9b19221d.zip/node_modules/ncp/",\
           "packageDependencies": [\
             ["ncp", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["nearley", [\
+        ["npm:2.20.1", {\
+          "packageLocation": "./.yarn/cache/nearley-npm-2.20.1-2e130941d3-42c2c330c1.zip/node_modules/nearley/",\
+          "packageDependencies": [\
+            ["nearley", "npm:2.20.1"],\
+            ["commander", "npm:2.20.3"],\
+            ["moo", "npm:0.5.1"],\
+            ["railroad-diagrams", "npm:1.0.0"],\
+            ["randexp", "npm:0.4.6"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -16886,6 +17163,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/parse5-npm-6.0.1-70a35a494a-7d569a176c.zip/node_modules/parse5/",\
           "packageDependencies": [\
             ["parse5", "npm:6.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["parseley", [\
+        ["npm:0.7.0", {\
+          "packageLocation": "./.yarn/cache/parseley-npm-0.7.0-ef52928152-b1bbc16a2f.zip/node_modules/parseley/",\
+          "packageDependencies": [\
+            ["parseley", "npm:0.7.0"],\
+            ["moo", "npm:0.5.1"],\
+            ["nearley", "npm:2.20.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -18037,6 +18325,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["railroad-diagrams", [\
+        ["npm:1.0.0", {\
+          "packageLocation": "./.yarn/cache/railroad-diagrams-npm-1.0.0-ab8798413c-9e312af352.zip/node_modules/railroad-diagrams/",\
+          "packageDependencies": [\
+            ["railroad-diagrams", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["randexp", [\
+        ["npm:0.4.6", {\
+          "packageLocation": "./.yarn/cache/randexp-npm-0.4.6-60140c8119-3c0d440a3f.zip/node_modules/randexp/",\
+          "packageDependencies": [\
+            ["randexp", "npm:0.4.6"],\
+            ["discontinuous-range", "npm:1.0.0"],\
+            ["ret", "npm:0.1.15"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["randombytes", [\
         ["npm:2.1.0", {\
           "packageLocation": "./.yarn/cache/randombytes-npm-2.1.0-e3da76bccf-d779499376.zip/node_modules/randombytes/",\
@@ -19070,6 +19378,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["section-matter", "npm:1.0.0"],\
             ["extend-shallow", "npm:2.0.1"],\
             ["kind-of", "npm:6.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["selderee", [\
+        ["npm:0.6.0", {\
+          "packageLocation": "./.yarn/cache/selderee-npm-0.6.0-4127686959-0bbf1f2967.zip/node_modules/selderee/",\
+          "packageDependencies": [\
+            ["selderee", "npm:0.6.0"],\
+            ["parseley", "npm:0.7.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -22339,7 +22657,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/web-maxrohde-com/",\
           "packageDependencies": [\
             ["web-maxrohde-com", "workspace:packages/web-maxrohde-com"],\
-            ["@goldstack/template-ssr", "npm:0.3.6"],\
+            ["@goldstack/template-ssr", "npm:0.3.7"],\
             ["@goldstack/template-ssr-cli", "npm:0.3.7"],\
             ["@goldstack/utils-aws-http-api-local", "npm:0.3.5"],\
             ["@goldstack/utils-esbuild", "npm:0.5.2"],\
@@ -22360,8 +22678,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/testing-library__react", "npm:10.2.0"],\
             ["@yarnpkg/esbuild-plugin-pnp", "virtual:5e8f0b9075f5293a36abaa33c5d9196b855bf217d9af144f2ab8e990aa2ff8cef4bfd113a84f84420b1b48c5fc2b9d54e29a14f1d27405bf163c35df5a36b0f2#npm:3.0.0-rc.15"],\
             ["autoprefixer", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:10.4.11"],\
+            ["aws-sdk", "npm:2.1222.0"],\
             ["concurrently", "npm:7.3.0"],\
             ["date-fns", "npm:2.28.0"],\
+            ["db-blog", "workspace:packages/db-blog"],\
             ["esbuild", "npm:0.15.5"],\
             ["esbuild-css-modules-client-plugin", "npm:0.3.2"],\
             ["esbuild-ignore-with-comments-plugin", "npm:0.3.2"],\

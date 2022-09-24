@@ -16,6 +16,8 @@ import deepCopy from 'deep-copy';
 
 export { deepCopy };
 
+export { Entity } from 'dynamodb-toolbox';
+
 export * from './entities';
 export type Table = ToolboxTable<string, 'pk', 'sk'>;
 

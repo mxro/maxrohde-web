@@ -19,10 +19,10 @@ describe('DynamoDB Table', () => {
 
     await Posts.put({
       blog: 'blog1',
-      id: 'post-1',
       title: 'Post 1',
       authorEmail: 'dummy@dummy.com',
       contentHtml: '<p>Post 1</p>',
+      summary: 'summary1',
       contentMarkdown: 'Post 1',
       path: '2022/09/18/post-1',
       tags: 'tag-1,tag-2',
@@ -31,9 +31,9 @@ describe('DynamoDB Table', () => {
 
     await Posts.put({
       blog: 'blog1',
-      id: 'post-2',
       title: 'Post 2',
       path: '2022/09/18/post-2',
+      summary: 'summary2',
       authorEmail: 'dummy@dummy.com',
       contentHtml: '<p>Post 2</p>',
       contentMarkdown: 'Post 2',
@@ -64,13 +64,13 @@ describe('DynamoDB Table', () => {
 
     await TagMappings.put({
       blog: 'blog1',
-      postId: 'post-1',
+      postPath: '2022/09/18/post-1',
       tagId: 'tag-1',
     });
 
     await TagMappings.put({
       blog: 'blog1',
-      postId: 'post-1',
+      postPath: '2022/09/18/post-2',
       tagId: 'tag-2',
     });
 
@@ -82,18 +82,13 @@ describe('DynamoDB Table', () => {
     if (!postQueryResult.Items) {
       throw new Error('No items found');
     }
-    for (const item of postQueryResult.Items as Post[]) {
-      const tagsResult = await TagMappings.query(
-        TagMappingPK({ blog: 'blog1', postId: item.id }),
-        {
-          limit: 100,
-        }
-      );
-      console.log(
-        'tags: ',
-        tagsResult.Items?.map((i) => i.tagId).join(', ') || 'none'
-      );
-    }
+    const tagsResult = await TagMappings.query(
+      TagMappingPK({ blog: 'blog1', tagId: 'tag-1' }),
+      {
+        limit: 100,
+      }
+    );
+    expect(tagsResult.Count).toEqual(1);
   });
 
   afterAll(async () => {

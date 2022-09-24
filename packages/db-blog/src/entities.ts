@@ -25,6 +25,7 @@ export type Post = {
   coverImage?: string;
   datePublished: string;
   contentHtml: string;
+  summary: string;
   authorEmail: string;
   tags?: string;
   contentMarkdown: string;
@@ -42,6 +43,7 @@ export const PostEntity = {
     },
     blog: { type: 'string', required: 'always' },
     path: { type: 'string', required: 'always' },
+    summary: { type: 'string', required: 'always' },
     authorEmail: { type: 'string', required: 'always' },
     title: { type: 'string', required: 'always' },
     coverImage: { type: 'string' },
@@ -71,10 +73,8 @@ export const TagEntity = {
   },
 } as const;
 
-export const TagMappingPK = (data: {
-  blog: string;
-  postPath: string;
-}): string => `${data.blog}#${data.postPath}`;
+export const TagMappingPK = (data: { blog: string; tagId: string }): string =>
+  `${data.blog}#${data.tagId}`;
 
 export const TagMappingEntity = {
   name: 'TagMapping',
@@ -84,16 +84,16 @@ export const TagMappingEntity = {
       hidden: true,
       default: TagMappingPK,
     },
-    tagId: { sortKey: true },
+    tagId: { type: 'string', required: 'always' },
     blog: { type: 'string', required: 'always' },
-    postPath: { type: 'string', required: 'always' },
+    postPath: { sortKey: true },
   },
 } as const;
 
 export const CategoryMappingPK = (data: {
   blog: string;
-  postId: string;
-}): string => `${data.blog}#${data.postId}`;
+  categoryId: string;
+}): string => `${data.blog}#${data.categoryId}`;
 
 export const CategoryMappingEntity = {
   name: 'Category',
@@ -103,8 +103,8 @@ export const CategoryMappingEntity = {
       hidden: true,
       default: CategoryMappingPK,
     },
-    categoryId: { sortKey: true },
+    categoryId: { type: 'string', required: 'always' },
     blog: { type: 'string', required: 'always' },
-    postPath: { type: 'string' },
+    postPath: { sortKey: true },
   },
 } as const;
