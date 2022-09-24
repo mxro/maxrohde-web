@@ -85,8 +85,8 @@ const Footer = (): JSX.Element => {
                 Code of Joy
               </h6>
               <p>
-                Coding tutorials to help lift projects off the ground and
-                contemplations on leadership and philosophy.
+                Coding tutorials and contemplations on leadership and
+                philosophy.
               </p>
             </div>
 
