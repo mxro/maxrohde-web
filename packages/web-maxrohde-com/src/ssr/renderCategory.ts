@@ -7,12 +7,12 @@ import {
 import { renderPage } from '../render';
 
 import {
+  CategoryMappingEntity,
+  CategoryMappingPK,
   connect,
   connectTable,
   deepCopy,
   Entity,
-  TagMappingEntity,
-  TagMappingPK,
 } from 'db-blog';
 
 import AWS from 'aws-sdk';
@@ -20,7 +20,7 @@ import TagPage, { TagProps } from '../components/TagPage';
 
 import { loadPosts } from '../lib/posts';
 
-export async function renderTag({
+export async function renderCategory({
   event,
 }: {
   event: APIGatewayProxyEventV2;
@@ -29,20 +29,24 @@ export async function renderTag({
   AWS.config.logger = console;
   const table = await connectTable();
 
-  const tagId = event.pathParameters?.id;
+  const categoryId = event.pathParameters?.id;
 
-  if (!tagId) {
+  if (!categoryId) {
     throw new Error('`id` path parameter not defined');
   }
 
-  const TagMappings = new Entity({ ...deepCopy(TagMappingEntity), table });
-  const tagMappingResult = await TagMappings.query(
-    TagMappingPK({ blog: 'maxrohde.com', tagId }),
+  const CategoryMappings = new Entity({
+    ...deepCopy(CategoryMappingEntity),
+    table,
+  });
+
+  const tagMappingResult = await CategoryMappings.query(
+    CategoryMappingPK({ blog: 'maxrohde.com', categoryId }),
     {
       limit: 10,
       startKey: event.queryStringParameters?.nextToken
         ? {
-            pk: TagMappingPK({ blog: 'maxrohde.com', tagId }),
+            pk: CategoryMappingPK({ blog: 'maxrohde.com', categoryId }),
             sk: event.queryStringParameters.nextToken,
           }
         : undefined,
@@ -64,9 +68,9 @@ export async function renderTag({
 
   return renderPage<TagProps>({
     component: TagPage,
-    appendToHead: `<title>${tagId} - Code of Joy</title>`,
+    appendToHead: `<title>${categoryId} - Code of Joy</title>`,
     properties: {
-      id: tagId,
+      id: categoryId,
       nextToken,
       posts,
     },
