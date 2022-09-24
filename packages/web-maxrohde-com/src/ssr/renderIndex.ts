@@ -33,7 +33,9 @@ export async function renderIndex({
   if (!postQueryResult.Items) {
     return renderPage<ErrorPageProps>({
       component: ErrorPage,
-      appendToHead: '<title>Could not load posts</title>',
+      appendToHead: `
+      <title>Could not load posts</title>
+      `,
       properties: {
         message: 'Could not load posts from database.',
       },
@@ -43,7 +45,15 @@ export async function renderIndex({
   }
   return renderPage<IndexProps>({
     component: IndexPage,
-    appendToHead: '<title>Max Rohde&#39;s Blog - Code of Joy</title>',
+    appendToHead: `
+    
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Max Rohde&#39;s Blog - Code of Joy</title>
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Max Rohde's Blog - Code of Joy" />
+      <meta property="og:description" content="Code and Contemplations by Max Rohde 🤗" />
+    `,
     properties: {
       lastTimestamp: postQueryResult.LastEvaluatedKey?.sk,
       posts: postQueryResult.Items.map((post) => {

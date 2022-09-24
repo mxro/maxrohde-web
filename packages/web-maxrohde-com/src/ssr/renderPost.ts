@@ -45,11 +45,35 @@ export async function renderPost({
       event: event,
     });
   }
+  const post = postQueryResult.Items[0];
   return renderPage<PostProps>({
     component: PostPage,
-    appendToHead: `<title>${postQueryResult.Items[0].title} - Code of Joy</title>`,
+    appendToHead: `
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>${post.title} - Code of Joy</title>
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="${post.title}" />
+      <meta property="article:published_time" content="${post.datePublished}" />
+      <meta property="article:modified_time" content="${post.modified}" />
+      <meta property="og:site_name" content="Max Rohde's Blog - Code of Joy" />
+      ${
+        post.coverImage
+          ? `<meta property="og:image" content="https://maxrohde.com${post.coverImage}" />`
+          : ''
+      }
+      <meta name="twitter:creator" content="@mxro" />
+      <meta name="twitter:site" content="@mxro" />
+      <meta name="twitter:text:title" content="${post.title}" />
+      ${
+        post.coverImage
+          ? `<meta name="twitter:image" content="https://maxrohde.com${post.coverImage}" />`
+          : ''
+      }
+      <meta name="twitter:card" content="summary_large_image" />
+    `,
     properties: {
-      post: postQueryResult.Items[0],
+      post,
       exists: true,
     },
     entryPoint: __filename,
