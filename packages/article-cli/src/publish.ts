@@ -74,8 +74,10 @@ export const publish = async (args: PublishArgs): Promise<void> => {
         path: result.path,
         contentMarkdown: post.markdown,
         authorEmail: 'max@temp.com',
-        tags: post.metadata.tags.join(','),
-        coverImage: fixCoverImageLink(post.metadata.coverImage),
+        tags: post.metadata.tags ? post.metadata.tags.join(',') : [],
+        coverImage: post.metadata.coverImage
+          ? fixCoverImageLink(post.metadata.coverImage)
+          : undefined,
         datePublished: new Date(post.metadata.date).toISOString(),
       });
     })
@@ -89,6 +91,9 @@ export const publish = async (args: PublishArgs): Promise<void> => {
   await Promise.all(
     results.map(async (result) => {
       const post = result.post;
+      if (!post.metadata.tags) {
+        return Promise.all([]);
+      }
       return Promise.all(
         post.metadata.tags.map((tag: string) => {
           return TagMappings.put({

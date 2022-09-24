@@ -17,6 +17,7 @@ import {
   connect,
   getTableName,
   TagPK,
+  Post,
 } from 'db-blog';
 
 import TagPage, { TagProps } from '../components/TagPage';
@@ -34,12 +35,6 @@ export async function renderTag({
   AWS.config.logger = console;
   const table = await connectTable();
 
-  // await connectTable({
-  //   documentClient: new DynamoDB.DocumentClient({
-  //     service: dynamodb,
-  //     region: 'eu-central-1',
-  //   }),
-  // });
   const tagId = event.pathParameters?.id;
 
   if (!tagId) {
@@ -48,8 +43,18 @@ export async function renderTag({
 
   const TagMappings = new Entity({ ...deepCopy(TagMappingEntity), table });
   const tagMappingResult = await TagMappings.query(
-    TagMappingPK({ blog: 'maxrohde.com', tagId })
+    TagMappingPK({ blog: 'maxrohde.com', tagId }),
+    {
+      limit: 10,
+      startKey: event.queryStringParameters?.nextToken
+        ? {
+            pk: TagMappingPK({ blog: 'maxrohde.com', tagId }),
+            sk: event.queryStringParameters.nextToken,
+          }
+        : undefined,
+    }
   );
+  const nextToken = tagMappingResult.LastEvaluatedKey?.sk;
 
   const postIds = tagMappingResult.Items?.map((item) => {
     return item.postPath;
@@ -64,7 +69,7 @@ export async function renderTag({
        WHERE pk = '${PostPK({ blog: 'maxrohde.com' })}'
          AND path IN [${postIds.map((el) => `'${el}'`).join(',')}]`,
       ReturnConsumedCapacity: 'INDEXES',
-      Limit: 10,
+      Limit: 50,
     })
     .promise();
 
@@ -117,8 +122,10 @@ export async function renderTag({
     appendToHead: `<title>${tagId} - Code of Joy</title>`,
     properties: {
       id: tagId,
+      nextToken,
       posts: posts.map((post) => {
         const parsedPost = DynamoDB.Converter.unmarshall(post);
+        parsedPost.datePublished = parsedPost.sk;
         return parsedPost;
       }) as any,
     },

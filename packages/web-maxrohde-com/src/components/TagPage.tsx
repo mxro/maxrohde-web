@@ -7,6 +7,7 @@ import { BlogListItemProps } from './BlogListItem';
 export interface TagProps {
   id: string;
   posts: BlogListItemProps[];
+  nextToken?: string;
 }
 
 const TagPage = (props: TagProps): JSX.Element => {
@@ -19,6 +20,9 @@ const TagPage = (props: TagProps): JSX.Element => {
         </h1>
         <div className="pb-24">
           <BlogList items={props.posts}></BlogList>
+          {props.nextToken && (
+            <a href={`?nextToken=${props.nextToken}`}>Load more →</a>
+          )}
         </div>
       </div>
       <Footer></Footer>

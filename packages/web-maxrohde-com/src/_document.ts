@@ -14,6 +14,10 @@ const renderDocument = async (
 <html>
   <head>
     ${props.injectIntoHead}
+    ${
+      !process.env.AWS_LAMBDA_FUNCTION_NAME &&
+      '<script src="https://cdn.tailwindcss.com?plugins=typography"></script>'
+    }
     ${`<link rel="stylesheet" type="text/css" href="${tailwindPath}"  />`}
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">

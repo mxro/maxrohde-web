@@ -1,4 +1,5 @@
 import React from 'react';
+import TagList from './TagList';
 
 export interface BlogListItemProps {
   title: string;
@@ -8,21 +9,6 @@ export interface BlogListItemProps {
   coverImage?: string;
   summary: string;
 }
-
-interface TagItemProps {
-  id: string;
-}
-
-const TagItem = (props: TagItemProps): JSX.Element => {
-  return (
-    <a
-      className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-      href={`/tags/${props.id}`}
-    >
-      {props.id}
-    </a>
-  );
-};
 
 /**
  * based on https://tailwind-nextjs-starter-blog.vercel.app/
@@ -55,12 +41,7 @@ const BlogListItem = (props: BlogListItemProps): JSX.Element => {
                   </dd>
                 </span>
               </h2>
-              <div className="flex flex-wrap">
-                {props.tags &&
-                  props.tags
-                    .split(',')
-                    .map((tag) => <TagItem key={tag} id={tag}></TagItem>)}
-              </div>
+              {props.tags && <TagList tags={props.tags?.split(',')}></TagList>}
             </div>
             <div className="prose max-w-none text-gray-500 dark:text-gray-400">
               {props.summary}
@@ -69,8 +50,8 @@ const BlogListItem = (props: BlogListItemProps): JSX.Element => {
           <div className="text-base font-medium leading-6">
             <a
               className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-              aria-label='Read "New features in v1"'
-              href="/blog/new-features-in-v1"
+              aria-label="Read more"
+              href={`/${props.path}`}
             >
               Read more →
             </a>

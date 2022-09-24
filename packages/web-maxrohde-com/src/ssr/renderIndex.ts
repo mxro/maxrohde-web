@@ -22,6 +22,12 @@ export async function renderIndex({
   const postQueryResult = await Posts.query(PostPK({ blog: 'maxrohde.com' }), {
     reverse: true,
     limit: 10,
+    startKey: event.queryStringParameters?.loadFrom
+      ? {
+          sk: event.queryStringParameters.loadFrom,
+          pk: 'maxrohde.com#Post',
+        }
+      : undefined,
   });
 
   if (!postQueryResult.Items) {
@@ -39,6 +45,7 @@ export async function renderIndex({
     component: IndexPage,
     appendToHead: '<title>Max Rohde&#39;s Blog - Code of Joy</title>',
     properties: {
+      lastTimestamp: postQueryResult.LastEvaluatedKey?.sk,
       posts: postQueryResult.Items.map((post) => {
         return post;
       }),

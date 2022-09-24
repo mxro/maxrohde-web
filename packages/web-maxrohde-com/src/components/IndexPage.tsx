@@ -7,6 +7,7 @@ import { BlogListItemProps } from './BlogListItem';
 
 export interface IndexProps {
   posts: BlogListItemProps[];
+  lastTimestamp?: string;
 }
 
 const Index = (props: IndexProps): JSX.Element => {
@@ -17,6 +18,9 @@ const Index = (props: IndexProps): JSX.Element => {
         <h1 className="text-3xl font-extrabold pt-24 pb-12">Latest Posts</h1>
         <div className="pb-24">
           <BlogList items={props.posts}></BlogList>
+          {props.lastTimestamp && (
+            <a href={`?loadFrom=${props.lastTimestamp}`}>Load more →</a>
+          )}
         </div>
       </div>
       <Footer></Footer>
