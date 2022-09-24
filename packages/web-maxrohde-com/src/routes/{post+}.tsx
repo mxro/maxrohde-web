@@ -11,14 +11,7 @@ type SSRHandler = Handler<APIGatewayProxyEventV2, APIGatewayProxyResultV2>;
 import { hydrate } from '../render';
 import * as renderPost from '../ssr/renderPost';
 
-import type { Post as PostType } from 'db-blog';
-
 import PostPage from '../components/PostPage';
-
-export interface PostProps {
-  post?: PostType;
-  exists: boolean;
-}
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const handler: SSRHandler = async (event, context) => {

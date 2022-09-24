@@ -1,8 +1,13 @@
 import React from 'react';
-import { PostProps } from '../routes/{post+}';
 import Footer from './Footer';
 import Header from './Header';
 import TagList from './TagList';
+
+import type { Post as PostType } from 'db-blog';
+export interface PostProps {
+  post?: PostType;
+  exists: boolean;
+}
 
 const PostPage = (props: PostProps): JSX.Element => {
   if (!props.post) {
@@ -22,7 +27,20 @@ const PostPage = (props: PostProps): JSX.Element => {
           </article>
           {props.post.tags && (
             <div className="pt-8">
-              <TagList tags={props.post.tags?.split(',')}></TagList>
+              <span className="text-sm inline-block w-28">Tags: </span>
+              <TagList
+                baseLink="/tags/"
+                tags={props.post.tags?.split(',')}
+              ></TagList>
+            </div>
+          )}
+          {props.post.categories && (
+            <div className="pt-2">
+              <span className="text-sm inline-block w-28">Categories: </span>
+              <TagList
+                baseLink="/categories/"
+                tags={props.post.categories?.split(',')}
+              ></TagList>
             </div>
           )}
         </div>

@@ -17,6 +17,10 @@ import { publish } from './publish';
     .description('Publishes an article')
     .argument('<filename>', 'The filename of the article to publish')
     .option('-s, --dry', 'Dry run - do not publish')
+    .option(
+      '-c, --categories <categories>',
+      'Comma separated list of categories'
+    )
     .requiredOption('-e, --env <env>', 'Environment to use')
     .action(async (pattern, options) => {
       const dry = options.dry || false;
@@ -27,7 +31,15 @@ import { publish } from './publish';
         deploymentName: env,
       });
 
-      await publish({ fileNamePattern, dry, table });
+      const categories = options.categories
+        ? options.categories.split(',')
+        : undefined;
+      await publish({
+        fileNamePattern,
+        dry,
+        table,
+        categories,
+      });
     });
 
   program.parse();

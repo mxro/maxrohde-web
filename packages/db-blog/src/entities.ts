@@ -28,6 +28,7 @@ export type Post = {
   summary: string;
   authorEmail: string;
   tags?: string;
+  categories?: string;
   contentMarkdown: string;
 };
 
@@ -48,6 +49,7 @@ export const PostEntity = {
     title: { type: 'string', required: 'always' },
     coverImage: { type: 'string' },
     tags: { type: 'string' },
+    categories: { type: 'string' },
     contentHtml: { type: 'string', required: 'always' },
     contentMarkdown: { type: 'string', required: 'always' },
     datePublished: { type: 'string', sortKey: true },

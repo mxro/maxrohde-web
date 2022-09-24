@@ -2,7 +2,13 @@ import fg from 'fast-glob';
 import config from './config.json';
 import { parseMarkdown } from './markdown';
 
-import { PostEntity, TagMappingEntity, Table, deepCopy } from 'db-blog';
+import {
+  PostEntity,
+  TagMappingEntity,
+  Table,
+  deepCopy,
+  CategoryMappingEntity,
+} from 'db-blog';
 import { Entity } from 'dynamodb-toolbox';
 
 import { convert as htmlToText } from 'html-to-text';
@@ -12,6 +18,7 @@ export interface PublishArgs {
   fileNamePattern: string;
   dry: boolean;
   directoryToScan?: string;
+  categories?: string[];
   table: Table;
 }
 
@@ -43,6 +50,7 @@ export const publish = async (args: PublishArgs): Promise<void> => {
     })
   ).map((path) => `${contentDir}/${path}/index.md`);
 
+  console.log('Found articles');
   console.log(matches);
   const results = await Promise.all(
     matches.map(async (filename) => {
@@ -75,6 +83,9 @@ export const publish = async (args: PublishArgs): Promise<void> => {
         contentMarkdown: post.markdown,
         authorEmail: 'max@temp.com',
         tags: post.metadata.tags ? post.metadata.tags.join(',') : [],
+        categories: post.metadata.categories
+          ? post.metadata.categories.join(',')
+          : [],
         coverImage: post.metadata.coverImage
           ? fixCoverImageLink(post.metadata.coverImage)
           : undefined,
@@ -100,6 +111,36 @@ export const publish = async (args: PublishArgs): Promise<void> => {
             blog: 'maxrohde.com',
             postPath: result.path,
             tagId: tag,
+          });
+        })
+      );
+    })
+  );
+
+  const CategoryMappings = new Entity({
+    ...deepCopy(CategoryMappingEntity),
+    table: args.table,
+  } as const);
+
+  await Promise.all(
+    results.map(async (result) => {
+      const post = result.post;
+      const categories: string[] = [];
+      if (post.metadata.categories) {
+        categories.push(post.metadata.categories);
+      }
+      if (args.categories) {
+        categories.push(...args.categories);
+      }
+      if (categories.length === 0) {
+        return Promise.all([]);
+      }
+      return Promise.all(
+        categories.map((category: string) => {
+          return CategoryMappings.put({
+            blog: 'maxrohde.com',
+            postPath: result.path,
+            categoryId: category,
           });
         })
       );
