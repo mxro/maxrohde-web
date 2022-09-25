@@ -9,7 +9,8 @@ export const handler: SSRHandler = async (
 ) => {
   return {
     body: `Sitemap: https://maxrohde.com/sitemap.xml
-User-agent: *`,
+User-agent: *
+${process.env.GOLDSTACK_DEPLOYMENT !== 'prod' ? 'Disallow: /' : ''}`,
     headers: {
       'Content-Type': 'text/plain',
     },

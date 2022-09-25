@@ -9,13 +9,13 @@
     "names": [
       "maxrohde--__index.map"
     ],
-    "generatedName": "-__index.0b7e3f84062293e5c2a34575251b0619.map.json"
+    "generatedName": "-__index.eaf11706e71a1a37db8d1550359ab82f.map.json"
   },
   {
     "names": [
       "maxrohde--__index-bundle.js"
     ],
-    "generatedName": "-__index-bundle.5de6ea12976ee98c531dc64cf22cb209.js"
+    "generatedName": "-__index-bundle.4441dbb99f616fc14b99b02b35c1e322.js"
   },
   {
     "names": [
@@ -33,48 +33,60 @@
     "names": [
       "maxrohde-tags-_id_.map"
     ],
-    "generatedName": "tags-_id_.4d778d6b23e85f9be051b58e656f09d3.map.json"
+    "generatedName": "tags-_id_.9b3fc60b800e0ba7ae1063531ac6557b.map.json"
   },
   {
     "names": [
       "maxrohde-tags-_id_-bundle.js"
     ],
-    "generatedName": "tags-_id_-bundle.da60a3f80261cde4fdd76599d0dee350.js"
+    "generatedName": "tags-_id_-bundle.3cd5b8364f1f14fd2850d77b1b4b43b2.js"
   },
   {
     "names": [
       "maxrohde-_post__.map"
     ],
-    "generatedName": "_post__.f22b1edd62f4c288a932eab15bd3c68a.map.json"
+    "generatedName": "_post__.45f55bccb62dc853858887c4277e5de9.map.json"
   },
   {
     "names": [
       "maxrohde-_post__-bundle.js"
     ],
-    "generatedName": "_post__-bundle.a5cbad3127fd44f947569eec577c52af.js"
+    "generatedName": "_post__-bundle.a8e45538a3b2c894efaa7a16668c8c40.js"
   },
   {
     "names": [
       "maxrohde-robots_txt.map"
     ],
-    "generatedName": "robots_txt.5d0e92e8d5af31b457d66982bec3c2f3.map.json"
+    "generatedName": "robots_txt.b48263e156f26e3aa879d9e5430e9353.map.json"
   },
   {
     "names": [
       "maxrohde-robots_txt-bundle.js"
     ],
-    "generatedName": "robots_txt-bundle.a73a81914cca11f080edecc742c64edc.js"
+    "generatedName": "robots_txt-bundle.f08dede08a330bb2370177daddaf2cd4.js"
   },
   {
     "names": [
       "maxrohde-sitemap_xml.map"
     ],
-    "generatedName": "sitemap_xml.0c94c765ad9ebc76e1f5fb17bda7fddf.map.json"
+    "generatedName": "sitemap_xml.6b7ded2da0f1b3f82de0102775bab2c1.map.json"
   },
   {
     "names": [
       "maxrohde-sitemap_xml-bundle.js"
     ],
-    "generatedName": "sitemap_xml-bundle.271c01e7a89f9925bcde5dbdf5cd44bb.js"
+    "generatedName": "sitemap_xml-bundle.e2b6fb079cbf0e5bdb25bf48f86f0ce2.js"
+  },
+  {
+    "names": [
+      "maxrohde-categories-_id_.map"
+    ],
+    "generatedName": "categories-_id_.c7612a728f4ee899b11def1445c12b68.map.json"
+  },
+  {
+    "names": [
+      "maxrohde-categories-_id_-bundle.js"
+    ],
+    "generatedName": "categories-_id_-bundle.de2e38ee14f909f35ee09d1acad5fd4b.js"
   }
 ]

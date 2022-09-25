@@ -17,6 +17,10 @@
             "function_name": "maxrohde-about",
             "route": "ANY /about"
           },
+          "ANY /categories/{id}": {
+            "function_name": "maxrohde-categories-_id_",
+            "route": "ANY /categories/{id}"
+          },
           "ANY /robots.txt": {
             "function_name": "maxrohde-robots_txt",
             "route": "ANY /robots.txt"
