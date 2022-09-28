@@ -10,6 +10,8 @@ export interface PostProps {
   exists: boolean;
 }
 
+import styles from './PostPage.module.css';
+
 const PostPage = (props: PostProps): JSX.Element => {
   if (!props.post) {
     return <>Post does not exist.</>;
@@ -20,7 +22,9 @@ const PostPage = (props: PostProps): JSX.Element => {
 
       <div className="relative bg-white pt-16 pb-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <article className="prose lg:prose-xl border-b border-gray-300">
+          <article
+            className={`${styles['article']} prose lg:prose-xl border-b border-gray-300`}
+          >
             <h1>{props.post.title}</h1>
             <div
               dangerouslySetInnerHTML={{ __html: props.post.contentHtml }}
