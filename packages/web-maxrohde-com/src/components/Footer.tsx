@@ -94,9 +94,9 @@ const Footer = (): JSX.Element => {
               <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
                 Contact
               </h6>
-              <p className="flex items-center justify-center md:justify-start mb-4">
+              <p className="items-center justify-center md:justify-start mb-4">
                 {'Connect and reach out on '}
-                <a href="https://www.linkedin.com/in/maxrohde/"> LinkedIn </a>
+                <a href="https://www.linkedin.com/in/maxrohde/"> LinkedIn </a>.
               </p>
             </div>
           </div>

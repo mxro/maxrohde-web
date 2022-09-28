@@ -16,7 +16,7 @@ import {
 } from 'db-blog';
 
 import AWS from 'aws-sdk';
-import TagPage, { TagProps } from '../components/TagPage';
+import TagPage, { TagProps } from '../components/pages/TagPage';
 
 import { loadPosts } from '../lib/posts';
 

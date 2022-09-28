@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import BlogList from './BlogList';
-import { BlogListItemProps } from './BlogListItem';
+import Header from '../Header';
+import Footer from '../Footer';
+import BlogList from '../BlogList';
+import { BlogListItemProps } from '../BlogListItem';
 
 export interface TagProps {
   id: string;

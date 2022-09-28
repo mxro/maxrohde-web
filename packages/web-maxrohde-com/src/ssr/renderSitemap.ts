@@ -4,7 +4,6 @@ import {
   APIGatewayProxyEventV2,
   APIGatewayProxyResultV2,
 } from 'aws-lambda/trigger/api-gateway-proxy';
-import { renderPage } from '../render';
 
 import {
   connectTable,
@@ -14,9 +13,6 @@ import {
   PostPK,
   Post,
 } from 'db-blog';
-
-import IndexPage, { IndexProps } from '../components/IndexPage';
-import ErrorPage, { ErrorPageProps } from '../components/ErrorPage';
 
 export async function renderSitemap({
   event,

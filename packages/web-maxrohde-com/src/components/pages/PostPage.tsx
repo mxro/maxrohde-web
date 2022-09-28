@@ -1,9 +1,10 @@
 import React from 'react';
-import Footer from './Footer';
-import Header from './Header';
-import TagList from './TagList';
+import Footer from '../Footer';
+import Header from '../Header';
+import TagList from '../TagList';
 
 import type { Post as PostType } from 'db-blog';
+
 export interface PostProps {
   post?: PostType;
   exists: boolean;

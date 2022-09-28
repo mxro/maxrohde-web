@@ -4,7 +4,7 @@ import { SSRHandler } from '@goldstack/template-ssr';
 import { renderPage, hydrate } from './../../render';
 import { APIGatewayProxyEventV2, APIGatewayProxyResultV2 } from 'aws-lambda';
 
-import TagPage from './../../components/TagPage';
+import TagPage from './../../components/pages/TagPage';
 import * as renderTag from '../../ssr/renderTag';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

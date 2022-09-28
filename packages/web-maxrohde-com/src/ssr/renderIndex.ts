@@ -8,8 +8,8 @@ import { renderPage } from '../render';
 
 import { connectTable, Entity, deepCopy, PostEntity, PostPK } from 'db-blog';
 
-import IndexPage, { IndexProps } from '../components/IndexPage';
-import ErrorPage, { ErrorPageProps } from '../components/ErrorPage';
+import IndexPage, { IndexProps } from '../components/pages/IndexPage';
+import ErrorPage, { ErrorPageProps } from '../components/pages/ErrorPage';
 
 export async function renderIndex({
   event,
