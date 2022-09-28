@@ -5,19 +5,12 @@ import {
   APIGatewayProxyResultV2,
 } from 'aws-lambda/trigger/api-gateway-proxy';
 import { renderPage } from '../render';
-import { PostProps } from '../routes/{post+}';
+import { PostProps } from './../components/pages/PostPage';
 
-import {
-  connectTable,
-  Entity,
-  deepCopy,
-  PostEntity,
-  PostPK,
-  connect,
-} from 'db-blog';
+import { connectTable, Entity, deepCopy, PostEntity, PostPK } from 'db-blog';
 
-import PostPage from '../components/PostPage';
-import ErrorPage, { ErrorPageProps } from '../components/ErrorPage';
+import PostPage from '../components/pages/PostPage';
+import ErrorPage, { ErrorPageProps } from '../components/pages/ErrorPage';
 
 export async function renderPost({
   event,

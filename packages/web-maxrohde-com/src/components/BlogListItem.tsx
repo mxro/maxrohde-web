@@ -41,7 +41,12 @@ const BlogListItem = (props: BlogListItemProps): JSX.Element => {
                   </dd>
                 </span>
               </h2>
-              {props.tags && <TagList tags={props.tags?.split(',')}></TagList>}
+              {props.tags && (
+                <TagList
+                  baseLink="/tags/"
+                  tags={props.tags?.split(',')}
+                ></TagList>
+              )}
             </div>
             <div className="prose max-w-none text-gray-500 dark:text-gray-400">
               {props.summary}
