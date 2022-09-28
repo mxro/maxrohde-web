@@ -64,6 +64,11 @@ export async function renderPost({
           : ''
       }
       <meta name="twitter:card" content="summary_large_image" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-twilight.min.css" rel="stylesheet" />
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-javascript.min.js" />
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-bash.min.js" />
     `,
     properties: {
       post,
