@@ -34,15 +34,28 @@ The data model of onedb is based on two components: nodes and global connections
 
 **Nodes**, in essence, are values expressed as basic data types (text, numbers, dates, ...) or user-defined objects such as the following:
 
-\[sourcecode language="java"\]String node1 = "foo"; Integer node2 = 42; Object node3 = new MyObject(); Object node4 = One.newNode().asPublicReadToken(); Object node5 = One.newNode("foo").at("http://u1.linnk.it/efffe/foo"); \[/sourcecode\]
+```java
+String node1 = "foo";
+Integer node2 = 42;
+Object node3 = new MyObject();
+Object node4 = One.newNode().asPublicReadToken();
+Object node5 = One.newNode("foo").at("http://u1.linnk.it/efffe/foo");
+```
 
 Every node in onedb has one or more physical locations and one globally unique virtual address expressed as [URI](http://www.ietf.org/rfc/rfc2396.txt "RFC 2396 URI") such as the following:
 
-\[sourcecode language="text"\]https://u1.linnk.it/1owvl3/foo (value "foo") https://u1.linnk.it/nkzzku/42 (value 42) \[/sourcecode\]
+```text
+https://u1.linnk.it/1owvl3/foo (value "foo")
+https://u1.linnk.it/nkzzku/42 (value 42)
+```
 
 The virtual address of every node is resolvable the spirit of Linked Data. In particular, a node can have multiple resolvable representations, for instance:
 
-\[sourcecode language="text"\]XML : https://u1.linnk.it/1owvl3/foo.value.xml HTML : https://u1.linnk.it/1owvl3/foo.value.html JSON : https://u1.linnk.it/1owvl3/foo.value.json \[/sourcecode\]
+```text
+XML  : https://u1.linnk.it/1owvl3/foo.value.xml
+HTML : https://u1.linnk.it/1owvl3/foo.value.html
+JSON : https://u1.linnk.it/1owvl3/foo.value.json
+```
 
 Although every node has got a globally unique virtual address, there are two different ways in which these addresses are assigned: internally and externally.
 
@@ -50,19 +63,33 @@ Although every node has got a globally unique virtual address, there are two dif
 
 Nodes have an internal address, if the address of the node is defined when the node is created. For instance, the following statement creates a node with an internal address:
 
-\[sourcecode language="java"\]OneNode homepage = One.newNode("homepage") .atAddress("https://u1.linnk.it/ud06vg/home");\[/sourcecode\]
+```java
+OneNode homepage = 
+        One.newNode("homepage")
+           .atAddress("https://u1.linnk.it/ud06vg/home");
+```
 
 Although using the `newNode` operation it is possible to assign any URI to a newly created node, there is only a limit range of URIs, which will be accepted by the onedb cloud. In particular, it is not allowed to define nodes with URIs, which lie outside the URI range of a known realm.
 
-\[sourcecode language="text"\]Realm : https://u1.linnk.it/jxb247/realm Allowed : https://u1.linnk.it/jxb247/realm/mynode Forbidden: https://u1.linnk.it/mynode \[/sourcecode\]
+```text
+Realm    : https://u1.linnk.it/jxb247/realm
+Allowed  : https://u1.linnk.it/jxb247/realm/mynode
+Forbidden: https://u1.linnk.it/mynode
+```
 
 To aid in defining valid URIs for nodes, the append statement allows to define an `.atAddress(..)` parameter. This parameter will append the specified value with the specified URI relative to the node it is appended to. For instance, the following statement ...
 
-\[sourcecode language="java"\]OneNode news = One.append("news").to(realmRoot).atAddress("./news").in(client); \[/sourcecode\]
+```java
+OneNode news =
+  One.append("news").to(realmRoot).atAddress("./news").in(client);
+```
 
 ... will create a node with the value `"news"` and an internal address relative to the realm root such as:
 
-\[sourcecode language="text"\]Realm root: https://u1.linnk.it/ud06vg/home News node : https://u1.linnk.it/ud06vg/home/news \[/sourcecode\]
+```text
+Realm root: https://u1.linnk.it/ud06vg/home
+News node : https://u1.linnk.it/ud06vg/home/news 
+```
 
 It is generally a good practice to define nodes with internal addresses, since they allow the onedb engine to identify these nodes with greater speed and accuracy.
 
@@ -72,11 +99,16 @@ One major disadvantage of nodes with an internal address is that they must imple
 
 For these nodes, consequently, addresses need to be generated and managed externally when a node is added to the onedb cloud. For instance, appending an object such as the following ...
 
-\[sourcecode language="java"\]One.append("news").to(realmRoot).in(client); \[/sourcecode\]
+```java
+One.append("news").to(realmRoot).in(client);
+```
 
 .. will define a new node "news" in the onedb cloud with an address such as the following:
 
-\[sourcecode language="text"\]Realm root: http://u1.linnk.it/eff32/realm News node : http://u1.linnk.it/eff32/realm/news1 \[/sourcecode\]
+```text
+Realm root: http://u1.linnk.it/eff32/realm
+News node : http://u1.linnk.it/eff32/realm/news1  
+```
 
 ### Global Connections
 
@@ -84,11 +116,17 @@ For these nodes, consequently, addresses need to be generated and managed extern
 
 There are two different types of connections: direct connections and indirect connections. A direct connection is a connection between nodes with virtual URI addresses, which indicate the destination node lying within the folder of the source node. See the following example where node 1 is the direct parent of node 2.
 
-\[sourcecode language="text"\]Node 1: https://u1.linnk.it/1owvl3/foo (parent) Node 2: https://u1.linnk.it/1owvl3/foo/bar1 (direct child) \[/sourcecode\]
+```text
+Node 1: https://u1.linnk.it/1owvl3/foo (parent)
+Node 2: https://u1.linnk.it/1owvl3/foo/bar1 (direct child) 
+```
 
 Indirect connections are all connections, which are not direct connections. In the following example, node 1 is no direct parent of node 2.
 
-\[sourcecode language="text"\]Node 1: https://u1.linnk.it/wefewf/foo Node 2: https://u1.linnk.it/8nogl3/bar/42 \[/sourcecode\]
+```text
+Node 1: https://u1.linnk.it/wefewf/foo 
+Node 2: https://u1.linnk.it/8nogl3/bar/42 
+```
 
 All connections in onedb are uni-directional and unlabeled (connections do not have properties). Nodes also do not have properties or any meta-data associated to them. Nodes and connections make up the core of onedb’s data model. All other features (e.g. security, properties, etc.) are built upon this core data model.
 
@@ -98,7 +136,12 @@ Realms are a thin logic layer on top of nodes and connections which provide fine
 
 Realms can be protected with access tokens. These tokens define an authorization level as well as the secret required to be granted the defined authorization. onedb currently support the following authorization levels:
 
-\[sourcecode language="text"\]ReadWrite: Allows reading and writing values and adding, removing and querying connections. ReadOnly: Allows reading values and querying connections. WriteOnly: Allows writing values and adding connections. PublicRead: Allows anyone to read values and query connections. \[/sourcecode\]
+```text
+ReadWrite: Allows reading and writing values and adding, removing and querying connections.
+ReadOnly: Allows reading values and querying connections.
+WriteOnly: Allows writing values and adding connections.
+PublicRead: Allows anyone to read values and query connections.
+```
 
 All direct children of the realm root node inherit the authorizations of the realm root. However, these children can also define their own, additional authorization rules.
 

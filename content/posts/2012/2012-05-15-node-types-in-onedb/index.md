@@ -22,9 +22,13 @@ Nodes are [the central component of onedb's data model](http://maxrohde.com/2012
 
 However, only those objects are nodes, which have been appended and or loaded using the onedb API. For instance, in the following example `text1` is _not_ a node while `text2` is:
 
-\[sourcecode language="java"\] String text1="I am just another string"; String text2="I will be a node";
+```java
 
-One.append(text2).to(root).in(client); \[/sourcecode\]
+String text1="I am just another string";
+String text2="I will be a node";
+
+One.append(text2).to(root).in(client);
+```
 
 Every node managed by a onedb client has got an address and an identity as described in the following section.
 
@@ -36,7 +40,12 @@ Hence, every piece of information in onedb has a _unique identity_, which can be
 
 Examples for such resolvable addresses usually look as follows:
 
-\[sourcecode language="text"\] https://u1.linnk.it/4hxdr8/query/bob https://u1.linnk.it/zednuw/types/customer https://u1.linnk.it/4hxdr8/query/This\_is\_a\_1 \[/sourcecode\]
+```text
+
+https://u1.linnk.it/4hxdr8/query/bob
+https://u1.linnk.it/zednuw/types/customer
+https://u1.linnk.it/4hxdr8/query/This_is_a_1
+```
 
 ## 3\. References
 
@@ -46,35 +55,51 @@ onedb favors the usage of addresses 'wrapped' in reference objects over simply s
 
 Given an address in text form, it is very easy to create references...
 
-\[sourcecode language="java"\] OneTypedReference<?> reference1 = One.reference("https://u1.linnk.it/4hxdr8/query/bob"); OneTypedReference<?> reference2 = One.newNode("https://u1.linnk.it/4hxdr8/query/bob").asReference();
+```java
 
-// reference1.equals(reference2) == true \[/sourcecode\]
+OneTypedReference<?> reference1 = One.reference("https://u1.linnk.it/4hxdr8/query/bob");   
+OneTypedReference<?> reference2 = One.newNode("https://u1.linnk.it/4hxdr8/query/bob").asReference();
+
+// reference1.equals(reference2) == true
+```
 
 ... and to obtain the address, which is wrapped by a reference object:
 
-\[sourcecode language="java"\] String address1 = reference1.getId();
+```java
 
-// address1.equals("https://u1.linnk.it/4hxdr8/query/bob") == true \[/sourcecode\]
+String address1 = reference1.getId();
+
+// address1.equals("https://u1.linnk.it/4hxdr8/query/bob") == true
+```
 
 Moreover, for every object that has been added to a onedb client, a reference can be determined:
 
-\[sourcecode language="java"\] String text1="I will be a node";
+```java
+
+String text1="I will be a node";
 
 One.append(text1).to(lr.root()).in(client);
 
-OneTypedReference<Object> ref = One.reference((Object) text1).in(client); \[/sourcecode\]
+OneTypedReference<Object> ref 
+               = One.reference((Object) text1).in(client);
+```
 
 Note in the example above that the `text1` object has been cast to `Object` in the invocation of the `One.reference(..)` operation. This is necessary for the API to know that no address but a generic object is passed to the operation. For other types of objects (e.g. `Integer`) this explicit cast to `Object` is not necessary.
 
 References can also be used to obtain the _resolved object_ of a node. For instance, the resolved object of the node `text1` in the example above would be "I will be a node". The resolved object of a node given its reference can be obtained as follows:
 
-\[sourcecode language="java"\] Integer value1=42;
+```java
+
+Integer value1=42;
 
 One.append(value1).to(lr.root()).in(client);
 
-OneTypedReference<Integer> ref = One.reference(value1).in(client);
+OneTypedReference<Integer> ref 
+                = One.reference(value1).in(client);
 
-Integer value = One.dereference(ref).in(client); // value.equals(42) == true \[/sourcecode\]
+Integer value = One.dereference(ref).in(client);
+// value.equals(42) == true
+```
 
 ## 4\. Value Nodes
 
@@ -88,13 +113,24 @@ Value nodes are a special type of object within the `OneNode` category. They are
 
 In the following example, a value node `bob` is created and its two properties address and decorated object are accessed:
 
-\[sourcecode language="java"\] OneValue<String> bob = One.newNode("bob").at("https://u1.linnk.it/4hxdr8/query/bob"); bob.getId(); // == "https://u1.linnk.it/4hxdr8/query/bob" bob.getValue(); // == "bob" \[/sourcecode\]
+```java
+
+OneValue<String> bob = 
+        One.newNode("bob").at("https://u1.linnk.it/4hxdr8/query/bob");
+bob.getId(); // == "https://u1.linnk.it/4hxdr8/query/bob"
+bob.getValue(); // == "bob" 
+```
 
 Value nodes can turned into back and forth from reference to resolved object like any other object:
 
-\[sourcecode language="java"\] OneTypedReference<OneValue<String>> ref = One.reference(bob);
+```java
 
-OneValue<String> value = One.dereference(ref).in(client); value.getValue(); // == "bob" \[/sourcecode\]
+OneTypedReference<OneValue<String>> ref 
+                             = One.reference(bob);
+
+OneValue<String> value = One.dereference(ref).in(client);
+value.getValue(); // == "bob"
+```
 
 Note that the call to `One.reference(..)` for the value node is made without the addition `.in(client)` as has been done above for the `String` and `Integer` objects. The client does not need to be specified for determining the reference of any object, which by itself 'knows' its own address.
 
@@ -102,11 +138,18 @@ It is usually a good practice to wrap objects whenever possible into value nodes
 
 The easiest way to define value nodes is generally by defining the `.atAddress(...)` parameter when [appending a new object to an existing node](http://maxrohde.com/2012/05/06/onedb-tutorial/#append "onedb Tutorial Appending Nodes"). For instance, in the following example a new value node with the value `alice` is appended to the node `root` with the address `./alice` relative to the root node's address:
 
-\[sourcecode language="java"\] One.append("alice").to(root).atAddress("./alice").in(client); \[/sourcecode\]
+```java
+
+One.append("alice").to(root).atAddress("./alice").in(client);
+```
 
 Given the root node is defined at the address `http://u1.linnk.it/example/root`, this append statement would result in the creation of the following node arrangement:
 
-\[sourcecode language="text"\] One.value("root").at("http://u1.linnk.it/example/root") --> One.value("alice").at("http://u1.linnk.it/example/root/alice") \[/sourcecode\]
+```text
+
+One.value("root").at("http://u1.linnk.it/example/root")
+--> One.value("alice").at("http://u1.linnk.it/example/root/alice")
+```
 
 ## Conclusion
 

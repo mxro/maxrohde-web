@@ -19,21 +19,23 @@ The class [ManagementFactory](http://docs.oracle.com/javase/6/docs/api/java/lang
 
 This name, as it happens, contains the process id in the Sun/Oracle JVM implementation of this methods in a format such as.
 
-\[sourcecode language="java"\]
+```java
+
 
 System.out.println(ManagementFactory.getRuntimeMXBean().getName());
 
 // --> 742912@localhost
 
-\[/sourcecode\]
+```
 
 Through applying a simple String split, this thus allows to obtain the pid of the current process through the following expression:
 
-\[sourcecode language="java"\]
+```java
 
-ManagementFactory.getRuntimeMXBean().getName().split("@")\[0\]
 
-\[/sourcecode\]
+ManagementFactory.getRuntimeMXBean().getName().split("@")[0]
+
+```
 
 _Advantages:_
 
@@ -47,31 +49,38 @@ _Disadvantages:_
 
 At least on most UNIX based systems, it is relatively easy to write a [quick JNA wrapper to the C library](http://jna.java.net/javadoc/overview-summary.html#library-mapping).
 
-\[sourcecode language="java"\]
+```java
 
-// Alternative 1: interface-mapped class, dynamically load the C library public interface CLibrary extends Library { CLibrary INSTANCE = (CLibrary)Native.loadLibrary("c", CLibrary.class); }
 
-\[/sourcecode\]
+// Alternative 1: interface-mapped class, dynamically load the C library
+public interface CLibrary extends Library {
+ CLibrary INSTANCE = (CLibrary)Native.loadLibrary("c", CLibrary.class);
+}
+
+```
 
 You can then add a mapping to the getpid function:
 
-\[sourcecode language="java"\]
+```java
 
-public interface CLibrary extends Library { CLibrary INSTANCE = (CLibrary)Native.loadLibrary("c", CLibrary.class);
+
+public interface CLibrary extends Library {
+CLibrary INSTANCE = (CLibrary)Native.loadLibrary("c", CLibrary.class);
 
 int getpid ();
 
 }
 
-\[/sourcecode\]
+```
 
 And call this mapper as follows:
 
-\[sourcecode language="java"\]
+```java
+
 
 int mypid = CLibrary.INSTANCE.getpid();
 
-\[/sourcecode\]
+```
 
 _Advantages:_
 
@@ -88,29 +97,41 @@ If your JVM comes with the utility [Java Virtual Machine Process Status Tool](h
 
 Since there are a million ways to get starting a process from Java and reading its output wrong, I will use the utility [java-start-process](https://github.com/mxro/java-start-process) for this:
 
-\[sourcecode language="java"\]
+```java
 
-public static void getProcessId(final Class<?> mainClass, final Callback<String> callback) {
+
+public static void getProcessId(final Class<?> mainClass,
+ final Callback<String> callback) {
 
 Spawn.startProcess("jps -l", null, new ProcessListener() {
 
-@Override public void onProcessQuit(final int returnValue) {
+@Override
+ public void onProcessQuit(final int returnValue) {
 
 }
 
-@Override public void onOutputLine(final String line) { final String\[\] parts = line.split(" "); if (parts.length > 1 && parts\[1\].endsWith(mainClass.getName())) { callback.onDone(parts\[0\]); } }
+@Override
+ public void onOutputLine(final String line) {
+ final String[] parts = line.split(" ");
+ if (parts.length > 1 && parts[1].endsWith(mainClass.getName())) {
+ callback.onDone(parts[0]);
+ }
+ }
 
-@Override public void onErrorLine(final String line) {
+@Override
+ public void onErrorLine(final String line) {
 
 }
 
-@Override public void onError(final Throwable t) {
+@Override
+ public void onError(final Throwable t) {
 
-} });
+}
+ });
 
 }
 
-\[/sourcecode\]
+```
 
 _Advantages:_
 

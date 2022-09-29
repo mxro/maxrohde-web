@@ -25,21 +25,39 @@ vmstat -s -S M | egrep -ie 'memory|swap' | grep 'free memory'
 
 It is possible to run this shell script from Java. There are multiple ways to achieve this, [many of them troublesome](http://intekhabsadekin.wordpress.com/2009/03/05/java-runtimegetruntimeexec-will-and-will-not-work/) and I ALWAYS do it wrong. Therefore I have assembled my hard-learned best practices (and those of others I could find) in the project [java-start-process](https://github.com/mxro/java-start-process). Using this project, we can determine the free memory for a UNIX system using the following function:
 
-\[sourcecode language="java"\]
+```java
 
-public static int getFreeMemoryUnixInMb() { try {
 
-final String expr = Spawn .runCommand( new String\[\] { "/bin/bash", "-c", "vmstat -s -S M | egrep -ie 'memory|swap' | grep 'free memory'" }, null); // expr sth like " \\t \\t778 M free memory "
+public static int getFreeMemoryUnixInMb() {
+ try {
 
-final String\[\] elems = expr.split(" |\\t"); for (final String elem : elems) {
+final String expr = Spawn
+ .runCommand(
+ new String[] { "/bin/bash", "-c",
+ "vmstat -s -S M | egrep -ie 'memory|swap' | grep 'free memory'" },
+ null);
+ // expr sth like " \t \t778 M free memory "
 
-try { return Integer.valueOf(elem); } catch (final Throwable t) {
+final String[] elems = expr.split(" |\t");
+ for (final String elem : elems) {
 
-} }
+try {
+ return Integer.valueOf(elem);
+ } catch (final Throwable t) {
 
-throw new RuntimeException( "Could not find free memory within: Elements=" + Arrays.asList(elems) + " Raw Result=\[" + expr + "\]");
+}
+ }
 
-} catch (final Throwable t) { throw new RuntimeException(t); } }\[/sourcecode\]
+throw new RuntimeException(
+ "Could not find free memory within: Elements="
+ + Arrays.asList(elems) + " Raw Result=[" + expr
+ + "]");
+
+} catch (final Throwable t) {
+ throw new RuntimeException(t);
+ }
+}
+```
 
  
 

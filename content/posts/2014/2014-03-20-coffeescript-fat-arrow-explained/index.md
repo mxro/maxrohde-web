@@ -21,15 +21,24 @@ The fat arrow will 'override' the default meaning of the @ operator as follows, 
 
 _CoffeeScript_
 
-\[sourcecode\]delayedAction = => alert(@messsage)
+```
+delayedAction = =>  
+  alert(@messsage)
 
-setTimeout(delayedAction, 100);\[/sourcecode\]
+setTimeout(delayedAction, 100);
+```
 
 _JavaScript_
 
-\[sourcecode\]delayedAction = (function(\_this) { return function() { return alert(\_this.messsage); }; })(this);
+```
+delayedAction = (function(_this) {
+  return function() {
+    return alert(_this.messsage);
+  };
+})(this);
 
-setTimeout(delayedAction, 100);\[/sourcecode\]
+setTimeout(delayedAction, 100);
+```
 
 > **Rule 3**: Don't Use Methods as Callbacks and Avoid the Fat Arrow Operator in All Other Circumstances
 

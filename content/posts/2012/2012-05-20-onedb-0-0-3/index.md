@@ -11,15 +11,37 @@ The new versions will work with any API key obtained from [www.onedb.de](http://
 
 onedb Java Test Toolkit:
 
-\[sourcecode language="xml"\] <dependency> <groupId>one.test.jre</groupId> <artifactId>oneTestJre.min</artifactId> <version>0.0.3</version> </dependency> \[/sourcecode\]
+```xml
+
+    <dependency>
+        <groupId>one.test.jre</groupId>
+        <artifactId>oneTestJre.min</artifactId>
+        <version>0.0.3</version>
+    </dependency>
+```
 
 onedb Java Client:
 
-\[sourcecode language="xml"\] <dependency> <groupId>one.client.jre</groupId> <artifactId>oneClientJre.min</artifactId> <version>0.0.3</version> </dependency> \[/sourcecode\]
+```xml
+
+    <dependency>
+        <groupId>one.client.jre</groupId>
+        <artifactId>oneClientJre.min</artifactId>
+        <version>0.0.3</version>
+    </dependency>
+```
 
 onedb release repository (in `<project>`):
 
-\[sourcecode language="xml"\] <repositories> <repository> <id>onedb Releases</id> <url>http://dl.dropbox.com/u/957046/onedb/mvn-releases</url> </repository> </repositories> \[/sourcecode\]
+```xml
+
+    <repositories>
+        <repository>
+            <id>onedb Releases</id>
+            <url>http://dl.dropbox.com/u/957046/onedb/mvn-releases</url>
+        </repository>
+    </repositories>
+```
 
 ## API Improvments
 

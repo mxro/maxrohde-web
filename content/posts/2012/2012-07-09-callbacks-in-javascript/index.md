@@ -23,7 +23,9 @@ In developing this JavaScript API now, I learned that there are multiple (accept
 
 No specific function has to be defined for the 'error' case. If an error occurs, the first variable of the called back function ('err') will be defined. Hence, the developer must check within every callback function whether the 'err' variable is defined.
 
-\[sourcecode language="javascript"\]…load(filename, function(err, res) { if (err) … else { } });\[/sourcecode\]
+```javascript
+…load(filename, function(err, res) { if (err) … else { } });
+```
 
 ### Advantages
 
@@ -40,7 +42,9 @@ The jQuery library in its largest part deals with local operations, which can ha
 
 However, a few methods in jQuery do require the consideration of a potential 'error' occurring. This is particularly relevant for calls to a backend server (Ajax). For this case, jQuery allows the specification of multiple callback functions. These functions are only called if the case they represent becomes reality.
 
-\[sourcecode language="javascript"\].ajax({…, success: function() {…}, error: function() {…}});\[/sourcecode\]
+```javascript
+.ajax({…, success: function() {…}, error: function() {…}});
+```
 
 Variations of this approach include:
 

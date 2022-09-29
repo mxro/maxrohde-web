@@ -15,35 +15,82 @@ Java Beans are Java objects (see [Sun Website](http://java.sun.com/javase/techno
 
 The following is a simple example of a JavaBean:
 
-\[sourcecode language="java"\] /\* \* A simple JavaBean based on NetBeans tutorial. \*/
+```java
+
+/*
+ * A simple JavaBean based on NetBeans tutorial.
+ */
 
 package de.mxro.textedit.gdocseditor.gui;
 
-import java.beans.\*; import java.io.Serializable;
+import java.beans.*;
+import java.io.Serializable;
 
-/\*\* \* \* @author mx \*/ public class GDocsSettings implements Serializable {
+/**
+ *
+ * @author mx
+ */
+public class GDocsSettings implements Serializable {
 
-protected String password;
+    
+    protected String password;
 
-/\*\* \* Get the value of password \* \* @return the value of password \*/ public String getPassword() { return password; }
+    /**
+     * Get the value of password
+     *
+     * @return the value of password
+     */
+    public String getPassword() {
+        return password;
+    }
 
-/\*\* \* Set the value of password \* \* @param password new value of password \*/ public void setPassword(String password) { this.password = password; }
+    /**
+     * Set the value of password
+     *
+     * @param password new value of password
+     */
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-private PropertyChangeSupport propertySupport;
+    private PropertyChangeSupport propertySupport;
 
-public GDocsSettings() { propertySupport = new PropertyChangeSupport(this); }
+    public GDocsSettings() {
+        propertySupport = new PropertyChangeSupport(this);
+    }
 
-protected String username;
+    protected String username;
 
-/\*\* \* Get the value of username \* \* @return the value of username \*/ public String getUsername() { return username; }
+    /**
+     * Get the value of username
+     *
+     * @return the value of username
+     */
+    public String getUsername() {
+        return username;
+    }
 
-/\*\* \* Set the value of username \* \* @param username new value of username \*/ public void setUsername(String username) { this.username = username; }
+    /**
+     * Set the value of username
+     *
+     * @param username new value of username
+     */
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
-public void addPropertyChangeListener(PropertyChangeListener listener) { propertySupport.addPropertyChangeListener(listener); }
 
-public void removePropertyChangeListener(PropertyChangeListener listener) { propertySupport.removePropertyChangeListener(listener); }
 
-} \[/sourcecode\]
+    public void addPropertyChangeListener(PropertyChangeListener listener) {
+        propertySupport.addPropertyChangeListener(listener);
+    }
+
+    public void removePropertyChangeListener(PropertyChangeListener listener) {
+        propertySupport.removePropertyChangeListener(listener);
+    }
+
+}
+```
 
 A key disadvantage of JavaBeans is that it is quite time intensive to write their code; involving many repetitive tasks like writing getter and setter methods.
 

@@ -29,11 +29,23 @@ Often, the introduction of lambdas as first order constructs in Java is proposed
 
 Java 6:
 
-\[sourcecode language="Java"\] component.writeData(s).andThen(new WriteCallback() { public void onWriteComplete() { System.out.println("I/O operation complete "); } }); \[/sourcecode\]
+```Java
+
+component.writeData(s).andThen(new WriteCallback() {
+public void onWriteComplete() {
+System.out.println("I/O operation complete ");
+}
+});
+```
 
 Java 8 (I hope):
 
-\[sourcecode language="Java"\] component.writeData(s).andThen( {System.out.println("I/O operation complete "); } ); \[/sourcecode\]
+```Java
+
+component.writeData(s).andThen(
+{System.out.println("I/O operation complete "); }
+);
+```
 
 (adapted from Groovy, of course)
 
@@ -41,16 +53,22 @@ Java 8 (I hope):
 
 Writing code an untyped language can be a quite revealing expiernce: I can create working programs, wihtout having to tell the compiler in every step, what are the types of my objects. Java generics (as seen in Java 6) are problably one of the most gruesome examples of type overspecification. But lets consider a simpler example:
 
-\[sourcecode language="Java"\] String s = "my string"; int i = s; \[/sourcecode\]
+```Java
+
+String s = "my string";
+int i = s;
+```
 
 In this example the Java compiler would sensibly warn us that the second statement is invalid. A possibly very important information to avoid bugs in the programm. But, more importantly, modern integrated development environment such as eclipse will issue a warning pointing to the second statement in the moment it is typed in the source code editor. Moreover, there is often tooling available, which will propose an automatic correction for the problem. This is not possible in an untyped language.
 
 However, the given code is also an example for type overspecification. When we define the variable s, it is a very easy excerise for the compiler to infer the type of the variable without need to specify the type of the variable. I would love to have a special build in type, by which I could tell the compiler: please take your best guess at specifiying the type of the variable and warn of any problems, which may arise when using this type. The following code, for instance, should issue the same warning on the second line as the code snippet given above.
 
-\[sourcecode\]
+```
 
-object s = "my string"; int i = s;
 
-\[/sourcecode\]
+object s = "my string";
+int i = s;
+
+```
 
 (type inference is popular in Scala, of course)

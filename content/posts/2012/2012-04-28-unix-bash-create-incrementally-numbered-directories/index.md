@@ -9,7 +9,8 @@ categories:
 
 You would like to be able to create UNIX directories with numerical names, which increase incrementally, for instance:
 
-\[sourcecode\]
+```
+
 
 0000
 
@@ -21,29 +22,39 @@ You would like to be able to create UNIX directories with numerical names, which
 
 etc.
 
-\[/sourcecode\]
+```
 
 **The Solution**
 
 Just execute the following bash script in a directory, which contains at least the subdirectory '0000'. The script will create a new directory with a numerical name with trailing zeros precisely being the last created directories name +1.
 
-\[sourcecode language="bash"\]
+```bash
+
 
 echo "=== Create new deployment dir ==="
 
-lastdir=$(ls -d \[0-9\]\[0-9\]\[0-9\]\[0-9\] | tail -1)
+lastdir=$(ls -d [0-9][0-9][0-9][0-9] | tail -1)
 
-myvalue=$lastdir newvalue="0" while \[ "$newvalue" != "$lastvalue" \] do newvalue="$(echo $myvalue | sed 's/^0//')" lastvalue=$myvalue myvalue=$newvalue done
+myvalue=$lastdir
+newvalue="0"
+while [ "$newvalue" != "$lastvalue" ]
+do
+newvalue="$(echo $myvalue | sed 's/^0//')"
+lastvalue=$myvalue
+myvalue=$newvalue
+done
 
 echo "Last created dir: $lastdir"
 
-lastdirnr=$newvalue newdirnr=$((($lastdirnr) + 1)) newdir=$(printf "%04u" $newdirnr)
+lastdirnr=$newvalue
+newdirnr=$((($lastdirnr) + 1))
+newdir=$(printf "%04u" $newdirnr)
 
 echo "Create new dir: $newdir"
 
 mkdir $newdir
 
-\[/sourcecode\]
+```
 
 **References**
 

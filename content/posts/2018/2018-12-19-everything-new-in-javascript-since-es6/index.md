@@ -30,7 +30,8 @@ This is not a complete list of everything that has changed. For instance, I incl
 
 Promises for wrapping asynchronous code.
 
-\[sourcecode language="javascript"\]
+```javascript
+
 
 let p = new Promise((resolve, reject) => {
 
@@ -40,11 +41,15 @@ let p = new Promise((resolve, reject) => {
 
 p.then((msg) => console.log(msg)); 
 
-\[/sourcecode\]
+```
 
 Executing asynchronous operations in parallel
 
-\[sourcecode language="javascript"\] let parallelOperation = Promise.all(\[p1, p2\]); parallelOperation.then((data) => {let \[res1, res2\] = data; } ); \[/sourcecode\]
+```javascript
+
+let parallelOperation = Promise.all([p1, p2]);
+parallelOperation.then((data) => {let [res1, res2] = data; } );
+```
 
 ### Default Parameters and Spread Operator
 
@@ -89,45 +94,59 @@ Executing asynchronous operations in parallel
 
 `class` keyword for constructing simple classes.
 
-\[sourcecode language="javascript"\] class Point {
+```javascript
 
-constructor (x, y) { this.x = x; this.y = y; }
+class Point {
 
-move (deltax, deltay) { new Point(this.x + deltax, this.y + deltay); }
+  constructor (x, y) {
+     this.x = x;
+     this.y = y;
+  }
+
+  move (deltax, deltay) {
+     new Point(this.x + deltax, this.y + deltay);
+  }
 
 }
 
-\[/sourcecode\]
+```
 
 `extends` keyword for extending classes:
 
-\[sourcecode language="javascript"\]
+```javascript
+
 
 class Car extends Vehicle {
 
-constructor (name) { super(name); }
+  constructor (name) {
+     super(name);
+  }
 
-\[/sourcecode\]
+```
 
 `static` keyword for static methods
 
-\[sourcecode language="javascript"\]
+```javascript
+
 
 class Math {
 
-static add(x, y) { return x + y; }
+  static add(x, y) {
+    return x + y;
+  }
 
 }
 
-\[/sourcecode\]
+```
 
 `get` and `set` keywords for decorated property access.
 
-\[sourcecode language="javascript"\]
+```javascript
+
 
 class Rectangle {
 
-get area() { return this.x \* this.y }
+  get area() { return this.x * this.y }
 
 }
 
@@ -135,7 +154,7 @@ get area() { return this.x \* this.y }
 
 new Rectangle(2, 2).area === 4;
 
-\[/sourcecode\]
+```
 
 ### Iteration Through Object Values
 
@@ -164,11 +183,19 @@ new Rectangle(2, 2).area === 4;
 
 async/await for more expressive asynchronous operations
 
-\[sourcecode language="javascript"\] async function add1(x) { return x + 1; }
+```javascript
 
-async function add2(x) { let y = await add1(x); return await add1(y); }
+async function add1(x) {
+  return x + 1;
+}
 
-add2(5).then(console.log); \[/sourcecode\]
+async function add2(x) {
+  let y = await add1(x);
+  return await add1(y);
+}
+
+add2(5).then(console.log);
+```
 
 ## ECMAScript 2018
 
@@ -176,39 +203,60 @@ add2(5).then(console.log); \[/sourcecode\]
 
 Collect all not deconstructed properties from an object in another object:
 
-\[sourcecode language="javascript"\]
+```javascript
 
-var person = { firstName: "Paul", lastName: "Hendricks", password: "secret"}; var {password, ...sanitisedPerson } = person; // sanitisedPerson = {firstName: "Paul", lastName: "Hendricks"}
 
-\[/sourcecode\]
+var person = { firstName: "Paul", lastName: "Hendricks", password: "secret"};
+var {password, ...sanitisedPerson } = person;
+// sanitisedPerson = {firstName: "Paul", lastName: "Hendricks"}
+
+```
 
 Spread object properties
 
-\[sourcecode language="javascript"\] let details = { firstName: "Paul", lastName: "Hendricks" };
+```javascript
 
-let user = { ...details, password: "secret" }; \[/sourcecode\]
+let details = { firstName: "Paul", lastName: "Hendricks" };
+
+let user = { ...details, password: "secret" };
+```
 
 ### Finally for Promises
 
 `finally` callback is guaranteed to be executed if promise succeeds or fails.
 
-\[sourcecode language="javascript"\]
+```javascript
 
-async function sayHello() { console.log("hello"); } sayHello().then(() => console.log("success") ) .catch((e) => console.log(e)) .finally(() => console.log("runs always")
 
-\[/sourcecode\]
+async function sayHello() {
+console.log("hello");
+}
+sayHello().then(() => console.log("success") )
+.catch((e) => console.log(e))
+.finally(() => console.log("runs always")
+
+```
 
 ### for await Loop
 
 Special for loops that resolve promises before every iteration.
 
-\[sourcecode language="javascript"\]
+```javascript
 
-const promises = \[ new Promise(resolve => resolve(1) ), new Promise(resolve => resolve(2) ) \];
 
-async function runAll() { for await (p of promises) { console.log(p); } }
+const promises = [
+  new Promise(resolve => resolve(1) ),
+  new Promise(resolve => resolve(2) )
+];
 
-runAll(); \[/sourcecode\]
+async function runAll() {
+  for await (p of promises) {
+    console.log(p);
+  }
+}
+
+runAll();
+```
 
 ## References
 

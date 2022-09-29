@@ -38,11 +38,16 @@ selection.anchorNode.nodeValue = newContent;
 
 As suggested by Dexter in the comments below, you can also insert text as follows:
 
-\[code language="javascript"\] $(‘#summernote’).summernote('editor.saveRange');
+```javascript
+
+$(‘#summernote’).summernote('editor.saveRange');
 
 // Editor loses selected range (e.g after blur)
 
-$(‘#summernote’).summernote('editor.restoreRange'); $(‘#summernote’).summernote('editor.focus'); $(‘#summernote’).summernote('editor.insertText', 'This text should appear at the cursor'); \[/code\]
+$(‘#summernote’).summernote('editor.restoreRange');
+$(‘#summernote’).summernote('editor.focus');
+$(‘#summernote’).summernote('editor.insertText', 'This text should appear at the cursor');
+```
 
 ## References
 

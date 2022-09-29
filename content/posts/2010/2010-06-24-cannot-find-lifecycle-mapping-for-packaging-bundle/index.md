@@ -9,7 +9,13 @@ categories:
 
 When trying to package or install a project using the maven-bundle-plugin, an error message as the following is given:
 
-\[sourcecode\] \[ERROR\] BUILD ERROR \[INFO\] ------------------------------------------------------------------------ \[INFO\] Cannot find lifecycle mapping for packaging: 'bundle'. Component descriptor cannot be found in the component repository: org.apache.maven.lifecycle.mapping.LifecycleMappingbundle. \[/sourcecode\]
+```
+
+[ERROR] BUILD ERROR
+[INFO] ------------------------------------------------------------------------
+[INFO] Cannot find lifecycle mapping for packaging: 'bundle'.
+Component descriptor cannot be found in the component repository: org.apache.maven.lifecycle.mapping.LifecycleMappingbundle.
+```
 
 **Solution**
 

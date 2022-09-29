@@ -21,7 +21,8 @@ Seanchenxi has kindly [created](https://groups.google.com/forum/) a convenient w
 
 You can download the source code and import it to your Java project. I've also uploaded the project to a public Maven repository. You can add it to your Maven project as follows:
 
-\[code language="xml"\]
+```xml
+
 
 <dependencies>
 
@@ -51,11 +52,12 @@ You can download the source code and import it to your Java project. I've also u
 
 </repositories>
 
-\[/code\]
+```
 
 With gwt-storage available for your project, you can do the following in GWT client side code:
 
-\[code language="java"\]
+```java
+
 
 StorageSerializer serializerImpl = new com.seanchenxi.gwt.storage.client.serializer.StorageRPCSerializerImpl();
 
@@ -77,7 +79,7 @@ throw new RuntimeException(e);
 
 }
 
-\[/code\]
+```
 
 Note:
 

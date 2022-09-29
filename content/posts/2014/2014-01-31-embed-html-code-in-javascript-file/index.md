@@ -13,20 +13,25 @@ You would like to include HTML code as a String in a JavaScript file.
 
 Firstly, load the HTML code into a JavaScript variable (e.g. by using [jQuery.ajax()](http://api.jquery.com/jquery.ajax/)).
 
-\[sourcecode language="javascript"\]$.ajax({url: 'http://mydomain.com/htmlfile.html'})
+```javascript
+$.ajax({url: 'http://mydomain.com/htmlfile.html'})
 
 .done(function(html) {
 
-\[/sourcecode\]
+```
 
 Then apply the following two simple regular expressions on the html code to generate valid JavaScript code.
 
-\[sourcecode language="javascript"\]var safeHtml = html
+```javascript
+var safeHtml = html
 
-.replace(/\\n/g, "\\\\n")
+.replace(/\n/g, "\\n")
 
-.replace(/\\"/g, "\\\\\\"")\[/sourcecode\]
+.replace(/\"/g, "\\\"")
+```
 
 You can use this String now to build a JavaScript file:
 
-\[sourcecode language="javascript"\]var myScript = 'var html="'+safeHtml+'";';\[/sourcecode\]
+```javascript
+var myScript = 'var html="'+safeHtml+'";';
+```

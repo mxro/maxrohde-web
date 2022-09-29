@@ -6,7 +6,6 @@ categories:
 tags: 
   - "enlightenment"
   - "life"
-  - "habit"
   - "questions"
 coverImage: "cave-690348.jpg"
 ---

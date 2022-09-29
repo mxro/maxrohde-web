@@ -30,29 +30,61 @@ The official documentation for Log4j 2 is not very approachable. Simply speaking
 
 The first is to add the following Maven dependency:
 
-\[code\] <dependency> <groupId>org.apache.logging.log4j</groupId> <artifactId>log4j-api</artifactId> <version>2.10.0</version> </dependency> <dependency> <groupId>org.apache.logging.log4j</groupId> <artifactId>log4j-core</artifactId> <version>2.10.0</version> </dependency> \[/code\]
+```
+
+<dependency>
+<groupId>org.apache.logging.log4j</groupId>
+<artifactId>log4j-api</artifactId>
+<version>2.10.0</version>
+</dependency>
+<dependency>
+<groupId>org.apache.logging.log4j</groupId>
+<artifactId>log4j-core</artifactId>
+<version>2.10.0</version>
+</dependency>
+```
 
 The second is to create the file src/main/resources/log4j2.properties in your project with the following content:
 
-\[code\] status = error name = PropertiesConfig
+```
+
+status = error
+name = PropertiesConfig
 
 filters = threshold
 
-filter.threshold.type = ThresholdFilter filter.threshold.level = debug
+filter.threshold.type = ThresholdFilter
+filter.threshold.level = debug
 
 appenders = console
 
-appender.console.type = Console appender.console.name = STDOUT appender.console.layout.type = PatternLayout appender.console.layout.pattern = %d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+appender.console.type = Console
+appender.console.name = STDOUT
+appender.console.layout.type = PatternLayout
+appender.console.layout.pattern = %d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
 
-rootLogger.level = debug rootLogger.appenderRefs = stdout rootLogger.appenderRef.stdout.ref = STDOUT \[/code\]
+rootLogger.level = debug
+rootLogger.appenderRefs = stdout
+rootLogger.appenderRef.stdout.ref = STDOUT
+```
 
 (Note, you may also provide the configuration in XML format. In that case, simply create file named log4j2.xml in src/main/resources)
 
 Now you are ready to start logging!
 
-\[code\] import org.apache.logging.log4j.LogManager; import org.apache.logging.log4j.LogManager; import org.apache.logging.log4j.Logger;
+```
 
-public class OutputLog { public static void main(String\[\] args) { Logger logger = LogManager.getLogger(); logger.error("Hi!"); } } \[/code\]
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+public class OutputLog { 
+  public static void main(String[] args) { 
+    Logger logger = LogManager.getLogger(); 
+    logger.error("Hi!"); 
+  } 
+}
+```
 
 ### Master Class
 
@@ -60,27 +92,48 @@ The real power of using a logging framework is realised by modifying the propert
 
 You can, for instance, configure it to log into a file and rotate this log file automatically (so it doesn't just keep on growing and growing). The following presents a properties file to enable this:
 
-\[code\]
+```
 
-status = error name = PropertiesConfig
+
+status = error
+name = PropertiesConfig
 
 property.filename = ./logs/log.txt
 
 filters = threshold
 
-filter.threshold.type = ThresholdFilter filter.threshold.level = debug
+filter.threshold.type = ThresholdFilter
+filter.threshold.level = debug
 
 appenders = rolling
 
-appender.rolling.type = RollingFile appender.rolling.name = RollingFile appender.rolling.fileName = ${filename} appender.rolling.filePattern = ./logs/log-backup-%d{MM-dd-yy-HH-mm-ss}-%i.log.gz appender.rolling.layout.type = PatternLayout appender.rolling.layout.pattern = %d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n appender.rolling.policies.type = Policies appender.rolling.policies.time.type = TimeBasedTriggeringPolicy appender.rolling.policies.time.interval = 1 appender.rolling.policies.time.modulate = true appender.rolling.policies.size.type = SizeBasedTriggeringPolicy appender.rolling.policies.size.size=10MB appender.rolling.strategy.type = DefaultRolloverStrategy appender.rolling.strategy.max = 20
+appender.rolling.type = RollingFile
+appender.rolling.name = RollingFile
+appender.rolling.fileName = ${filename}
+appender.rolling.filePattern = ./logs/log-backup-%d{MM-dd-yy-HH-mm-ss}-%i.log.gz
+appender.rolling.layout.type = PatternLayout
+appender.rolling.layout.pattern = %d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+appender.rolling.policies.type = Policies
+appender.rolling.policies.time.type = TimeBasedTriggeringPolicy
+appender.rolling.policies.time.interval = 1
+appender.rolling.policies.time.modulate = true
+appender.rolling.policies.size.type = SizeBasedTriggeringPolicy
+appender.rolling.policies.size.size=10MB
+appender.rolling.strategy.type = DefaultRolloverStrategy
+appender.rolling.strategy.max = 20
 
 loggers = rolling
 
-logger.rolling.name = file logger.rolling.level = debug logger.rolling.additivity = false logger.rolling.appenderRef.rolling.ref = RollingFile
+logger.rolling.name = file
+logger.rolling.level = debug
+logger.rolling.additivity = false
+logger.rolling.appenderRef.rolling.ref = RollingFile
 
-#rootLogger.level = debug #rootLogger.appenderRefs = stdout rootLogger.appenderRef.stdout.ref = RollingFile
+#rootLogger.level = debug
+#rootLogger.appenderRefs = stdout
+rootLogger.appenderRef.stdout.ref = RollingFile
 
-\[/code\]
+```
 
 This configuration will result in a log file being written into the logs/ folder. If the application is run multiple times, previous log files will be packed into gzipped files:
 
@@ -88,17 +141,44 @@ This configuration will result in a log file being written into the logs/ folder
 
 For even more sophisticated logging, you would want to set up a [Graylog server](http://maxrohde.com/2018/01/23/setting-up-graylog-server/) and then send the logs there. This can be achieved using the [logstash-gelf](https://github.com/mp911de/logstash-gelf) library. Add the following Maven dependency:
 
-\[code\] <dependency> <groupId>biz.paluch.logging</groupId> <artifactId>logstash-gelf</artifactId> <version>1.11.1</version> </dependency> \[/code\]
+```
+
+<dependency>
+<groupId>biz.paluch.logging</groupId>
+<artifactId>logstash-gelf</artifactId>
+<version>1.11.1</version>
+</dependency>
+```
 
 And then provide a log4j.xml configuration file like the following (replace yourserver.com with your Graylog server):
 
-\[code\]
+```
 
-<Configuration> <Appenders> <Gelf name="gelf" host="udp:yourserver.com" port="51401" version="1.1" extractStackTrace="true" filterStackTrace="true" mdcProfiling="true" includeFullMdc="true" maximumMessageSize="8192" ignoreExceptions="true"> <Field name="timestamp" pattern="%d{dd MMM yyyy HH:mm:ss,SSS}" /> <Field name="level" pattern="%level" /> <Field name="simpleClassName" pattern="%C{1}" /> <Field name="className" pattern="%C" /> <Field name="server" pattern="%host" /> <Field name="server.fqdn" pattern="%host{fqdn}" />
 
-<DynamicMdcFields regex="mdc.\*" /> <DynamicMdcFields regex="(mdc|MDC)fields" /> </Gelf> </Appenders> <Loggers> <Root level="INFO"> <AppenderRef ref="gelf" /> </Root> </Loggers> </Configuration>
+<Configuration>
+<Appenders>
+<Gelf name="gelf" host="udp:yourserver.com" port="51401" version="1.1" extractStackTrace="true"
+filterStackTrace="true" mdcProfiling="true" includeFullMdc="true" maximumMessageSize="8192"
+ignoreExceptions="true">
+<Field name="timestamp" pattern="%d{dd MMM yyyy HH:mm:ss,SSS}" />
+<Field name="level" pattern="%level" />
+<Field name="simpleClassName" pattern="%C{1}" />
+<Field name="className" pattern="%C" />
+<Field name="server" pattern="%host" />
+<Field name="server.fqdn" pattern="%host{fqdn}" />
 
-\[/code\]
+<DynamicMdcFields regex="mdc.*" />
+<DynamicMdcFields regex="(mdc|MDC)fields" />
+</Gelf>
+</Appenders>
+<Loggers>
+<Root level="INFO">
+<AppenderRef ref="gelf" />
+</Root>
+</Loggers>
+</Configuration>
+
+```
 
 Then create a new GELF UDP input in Graylog (& don't forget to open the firewall for udp port 51401) and you are ready to receive messages!
 

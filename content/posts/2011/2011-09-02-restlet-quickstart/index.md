@@ -13,7 +13,8 @@ The tutorials on the Restlet homepage appear to be a bit confusing and outdated.
 
 Restlet offers a wealth of different editions and optional extensions and it is a little bit difficult to determine the right Maven dependencies. For this basic scenario, we want to run a little server deployed as local Java application. For this purpose, the ext.simple extension is required (here I use the latest milestone release 2.1-M7 – the examples should also work with [later releases](http://www.restlet.org/downloads/maven) although this is not guaranteed)
 
-\[sourcecode language="xml"\]
+```xml
+
 
 <dependency>
 
@@ -47,43 +48,66 @@ Restlet offers a wealth of different editions and optional extensions and it is 
 
 </dependency>
 
-\[/sourcecode\]
+```
 
 In addition, the Restlet repository must be specified
 
-\[sourcecode language="xml"\]
+```xml
 
-<repositories> <repository> <id>maven-restlet</id> <name>Public online Restlet repository</name> <url>http://maven.restlet.org</url> </repository> </repositories>
 
-<span style="color: black;">\[/sourcecode\]
+<repositories>
+<repository>
+<id>maven-restlet</id>
+<name>Public online Restlet repository</name>
+<url>http://maven.restlet.org</url>
+</repository>
+</repositories>
+
+<span style="color: black;">
+```
 
 ### Create a Small Standalone Server
 
 If these dependencies are established, the following server can be implemented:
 
-\[sourcecode language="java"\]
+```java
 
-import org.restlet.Component; import org.restlet.data.Protocol; import org.restlet.resource.Get; import org.restlet.resource.ServerResource; import org.restlet.routing.Router;
+
+import org.restlet.Component;
+import org.restlet.data.Protocol;
+import org.restlet.resource.Get;
+import org.restlet.resource.ServerResource;
+import org.restlet.routing.Router;
 
 public class RestletServerTest extends ServerResource {
 
-public static void main(final String\[\] args) throws Exception { // Create a new Component. final Component component = new Component();
+public static void main(final String[] args) throws Exception {
+// Create a new Component.
+final Component component = new Component();
 
-// Add a new HTTP server listening on port 8182. component.getServers().add(Protocol.HTTP, 8182);
+// Add a new HTTP server listening on port 8182.
+component.getServers().add(Protocol.HTTP, 8182);
 
 final Router router = new Router(component.getContext().createChildContext());
 
 router.attach("/test", RestletServerTest.class);
 
-// Attach the sample application. component.getDefaultHost().attach("/restlet", router);
+// Attach the sample application.
+component.getDefaultHost().attach("/restlet", router);
 
-// Start the component. component.start(); }
+// Start the component.
+component.start();
+}
 
-@Override @Get public String toString() { return "hello, world"; }
+@Override
+@Get
+public String toString() {
+return "hello, world";
+}
 
 }
 
-\[/sourcecode\]
+```
 
 Execute this application and open http://localhost:8182/restlet/test. You should see the message 'hello, world'.
 
@@ -93,7 +117,8 @@ Execute this application and open http://localhost:8182/restlet/test. You should
 
 In order to provide a domain object, a few more steps need to be undertaken. First, we need to specify the domain object:
 
-\[sourcecode language="java"\]
+```java
+
 
 import java.io.Serializable;
 
@@ -101,29 +126,39 @@ public class Person implements Serializable {
 
 private static final long serialVersionUID = 1L;
 
-public String name; public int age;
+public String name;
+public int age;
 
-public Person(final String name, final int age) { super(); this.name = name; this.age = age; }
+public Person(final String name, final int age) {
+super();
+this.name = name;
+this.age = age;
+}
 
 }
 
-\[/sourcecode\]
+```
 
 Secondly, we need an interface and a ServerResource implementation for the service, which provides the domain object. The interface does not need to extend any other interface but must use the GET, PUT, DELETE annotations provided by Restlet.
 
-\[sourcecode language="java"\]
+```java
+
 
 import org.restlet.resource.Get;
 
 public interface PersonResource  {
 
-@Get public Person retrieve();
+@Get
+public Person retrieve();
 
-} <pre>\[/sourcecode\]
+}
+<pre>
+```
 
 The ServerResource implementation must extend ServerResource and implement the interface PersonResource:
 
-\[sourcecode language="java"\]
+```java
+
 
 import org.restlet.resource.ServerResource;
 
@@ -131,33 +166,54 @@ public class PersonServerResource extends ServerResource implements PersonResour
 
 private static volatile Person person1 = new Person("Peter", 40);
 
-@Override public Person retrieve() {
+@Override
+public Person retrieve() {
 
-return person1; }
+return person1;
+}
 
-} <pre>\[/sourcecode\]
+}
+<pre>
+```
 
 Finally, the main routine starting the server needs to be altered. Also, a little client is added, which reads out the domain object from the server:
 
-\[sourcecode language="java"\]
+```java
 
-import org.restlet.Component; import org.restlet.data.Protocol; import org.restlet.resource.ClientResource; import org.restlet.routing.Router;
+
+import org.restlet.Component;
+import org.restlet.data.Protocol;
+import org.restlet.resource.ClientResource;
+import org.restlet.routing.Router;
 
 public class RestletServerTest  {
 
-public static void main(final String\[\] args) throws Exception { // Create a new Component. final Component component = new Component();
+public static void main(final String[] args) throws Exception {
+// Create a new Component.
+final Component component = new Component();
 
-// Add a new HTTP server listening on port 8182. component.getServers().add(Protocol.HTTP, 8182);
+// Add a new HTTP server listening on port 8182.
+component.getServers().add(Protocol.HTTP, 8182);
 
 final Router router = new Router(component.getContext().createChildContext());
 
 router.attach("/person", PersonServerResource.class);
 
-// Attach the sample application. component.getDefaultHost().attach("/restlet", router);
+// Attach the sample application.
+component.getDefaultHost().attach("/restlet", router);
 
-// Start the component. final Thread t = new Thread() {
+// Start the component.
+final Thread t = new Thread() {
 
-@Override public void run() { try { component.start(); } catch (final Exception e) { e.printStackTrace(); } super.run(); }
+@Override
+public void run() {
+try {
+component.start();
+} catch (final Exception e) {
+e.printStackTrace();
+}
+super.run();
+}
 
 };
 
@@ -165,13 +221,16 @@ t.run();
 
 final ClientResource cr = new ClientResource("http://localhost:8182/restlet/person");
 
-final PersonResource resource = cr.wrap(PersonResource.class); final Person person = resource.retrieve();
+final PersonResource resource = cr.wrap(PersonResource.class);
+final Person person = resource.retrieve();
 
 System.out.println(person.name);
 
 }
 
-} <pre>\[/sourcecode\]
+}
+<pre>
+```
 
 The domain object is serialized using the Java Serialization mechanism. We can also navigate to http://localhost:8182/restlet/person using a web browser. However, only a binary file will be downloaded by the server. Restlet does provide extensions to provide the domain objects serialized as in RDF, XML and JSON format.
 
@@ -209,25 +268,45 @@ Next we change the implementation of the service:
 
 And finally change the main method. Note here too that here we run the server and client as part of a unit test (so add JUnit dependency to your pom). This highlights how easy it is to build (almost) fully blown integration tests based on Restlet, which in addition execute very fast.
 
-\[sourcecode language="java"\]
+```java
 
-import org.junit.Assert; import org.junit.Test; import org.restlet.Component; import org.restlet.data.Protocol; import org.restlet.resource.ClientResource; import org.restlet.routing.Router;
+
+import org.junit.Assert;
+import org.junit.Test;
+import org.restlet.Component;
+import org.restlet.data.Protocol;
+import org.restlet.resource.ClientResource;
+import org.restlet.routing.Router;
 
 public class RestletServerTest  {
 
-@Test public void test\_server() throws Exception { // Create a new Component. final Component component = new Component();
+@Test
+public void test_server() throws Exception {
+// Create a new Component.
+final Component component = new Component();
 
-// Add a new HTTP server listening on port 8182. component.getServers().add(Protocol.HTTP, 8182);
+// Add a new HTTP server listening on port 8182.
+component.getServers().add(Protocol.HTTP, 8182);
 
 final Router router = new Router(component.getContext().createChildContext());
 
 router.attach("/person", PersonServerResource.class);
 
-// Attach the sample application. component.getDefaultHost().attach("/restlet", router);
+// Attach the sample application.
+component.getDefaultHost().attach("/restlet", router);
 
-// Start the component. final Thread t = new Thread() {
+// Start the component.
+final Thread t = new Thread() {
 
-@Override public void run() { try { component.start(); } catch (final Exception e) { e.printStackTrace(); } super.run(); }
+@Override
+public void run() {
+try {
+component.start();
+} catch (final Exception e) {
+e.printStackTrace();
+}
+super.run();
+}
 
 };
 
@@ -235,7 +314,9 @@ t.run();
 
 final ClientResource cr = new ClientResource("http://localhost:8182/restlet/person");
 
-final PersonResource resource = cr.wrap(PersonResource.class); final Person originalPerson = new Person("Peter", 20); final Person copiedPerson = resource.copy(originalPerson);
+final PersonResource resource = cr.wrap(PersonResource.class);
+final Person originalPerson = new Person("Peter", 20);
+final Person copiedPerson = resource.copy(originalPerson);
 
 Assert.assertFalse(originalPerson == copiedPerson);
 
@@ -245,7 +326,9 @@ System.out.println(copiedPerson.name);
 
 }
 
-} <pre>\[/sourcecode\]
+}
+<pre>
+```
 
 ### Resources
 

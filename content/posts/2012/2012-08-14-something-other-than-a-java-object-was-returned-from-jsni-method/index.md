@@ -34,46 +34,95 @@ public final native **boolean** getValue()/\*-{ this.value; }-\*/;
 
 However, things are a bit more difficult, if depending on the context, \`this.value\` can take on values of different type than boolean (for instance \`number\` or java script object).
 
-In this case, the a little bit more work is required. First, the function in the overlay type must be changed to something like: \[sourcecode language="java"\] public final native Object getValue() /\*-{ if ( this.value && ((typeof this.value == "number") || (typeof this.value == "boolean")) ) { return { type: "JsAtomicTypeWrapper", value: this.value }; }
+In this case, the a little bit more work is required. First, the function in the overlay type must be changed to something like:
 
-return this.value; }-\*/; \[/sourcecode\]
+```java
+
+public final native Object getValue() /*-{ 
+	if ( this.value && 
+	     ((typeof this.value == "number") || 
+	      (typeof this.value == "boolean")) ) {
+		return {
+			type: "JsAtomicTypeWrapper",
+			value: this.value
+		};
+	}
+
+	return this.value;
+}-*/;
+```
 
 This method replaces the value with a wrapper JS object. For retrieving the value, another JS overlay type can be introduced to extract the value such as:
 
-\[sourcecode language="java"\] ublic class JsAtomicTypeWrapper extends JavaScriptObject {
+```java
 
-protected JsAtomicTypeWrapper() { }
+ublic class JsAtomicTypeWrapper extends JavaScriptObject {
 
-public final native boolean isWrapper()/\*-{ if ( this.type && this.type == "JsAtomicTypeWrapper") return true; return false; }-\*/;
+	protected JsAtomicTypeWrapper() {
+	}
 
-public final native boolean isBoolean()/\*-{ return typeof this.value == "boolean"; }-\*/;
+	public final native boolean isWrapper()/*-{ 
+		if ( this.type && this.type == "JsAtomicTypeWrapper") return true;
+		return false;
+	}-*/;
 
-public final native boolean isDouble()/\*-{ return !isNaN(parseFloat(this.value)); }-\*/;
+	public final native boolean isBoolean()/*-{ 
+		return typeof this.value == "boolean";
+	}-*/;
 
-public final native boolean isInteger()/\*-{ return this.value % 1 === 0; }-\*/;
+	public final native boolean isDouble()/*-{ 
+		return !isNaN(parseFloat(this.value));
+	}-*/;
 
-public final Object getValue() { if (isBoolean()) { return getBooleanValue(); }
+	public final native boolean isInteger()/*-{ 
+		return this.value % 1 === 0;
+	}-*/;
 
-if (isInteger()) { return getIntValue(); }
+	public final Object getValue() {
+		if (isBoolean()) {
+			return getBooleanValue();
+		}
 
-if (isDouble()) { return getDoubleValue(); }
+		if (isInteger()) {
+			return getIntValue();
+		}
 
-return getGenericValue();
+		if (isDouble()) {
+			return getDoubleValue();
+		}
+
+		return getGenericValue();
+
+	}
+
+	public final native Object getGenericValue()/*-{ 
+		return this.value; 
+	}-*/;
+
+	public final native int getIntValue()/*-{ 
+		return this.value; 
+	}-*/;
+
+	public final native double getDoubleValue()/*-{ 
+		return this.value; 
+	}-*/;
+
+	public final native boolean getBooleanValue()/*-{ 
+		return this.value; 
+	}-*/;
 
 }
-
-public final native Object getGenericValue()/\*-{ return this.value; }-\*/;
-
-public final native int getIntValue()/\*-{ return this.value; }-\*/;
-
-public final native double getDoubleValue()/\*-{ return this.value; }-\*/;
-
-public final native boolean getBooleanValue()/\*-{ return this.value; }-\*/;
-
-} \[/sourcecode\]
+```
 
 When reading the returned value of the first JS overlay type, the JsAtomicType Wrapper overlay type can be used as follows:
 
-\[sourcecode language="java"\] JsAtomicTypeWrapper wrapper; wrapper = ((JavaScriptObject) jso.getValue()).cast();
+```java
 
-if (wrapper.isWrapper()) { GWT.log("Number value: " + wrapper.getValue()); GWT.log("Number value class: " + wrapper.getValue().getClass()); } \[/sourcecode\]
+JsAtomicTypeWrapper wrapper;
+wrapper = ((JavaScriptObject) jso.getValue()).cast();
+
+if (wrapper.isWrapper()) {
+	GWT.log("Number value: " + wrapper.getValue());
+	GWT.log("Number value class: " + wrapper.getValue().getClass());
+}
+```

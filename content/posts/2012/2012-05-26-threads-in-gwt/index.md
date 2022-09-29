@@ -22,19 +22,22 @@ This motivated me to write a simple abstract API ([oneUtils](https://github.com/
 
 The abstract API currently supports the following features:
 
-\[sourcecode language="java"\] public interface Concurrency {
+```java
 
-public abstract TimerFactory newTimer();
+public interface Concurrency {
 
-public abstract ExecutorFactory newExecutor();
+    public abstract TimerFactory newTimer();
 
-public abstract void runLater(Runnable runnable);
+    public abstract ExecutorFactory newExecutor();
 
-public abstract OneLock newLock();
+    public abstract void runLater(Runnable runnable);
 
-public abstract CollectionFactory newCollection();
+    public abstract OneLock newLock();
 
-} \[/sourcecode\]
+    public abstract CollectionFactory newCollection();
+
+}
+```
 
 An implementation for JVM environments is included in the library ([JreConcurrency](https://github.com/mxro/oneUtils/blob/master/oneUtils/src/main/java/one/utils/jre/concurrent/JreConcurrency.java "Concurrency API Implementation for JRE Environment")), an implementation for a GWT environment is provided in the following gist:
 
@@ -46,6 +49,25 @@ Below a few usage examples for the API:
 
 Please feel free to use the API + implementations. You can either [grab the project from github](https://github.com/mxro/oneUtils "oneUtils on github") or link to the project via Maven:
 
-Dependency: \[sourcecode language="xml"\] <dependency> <groupId>one.utils</groupId> <artifactId>oneUtils</artifactId> <version>0.0.3</version> </dependency> \[/sourcecode\]
+Dependency:
 
-Repository: \[sourcecode language="xml"\] <repositories> <repository> <id>onedb Releases</id> <url>http://dl.dropbox.com/u/957046/onedb/mvn-releases</url> </repository> </repositories> \[/sourcecode\]
+```xml
+
+<dependency>
+    <groupId>one.utils</groupId>
+    <artifactId>oneUtils</artifactId>
+    <version>0.0.3</version>
+</dependency>
+```
+
+Repository:
+
+```xml
+
+<repositories>
+    <repository>
+        <id>onedb Releases</id>
+        <url>http://dl.dropbox.com/u/957046/onedb/mvn-releases</url>
+    </repository>
+</repositories>
+```

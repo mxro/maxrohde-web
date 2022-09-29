@@ -17,29 +17,46 @@ The producer in this simple scenario adds nodes with the value `"Pizza!"` to the
 
 For this, define a new Java class `Producer` as shown below. Please replace the pizza parlor _node path_ with the path to the pizza parlor data created in the upload & load tutoria and replace the _access secret_ as well.
 
-\[sourcecode language="java"\] static class Producer implements Runnable {
+```java
 
-final CoreDsl dsl = OneJre.init(); final OneClient client = dsl.createClient();
+static class Producer implements Runnable {
 
-@Override public void run() { try { Thread.sleep(600); } catch (final InterruptedException e) { e.printStackTrace(); }
+	final CoreDsl dsl = OneJre.init();
+	final OneClient client = dsl.createClient();
 
-System.out.println("Making pizza ..."); dsl.load( "\[your node\]/servings") .withSecret("\[your secret\]").in(client) .and(new WhenLoaded() {
+	@Override
+	public void run() {
+		try {
+			Thread.sleep(600);
+		} catch (final InterruptedException e) {
+			e.printStackTrace();
+		}
 
-@Override public void thenDo(final WithLoadResult<Object> sr) {
+		System.out.println("Making pizza ...");
+		dsl.load(
+				"[your node]/servings")
+				.withSecret("[your secret]").in(client)
+				.and(new WhenLoaded() {
 
-dsl.append(new String("Pizza!")) .to(sr.loadedNode()).in(client);
+					@Override
+					public void thenDo(final WithLoadResult<Object> sr) {
 
-dsl.commit(client).and(WhenCommitted.DO\_NOTHING);
+						dsl.append(new String("Pizza!"))
+								.to(sr.loadedNode()).in(client);
 
-System.out.println("... pizza made!"); run();
+						dsl.commit(client).and(WhenCommitted.DO_NOTHING);
+
+						System.out.println("... pizza made!");
+						run();
+
+					}
+
+				});
+
+	}
 
 }
-
-});
-
-}
-
-} \[/sourcecode\]
+```
 
 Calling the `run()` method of this class will start a recursive loop in which nodes with the value "Pizza!" will be appended to `pizzaParlor/servings`. The resulting changes to the local client data will be uploaded to the server via the `commit` operation.
 
@@ -49,39 +66,76 @@ The consumer in this scenario will 'monitor' the pizza parlor's `servings` node 
 
 Define a new class Consumer as follows (again replace address and access secret!):
 
-\[sourcecode language="java"\] class Consumer implements Runnable {
+```java
 
-private volatile int eaten = 0;
+class Consumer implements Runnable {
 
-@Override public void run() { final CoreDsl dsl = OneJre.init(); final OneClient client = dsl.createClient();
+	private volatile int eaten = 0;
 
-dsl.monitor( dsl.reference("\[your node\]/servings")) .inInterval(Interval.FAST).withSecret("\[your secret\]") .in(client).and(new WhenNodeChanged() {
+	@Override
+	public void run() {
+		final CoreDsl dsl = OneJre.init();
+		final OneClient client = dsl.createClient();
 
-@Override public void thenDo(final WithNodeChangedContext context) {
+		dsl.monitor(
+				dsl.reference("[your node]/servings"))
+				.inInterval(Interval.FAST).withSecret("[your secret]")
+				.in(client).and(new WhenNodeChanged() {
 
-checkForPizza(dsl, client, context);
+					@Override
+					public void thenDo(final WithNodeChangedContext context) {
 
-}
+						checkForPizza(dsl, client, context);
 
-}); } \[/sourcecode\]
+					}
+
+				});
+	}
+```
 
 This class so far will install a monitor on the `./servings` node and call a `checkForPizza` method every time a change has been made to the servings node.
 
 The `checkForPizza` method can be defined as follows:
 
-\[sourcecode language="java"\] private void checkForPizza(final CoreDsl dsl, final OneClient client, final WithNodeChangedContext context) { dsl.selectFrom(context.changedNode()).theChildren() .ofType(String.class).in(client) .and(new WhenChildrenSelected<OneTypedReference<String>>() {
+```java
 
-@Override public void thenDo( final WithChildrenSelectedResult<OneTypedReference<String>> csr) {
+private void checkForPizza(final CoreDsl dsl, final OneClient client,
+		final WithNodeChangedContext context) {
+	dsl.selectFrom(context.changedNode()).theChildren()
+			.ofType(String.class).in(client)
+			.and(new WhenChildrenSelected<OneTypedReference<String>>() {
 
-for (final OneTypedReference<String> pizza : csr .children()) {
+				@Override
+				public void thenDo(
+						final WithChildrenSelectedResult<OneTypedReference<String>> csr) {
 
-if (!dsl.dereference(pizza).in(client) .equals("Pizza!")) { continue; }
+					for (final OneTypedReference<String> pizza : csr
+							.children()) {
 
-dsl.replace(pizza) .with("Yummy (" + eaten + ")!") .in(client); eaten++; System.out.println("Ate " + eaten + " Pizza(s)!"); }
+						if (!dsl.dereference(pizza).in(client)
+								.equals("Pizza!")) {
+							continue;
+						}
 
-dsl.commit(client).and(WhenCommitted.DO\_NOTHING);
+						dsl.replace(pizza)
+								.with("Yummy (" + eaten + ")!")
+								.in(client);
+						eaten++;
+						System.out.println("Ate " + eaten
+								+ " Pizza(s)!");
+					}
 
-if (eaten > 10) { System.out.println("Had enough pizza."); context.monitor().stop(WhenShutdown.DO\_NOTHING); System.exit(0); } } }); } \[/sourcecode\]
+					dsl.commit(client).and(WhenCommitted.DO_NOTHING);
+
+					if (eaten > 10) {
+						System.out.println("Had enough pizza.");
+						context.monitor().stop(WhenShutdown.DO_NOTHING);
+						System.exit(0);
+					}
+				}
+			});
+}
+```
 
 This method does the following:
 
@@ -92,7 +146,23 @@ This method does the following:
 
 Producer and consumer can be assembled in an application such as given [here](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/V_JangleJavaShort_Synchronize.java). Running this application should result in an output such as the following:
 
-\[sourcecode\]Making pizza ... Ate 1 Pizza(s)! ... pizza made! Making pizza ... ... pizza made! Making pizza ... ... pizza made! Ate 2 Pizza(s)! Ate 3 Pizza(s)! Making pizza ... ... pizza made! Making pizza ... Ate 4 Pizza(s)! ... pizza made! Making pizza ...\[/sourcecode\]
+```
+Making pizza ...
+Ate 1 Pizza(s)!
+... pizza made!
+Making pizza ...
+... pizza made!
+Making pizza ...
+... pizza made!
+Ate 2 Pizza(s)!
+Ate 3 Pizza(s)!
+Making pizza ...
+... pizza made!
+Making pizza ...
+Ate 4 Pizza(s)!
+... pizza made!
+Making pizza ...
+```
 
 While such a producer/consumer example is easily accomplished using threads and shared resources, the producer and consumer in the given example need not be part of one application. Indeed, producer and consumer can run on seperate Java-compatible devices as long as these are connected to the Internet.
 
