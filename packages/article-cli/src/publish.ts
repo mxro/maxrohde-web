@@ -58,7 +58,7 @@ async function copyCoverImage(
 }
 
 export const publish = async (args: PublishArgs): Promise<void> => {
-  const contentDir = args.directoryToScan || config['defaultContentDir'];
+  const contentDir = args.directoryToScan || config['postsDir'];
   const pattern = `**/*${args.fileNamePattern}*`;
   console.log(`Searching for articles in ${resolve(contentDir)}`);
   console.log(`  using pattern: [${pattern}]`);

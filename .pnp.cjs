@@ -4332,6 +4332,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/fs-extra", [\
+        ["npm:9.0.13", {\
+          "packageLocation": "./.yarn/cache/@types-fs-extra-npm-9.0.13-12fb7badd7-add79e212a.zip/node_modules/@types/fs-extra/",\
+          "packageDependencies": [\
+            ["@types/fs-extra", "npm:9.0.13"],\
+            ["@types/node", "npm:14.0.13"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/glob", [\
         ["npm:7.1.2", {\
           "packageLocation": "./.yarn/cache/@types-glob-npm-7.1.2-b4ef4d23ef-a79c6d71b0.zip/node_modules/@types/glob/",\
@@ -5914,6 +5924,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/article-cli/",\
           "packageDependencies": [\
             ["article-cli", "workspace:packages/article-cli"],\
+            ["@types/fs-extra", "npm:9.0.13"],\
             ["@types/html-to-text", "npm:8.1.1"],\
             ["@types/jest", "npm:27.5.2"],\
             ["@types/marked", "npm:4.0.7"],\
@@ -5922,6 +5933,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["db-blog", "workspace:packages/db-blog"],\
             ["dynamodb-toolbox", "npm:0.4.3"],\
             ["fast-glob", "npm:3.2.12"],\
+            ["fs-extra", "npm:10.1.0"],\
             ["gray-matter", "npm:4.0.3"],\
             ["html-to-text", "npm:8.2.1"],\
             ["jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:28.1.0"],\
@@ -11070,6 +11082,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/fs-extra-npm-10.0.0-4f8c704115-5285a3d8f3.zip/node_modules/fs-extra/",\
           "packageDependencies": [\
             ["fs-extra", "npm:10.0.0"],\
+            ["graceful-fs", "npm:4.2.4"],\
+            ["jsonfile", "npm:6.0.1"],\
+            ["universalify", "npm:2.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:10.1.0", {\
+          "packageLocation": "./.yarn/cache/fs-extra-npm-10.1.0-86573680ed-dc94ab3709.zip/node_modules/fs-extra/",\
+          "packageDependencies": [\
+            ["fs-extra", "npm:10.1.0"],\
             ["graceful-fs", "npm:4.2.4"],\
             ["jsonfile", "npm:6.0.1"],\
             ["universalify", "npm:2.0.0"]\

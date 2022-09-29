@@ -1,8 +1,11 @@
 import { Command } from 'commander';
 import { connectTable } from 'db-blog';
-
+import config from './config.json';
 import packageJson from './../package.json';
+import { mergePosts } from './mergePosts';
 import { publish } from './publish';
+import { wordpressPreprocessFile } from './wordpressPreprocess';
+import { wordpressToMarkdown } from './wordpressToMarkdown';
 
 (async () => {
   const program = new Command();
@@ -40,6 +43,34 @@ import { publish } from './publish';
         table,
         categories,
       });
+    });
+
+  program
+    .command('fix-wordpress')
+    .description('Fixes Wordpress XML file input')
+    .action(async () => {
+      await wordpressPreprocessFile(
+        config['codeOfJoyXmlExport'],
+        config['codeOfJoyXmlFixed']
+      );
+      await wordpressPreprocessFile(
+        config['spearOfLightXmlExport'],
+        config['spearOfLightXmlFixed']
+      );
+    });
+
+  program
+    .command('wordpress-to-markdown')
+    .description('Converts Wordpress XML to Markdown')
+    .action(async () => {
+      await wordpressToMarkdown();
+    });
+
+  program
+    .command('import-posts')
+    .description('Imports Wordpress Posts to Posts folder')
+    .action(async () => {
+      await mergePosts();
     });
 
   program.parse();

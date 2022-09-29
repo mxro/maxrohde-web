@@ -19,11 +19,13 @@
     "db-blog": "workspace:^",
     "dynamodb-toolbox": "^0.4.3",
     "fast-glob": "^3.2.11",
+    "fs-extra": "^10.1.0",
     "gray-matter": "^4.0.3",
     "html-to-text": "^8.2.1",
     "marked": "^4.0.18"
   },
   "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
     "@types/html-to-text": "^8",
     "@types/jest": "^27.5.1",
     "@types/marked": "^4",
