@@ -1,0 +1,96 @@
+---
+title: "Loading Resources in Class Package for PDE using Eclipse IAM"
+date: "2010-06-04"
+categories: 
+  - "java"
+---
+
+**The Problem**
+
+Maven has a slightly different approach to handling resources in Java packages than Eclipse PDE. For Maven, usually only \*.java files are compiled and the rest of the files in java packages are ignored. For Eclipse PDE, these files are included in the classpath.
+
+This works fine as long as resources and \*.java files are mixed in the same package as shown below:
+
+![bildschirmfoto2010-06-05um11-40-22.png](images/bildschirmfoto2010-06-05um11-40-22.png)
+
+When this project is compiled using Maven, the folder with the resources remains empty:
+
+![bildschirmfoto2010-06-05um11-39-00.png](images/bildschirmfoto2010-06-05um11-39-00.png)
+
+Using eclipses plugin export, all the resources are copied:
+
+![bildschirmfoto2010-06-05um11-48-15.png](images/bildschirmfoto2010-06-05um11-48-15.png)
+
+**Causes of the Problem**
+
+The cause of the problem is a different handling of classpaths: when an eclipse project is converted to a Maven project, the classpath is changed:
+
+Create a new Plug in project
+
+Commit the project to a SVN server
+
+Rigth click and select Maven 2 / Enable dependency management
+
+Right click and select Team / Synchronize
+
+The Maven 2 Plugin changes the following files:
+
+![bildschirmfoto2010-06-05um13-50-24.png](images/bildschirmfoto2010-06-05um13-50-24.png)
+
+Changes in the settings
+
+![bildschirmfoto2010-06-05um13-51-59.png](images/bildschirmfoto2010-06-05um13-51-59.png)
+
+Changes in .project
+
+![bildschirmfoto2010-06-05um13-59-24.png](images/bildschirmfoto2010-06-05um13-59-24.png)
+
+And the changes in .classpath show what causes the problems:
+
+![bildschirmfoto2010-06-05um13-55-43.png](images/bildschirmfoto2010-06-05um13-55-43.png)
+
+![bildschirmfoto2010-06-05um13-57-24.png](images/bildschirmfoto2010-06-05um13-57-24.png)
+
+In specific the filter „including="\*\*/\*.java"“ causes the problems, the resources will have other extensions such as .png.
+
+**Solving the Problem for eclipse PDE**
+
+The following solves the problem for PDE Development:
+
+Remove the including attribute in .classpath:
+
+![bildschirmfoto2010-06-05um14-01-23.png](images/bildschirmfoto2010-06-05um14-01-23.png)
+
+My projects are all in one eclipse workspace, and I would suggest to change all the .classpath files in a batch. For that one way to do this so to go to Search / File in eclipse.
+
+![bildschirmfoto2010-06-05um19-02-58.png](images/bildschirmfoto2010-06-05um19-02-58.png)
+
+After specifying the settings above, hit Replace
+
+Each project should have two matches in the projects .classpath file.
+
+![bildschirmfoto2010-06-05um19-03-53.png](images/bildschirmfoto2010-06-05um19-03-53.png)
+
+Just replace „<classpathentry including=“\*\*/\*.java”“ with „<classpathentry “ (make sure to leave one space at the end of the replacement string).
+
+You can preview all the changes by hitting preview:
+
+![bildschirmfoto2010-06-05um19-05-35.png](images/bildschirmfoto2010-06-05um19-05-35.png)
+
+**Solving the Problem for Maven**
+
+Resources in the same packages as classes also require of bit of tweaking in the Maven project file (pom.xml).
+
+I needed the following additional entries in the pom.xml so that the jar is created by Maven in the right way:
+
+<resources>                         <resource>                                 <filtering>false</filtering>                                 <directory>src/main/java</directory>                                 <includes>                                         <include>\*\*</include>                                 </includes>                                 <excludes>                                         <exclude>\*\*/\*.java</exclude>                                 </excludes>                         </resource>                         <resource>                                 <targetPath>OSGI-INF</targetPath>                                 <filtering>false</filtering>                                 <directory>OSGI-INF</directory>                          <includes>                                         <include>\*\*</include>                                 </includes>                         </resource>                         <resource>                                                 <filtering>false</filtering>                                 <directory>src/main/resources</directory>                          <includes>                                         <include>\*\*</include>                                 </includes>                         </resource> </resources>
+
+The OSGI-INF folder is, of course, only needed when declarative services etc is used. I really do not know why know a manual entry for src/main/resources is necessary? It should be included following the Maven convention.
+
+Also, as described before, an additional plugin needs to be loaded in order to use the MANIFEST.MF file from eclipse rather than the one generated by Maven:
+
+<plugin>         <groupId>org.apache.maven.plugins</groupId>         <artifactId>maven\-jar-plugin</artifactId>         <configuration>                 <archive>                         <manifestFile>META-INF/MANIFEST.MF</manifestFile>                 </archive> </configuration> </plugin>
+
+**Resources**
+
+[Blog post on the difference between getResourceAsStream and Bundle getEntry](http://www.eclipsezone.com/eclipse/forums/t101557.html) [Discussion about getResourceAsStream in OSGi](http://www.eclipsezone.com/eclipse/forums/t63159.html)

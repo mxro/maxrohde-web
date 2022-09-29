@@ -3,6 +3,7 @@ import { connectTable } from 'db-blog';
 
 import packageJson from './../package.json';
 import { publish } from './publish';
+import { wordpressPreprocessFile } from './wordpressPreprocess';
 
 (async () => {
   const program = new Command();
@@ -42,5 +43,13 @@ import { publish } from './publish';
       });
     });
 
+  program
+    .command('fix-wordpress')
+    .description('Fixes Wordpress XML file input')
+    .argument('<filename>', 'The filename of Wordpress XML export')
+    .argument('<dest>', 'The filename of fixed Wordpress XML export')
+    .action(async (filename, dest) => {
+      await wordpressPreprocessFile(filename, dest);
+    });
   program.parse();
 })();
