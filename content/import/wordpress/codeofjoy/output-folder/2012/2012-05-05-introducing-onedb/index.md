@@ -51,13 +51,20 @@ The following are the minimal but sufficient steps to connect two pieces of data
 3. [Link the onedb client library to an existing or new Java project](http://maxrohde.com/2012/05/06/onedb-tutorial/#linkingclientlibrary "Link onedb client library")
 4. Add the following statement anywhere in your Java app:
 
-\[sourcecode language="java"\] OneJre.init("\[your API key here\]");
+```java
+
+OneJre.init("[your API key here]");
 
 One.createRealm("foo").and(new When.RealmCreated() {
 
-@Override public void thenDo(WithRealmCreatedResult r) { One.append("bar").to(r.root()).in(r.client());
+    @Override
+    public void thenDo(WithRealmCreatedResult r) {
+        One.append("bar").to(r.root()).in(r.client());
 
-System.out.println("Created " + r.root() + ":" + r.secret()); } }); \[/sourcecode\]
+        System.out.println("Created " + r.root() + ":" + r.secret());
+    }
+});
+```
 
 \[[full source on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/A_IntroducingOnedb.java "Source code example")\]
 
@@ -65,11 +72,20 @@ The code listed above will create two nodes in the onedb cloud. The first node "
 
 Both nodes will be identified with unique [resolvable identifiers](http://milicicvuk.com/blog/2011/07/26/problems-of-linked-data-14-identity/ "Problems of Linked Data (1/4): Identity") such as:
 
-\[sourcecode language="text"\] foo: https://u1.linnk.it/1owvl3/foo bar: https://u1.linnk.it/1owvl3/foo/bar1 \[/sourcecode\]
+```text
+
+foo: https://u1.linnk.it/1owvl3/foo
+bar: https://u1.linnk.it/1owvl3/foo/bar1
+```
 
 It is also possible to access the nodes using a simple REST interface (given the access `secret` is supplied using HTTP BASIC authentication). Various representations such as the following are supported through [URLs](http://damnhandy.com/2007/11/19/uri-vs-url-whats-the-difference/ "URI vs. URL: What’s the Difference?") such the following:
 
-\[sourcecode language="text"\] https://u1.linnk.it/1owvl3/foo.node.xml https://u1.linnk.it/1owvl3/foo.value.json https://u1.linnk.it/1owvl3/foo/bar1.value.html \[/sourcecode\]
+```text
+
+https://u1.linnk.it/1owvl3/foo.node.xml
+https://u1.linnk.it/1owvl3/foo.value.json
+https://u1.linnk.it/1owvl3/foo/bar1.value.html 
+```
 
 The example above describes _all_ the configuration necessary to start storing data using onedb. There is no need to set up a server, to configure databases, buckets or private keys, no definition of tables or keys and no JDBC connection pool. You can further see the [fluent](http://blog.jooq.org/2012/01/05/the-java-fluent-api-designer-crash-course/ "The Java Fluent API Designer Crash Course") API of the onedb client resembling English sentences ("create realm 'foo' and when realm created then do ..."). But, most importantly, the expressiveness of the code snippet is amplified by a number of powerful conventions embedded in onedb, such as the automatic designation of global identities for all created nodes or the various data representations in formats like JSON or XML, which are available for every node in the onedb cloud.
 
@@ -89,13 +105,20 @@ This simplicity at the heart of the onedb engine enables the database to support
 
 onedb further strives to be generalizable in that it minimizes the assumptions about your data. For instance, how the data is organized, how it is queried or which data types are used. As an example for the support of a wide diversity of data types, see the example snippet below. All listed operations will work in onedb without need for custom configuration:
 
-\[sourcecode language="java"\]public static class Person implements Serializable { };
+```java
+public static class Person implements Serializable {
+};
 
 ...
 
-String bar = "bar"; Integer meaning = 42; Person p = new Person();
+String bar = "bar";
+Integer meaning = 42;
+Person p = new Person();
 
-One.append(bar).to(realmRoot).in(client); One.append(meaning).to(bar).in(client); One.append(p).to(bar).in(client); \[/sourcecode\]
+One.append(bar).to(realmRoot).in(client);
+One.append(meaning).to(bar).in(client);
+One.append(p).to(bar).in(client);
+```
 
 \[[full source on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/B_IntroducingOnedbGeneralizability.java "Generalizability Example App")\]
 
@@ -121,13 +144,21 @@ onedb strives to make code, which relies on data that will be persisted in the p
 
 I have given an example above for a simple application, which connects two nodes in the onedb cloud. We can test this application locally in far superior speed (since there are no Internet messages being sent) by simply changing the first line of the application code to `OneTestJre.init();`:
 
-\[sourcecode language="java"\] OneTestJre.init(); // was: OneJre.init("\[your API key\]");
+```java
+
+OneTestJre.init(); // was: OneJre.init("[your API key]");
 
 One.createRealm("foo").and(new When.RealmCreated() {
 
-@Override public void thenDo(WithRealmCreatedResult r) { One.append("bar").to(r.root()).in(r.client());
+    @Override
+    public void thenDo(WithRealmCreatedResult r) {
+        One.append("bar").to(r.root()).in(r.client());
 
-System.out.println("Created " + r.root() + ":" + r.secret()); } }); \[/sourcecode\]
+        System.out.println("Created " + r.root() + ":" + r.secret());
+    }
+    
+});
+```
 
 \[[full source on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/C_IntroductionOnedbTestability.java "Example App Testability")\]
 

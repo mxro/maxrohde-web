@@ -6,7 +6,6 @@ categories:
 tags: 
   - "economics"
   - "economy"
-  - "habit"
   - "opinion"
 coverImage: "bills-496229.jpg"
 ---

@@ -6,7 +6,6 @@ categories:
 tags: 
   - "enlightenment"
   - "reason"
-  - "habit"
   - "truth"
 coverImage: "sunrise-3850768.jpg"
 ---

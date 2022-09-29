@@ -17,6 +17,9 @@ In order to work as part of an embedded iframe, youtube video links must be in t
 
 Luckily, given any 'normal' youtube link, it is very easy to generate such an embed link. In JavaScript, this can be done with the following function:
 
-\[sourcecode language="JavaScript"\]function createYouTubeEmbedLink (link) { return link.replace("http://www.youtube.com/watch?v=", "http://www.youtube.com/embed/"); }
+```JavaScript
+function createYouTubeEmbedLink (link) {
+ return link.replace("http://www.youtube.com/watch?v=", "http://www.youtube.com/embed/");
+ }
 
-\[/sourcecode\]
+```

@@ -18,18 +18,24 @@ Here find two examples of how to render JavaScript and CoffeeScript objects into
 
 **JavaScript Object**
 
-\[sourcecode language="javascript"\]CoffeeKup.render(function() {
+```javascript
+CoffeeKup.render(function() {
 
-return div({ class: 'mydiv' }, 'Hello World');
+  return div({ class: 'mydiv' }, 'Hello World');
 
-});\[/sourcecode\]
+});
+```
 
 which results in:
 
-\[code\]"<div class='mydiv'>Hello World</div>"\[/code\]
+```
+"<div class='mydiv'>Hello World</div>"
+```
 
 **CoffeeScript Object**
 
-\[sourcecode language="javascript"\]CoffeeKup.render(div 'mydiv', ->'Hello World'<span style="line-height: 1.5em;">);\[/sourcecode\]
+```javascript
+CoffeeKup.render(div 'mydiv', ->'Hello World'<span style="line-height: 1.5em;">);
+```
 
 resulting in the same HTML as above.

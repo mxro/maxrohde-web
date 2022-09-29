@@ -25,25 +25,40 @@ Drop the client library into a Java project of your favorite IDE or assure they 
 
 Define a new Java class and add a main method. Add the following code to your app:
 
-\[sourcecode language="java"\] final CoreDsl dsl = OneJre.init();
+```java
+
+final CoreDsl dsl = OneJre.init();
 
 final OneClient client = dsl.createClient();
 
 dsl.seed(client, new WhenSeeded() {
 
-@Override public void thenDo(final WithSeedResult sr) {
+	@Override
+	public void thenDo(final WithSeedResult sr) {
 
-final OneNode parlor = dsl.append("My Pizza Parlor") .to(sr.seedNode()).atAddress("./pizzaParlor") .in(client);
+		final OneNode parlor = dsl.append("My Pizza Parlor")
+				.to(sr.seedNode()).atAddress("./pizzaParlor")
+				.in(client);
 
-dsl.append("Awsome Pizza!").to(parlor).in(client);
+		dsl.append("Awsome Pizza!").to(parlor).in(client);
 
-System.out.println("Pizza Parlor Created:"); System.out.println("at node : " + parlor.getId()); System.out.println("access secret: " + sr.accessToken());
+		System.out.println("Pizza Parlor Created:");
+		System.out.println("at node      : " + parlor.getId());
+		System.out.println("access secret: " + sr.accessToken());
 
-dsl.shutdown(client).and(WhenShutdown.DO\_NOTHING); } }); \[/sourcecode\]
+		dsl.shutdown(client).and(WhenShutdown.DO_NOTHING);
+	}
+});
+```
 
 Running the application should result in an output such as the following.
 
-\[sourcecode\] Pizza Parlor Created: at node : https://u1.linnk.it/lnzvwp/sd1/3/h/sd/pizzaParlor access secret: rfa\_\_\_\_\_\_1rd \[/sourcecode\]
+```
+
+Pizza Parlor Created:
+at node      : https://u1.linnk.it/lnzvwp/sd1/3/h/sd/pizzaParlor
+access secret: rfa______1rd
+```
 
 **Important:** Save the _node_ and _access secret_ for step 3.
 
@@ -68,21 +83,30 @@ While new data was defined on the appjangle platform in the previous step, in th
 
 For this, define a new Java class with the following main method. Replace the _node_ and _access secret_ with the ones you have saved in the previous step:
 
-\[sourcecode language="java"\] final CoreDsl dsl = OneJre.init();
+```java
+
+final CoreDsl dsl = OneJre.init();
 
 final OneClient client = dsl.createClient();
 
-dsl.load("\[your node\]").withSecret("\[your secret\]") .in(client).and(new WhenLoaded() {
+dsl.load("[your node]").withSecret("[your secret]")
+		.in(client).and(new WhenLoaded() {
 
-@Override public void thenDo(final WithLoadResult<Object> lr) {
+			@Override
+			public void thenDo(final WithLoadResult<Object> lr) {
 
-final OneNode servings = dsl.append("servings") .to(lr.loadedNode()).atAddress("./servings") .in(client);
+				final OneNode servings = dsl.append("servings")
+						.to(lr.loadedNode()).atAddress("./servings")
+						.in(client);
 
-dsl.append("Pizza!").to(servings).in(client);
+				dsl.append("Pizza!").to(servings).in(client);
 
-System.out.println("Servings defined.");
+				System.out.println("Servings defined.");
 
-dsl.shutdown(client).and(WhenShutdown.DO\_NOTHING); } }); \[/sourcecode\]
+				dsl.shutdown(client).and(WhenShutdown.DO_NOTHING);
+			}
+		});
+```
 
 Running the app, will result in the following:
 

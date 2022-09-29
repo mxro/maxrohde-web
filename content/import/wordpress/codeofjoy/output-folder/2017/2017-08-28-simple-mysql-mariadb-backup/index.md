@@ -43,15 +43,24 @@ server-id=1
 
 - Create the folder logs in your MySQL data dir (e.g. /var/lib/mysql)
 
-\[code\] mkdir /var/lib/mysql/logs \[/code\]
+```
+
+mkdir /var/lib/mysql/logs
+```
 
 - Set owner to user mysql for folder logs
 
-\[code\] chown mysql:mysql /var/lib/mysql/logs \[/code\]
+```
+
+chown mysql:mysql /var/lib/mysql/logs
+```
 
 - Restart MySQL server
 
-\[code\] sudo systemctl restart mysqld \[/code\]
+```
+
+sudo systemctl restart mysqld
+```
 
 Now a binary logs should be written into the logs folder in your MySQL data dir.
 
@@ -64,31 +73,54 @@ On _Database Server_:
 - Search for the line starting with dumpopts. In this line, provide your mysql username and password.
 - Make the script executable
 
-\[code\] sudo chmod +x /usr/local/mysql\_dump.sh \[/code\]
+```
+
+sudo chmod +x /usr/local/mysql_dump.sh
+```
 
 - Schedule the script to run once every day using cron or systemd
 
 #### cron
 
-\[code\] 30 3 \* \* \* /usr/local/mysql\_dump.sh \[/code\]
+```
+
+30 3 * * * /usr/local/mysql_dump.sh
+```
 
 #### systemd
 
 - Create _/etc/systemd/system/mysql\_dump.service_
 
-\[code\] \[Unit\] Description=Dumps mysql databases to backup directory
+```
 
-\[Service\] Type=oneshot ExecStart=/usr/local/mysql\_dump.sh \[/code\]
+[Unit]
+Description=Dumps mysql databases to backup directory
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/mysql_dump.sh
+```
 
 - Create _/etc/systemd/system/mysql\_dump.timer_
 
-\[code\] \[Unit\] Description=Run MySQL dump once per day
+```
 
-\[Timer\] OnCalendar=\*-\*-\* 03:13:00 OnBootSec=60min Unit=mysql\_dump.service \[/code\]
+[Unit]
+Description=Run MySQL dump once per day
+
+[Timer]
+OnCalendar=*-*-* 03:13:00
+OnBootSec=60min
+Unit=mysql_dump.service
+```
 
 - And don't forget to enable and start the timer:
 
-\[code\] sudo systemctl enable mysql\_dump.timer sudo systemctl start mysql\_dump.timer \[/code\]
+```
+
+sudo systemctl enable mysql_dump.timer
+sudo systemctl start mysql_dump.timer
+```
 
 ### Step 3: Write Script to Backup Files to Remote Server
 
@@ -96,48 +128,79 @@ On the _Backup Server_:
 
 - Log into your Backup Server. Create a user _mysqlbackup_ here:
 
-\[code\] useradd mysqlbackup \[/code\]
+```
+
+useradd mysqlbackup
+```
 
 - Change to mysqlbackup user
 
-\[code\] sudo su - mysqlbackup \[/code\]
+```
+
+sudo su - mysqlbackup
+```
 
 - Create directories logs and dumps
 
-\[code\] mkdir logs mkdir dumps \[/code\]
+```
+
+mkdir logs
+mkdir dumps
+```
 
 On the _Database Server_:
 
 - Copy public key for root user from /root/.ssh/id\_rsa.pub
 - If the public key for root does not exist, run:
 
-\[code\] sudo ssh-keygen -t rsa \[/code\]
+```
+
+sudo ssh-keygen -t rsa
+```
 
 On the _Backup Server_:
 
 - While being logged in as user mysqlbackup, assure the following file exists
 
-\[code\] ~/.ssh/authorized\_keys \[/code\]
+```
+
+~/.ssh/authorized_keys
+```
 
 - Into this file, paste the public key for root on Server 1
 - Assure [correct permissions](https://ubuntuforums.org/showthread.php?t=2268850) for .ssh folder:
 
-\[code\] chmod 700 .ssh chmod 600 .ssh/authorized\_keys \[/code\]
+```
+
+chmod 700 .ssh
+chmod 600 .ssh/authorized_keys
+```
 
 On the _Database Server_:
 
 - Test access to the Backup Server (the sudo is important here, since you want to connect as the root user). Replace yourservername.com with the address/IP of Server 2.
 
-\[code\] sudo ssh mysqlbackup@yourservername.com \[/code\]
+```
+
+sudo ssh mysqlbackup@yourservername.com
+```
 
 - If the SSH does not work for some reason, check [this guide](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) for more information.
 - Create the script /usr/local/mysql\_backup.sh. Replace yourserver.com with the address/IP of your server.
 
-\[code\] #!/bin/bash rsync -avz --delete /var/lib/mysql/logs mysqlbackup@yourserver.com:/home/mysqlbackup rsync -avz --delete /var/lib/mysql/dumps mysqlbackup@yourserver.com:/home/mysqlbackup \[/code\]
+```
+
+#!/bin/bash
+rsync -avz --delete /var/lib/mysql/logs mysqlbackup@yourserver.com:/home/mysqlbackup
+rsync -avz --delete /var/lib/mysql/dumps mysqlbackup@yourserver.com:/home/mysqlbackup
+```
 
 - Make the script executable
 
-\[code\] sudo chmod +x /usr/local/mysql\_backup.sh \[/code\]
+```
+
+sudo chmod +x /usr/local/mysql_backup.sh
+```
 
 - Use crontab or systemd to schedule the job for execution every 5 minutes:
 
@@ -145,22 +208,42 @@ On the _Database Server_:
 
 - Add the following line to the crontab for the user root
 
-\[code\] \*/5 \* \* \* \* /usr/local/mysql\_backup.sh \[/code\]
+```
+
+*/5 * * * * /usr/local/mysql_backup.sh
+```
 
 #### systemd
 
 - Create the file _/etc/systemd/system/mysql\_backup.service_
 
-\[code\] \[Unit\] Description=Backs up Mysql binary logs and full backups to remote server
+```
 
-\[Service\] Type=oneshot ExecStart=/usr/local/mysql\_backup.sh \[/code\]
+[Unit]
+Description=Backs up Mysql binary logs and full backups to remote server
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/mysql_backup.sh
+```
 
 - Create the file _/etc/systemd/system/mysql\_backup.timer_
 
-\[code\] \[Unit\] Description=Run MySQL binlog backup and full backup sync every 5 minutes
+```
 
-\[Timer\] OnCalendar=\*:0/5 OnBootSec=5min Unit=mysql\_backup.timer \[/code\]
+[Unit]
+Description=Run MySQL binlog backup and full backup sync every 5 minutes
+
+[Timer]
+OnCalendar=*:0/5
+OnBootSec=5min
+Unit=mysql_backup.timer
+```
 
 - Enable and start the timer
 
-\[code\] sudo systemctl enable mysql\_backup.timer sudo systemctl start mysql\_backup.timer \[/code\]
+```
+
+sudo systemctl enable mysql_backup.timer
+sudo systemctl start mysql_backup.timer
+```

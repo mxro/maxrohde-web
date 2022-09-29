@@ -13,23 +13,29 @@ Unfortunately, the documentation of CoffeeKup I could find was not very clear on
 
 And here is the answer:
 
-\[sourcecode language="javascript"\]div class: 'myclass', ->
+```javascript
+div class: 'myclass', ->
 
-div class: 'nested'\[/sourcecode\]
+  div class: 'nested'
+```
 
 Which will result in the HTML document:
 
-\[code language="html"\]<div class='myclass'>
+```html
+<div class='myclass'>
 
-<div class='nested'></div>
+  <div class='nested'></div>
 
-</div>\[/code\]
+</div>
+```
 
 Or in more succinct form:
 
-\[code language="javascript"\]div 'myclass', ->
+```javascript
+div 'myclass', ->
 
-div 'nested', ->\[/code\]
+  div 'nested', ->
+```
 
 Please note the '->' after the declaration of the class for the second div. Without it, CoffeeKup would render 'nested' as text and not as element.
 

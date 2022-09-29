@@ -23,21 +23,37 @@ However, sometimes, as in my case, the application works correctly and just requ
 
 The JVM parameters, which allow to allocate more memory or stack size to a JVM are:
 
-1. \[sourcecode\]-Xss(x)m\[/sourcecode\]
+1. 
+
+```
+-Xss(x)m
+```
 
 where x is the size of the stack you would like to use. For instance: -Xss4m for a 4 MB stack size.
 
-2\. \[sourcecode\]-Xmx(x)m\[/sourcecode\]
+2.
+
+```
+-Xmx(x)m
+```
 
 where x is the size of the Java heap space (=memory) you would like to use. For instance: -Xmx1024m for a 1024 MB heap space.
 
 Unfortunately, there are multiple places in which these parameters can be configured. Essentially, if the increased heap space requirement is in your application, you will need to adjust the parameters **for the JUnit test runner in Maven**:
 
-\[sourcecode language="xml"\]
+```xml
 
-<plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId> <version>2.12.4</version> <configuration> <argLine>-Xss18m</argLine> </configuration> </plugin>
 
-\[/sourcecode\]
+<plugin>
+ <groupId>org.apache.maven.plugins</groupId>
+ <artifactId>maven-surefire-plugin</artifactId>
+ <version>2.12.4</version>
+ <configuration>
+ <argLine>-Xss18m</argLine>
+ </configuration>
+ </plugin>
+
+```
 
 However, if the adjusted parameters are required for building your application, you might have to adjust them for the **Maven Build Process**.
 

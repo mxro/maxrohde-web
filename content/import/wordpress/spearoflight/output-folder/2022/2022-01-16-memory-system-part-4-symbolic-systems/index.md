@@ -44,18 +44,18 @@ Astronomical Clock ([Hermann](https://pixabay.com/photos/astronomical-clock-cloc
 
 A way to represent an ordered list or a specific number is to associate them with geometrical shapes of a matching number of points. The following list combines both two-dimensional and three-dimensional shapes to arrive at easy to recognise shapes.
 
-| Number | Geometrical Figure              | Image       |
-| ------ | ------------------------------- | ----------- |
-| 0 / ♾  | Circle                          | Ring        |
-| 1      | Dot                             | Ball        |
-| 2      | Line                            | Rope        |
-| 3      | Triangle                        | Street Sign |
-| 4      | Square                          | Cloth       |
-| 5      | Square Pyramid                  | Pyramid     |
-| 6      | Triangular Prism                | Roof        |
-| 7      | Hexagonal Pyramid               | Diamond     |
-| 8      | Cube                            | Box         |
-| 9      | House/ Elongated square pyramid | House       |
+| Number | Geometrical Figure | Image |
+| --- | --- | --- |
+| 0 / ♾ | Circle | Ring |
+| 1 | Dot | Ball |
+| 2 | Line | Rope |
+| 3 | Triangle | Street Sign |
+| 4 | Square | Cloth |
+| 5 | Square Pyramid | Pyramid |
+| 6 | Triangular Prism | Roof |
+| 7 | Hexagonal Pyramid | Diamond |
+| 8 | Cube | Box |
+| 9 | House/ Elongated square pyramid | House |
 
 Mappings of numbers to geometrical shapes with a matching number of points
 
@@ -77,46 +77,46 @@ Elongated Square Pyramid
 
 It is generally difficult to remember any abstract concepts, and numbers are no exception to this rule for most of us. Dean Vaughn suggestes a system to convert numbers into words in the book [How to Remember Anything](https://www.goodreads.com/book/show/2403592.How_to_Remember_Anything). This system is built upon associating numbers with specific consonants or more specifically sounds. Find the mapping of numbers to sounds below.
 
-| Number | Consonant/ Sound | Examples                     |
-| ------ | ---------------- | ---------------------------- |
-| 0      | S, C, Z          | Sea, Celery, Zoo             |
-| 1      | T                | Tea                          |
-| 2      | D, TH            | Doe, Theater                 |
-| 3      | M                | Moon                         |
-| 4      | R                | Rain                         |
-| 5      | L                | Law                          |
-| 6      | G, J, SH, CH     | Gem, Jam, Shoe, Chow         |
-| 7      | C, K, G, Q, CK   | Cat, Kite, Goat, Queen, Rock |
-| 8      | V, F, PH         | Vase, Foe, Photo             |
-| 9      | B, P             | Bee, Pea                     |
+| Number | Consonant/ Sound | Examples |
+| --- | --- | --- |
+| 0 | S, C, Z | Sea, Celery, Zoo |
+| 1 | T | Tea |
+| 2 | D, TH | Doe, Theater |
+| 3 | M | Moon |
+| 4 | R | Rain |
+| 5 | L | Law |
+| 6 | G, J, SH, CH | Gem, Jam, Shoe, Chow |
+| 7 | C, K, G, Q, CK | Cat, Kite, Goat, Queen, Rock |
+| 8 | V, F, PH | Vase, Foe, Photo |
+| 9 | B, P | Bee, Pea |
 
 Code for converting numbers to consonants
 
 Vowels (a, e, i, o, u) and half-vowels (h, w, y) are not associated with any numbers. Combining the consonants from the table above and voweles/ half-vowels then enables to construct words that represent certain numbers. For instance, find below examples for numbers from 0 to 20 based on Dean Vaughn with some modifications:
 
-| Number | Word                      |
-| ------ | ------------------------- |
-| 0, 00  | ho**s**e, **s**ee**s**aw  |
-| 1, 01  | ha**t**, **s**ui**t**     |
-| 2, 02  | he**n**, su**n**          |
-| 3, 03  | ha**m**, **s**u**m**      |
-| 4, 04  | hai**r**, **s**o**r**e    |
-| 5, 05  | hai**l**, sai**l**        |
-| 6, 06  | a**sh**, **s**ta**sh**    |
-| 7, 07  | hoo**k**, **s**o**ck**    |
-| 8, 08  | hoo**f**, **s**a**f**e    |
-| 9, 09  | hoo**p**, **s**oa**p**    |
-| 10     | **t**oe**s**              |
-| 11     | **t**o**t** (young child) |
-| 12     | **t**u**n**a              |
-| 13     | **t**ea**m**              |
-| 14     | **t**i**r**e              |
-| 15     | **t**ai**l**              |
-| 16     | **t**ea**ch**             |
-| 17     | **t**i**ck**              |
-| 18     | **t**e**ff**              |
-| 19     | **t**a**p**               |
-| 20     | **n**o**s**e              |
+| Number | Word |
+| --- | --- |
+| 0, 00 | ho**s**e, **s**ee**s**aw |
+| 1, 01 | ha**t**, **s**ui**t** |
+| 2, 02 | he**n**, su**n** |
+| 3, 03 | ha**m**, **s**u**m** |
+| 4, 04 | hai**r**, **s**o**r**e |
+| 5, 05 | hai**l**, sai**l** |
+| 6, 06 | a**sh**, **s**ta**sh** |
+| 7, 07 | hoo**k**, **s**o**ck** |
+| 8, 08 | hoo**f**, **s**a**f**e |
+| 9, 09 | hoo**p**, **s**oa**p** |
+| 10 | **t**oe**s** |
+| 11 | **t**o**t** (young child) |
+| 12 | **t**u**n**a |
+| 13 | **t**ea**m** |
+| 14 | **t**i**r**e |
+| 15 | **t**ai**l** |
+| 16 | **t**ea**ch** |
+| 17 | **t**i**ck** |
+| 18 | **t**e**ff** |
+| 19 | **t**a**p** |
+| 20 | **n**o**s**e |
 
 Code words for number from 0 to 20
 
@@ -138,31 +138,31 @@ Uneven numbers are the corners of the room, and even numbers are the walls. 0 an
 
 There are a large number of Greek mythological figures and [many of them represent specific concepts](https://en.wikipedia.org/wiki/List_of_Greek_mythological_figures#Personified_concepts). Since abstract concepts are often difficult to remember, it can be useful to use the image of a mythological figure as adornment for abstract concepts. Find below a list of some figures and associated concepts.
 
-| Figure            | Represents                                                                                                     | Symbols                                                                                                                                                                                                                      |
-| ----------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Aphrodite         | beauty, love, desire, and pleasure                                                                             | rose, shell, mirror, myrtle                                                                                                                                                                                                  |
-| Apollo            | music, arts, knowledge, healing, plague, prophecy, poetry, manly beauty, and archery                           | lyre, laurel wreath, raven, swan                                                                                                                                                                                             |
-| Ares              | courage, chaotic warfare, bloodshed, and violence                                                              | sword, spear, shield, helmet                                                                                                                                                                                                 |
-| Artemis           | hunt, wilderness, animals                                                                                      | bow, arrow, quiver, moon, deer, cypress                                                                                                                                                                                      |
-| Athena            | reason, wisdom, intelligence, skill, peace, strategic warefare, and handicrafts                                | owl, olive tree, snake, armour                                                                                                                                                                                               |
-| Chaos             | nothingness from which all of existence sprang                                                                 | disorder                                                                                                                                                                                                                     |
-| Charites / Graces | charm, beauty, nature, human creativity, goodwill, and fertility                                               | three women: [Aglaea](https://en.wikipedia.org/wiki/Aglaea) ("Shining"), [Euphrosyne](https://en.wikipedia.org/wiki/Euphrosyne_(mythology)) ("Joy"), and [Thalia](https://en.wikipedia.org/wiki/Thalia_(Grace)) ("Blooming") |
-| Clio (Muse)       | history                                                                                                        | scrolls, books                                                                                                                                                                                                               |
-| Demeter           | agriculture, harvest, growth, and nourishment                                                                  | wheat, bread                                                                                                                                                                                                                 |
-| Dionysus          | parties, festivals, madness, ecstasy, and theater                                                              | grapevine, goat, ivy                                                                                                                                                                                                         |
-| Gaia              | personification of earth                                                                                       | earth, nature                                                                                                                                                                                                                |
-| Hephaestus        | fire, metalworking, and crafts                                                                                 | smith's [hammer](https://en.wikipedia.org/wiki/Hammer), [anvil](https://en.wikipedia.org/wiki/Anvil)                                                                                                                         |
-| Hera              | women, marriage, childbirth, heirs, kings, and empires                                                         | peacock feather                                                                                                                                                                                                              |
-| Hermes            | boundaries, travel, trade, communication, language, writing, cunning and thieves                               | [Talaria](https://en.wikipedia.org/wiki/Talaria) (winged shoes), [Caduceus](https://en.wikipedia.org/wiki/Caduceus) (staff), [Petasos](https://en.wikipedia.org/wiki/Petasos) (winged helmet)                                |
-| Hestia            | home, domesticity and chastity                                                                                 | hearth and its fire                                                                                                                                                                                                          |
-| Nymphs            | specific place or landform                                                                                     | beautiful maiden                                                                                                                                                                                                             |
-| Polyhymnia        | sacred poetry, sacred hymn, dance, eloquence, pantomime                                                        | long cloak and veil, serious, pensive, medetative (holding finger to mouth)                                                                                                                                                  |
-| Poseidon          | sea, rivers, floods, droughts, and earthquakes                                                                 | trident, fish                                                                                                                                                                                                                |
-| Melpomene (Muse)  | tradegy                                                                                                        | tragic mask, knife                                                                                                                                                                                                           |
-| Thalia (Muse)     | comedy, idyllic poetry                                                                                         | comic mask                                                                                                                                                                                                                   |
-| Thanatos          | death                                                                                                          | poppy, butterfly                                                                                                                                                                                                             |
-| Urania (Muse)     | astronomy, universal love, fact that imagination and the power of thought lift men's souls to heavenly heights | globe, short staff, embroidered with stars, gazes to the heavens                                                                                                                                                             |
-| Zeus              | law, order, and justice                                                                                        | thunderbolt, eagle, oak                                                                                                                                                                                                      |
+| Figure | Represents | Symbols |
+| --- | --- | --- |
+| Aphrodite | beauty, love, desire, and pleasure | rose, shell, mirror, myrtle |
+| Apollo | music, arts, knowledge, healing, plague, prophecy, poetry, manly beauty, and archery | lyre, laurel wreath, raven, swan |
+| Ares | courage, chaotic warfare, bloodshed, and violence | sword, spear, shield, helmet |
+| Artemis | hunt, wilderness, animals | bow, arrow, quiver, moon, deer, cypress |
+| Athena | reason, wisdom, intelligence, skill, peace, strategic warefare, and handicrafts | owl, olive tree, snake, armour |
+| Chaos | nothingness from which all of existence sprang | disorder |
+| Charites / Graces | charm, beauty, nature, human creativity, goodwill, and fertility | three women: [Aglaea](https://en.wikipedia.org/wiki/Aglaea) ("Shining"), [Euphrosyne](https://en.wikipedia.org/wiki/Euphrosyne_(mythology)) ("Joy"), and [Thalia](https://en.wikipedia.org/wiki/Thalia_(Grace)) ("Blooming") |
+| Clio (Muse) | history | scrolls, books |
+| Demeter | agriculture, harvest, growth, and nourishment | wheat, bread |
+| Dionysus | parties, festivals, madness, ecstasy, and theater | grapevine, goat, ivy |
+| Gaia | personification of earth | earth, nature |
+| Hephaestus | fire, metalworking, and crafts | smith's [hammer](https://en.wikipedia.org/wiki/Hammer), [anvil](https://en.wikipedia.org/wiki/Anvil) |
+| Hera | women, marriage, childbirth, heirs, kings, and empires | peacock feather |
+| Hermes | boundaries, travel, trade, communication, language, writing, cunning and thieves | [Talaria](https://en.wikipedia.org/wiki/Talaria) (winged shoes), [Caduceus](https://en.wikipedia.org/wiki/Caduceus) (staff), [Petasos](https://en.wikipedia.org/wiki/Petasos) (winged helmet) |
+| Hestia | home, domesticity and chastity | hearth and its fire |
+| Nymphs | specific place or landform | beautiful maiden |
+| Polyhymnia | sacred poetry, sacred hymn, dance, eloquence, pantomime | long cloak and veil, serious, pensive, medetative (holding finger to mouth) |
+| Poseidon | sea, rivers, floods, droughts, and earthquakes | trident, fish |
+| Melpomene (Muse) | tradegy | tragic mask, knife |
+| Thalia (Muse) | comedy, idyllic poetry | comic mask |
+| Thanatos | death | poppy, butterfly |
+| Urania (Muse) | astronomy, universal love, fact that imagination and the power of thought lift men's souls to heavenly heights | globe, short staff, embroidered with stars, gazes to the heavens |
+| Zeus | law, order, and justice | thunderbolt, eagle, oak |
 
 Greeks Gods and Mythological Figures and Related Concepts
 
@@ -186,13 +186,13 @@ For instance, if you want to remember movie plots, you may come up with symbols 
 
 However, there are some symbols that could be universally useful for many different domains of knowledge. I have listed some of those below:
 
-| Concept              | Symbol                                                 |
-| -------------------- | ------------------------------------------------------ |
-| Important            | Exclamation Mark                                       |
-| Risk / Danger        | Siren                                                  |
-| Opportunity          | [Cornucopia](https://en.wikipedia.org/wiki/Cornucopia) |
-| Idea                 | Light Bulb                                             |
-| Science / Scientific | Flask                                                  |
+| Concept | Symbol |
+| --- | --- |
+| Important | Exclamation Mark |
+| Risk / Danger | Siren |
+| Opportunity | [Cornucopia](https://en.wikipedia.org/wiki/Cornucopia) |
+| Idea | Light Bulb |
+| Science / Scientific | Flask |
 
 Symbols for Concteps
 

@@ -6,7 +6,6 @@ categories:
 tags: 
   - "fate"
   - "game-review"
-  - "habit"
   - "gaming"
   - "leadership"
   - "life"

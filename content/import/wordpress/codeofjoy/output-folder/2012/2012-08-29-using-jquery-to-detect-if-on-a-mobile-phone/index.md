@@ -16,10 +16,20 @@ First, insert an arbitrary div somewhere in the body of your HTML document such 
 
 Then, add the following CSS:
 
-\[sourcecode language="css"\]@media only screen and (max-width: 480px) { #mobileDetector { display: none; } }\[/sourcecode\]
+```css
+@media only screen and (max-width: 480px) {
+#mobileDetector { display: none; }
+}
+```
 
 (Note: You can also use the width 767px or so to also capture tablets).
 
 Finally, the following JQuery function can be used to determine if on a mobile or not:
 
-\[sourcecode language="javascript"\](function($) { $.isMobile = function() { return $('#mobileDetector').css('display') === 'none'; } }) (jQuery);\[/sourcecode\]
+```javascript
+(function($) {
+  $.isMobile = function() { 
+      return $('#mobileDetector').css('display') === 'none'; 
+  }
+}) (jQuery);
+```

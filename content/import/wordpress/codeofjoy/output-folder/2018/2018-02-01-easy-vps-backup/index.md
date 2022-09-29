@@ -19,84 +19,98 @@ You will need to have access to two servers to follow the following. One server 
 - Log into the Backup Client
 - Download the binary using wget
 
-\[code\]
+```
 
-wget https://github.com/restic/restic/releases/download/v0.8.1/restic\_0.8.1\_linux\_amd64.bz2
 
-\[/code\]
+wget https://github.com/restic/restic/releases/download/v0.8.1/restic_0.8.1_linux_amd64.bz2
+
+```
 
 - Unzip the binary
 
-\[code\]
+```
 
-bzip2 -dk restic\_0.8.1\_linux\_amd64.bz2
 
-\[/code\]
+bzip2 -dk restic_0.8.1_linux_amd64.bz2
+
+```
 
 - Move restic to /opt
 
-\[code\]
+```
 
-sudo mv restic\_0.8.1\_linux\_amd64 /opt/restic
 
-\[/code\]
+sudo mv restic_0.8.1_linux_amd64 /opt/restic
+
+```
 
 - Make restic executable
 
-\[code\]
+```
+
 
 chmod +x /opt/restic
 
-\[/code\]
+```
 
 ### Establishing SSH Connection
 
 - On the Backup Client generate an SSH private and public key (Confirm location \`/root/.ssh/id\_rsa\` and provide no passphrase)
 
-\[code\] sudo su - root ssh-keygen -t rsa -b 4096 \[/code\]
+```
+
+sudo su - root
+ssh-keygen -t rsa -b 4096
+```
 
 - Get the public key
 
-\[code\]
+```
 
-cat /root/.ssh/id\_rsa.pub ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDG3en ...
 
-\[/code\]
+cat /root/.ssh/id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDG3en ...
+
+```
 
 - On the Backup Server, create a new user called backup
 - Copy the public key from the Backup Client to the Backup Server so that Backup Client is authorised to access it via SSH. Just copy the output from above and paste it at the end of the authorized\_keys file
 
-\[code\]
+```
 
-sudo vi /home/backup/.ssh/authorized\_keys
 
-\[/code\]
+sudo vi /home/backup/.ssh/authorized_keys
+
+```
 
 - On the Backup Client, test the connection to the Backup Server.
 
-\[code\]
+```
+
 
 sudo ssh backup@...
 
-\[/code\]
+```
 
 ### Perform Backup (on Backup Client)
 
 - [Initialise a new repository](https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html#sftp)
 
-\[code\]
+```
 
-/opt/restic -r sftp:backup@\[backup-server\]:/home/backup/\[backup client host name\] init
 
-\[/code\]
+/opt/restic -r sftp:backup@[backup-server]:/home/backup/[backup client host name] init
+
+```
 
 - Backup the full hard disk (this may take a while!)
 
-\[code\]
+```
 
-/opt/restic --exclude={/dev,/media,/mnt,/proc,/run,/sys,/tmp,/var/tmp} -r sftp:backup@\[backup-server\]:/home/backup/\[backup client host name\] backup /
 
-\[/code\]
+/opt/restic --exclude={/dev,/media,/mnt,/proc,/run,/sys,/tmp,/var/tmp} -r sftp:backup@[backup-server]:/home/backup/[backup client host name] backup /
+
+```
 
  
 
@@ -105,31 +119,37 @@ sudo ssh backup@...
 - On the Backup Client, create the file /root/restic\_password. Paste your password into this file.
 - Create the script file /root/restic.sh (replace with the details of your servers)
 
-\[code\]
+```
+
 
 #/bin/bash
 
-/opt/restic -r sftp:backup@\[backup-server\]:/home/backup/\[backup client host name\] --password-file=/root/restic\_password --exclude={/dev,/media,/mnt,/proc,/run,/sys,/tmp,/var/tmp} backup / /opt/restic -r sftp:backup@\[backup-server\]:/home/backup/\[backup client host name\] --password-file=/root/restic\_password forget --keep-daily 7 --keep-weekly 5 --keep-monthly 12 --keep-yearly 75 /opt/restic -r sftp:backup@\[backup-server\]:/home/backup/\[backup client host name\] --password-file=/root/restic\_password prune /opt/restic -r sftp:backup@\[backup-server\]:/home/backup/\[backup client host name\] --password-file=/root/restic\_password check
+/opt/restic -r sftp:backup@[backup-server]:/home/backup/[backup client host name] --password-file=/root/restic_password --exclude={/dev,/media,/mnt,/proc,/run,/sys,/tmp,/var/tmp} backup /
+/opt/restic -r sftp:backup@[backup-server]:/home/backup/[backup client host name] --password-file=/root/restic_password forget --keep-daily 7 --keep-weekly 5 --keep-monthly 12 --keep-yearly 75
+/opt/restic -r sftp:backup@[backup-server]:/home/backup/[backup client host name] --password-file=/root/restic_password prune
+/opt/restic -r sftp:backup@[backup-server]:/home/backup/[backup client host name] --password-file=/root/restic_password check
 
-\[/code\]
+```
 
 - Make script executable
 
-\[code\]
+```
+
 
 chmod +x /root/restic.sh
 
-\[/code\]
+```
 
 - Trail run this script: /root/restic.sh
 - If everything worked fine, schedule to run this script daily (e.g. with _sudo crontab -e_) or at whichever schedule you prefer (Note that the script might take 10 min or more to execute, so it is probably not advisable to run this very frequently. If you need more frequent updates, just run the first line of the script 'backup' which is faster than the following maintenance operations).
 
-\[code\]
+```
 
-0 22 \* \* \* /root/restic.sh
+
+0 22 * * * /root/restic.sh
 
  
 
-\[/code\]
+```
 
 That's it! All important files from your server will now be backed up regularly.

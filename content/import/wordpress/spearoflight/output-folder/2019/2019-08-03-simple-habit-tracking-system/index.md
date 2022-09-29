@@ -34,7 +34,7 @@ For the first month, July 2019, I decided to track the following habits:
 
 This is how I tracked for each one of them:
 
-![](/_goldstack/static/img/spearoflight-media/2019/08/habits-july.png)
+![](images/habits-july.png)
 
 It seems that I have some way to go until I practise all the habits I have set out to do daily. However I have also not completely failed at any of the habits and were able to practice them in 30-50% of the days of the last month. I am particularly pleased at my progress for the Learn habit. I was able to improve my proficiency for typing some tricky constructs required for programming quite significantly. Unfortunately I don't think I have gotten any better at drawing.
 

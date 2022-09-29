@@ -17,15 +17,36 @@ The following describes the necessary steps.
 - Install the Xtend plugin for eclipse as described [here](http://www.eclipse.org/xtend/download.html).
 - Add the xtend-maven-plugin to your pom.xml as follows:
 
-\[sourcecode language="xml"\]<plugin>     <groupId>org.eclipse.xtend</groupId>     <artifactId>xtend-maven-plugin</artifactId>     <version>2.7.1</version>     <executions>         <execution>             <goals>                 <goal>testCompile</goal>             </goals>
+```xml
+<plugin>
+    <groupId>org.eclipse.xtend</groupId>
+    <artifactId>xtend-maven-plugin</artifactId>
+    <version>2.7.1</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>testCompile</goal>
+            </goals>
 
-            <configuration>                 <testOutputDirectory>${basedir}/src/test/java</testOutputDirectory>             </configuration>
+            <configuration>
+                <testOutputDirectory>${basedir}/src/test/java</testOutputDirectory>
+            </configuration>
 
-        </execution>     </executions> </plugin>  \[/sourcecode\]
+        </execution>
+    </executions>
+</plugin> 
+```
 
 - Also add a dependency to the Xtend runtime libraries
 
-\[sourcecode language="xml"\]<dependency>     <groupId>org.eclipse.xtend</groupId>     <artifactId>org.eclipse.xtend.lib</artifactId>     <version>2.7.1</version>     <scope>test</scope> </dependency> \[/sourcecode\]
+```xml
+<dependency>
+    <groupId>org.eclipse.xtend</groupId>
+    <artifactId>org.eclipse.xtend.lib</artifactId>
+    <version>2.7.1</version>
+    <scope>test</scope>
+</dependency>
+```
 
 - Right click the project and select Maven / Update Project … and update the project.
 - Right clock the project and select Properties
@@ -38,11 +59,24 @@ The following describes the necessary steps.
 - Right clock the folder src/test/xtend and select Build Path / Use As Source Folder
 - Create a package in the new src/test/xtend folder and right click the package. Select New / Xtend class and define a class such as the following:
 
-\[sourcecode language="java"\]package de.mxro.async.map.tests  
+```java
+package de.mxro.async.map.tests
+ 
 
-import org.junit.Assert import org.junit.Test  
+import org.junit.Assert
+import org.junit.Test
+ 
 
-class TestThatNumbersAreEqual {          @Test     def void test() {         Assert.assertTrue(3 == 3)     }           } \[/sourcecode\]
+class TestThatNumbersAreEqual {
+    
+    @Test
+    def void test() {
+        Assert.assertTrue(3 == 3)
+    }
+    
+    
+}
+```
 
 - Immediately after you save the class a translated class should be created in the folder src/test/java
 

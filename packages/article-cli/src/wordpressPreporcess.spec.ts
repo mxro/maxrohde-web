@@ -24,6 +24,27 @@ it('Should convert code tag links', () => {
  "compile": "yarn node scripts/updateReferences.js &amp;&amp; tsc --build"
 }</pre>
 <!-- /wp:syntaxhighlighter/code -->
+
+[sourcecode language="java"]
+         MyLinkController controller = new MyLinkController();
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;editorpane.addMouseListener(controller);
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;editorpane.addMouseListener(controller);
+[/sourcecode]
+
+[sourcecode]nohub ./test.sh &amp;[/sourcecode]
+
+[code language="java"]
+final File original = new File(pathtoyourkeystore);
+
+System.out.println(Base64Coder.encode(
+
+OneUtilsJre.toByteArray(new FileInputStream(original))));
+[/code]
+
+[code lang=javascript]
+import { makeExecutableSchema } from &#039;graphql-tools&#039;
+import { graphql } from &#039;graphql&#039;
+[/code]
 `;
 
   const res = wordpressPreprocess(input);
@@ -45,5 +66,26 @@ it('Should convert code tag links', () => {
 <pre><code class="language-typescript">{
  "compile": "yarn node scripts/updateReferences.js &amp;&amp; tsc --build"
 }</code></pre>
+
+<pre><code class="language-java">
+         MyLinkController controller = new MyLinkController();
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;editorpane.addMouseListener(controller);
+    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;editorpane.addMouseListener(controller);
+</code></pre>
+
+<pre><code>nohub ./test.sh &amp;</code></pre>
+
+<pre><code class="language-java">
+final File original = new File(pathtoyourkeystore);
+
+System.out.println(Base64Coder.encode(
+
+OneUtilsJre.toByteArray(new FileInputStream(original))));
+</code></pre>
+
+<pre><code class="language-javascript">
+import { makeExecutableSchema } from &#039;graphql-tools&#039;
+import { graphql } from &#039;graphql&#039;
+</code></pre>
 `);
 });

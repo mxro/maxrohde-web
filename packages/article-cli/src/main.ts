@@ -1,10 +1,11 @@
 import { Command } from 'commander';
 import { connectTable } from 'db-blog';
-
+import config from './config.json';
 import packageJson from './../package.json';
 import { mergePosts } from './mergePosts';
 import { publish } from './publish';
 import { wordpressPreprocessFile } from './wordpressPreprocess';
+import { wordpressToMarkdown } from './wordpressToMarkdown';
 
 (async () => {
   const program = new Command();
@@ -47,10 +48,22 @@ import { wordpressPreprocessFile } from './wordpressPreprocess';
   program
     .command('fix-wordpress')
     .description('Fixes Wordpress XML file input')
-    .argument('<filename>', 'The filename of Wordpress XML export')
-    .argument('<dest>', 'The filename of fixed Wordpress XML export')
-    .action(async (filename, dest) => {
-      await wordpressPreprocessFile(filename, dest);
+    .action(async () => {
+      await wordpressPreprocessFile(
+        config['codeOfJoyXmlExport'],
+        config['codeOfJoyXmlFixed']
+      );
+      await wordpressPreprocessFile(
+        config['spearOfLightXmlExport'],
+        config['spearOfLightXmlFixed']
+      );
+    });
+
+  program
+    .command('wordpress-to-markdown')
+    .description('Converts Wordpress XML to Markdown')
+    .action(async () => {
+      await wordpressToMarkdown();
     });
 
   program

@@ -15,9 +15,11 @@ It took me quite some digging around to find out what was going on there. So her
 - Are you using **PhoneGap Build**? In that case, follow the instructions on the [PhoneGap Build documentation](http://docs.phonegap.com/phonegap-build/configuring/icons-and-splash/).
 - Did you include the following in your config.xml:
 
-\[code language="xml"\]<preference name="SplashScreen" value="screen" /> <preference name="SplashScreenDelay" value="50000" />
+```xml
+<preference name="SplashScreen" value="screen" />
+<preference name="SplashScreenDelay" value="50000" />
 
-\[/code\]
+```
 
 - You can try [this workaround](https://www.robertkehoe.com/2013/01/fix-for-phonegap-connection-to-server-was-unsuccessful/) to have your app load quicker.
 - You can try to manually handle the splash screen lifecyle as shown [here](http://stackoverflow.com/a/34868500/270662).

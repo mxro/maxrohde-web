@@ -19,9 +19,16 @@ You would like to have only unique values in the array. Thus, transform it into:
 
 You can use the following method to accomplish such:
 
-\[code language="javascript"\]removeDuplicates = (ar) -> if ar.length == 0 return \[\] res = {} res\[ar\[key\]\] = ar\[key\] for key in \[0..ar.length-1\] value for key, value of res
+```javascript
+removeDuplicates = (ar) ->
+  if ar.length == 0
+    return []  
+  res = {}
+  res[ar[key]] = ar[key] for key in [0..ar.length-1]
+  value for key, value of res
 
-alert(removeDuplicates(\[1,2,3,3,4,4,5\])); \[/code\]
+alert(removeDuplicates([1,2,3,3,4,4,5]));
+```
 
 **References**
 

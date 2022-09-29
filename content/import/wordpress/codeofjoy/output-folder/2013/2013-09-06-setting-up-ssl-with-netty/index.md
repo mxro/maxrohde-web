@@ -76,23 +76,31 @@ There are many ways to provide the keystore we have just create to Netty. The fo
 
 **1\. Convert your keystore into a String using [Base64Coder](www.%20source-code.biz/base64coder/java) and the [OneUtils](https://github.com/mxro/oneUtils).**
 
-\[code language="java"\] final File original = new File(pathtoyourkeystore);
+```java
+
+final File original = new File(pathtoyourkeystore);
 
 System.out.println(Base64Coder.encode(
 
-OneUtilsJre.toByteArray(new FileInputStream(original)))); \[/code\]
+OneUtilsJre.toByteArray(new FileInputStream(original))));
+```
 
 **2\. Copy the String and place it into a static variable, for instance:**
 
-\[code language="java"\] class MyKeystore {
+```java
 
-public static data = "\[generated base 64 data\]";
+class MyKeystore {
 
-} \[/code\]
+public static data = "[generated base 64 data]";
+
+}
+```
 
 **3\. Create an [SSLContext](http://docs.oracle.com/javase/7/docs/api/javax/net/ssl/SSLContext.html) from the data of your keystore.**
 
-\[code language="java"\] SSLContext serverContext = SSLContext.getInstance("TLS");
+```java
+
+SSLContext serverContext = SSLContext.getInstance("TLS");
 
 final KeyStore ks = KeyStore.getInstance("JKS");
 
@@ -108,15 +116,20 @@ final KeyManagerFactory kmf = KeyManagerFactory
 
 kmf.init(ks, "yourkeystorepassword".toCharArray());
 
-serverContext.init(kmf.getKeyManagers(), null, null); \[/code\]
+serverContext.init(kmf.getKeyManagers(), null, null);
+```
 
 **4\. Create a Netty [SSLHandler](http://docs.jboss.org/netty/3.2/api/org/jboss/netty/handler/ssl/SslHandler.html) from the created context:**
 
-\[code language="java"\]final SslHandler sslHandler = new SslHandler(serverContext);\[/code\]
+```java
+final SslHandler sslHandler = new SslHandler(serverContext);
+```
 
 **5\. Add the SSL handler to your [Netty pipe](http://seeallhearall.blogspot.co.nz/2012/05/netty-tutorial-part-1-introduction-to.html) (remember this must be the first handler):**
 
-\[code language="java"\]pipeline.addLast("ssl", sslHandler);\[/code\]
+```java
+pipeline.addLast("ssl", sslHandler);
+```
 
 Now deploy to server and enjoy the SSL security.
 

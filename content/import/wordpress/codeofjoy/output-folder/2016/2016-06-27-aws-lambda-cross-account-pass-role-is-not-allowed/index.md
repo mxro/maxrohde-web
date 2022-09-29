@@ -22,4 +22,22 @@ Alternatively, this error might also occur when you deploy a lambda function whi
 
 As mentioned in the comments by rjhintz, if you require to use the role from another user, you can do so by modifying the policy for the role as follows:
 
-\[code language="javascript"\] { "Version":"2012-10-17", "Statement":\[ { "Effect":"Allow", "Principal":{ "AWS":\[ "arn:aws:iam::123456789012:user/user1", "arn:aws:iam::123456789012:user/user2" \], "Service":"ec2.amazonaws.com" }, "Action":"sts:AssumeRole" } \] } \[/code\]
+```javascript
+
+{
+   "Version":"2012-10-17",
+   "Statement":[
+      {
+         "Effect":"Allow",
+         "Principal":{
+            "AWS":[
+               "arn:aws:iam::123456789012:user/user1",
+               "arn:aws:iam::123456789012:user/user2"
+            ],
+            "Service":"ec2.amazonaws.com"
+         },
+         "Action":"sts:AssumeRole"
+      }
+   ]
+}
+```

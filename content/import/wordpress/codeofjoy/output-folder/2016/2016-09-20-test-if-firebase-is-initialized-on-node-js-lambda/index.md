@@ -14,11 +14,22 @@ This can be a problem in Node.JS applications sometimes, especially if they are 
 
 This can lead to errors as the following:
 
-\[code\]Firebase App named '\[DEFAULT\]' already exists. \[/code\]
+```
+Firebase App named '[DEFAULT]' already exists.
+```
 
 Thankfully, there is an easy way to check if Firebase has already been initialized (firebase.initializeApp). Just wrap your call to initializeApp in the following:
 
-\[code\]if (firebase.apps.length === 0) { firebase.initializeApp({ serviceAccount: { ... }, databaseURL: ... }); } \[/code\]
+```
+if (firebase.apps.length === 0) {
+    firebase.initializeApp({
+        serviceAccount: {
+            ...
+        },
+        databaseURL: ...
+    });
+}
+```
 
 ### Sources
 

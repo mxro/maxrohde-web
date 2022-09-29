@@ -11,13 +11,14 @@ Today I came across a strange error when generating eclipse metadata using maven
 
 Running "mvn eclipse:eclipse" results in :
 
-\[sourcecode\]
+```
 
-\[ERROR\] Failed to execute goal org.apache.maven.plugins:maven-eclipse-plugin:2.8:eclipse (default-cli) on project mxGWTUtils: Execution default-cli of goal org.apache.maven.plugins:maven-eclipse-plugin:2.8:eclipse failed. NullPointerException -> \[Help 1\]
+
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-eclipse-plugin:2.8:eclipse (default-cli) on project mxGWTUtils: Execution default-cli of goal org.apache.maven.plugins:maven-eclipse-plugin:2.8:eclipse failed. NullPointerException -> [Help 1]
 
 org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-eclipse-plugin:2.8:eclipse (default-cli) on project
 
-\[…\]
+[…]
 
 Caused by: java.lang.NullPointerException
 
@@ -47,7 +48,7 @@ at org.apache.maven.plugin.ide.AbstractIdeSupportMojo.execute(AbstractIdeSupport
 
 at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:101)
 
-\[/sourcecode\]
+```
 
 ### Analysis
 
@@ -55,7 +56,8 @@ After a while, I have found out that this error is caused by using [Maven versio
 
 So, for instance a dependency like the following will cause the NullPointerException:
 
-\[sourcecode\]
+```
+
 
 <dependency>
 
@@ -63,15 +65,16 @@ So, for instance a dependency like the following will cause the NullPointerExcep
 
 <artifactId>thrdGuavaGwt</artifactId>
 
-<version>\[0.0.1,)</version>
+<version>[0.0.1,)</version>
 
 </dependency>
 
-\[/sourcecode\]
+```
 
 Whereas the following specification of the dependency will cause the NullPointerException to disappear:
 
-\[sourcecode\]
+```
+
 
 <dependency>
 
@@ -83,7 +86,7 @@ Whereas the following specification of the dependency will cause the NullPointer
 
 </dependency>
 
-\[/sourcecode\]
+```
 
 ### Solution
 

@@ -21,21 +21,32 @@ In this post, I provide some pointers how to set up the metrics solution based o
     - Make sure to download the latest version of Prometheus (the link can be obtained on the [Prometheus download](https://prometheus.io/download/) page, this guide works with version 2.1.0)
     - For the systemd service, use the following file:
 
-\[code\]
+```
 
-\[Unit\] Description=Prometheus Server Documentation=https://prometheus.io/docs/introduction/overview/ After=network-online.target \[Service\] User=root Restart=on-failure ExecStart=/opt/prometheus/prometheus --config.file=/opt/prometheus/prometheus.yml \[Install\] WantedBy=multi-user.target
 
-\[/code\]
+[Unit]
+Description=Prometheus Server
+Documentation=https://prometheus.io/docs/introduction/overview/
+After=network-online.target
+[Service]
+User=root
+Restart=on-failure
+ExecStart=/opt/prometheus/prometheus --config.file=/opt/prometheus/prometheus.yml
+[Install]
+WantedBy=multi-user.target
+
+```
 
 **Note**: This configuration will run the Prometheus server as root. In a production environment, it is highly recommended to run it as another user (e.g. 'prometheus')
 
 - If you are using a firewall, add the following rule to _/etc/sysconfig/iptables_ and restart service _iptables_:
 
-\[code\]
+```
 
-\-A INPUT -p tcp -m state --state NEW -m tcp --dport 9090 -j ACCEPT
 
-\[/code\]
+-A INPUT -p tcp -m state --state NEW -m tcp --dport 9090 -j ACCEPT
+
+```
 
 ### Viewing a Metric
 
@@ -51,29 +62,38 @@ You should the data of http requests served by the Prometheus server itself. If 
 - Download the [latest version of Node Exporter](https://prometheus.io/download/#node_exporter) with wget.
 - Extract the archive
 
-\[code\] tar xvfz node\_exporter-\*.tar.gz \[/code\]
+```
+
+tar xvfz node_exporter-*.tar.gz
+```
 
 - Create link (replace 0.15.2 with the version you have downloaded)
 
-\[code\]
+```
 
-ln -s node\_exporter-0.15.2.linux-amd64 node\_exporter
 
-\[/code\]
+ln -s node_exporter-0.15.2.linux-amd64 node_exporter
+
+```
 
 - Define a service for node\_exporter in _/etc/systemd/system/node\_exporter.service_
 
 (or if you are using init.d, please see [this article](http://maxrohde.com/2018/02/01/configuring-an-initd-service-for-node_exporter/)).
 
-\[code\]
+```
 
-\[Unit\] Description=Node Exporter
 
-\[Service\] User=root ExecStart=/opt/node\_exporter/node\_exporter --no-collector.diskstats
+[Unit]
+Description=Node Exporter
 
-\[Install\] WantedBy=default.target
+[Service]
+User=root
+ExecStart=/opt/node_exporter/node_exporter --no-collector.diskstats
 
-\[/code\]
+[Install]
+WantedBy=default.target
+
+```
 
 **Note**: This configuration will run the Grafana server as root. In a production environment, it is highly recommended to run it as another user (e.g. 'prometheus')
 
@@ -81,15 +101,23 @@ ln -s node\_exporter-0.15.2.linux-amd64 node\_exporter
 
 - Enable and start service
 
-\[code\]
+```
 
-systemctl daemon-reload systemctl start node\_exporter systemctl enable node\_exporter
 
-\[/code\]
+systemctl daemon-reload
+systemctl start node_exporter
+systemctl enable node_exporter
+
+```
 
 - Tell Prometheus to scrape these metrics by adding the following to /opt/prometheus/prometheus.yml
 
-\[code\] - job\_name: "node" static\_configs: - targets: \['localhost:9100'\] \[/code\]
+```
+
+ - job_name: "node"
+static_configs:
+- targets: ['localhost:9100']
+```
 
 Now if you got to yourserver.com:9090/graph you can for instance enter the expression _node\_memory\_MemFree_ and see the free memory available on the server.
 
@@ -106,11 +134,12 @@ To install Grafana locally:
 - First follow [these instructions](http://docs.grafana.org/installation/rpm/#on-centos-fedora-redhat).
 - Graphana by default runs on port 3000, so make sure you add the following firewall rule after you install it:
 
-\[code\]
+```
 
-\-A INPUT -p tcp -m state --state NEW -m tcp --dport 3000 -j ACCEPT
 
-\[/code\]
+-A INPUT -p tcp -m state --state NEW -m tcp --dport 3000 -j ACCEPT
+
+```
 
 - In the file _/etc/grafana/grafana.ini_, provide details for an SMTP connection which can be used for sending emails (section \[smtp\]).
 - Also update the host name in the field _domain_ to the address at which your server can be reached on the internet.
@@ -136,7 +165,12 @@ If you monitor multiple servers, you can switch between them by clicking next to
 
 Additional servers will appear here if you add them to the Prometheus configuration:
 
-\[code\] - job\_name: "node" static\_configs: - targets: \['localhost:9100', 'xxxxx'\] \[/code\]
+```
+
+- job_name: "node"
+ static_configs:
+ - targets: ['localhost:9100', 'xxxxx']
+```
 
 ### Configure Alerting
 

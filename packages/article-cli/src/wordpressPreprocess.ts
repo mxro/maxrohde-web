@@ -10,6 +10,45 @@ export function wordpressPreprocess(input: string): string {
   pattern = /<\/pre>\s*<!-- \/wp:syntaxhighlighter\/code -->/g;
   res = res.replace(pattern, '</code></pre>');
 
+  pattern = /\[sourcecode language="([^"]*)"\]/g;
+  res = res.replace(pattern, '<pre><code class="language-$1">');
+
+  pattern = /\[sourcecode language='([^']*)'\]/g;
+  res = res.replace(pattern, '<pre><code class="language-$1">');
+
+  pattern = /\[sourcecode language=([^\]]*)\]/g;
+  res = res.replace(pattern, '<pre><code class="language-$1">');
+
+  pattern = /\[sourcecode\]/g;
+  res = res.replace(pattern, '<pre><code>');
+
+  pattern = /\[\/sourcecode\]/g;
+  res = res.replace(pattern, '</code></pre>');
+
+  pattern = /\[code lang="([^"]*)"\]/g;
+  res = res.replace(pattern, '<pre><code class="language-$1">');
+
+  pattern = /\[code lang='([^']*)'\]/g;
+  res = res.replace(pattern, '<pre><code class="language-$1">');
+
+  pattern = /\[code lang=([^\]]*)\]/g;
+  res = res.replace(pattern, '<pre><code class="language-$1">');
+
+  pattern = /\[code language="([^"]*)"\]/g;
+  res = res.replace(pattern, '<pre><code class="language-$1">');
+
+  pattern = /\[code language='([^']*)'\]/g;
+  res = res.replace(pattern, '<pre><code class="language-$1">');
+
+  pattern = /\[code language=([^\]]*)\]/g;
+  res = res.replace(pattern, '<pre><code class="language-$1">');
+
+  pattern = /\[code\]/g;
+  res = res.replace(pattern, '<pre><code>');
+
+  pattern = /\[\/code\]/g;
+  res = res.replace(pattern, '</code></pre>');
+
   pattern = /<code class="language-jscript"/g;
   res = res.replace(pattern, '<code class="language-typescript"');
 

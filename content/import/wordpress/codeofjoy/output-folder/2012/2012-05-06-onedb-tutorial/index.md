@@ -100,27 +100,53 @@ You can link the onedb client libraries to your Maven projects by using the foll
 
 For onedb Java Test Toolkit
 
-\[sourcecode language="xml"\] <dependency> <groupId>one.test.jre</groupId> <artifactId>oneTestJre.min</artifactId> <version>x.x.x</version> <!-- replace with most recent version --> </dependency> \[/sourcecode\]
+```xml
+
+    <dependency>
+        <groupId>one.test.jre</groupId>
+        <artifactId>oneTestJre.min</artifactId>
+        <version>x.x.x</version> <!-- replace with most recent version -->
+    </dependency>
+```
 
 For onedb Java Client:
 
-\[sourcecode language="xml"\] <dependency> <groupId>one.client.jre</groupId> <artifactId>oneClientJre.min</artifactId> <version>x.x.x</version> <!-- replace with most recent version --> </dependency> \[/sourcecode\]
+```xml
+
+    <dependency>
+        <groupId>one.client.jre</groupId>
+        <artifactId>oneClientJre.min</artifactId>
+        <version>x.x.x</version> <!-- replace with most recent version -->
+    </dependency>
+```
 
 You will also need to add the onedb release repository (in `<project>`):
 
-\[sourcecode language="xml"\] <repositories> <repository> <id>onedb Releases</id> <url>http://dl.dropbox.com/u/957046/onedb/mvn-releases</url> </repository> </repositories> \[/sourcecode\]
+```xml
+
+    <repositories>
+        <repository>
+            <id>onedb Releases</id>
+            <url>http://dl.dropbox.com/u/957046/onedb/mvn-releases</url>
+        </repository>
+    </repositories>
+```
 
 ### 4\. Initializing the onedb engine
 
 After adding the onedb libraries to a Java project, the onedb engine must be initialized. Adding the following statement anywhere in your application will initialize the onedb engine and prepare the engine to make request to the onedb cloud:
 
-\[sourcecode language="java"\]OneJre.init("\[Your API Key\]"); \[/sourcecode\]
+```java
+OneJre.init("[Your API Key]");
+```
 
 Please note that you will need to replace `[Your API Key]` with the API key you have obtained by email as described above.
 
 If you have linked the onedb Java Test Toolkit, you can initialize the onedb engine as above (`OneJre.init(..)`) but also have the option to initialize the engine in test mode. The test toolkit can recreate a local version of the onedb cloud on a per test case basis. Just add the following statement instead of the statement listed above to any of your JUnit, TestNG, ... test cases:
 
-\[sourcecode language="java"\]OneTestJre.init(); \[/sourcecode\]
+```java
+OneTestJre.init();
+```
 
 Note that since this will create a local onedb cloud, you will not need to supply an API key. Also note that the local onedb cloud will not respond to any REST requests for any created resources (for performance and portability reasons).
 
@@ -170,7 +196,10 @@ A bit of cleanup needs to be performed before proceeding: A semicolon needs to b
 
 The method `thenDo(..)` will be called 'back' upon successful creation of the new realm on the onedb cloud. If the parameter name for the thenDo(..) method are something as informative as `arg0` .., we can rename the parameter with a more descriptive name such as `result` or `r`:
 
-\[sourcecode language="java"\]@Override public void thenDo(WithRealmCreatedResult r) { \[/sourcecode\]
+```java
+@Override
+public void thenDo(WithRealmCreatedResult r) {
+```
 
 The result object will carry the following values:
 
@@ -186,27 +215,48 @@ While the application as given above will successfully create a realm, we will n
 
 To save the realm's address and access secret, we can, for now, print them to the console by adding a few print statements as follows:
 
-\[sourcecode language="java"\] @Override public void thenDo(WithRealmCreatedResult r) { System.out.println("realmRoot: "+r.root()); System.out.println("secret: "+r.secret()); } \[/sourcecode\]
+```java
+
+@Override
+public void thenDo(WithRealmCreatedResult r) {
+    System.out.println("realmRoot: "+r.root());
+    System.out.println("secret: "+r.secret());
+}
+```
 
 Running the application should result in an output such as the following:
 
-\[sourcecode language="text"\]realmRoot: One.reference("https://u1.linnk.it/bkesvc/explora") secret: maqi\_\_\_\_\_\_z94 \[/sourcecode\]
+```text
+realmRoot: One.reference("https://u1.linnk.it/bkesvc/explora")
+secret: maqi______z94
+```
 
 You will notice that applications starts, then prints the output above after a few seconds, but will not stop. In order to terminate our application correctly, we have to shut down every client session we have created. In our case, this is the one client session created by the createRealm operation.
 
 To shut down the client session, we can add the following to the existing application after the last System.out statement:
 
-\[sourcecode language="java"\]... System.out.println("secret: "+r.secret());
+```java
+...
+System.out.println("secret: "+r.secret());
 
 One.shutdown(r.client()).and(new When.Shutdown() {
 
-@Override public void thenDo() { System.out.println("Session is shut down."); }
+    @Override
+    public void thenDo() {
+        System.out.println("Session is shut down.");
+    }
 
-}); ... \[/sourcecode\]
+});
+...
+```
 
 When we start the application again, it should now terminate as expected after printing the access information for the realm.
 
-\[sourcecode language="text"\]realmRoot: One.reference("https://u1.linnk.it/bgbpce/explora") secret: gv3\_\_\_\_\_\_0nx Session is shut down. \[/sourcecode\]
+```text
+realmRoot: One.reference("https://u1.linnk.it/bgbpce/explora")
+secret: gv3______0nx
+Session is shut down.
+```
 
 **Save** both the URL of the node (".../explora") and the printed secret for the next steps of the tutorial in a text or source file. You can also rerun the application at any time to obtain this information again.
 
@@ -232,7 +282,10 @@ Select save password if you are given the option. You should see the sparse cont
 
 You can see different representations of your node by appending a variant (.node. or .value.) and a data format (.html, .xml or .json) to the URI of your node such as:
 
-\[sourcecode language="text"\]https://u1.linnk.it/bgbpce/explora.value.xml or https://u1.linnk.it/bgbpce/explora.node.json \[/sourcecode\]
+```text
+https://u1.linnk.it/bgbpce/explora.value.xml or
+https://u1.linnk.it/bgbpce/explora.node.json
+```
 
 The variant value with the format XML, for instance, should be rendered as follows:
 
@@ -248,7 +301,9 @@ For the purposes of this tutorial, we can create another class in our Java appli
 
 Although both ExploreOneDb and Load are part of the same eclipse project, they form two distinct applications for Java, since both classes have independent main methods. The onedb engine must be initialized _once_ for every Java application. Since Load defines a new application, we need to initialize the onedb engine as follows:
 
-\[sourcecode language="java"\]OneJre.init("\[your API key here\]"); \[/sourcecode\]
+```java
+OneJre.init("[your API key here]");
+```
 
 Next we type `One.` once again but this time chose the operation `load(Object node)`:
 
@@ -258,7 +313,10 @@ The load operation now requires the specification of an `Object node`. This obje
 
 onedb distinguishes between resolved nodes with a value and references to nodes. Node references have a unique identity but have no value. We can use such a reference to specify, which node we want to load, for instance:
 
-\[sourcecode language="java"\]One.reference("https://u1.linnk.it/bgbpce/explora"); // ^-- replace with your URI \[/sourcecode\]
+```java
+One.reference("https://u1.linnk.it/bgbpce/explora");
+                        // ^-- replace with your URI
+```
 
 Replace the address in above statement with the address you have saved after running the ExploreOnedb example and provide the reference definition as the node to be loaded for the load operation. Again type a `.` after the closing bracket to see the further parameters for the load operation. Select the parameter `.withSecret(String secret)`:
 
@@ -270,25 +328,42 @@ Supply the access token secret you saved earlier (e.g. "gv3**\_\_**0nx"). Finall
 
 Proceed in the same way as specifying the callback for the `createRealm(..)` operation, but this time chose the callback `new When.Loaded(..)`. Your application should now look as follows:
 
-\[sourcecode language="java"\]OneJre.init("\[your API key here\]");
+```java
+OneJre.init("[your API key here]");
 
-One.load(One.reference("https://u1.linnk.it/bgbpce/explora")) // ^-- replace .withSecret("gv3\_\_\_\_\_\_nx") .and(new When.Loaded() {
+One.load(One.reference("https://u1.linnk.it/bgbpce/explora"))
+                               // ^-- replace
+   .withSecret("gv3______nx")
+   .and(new When.Loaded() {
 
-@Override public void thenDo(WithLoadResult<Object> lr) {
+        @Override
+        public void thenDo(WithLoadResult<Object> lr) {
 
-} }); \[/sourcecode\]
+        }
+});
+```
 
 The callback method (`thenDo(..)`) returns a load result with a reference to the node, we have just loaded (`lr.loadedNode()`). The load result also returns a [client session](http://maxrohde.com/2012/05/06/onedb-architecture-and-design/#clients "Client Sessions in onedb") (`lr.client()`). We can retrieve the resolved loaded node as follows:
 
-\[sourcecode language="java"\]@Override public void thenDo(WithLoadResult<Object> lr) { Object realmRoot = One.dereference(lr.loadedNode()).in( lr.client());
+```java
+@Override
+public void thenDo(WithLoadResult<Object> lr) {
+    Object realmRoot = One.dereference(lr.loadedNode()).in(
+            lr.client());
 
-System.out.println("Node reference: " + lr.loadedNode()); System.out.println("Resolved node: " + realmRoot); } \[/sourcecode\]
+    System.out.println("Node reference: " + lr.loadedNode());
+    System.out.println("Resolved node: " + realmRoot);
+}
+```
 
 For an in-depth discussion of the various node types and the `One.dereference(..)` operation please check the article "[A Practical Guide on Node Types in onedb](http://maxrohde.com/2012/05/15/node-types-in-onedb/ "onedb node types")".
 
 Run the application and you should get an output such as the following:
 
-\[sourcecode language="text"\]Node reference: One.reference("https://u1.linnk.it/bgbpce/explora") Resolved node: Nx.define(exploration).at(https://u1.linnk.it/bgbpce/explora) \[/sourcecode\]
+```text
+Node reference: One.reference("https://u1.linnk.it/bgbpce/explora")
+Resolved node: Nx.define(exploration).at(https://u1.linnk.it/bgbpce/explora)
+```
 
 \[[full source code of example on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/G_GettingStarted_Load.java "Source code for Load Example")\]
 
@@ -298,35 +373,64 @@ Thus far, this tutorial walked through the steps of setting up a Java project, c
 
 First create a new class `NodeOperations` and add a main method, which creates a new realm (check the creating a realm section above for details regarding the following code snippet):
 
-\[sourcecode language="java"\]public static void main(String\[\] args) { OneJre.init("\[Your API Key\]");
+```java
+public static void main(String[] args) {
+    OneJre.init("[Your API Key]");
 
-One.createRealm("ops").and(new When.RealmCreated() {
+    One.createRealm("ops").and(new When.RealmCreated() {
 
-@Override public void thenDo(WithRealmCreatedResult r) {
+        @Override
+        public void thenDo(WithRealmCreatedResult r) {
 
-} }); } \[/sourcecode\]
+        }
+    });
+}
+```
 
 Let's assume the following scenario: We would like to define a customer in the newly created name with the name "Bob" who lives at "26 Short Av". To express this information using a proven and tested object-oriented approach should not be too difficult: First, we define a class `Customer` and subsequently create an instance for Bob.
 
 Class definition:
 
-\[sourcecode language="java"\]public static class Customer { public String name; public String address; } \[/sourcecode\]
+```java
+public static class Customer {
+    public String name;
+    public String address;
+}
+```
 
 Instance Creation:
 
-\[sourcecode language="java"\]Customer bob = new Customer(); bob.name = "Bob"; bob.address = "26 Short Av"; \[/sourcecode\]
+```java
+Customer bob = new Customer();
+bob.name = "Bob";
+bob.address = "26 Short Av";
+```
 
 We need to make one small modification before we can upload the Bob object to the onedb cloud: The customer class will need to implement the Serializable interface, in order for onedb to be able to transport objects of this type safely to the onedb cloud. This is easy enough; just change the class definition to:
 
-\[sourcecode language="java"\]public static class Customer implements Serializable { public String name; public String address; } \[/sourcecode\]
+```java
+public static class Customer implements Serializable {
+    public String name;
+    public String address;
+}
+```
 
 We can now append the `bob` object to the 'ops' realm root node as follows:
 
-\[sourcecode language="java"\] @Override public void thenDo(WithRealmCreatedResult r) { Customer bob = new Customer(); bob.name = "Bob"; bob.address = "26 Short Av";
+```java
 
-One.append(bob).to(r.root()).in(r.client());
+@Override
+public void thenDo(WithRealmCreatedResult r) {
+    Customer bob = new Customer();
+    bob.name = "Bob";
+    bob.address = "26 Short Av";
 
-System.out.println("Created " + r.root() + ":" + r.secret()); // do shutdown ... } \[/sourcecode\]
+    One.append(bob).to(r.root()).in(r.client());
+
+    System.out.println("Created " + r.root() + ":" + r.secret());
+    // do shutdown ...
+}
+```
 
 \[[full source code on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/H_GettingStarted_AddClass.java "Example Adding Object with Class Definition")\]
 
@@ -348,19 +452,29 @@ The described arrangement of nodes can be visualized as follows:
 
 We can create a new class `NodeOperationsBetter` and again specify the logic for creating a new realm. The following code snippet shows how to define a node arrangement as described above using the onedb API.
 
-\[sourcecode language="java"\]OneJre.init("\[Your API Key here\]");
+```java
+OneJre.init("[Your API Key here]");
 
 One.createRealm("ops").and(new When.RealmCreated() {
 
-@Override public void thenDo(WithRealmCreatedResult r) { OneClient client = r.client(); Object bob = r.root();
+    @Override
+    public void thenDo(WithRealmCreatedResult r) {
+        OneClient client = r.client();
+        Object bob = r.root();
 
-One.append("Bob").to(bob).in(client);
+        One.append("Bob").to(bob).in(client);
 
-String addressValue = "26 Short Av"; One.append(addressValue).to(bob).in(client); One.append("an Address").to(addressValue).in(client);
+        String addressValue = "26 Short Av";
+        One.append(addressValue).to(bob).in(client);
+        One.append("an Address").to(addressValue).in(client);
 
-One.append("a Customer").to(bob).in(client);
+        One.append("a Customer").to(bob).in(client);
 
-System.out.println("Created " + r.root() + ":" + r.secret()); // shutdown client ... } }); \[/sourcecode\]
+        System.out.println("Created " + r.root() + ":" + r.secret());
+        // shutdown client ...
+    }
+});
+```
 
 \[[full source code on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/I_GettingStarted_AddNodes.java "Customer Example with Nodes")\]
 
@@ -374,21 +488,35 @@ The REST interface allows navigating from one node to another. If we click on '2
 
 Apart from presenting the information associated with the customer in a more accessible manner, following a connection-oriented approach makes the data semantically richer. For instance, we will have implicitly created a globally accessible type 'address' (linked to 26 Short Av Node). The type URI for address will look something like the following:
 
-\[sourcecode language="text"\]https://u1.linnk.it/l8hpud/ops/26\_Short\_A2/an\_Address0 \[/sourcecode\]
+```text
+https://u1.linnk.it/l8hpud/ops/26_Short_A2/an_Address0
+```
 
 However, this URI does not appear to be very 'pretty' and portable. In specific, the part '26_Short_A2' does appear to be in conflict with the intention to define a reusable identity for the type 'address'.
 
 It is usually a good practice to define 'type' nodes in their own independent realm. This way their reusability can be increased and also shorter and more succinct URIs can be created. Type nodes can be appended to a realm like any other node. We can write a little application such as the following to define the type nodes required for the example:
 
-\[sourcecode language="java"\] One.createRealm("types").and(new When.RealmCreated() {
+```java
 
-@Override public void thenDo(WithRealmCreatedResult r) { Object typesRoot = r.root();
+One.createRealm("types").and(new When.RealmCreated() {
 
-Object addressType = One.append("an Address").to(typesRoot) .atAddress("./address").in(r.client());
+    @Override
+    public void thenDo(WithRealmCreatedResult r) {
+        Object typesRoot = r.root();
 
-Object customerType = One.append("a Customer").to(typesRoot) .atAddress("./customer").in(r.client());
+        Object addressType = One.append("an Address").to(typesRoot)
+                .atAddress("./address").in(r.client());
 
-System.out.println("Address type: " + addressType); System.out.println("Customer type: " + customerType); System.out.println("Types realm " + r.root() + ":" + r.secret()); // shutdown ... } }); \[/sourcecode\]
+        Object customerType = One.append("a Customer").to(typesRoot)
+                .atAddress("./customer").in(r.client());
+
+        System.out.println("Address type: " + addressType);
+        System.out.println("Customer type: " + customerType);
+        System.out.println("Types realm " + r.root() + ":" + r.secret());
+        // shutdown ...
+    }
+});
+```
 
 \[[full source code on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/J_GettingStarted_CustomerTypes.java "App Creating Customer Types")\]
 
@@ -396,15 +524,34 @@ Note here the slightly changed append statements with an added `atAddress(..)` p
 
 Running the above application should result in an output such as the following:
 
-\[sourcecode language="text"\]Created One.reference("https://u1.linnk.it/zednuw/types"):ip\_\_\_\_\_\_\_ib5 Address type: One.value(an Address).at("https://u1.linnk.it/zednuw/types/address") Customer type: One.value(a Customer).at("https://u1.linnk.it/zednuw/types/customer") \[/sourcecode\]
+```text
+Created One.reference("https://u1.linnk.it/zednuw/types"):ip_______ib5
+Address type: One.value(an Address).at("https://u1.linnk.it/zednuw/types/address")
+Customer type: One.value(a Customer).at("https://u1.linnk.it/zednuw/types/customer")
+```
 
 Save the output of your application in a text file or somewhere else for the next steps.
 
 Using the newly created 'type' nodes, we can rewrite the definition of customer `bob` as follows (please remember to change the type nodes in the examples to the type nodes you have created):
 
-\[sourcecode language="java"\]// -- reference types Object addressType = One.reference("https://u1.linnk.it/zednuw/types/address"); // ^-- replace with your type! Object customerType = One.reference("https://u1.linnk.it/zednuw/types/customer") // ^-- replace with your type! // -- build data OneClient client = r.client(); Object bob = r.root(); One.append(customerType).to(bob).in(client); One.append("Bob").to(bob).in(client);
+```java
+// -- reference types
+Object addressType =
+  One.reference("https://u1.linnk.it/zednuw/types/address");
+                             // ^-- replace with your type!
+Object customerType =
+  One.reference("https://u1.linnk.it/zednuw/types/customer")
+                             // ^-- replace with your type!
+// -- build data
+OneClient client = r.client();
+Object bob = r.root();
+One.append(customerType).to(bob).in(client);
+One.append("Bob").to(bob).in(client);
 
-String addressValue = "26 Short Av"; One.append(addressValue).to(bob).in(client); One.append(addressType).to(addressValue).in(client); \[/sourcecode\]
+String addressValue = "26 Short Av";
+One.append(addressValue).to(bob).in(client);
+One.append(addressType).to(addressValue).in(client);
+```
 
 \[[full source code on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/K_GettingStarted_CustomerDefinition.java "Example App Define Customer Bob")\]
 
@@ -426,7 +573,15 @@ Querying data in onedb is done on a recursive from-node-to-node basis much in th
 
 Create a new Java class with main method, initialize the onedb engine, create a realm and define the following nodes for the realm:
 
-\[sourcecode language="java"\]One.append("This is a test realm").to(r.root()).in(r.client()); Object bob = One.append("bob").to(r.root()).atAddress("./bob") .in(r.client()); One.append( One.reference("https://u1.linnk.it/zednuw/types/customer")) // ^-- replace with your type node .to(bob).in(r.client()); \[/sourcecode\]
+```java
+One.append("This is a test realm").to(r.root()).in(r.client());
+Object bob = One.append("bob").to(r.root()).atAddress("./bob")
+        .in(r.client());
+One.append(
+        One.reference("https://u1.linnk.it/zednuw/types/customer"))
+                           // ^-- replace with your type node
+        .to(bob).in(r.client());
+```
 
 \[[full source on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/L_GettingStarted_SelectCreateData.java "Source code for creating data")\]
 
@@ -436,41 +591,90 @@ Run the application and you should save the link and access token for the realm 
 
 Then, create another Java class with main method, initialize the onedb engine and load the node you have just created using the link and secret you have saved:
 
-\[sourcecode language="java"\]One.load(One.reference("\[your query realm\]")) .withSecret("zta\_\_\_\_\_1y2") .and(new When.Loaded() {
+```java
+One.load(One.reference("[your query realm]"))
+        .withSecret("zta_____1y2")
+        .and(new When.Loaded() {
 
-@Override public void thenDo(WithLoadResult<Object> lr) { ... \[/sourcecode\]
+            @Override
+            public void thenDo(WithLoadResult<Object> lr) {
+...
+```
 
 Note that you will have to replace the reference and supplied secret with the details of the `query` realm you have created above.
 
 Within the `thenDo(..)` callback of the load operation, you can retrieve the references to all children of the loaded node:
 
-\[sourcecode language="java"\]System.out.println("All Children: "+ One.selectFrom(lr.loadedNode()).allChildren().in(lr.client())); \[/sourcecode\]
+```java
+System.out.println("All Children: "+
+    One.selectFrom(lr.loadedNode()).allChildren().in(lr.client()));
+```
 
 You can filter the children of the loaded node by their type:
 
-\[sourcecode language="java"\] One.selectFrom(lr.loadedNode()) .theChildren() .ofType(String.class) .in(lr.client()) .and(new When.ChildrenSelected<OneTypedReference<String>>() {
+```java
 
-@Override public void thenDo( WithChildrenSelectedResult<OneTypedReference<String>> sr) { System.out.println("Found Messages:"); for (OneTypedReference<String> node : sr.children()) { System.out.println(" " + One.dereference(node).in( sr.client())); } }
+One.selectFrom(lr.loadedNode())
+        .theChildren()
+        .ofType(String.class)
+        .in(lr.client())
+        .and(new When.ChildrenSelected<OneTypedReference<String>>() {
 
-}); \[/sourcecode\]
+            @Override
+            public void thenDo(
+                    WithChildrenSelectedResult<OneTypedReference<String>> sr) {
+                System.out.println("Found Messages:");
+                for (OneTypedReference<String> node : sr.children()) {
+                    System.out.println("  "
+                            + One.dereference(node).in(
+                                    sr.client()));
+                }
+            }
+
+        });
+```
 
 Note that the operation to select children by type in difference to the previous one (select all children) requires the specification of another callback (`When.ChildrenSelected`). As a general rule, onedb will always require the specification for all operations, which may need to send a remote message to the onedb cloud. The initial loading of the root node of the realm, will download the root node from the onedb cloud including the _references_ to all its children. A reference, however, is not sufficient to determine the (Java) type of a node. Therefore, the select operation with type parameter will need to assure all child nodes have been downloaded from the onedb cloud.
 
 The same applies for specifying the `linkingTo(..)` parameter. Since the load operation initially only loads the children of a node but not its children’s children, a remote request must possibly be sent to the onedb cloud, requiring the specification of a callback:
 
-\[sourcecode language="java"\] One.selectFrom(lr.loadedNode()) .theChildren() .linkingTo( One.reference("https://u1.linnk.it/zednuw/types/customer")) // ^-- replace with your customer type .in(lr.client()) .and(new When.ChildrenSelected<OneTypedReference<Object>>() {
+```java
 
-@Override public void thenDo( WithChildrenSelectedResult<OneTypedReference<Object>> sr) { System.out.println("Found Customers:");
+One.selectFrom(lr.loadedNode())
+        .theChildren()
+        .linkingTo(
+                One.reference("https://u1.linnk.it/zednuw/types/customer"))
+                                 // ^-- replace with your customer type
+        .in(lr.client())
+        .and(new When.ChildrenSelected<OneTypedReference<Object>>() {
 
-for (OneTypedReference<Object> node : sr.children()) { System.out.println(" " + One.dereference(node).in( sr.client())); } }
+            @Override
+            public void thenDo(
+                    WithChildrenSelectedResult<OneTypedReference<Object>> sr) {
+                System.out.println("Found Customers:");
 
-}); \[/sourcecode\]
+                for (OneTypedReference<Object> node : sr.children()) {
+                    System.out.println("  "
+                            + One.dereference(node).in(
+                                    sr.client()));
+                }
+            }
+
+        });
+```
 
 \[[full source code on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/M_GettingStarted_SelectQueryData.java "Source code querying data")\]
 
 Running your application should result in an output such as shown below.
 
-\[sourcecode language="text"\]All Children: \[One.reference("https://u1.linnk.it/4hxdr8/query/NxAuth.rea0"), One.reference("https://u1.linnk.it/4hxdr8/query/This\_is\_a\_1"), One.reference("https://u1.linnk.it/4hxdr8/query/bob")\] Found Messages: This is a test realm Found Customers: One.value(bob).at("https://u1.linnk.it/4hxdr8/query/bob") All queries completed. \[/sourcecode\]
+```text
+All Children: [One.reference("https://u1.linnk.it/4hxdr8/query/NxAuth.rea0"), One.reference("https://u1.linnk.it/4hxdr8/query/This_is_a_1"), One.reference("https://u1.linnk.it/4hxdr8/query/bob")]
+Found Messages:
+  This is a test realm
+Found Customers:
+  One.value(bob).at("https://u1.linnk.it/4hxdr8/query/bob")
+All queries completed.
+```
 
 The select example makes heavy use of references (`One.reference(...)`) and value nodes (`One.value(..).at(..)`. For an in-depth discussion of these different node types and how one node type can be converted into another, please check the article '[A Practical Guide on Node Types in onedb](http://maxrohde.com/2012/05/15/node-types-in-onedb/)'.
 
@@ -486,33 +690,53 @@ The operation `remove`, in particular, can lead to unexpected and undesired situ
 
 The update operation will replace a node value with another node value. The connections of a node remain unaffected by the update operation. The value of nodes with externally managed address can easily be updated as shown in the following:
 
-\[sourcecode language="java"\]String phase1 = "phase1"; One.append(phase1).to(realmRoot).in(client);
+```java
+String phase1 = "phase1";
+One.append(phase1).to(realmRoot).in(client);
 
-Object phase2 = "phase2"; One.replace(phase1).with(phase2).in(client); \[/sourcecode\]
+Object phase2 = "phase2";
+One.replace(phase1).with(phase2).in(client);
+```
 
 The example above will first add a node "phase1" to the onedb cloud and then replace this node with a node with the value "phase2". Please note that although the value of the node has been changed, the address of the node will stay the same:
 
 Before update:
 
-\[sourcecode language="text"\]Value : "phase1" Address: https://u1.linnk.it/di14a2/update/phase11 \[/sourcecode\]
+```text
+Value  : "phase1"
+Address: https://u1.linnk.it/di14a2/update/phase11
+```
 
 After update:
 
-\[sourcecode language="text"\]Value : "phase2" Address: https://u1.linnk.it/di14a2/update/phase11 \[/sourcecode\]
+```text
+Value  : "phase2"
+Address: https://u1.linnk.it/di14a2/update/phase11
+```
 
 In general, it is not allowed to change the _address_ of a node using the update operation. This can become tricky when working with nodes with internally managed addresses. For instance, the following operations present a BAD practice:
 
-\[sourcecode language="java"\]OneNode phase1Node = One.append("phase1").to(realmRoot) .atAddress("./p1").in(client);
+```java
+OneNode phase1Node = One.append("phase1").to(realmRoot)
+        .atAddress("./p1").in(client);
 
-One.replace(phase1Node) .with("phase2"))) // WRONG !!! .in(client); \[/sourcecode\]
+One.replace(phase1Node)
+        .with("phase2"))) // WRONG !!!
+        .in(client);
+```
 
 The above example would replace a node `"phase1"` WITH a specified address `"./p1"` with a node value `"phase2"` WITHOUT a specified address.
 
 The correct way to update a node with an internally managed address would be as follows:
 
-\[sourcecode language="java"\]OneNode phase1Node = One.append("phase1").to(realmRoot) .atAddress("./p1").in(client);
+```java
+OneNode phase1Node = One.append("phase1").to(realmRoot)
+        .atAddress("./p1").in(client);
 
-One.replace(phase1Node) .with(One.newNode("phase2").at(phase1Node.getId())) .in(client); \[/sourcecode\]
+One.replace(phase1Node)
+        .with(One.newNode("phase2").at(phase1Node.getId()))
+        .in(client);
+```
 
 \[[full source on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/N_GettingStarted_Replace.java "Source code example Replace")\]
 
@@ -526,14 +750,28 @@ The remove operation can basically be used for two purposes: First, removing one
 
 The following snippet will first append a node `"to be removed"` to the realm root and define it in the onedb cloud. Then, this node will be removed from the realm root AND the onedb cloud.
 
-\[sourcecode language="java"\] // remove connection AND node OneNode toBeRemovedNode = One.append("to be removed") .to(realmRoot).atAddress("./toBeRemoved").in(client); One.remove(One.reference(toBeRemovedNode)).fromNode(realmRoot) .in(client); \[/sourcecode\]
+```java
+
+    // remove connection AND node
+    OneNode toBeRemovedNode = One.append("to be removed")
+            .to(realmRoot).atAddress("./toBeRemoved").in(client);
+    One.remove(One.reference(toBeRemovedNode)).fromNode(realmRoot)
+            .in(client);
+```
 
 If, however, a connection between nodes, which are in no direct parent-child relationship is removed, ONLY the connection will be removed and not the connected node. In the following example, the node `"to be kept"` will still be defined in the onedb cloud even after it has been removed from the node `"another node"`.
 
-\[sourcecode language="java"\] // remove ONLY connection OneNode toBeKeptNode = One.append("to be kept").to(realmRoot) .atAddress("./toBeKept").in(client);
+```java
 
-OneNode anotherNode = One.append("another node").to(realmRoot) .atAddress("./anotherNode").in(client);
+    // remove ONLY connection
+    OneNode toBeKeptNode = One.append("to be kept").to(realmRoot)
+            .atAddress("./toBeKept").in(client);
 
-One.append(toBeKeptNode).to(anotherNode).in(client); One.remove(toBeKeptNode).fromNode(anotherNode).in(client); \[/sourcecode\]
+    OneNode anotherNode = One.append("another node").to(realmRoot)
+            .atAddress("./anotherNode").in(client);
+
+    One.append(toBeKeptNode).to(anotherNode).in(client);
+    One.remove(toBeKeptNode).fromNode(anotherNode).in(client);
+```
 
 \[[full source on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/O_GettingStarted_Remove.java "onedb Remove Example")\]

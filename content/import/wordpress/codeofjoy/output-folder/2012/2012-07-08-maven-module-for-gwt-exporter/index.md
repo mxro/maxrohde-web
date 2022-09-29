@@ -17,26 +17,49 @@ The Maven dependency and repository are as follows:
 
 **Dependency:**
 
-\[sourcecode language="xml"\]
+```xml
 
-<dependency> <groupId>de.mxro.thrd.gwtexporter24</groupId> <artifactId>thrdGwtExporter24</artifactId> <version>0.0.1</version> </dependency>
 
-\[/sourcecode\]
+ <dependency>
+ <groupId>de.mxro.thrd.gwtexporter24</groupId>
+ <artifactId>thrdGwtExporter24</artifactId>
+ <version>0.0.1</version>
+ </dependency>
+
+```
 
 **Repository:**
 
-\[sourcecode language="xml"\]
+```xml
 
-<repositories> <repository> <id>onedb Releases</id> <url>http://dl.dropbox.com/u/957046/onedb/mvn-releases</url> </repository> </repositories>
 
-\[/sourcecode\]
+<repositories>
+ <repository>
+ <id>onedb Releases</id>
+ <url>http://dl.dropbox.com/u/957046/onedb/mvn-releases</url>
+ </repository>
+</repositories>
+
+```
 
 If you would like to use gwt-exporter in a vanilla Maven project (without OSGi), you can use the gwt-exporter artefact hosted on Maven central:
 
-\[sourcecode language="xml"\]
+```xml
 
-<dependency> <groupId>org.timepedia.exporter</groupId> <artifactId>gwtexporter</artifactId> <version>2.4.0-M1</version> <scope>provided</scope> <exclusions> <exclusion> <groupId>com.sun</groupId> <artifactId>tools</artifactId> </exclusion> </exclusions> </dependency>
 
-\[/sourcecode\]
+<dependency>
+ <groupId>org.timepedia.exporter</groupId>
+ <artifactId>gwtexporter</artifactId>
+ <version>2.4.0-M1</version>
+ <scope>provided</scope>
+ <exclusions>
+<exclusion>
+<groupId>com.sun</groupId>
+<artifactId>tools</artifactId>
+</exclusion>
+ </exclusions>
+</dependency>
+
+```
 
 (The exclusion is necessary to avoid dependencies to the Sun/Oracle JVM.)

@@ -11,13 +11,26 @@ I've always had a soft spot for diagrams. I think that representing information 
 
 So I was very pleased today when I came across [PlantUML](http://plantuml.com/). PlantUML is a Java library and web service which renders UML diagrams from text input. Take the following text definition for example:
 
-\[code\]
+```
 
-@startuml object Object01 object Object02 object Object03 object Object04 object Object05 object Object06 object Object07 object Object08
 
-Object01 <|-- Object02 Object03 \*-- Object04 Object05 o-- "4" Object06 Object07 .. Object08 : some labels @enduml
+@startuml
+object Object01
+object Object02
+object Object03
+object Object04
+object Object05
+object Object06
+object Object07
+object Object08
 
-\[/code\]
+Object01 <|-- Object02
+Object03 *-- Object04
+Object05 o-- "4" Object06
+Object07 .. Object08 : some labels
+@enduml
+
+```
 
 This will be rendered into the following diagram:
 

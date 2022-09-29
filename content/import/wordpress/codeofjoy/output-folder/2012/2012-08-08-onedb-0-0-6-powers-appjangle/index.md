@@ -39,7 +39,11 @@ It is now possible to upload nodes with binary content such as images to the app
 
 You can create a new node with binary content as follows:
 
-\[sourcecode language="Java"\]byte\[\] myData = ... OneBytes node = one.common.nodes.newByteData(myData, "image/png"); One.append(node).to(parent).atAddress("./mypic").in(c);\[/sourcecode\]
+```Java
+byte[] myData = ...
+OneBytes node = one.common.nodes.newByteData(myData, "image/png");
+One.append(node).to(parent).atAddress("./mypic").in(c);
+```
 
 You can then access this picture through the REST server, for instance:
 

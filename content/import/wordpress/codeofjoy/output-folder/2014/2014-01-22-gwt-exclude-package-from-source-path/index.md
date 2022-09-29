@@ -20,10 +20,17 @@ GWT module definitions (.gwt.xml) files allow to specify [fine-grained rules](ht
 
 _Exclude all files in packages with the name '/jre/'_
 
-\[code language="xml"\]<source path='' >
+```xml
+<source path='' >
 
-<exclude name="\*\*/jre/\*\*" /> </source>\[/code\]
+    <exclude name="**/jre/**" />
+</source>
+```
 
 _Exclude the file 'ForJre.java':_
 
-\[code language="xml"\]<source path='' > <exclude name="\*\*/ForJre.java" /> </source>\[/code\]
+```xml
+<source path='' >
+   <exclude name="**/ForJre.java" />
+</source>
+```

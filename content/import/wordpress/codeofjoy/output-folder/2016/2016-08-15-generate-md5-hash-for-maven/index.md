@@ -17,14 +17,26 @@ After digging around in the project [checksum-maven-plugin](https://github.com/n
 
 Following the rough-cut code to create a hash file for Maven (extracted from the [maven-tools](https://github.com/mxro/maven-tools) project, class [WriteHashes](https://github.com/mxro/maven-tools/blob/master/src/main/java/de/mxro/maven/tools/WriteHashes.java)):
 
-\[code language="java"\] public static void writeMd5(final Path baseFile) throws NoSuchAlgorithmException, IOException { final FileInputStream fis = new FileInputStream(baseFile.toFile());
+```java
 
-final MessageDigest messageDigest = MessageDigest.getInstance("MD5"); messageDigest.reset(); final byte\[\] buffer = new byte\[1024\]; int size = fis.read(buffer, 0, 1024); while (size >= 0) { messageDigest.update(buffer, 0, size); size = fis.read(buffer, 0, 1024); }
+public static void writeMd5(final Path baseFile) throws NoSuchAlgorithmException, IOException {
+        final FileInputStream fis = new FileInputStream(baseFile.toFile());
 
-final String result = new String(Hex.encode(messageDigest.digest()));
+        final MessageDigest messageDigest = MessageDigest.getInstance("MD5");
+        messageDigest.reset();
+        final byte[] buffer = new byte[1024];
+        int size = fis.read(buffer, 0, 1024);
+        while (size >= 0) {
+            messageDigest.update(buffer, 0, size);
+            size = fis.read(buffer, 0, 1024);
+        }
 
-fis.close();
+        final String result = new String(Hex.encode(messageDigest.digest()));
 
-final Path md5File = baseFile.getFileSystem().getPath(baseFile.toString() + ".md5");
+        fis.close();
 
-FilesJre.wrap(md5File.toFile()).setText(result); } \[/code\]
+        final Path md5File = baseFile.getFileSystem().getPath(baseFile.toString() + ".md5");
+
+        FilesJre.wrap(md5File.toFile()).setText(result);
+    }
+```

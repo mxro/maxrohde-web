@@ -23,29 +23,40 @@ The following assumes that you already have a project which is configured to be 
 
 - Add the following declaration in the element in your $HOME/.m2/settings.xml and provide the access key and secret key for the the user you've just created
 
-\[code language='xml'\]
+```xml
 
-<server> <id>aws.amazon.com</id> <username>\[aws access key\]</username> <password>\[aws secret key\]</password> </server>
 
-\[/code\]
+<server>
+  <id>aws.amazon.com</id>
+  <username>[aws access key]</username>
+  <password>[aws secret key]</password>
+</server>
+
+```
 
 ### Step 3: Add Beanstalk Maven Plugin
 
 - Add the [beanstalk-maven-plugin](http://beanstalker.ingenieux.com.br/beanstalk-maven-plugin) to your project pom.xml
 
-\[code language='xml'\]
+```xml
 
-<plugin> <groupId>br.com.ingenieux</groupId> <artifactId>beanstalk-maven-plugin</artifactId> <version>1.5.0</version> </plugin>
 
-\[/code\]
+<plugin>
+  <groupId>br.com.ingenieux</groupId>
+  <artifactId>beanstalk-maven-plugin</artifactId>
+  <version>1.5.0</version>
+</plugin>
+
+```
 
 - Test your security credentials and connection to AWS
 
-\[code\]
+```
+
 
 mvn beanstalk:check-availability -Dbeanstalk.cnamePrefix=test-war
 
-\[/code\]
+```
 
 ### Step 4: Create S3 Bucket for Application
 
@@ -57,31 +68,54 @@ mvn beanstalk:check-availability -Dbeanstalk.cnamePrefix=test-war
 
 - Provide the following configuration for the beanstalk-maven-plugin
 
-\[code language='xml'\] <plugin> <groupId>br.com.ingenieux</groupId> <artifactId>beanstalk-maven-plugin</artifactId> <version>1.5.0</version> <configuration> <applicationName>\[Provide your application name\]</applicationName> <!-- Path of the deployed application: cnamePrefix.us-east-1.elasticbeanstalk.com --> <cnamePrefix>${project.artifactId}</cnamePrefix> <environmentName>devenv</environmentName> <environmentRef>devenv</environmentRef> <solutionStack>64bit Amazon Linux 2015.03 v1.4.5 running Tomcat 8 Java 8</solutionStack>
+```xml
 
-<!-- Bucket name here equal to artifactId - but this is not guaranteed      to be available, so therefore the bucket name is given statically --> <s3Bucket>\[Provide your S3 bucket name\]</s3Bucket> <s3Key>${project.artifactId}/${project.build.finalName}-${maven.build.timestamp}.war</s3Key> <versionLabel>${project.version}</versionLabel> </configuration> </plugin> \[/code\]
+<plugin>
+  <groupId>br.com.ingenieux</groupId>
+  <artifactId>beanstalk-maven-plugin</artifactId>  
+  <version>1.5.0</version>
+  <configuration>
+    <applicationName>[Provide your application name]</applicationName>
+    <!-- Path of the deployed application: cnamePrefix.us-east-1.elasticbeanstalk.com -->
+    <cnamePrefix>${project.artifactId}</cnamePrefix>
+    <environmentName>devenv</environmentName>
+    <environmentRef>devenv</environmentRef>
+    <solutionStack>64bit Amazon Linux 2015.03 v1.4.5 running Tomcat 8 Java 8</solutionStack>
+
+    <!-- Bucket name here equal to artifactId - but this is not guaranteed      to be available, so therefore the bucket name is given statically -->
+    <s3Bucket>[Provide your S3 bucket name]</s3Bucket>
+    <s3Key>${project.artifactId}/${project.build.finalName}-${maven.build.timestamp}.war</s3Key>
+    <versionLabel>${project.version}</versionLabel>
+  </configuration>
+</plugin>
+```
 
 ### Step 6: Deploy project
 
 - Run the following to upload the project to the S3 bucket:
 
-\[code\] mvn beanstalk:upload-source-bundle \[/code\]
+```
+
+mvn beanstalk:upload-source-bundle
+```
 
 - If this succeeds, deploy the application
 
-\[code\]
+```
+
 
 mvn beanstalk:upload-source-bundle beanstalk:create-application-version beanstalk:create-environment
 
-\[/code\]
+```
 
 Your application should now be deployed to Elastic Beanstalk. It will be available under
 
-\[code\]
+```
+
 
 cname.us-east-1.elasticbeanstalk.com
 
-\[/code\]
+```
 
 Where cname is the cname you have specified in step 5
 
@@ -89,11 +123,12 @@ Where cname is the cname you have specified in step 5
 
 - To find out, which solution stacks are available (to define the solutionStack environment variable), simply run
 
-\[code\]
+```
+
 
 mvn beanstalk:list-stacks
 
-\[/code\]
+```
 
 ### References
 

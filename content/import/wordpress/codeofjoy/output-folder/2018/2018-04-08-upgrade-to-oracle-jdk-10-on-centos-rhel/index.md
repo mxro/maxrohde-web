@@ -14,32 +14,36 @@ With the release of Java 10 only a few days ago, it seems only prudent to update
 - Log into your CentOS machine
 - Download the RPM file using the [following command](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora) (Don't forget to provide the link you have copied)
 
-\[code language='bash'\]
+```bash
 
-wget --no-cookies --no-check-certificate --header "Cookie: gpw\_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" \[paste copied link here\]
 
-\[/code\]
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" [paste copied link here]
+
+```
 
 - Install the JDK
 
-\[code language='bash'\]
+```bash
 
-sudo yum localinstall jdk-\*\_linux-x64\_bin.rpm
 
-\[/code\]
+sudo yum localinstall jdk-*_linux-x64_bin.rpm
+
+```
 
 - Set the default Java version to 10 using alternatives
 
-\[code language='bash'\]
+```bash
+
 
 sudo alternatives --config java
 
-\[/code\]
+```
 
 - Lastly, make sure you are running the correct version of Java:
 
-\[code\]
+```
+
 
 java -version
 
-\[/code\]
+```

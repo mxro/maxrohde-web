@@ -21,11 +21,13 @@ Make sure to provide details for sending emails under the header _\# Email trans
 
 If you are using a firewall, open ports 9000 for TCP and 51400 for UPD. For instance, by assuring the following lines are in _/etc/sysconfig/iptables_.
 
-\[code\]
+```
 
-\-A INPUT -p tcp -m state --state NEW -m tcp --dport 9000 -j ACCEPT -A INPUT -p udp -m state --state NEW -m udp --dport 51400 -j ACCEPT
 
-\[/code\]
+-A INPUT -p tcp -m state --state NEW -m tcp --dport 9000 -j ACCEPT
+-A INPUT -p udp -m state --state NEW -m udp --dport 51400 -j ACCEPT
+
+```
 
 Don't forget to restart the iptables service: _sudo systemctl restart iptables_.
 
@@ -33,47 +35,53 @@ Don't forget to restart the iptables service: _sudo systemctl restart iptables_.
 
 - Install rsyslog on the system
 
-\[code\]
+```
+
 
 sudo yum install rsyslog
 
-\[/code\]
+```
 
 - Enable and start rsyslog service (also see [this guide](https://marketplace.graylog.org/addons/a47beb3b-0bd9-4792-a56a-33b27b567856))
 
-\[code\]
+```
+
 
 sudo systemctl enable rsyslog
 
 sudo systemctl start rsyslog
 
-\[/code\]
+```
 
 - Edit the file _/etc/rsyslog.conf_ and put the following line at the end, into the section marked as _\# ### begin forwarding rule ###_ (replace yourserver.com with your graylog server address.
 
-\[code\]
+```
 
-\*.\* @yourserver.com:51400;RSYSLOG\_SyslogProtocol23Format
 
-\[/code\]
+*.* @yourserver.com:51400;RSYSLOG_SyslogProtocol23Format
+
+```
 
 - Restart rsyslog
 
-\[code\]
+```
+
 
 sudo systemctl restart rsyslog
 
-\[/code\]
+```
 
 The rsyslog log messages should now be getting send to your server. Give it a few minutes if you don't see the messages in graylog immediately. Otherwise, check the [system log for any errors](https://www.loggly.com/docs/troubleshooting-rsyslog/) (_sudo cat /var/log/messages_).
 
 Also, you can test the connection by entering the following on the monitored system:
 
-\[code\]
+```
 
-nc -u yourserver.com 51400 Hi
 
-\[/code\]
+nc -u yourserver.com 51400
+Hi
+
+```
 
 This should result in the message _Hi_ being received by graylog.
 

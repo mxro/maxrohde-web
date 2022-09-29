@@ -7,15 +7,29 @@ I have just uploaded new [onedb client libraries](http://cms.onedb.de/downloads 
 
 The new client libraries mainly incorporate an advice from Java API expert [Lukas Eder](http://blog.jooq.org/ "Java, SQL, and jOOQ / jOOX") (check out [JOOQ - a neat way to access SQL databases using a fluent Java API](http://www.jooq.org/ "Java SQL")): All callback methods in the core API now have only **one** parameter; a simple data object, which allows access to the information, which before was handed to the callback method in form of parameters. For instance, the create realm operation in version 0.0.1 had the following primary callback method:
 
-\[sourcecode language="java"\]@Override public void thenDo(OneClient client, OneNode realmRoot, String secret, String partnerSecret) { ...\[/sourcecode\]
+```java
+@Override
+public void thenDo(OneClient client, OneNode realmRoot, String secret, String partnerSecret) { 
+...
+```
 
 In version 0.0.2, the callback method for the create realm operation has been changed to contain only one parameter:
 
-\[sourcecode language="java"\]@Override public void thenDo(WithRealmCreatedResult r) { ...\[/sourcecode\]
+```java
+@Override
+public void thenDo(WithRealmCreatedResult r) {
+...
+```
 
 The individual parameters (`client`, `realmRoot`, `secret`, `partnerSecret`) can now be accessed through the `WithRealmCreatedResult` object:
 
-\[sourcecode language="text"\] client : r.client() realmRoot : r.root() secret : r.secret() partnerSecret: r.partnerSecret() \[/sourcecode\]
+```text
+
+client       : r.client()
+realmRoot    : r.root()
+secret       : r.secret()
+partnerSecret: r.partnerSecret()
+```
 
 This has numerous advantages:
 

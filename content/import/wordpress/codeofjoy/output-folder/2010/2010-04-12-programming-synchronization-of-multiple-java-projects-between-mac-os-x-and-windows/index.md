@@ -50,15 +50,37 @@ After initially uploading the projects to the SVN server (or downloading them on
 
 Mac OS X: Parameterized for update and commit: ./svnmanager.sh update or ./svnmanager.sh commit
 
-\[sourcecode language="bash"\] # svn script for eclipse projects on MacBook
+```bash
+
+# svn script for eclipse projects on MacBook
 
 command=$1
 
-\# these folders are to be commited/updated with svn folders=(/Volumes/local/online/Programmierung/eclipseMacBook/Default/Linnk \\ /Volumes/local/online/Programmierung/eclipseMacBook/Default/LinnkLib/Linnk \\ /Volumes/local/online/Programmierung/eclipseMacBook/Default/LinnkLib/LinnkResources \\ /Volumes/local/online/Programmierung/eclipseMacBook/Default/LinnkLib/LinnkArchive \\ /Volumes/local/online/Programmierung/eclipseMacBook/Default/LinnkNetBeanGUIs/linnknetbeanguis \\ /Volumes/local/online/Programmierung/eclipseMacBook/Default/LinnkWebEditorFramework/linnkwef \\ /Volumes/local/online/Programmierung/eclipseMacBook/Default/LinnkWebEditorFramework/lib \\ /Volumes/local/online/Programmierung/eclipseMacBook/Default/leightweight\_linnk/leightweight\_linnk \\ /Volumes/local/online/Programmierung/eclipseMacBook/Default/leightweight\_mxro/leightweight\_mxro \\ /Volumes/local/online/Programmierung/eclipseMacBook/Default/teentalk/teentalk )
+# these folders are to be commited/updated with svn
+folders=(/Volumes/local/online/Programmierung/eclipseMacBook/Default/Linnk \
+/Volumes/local/online/Programmierung/eclipseMacBook/Default/LinnkLib/Linnk \
+/Volumes/local/online/Programmierung/eclipseMacBook/Default/LinnkLib/LinnkResources \
+/Volumes/local/online/Programmierung/eclipseMacBook/Default/LinnkLib/LinnkArchive \
+/Volumes/local/online/Programmierung/eclipseMacBook/Default/LinnkNetBeanGUIs/linnknetbeanguis \
+/Volumes/local/online/Programmierung/eclipseMacBook/Default/LinnkWebEditorFramework/linnkwef \
+/Volumes/local/online/Programmierung/eclipseMacBook/Default/LinnkWebEditorFramework/lib \
+/Volumes/local/online/Programmierung/eclipseMacBook/Default/leightweight_linnk/leightweight_linnk \
+/Volumes/local/online/Programmierung/eclipseMacBook/Default/leightweight_mxro/leightweight_mxro \
+/Volumes/local/online/Programmierung/eclipseMacBook/Default/teentalk/teentalk )
 
-for folder in ${folders\[@\]} do if \[ "$command" = "commit" \] then svn $command -m "macbook commit" --username "mroh004" --password "XXXX" $folder fi
+for folder in ${folders[@]}
+do
+if [ "$command" = "commit" ]
+then
+svn $command -m "macbook commit" --username "mroh004" --password "XXXX" $folder
+fi
 
-if \[ "$command" = "update" \] then svn $command --username "mroh004" --password "XXXX" $folder fi done\[/sourcecode\]
+if [ "$command" = "update" ]
+then
+svn $command --username "mroh004" --password "XXXX" $folder
+fi
+done
+```
 
 Windows:
 
@@ -66,18 +88,24 @@ Windows does not have a built in SVN client. A client, which supports the comman
 
 For committing:
 
-\[sourcecode language="text"\]@ECHO OFF</pre> rem Commits
+```text
+@ECHO OFF</pre>
+rem Commits
 
-"c:\\Program Files\\SlikSvn\\bin\\svn" commit "C:\\eclipseWorkspace\\leightweight\_mxro\\leightweight\_mxro" -m "Commit from STF-428-DSK06" --username "mroh004"
+"c:\Program Files\SlikSvn\bin\svn" commit "C:\eclipseWorkspace\leightweight_mxro\leightweight_mxro" -m "Commit from STF-428-DSK06" --username "mroh004"
 
-"c:\\Program Files\\SlikSvn\\bin\\svn" commit "C:\\eclipseWorkspace\\leightweight\_linnk\\leightweight\_linnk" -m "Commit from STF-428-DSK06" --username "mroh004"
+"c:\Program Files\SlikSvn\bin\svn" commit "C:\eclipseWorkspace\leightweight_linnk\leightweight_linnk" -m "Commit from STF-428-DSK06" --username "mroh004"
 
-"c:\\Program Files\\SlikSvn\\bin\\svn" commit "C:\\eclipseWorkspace\\LinnkLib\\Linnk" -m "Commit from STF-428-DSK06" --username "mroh004" "c:\\Program Files\\SlikSvn\\bin\\svn" commit "C:\\eclipseWorkspace\\LinnkLib\\LinnkArchive" -m "Commit from STF-428-DSK06" --username "mroh004" "c:\\Program Files\\SlikSvn\\bin\\svn" commit "C:\\eclipseWorkspace\\LinnkLib\\LinnkResources" -m "Commit from STF-428-DSK06" --username "mroh004"
+"c:\Program Files\SlikSvn\bin\svn" commit "C:\eclipseWorkspace\LinnkLib\Linnk" -m "Commit from STF-428-DSK06" --username "mroh004"
+"c:\Program Files\SlikSvn\bin\svn" commit "C:\eclipseWorkspace\LinnkLib\LinnkArchive" -m "Commit from STF-428-DSK06" --username "mroh004"
+"c:\Program Files\SlikSvn\bin\svn" commit "C:\eclipseWorkspace\LinnkLib\LinnkResources" -m "Commit from STF-428-DSK06" --username "mroh004"
 
-"c:\\Program Files\\SlikSvn\\bin\\svn" commit "C:\\eclipseWorkspace\\LinnkNetBeanGUIs\\linnknetbeanguis" -m "Commit from STF-428-DSK06" --username "mroh004"
+"c:\Program Files\SlikSvn\bin\svn" commit "C:\eclipseWorkspace\LinnkNetBeanGUIs\linnknetbeanguis" -m "Commit from STF-428-DSK06" --username "mroh004"
 
-"c:\\Program Files\\SlikSvn\\bin\\svn" commit "C:\\eclipseWorkspace\\LinnkWebEditorFramework\\linnkwef" -m "Commit from STF-428-DSK06" --username "mroh004" "c:\\Program Files\\SlikSvn\\bin\\svn" commit "C:\\eclipseWorkspace\\LinnkWebEditorFramework\\lib" -m "Commit from STF-428-DSK06" --username "mroh004"
+"c:\Program Files\SlikSvn\bin\svn" commit "C:\eclipseWorkspace\LinnkWebEditorFramework\linnkwef" -m "Commit from STF-428-DSK06" --username "mroh004"
+"c:\Program Files\SlikSvn\bin\svn" commit "C:\eclipseWorkspace\LinnkWebEditorFramework\lib" -m "Commit from STF-428-DSK06" --username "mroh004"
 
-"c:\\Program Files\\SlikSvn\\bin\\svn" commit "C:\\eclipseWorkspace\\teentalk\\teentalk" -m "Commit from STF-428-DSK06" --username "mroh004"\[/sourcecode\]
+"c:\Program Files\SlikSvn\bin\svn" commit "C:\eclipseWorkspace\teentalk\teentalk" -m "Commit from STF-428-DSK06" --username "mroh004"
+```
 
 The script for updating is similar, just “commit” is changed to “update” and the “-m ...” parameter is removed.
