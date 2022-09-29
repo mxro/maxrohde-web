@@ -65,10 +65,12 @@ export async function renderPost({
       }
       <meta name="twitter:card" content="summary_large_image" />
       <link href="/_goldstack/static/lib/prismjs/1.29.0/prism.css" rel="stylesheet" />
-
+      <style>
+        code {
+          font-size: 0.9rem !important;
+        }
+      </style>
       <script src="/_goldstack/static/lib/prismjs/1.29.0/prism.js" ></script>
-    `,
-    appendToBody: `
     `,
     properties: {
       post,
