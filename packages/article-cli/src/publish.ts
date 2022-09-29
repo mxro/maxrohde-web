@@ -14,6 +14,12 @@ import { Entity } from 'dynamodb-toolbox';
 import { convert as htmlToText } from 'html-to-text';
 import { fixCoverImageLink } from './images';
 import { resolve } from 'path';
+
+import { dirname, join } from 'path';
+import { existsSync } from 'fs';
+import { copyFile } from 'fs/promises';
+import assert from 'assert';
+
 export interface PublishArgs {
   fileNamePattern: string;
   dry: boolean;
@@ -38,6 +44,19 @@ export function extractPathElements(filename: string): string[] {
   return firstMatch?.slice(1) || [];
 }
 
+async function copyCoverImage(
+  filename: string,
+  coverImage: string
+): Promise<void> {
+  const dir = dirname(filename);
+  const coverImagePath = join(dir, 'images', coverImage);
+  assert(existsSync(coverImagePath));
+  const coverImagesDestPath = config['coverImagePath'];
+  const coverImageDest = join(coverImagesDestPath, coverImage);
+  await copyFile(coverImagePath, coverImageDest);
+  console.log('Copied cover image to ', coverImageDest);
+}
+
 export const publish = async (args: PublishArgs): Promise<void> => {
   const contentDir = args.directoryToScan || config['defaultContentDir'];
   const pattern = `**/*${args.fileNamePattern}*`;
@@ -57,6 +76,7 @@ export const publish = async (args: PublishArgs): Promise<void> => {
       return {
         post: await parseMarkdown(filename),
         path: extractPathElements(filename).join('/'),
+        filename,
       };
     })
   );
@@ -67,6 +87,11 @@ export const publish = async (args: PublishArgs): Promise<void> => {
     results.map(async (result) => {
       const post = result.post;
       console.log('Publishing article:', result.path);
+
+      if (post.metadata.coverImage) {
+        await copyCoverImage(result.filename, post.metadata.coverImage);
+      }
+
       return Posts.put({
         blog: 'maxrohde.com',
         title: post.metadata.title,
