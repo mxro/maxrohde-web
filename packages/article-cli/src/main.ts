@@ -2,6 +2,7 @@ import { Command } from 'commander';
 import { connectTable } from 'db-blog';
 
 import packageJson from './../package.json';
+import { mergePosts } from './mergePosts';
 import { publish } from './publish';
 import { wordpressPreprocessFile } from './wordpressPreprocess';
 
@@ -51,5 +52,13 @@ import { wordpressPreprocessFile } from './wordpressPreprocess';
     .action(async (filename, dest) => {
       await wordpressPreprocessFile(filename, dest);
     });
+
+  program
+    .command('import-posts')
+    .description('Imports Wordpress Posts to Posts folder')
+    .action(async () => {
+      await mergePosts();
+    });
+
   program.parse();
 })();
