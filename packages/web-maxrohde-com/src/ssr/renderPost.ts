@@ -7,7 +7,15 @@ import {
 import { renderPage } from '../render';
 import { PostProps } from './../components/pages/PostPage';
 
-import { connectTable, Entity, deepCopy, PostEntity, PostPK } from 'db-blog';
+import {
+  connectTable,
+  Entity,
+  deepCopy,
+  PostEntity,
+  PostPK,
+  BlogMetricEntity,
+  BlogMetricPK,
+} from 'db-blog';
 
 import PostPage from '../components/pages/PostPage';
 import ErrorPage, { ErrorPageProps } from '../components/pages/ErrorPage';
@@ -19,15 +27,36 @@ export async function renderPost({
 }): Promise<APIGatewayProxyResultV2> {
   const table = await connectTable();
 
-  const Posts = new Entity({ ...deepCopy(PostEntity), table });
-  const postQueryResult = await Posts.query(PostPK({ blog: 'maxrohde.com' }), {
+  const Posts = new Entity({ ...deepCopy(PostEntity), table } as const);
+  const postQueryResultPromise = Posts.query(PostPK({ blog: 'maxrohde.com' }), {
     reverse: true,
     limit: 10,
     index: 'path-index',
     eq: event.rawPath.slice(1), //'2022/01/16/memory-system-part-4-symbolic-systems',
   });
 
-  if (!postQueryResult.Items || postQueryResult.Count !== 1) {
+  const BlogMetrics = new Entity({
+    ...deepCopy(BlogMetricEntity),
+    table,
+  } as const);
+  const visitsPromise = BlogMetrics.query(
+    BlogMetricPK({ blog: 'maxrohde.com' }),
+    {
+      eq: 'views',
+    }
+  );
+
+  const [postQueryResult, visits] = await Promise.all([
+    postQueryResultPromise,
+    visitsPromise,
+  ]);
+
+  if (
+    !postQueryResult.Items ||
+    postQueryResult.Count !== 1 ||
+    !visits.Items ||
+    visits.Count !== 1
+  ) {
     return renderPage<ErrorPageProps>({
       component: ErrorPage,
       appendToHead: '<title>Post not found</title>',
@@ -38,8 +67,17 @@ export async function renderPost({
       event: event,
     });
   }
+
+  const visitsCount = visits.Items[0].value;
+
+  BlogMetrics.put({
+    blog: 'maxrohde.com',
+    metricId: 'views',
+    value: visitsCount + 1,
+  }).catch((e) => console.error('Cannot update views', e));
+
   const post = postQueryResult.Items[0];
-  return renderPage<PostProps>({
+  const res = renderPage<PostProps>({
     component: PostPage,
     appendToHead: `
       <meta charset="UTF-8">
@@ -74,9 +112,11 @@ export async function renderPost({
     `,
     properties: {
       post,
+      visits: visitsCount,
       exists: true,
     },
     entryPoint: __filename,
     event: event,
   });
+  return res;
 }
