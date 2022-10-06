@@ -110,3 +110,20 @@ export const CategoryMappingEntity = {
     postPath: { sortKey: true },
   },
 } as const;
+
+export const BlogMetricPK = (data: { blog: string }): string =>
+  `${data.blog}#Metric`;
+
+export const BlogMetricEntity = {
+  name: 'BlogMetric',
+  attributes: {
+    pk: {
+      partitionKey: true,
+      hidden: true,
+      default: BlogMetricPK,
+    },
+    blog: { type: 'string', required: 'always' },
+    metricId: { sortKey: true },
+    value: { type: 'number', required: 'always' },
+  },
+} as const;

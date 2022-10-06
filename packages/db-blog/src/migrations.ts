@@ -1,10 +1,10 @@
-import { InputMigrations } from 'umzug/lib/types';
 import { DynamoDBContext } from '@goldstack/template-dynamodb';
+import { InputMigrations } from 'umzug/lib/types';
 
-import { marshall } from '@aws-sdk/util-dynamodb';
 import DynamoDB from 'aws-sdk/clients/dynamodb';
-import { PromiseResult } from 'aws-sdk/lib/request';
 import { AWSError } from 'aws-sdk/lib/error';
+import { PromiseResult } from 'aws-sdk/lib/request';
+import { connectTable, deepCopy, Entity, BlogMetricEntity } from './table';
 
 /**
  * Umzug migrations applied during connection see https://github.com/sequelize/umzug#migrations
@@ -12,13 +12,8 @@ import { AWSError } from 'aws-sdk/lib/error';
 export const createMigrations = (): InputMigrations<DynamoDBContext> => {
   return [
     {
-      name: '2022-09-19',
+      name: '2022-09-19-create-path-gsi',
       up: async (params) => {
-        const tableInfo = await params.context.client
-          .describeTable({
-            TableName: params.context.tableName,
-          })
-          .promise();
         await params.context.client
           .updateTable({
             TableName: params.context.tableName,
@@ -66,6 +61,25 @@ export const createMigrations = (): InputMigrations<DynamoDBContext> => {
             throw new Error('Cannot check table status');
           }
         } while (status.Table?.TableStatus !== 'ACTIVE');
+      },
+    },
+    {
+      name: '2022-10-02-init-view-count',
+      up: async (params) => {
+        const table = await connectTable({
+          client: params.context.client,
+        });
+
+        const BlogMetrics = new Entity({
+          ...deepCopy(BlogMetricEntity),
+          table,
+        } as const);
+
+        await BlogMetrics.put({
+          blog: 'maxrohde.com',
+          metricId: 'views',
+          value: 1506126, // as of 2/10/2022
+        });
       },
     },
   ];
