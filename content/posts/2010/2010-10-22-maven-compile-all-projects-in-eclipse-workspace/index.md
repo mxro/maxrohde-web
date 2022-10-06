@@ -1,8 +1,8 @@
 ---
-title: "Maven: Compile all projects in eclipse workspace"
-date: "2010-10-22"
-categories: 
-  - "java"
+title: 'Maven: Compile all projects in eclipse workspace'
+date: '2010-10-22'
+categories:
+  - 'java'
 ---
 
 **The Problem:**
@@ -17,17 +17,17 @@ This solution is specific to Windows operating systems by providing a simple bat
 
 As preperation, you need to find out the parameters, with which Maven is started on your machine. An easy way to go about this is to remove the @echo off statement from the mvn.bat in your Maven \\bin directory and call mvn from within your command line. You will be able to see that Maven is called with a statement similar to the following:
 
- 
+
 
 ```
 "C:\Program Files\Java\jre6\bin\java.exe"  -classpath "C:\Users\Max\Documents\Data\Applications\apache-maven-3.0\bin\..\boot\plexus-classworlds-2.2.3.jar" "-Dclassworlds.conf=C:\Users\Max\Documents\Data\Applications\apache-maven-3.0\bin\..\bin\m2.conf" "-Dmaven.home=C:\Users\Max\Documents\Data\Applications\apache-maven-3.0\bin\.." org.codehaus.plexus.classworlds.launcher.Launcher compile
 ```
 
- 
+
 
 Now you can write a simple batch file like the following:
 
- 
+
 
 ```powershell
 

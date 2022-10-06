@@ -1,8 +1,8 @@
 ---
-title: "Internet Explorer ‘SCRIPT1002: Syntax error’: Help!?!"
-date: "2012-08-21"
-categories: 
-  - "javascript"
+title: 'Internet Explorer ‘SCRIPT1002: Syntax error’: Help!?!'
+date: '2012-08-21'
+categories:
+  - 'javascript'
 ---
 
 ## Problem

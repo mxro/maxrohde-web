@@ -1,11 +1,11 @@
 ---
-title: "Speed Up Netty SSL"
-date: "2014-10-15"
-categories: 
-  - "java"
-tags: 
-  - "netty"
-  - "ssl"
+title: 'Speed Up Netty SSL'
+date: '2014-10-15'
+categories:
+  - 'java'
+tags:
+  - 'netty'
+  - 'ssl'
 ---
 
 ## Knowing Where You Are

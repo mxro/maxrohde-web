@@ -1,11 +1,11 @@
 ---
-title: "Setting Up eclipse Luna with Maven for Android"
-date: "2014-08-14"
-categories: 
-  - "java"
-tags: 
-  - "eclipse"
-  - "maven"
+title: 'Setting Up eclipse Luna with Maven for Android'
+date: '2014-08-14'
+categories:
+  - 'java'
+tags:
+  - 'eclipse'
+  - 'maven'
 ---
 
 As of August 2014, **don't even try this**.

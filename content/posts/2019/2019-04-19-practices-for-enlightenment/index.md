@@ -1,24 +1,24 @@
 ---
-title: "Practices for Enlightenment"
-date: "2019-04-19"
-categories: 
-  - "buddhism"
-  - "philosophy"
-  - "psychology"
-tags: 
-  - "breathing"
-  - "enlightenment"
-  - "equanimity"
-  - "gratitude"
-  - "habits"
-  - "humility"
-  - "joy"
-  - "love"
-  - "mindfulness"
-  - "practice"
-  - "practices"
-  - "rituals"
-coverImage: "kiyomizu-dera-by-utagawa-hiroshige.jpg"
+title: 'Practices for Enlightenment'
+date: '2019-04-19'
+categories:
+  - 'buddhism'
+  - 'philosophy'
+  - 'psychology'
+tags:
+  - 'breathing'
+  - 'enlightenment'
+  - 'equanimity'
+  - 'gratitude'
+  - 'habits'
+  - 'humility'
+  - 'joy'
+  - 'love'
+  - 'mindfulness'
+  - 'practice'
+  - 'practices'
+  - 'rituals'
+coverImage: 'kiyomizu-dera-by-utagawa-hiroshige.jpg'
 ---
 
 I believe we all have moments in which we become the best versions of ourselves; moments in which we are ever so slightly closer to true and deep enlightenment.

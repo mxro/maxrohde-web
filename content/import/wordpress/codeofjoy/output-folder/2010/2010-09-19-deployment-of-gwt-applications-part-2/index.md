@@ -1,8 +1,8 @@
 ---
-title: "Deployment of GWT Applications (Part 2)"
-date: "2010-09-19"
-categories: 
-  - "java"
+title: 'Deployment of GWT Applications (Part 2)'
+date: '2010-09-19'
+categories:
+  - 'java'
 ---
 
 **Purpose**

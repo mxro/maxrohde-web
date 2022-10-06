@@ -1,8 +1,8 @@
 ---
-title: "OSGi + Maven + Declarative Services + eclipse"
-date: "2010-05-22"
-categories: 
-  - "java"
+title: 'OSGi + Maven + Declarative Services + eclipse'
+date: '2010-05-22'
+categories:
+  - 'java'
 ---
 
 This post is part of a series of post on java modularity.
@@ -79,7 +79,7 @@ The repository search is far better in m2eclipse in the current version.
 
 Or you can copy the source of the pom.xml for the elements repositories and dependencies
 
-<repositories\>         <repository\>                 <id\>com.springsource.repository.bundles.release</id\>                 <name\>SpringSource Enterprise Bundle Repository - SpringSource Bundle Releases</name\>                 <url\>[http://repository.springsource.com/maven/bundles/release](http://repository.springsource.com/maven/bundles/release)</url\>         </repository\>         <repository\>                 <id\>com.springsource.repository.bundles.external</id\>                 <name\>SpringSource Enterprise Bundle Repository - External Bundle Releases</name\>                 <url\>[http://repository.springsource.com/maven/bundles/external](http://repository.springsource.com/maven/bundles/external)</url\>         </repository\> </repositories\> <dependencies\> <dependency\>         <groupId\>org.sonatype.tycho</groupId\>         <artifactId\>org.eclipse.osgi</artifactId\>         <version\>3.5.2.R35x\_v20100126</version\>         <optional\>false</optional\> </dependency\> <dependency\>         <groupId\>javax.transaction</groupId\>         <artifactId\>transaction-api</artifactId\>         <version\>1.1</version\>         <optional\>false</optional\> </dependency\> <dependency\>         <groupId\>org.eclipse.persistence</groupId\>         <artifactId\>com.springsource.org.eclipse.persistence.internal.deployment.osgi.equinox</artifactId\>         <version\>2.0.0</version\>         <optional\>false</optional\> </dependency\> </dependencies\>
+<repositories\>         <repository\>                 <id\>com.springsource.repository.bundles.release</id\>                 <name\>SpringSource Enterprise Bundle Repository - SpringSource Bundle Releases</name\>                 <url\>[http://repository.springsource.com/maven/bundles/release](http://repository.springsource.com/maven/bundles/release)</url\>         </repository\>         <repository\>                 <id\>com.springsource.repository.bundles.external</id\>                 <name\>SpringSource Enterprise Bundle Repository - External Bundle Releases</name\>                 <url\>[http://repository.springsource.com/maven/bundles/external](http://repository.springsource.com/maven/bundles/external)</url\>         </repository\> </repositories\> <dependencies\> <dependency\>         <groupId\>org.sonatype.tycho</groupId\>         <artifactId\>org.eclipse.osgi</artifactId\>         <version\>3.5.2.R35x_v20100126</version\>         <optional\>false</optional\> </dependency\> <dependency\>         <groupId\>javax.transaction</groupId\>         <artifactId\>transaction-api</artifactId\>         <version\>1.1</version\>         <optional\>false</optional\> </dependency\> <dependency\>         <groupId\>org.eclipse.persistence</groupId\>         <artifactId\>com.springsource.org.eclipse.persistence.internal.deployment.osgi.equinox</artifactId\>         <version\>2.0.0</version\>         <optional\>false</optional\> </dependency\> </dependencies\>
 
 You should have defined the following dependencies:
 

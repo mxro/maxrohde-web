@@ -1,10 +1,10 @@
 ---
-title: "Automatically Make Snapshots for EC2"
-date: "2016-08-19"
-tags: 
-  - "aws"
-  - "cloudwatch"
-  - "ec2"
+title: 'Automatically Make Snapshots for EC2'
+date: '2016-08-19'
+tags:
+  - 'aws'
+  - 'cloudwatch'
+  - 'ec2'
 ---
 
 A quick Google search reveals that there are quite a few different approaches for automatically creating snapshots for EC2 images (such as [here](https://serverlesscode.com/post/lambda-schedule-ebs-snapshot-backups/), [here](https://www.flynsarmy.com/2015/06/how-to-schedule-daily-rolling-ebs-snapshots/) and [here](http://www.4synergy.nl/create-scheduled-snapshots-for-your-ec2-volumes/)).

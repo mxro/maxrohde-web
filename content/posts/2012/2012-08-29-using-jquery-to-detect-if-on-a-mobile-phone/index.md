@@ -1,11 +1,11 @@
 ---
-title: "Using JQuery to Detect If on a Mobile Phone"
-date: "2012-08-29"
-categories: 
-  - "javascript"
-tags: 
-  - "jquery"
-  - "mobile"
+title: 'Using JQuery to Detect If on a Mobile Phone'
+date: '2012-08-29'
+categories:
+  - 'javascript'
+tags:
+  - 'jquery'
+  - 'mobile'
 ---
 
 JQuery and/or JavaScript have no native mechanism to determine whether a page is loaded on a mobile phone or not. However, CSS media queries offer this capability. I found the following [nice trick on stackoverflow](http://stackoverflow.com/a/10364620/270662) to utilize media queries to help JS/JQuery applications to determine whether they run in a mobile.
@@ -18,7 +18,9 @@ Then, add the following CSS:
 
 ```css
 @media only screen and (max-width: 480px) {
-#mobileDetector { display: none; }
+  #mobileDetector {
+    display: none;
+  }
 }
 ```
 
@@ -27,9 +29,9 @@ Then, add the following CSS:
 Finally, the following JQuery function can be used to determine if on a mobile or not:
 
 ```javascript
-(function($) {
-  $.isMobile = function() { 
-      return $('#mobileDetector').css('display') === 'none'; 
-  }
-}) (jQuery);
+(function ($) {
+  $.isMobile = function () {
+    return $('#mobileDetector').css('display') === 'none';
+  };
+})(jQuery);
 ```

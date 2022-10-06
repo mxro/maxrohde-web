@@ -1,8 +1,8 @@
 ---
-title: "Gwt and Maven Jetty Plugin"
-date: "2011-03-01"
-categories: 
-  - "java"
+title: 'Gwt and Maven Jetty Plugin'
+date: '2011-03-01'
+categories:
+  - 'java'
 ---
 
 The [Maven Gwt Plugin](http://mojo.codehaus.org/gwt-maven-plugin/) is a powerful tool in developing Gwt applications using Maven Build Management. I have set up my development environment to code and run JUnit test in eclipse IDE (without using eclipse IAM etc but the Maven Eclipse Plugin instead), and I test gwt code using the Maven Gwt Plugin, either using the gwt:run or gwt:test goals.

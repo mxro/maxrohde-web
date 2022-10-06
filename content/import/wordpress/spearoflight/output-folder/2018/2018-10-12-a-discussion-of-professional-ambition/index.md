@@ -1,16 +1,16 @@
 ---
-title: "A Discussion of Professional Ambition"
-date: "2018-10-12"
-categories: 
-  - "economy"
-  - "psychology"
-  - "society"
-tags: 
-  - "happinnes"
-  - "life"
-  - "stress"
-  - "work"
-coverImage: "rubens_peter_paul_-_the_fall_of_icarus.jpg"
+title: 'A Discussion of Professional Ambition'
+date: '2018-10-12'
+categories:
+  - 'economy'
+  - 'psychology'
+  - 'society'
+tags:
+  - 'happinnes'
+  - 'life'
+  - 'stress'
+  - 'work'
+coverImage: 'rubens_peter_paul_-_the_fall_of_icarus.jpg'
 ---
 
 In our modern world, our basic material needs are often met easily. Especially for those which were fortunate enough to obtain a good education. It thus puzzles me why people are often so ambitious in their work.

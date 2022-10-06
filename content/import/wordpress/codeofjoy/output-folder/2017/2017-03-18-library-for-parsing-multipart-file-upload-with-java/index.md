@@ -1,11 +1,11 @@
 ---
-title: "Library for Parsing multipart File Upload with Java"
-date: "2017-03-18"
-categories: 
-  - "java"
-tags: 
-  - "open-source"
-  - "programming"
+title: 'Library for Parsing multipart File Upload with Java'
+date: '2017-03-18'
+categories:
+  - 'java'
+tags:
+  - 'open-source'
+  - 'programming'
 ---
 
 One of the most convinient ways to upload files from the Web Browser to the server is by using [file inputs in HTML forms](https://davidwalsh.name/multiple-file-upload).
@@ -27,13 +27,13 @@ Where data is a binary array of the data you received from the client and conten
 Then you can iterate through all the files submitted in the form as follows:
 
 while (iter.hasNext()) {
- FileItemStream item = iter.next();
- if (item.isFormField()) {
-   ... some fields in the form
- } else {
-   InputStream stream = item.openStream();
-   // work with uploaded file data by processing stream ...
- }
+FileItemStream item = iter.next();
+if (item.isFormField()) {
+... some fields in the form
+} else {
+InputStream stream = item.openStream();
+// work with uploaded file data by processing stream ...
+}
 }
 
 You can find the library on [GitHub](https://github.com/javadelight/delight-fileupload). It is on [Maven Central](https://search.maven.org/). Just add the following dependency to your Java, Scala etc. application and you are good to go:

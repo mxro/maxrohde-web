@@ -1,7 +1,7 @@
 name: 'Goldstack Setup'
 description: 'Gets things ready for running scripts'
 runs:
-  using: "composite"
+  using: 'composite'
   steps:
     - uses: actions/setup-node@v3
       with:

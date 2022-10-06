@@ -1,8 +1,8 @@
 ---
-title: "OSGi: Libraries Requiring Access to Bundle ClassLoader"
-date: "2010-06-06"
-categories: 
-  - "java"
+title: 'OSGi: Libraries Requiring Access to Bundle ClassLoader'
+date: '2010-06-06'
+categories:
+  - 'java'
 ---
 
 **The Problem**
@@ -11,9 +11,9 @@ Some libraries like XStream or Beans serialization require direct access to the 
 
 SCHWERWIEGEND: Application class de.mxro.textedit.gdocseditor.gui.GoogleDocsEditorGUIApp failed to launch com.thoughtworks.xstream.converters.ConversionException: de.mxro.textedit.gdocseditor.GDocsEditorData$GDocNode : de.mxro.textedit.gdocseditor.GDocsEditorData$GDocNode \---- Debugging information ---- message : de.mxro.textedit.gdocseditor.GDocsEditorData$GDocNode : de.mxro.textedit.gdocseditor.GDocsEditorData$GDocNode cause-exception : com.thoughtworks.xstream.mapper.CannotResolveClassException cause-message : de.mxro.textedit.gdocseditor.GDocsEditorData$GDocNode : de.mxro.textedit.gdocseditor.GDocsEditorData$GDocNode class : java.util.HashMap$Values required-type : java.util.HashMap path : /java.util.HashMap$Values/outer-class/entry/de.mxro.textedit.gdocseditor.GDocsEditorData$GDocNode line number : 5 \-------------------------------         at com.thoughtworks.xstream.core.TreeUnmarshaller.convert(TreeUnmarshaller.java:63)         at com.thoughtworks.xstream.core.AbstractReferenceUnmarshaller.convert(AbstractReferenceUnmarshaller.java:45)         at com.thoughtworks.xstream.core.TreeUnmarshaller.convertAnother(TreeUnmarshaller.java:46) ...
 
-**The Solution (1)
+\*\*The Solution (1)
 
-**The only solution I can think of at the moment, is to load these libraries directly in the bundle, which uses them. So, normally, I would place 3rd party libraries in separate OSGi bundles and import packages from these bundles. But in case of libraries, which require access to the ClassLoader of the package, I compile them as JAR library, which can be added to the using bundles classpath directly. Of course, this may lead to duplication of libraries, if these libraries are used by more than one bundle. Therefore, it is very important NEVER to export any packages from these included libraries from the libraries, which are using them.
+\*\*The only solution I can think of at the moment, is to load these libraries directly in the bundle, which uses them. So, normally, I would place 3rd party libraries in separate OSGi bundles and import packages from these bundles. But in case of libraries, which require access to the ClassLoader of the package, I compile them as JAR library, which can be added to the using bundles classpath directly. Of course, this may lead to duplication of libraries, if these libraries are used by more than one bundle. Therefore, it is very important NEVER to export any packages from these included libraries from the libraries, which are using them.
 
 I would recommend to create such modules in the following way. First, set up a Java project in eclipse. Make sure the source and output folders follow Maven convention (src/main/java, target/classes). Using the Eclipse IAM plugin, convert the project into a Maven project.
 

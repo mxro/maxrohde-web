@@ -1,17 +1,17 @@
 ---
-title: "Memory, Mindfulness and Imagination"
-date: "2021-11-27"
-categories: 
-  - "buddhism"
-  - "philosophy"
-  - "psychology"
-tags: 
-  - "life"
-  - "meditation"
-  - "memory"
-  - "mnemonic"
-  - "productivity"
-coverImage: "shine-3902368_1920.jpg"
+title: 'Memory, Mindfulness and Imagination'
+date: '2021-11-27'
+categories:
+  - 'buddhism'
+  - 'philosophy'
+  - 'psychology'
+tags:
+  - 'life'
+  - 'meditation'
+  - 'memory'
+  - 'mnemonic'
+  - 'productivity'
+coverImage: 'shine-3902368_1920.jpg'
 ---
 
 I've already written about what I understand to be the [benefits of having a better memory in the modern world](https://spearoflight.wordpress.com/2021/11/15/memory-system-part-1-ancient-techniques-and-modern-applications/). These were namely to aid us in our thinking and to help put things into a shape and form that makes it easy for others to remember.

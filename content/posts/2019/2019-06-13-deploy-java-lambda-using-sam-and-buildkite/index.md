@@ -1,18 +1,18 @@
 ---
-title: "Deploy Java Lambda using SAM and Buildkite"
-date: "2019-06-13"
-categories: 
-  - "devops"
-  - "java"
-tags: 
-  - "aws"
-  - "aws-lambda"
-  - "aws-sam"
-  - "buildkite"
-  - "maven"
-  - "serverless"
-  - "serverless-application-model"
-coverImage: "screen-shot-2019-06-14-at-7.18.14-am.png"
+title: 'Deploy Java Lambda using SAM and Buildkite'
+date: '2019-06-13'
+categories:
+  - 'devops'
+  - 'java'
+tags:
+  - 'aws'
+  - 'aws-lambda'
+  - 'aws-sam'
+  - 'buildkite'
+  - 'maven'
+  - 'serverless'
+  - 'serverless-application-model'
+coverImage: 'screen-shot-2019-06-14-at-7.18.14-am.png'
 ---
 
 I've recently covered how to deploy a [Node JS based Lambda using SAM and Buildkite](https://maxrohde.com/2019/06/08/deploy-lambda-using-sam-and-buildkite/). I would say that this should cover most use cases, since I believe a majority of AWS Lambdas are implemented with JavaScript.
@@ -28,7 +28,7 @@ First we define a simple Java based Lambda:
 ```
 package com.amazonaws.handler;
 
-import com.amazonaws.services.lambda.runtime.Context; 
+import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.LambdaLogger;
 
 public class SimpleHandler {
@@ -71,10 +71,10 @@ Then add a `pom.xml` to define the build and dependencies of our Java applicatio
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
-        </dependency>    
+        </dependency>
     </dependencies>
 
-    
+
     <build>
         <plugins>
             <plugin>
@@ -88,7 +88,7 @@ Then add a `pom.xml` to define the build and dependencies of our Java applicatio
             </plugin>
         </plugins>
     </build>
-    
+
 </project>
 ```
 
@@ -103,11 +103,11 @@ Description: >
 Globals:
     Function:
         Timeout: 20
-        Environment: 
+        Environment:
 
 Resources:
   SimpleFunction:
-    Type: AWS::Serverless::Function 
+    Type: AWS::Serverless::Function
     Properties:
       CodeUri: target/lambda-java-sam-buildkite-1.0.0.jar
       Handler: com.amazonaws.handler.SimpleHandler::myHandler

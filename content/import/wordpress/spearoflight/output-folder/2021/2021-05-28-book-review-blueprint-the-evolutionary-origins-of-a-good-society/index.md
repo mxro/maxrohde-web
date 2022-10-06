@@ -1,16 +1,16 @@
 ---
-title: "Book Review - Blueprint: The Evolutionary Origins of a Good Society"
-date: "2021-05-28"
-categories: 
-  - "book-reviews"
-  - "psychology"
-  - "society"
-tags: 
-  - "book"
-  - "book-review"
-  - "history"
-  - "philosophy"
-  - "social-research"
+title: 'Book Review - Blueprint: The Evolutionary Origins of a Good Society'
+date: '2021-05-28'
+categories:
+  - 'book-reviews'
+  - 'psychology'
+  - 'society'
+tags:
+  - 'book'
+  - 'book-review'
+  - 'history'
+  - 'philosophy'
+  - 'social-research'
 ---
 
 How much of human behaviour is controlled by our genes, and how much is driven by our upbringing and higher thinking has long been a topic of much discussion. Christakis takes a bit of a different view of this problem by asking the question how much our societies are shaped by our biological programming, versus our own design and historical circumstance. The answer to this is driven by extensive research about different types of human societies, from hunter gatherers, to ancient empires, communities of shipwrecked seafarers and modern societies.

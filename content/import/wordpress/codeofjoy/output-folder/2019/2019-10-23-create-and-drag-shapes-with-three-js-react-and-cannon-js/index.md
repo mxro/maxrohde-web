@@ -1,14 +1,14 @@
 ---
-title: "Create and Drag Shapes with Three.js, React and Cannon.js"
-date: "2019-10-23"
-categories: 
-  - "javascript"
-tags: 
-  - "open-source"
-  - "react"
-  - "react-hooks"
-  - "three-js"
-coverImage: "v2.png"
+title: 'Create and Drag Shapes with Three.js, React and Cannon.js'
+date: '2019-10-23'
+categories:
+  - 'javascript'
+tags:
+  - 'open-source'
+  - 'react'
+  - 'react-hooks'
+  - 'three-js'
+coverImage: 'v2.png'
 ---
 
 Following up from [my article published a few days ago](https://maxrohde.com/2019/10/19/creating-a-draggable-shape-with-react-three-fiber/), I have now extended and improved the simple WebGL application that I originally developed using [Three.js](https://threejs.org/) and [react-three-fiber](https://github.com/react-spring/react-three-fiber).
@@ -35,54 +35,69 @@ The most important logic for this solution is in the `DraggableDodecahedron` com
 
 ```javascript
 function DraggableDodecahedron({ position: initialPosition }) {
-    const { size, viewport } = useThree();
-    const [position, setPosition] = useState(initialPosition);
-    const [quaternion, setQuaternion] = useState([0, 0, 0, 0]);
-    const aspect = size.width / viewport.width;
+  const { size, viewport } = useThree();
+  const [position, setPosition] = useState(initialPosition);
+  const [quaternion, setQuaternion] = useState([0, 0, 0, 0]);
+  const aspect = size.width / viewport.width;
 
-    const { ref, body } = useCannon({ bodyProps: { mass: 100000 } }, body => {
-        body.addShape(new CANNON.Box(new CANNON.Vec3(1, 1, 1)))
-        body.position.set(...position);
-    }, []);
+  const { ref, body } = useCannon(
+    { bodyProps: { mass: 100000 } },
+    (body) => {
+      body.addShape(new CANNON.Box(new CANNON.Vec3(1, 1, 1)));
+      body.position.set(...position);
+    },
+    []
+  );
 
-    const bind = useDrag(({ offset: [,], xy: [x, y], first, last }) => {
-        if (first) {
-            body.mass = 0;
-            body.updateMassProperties();
-        } else if (last) {
-            body.mass = 10000;
-            body.updateMassProperties();
-        }
-        body.position.set((x - size.width / 2) / aspect, -(y - size.height / 2) / aspect, -0.7);
-    }, { pointerEvents: true });
+  const bind = useDrag(
+    ({ offset: [,], xy: [x, y], first, last }) => {
+      if (first) {
+        body.mass = 0;
+        body.updateMassProperties();
+      } else if (last) {
+        body.mass = 10000;
+        body.updateMassProperties();
+      }
+      body.position.set(
+        (x - size.width / 2) / aspect,
+        -(y - size.height / 2) / aspect,
+        -0.7
+      );
+    },
+    { pointerEvents: true }
+  );
 
-    useFrame(() => {
-        // Sync cannon body position with three js
-        const deltaX = Math.abs(body.position.x - position[0]);
-        const deltaY = Math.abs(body.position.y - position[1]);
-        const deltaZ = Math.abs(body.position.z - position[2]);
-        if (deltaX > 0.001 || deltaY > 0.001 || deltaZ > 0.001) {
-            setPosition(body.position.clone().toArray());
-        }
-        const bodyQuaternion = body.quaternion.toArray();
-        const quaternionDelta = bodyQuaternion.map((n, idx) => Math.abs(n - quaternion[idx]))
-            .reduce((acc, curr) => acc + curr);
-        if (quaternionDelta > 0.01) {
-            setQuaternion(body.quaternion.toArray());
-        }
-    });
-    return (
-        <mesh ref={ref} castShadow position={position} quaternion={quaternion} {...bind()}
-            onClick={e => {
-                e.stopPropagation();
-            }}
-        >
-
-            <dodecahedronBufferGeometry attach="geometry" />
-            <meshLambertMaterial attach="material" color="yellow" />
-
-        </mesh>
-    )
+  useFrame(() => {
+    // Sync cannon body position with three js
+    const deltaX = Math.abs(body.position.x - position[0]);
+    const deltaY = Math.abs(body.position.y - position[1]);
+    const deltaZ = Math.abs(body.position.z - position[2]);
+    if (deltaX > 0.001 || deltaY > 0.001 || deltaZ > 0.001) {
+      setPosition(body.position.clone().toArray());
+    }
+    const bodyQuaternion = body.quaternion.toArray();
+    const quaternionDelta = bodyQuaternion
+      .map((n, idx) => Math.abs(n - quaternion[idx]))
+      .reduce((acc, curr) => acc + curr);
+    if (quaternionDelta > 0.01) {
+      setQuaternion(body.quaternion.toArray());
+    }
+  });
+  return (
+    <mesh
+      ref={ref}
+      castShadow
+      position={position}
+      quaternion={quaternion}
+      {...bind()}
+      onClick={(e) => {
+        e.stopPropagation();
+      }}
+    >
+      <dodecahedronBufferGeometry attach="geometry" />
+      <meshLambertMaterial attach="material" color="yellow" />
+    </mesh>
+  );
 }
 ```
 
@@ -91,10 +106,14 @@ Most notably here are three React hooks:
 With the first hook we create a Cannon body that is set to the same dimension and position as the shape.
 
 ```javascript
-     const { ref, body } = useCannon({ bodyProps: { mass: 100000 } }, body => {
-        body.addShape(new CANNON.Box(new CANNON.Vec3(1, 1, 1)))
-        body.position.set(...position);
-    }, []);
+const { ref, body } = useCannon(
+  { bodyProps: { mass: 100000 } },
+  (body) => {
+    body.addShape(new CANNON.Box(new CANNON.Vec3(1, 1, 1)));
+    body.position.set(...position);
+  },
+  []
+);
 ```
 
 In the second hook, we use [react-use-gesture](https://github.com/react-spring/react-use-gesture) to react to drag events. We temporarily set the mass of the body/shape to be moved to 0 and reset it to the original mass once the drag gesture is complete. Finally we also set the position of the cannon.js body to the position that the drag gesture current indicates.

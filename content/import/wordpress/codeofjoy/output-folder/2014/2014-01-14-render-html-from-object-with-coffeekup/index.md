@@ -1,8 +1,8 @@
 ---
-title: "Render HTML from Object with CoffeeKup"
-date: "2014-01-14"
-categories: 
-  - "javascript"
+title: 'Render HTML from Object with CoffeeKup'
+date: '2014-01-14'
+categories:
+  - 'javascript'
 ---
 
 [CoffeeKup](http://coffeekup.org/) allows to render HTML from multiple sources:
@@ -19,10 +19,8 @@ Here find two examples of how to render JavaScript and CoffeeScript objects into
 **JavaScript Object**
 
 ```javascript
-CoffeeKup.render(function() {
-
+CoffeeKup.render(function () {
   return div({ class: 'mydiv' }, 'Hello World');
-
 });
 ```
 

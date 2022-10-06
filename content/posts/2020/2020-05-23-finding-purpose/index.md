@@ -1,18 +1,18 @@
 ---
-title: "Finding Purpose"
-date: "2020-05-23"
-categories: 
-  - "buddhism"
-  - "philosophy"
-  - "psychology"
-tags: 
-  - "happiness"
-  - "life"
-  - "love"
-  - "meaning"
-  - "purpose"
-  - "religion"
-coverImage: "long-eared-owl-2118554.jpg"
+title: 'Finding Purpose'
+date: '2020-05-23'
+categories:
+  - 'buddhism'
+  - 'philosophy'
+  - 'psychology'
+tags:
+  - 'happiness'
+  - 'life'
+  - 'love'
+  - 'meaning'
+  - 'purpose'
+  - 'religion'
+coverImage: 'long-eared-owl-2118554.jpg'
 ---
 
 For most of human history, we shared a strong belief in the supernatural. This anchored our spiritual life and helped us answer some of lives most painful questions; such as what is the purpose of my life and what awaits me after I die.

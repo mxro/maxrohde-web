@@ -1,8 +1,8 @@
 ---
-title: "GWT Script does not load in Chrome and Internet Explorer"
-date: "2011-05-20"
-categories: 
-  - "java"
+title: 'GWT Script does not load in Chrome and Internet Explorer'
+date: '2011-05-20'
+categories:
+  - 'java'
 ---
 
 ### The Problem
@@ -19,7 +19,7 @@ In particular, one GWT script of mine worked fine in Firefox but would not work 
 
 Chrome would simply only load the page HTML but none of the associated JavaScript scripts. Chrome's JavaScript error console reported the error:
 
-Unsafe JavaScript attempt to access frame with URL [file:///M:/Eclipse/appGwtDemos/src/main/webapp/Demo01.html](\Eclipse\appGwtDemos\src\main\webapp\Demo01.html "file:///M:/Eclipse/appGwtDemos/src/main/webapp/Demo01.html") from frame with URL [file:///M:/Eclipse/appGwtDemos/src/main/webapp/demo01/677DB6A2A0F1BFA4279679C7B43BEBEF.cache.html](\Eclipse\appGwtDemos\src\main\webapp\demo01\677DB6A2A0F1BFA4279679C7B43BEBEF.cache.html "file:///M:/Eclipse/appGwtDemos/src/main/webapp/demo01/677DB6A2A0F1BFA4279679C7B43BEBEF.cache.html"). Domains, protocols and ports must match.
+Unsafe JavaScript attempt to access frame with URL [file:///M:/Eclipse/appGwtDemos/src/main/webapp/Demo01.html](\Eclipse\appGwtDemos\src\main\webapp\Demo01.html 'file:///M:/Eclipse/appGwtDemos/src/main/webapp/Demo01.html') from frame with URL [file:///M:/Eclipse/appGwtDemos/src/main/webapp/demo01/677DB6A2A0F1BFA4279679C7B43BEBEF.cache.html](\Eclipse\appGwtDemos\src\main\webapp\demo01\677DB6A2A0F1BFA4279679C7B43BEBEF.cache.html 'file:///M:/Eclipse/appGwtDemos/src/main/webapp/demo01/677DB6A2A0F1BFA4279679C7B43BEBEF.cache.html'). Domains, protocols and ports must match.
 
 ### The Solution
 

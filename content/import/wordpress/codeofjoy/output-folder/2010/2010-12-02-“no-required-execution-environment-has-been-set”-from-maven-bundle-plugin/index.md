@@ -1,6 +1,6 @@
 ---
-title: "“No required execution environment has been set” from Maven Bundle Plugin"
-date: "2010-12-02"
+title: '“No required execution environment has been set” from Maven Bundle Plugin'
+date: '2010-12-02'
 ---
 
 **The Problem**
@@ -13,30 +13,30 @@ The solution is to add an instruction to the configuration of the maven bundle p
 
 <plugin\>
 
-                <groupId\>org.apache.felix</groupId\>
+<groupId\>org.apache.felix</groupId\>
 
-                <artifactId\>maven\-bundle-plugin</artifactId\>
+<artifactId\>maven\-bundle-plugin</artifactId\>
 
-                <extensions\>true</extensions\>
+<extensions\>true</extensions\>
 
-                <configuration\>
+<configuration\>
 
-                    <instructions\>
+<instructions\>
 
-                        <Bundle-SymbolicName\>${project.artifactId}</Bundle-SymbolicName\>
+<Bundle-SymbolicName\>${project.artifactId}</Bundle-SymbolicName\>
 
-                        <Bundle-Version\>${project.version}</Bundle-Version\>
+<Bundle-Version\>${project.version}</Bundle-Version\>
 
-                        <Import-Package\>${module.importedPackages}</Import-Package\>
+<Import-Package\>${module.importedPackages}</Import-Package\>
 
-                        <Export-Package\>${module.exportedPackages}</Export-Package\>
+<Export-Package\>${module.exportedPackages}</Export-Package\>
 
-                        <Service-Component\>${module.serviceDefinitions}</Service-Component\>
+<Service-Component\>${module.serviceDefinitions}</Service-Component\>
 
-                        **<Bundle-RequiredExecutionEnvironment\>JavaSE-1.6</Bundle-RequiredExecutionEnvironment\>**
+**<Bundle-RequiredExecutionEnvironment\>JavaSE-1.6</Bundle-RequiredExecutionEnvironment\>**
 
-                    </instructions\>
+</instructions\>
 
-                </configuration\>
+</configuration\>
 
-            </plugin\>
+</plugin\>

@@ -1,11 +1,11 @@
 ---
-title: "Getting Started with Meteor.js (Review)"
-date: "2013-03-26"
-categories: 
-  - "javascript"
-tags: 
-  - "programming"
-  - "review"
+title: 'Getting Started with Meteor.js (Review)'
+date: '2013-03-26'
+categories:
+  - 'javascript'
+tags:
+  - 'programming'
+  - 'review'
 ---
 
 ![](images/032613_2034_gettingstar1.png)

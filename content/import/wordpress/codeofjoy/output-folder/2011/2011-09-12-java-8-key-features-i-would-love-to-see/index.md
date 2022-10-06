@@ -1,13 +1,13 @@
 ---
-title: "Java 8: Key Features (I would love to see)"
-date: "2011-09-12"
-categories: 
-  - "java"
+title: 'Java 8: Key Features (I would love to see)'
+date: '2011-09-12'
+categories:
+  - 'java'
 ---
 
 There has been not little critizim of the slow progress made in the core of Java. Java 6 has been released on the 11th of December **2006** (!). Java 7 saw the light of the day almost five years later this July.
 
-Competing languages, most notably C# in Microsofts .NET environment have doubtlessly benefitted from Java's inability to catch up with new developments in IT. Yet, according to the famous [TIOBE community index](http://www.tiobe.com "TIOBE"), the **most popular language in both 2006 and 2011 is: Java**. Most notably, challenged only by C, a language not necessarily known to be at the forefront of language innovation.
+Competing languages, most notably C# in Microsofts .NET environment have doubtlessly benefitted from Java's inability to catch up with new developments in IT. Yet, according to the famous [TIOBE community index](http://www.tiobe.com 'TIOBE'), the **most popular language in both 2006 and 2011 is: Java**. Most notably, challenged only by C, a language not necessarily known to be at the forefront of language innovation.
 
 In the general discussion of the standstill of Java, the possible advantages of the absence of change in the core of Java are seldom mentioned. Maybe Java is so popular today not despite of but because of the few changes, which have been made to the core language. Of course, when compared to C# such advantages appear to be few. Indeed, many programming tasks can be accomplished much easier in C# or many other languages. However, it must be noted that C# (and many other languages) live in an ecosystem, which is fundamentally different to the Java ecosystem.
 

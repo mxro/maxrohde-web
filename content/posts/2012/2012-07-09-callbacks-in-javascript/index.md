@@ -1,8 +1,8 @@
 ---
-title: "Callbacks in JavaScript"
-date: "2012-07-09"
-categories: 
-  - "javascript"
+title: 'Callbacks in JavaScript'
+date: '2012-07-09'
+categories:
+  - 'javascript'
 ---
 
 From many a Java programmer's perspective, JavaScript has one serious limitation: within the browser applications written in JavaScript limited to only a single thread (with the exception of [web workers](http://greenido.wordpress.com/2012/05/20/web-workers-and-big-data-a-real-world-example/) as part of 'HTML5').

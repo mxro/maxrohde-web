@@ -1,11 +1,11 @@
 ---
-title: "MySQL ERROR 2026 (HY000): SSL connection error – Some Troubleshooting Ideas"
-date: "2015-04-26"
-categories: 
-  - "linux"
-tags: 
-  - "mysql"
-  - "ssl"
+title: 'MySQL ERROR 2026 (HY000): SSL connection error – Some Troubleshooting Ideas'
+date: '2015-04-26'
+categories:
+  - 'linux'
+tags:
+  - 'mysql'
+  - 'ssl'
 ---
 
 I just spent a fair amount of time setting up MySQL replication between two servers encrypted by SSL (using MySQL 5.1.73).
@@ -22,8 +22,7 @@ In the following, I have collected a few possible strategies for resolving this 
 - Is your private key in the PKCS#1 format (file starts with '-----BEGIN RSA PRIVATE KEY-----')? ([see](https://bugs.mysql.com/bug.php?id=71271), [see](http://askubuntu.com/questions/194074/enabling-ssl-in-mysql))
 - Did you generate your certificates with [TinyCA](http://www.ghacks.net/2009/09/16/create-your-own-certificate-authority-with-tinyca/) with the **default settings**?
 - Did you try connecting to the server WITHOUT using the certificate authority certificate (e.g. ca-cert.pem) BUT WITH specifying a client certificate and key?
-    
-    - mysql --ssl --ssl-cert=\[client\_cert\] --ssl-key=\[client\_key\] -u\[ssluser\] -h\[server\] -p\[ssluser psw\]
+  - mysql --ssl --ssl-cert=\[client_cert\] --ssl-key=\[client_key\] -u\[ssluser\] -h\[server\] -p\[ssluser psw\]
 - Is your certificate 'simple enough' for the MySQL SSL implementation e.g. not a chained certificate tree? ([see](http://dev.mysql.com/doc/refman/5.6/en/ssl-options.html)) Or did you use a wildcard certificate (which are not supported) ([see](http://stackoverflow.com/questions/20459056/mysql-and-ssl-connection-failing-error-2026-hy000)).
 
 Good luck :)

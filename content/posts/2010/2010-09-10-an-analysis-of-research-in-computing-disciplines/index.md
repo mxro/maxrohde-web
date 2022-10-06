@@ -1,8 +1,8 @@
 ---
-title: "An analysis of research in computing disciplines"
-date: "2010-09-10"
-categories: 
-  - "contemplations"
+title: 'An analysis of research in computing disciplines'
+date: '2010-09-10'
+categories:
+  - 'contemplations'
 ---
 
 An interesting article appeared in the communications of the ACM comparing the nature of topics in the disciplines computer science (CS), software engineering (SE) and information systems (IS) ([Glass, Ramesh, and Vessey, 2004](http://www.citeulike.org/user/mxro/article/1340451))

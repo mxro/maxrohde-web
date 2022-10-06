@@ -1,8 +1,8 @@
 ---
-title: "Functional Java"
-date: "2010-09-30"
-categories: 
-  - "java"
+title: 'Functional Java'
+date: '2010-09-30'
+categories:
+  - 'java'
 ---
 
 **+++Google Guava+++**

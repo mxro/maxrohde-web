@@ -1,8 +1,8 @@
 ---
-title: "CodeMirror 3 Indent All Lines / Autoformat"
-date: "2014-09-24"
-categories: 
-  - "javascript"
+title: 'CodeMirror 3 Indent All Lines / Autoformat'
+date: '2014-09-24'
+categories:
+  - 'javascript'
 ---
 
 ## Problem

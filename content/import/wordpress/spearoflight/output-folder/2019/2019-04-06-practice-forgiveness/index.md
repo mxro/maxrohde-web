@@ -1,19 +1,19 @@
 ---
-title: "Practice: Forgiveness"
-date: "2019-04-06"
-categories: 
-  - "philosophy"
-  - "psychology"
-tags: 
-  - "christianity"
-  - "enlightenment"
-  - "forgiveness"
-  - "happiness"
-  - "jesus"
-  - "life"
-  - "practice"
-  - "practices"
-coverImage: "forgive_and_ye_shall_be_forgiven.jpg"
+title: 'Practice: Forgiveness'
+date: '2019-04-06'
+categories:
+  - 'philosophy'
+  - 'psychology'
+tags:
+  - 'christianity'
+  - 'enlightenment'
+  - 'forgiveness'
+  - 'happiness'
+  - 'jesus'
+  - 'life'
+  - 'practice'
+  - 'practices'
+coverImage: 'forgive_and_ye_shall_be_forgiven.jpg'
 ---
 
 I think it is human nature that we are constantly disappointed with ourselves and others. One fundamental driver for this is our [struggle between altruism and selfishness](https://en.wikipedia.org/wiki/The_Selfish_Gene). We are programmed to be supportive and helpful to those around us but we are also programmed to look out for our own interests. Which ones of these directions we follow is a constant source of uncertainty for us and, if we inevitably choose the path of selfishness occasionally, we are bound to be disappointed with ourselves. Likewise, we are disappointed with others if we observe them doing the same.

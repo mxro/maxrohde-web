@@ -1,14 +1,14 @@
 ---
-title: "Memory System Part 2: 3x3 Grid"
-date: "2021-11-23"
-categories: 
-  - "psychology"
-tags: 
-  - "life"
-  - "memory"
-  - "mnemonic"
-  - "productivity"
-coverImage: "abstract-2105402_1920.jpg"
+title: 'Memory System Part 2: 3x3 Grid'
+date: '2021-11-23'
+categories:
+  - 'psychology'
+tags:
+  - 'life'
+  - 'memory'
+  - 'mnemonic'
+  - 'productivity'
+coverImage: 'abstract-2105402_1920.jpg'
 ---
 
 I have outlined in [part 1 of this series](https://spearoflight.wordpress.com/2021/11/15/memory-system-part-1-ancient-techniques-and-modern-applications/) possible applications for an improved memory. The two applications I suggested were: (1) to be able to aid our imagination and creativity and (2) create more memorable stories. I think the second application is really only relevant for those who want to become better creators of fictional stories, whereas the first application really should be of relevance to everyone. In this article, I will introduce a simple technique I believe can be of use for the first application of improved memory; to help us keep our ideas and thoughts organized while using no other tool but our imagination.
@@ -51,7 +51,7 @@ Further to these fundamental rules, there are a few suggestions that can be usef
 - It can be helpful to visualise the grid in a specific location. Here I would suggest to visualise it upright directly in front of yourself at arms length, and large enough that one would have to reach a bit to reach the corners of the grid.
 - It can be beneficial to use mnemonic techniques such as using images instead of concepts and making what we place on the grid remarkable in some way. This can be of particular use for an anchor concept on the grid, for instance the one at the top left or centre position. Since remembering one of the concepts aids in remembering the rest of them. I understand such images as adornments to the original concepts to be remembered in a similar way as images are added to illuminated manuscripts.
 
-![](images/File:Archive-ugent-be-7F0C4994-C579-11E7-8646-155E6EE4309A_DS-46_(cropped).jpg)Illuminated Manuscript
+![](<images/File:Archive-ugent-be-7F0C4994-C579-11E7-8646-155E6EE4309A_DS-46_(cropped).jpg>)Illuminated Manuscript
 
 - It maybe useful to associate names and/or images to each cell of the grid - these would be the same in every grid and help remember where something is placed on the grid. This is a kind of adornment, just one that is applied to every grid. For instance, one may use the following terms:
 

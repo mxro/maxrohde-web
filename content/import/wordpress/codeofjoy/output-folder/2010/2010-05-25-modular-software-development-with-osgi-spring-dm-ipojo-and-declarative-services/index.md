@@ -1,8 +1,8 @@
 ---
-title: "Modular Software Development with OSGi, Spring DM, iPOJO and Declarative Services"
-date: "2010-05-25"
-categories: 
-  - "java"
+title: 'Modular Software Development with OSGi, Spring DM, iPOJO and Declarative Services'
+date: '2010-05-25'
+categories:
+  - 'java'
 ---
 
 Software development is inherently different from other forms of creation. Traditional production requires a constant inflow of fresh resources, for instance energy and raw materials. Creating movies requires the combined effort of many skilled people and even writing a book cannot be accomplished without a significant investment of time and effort, as every page, every sentence has to be written anew.

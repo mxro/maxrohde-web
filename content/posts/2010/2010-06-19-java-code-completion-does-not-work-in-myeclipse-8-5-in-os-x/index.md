@@ -1,8 +1,8 @@
 ---
-title: "Java Code Completion does not work in MyEclipse 8.5 in OS X"
-date: "2010-06-19"
-categories: 
-  - "java"
+title: 'Java Code Completion does not work in MyEclipse 8.5 in OS X'
+date: '2010-06-19'
+categories:
+  - 'java'
 ---
 
 **Problem**

@@ -1,19 +1,19 @@
 ---
-title: "Lambda Go Starter Project"
-date: "2021-05-01"
-categories: 
-  - "devops"
-  - "javascript"
-tags: 
-  - "aws"
-  - "aws-lambda"
-  - "gin"
-  - "golang"
-  - "open-source"
-  - "programming"
-  - "serverless"
-  - "starter-project"
-  - "terraform"
+title: 'Lambda Go Starter Project'
+date: '2021-05-01'
+categories:
+  - 'devops'
+  - 'javascript'
+tags:
+  - 'aws'
+  - 'aws-lambda'
+  - 'gin'
+  - 'golang'
+  - 'open-source'
+  - 'programming'
+  - 'serverless'
+  - 'starter-project'
+  - 'terraform'
 ---
 
 Serverless development allows deploying low-cost, low-maintenance applications. Go is an [ever-more popular language](https://dev.to/pavanbelagatti/why-is-go-so-damn-popular-among-developers-2d6h) for developing backend applications. With first rate support both in [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/golang-handler.html) and [GCP Cloud Functions](https://cloud.google.com/functions/docs/concepts/go-runtime), Go is an excellent choice for serverless development.
@@ -123,7 +123,7 @@ func CreateServer() *gin.Engine {
 The infrastructure for this starter project is defined using Terraform. There are a couple of things we need to configure to get this project running, these are:
 
 - Route 53 Mappings for the domain we want to deploy the API to as well as a SSL certificate for being able to call the API via HTTPS: [domain.tf](https://github.com/mxro/go-lambda-starter-project/blob/main/packages/lambda-go-gin/infra/aws/domain.tf)
-- An API Gateway for exposing our Lambda through a public endpoint: [api\_gateway.tf](https://github.com/mxro/go-lambda-starter-project/blob/main/packages/lambda-go-gin/infra/aws/api_gateway.tf)
+- An API Gateway for exposing our Lambda through a public endpoint: [api_gateway.tf](https://github.com/mxro/go-lambda-starter-project/blob/main/packages/lambda-go-gin/infra/aws/api_gateway.tf)
 - The definition of the Lambda function that we will deploy our code into: [lambda.tf](https://github.com/mxro/go-lambda-starter-project/blob/main/packages/lambda-go-gin/infra/aws/lambda.tf)
 
 The details of the infrastructure are configured in a config file: [goldstack.json](https://github.com/mxro/go-lambda-starter-project/blob/main/packages/lambda-go-gin/goldstack.json).

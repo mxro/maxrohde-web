@@ -1,8 +1,8 @@
 ---
-title: "Logging Mouse Events in Linux"
-date: "2013-12-30"
-categories: 
-  - "linux"
+title: 'Logging Mouse Events in Linux'
+date: '2013-12-30'
+categories:
+  - 'linux'
 ---
 
 **Problem**

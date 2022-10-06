@@ -1,19 +1,19 @@
 ---
-title: "The Ultimate Guide to Hosting Static Websites using S3"
-date: "2022-05-07"
-categories: 
-  - "devops"
-  - "serverless"
-tags: 
-  - "amazon-route-53"
-  - "aws"
-  - "aws-s3"
-  - "cloudfront"
-  - "javascript"
-  - "programming"
-  - "ssl"
-  - "terraform"
-coverImage: "florian-olivo-4hbj-eymz1o-unsplash.jpg"
+title: 'The Ultimate Guide to Hosting Static Websites using S3'
+date: '2022-05-07'
+categories:
+  - 'devops'
+  - 'serverless'
+tags:
+  - 'amazon-route-53'
+  - 'aws'
+  - 'aws-s3'
+  - 'cloudfront'
+  - 'javascript'
+  - 'programming'
+  - 'ssl'
+  - 'terraform'
+coverImage: 'florian-olivo-4hbj-eymz1o-unsplash.jpg'
 ---
 
 [AWS S3](https://aws.amazon.com/s3/) has long been known as an effective way to [host static websites](https://dinfratechsource.wordpress.com/2019/07/28/host-a-static-site-on-aws-using-s3-and-cloudfront/) and assets. Unfortunately, while it is easy to [configure an S3 bucket to enable static file hosting](https://howtoember.wordpress.com/2020/06/11/aws-static-website-hosting-with-cognito-and-s3/), it is quite complicated to achieve the following:
@@ -128,7 +128,7 @@ resource "aws_cloudfront_distribution" "website_cdn_root" {
     domain_name = aws_s3_bucket.website_root.website_endpoint
 
     origin_id   = "origin-bucket-${aws_s3_bucket.website_root.id}"
-    
+
     custom_origin_config {
       http_port = 80
       https_port = 443
@@ -275,6 +275,6 @@ While I hope this article provides some guidance for setting up S3 static web ho
 
 Consider helping out making this template better for others by [raising an issue in GitHub](https://github.com/goldstack/goldstack/issues) if you encounter any problems or have questions or ideas.
 
-* * *
+---
 
 Cover image by [Florian Olivo](https://unsplash.com/photos/4hbJ-eymZ1o)

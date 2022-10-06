@@ -1,12 +1,12 @@
 ---
-title: "Versioning WordPress with Git and Revisr"
-date: "2017-11-12"
-categories: 
-  - "linux"
-tags: 
-  - "git"
-  - "programming"
-  - "wordpress"
+title: 'Versioning WordPress with Git and Revisr'
+date: '2017-11-12'
+categories:
+  - 'linux'
+tags:
+  - 'git'
+  - 'programming'
+  - 'wordpress'
 ---
 
 [WordPress](https://wordpress.org/) is a powerful platform to just get a simple website up and running. Unfortunately, some things which are considered best practice in software development projects are a bit difficult to realize with WordPress. One of these things is versioning. Thankfully, there is a powerful plug in which enables versioning WordPress using a [git](https://git-scm.com/) repository: [Revisr](https://revisr.io/).
@@ -46,7 +46,7 @@ Deny from all
 
 - Grab the public key and save it somewhere
 
-sudo cat /var/www/.ssh/id\_rsa.pub
+sudo cat /var/www/.ssh/id_rsa.pub
 
 - Create a new account for BitBucket if you don't have one already.
 - Add a public SSH key for your account. Add the SSH key you saved earlier.

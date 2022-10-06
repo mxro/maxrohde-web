@@ -1,8 +1,8 @@
 ---
-title: "NullPointerException after mvn eclipse:eclipse"
-date: "2011-09-14"
-categories: 
-  - "java"
+title: 'NullPointerException after mvn eclipse:eclipse'
+date: '2011-09-14'
+categories:
+  - 'java'
 ---
 
 ### Problem
@@ -92,4 +92,4 @@ Whereas the following specification of the dependency will cause the NullPointer
 
 In my case, this problem was **caused by upgrading from Java 1.6 22 to Java 1.7**.
 
-Therefore, downloading a version of Java 1.6 and specifying its directory as JAVA\_HOME solves the problem. A short solution that took me long to find. Who would have suspected this bug is cause by Java?
+Therefore, downloading a version of Java 1.6 and specifying its directory as JAVA_HOME solves the problem. A short solution that took me long to find. Who would have suspected this bug is cause by Java?

@@ -1,11 +1,11 @@
 ---
-title: "Task Management, Planning and Time Tracking"
-date: "2017-12-27"
-categories: 
-  - "productivity"
-tags: 
-  - "productivity"
-  - "project-management"
+title: 'Task Management, Planning and Time Tracking'
+date: '2017-12-27'
+categories:
+  - 'productivity'
+tags:
+  - 'productivity'
+  - 'project-management'
 ---
 
 I've long been looking for a tool that allows me to **plan tasks**, **manage them** and **track time** for myself and for a small team. Unfortunately, I have not been very successful thus far to find a effective, robust and affordable solution for this.

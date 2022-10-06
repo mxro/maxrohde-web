@@ -1,6 +1,6 @@
 ---
-title: "‘Google Sites’ hosted Sites Speed: Slow as!"
-date: "2011-09-18"
+title: '‘Google Sites’ hosted Sites Speed: Slow as!'
+date: '2011-09-18'
 ---
 
 Google offers free web hosting as part of their '[Google Sites](https://sites.google.com/)' service. Anyone with a Google (gmail) account can sign up for a website with an address such as https://sites.google.com/site/\[yoursitename\].

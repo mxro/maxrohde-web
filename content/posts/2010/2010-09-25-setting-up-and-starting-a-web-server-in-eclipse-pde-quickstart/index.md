@@ -1,8 +1,8 @@
 ---
-title: "Setting up and starting a web server in eclipse PDE (Quickstart)"
-date: "2010-09-25"
-categories: 
-  - "java"
+title: 'Setting up and starting a web server in eclipse PDE (Quickstart)'
+date: '2010-09-25'
+categories:
+  - 'java'
 ---
 
 The following describes a number of simple steps to set up and start up a web server in the eclipse PDE environment.
@@ -39,10 +39,10 @@ Building a web server in Felix by using wars: [http://heapdump.wordpress.com/201
 
 Alternative way: starting Equinox as deployed application on a web server and let this bundle load osgi modules: [http://angelozerr.wordpress.com/2010/09/01/osgi-equinox-in-a-servlet-container-step1/](http://angelozerr.wordpress.com/2010/09/01/osgi-equinox-in-a-servlet-container-step1/)
 
-Scroll down to Server-Side [http://wiki.eclipse.org/Equinox\_Eclipse\_to\_RT\_Migration](http://wiki.eclipse.org/Equinox_Eclipse_to_RT_Migration)
+Scroll down to Server-Side [http://wiki.eclipse.org/Equinox_Eclipse_to_RT_Migration](http://wiki.eclipse.org/Equinox_Eclipse_to_RT_Migration)
 
-The core bundle to start server [http://www.eclipse.org/equinox/server/http\_in\_equinox.php](http://www.eclipse.org/equinox/server/http_in_equinox.php) org.eclipse.equinox.http.jetty
+The core bundle to start server [http://www.eclipse.org/equinox/server/http_in_equinox.php](http://www.eclipse.org/equinox/server/http_in_equinox.php) org.eclipse.equinox.http.jetty
 
-Equinox Server Side info: [http://www.eclipse.org/equinox/server/http\_quickstart.php](http://www.eclipse.org/equinox/server/http_quickstart.php)
+Equinox Server Side info: [http://www.eclipse.org/equinox/server/http_quickstart.php](http://www.eclipse.org/equinox/server/http_quickstart.php)
 
 Slides giving a good overview: \[slideshare id=3516425&doc=eclipsecon-2010-server-side-eclipse-tutorial-100322190055-phpapp01\]

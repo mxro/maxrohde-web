@@ -1,17 +1,17 @@
 ---
-title: "newrelic service doesn’t start on CentOS: Solution Run as Root"
-date: "2015-08-15"
-categories: 
-  - "linux"
+title: 'newrelic service doesn’t start on CentOS: Solution Run as Root'
+date: '2015-08-15'
+categories:
+  - 'linux'
 ---
 
 Today one of my virtual servers suddenly showed up as offline in my [New Relic](http://newrelic.com/) console (Which is an amazing tool and free by the way).
 
 I checked the log file /var/log/newrelic/nrsysmond.log and it had these contents:
 
-2015-08-15 02:06:04.512 (915) error: nria\_context\_create(): SIGAR\_OK != status; goto error; status=13
+2015-08-15 02:06:04.512 (915) error: nria_context_create(): SIGAR_OK != status; goto error; status=13
 
-2015-08-15 02:06:04.512 (915) error: nria\_context\_create(): in error label
+2015-08-15 02:06:04.512 (915) error: nria_context_create(): in error label
 
 2015-08-15 02:06:04.512 (915) error: failed to create sampling context
 

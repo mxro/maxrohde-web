@@ -1,8 +1,8 @@
 ---
-title: "IdentityHashMap in Google Web Toolkit (GWT): String Identity"
-date: "2011-05-27"
-categories: 
-  - "java"
+title: 'IdentityHashMap in Google Web Toolkit (GWT): String Identity'
+date: '2011-05-27'
+categories:
+  - 'java'
 ---
 
 ### Problem
@@ -21,7 +21,7 @@ final ArrayList<String> ids = new ArrayList<String>();
 
 ids.add(id);
 
-idsFromObjects.put(node1, ids);                    
+idsFromObjects.put(node1, ids);
 
 final String node1b = new String("Node 1");
 

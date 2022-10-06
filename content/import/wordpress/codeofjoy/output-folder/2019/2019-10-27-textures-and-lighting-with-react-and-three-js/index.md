@@ -1,15 +1,15 @@
 ---
-title: "Textures and Lighting with React and Three.js"
-date: "2019-10-27"
-categories: 
-  - "javascript"
-tags: 
-  - "open-source"
-  - "programming"
-  - "react"
-  - "react-hooks"
-  - "three-js"
-coverImage: "version-4.png"
+title: 'Textures and Lighting with React and Three.js'
+date: '2019-10-27'
+categories:
+  - 'javascript'
+tags:
+  - 'open-source'
+  - 'programming'
+  - 'react'
+  - 'react-hooks'
+  - 'three-js'
+coverImage: 'version-4.png'
 ---
 
 In my previous three posts, I have developed a simple WebGL application using [react-three-fiber](https://github.com/react-spring/react-three-fiber) and [three.js](https://threejs.org/). In this post, I am adding texture loading and proper lighting to the application.
@@ -37,24 +37,20 @@ Textures can be loaded easily in react-three-fiber using the `useResource` hook.
 All that is required to place the texture in the `public/` folder of the react application, load the texture and then link it to the material by setting the `map` property.
 
 ```javascript
-    const [texture] = useLoader(TextureLoader, 'textures/grasslight-big.jpg');
+const [texture] = useLoader(TextureLoader, 'textures/grasslight-big.jpg');
 
-    if (texture) {
-        texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-        texture.repeat.set(1500, 1500);
-        texture.anisotropy = 16;
-    }
+if (texture) {
+  texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+  texture.repeat.set(1500, 1500);
+  texture.anisotropy = 16;
+}
 
-    return (
-        <mesh ref={ref} receiveShadow position={position}
-            onClick={onPlaneClick}>
-            <planeBufferGeometry attach="geometry" args={[10000, 10000]} />
-            {texture &&
-                <meshPhongMaterial attach="material" map={texture} />
-            }
-
-        </mesh>
-    )
+return (
+  <mesh ref={ref} receiveShadow position={position} onClick={onPlaneClick}>
+    <planeBufferGeometry attach="geometry" args={[10000, 10000]} />
+    {texture && <meshPhongMaterial attach="material" map={texture} />}
+  </mesh>
+);
 ```
 
 I found that textures are often quite large in size; larger than 1 MB. This significantly extends loading times. Thus I have added a [simple loading screen](https://github.com/mxro/threejs-test/blob/master/test4/src/Spinner.js). Unfortunately to be able to display the text 'loading' I had to create a [TextGeometry](https://threejs.org/docs/#api/en/geometries/TextGeometry) which in turn required a font to be loaded (I prepared the Roboto font using [facetype.js](https://gero3.github.io/facetype.js/). This font by itself is more than 300 kb, so even loading the loading screen takes a bit of time.
@@ -81,16 +77,24 @@ The goal of this application is to have a simple, very large plane on which any 
 Since the SpotLight would not be able to cover the whole of the plane (as said, it is meant to be very large) and provide accurate shadows, I opted for moving the SpotLight when a user moves the camera.
 
 ```javascript
-    const lightTargetYDelta = 120;
-    const lightTargetXDelta = 80;
-    const [lightPosition, setLightPosition] = useState([-lightTargetXDelta, -lightTargetYDelta, 200]);
-    const [lightTargetPosition, setLightTargetPosition] = useState([0, 0, 0]);
-    const onCameraMoved = (delta) => {
-        const newLightPosition = delta.map((e, idx) => lightPosition[idx] + e);
-        setLightPosition(newLightPosition);
-        const newLightTargetPosition = [newLightPosition[0] + lightTargetXDelta, newLightPosition[1] + lightTargetYDelta, 0];
-        setLightTargetPosition(newLightTargetPosition);
-    };
+const lightTargetYDelta = 120;
+const lightTargetXDelta = 80;
+const [lightPosition, setLightPosition] = useState([
+  -lightTargetXDelta,
+  -lightTargetYDelta,
+  200,
+]);
+const [lightTargetPosition, setLightTargetPosition] = useState([0, 0, 0]);
+const onCameraMoved = (delta) => {
+  const newLightPosition = delta.map((e, idx) => lightPosition[idx] + e);
+  setLightPosition(newLightPosition);
+  const newLightTargetPosition = [
+    newLightPosition[0] + lightTargetXDelta,
+    newLightPosition[1] + lightTargetYDelta,
+    0,
+  ];
+  setLightTargetPosition(newLightTargetPosition);
+};
 ```
 
 This required both updating the position of the light `setLightPosition` as well as moving the light target `setLightTargetPosition`.

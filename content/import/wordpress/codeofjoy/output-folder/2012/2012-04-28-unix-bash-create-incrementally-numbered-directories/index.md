@@ -1,8 +1,8 @@
 ---
-title: "UNIX Bash: Create incrementally numbered directories"
-date: "2012-04-28"
-categories: 
-  - "linux"
+title: 'UNIX Bash: Create incrementally numbered directories'
+date: '2012-04-28'
+categories:
+  - 'linux'
 ---
 
 **The Problem**

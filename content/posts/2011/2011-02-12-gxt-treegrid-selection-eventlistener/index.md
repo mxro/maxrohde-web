@@ -1,49 +1,49 @@
 ---
-title: "GXT TreeGrid Selection Event/Listener"
-date: "2011-02-12"
-categories: 
-  - "java"
+title: 'GXT TreeGrid Selection Event/Listener'
+date: '2011-02-12'
+categories:
+  - 'java'
 ---
 
 In the evolution of the Ext GWT (GXT) framework, there seemed to have been some change as to how selection events of trees/tree grids can be intercepted. In release 2.2.1, the following approach works:
 
 treeGrid.getSelectionModel().addSelectionChangedListener(new SelectionChangedListener<ModelData>() {
 
-            @Override
+@Override
 
-            public void selectionChanged(SelectionChangedEvent<ModelData> se) {
+public void selectionChanged(SelectionChangedEvent<ModelData> se) {
 
-                GWT.log("selection changed from getSelectionModel");
+GWT.log("selection changed from getSelectionModel");
 
-            }
+}
 
-        });
+});
 
 The following approaches **do not work**:
 
 store.addListener(Events.SelectionChange, new SelectionChangedListener<TreeModel>() {
 
-            @Override
+@Override
 
-            public void selectionChanged(SelectionChangedEvent<TreeModel> se) {
+public void selectionChanged(SelectionChangedEvent<TreeModel> se) {
 
-                GWT.log("selection changed");    
+GWT.log("selection changed");
 
-            }
+}
 
-        });
+});
 
-        treeGrid.addListener(Events.SelectionChange, new SelectionChangedListener<TreeModel>() {
+treeGrid.addListener(Events.SelectionChange, new SelectionChangedListener<TreeModel>() {
 
-            @Override
+@Override
 
-            public void selectionChanged(SelectionChangedEvent<TreeModel> se) {
+public void selectionChanged(SelectionChangedEvent<TreeModel> se) {
 
-                GWT.log("selection changed");    
+GWT.log("selection changed");
 
-            }    
+}
 
-        });
+});
 
 **Resources:**
 

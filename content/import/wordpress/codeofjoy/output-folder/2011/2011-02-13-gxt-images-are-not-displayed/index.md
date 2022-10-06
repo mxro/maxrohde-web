@@ -1,8 +1,8 @@
 ---
-title: "GXT Images are not displayed"
-date: "2011-02-13"
-categories: 
-  - "java"
+title: 'GXT Images are not displayed'
+date: '2011-02-13'
+categories:
+  - 'java'
 ---
 
 **The Problem**

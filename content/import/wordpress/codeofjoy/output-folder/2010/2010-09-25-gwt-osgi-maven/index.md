@@ -1,8 +1,8 @@
 ---
-title: "GWT + OSGi + Maven"
-date: "2010-09-25"
-categories: 
-  - "java"
+title: 'GWT + OSGi + Maven'
+date: '2010-09-25'
+categories:
+  - 'java'
 ---
 
 **Summary:**
@@ -37,7 +37,7 @@ Now you can remove the dependency to the GWT user package from the pom above.
 
 Run GWT hosted mode in OSGi: [http://efreedom.com/Question/1-3060682/Debug-GWT-Application-Running-OSGi](http://efreedom.com/Question/1-3060682/Debug-GWT-Application-Running-OSGi)
 
-Google Web Toolkit and Equinox (from eclipse wiki): [http://wiki.eclipse.org/Google\_Web\_Toolkit\_and\_Equinox](http://wiki.eclipse.org/Google_Web_Toolkit_and_Equinox) (One project with an example GWT/OSGi project [http://sourceforge.net/projects/sse-examples/develop](http://sourceforge.net/projects/sse-examples/develop))
+Google Web Toolkit and Equinox (from eclipse wiki): [http://wiki.eclipse.org/Google_Web_Toolkit_and_Equinox](http://wiki.eclipse.org/Google_Web_Toolkit_and_Equinox) (One project with an example GWT/OSGi project [http://sourceforge.net/projects/sse-examples/develop](http://sourceforge.net/projects/sse-examples/develop))
 
 Example project attempting to route GWT RPC calls to OSGi services: [http://code.google.com/p/gwt-in-osgi/source/checkout](http://code.google.com/p/gwt-in-osgi/source/checkout)
 

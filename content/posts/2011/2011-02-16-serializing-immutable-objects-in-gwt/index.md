@@ -1,8 +1,8 @@
 ---
-title: "Serializing Immutable Objects in GWT"
-date: "2011-02-16"
-categories: 
-  - "java"
+title: 'Serializing Immutable Objects in GWT'
+date: '2011-02-16'
+categories:
+  - 'java'
 ---
 
 Immutable objects are an easy yet powerful way to leverage some of the advantages of functional programming languages when writing plain old java. Such immutable objects declare all their attributes as final and are therewith protected from unforeseen state changes and side-effects. However, unfortunately **the GWT RPC mechanism has problems in dealing with immutable objects**. In particular, GWT RPC does not consider final attributes in serialization and deserialization of objects.
@@ -34,29 +34,29 @@ Take all possible precautions that this constructor is not used in any other pla
 
 /\* #gwtdummyconstrstart \*/
 
-    /\*\*
+/\*\*
 
-     \* Non-argument constructor required for GWT RPC serialization.<br/>
+\* Non-argument constructor required for GWT RPC serialization.<br/>
 
-     \* <em>DO NOT CALL this constructor manually.</em>
+\* <em>DO NOT CALL this constructor manually.</em>
 
-     \*/
+\*/
 
-    @SuppressWarnings("unused")
+@SuppressWarnings("unused")
 
-    @Deprecated
+@Deprecated
 
-    private Person() {
+private Person() {
 
-    }
+}
 
-    /\* #gwdummytconstrend \*/
+/\* #gwdummytconstrend \*/
 
 **\-2- Remove the final modifier from all fields in classes, which need to be serialized**
 
 Here again, it might be a good idea to somehow make the omitted final modifiers easily replaceable (in hope that future versions of gwt will support immutable objects).
 
-    /\* #gwtnofinal \*/ private String name;
+/\* #gwtnofinal \*/ private String name;
 
 **Hints**
 

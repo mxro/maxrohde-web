@@ -1,23 +1,23 @@
 ---
-title: "Jangle Java: Upload &amp; Load Data"
-date: "2012-08-08"
-categories: 
-  - "java"
+title: 'Jangle Java: Upload &amp; Load Data'
+date: '2012-08-08'
+categories:
+  - 'java'
 ---
 
-This tutorial illustrates in a few simple steps how to upload and download data from a Java application into the [appjangle](http://appjangle.com "appjangle") platform.
+This tutorial illustrates in a few simple steps how to upload and download data from a Java application into the [appjangle](http://appjangle.com 'appjangle') platform.
 
 You can find the source code of the completed steps 2 & 3 on github:
 
-[T\_JangleJavaShort\_Upload.java](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/T_JangleJavaShort_Upload.java)
+[T_JangleJavaShort_Upload.java](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/T_JangleJavaShort_Upload.java)
 
-[U\_JangleJavaShort\_Load.java](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/U_JangleJavaShort_Load.java)
+[U_JangleJavaShort_Load.java](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/U_JangleJavaShort_Load.java)
 
 ## Step 1: Link Client Libraries
 
 To upload data to appjangle from a Java application, the onedb Java Client API will be required. Download the latests version of the 'onedb Java client' from the onedb downloads page:
 
-[http://cms.onedb.de/downloads](http://cms.onedb.de/downloads "onedb client libraries download")
+[http://cms.onedb.de/downloads](http://cms.onedb.de/downloads 'onedb client libraries download')
 
 Drop the client library into a Java project of your favorite IDE or assure they are added to the classpath of your Java app in another way of your choice.
 
@@ -72,10 +72,10 @@ Each of these data items and their interconnections are uploaded to the appjangl
 
 1. If the device supports Java and/or JavaScript, the data itmes can be accessed using the onedb client libraries.
 2. Per REST in various formats, for instance:
-    
-    1. XML: [pizzaParlor/Awsome\_Piz0.value.xml](http://u1.linnk.it/lnzvwp/sd1/2/h/sd/pizzaParlor/Awsome_Piz0.value.xml)
-    2. JSON: [pizzaParlor/Awsome\_Piz0.value.json](http://u1.linnk.it/lnzvwp/sd1/2/h/sd/pizzaParlor/Awsome_Piz0.value.json)
-    3. HTML: [pizzaParlor.node.html](http://u1.linnk.it/lnzvwp/sd1/2/h/sd/pizzaParlor.node.html)
+
+   1. XML: [pizzaParlor/Awsome_Piz0.value.xml](http://u1.linnk.it/lnzvwp/sd1/2/h/sd/pizzaParlor/Awsome_Piz0.value.xml)
+   2. JSON: [pizzaParlor/Awsome_Piz0.value.json](http://u1.linnk.it/lnzvwp/sd1/2/h/sd/pizzaParlor/Awsome_Piz0.value.json)
+   3. HTML: [pizzaParlor.node.html](http://u1.linnk.it/lnzvwp/sd1/2/h/sd/pizzaParlor.node.html)
 
 ## Step 3: Load Data
 
@@ -123,6 +123,6 @@ Browsing the the pizza parlor node will now show two nodes attached to this node
 
 Please check the second part of this tutorial:
 
-[Jangle Java: Synchronization](http://maxrohde.com/2012/08/08/jangle-java-synchronization/ "appjangle java synchronization tutorial")
+[Jangle Java: Synchronization](http://maxrohde.com/2012/08/08/jangle-java-synchronization/ 'appjangle java synchronization tutorial')
 
-You can also find more information on various aspects touched upon in this tutorial on the [onedb documentation page](http://cms.onedb.de/articles "onedb documentation").
+You can also find more information on various aspects touched upon in this tutorial on the [onedb documentation page](http://cms.onedb.de/articles 'onedb documentation').

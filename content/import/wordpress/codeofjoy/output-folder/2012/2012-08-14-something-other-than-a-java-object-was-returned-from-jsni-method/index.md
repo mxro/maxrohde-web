@@ -1,11 +1,11 @@
 ---
-title: "Something other than a Java object was returned from JSNI method"
-date: "2012-08-14"
-categories: 
-  - "java"
-tags: 
-  - "gwt"
-  - "jsni"
+title: 'Something other than a Java object was returned from JSNI method'
+date: '2012-08-14'
+categories:
+  - 'java'
+tags:
+  - 'gwt'
+  - 'jsni'
 ---
 
 [Google Web Toolkit](https://developers.google.com/web-toolkit/) allows building powerful bridges between the world of Java and JavaScript using so called [JS overlay objects](http://googlewebtoolkit.blogspot.co.nz/2008/08/getting-to-really-know-gwt-part-2.html).
@@ -38,9 +38,9 @@ In this case, the a little bit more work is required. First, the function in the
 
 ```java
 
-public final native Object getValue() /*-{ 
-	if ( this.value && 
-	     ((typeof this.value == "number") || 
+public final native Object getValue() /*-{
+	if ( this.value &&
+	     ((typeof this.value == "number") ||
 	      (typeof this.value == "boolean")) ) {
 		return {
 			type: "JsAtomicTypeWrapper",
@@ -61,20 +61,20 @@ ublic class JsAtomicTypeWrapper extends JavaScriptObject {
 	protected JsAtomicTypeWrapper() {
 	}
 
-	public final native boolean isWrapper()/*-{ 
+	public final native boolean isWrapper()/*-{
 		if ( this.type && this.type == "JsAtomicTypeWrapper") return true;
 		return false;
 	}-*/;
 
-	public final native boolean isBoolean()/*-{ 
+	public final native boolean isBoolean()/*-{
 		return typeof this.value == "boolean";
 	}-*/;
 
-	public final native boolean isDouble()/*-{ 
+	public final native boolean isDouble()/*-{
 		return !isNaN(parseFloat(this.value));
 	}-*/;
 
-	public final native boolean isInteger()/*-{ 
+	public final native boolean isInteger()/*-{
 		return this.value % 1 === 0;
 	}-*/;
 
@@ -95,20 +95,20 @@ ublic class JsAtomicTypeWrapper extends JavaScriptObject {
 
 	}
 
-	public final native Object getGenericValue()/*-{ 
-		return this.value; 
+	public final native Object getGenericValue()/*-{
+		return this.value;
 	}-*/;
 
-	public final native int getIntValue()/*-{ 
-		return this.value; 
+	public final native int getIntValue()/*-{
+		return this.value;
 	}-*/;
 
-	public final native double getDoubleValue()/*-{ 
-		return this.value; 
+	public final native double getDoubleValue()/*-{
+		return this.value;
 	}-*/;
 
-	public final native boolean getBooleanValue()/*-{ 
-		return this.value; 
+	public final native boolean getBooleanValue()/*-{
+		return this.value;
 	}-*/;
 
 }

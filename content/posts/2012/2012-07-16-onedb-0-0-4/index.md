@@ -1,11 +1,11 @@
 ---
-title: "onedb 0.0.4"
-date: "2012-07-16"
-categories: 
-  - "java"
+title: 'onedb 0.0.4'
+date: '2012-07-16'
+categories:
+  - 'java'
 ---
 
-The version 0.0.4 of the core client library and the test library for [onedb](http://www.onedb.de "onedb cloud database") have been released. In addition to a small enhancement and bugfix also some documentation has been added. Please find the details below.
+The version 0.0.4 of the core client library and the test library for [onedb](http://www.onedb.de 'onedb cloud database') have been released. In addition to a small enhancement and bugfix also some documentation has been added. Please find the details below.
 
 The development of onedb has made extensive use of the OSGi platform to assure that the library is truly modular and no unwanted interdependencies between different components 'creep' into the codebase. I use OSGi also in other projects and, since it is often difficult to find OSGi ready versions of Maven artifacts, I have [uploaded a number of such artifacts on github](https://github.com/mxro/osgi-maven).
 

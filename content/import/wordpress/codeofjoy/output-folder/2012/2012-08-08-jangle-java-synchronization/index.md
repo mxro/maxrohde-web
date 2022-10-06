@@ -1,15 +1,15 @@
 ---
-title: "Jangle Java: Synchronization"
-date: "2012-08-08"
-categories: 
-  - "java"
+title: 'Jangle Java: Synchronization'
+date: '2012-08-08'
+categories:
+  - 'java'
 ---
 
 This tutorial is a continutation of the '[Jangle Java: Upload & Load](http://maxrohde.com/2012/08/08/jangle-java-upload-load-data/)' tutorial. Make sure to follow the steps of this tutorial first before doing this one.
 
 This tutorial shows the synchronization capabilities of the appjangle Java client. In particular, the well known producer-consumer scenario is applied on the simple pizza parlor data defined in the upload & load tutorial.
 
-You can find the source code of the completed tutorial on github: [V\_JangleJavaShort\_Synchronize.java](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/V_JangleJavaShort_Synchronize.java).
+You can find the source code of the completed tutorial on github: [V_JangleJavaShort_Synchronize.java](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/V_JangleJavaShort_Synchronize.java).
 
 ## Step 1: Define the Producer
 
@@ -174,7 +174,7 @@ The work of producer and consumer can further be traced through the various REST
 
 To learn more about the capabilities of appjangle and onedb, you can check:
 
-- the extensive [onedb tutorial](http://maxrohde.com/2012/05/06/onedb-tutorial/ "onedb tutorial")
-- other articles on the [onedb documentation](http://cms.onedb.de/articles "onedb documentation") page.
+- the extensive [onedb tutorial](http://maxrohde.com/2012/05/06/onedb-tutorial/ 'onedb tutorial')
+- other articles on the [onedb documentation](http://cms.onedb.de/articles 'onedb documentation') page.
 - [subscribe to this blog](http://maxrohde.com/feed/)!
-- [example apps on github](https://github.com/mxro/onedb-examples/tree/master/src/main/java/one/examples/features "appjangle example apps")
+- [example apps on github](https://github.com/mxro/onedb-examples/tree/master/src/main/java/one/examples/features 'appjangle example apps')

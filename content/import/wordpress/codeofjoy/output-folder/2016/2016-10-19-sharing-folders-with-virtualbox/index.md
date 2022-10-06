@@ -1,10 +1,10 @@
 ---
-title: "Sharing Folders with VirtualBox"
-date: "2016-10-19"
-categories: 
-  - "linux"
-tags: 
-  - "virtualbox"
+title: 'Sharing Folders with VirtualBox'
+date: '2016-10-19'
+categories:
+  - 'linux'
+tags:
+  - 'virtualbox'
 ---
 
 ### Problem
@@ -17,10 +17,10 @@ You would like to share a folder between a VirtualBox **Linux Guest** and a **Wi
 - Switch to Windowed Mode
 - Select Devices / Shared Folders / Shared Folder Settings ...
 - Create a New Folder on your Linux Guest. e.g.:
-    - /home/\[Your User\]/WinDocuments
+  - /home/\[Your User\]/WinDocuments
 - Add a new Shared folder there, e.g.
-    - Share Name WinDocuments
-    - Windows Folder: C:\\Users\\\[Your User\]\\Documents
+  - Share Name WinDocuments
+  - Windows Folder: C:\\Users\\\[Your User\]\\Documents
 - Open a Terminal and run the following:
 
 sudo mount -t vboxsf -o rw,uid=1000,gid=1000 Documents /home/\[Your User\]/WinDocuments

@@ -1,6 +1,6 @@
 ---
-title: "Testing Internet Connection Quality (with multiple hosts)"
-date: "2016-09-20"
+title: 'Testing Internet Connection Quality (with multiple hosts)'
+date: '2016-09-20'
 ---
 
 It's always a good idea to test the speed of your Internet connection after getting a new router of Internet provider. However, my Internet connection sometimes becomes **mysteriously slow**.

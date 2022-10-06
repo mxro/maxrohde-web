@@ -1,8 +1,8 @@
 ---
-title: "Declarative Services, Exceptions and Eclipse PDE"
-date: "2010-08-20"
-categories: 
-  - "java"
+title: 'Declarative Services, Exceptions and Eclipse PDE'
+date: '2010-08-20'
+categories:
+  - 'java'
 ---
 
 **Problem**

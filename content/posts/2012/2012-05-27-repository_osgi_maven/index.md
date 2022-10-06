@@ -1,8 +1,8 @@
 ---
-title: "New Repository for OSGi-ready Maven Artifacts"
-date: "2012-05-27"
-categories: 
-  - "java"
+title: 'New Repository for OSGi-ready Maven Artifacts'
+date: '2012-05-27'
+categories:
+  - 'java'
 ---
 
 **UPDATE 2015:**
@@ -36,7 +36,7 @@ If the project is easy to build and/or there is no single artifact available, wh
 Currently, the wrapper artifacts provide the following key features:
 
 - You can use the artifacts from the provided repository to link the third party project as OSGi-bundles/Maven artifact (see included [libraries](https://github.com/mxro/osgi-maven/blob/master/README.md#libraries)).
-- You can download the projects from the github repository and [generate MANIFEST.MF declarations](https://github.com/mxro/osgi-maven/blob/master/README.md#create-manifestmf "Create MANIFEST.MF Declarations") as well as use the [maven eclipse plugin](http://maven.apache.org/plugins/maven-eclipse-plugin/) to [create eclipse projects](https://github.com/mxro/osgi-maven/blob/master/README.md#create-eclipse-pde-projects) for the dependencies (this is very useful for eclipse PDE projects).
+- You can download the projects from the github repository and [generate MANIFEST.MF declarations](https://github.com/mxro/osgi-maven/blob/master/README.md#create-manifestmf 'Create MANIFEST.MF Declarations') as well as use the [maven eclipse plugin](http://maven.apache.org/plugins/maven-eclipse-plugin/) to [create eclipse projects](https://github.com/mxro/osgi-maven/blob/master/README.md#create-eclipse-pde-projects) for the dependencies (this is very useful for eclipse PDE projects).
 
 The following libraries are defined in the [repository](https://github.com/mxro/osgi-maven):
 

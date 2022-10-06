@@ -1,13 +1,13 @@
 ---
-title: "Copy and Paste from HTML Tables with Empty Cells"
-date: "2013-03-18"
+title: 'Copy and Paste from HTML Tables with Empty Cells'
+date: '2013-03-18'
 ---
 
 ## Problem
 
 You would like to copy a HTML table into a spreadsheet processing application like Google Spreadsheets.
 
-However, the table you would like to copy contains empty cells. Just as in the 'Start\_Time' column in the image shown below:
+However, the table you would like to copy contains empty cells. Just as in the 'Start_Time' column in the image shown below:
 
 ![](images/031813_0617_copyandpast1.png)
 

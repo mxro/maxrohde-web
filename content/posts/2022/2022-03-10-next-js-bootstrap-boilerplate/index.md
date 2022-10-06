@@ -1,21 +1,21 @@
 ---
-title: "Next.js + Bootstrap Boilerplate"
-date: "2022-03-10"
-categories: 
-  - "javascript"
-  - "serverless"
-tags: 
-  - "aws"
-  - "boilerplate"
-  - "bootstrap"
-  - "coding"
-  - "devops"
-  - "goldstack"
-  - "next-js"
-  - "open-source"
-  - "programming"
-  - "starter-project"
-coverImage: "jaime-spaniol-dsqu3n5o3sg-unsplash.jpg"
+title: 'Next.js + Bootstrap Boilerplate'
+date: '2022-03-10'
+categories:
+  - 'javascript'
+  - 'serverless'
+tags:
+  - 'aws'
+  - 'boilerplate'
+  - 'bootstrap'
+  - 'coding'
+  - 'devops'
+  - 'goldstack'
+  - 'next-js'
+  - 'open-source'
+  - 'programming'
+  - 'starter-project'
+coverImage: 'jaime-spaniol-dsqu3n5o3sg-unsplash.jpg'
 ---
 
 I has been nearly two years since I first wrote about a [Next.js + Bootstrap starter project](https://maxrohde.com/2020/03/06/next-js-with-bootstrap-getting-started/) on this blog. Since then I have been extending the base template and made it easier to configure and use. It is now available as one of the templates on [Goldstack](https://goldstack.party): [Next.js + Bootstrap Template](https://goldstack.party/templates/nextjs-bootstrap).
@@ -30,7 +30,7 @@ See the project on GitHub here:
 
 [github.com/goldstack/nextjs-bootstrap-boilerplate](https://github.com/goldstack/nextjs-bootstrap-boilerplate).
 
-* * *
+---
 
 ## Local Development
 
@@ -58,7 +58,7 @@ yarn watch
 
 ![Next.js Bootstrap Boilerplate Local Development](images/nextjs_bootstrap_boilerplate.png)
 
-* * *
+---
 
 ## Bootstrap Configuration
 
@@ -93,7 +93,7 @@ import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 ```
 
-* * *
+---
 
 ## Infrastructure and Deployment
 
@@ -151,6 +151,6 @@ This boilerplate helps you get set up and started very quickly. Apart from confi
 
 If you have any comments or ideas for this template, please head over to the [Goldstack GitHub project](https://github.com/goldstack/goldstack#readme) and [raise an issue](https://github.com/goldstack/goldstack/issues).
 
-* * *
+---
 
 Cover picture from [Unsplash](https://unsplash.com/photos/DsQU3n5o3Sg), icons from [Flat](https://www.flaticon.com/premium-icon/robotic-arm_3273644?term=robot&page=1&position=7&page=1&position=7&related_id=3273644&origin=search) [Icon](https://www.flaticon.com/free-icon/boiler_1683010?term=boiler&related_id=1683010)

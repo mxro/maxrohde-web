@@ -1,14 +1,14 @@
 ---
-title: "Steve Jobs and Leadership"
-date: "2014-05-06"
-categories: 
-  - "leadership"
-tags: 
-  - "isaacson"
-  - "steve-jobs"
+title: 'Steve Jobs and Leadership'
+date: '2014-05-06'
+categories:
+  - 'leadership'
+tags:
+  - 'isaacson'
+  - 'steve-jobs'
 ---
 
-There is something wrong with the way Steve Jobs led people. The [biography](http://en.wikipedia.org/wiki/Steve_Jobs_(book)) from ‪Isaacson‬ is full of examples how Steve Jobs exercised excessive control, restricting the autonomy of talented employees, or outright abused employees in an inhumane way.
+There is something wrong with the way Steve Jobs led people. The [biography](<http://en.wikipedia.org/wiki/Steve_Jobs_(book)>) from ‪Isaacson‬ is full of examples how Steve Jobs exercised excessive control, restricting the autonomy of talented employees, or outright abused employees in an inhumane way.
 
 ![](images/050314_0123_stevejobsan1.jpg)
 
@@ -30,6 +30,6 @@ James Collins in his book '[Good to Great](http://en.wikipedia.org/wiki/Good_to_
 
 Apart from an obvious lack of compassion, this could be another downside of Steve Jobs' leadership style. Will Apple prevail to be as successful as they have been with Jobs at the helm? In any case, however great a leader Jobs was, I do not think that he is a good role model for future leaders. Since, looking at the descriptions in ‪Isaacson‬'s biography, it appears that some of his success was built on compromising the dignity of subordinates; and dignity, in my point of view, is something that should never be compromised on no matter how 'great' the endeavour (as should be the [law](http://www.nytimes.com/2014/05/03/business/steve-jobs-a-genius-at-pushing-boundaries-too.html)).
 
- 
 
-Picture Credits: [http://en.wikipedia.org/wiki/File:Stevejobs\_Macworld2005.jpg](http://en.wikipedia.org/wiki/File:Stevejobs_Macworld2005.jpg)
+
+Picture Credits: [http://en.wikipedia.org/wiki/File:Stevejobs_Macworld2005.jpg](http://en.wikipedia.org/wiki/File:Stevejobs_Macworld2005.jpg)

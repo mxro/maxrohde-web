@@ -1,6 +1,6 @@
 ---
-title: "Models Driven Development and Domain Specific Languages"
-date: "2011-10-02"
+title: 'Models Driven Development and Domain Specific Languages'
+date: '2011-10-02'
 ---
 
 The question of the right programming language is one that has always spurned much controversy. Likewise, the idea that one day we could develop software by simply 'drawing' expressive models has as many advocators as opponents.
@@ -45,7 +45,7 @@ Another example of a DSL directly implemented in Java is the [JooQ library](http
 
 create.selectFrom(BOOK)
 
-.where(PUBLISHED\_IN.equal(2011))
+.where(PUBLISHED_IN.equal(2011))
 
 .orderBy(TITLE)
 
@@ -53,7 +53,7 @@ Many APIs are also implemented in a DSL-like fashion. For instance, the API for 
 
 FileOutputStream stream = new FileOutputStream("test.html");
 
-FluentReportRunner.report(report).connectTo(connection).withQueryTimeout(60).withParameterValues(createParameterValues()).formatAs(ReportRunner.HTML\_FORMAT).run(stream);
+FluentReportRunner.report(report).connectTo(connection).withQueryTimeout(60).withParameterValues(createParameterValues()).formatAs(ReportRunner.HTML_FORMAT).run(stream);
 
 Of course, there is still some way to go to improve those DSLs. Especially end users are likely to struggle with some intricacies of general programming languages. That said, I still believe that it would be easier to build powerful tools around the limitations of general purpose languages than to develop these 'from scratch' for other languages.
 

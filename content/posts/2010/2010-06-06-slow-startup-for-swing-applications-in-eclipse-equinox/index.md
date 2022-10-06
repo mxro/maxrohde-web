@@ -1,8 +1,8 @@
 ---
-title: "Slow Startup for Swing Applications in Eclipse Equinox"
-date: "2010-06-06"
-categories: 
-  - "java"
+title: 'Slow Startup for Swing Applications in Eclipse Equinox'
+date: '2010-06-06'
+categories:
+  - 'java'
 ---
 
 **The Problem**
@@ -11,7 +11,7 @@ I have created a very simple Swing class, which is to be started by an OSGi Decl
 
 public class SwingOSGiApplicationService implements ApplicationService {
 
-                 public void activate() {                 System.out.println("Starting Application Service; show window");                 Runnable launcher = new Runnable() {                         @Override                         public void run() {                                 JFrame aWindow = new JFrame(“Swing Test OSGi“);                          int windowWidth = 420;                          int windowHeight = 170;                          aWindow.setBounds(55, 150,                          windowWidth, windowHeight);                          aWindow.setDefaultCloseOperation(JFrame.EXIT\_ON\_CLOSE);                          aWindow.setVisible(true);                         }                 };                 SwingUtilities.invokeLater(launcher);                          }
+public void activate() {                 System.out.println("Starting Application Service; show window");                 Runnable launcher = new Runnable() {                         @Override                         public void run() {                                 JFrame aWindow = new JFrame(“Swing Test OSGi“);                          int windowWidth = 420;                          int windowHeight = 170;                          aWindow.setBounds(55, 150,                          windowWidth, windowHeight);                          aWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);                          aWindow.setVisible(true);                         }                 };                 SwingUtilities.invokeLater(launcher);                          }
 
 } When I start the containing OSGi bundle using an „OSGi Framework“ eclipse run configuration. The application takes very long to start up (The same bundle starts in Apache Felix in an instant).
 

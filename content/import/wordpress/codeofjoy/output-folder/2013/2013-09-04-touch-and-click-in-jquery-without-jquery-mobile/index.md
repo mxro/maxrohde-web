@@ -1,11 +1,11 @@
 ---
-title: "Touch and Click in jQuery (without jQuery Mobile)"
-date: "2013-09-04"
-categories: 
-  - "javascript"
-tags: 
-  - "jquery"
-  - "mobile"
+title: 'Touch and Click in jQuery (without jQuery Mobile)'
+date: '2013-09-04'
+categories:
+  - 'javascript'
+tags:
+  - 'jquery'
+  - 'mobile'
 ---
 
 ### Problem

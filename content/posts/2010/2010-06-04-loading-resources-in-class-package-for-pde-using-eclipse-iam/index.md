@@ -1,8 +1,8 @@
 ---
-title: "Loading Resources in Class Package for PDE using Eclipse IAM"
-date: "2010-06-04"
-categories: 
-  - "java"
+title: 'Loading Resources in Class Package for PDE using Eclipse IAM'
+date: '2010-06-04'
+categories:
+  - 'java'
 ---
 
 **The Problem**

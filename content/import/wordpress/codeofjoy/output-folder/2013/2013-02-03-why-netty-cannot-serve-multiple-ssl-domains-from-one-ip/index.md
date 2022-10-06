@@ -1,11 +1,11 @@
 ---
-title: "Why Netty cannot serve multiple SSL domains from one IP"
-date: "2013-02-03"
-categories: 
-  - "java"
-tags: 
-  - "netty"
-  - "ssl"
+title: 'Why Netty cannot serve multiple SSL domains from one IP'
+date: '2013-02-03'
+categories:
+  - 'java'
+tags:
+  - 'netty'
+  - 'ssl'
 ---
 
 ## Background

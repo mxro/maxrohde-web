@@ -1,8 +1,8 @@
 ---
-title: "Version Ranges in OSGi and Maven"
-date: "2010-06-23"
-categories: 
-  - "java"
+title: 'Version Ranges in OSGi and Maven'
+date: '2010-06-23'
+categories:
+  - 'java'
 ---
 
 Version ranges have slightly different meaning in OSGi and Maven.

@@ -1,11 +1,11 @@
 ---
-title: "Strapi 2020 Quick Review"
-date: "2020-02-24"
-categories: 
-  - "javascript"
-tags: 
-  - "headless-cms"
-coverImage: "strapi-4.png"
+title: 'Strapi 2020 Quick Review'
+date: '2020-02-24'
+categories:
+  - 'javascript'
+tags:
+  - 'headless-cms'
+coverImage: 'strapi-4.png'
 ---
 
 I have recently reviewed [KeystoneJS](https://maxrohde.com/2020/02/23/keystonejs-5-quick-review/) for a little project I am planning. I found it overall quite good but lacking in a few aspects, particularly in the way migrations are handled (or not handled). After some research, it seems that [Strapi](https://strapi.io/) could be a possible alternative to KeystoneJS and so I decided to give this solution a quick review as well.

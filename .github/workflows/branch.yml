@@ -4,8 +4,28 @@ on: [push]
 
 jobs:
   build:
-    name: 'Build'
+    name: '🛠️ Build'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: ./.github/actions/goldstack-setup
+
+  lint:
+    name: '🖋️ Prettier and Lint'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/goldstack-setup
+        run: |
+          yarn format-check
+          yarn lint
+
+
+  audit:
+    name: '🔍 NPM Audit'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/goldstack-setup
+        run: |
+          yarn npm audit --recursive --severity high

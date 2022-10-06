@@ -1,8 +1,8 @@
 ---
-title: "Improving Node.js https request performance"
-date: "2017-09-15"
-categories: 
-  - "javascript"
+title: 'Improving Node.js https request performance'
+date: '2017-09-15'
+categories:
+  - 'javascript'
 ---
 
 The [HTTPS module](https://nodejs.org/docs/latest-v6.x/api/https.html#https_https) of Node.js allows making HTTPS request to other servers. Unfortunately, making requests with this module often leads to poor performance.
@@ -14,34 +14,34 @@ With the following simple solution, I was able to reduce this time **to less tha
 By default, Node.js does not keep SSL connections alive. Thus, a new handshake has to be performed for every request. If you make many requests to the same server (a very common situation when dealing with APIs), it makes a lot of sense to keep SSL connections alive. This can be accomplished as follows:
 
 var agent = new https.Agent({
- keepAlive: true
+keepAlive: true
 });
 
 var options = {
- host: 'objecthub.io',
- port: 443,
- path: '/admin/metrics/main.json',
- method: 'GET',
- agent: agent
+host: 'objecthub.io',
+port: 443,
+path: '/admin/metrics/main.json',
+method: 'GET',
+agent: agent
 };
 
 var req = https.request(options, function(res) {
 
-  var str = "";
-  res.on('data', function (chunk) {
-     str += chunk;
-  });
+var str = "";
+res.on('data', function (chunk) {
+str += chunk;
+});
 
-  res.on('end', function () {
-     // done
-  });
+res.on('end', function () {
+// done
+});
 });
 
 req.write('');
 req.end();
 
 req.on('error', function(e) {
-   // error
+// error
 });
 
 Note here that a [https.Agent](https://nodejs.org/docs/latest-v6.x/api/https.html#https_class_https_agent) is created with the parameter **keepAlive: true**. This agent is then passed in the **options** for the request. You can use the same agent for all requests.

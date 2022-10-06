@@ -1,6 +1,6 @@
 ---
-title: "Leverage Eclipse to Create Executable OSGi based Applications"
-date: "2010-12-03"
+title: 'Leverage Eclipse to Create Executable OSGi based Applications'
+date: '2010-12-03'
 ---
 
 Both eclipse and the Netbeans IDE provide strong tool support for deploying applications based on their respective platforms. This includes supports for branding for instance with custom splash screens as well as creating executables for various platforms (Windows, Mac OS X, Linux).

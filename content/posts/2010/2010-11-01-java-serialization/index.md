@@ -1,8 +1,8 @@
 ---
-title: "Java Serialization"
-date: "2010-11-01"
-categories: 
-  - "java"
+title: 'Java Serialization'
+date: '2010-11-01'
+categories:
+  - 'java'
 ---
 
 There are a number of different ways in which objects or object graphs can be serialized and deserialzed in Java. One major distinguishing feature is the intrusiveness of the employed framework. Some, like XStream, can work with any Java object without modification. Others, like JDO, beans serialization frameworks or the standard Java serialization mechanism require you to annotate or write the Java objects in a certain way.

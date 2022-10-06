@@ -1,15 +1,15 @@
 ---
-title: "Innovating on a Dime: Design Science for Small Teams"
-date: "2011-08-08"
-categories: 
-  - "contemplations"
+title: 'Innovating on a Dime: Design Science for Small Teams'
+date: '2011-08-08'
+categories:
+  - 'contemplations'
 ---
 
 Disruptive technological innovations often originate from surprisingly small beginnings**.** Giants of the Internet age such as the omnipresent Google search engine and the Facebook social networking platform have initially been designed and developed by small and independent teams. These examples are attractive to design science researchers in information systems, who desire to deliver new and innovative artifacts.
 
 Motivated by these observations, we have written a paper proposing a possible specialization of design science research.
 
-[PDF (AISNet.org)](http://aisel.aisnet.org/cgi/viewcontent.cgi?article=1223&context=ecis2011 "INNOVATING ON A DIME: DESIGN SCIENCE FOR SMALL TEAMS PDF")
+[PDF (AISNet.org)](http://aisel.aisnet.org/cgi/viewcontent.cgi?article=1223&context=ecis2011 'INNOVATING ON A DIME: DESIGN SCIENCE FOR SMALL TEAMS PDF')
 
 **Slides:**
 

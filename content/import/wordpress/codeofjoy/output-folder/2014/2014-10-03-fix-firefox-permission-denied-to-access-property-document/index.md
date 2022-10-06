@@ -1,8 +1,8 @@
 ---
-title: "Fix Firefox ‘Permission denied to access property document’"
-date: "2014-10-03"
-categories: 
-  - "javascript"
+title: 'Fix Firefox ‘Permission denied to access property document’'
+date: '2014-10-03'
+categories:
+  - 'javascript'
 ---
 
 ### Problem
@@ -21,7 +21,7 @@ This problem is caused by a security restriction that should normally be in plac
 
 - Enter the address 'about:config' in your Firefox
 - Search for 'strict\_'
-- Double click on the value column for the preference '**security.fileuri.strict\_origin\_policy**' to switch it from 'true' to 'false'.
+- Double click on the value column for the preference '**security.fileuri.strict_origin_policy**' to switch it from 'true' to 'false'.
 
 ![](images/100314_0502_fixfirefoxp1.png)
 
@@ -29,6 +29,6 @@ Remember to reenable the policy once your tests are done!
 
 ### Sources
 
-[https://bugzilla.mozilla.org/show\_bug.cgi?id=477201](https://bugzilla.mozilla.org/show_bug.cgi?id=477201)
+[https://bugzilla.mozilla.org/show_bug.cgi?id=477201](https://bugzilla.mozilla.org/show_bug.cgi?id=477201)
 
 [https://support.mozilla.org/en-US/questions/1003768](https://support.mozilla.org/en-US/questions/1003768)

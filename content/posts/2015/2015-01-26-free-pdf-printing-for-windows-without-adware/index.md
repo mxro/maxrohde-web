@@ -1,11 +1,11 @@
 ---
-title: "Free PDF Printing for Windows without Adware"
-date: "2015-01-26"
-categories: 
-  - "productivity"
-tags: 
-  - "tools"
-coverImage: "freepdf-print.png"
+title: 'Free PDF Printing for Windows without Adware'
+date: '2015-01-26'
+categories:
+  - 'productivity'
+tags:
+  - 'tools'
+coverImage: 'freepdf-print.png'
 ---
 
 Printing from any windows application to a PDF printer is not supported in the most recent Windows versions by default.
@@ -18,7 +18,7 @@ However, there is a free and easy solution which comes bundled without any addit
 
 Just download and install Ghostscript from here: [heise.de](http://www.heise.de/download/ghostscript-34a86be7f565a6034994a9c3fe1ded20-1422231827-26936.html).
 
-Then, download the FreePDF printer from here: [freepdfxp.de/download\_de.html](http://freepdfxp.de/download_de.html)
+Then, download the FreePDF printer from here: [freepdfxp.de/download_de.html](http://freepdfxp.de/download_de.html)
 
 [![freepdf](https://nexnet.files.wordpress.com/2015/01/freepdf.png?w=660)](https://nexnet.files.wordpress.com/2015/01/freepdf.png)
 

@@ -1,21 +1,21 @@
 ---
-title: "TypeScript Monorepo with Yarn and Project References"
-date: "2021-09-30"
-categories: 
-  - "javascript"
-tags: 
-  - "coding"
-  - "goldstack"
-  - "monorepo"
-  - "open-source"
-  - "programming"
-  - "typescript"
-  - "yarn"
+title: 'TypeScript Monorepo with Yarn and Project References'
+date: '2021-09-30'
+categories:
+  - 'javascript'
+tags:
+  - 'coding'
+  - 'goldstack'
+  - 'monorepo'
+  - 'open-source'
+  - 'programming'
+  - 'typescript'
+  - 'yarn'
 ---
 
 Please find an updated and extended version of this post here: [The Ultimate Guide to TypeScript Monorepos](https://maxrohde.com/2021/11/20/the-ultimate-guide-to-typescript-monorepos/).
 
-* * *
+---
 
 [Project references](https://www.typescriptlang.org/docs/handbook/project-references.html) in TypeScript are an amazing feature for building complex TypeScript projects. They enable dividing a large project into smaller, indepedent modules and thereby improving code organisation as well as compile times; since it is easier for TypeScript to identify which parts of the project need to be recompiled when there are changes.
 
@@ -83,7 +83,7 @@ There are a few things to keep in mind when configuring `tsconfig.json` files wi
     "noEmit": false, /* referenced projects may not disabled emit */
     "rootDir": "./",
     "isolatedModules": true,
-    "skipDefaultLibCheck": true, 
+    "skipDefaultLibCheck": true,
     "skipLibCheck": true,
     "declaration": true,
  }

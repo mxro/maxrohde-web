@@ -1,10 +1,10 @@
 ---
-title: "Mastering Modular JavaScript"
-date: "2018-12-19"
-categories: 
-  - "javascript"
-tags: 
-  - "programming"
+title: 'Mastering Modular JavaScript'
+date: '2018-12-19'
+categories:
+  - 'javascript'
+tags:
+  - 'programming'
 ---
 
 Today I was having a look around for best practices for defining JavaScript modules. In that search, I came across the book [Mastering Modular JavaScript](https://ponyfoo.com/books/mastering-modular-javascript). This book offers a good selection of best practices for JS module development. Also, all chapters are freely available on GitHub:

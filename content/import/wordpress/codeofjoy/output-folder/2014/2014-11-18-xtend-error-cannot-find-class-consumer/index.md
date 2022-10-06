@@ -1,8 +1,8 @@
 ---
-title: "Xtend Error: Cannot find class Consumer"
-date: "2014-11-18"
-categories: 
-  - "java"
+title: 'Xtend Error: Cannot find class Consumer'
+date: '2014-11-18'
+categories:
+  - 'java'
 ---
 
 **Problem**

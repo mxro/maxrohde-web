@@ -1,6 +1,6 @@
 ---
-title: "Improving Voice Recording with Audacity"
-date: "2014-06-17"
+title: 'Improving Voice Recording with Audacity'
+date: '2014-06-17'
 ---
 
 Audacity is a powerful and free tool to edit all kinds of audio files. However, the many features it offers can be overwhelming for beginners and more advanced users alike. This guide contains some tips how to go about doing a very specific task with audacity: **Improving the quality of recorded voice**, for instance for podcasts or voice overs.

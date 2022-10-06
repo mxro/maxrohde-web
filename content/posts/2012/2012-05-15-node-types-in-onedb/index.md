@@ -1,24 +1,24 @@
 ---
-title: "A Practical Guide on Node Types in onedb"
-date: "2012-05-15"
-categories: 
-  - "java"
+title: 'A Practical Guide on Node Types in onedb'
+date: '2012-05-15'
+categories:
+  - 'java'
 ---
 
-onedb is at its heart a cloud-based platform [to connect pieces of information from various applications](http://maxrohde.com/2012/05/06/introducing-onedb/ "onedb overview"). These 'pieces of information' are represented and accessed in various ways in the onedb API.
+onedb is at its heart a cloud-based platform [to connect pieces of information from various applications](http://maxrohde.com/2012/05/06/introducing-onedb/ 'onedb overview'). These 'pieces of information' are represented and accessed in various ways in the onedb API.
 
-The article "[onedb Architecture and Design](http://maxrohde.com/2012/05/06/onedb-architecture-and-design/ "onedb architecture and design")" provides a conceptual definition of most ways in which these 'pieces of information' are represented and the article "[onedb Tutorial: Getting Started and First Steps](http://maxrohde.com/2012/05/06/onedb-tutorial/ "onedb tutorial")" uses the various representations extensively.
+The article "[onedb Architecture and Design](http://maxrohde.com/2012/05/06/onedb-architecture-and-design/ 'onedb architecture and design')" provides a conceptual definition of most ways in which these 'pieces of information' are represented and the article "[onedb Tutorial: Getting Started and First Steps](http://maxrohde.com/2012/05/06/onedb-tutorial/ 'onedb tutorial')" uses the various representations extensively.
 
 In addition to the two articles mentioned above, this article provides a practical guide to understand and use the various data representations in onedb. In particular, the following four representations are discussed:
 
-1. [Nodes](#nodes "Nodes")
-2. [Addresses and Identities](#addresses_and_identities "Addresses and Identities")
-3. [References](#references "References")
-4. [Value Nodes](#value_nodes "Value Nodes")
+1. [Nodes](#nodes 'Nodes')
+2. [Addresses and Identities](#addresses_and_identities 'Addresses and Identities')
+3. [References](#references 'References')
+4. [Value Nodes](#value_nodes 'Value Nodes')
 
 ## 1\. Nodes
 
-Nodes are [the central component of onedb's data model](http://maxrohde.com/2012/05/06/onedb-architecture-and-design/#datamodel "onedb data model"). Basically, every piece of information be it a basic data type such as `String`, `Integer`, etc. a custom object (`new MyPerson()`) or onedb object (`One.newNode(..)`) is managed as a node by the onedb engine.
+Nodes are [the central component of onedb's data model](http://maxrohde.com/2012/05/06/onedb-architecture-and-design/#datamodel 'onedb data model'). Basically, every piece of information be it a basic data type such as `String`, `Integer`, etc. a custom object (`new MyPerson()`) or onedb object (`One.newNode(..)`) is managed as a node by the onedb engine.
 
 However, only those objects are nodes, which have been appended and or loaded using the onedb API. For instance, in the following example `text1` is _not_ a node while `text2` is:
 
@@ -57,7 +57,7 @@ Given an address in text form, it is very easy to create references...
 
 ```java
 
-OneTypedReference<?> reference1 = One.reference("https://u1.linnk.it/4hxdr8/query/bob");   
+OneTypedReference<?> reference1 = One.reference("https://u1.linnk.it/4hxdr8/query/bob");
 OneTypedReference<?> reference2 = One.newNode("https://u1.linnk.it/4hxdr8/query/bob").asReference();
 
 // reference1.equals(reference2) == true
@@ -80,7 +80,7 @@ String text1="I will be a node";
 
 One.append(text1).to(lr.root()).in(client);
 
-OneTypedReference<Object> ref 
+OneTypedReference<Object> ref
                = One.reference((Object) text1).in(client);
 ```
 
@@ -94,7 +94,7 @@ Integer value1=42;
 
 One.append(value1).to(lr.root()).in(client);
 
-OneTypedReference<Integer> ref 
+OneTypedReference<Integer> ref
                 = One.reference(value1).in(client);
 
 Integer value = One.dereference(ref).in(client);
@@ -115,17 +115,17 @@ In the following example, a value node `bob` is created and its two properties a
 
 ```java
 
-OneValue<String> bob = 
+OneValue<String> bob =
         One.newNode("bob").at("https://u1.linnk.it/4hxdr8/query/bob");
 bob.getId(); // == "https://u1.linnk.it/4hxdr8/query/bob"
-bob.getValue(); // == "bob" 
+bob.getValue(); // == "bob"
 ```
 
 Value nodes can turned into back and forth from reference to resolved object like any other object:
 
 ```java
 
-OneTypedReference<OneValue<String>> ref 
+OneTypedReference<OneValue<String>> ref
                              = One.reference(bob);
 
 OneValue<String> value = One.dereference(ref).in(client);
@@ -136,7 +136,7 @@ Note that the call to `One.reference(..)` for the value node is made without the
 
 It is usually a good practice to wrap objects whenever possible into value nodes. This allows for better performance, since the onedb engine does not have to derive the address of nodes from their object identity. Since object identities can also change in often unexpected ways, it is also usually safer to work with value objects.
 
-The easiest way to define value nodes is generally by defining the `.atAddress(...)` parameter when [appending a new object to an existing node](http://maxrohde.com/2012/05/06/onedb-tutorial/#append "onedb Tutorial Appending Nodes"). For instance, in the following example a new value node with the value `alice` is appended to the node `root` with the address `./alice` relative to the root node's address:
+The easiest way to define value nodes is generally by defining the `.atAddress(...)` parameter when [appending a new object to an existing node](http://maxrohde.com/2012/05/06/onedb-tutorial/#append 'onedb Tutorial Appending Nodes'). For instance, in the following example a new value node with the value `alice` is appended to the node `root` with the address `./alice` relative to the root node's address:
 
 ```java
 

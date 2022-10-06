@@ -1,13 +1,13 @@
 ---
-title: "Book Review - Anything You Want"
-date: "2021-06-11"
-categories: 
-  - "book-reviews"
-tags: 
-  - "book"
-  - "book-review"
-  - "business"
-  - "entrepreneurship"
+title: 'Book Review - Anything You Want'
+date: '2021-06-11'
+categories:
+  - 'book-reviews'
+tags:
+  - 'book'
+  - 'book-review'
+  - 'business'
+  - 'entrepreneurship'
 ---
 
 Anything You Want is a short book that contains the lessons learnt by Derek Sivers while developing the business CD Baby. It is meant for those interested in starting their own business.

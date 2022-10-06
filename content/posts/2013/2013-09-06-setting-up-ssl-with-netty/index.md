@@ -1,11 +1,11 @@
 ---
-title: "Setting Up SSL with Netty"
-date: "2013-09-06"
-categories: 
-  - "java"
-tags: 
-  - "netty"
-  - "ssl"
+title: 'Setting Up SSL with Netty'
+date: '2013-09-06'
+categories:
+  - 'java'
+tags:
+  - 'netty'
+  - 'ssl'
 ---
 
 [SSL](http://en.wikipedia.org/wiki/Secure_Socket_Layer) is unquestionably a very useful and powerful technology to make systems more secure. Java in general and [Netty](http://netty.io/) in specific provide strong out-of-box support for supporting SSL encryption and authentication. However, since SSL is a complex technology it can often be cumbersome and difficult to set it up **correctly**.

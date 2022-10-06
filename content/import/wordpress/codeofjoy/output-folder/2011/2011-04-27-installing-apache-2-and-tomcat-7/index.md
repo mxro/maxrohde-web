@@ -1,8 +1,8 @@
 ---
-title: "Installing Apache 2 and Tomcat 7"
-date: "2011-04-27"
-categories: 
-  - "java"
+title: 'Installing Apache 2 and Tomcat 7'
+date: '2011-04-27'
+categories:
+  - 'java'
 ---
 
 ### Overview
@@ -77,7 +77,7 @@ In order for tomcat to react to the forwarded requests from the Apache server, a
 
 <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
 
-prefix="**yourservercom**\_access\_log." suffix=".txt"
+prefix="**yourservercom**\_access_log." suffix=".txt"
 
 pattern="%h %l %u %t &quot;%r&quot; %s %b" resolveHosts="false"/>
 
@@ -102,7 +102,7 @@ Tomcat 7.0.12
 
 [Blog post "Install Tomcat 7 on Debian (Lenny) with virtual hosts and Apache2 integration"](http://www.mogilowski.net/lang/en-us/2010/12/11/install-tomcat-7-on-debian-lenny-with-virtual-hosts-and-apache2-integration/)
 
-Diego Benna's Blog "[Connect Tomcat 7 with Apache2 (mod\_jk) and install Virtual Hos](http://diegobenna.blogspot.com/2011/01/connect-tomcat-7-with-apache2-modjk-and.html)t"
+Diego Benna's Blog "[Connect Tomcat 7 with Apache2 (mod_jk) and install Virtual Hos](http://diegobenna.blogspot.com/2011/01/connect-tomcat-7-with-apache2-modjk-and.html)t"
 
 Diego Benna's Blog "[Install Tomcat 7 on Ubuntu 10.10 and Ubuntu 10.04](http://diegobenna.blogspot.com/2011/01/install-tomcat-7-in-ubuntu-1010.html)"
 

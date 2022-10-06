@@ -1,18 +1,18 @@
 ---
-title: "A Guide to CSS Modules with React"
-date: "2022-08-12"
-tags: 
-  - "coding"
-  - "css"
-  - "javascript"
-  - "node-js"
-  - "open-source"
-  - "programming"
-  - "react"
-  - "server-side-rendering"
-  - "serverless"
-  - "typescript"
-coverImage: "pexels-realtoughcandycom-11035386.jpg"
+title: 'A Guide to CSS Modules with React'
+date: '2022-08-12'
+tags:
+  - 'coding'
+  - 'css'
+  - 'javascript'
+  - 'node-js'
+  - 'open-source'
+  - 'programming'
+  - 'react'
+  - 'server-side-rendering'
+  - 'serverless'
+  - 'typescript'
+coverImage: 'pexels-realtoughcandycom-11035386.jpg'
 ---
 
 There are many different ways to provide styling for React components, such as importing plain CSS, using styled components, JS-in-CSS or CSS Modules. These all have various [advantages and disadvantages](https://riichardwilson.wordpress.com/2020/05/15/styling-components-in-react/).
@@ -277,6 +277,6 @@ If you are interested in exploring the framework, which includes end-to-end supp
 
 For any suggestions, ideas and comments, please be welcome to head to GitHub and [create an issue](https://github.com/goldstack/goldstack/issues) 🤗.
 
-* * *
+---
 
 Image by [RealToughCandy.com](https://www.pexels.com/photo/man-love-people-woman-11035386/)

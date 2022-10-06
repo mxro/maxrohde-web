@@ -1,14 +1,14 @@
 ---
-title: "Tutorial: Upload from Java, Download from JavaScript"
-date: "2013-03-20"
-categories: 
-  - "java"
-  - "javascript"
-tags: 
-  - "tutorial"
+title: 'Tutorial: Upload from Java, Download from JavaScript'
+date: '2013-03-20'
+categories:
+  - 'java'
+  - 'javascript'
+tags:
+  - 'tutorial'
 ---
 
-This tutorial.describes how a simple unit of data, the text 'Hello, Java!' can be uploaded from a Java application and retrieved with a JavaScript application. 
+This tutorial.describes how a simple unit of data, the text 'Hello, Java!' can be uploaded from a Java application and retrieved with a JavaScript application.
 
 ## Upload from Java
 
@@ -57,10 +57,10 @@ public class Upload {
 Running this application should result in an output such as the following:
 
 Created:
-node("http://slicnet.com/seed1/seed1/2/1/2/h/sd/Hello\_\_1", 
-  class java.lang.String)
+node("http://slicnet.com/seed1/seed1/2/1/2/h/sd/Hello\_\_1",
+class java.lang.String)
 
-You can now access the created node using the reported URI. For instance, by opening [http://slicnet.com/seed1/seed1/2/1/2/h/sd/Hello\_\_1](http://slicnet.com/seed1/seed1/2/1/2/h/sd/Hello__1) 
+You can now access the created node using the reported URI. For instance, by opening [http://slicnet.com/seed1/seed1/2/1/2/h/sd/Hello\_\_1](http://slicnet.com/seed1/seed1/2/1/2/h/sd/Hello__1)
 
 in a web browser.
 
@@ -100,6 +100,7 @@ Replace the text `// Your JavaScript here` with the following application:
             });
         }
     </script>
+
 </body>
 
 Save app.html and close your editor.

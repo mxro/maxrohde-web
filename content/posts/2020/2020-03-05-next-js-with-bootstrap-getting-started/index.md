@@ -1,14 +1,14 @@
 ---
-title: "Next.js with Bootstrap Getting Started"
-date: "2020-03-05"
-categories: 
-  - "javascript"
-tags: 
-  - "bootstrap"
-  - "next-js-framework"
-  - "programming"
-  - "react"
-coverImage: "banner.png"
+title: 'Next.js with Bootstrap Getting Started'
+date: '2020-03-05'
+categories:
+  - 'javascript'
+tags:
+  - 'bootstrap'
+  - 'next-js-framework'
+  - 'programming'
+  - 'react'
+coverImage: 'banner.png'
 ---
 
 [Next.js](https://nextjs.org/) is an open-source framework for React that aspires to reduce the amount of boilerplate code required for developing React applications. Key features that Next.js provides out of the box are:
@@ -69,10 +69,8 @@ We only need to ensure that the Bootstrap CSS is loaded:
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function MyApp({ Component, pageProps }) {
-
-  return
-    <Component {...pageProps} />;
-
+  return;
+  <Component {...pageProps} />;
 }
 
 export default MyApp;
@@ -86,13 +84,15 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function Landing() {
-  return <Container>
-    <Row>
-      <Col>
-        <h1>Next.js React Bootstrap</h1>
-      </Col>
-    </Row>
-  </Container>
+  return (
+    <Container>
+      <Row>
+        <Col>
+          <h1>Next.js React Bootstrap</h1>
+        </Col>
+      </Row>
+    </Container>
+  );
 }
 
 export default Landing;

@@ -1,10 +1,10 @@
 ---
-title: "New Online Markdown Editor"
-date: "2012-08-23"
-categories: 
-  - "javascript"
-tags: 
-  - "markdown"
+title: 'New Online Markdown Editor'
+date: '2012-08-23'
+categories:
+  - 'javascript'
+tags:
+  - 'markdown'
 ---
 
 [nodejump](http://nodejump.com) is a small web application to create and publish web pages using the Markdown markup language.
@@ -16,15 +16,10 @@ It's really easy to get started creating a new document (and therewith a new web
 The main features of this editor are the following:
 
 - Publish simple web pages from various devices (desktop, mobile) quickly and easily.
-    
 - Allow to share documents for viewing and collaborative editing via simple hyperlinks.
-    
 - Allow users to use the tool with and without registering.
-    
 - Switch between editing and viewing in real-time.
-    
 - Synchronize documents opened on multiple locations in real-time.
-    
 
 ## Screenshots
 

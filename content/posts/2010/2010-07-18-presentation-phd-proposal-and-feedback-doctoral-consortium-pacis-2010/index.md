@@ -1,8 +1,8 @@
 ---
-title: "Presentation: PhD Proposal and Feedback Doctoral Consortium PACIS 2010"
-date: "2010-07-18"
-categories: 
-  - "contemplations"
+title: 'Presentation: PhD Proposal and Feedback Doctoral Consortium PACIS 2010'
+date: '2010-07-18'
+categories:
+  - 'contemplations'
 ---
 
 Presentation:

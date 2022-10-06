@@ -1,8 +1,8 @@
 ---
-title: "Deadlines and Estimates in Agile"
-date: "2018-12-19"
-tags: 
-  - "project-management"
+title: 'Deadlines and Estimates in Agile'
+date: '2018-12-19'
+tags:
+  - 'project-management'
 ---
 
 Time is a key resource in software development and we need to consider it in two fundamental ways:

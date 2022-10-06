@@ -1,21 +1,21 @@
 ---
-title: "Deploy Serverless Next.js to AWS with Terraform 1.1"
-date: "2022-01-21"
-categories: 
-  - "javascript"
-tags: 
-  - "aws"
-  - "cloudfront"
-  - "coding"
-  - "devops"
-  - "goldstack"
-  - "next-js"
-  - "programming"
-  - "serverless"
-  - "starter-project"
-  - "template"
-  - "terraform"
-coverImage: "developer-g0eeed467d_1920.png"
+title: 'Deploy Serverless Next.js to AWS with Terraform 1.1'
+date: '2022-01-21'
+categories:
+  - 'javascript'
+tags:
+  - 'aws'
+  - 'cloudfront'
+  - 'coding'
+  - 'devops'
+  - 'goldstack'
+  - 'next-js'
+  - 'programming'
+  - 'serverless'
+  - 'starter-project'
+  - 'template'
+  - 'terraform'
+coverImage: 'developer-g0eeed467d_1920.png'
 ---
 
 [Terraform](https://www.terraform.io/) for better or worse is frequently updated with new versions. Many of these introduce incompatibilities with previous versions that require manual rework of Terraform definitions as well as require updating the local or remote Terraform state. I originally developed a solution for [deploying Next.js to AWS](https://maxrohde.com/2021/01/30/deploy-next-js-to-aws/) using Terraform version `0.12` and that has been working well for over a year now. However, recently [AWS announced that changes to their API would require an update](https://github.com/goldstack/goldstack/issues/57) of the [AWS Terraform Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs). While there is an option to patch an older version of the Terraform provider, I figured that may be as good an excuse as any to update the [Goldstack Next.js + Bootstrap Template](https://goldstack.party/templates/nextjs-bootstrap) to the latest version of Terraform, which is `1.1` as of this writing.
@@ -45,22 +45,22 @@ In order to define the above infrastructure in Terraform, we need the following 
 
 _For defining our certificate and setting up the domain name_:
 
-- [aws\_acm\_certificate](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/acm_certificate): To define the certificate we use to allow secure connections via `https://` to our website. AWS provides these certificates for free and will renew them automatically as well.
-- [aws\_route53\_record](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record): To define the DNS records for our website. We also use this resource to help with validating the TLS certificate.
-- [aws\_acm\_certificate\_validation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/acm_certificate_validation): To assist with the validation of the TLS certificate
+- [aws_acm_certificate](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/acm_certificate): To define the certificate we use to allow secure connections via `https://` to our website. AWS provides these certificates for free and will renew them automatically as well.
+- [aws_route53_record](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/route53_record): To define the DNS records for our website. We also use this resource to help with validating the TLS certificate.
+- [aws_acm_certificate_validation](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/acm_certificate_validation): To assist with the validation of the TLS certificate
 
 See the configuration for each resource in [main.tf](https://github.com/mxro/nextjs_aws_terraform/blob/master/packages/app-nextjs-bootstrap/infra/aws/main.tf).
 
 _For configuring our CDN_:
 
-- [aws\_s3\_bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket): For storing the JavaScript/HTML/etc. files Next.js generates.
-- [aws\_cloudfront\_distribution](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudfront_distribution): For creating a new [CloudFront Distribution](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-working-with.html).
+- [aws_s3_bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket): For storing the JavaScript/HTML/etc. files Next.js generates.
+- [aws_cloudfront_distribution](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudfront_distribution): For creating a new [CloudFront Distribution](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-working-with.html).
 
 See the configuration for each resource in [root.tf](https://github.com/mxro/nextjs_aws_terraform/blob/master/packages/app-nextjs-bootstrap/infra/aws/root.tf). We are also configuring a second CloudFront distribution to be used for the forwarding domain (e.g. `www.mydomain.com` to `mydomain.com`). This distribution is defined in [redirect.tf](https://github.com/mxro/nextjs_aws_terraform/blob/master/packages/app-nextjs-bootstrap/infra/aws/redirect.tf).
 
 _For supporting dynamic Next.js routing_:
 
-- [aws\_lambda\_function](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_function): To define a lambda function that will help with Next.js dynamic routes. Find the source code for this function in [lambda.ts](https://github.com/mxro/nextjs_aws_terraform/blob/master/packages/app-nextjs-bootstrap/src/utils/routing/lambda.ts). This is an [edge lambda](https://aws.amazon.com/lambda/edge/) that will be used by CloudFront.
+- [aws_lambda_function](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_function): To define a lambda function that will help with Next.js dynamic routes. Find the source code for this function in [lambda.ts](https://github.com/mxro/nextjs_aws_terraform/blob/master/packages/app-nextjs-bootstrap/src/utils/routing/lambda.ts). This is an [edge lambda](https://aws.amazon.com/lambda/edge/) that will be used by CloudFront.
 
 Find the definition of this resource and other resources required for running the lambda in [edge.tf](https://github.com/mxro/nextjs_aws_terraform/blob/master/packages/app-nextjs-bootstrap/infra/aws/edge.tf).
 
@@ -87,7 +87,7 @@ terraform {
 ```
 
 - Version `0.14` also introduced a lockfile to keep track of versions of modules used and their transitive dependencies. See [.terraform.lock.hcl](https://github.com/mxro/nextjs_aws_terraform/blob/master/packages/app-nextjs-bootstrap/infra/aws/.terraform.lock.hcl) for the lockfile generated for this project.
-- There were a number of changes to [aws\_acm\_certificate](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/acm_certificate) resource in newer versions of the [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest). Previously the Route 53 resource could be defined as follows:
+- There were a number of changes to [aws_acm_certificate](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/acm_certificate) resource in newer versions of the [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest). Previously the Route 53 resource could be defined as follows:
 
 ```hcl
 resource "aws_route53_record" "wildcard_validation" {
@@ -135,6 +135,6 @@ Relying on the static HTML export of Next.js comes with several trade-offs:
 
 There are many different ways to deploy Next.js to AWS, for instance using [AWS Amplify](https://dev.to/aws/deploy-a-next-js-app-to-aws-amplify-3571) or using [EC2](https://medium.com/today-i-solved/how-to-deploy-next-js-on-aws-ec2-with-ssl-https-7980ec6fe8d3). The solution pursued in the example project aims to provide a lightweight, yet flexible solution that makes full use of the capabilities of Terraform while creating low-cost, scalable infrastructure. If you have any questions or ideas how to improve this approach, please be welcome to head over to the [Goldstack GitHub project](https://github.com/goldstack/goldstack#readme) and raise an issue.
 
-* * *
+---
 
 Cover image by [kreatikar](https://pixabay.com/illustrations/developer-programmer-technology-3461405/)

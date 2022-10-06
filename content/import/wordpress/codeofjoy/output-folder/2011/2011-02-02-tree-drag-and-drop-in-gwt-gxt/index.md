@@ -1,8 +1,8 @@
 ---
-title: "Tree Drag and Drop in GWT / GXT"
-date: "2011-02-02"
-categories: 
-  - "java"
+title: 'Tree Drag and Drop in GWT / GXT'
+date: '2011-02-02'
+categories:
+  - 'java'
 ---
 
 In Ext Gwt or GXT there are various ways to intercept drag and drop events directed at a Tree or TreeGrid. However, many of these do not necessarily lead to the expected results. There is also not much documentation of how to work with these events.
@@ -15,7 +15,6 @@ This implementation should have the following functions:
 - public void storeDataChanged(StoreEvent<ModelData> se)
 - public void storeRemove(StoreEvent<ModelData> se)
 - public void storeUpdate(StoreEvent<ModelData> se)
-    
 
 1. The secret now is really that the events for each of these methods need to **be cast to TreeStoreEvent** (com.extjs.gxt.ui.client.store.TreeStoreEvent)
 

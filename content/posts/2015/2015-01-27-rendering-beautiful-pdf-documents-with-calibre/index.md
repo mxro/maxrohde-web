@@ -1,8 +1,8 @@
 ---
-title: "Rendering Beautiful PDF Documents with Calibre"
-date: "2015-01-27"
-tags: 
-  - "productivity"
+title: 'Rendering Beautiful PDF Documents with Calibre'
+date: '2015-01-27'
+tags:
+  - 'productivity'
 ---
 
 The free software [Calibre](http://calibre-ebook.com/) allows to convert various ebook formats (such as EPUB and MOBI) into PDF documents.
@@ -21,7 +21,7 @@ Thus, I have provided here some sample settings for a nice looking PDF output fo
 
 [![calibre-2-page](https://nexnet.files.wordpress.com/2015/01/calibre-2-page.png?w=660)](https://nexnet.files.wordpress.com/2015/01/calibre-2-page.png)
 
--  Go the the Page 'PDF Output' and set the following settings:
+- Go the the Page 'PDF Output' and set the following settings:
 
 [![calibre-3-pdf-output](https://nexnet.files.wordpress.com/2015/01/calibre-3-pdf-output.png?w=660)](https://nexnet.files.wordpress.com/2015/01/calibre-3-pdf-output.png)
 

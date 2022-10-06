@@ -1,8 +1,8 @@
 ---
-title: "Java Modularity Tutorials (OSGi, Declarative Services and Maven)"
-date: "2010-05-25"
-categories: 
-  - "java"
+title: 'Java Modularity Tutorials (OSGi, Declarative Services and Maven)'
+date: '2010-05-25'
+categories:
+  - 'java'
 ---
 
 I provide here a number of tutorials to set up and work with a development environment as depicted below: ![technologiesoverviewpng3.png](images/technologiesoverviewpng3.png)

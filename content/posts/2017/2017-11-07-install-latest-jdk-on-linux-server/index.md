@@ -1,9 +1,9 @@
 ---
-title: "Install Latest JDK on Linux Server"
-date: "2017-11-07"
-categories: 
-  - "java"
-  - "linux"
+title: 'Install Latest JDK on Linux Server'
+date: '2017-11-07'
+categories:
+  - 'java'
+  - 'linux'
 ---
 
 **Edit**: Updated with new script version [provided by MaxdSre](https://axdlog.com/2018/setting-up-oracle-jdk-on-gnu-linux/).

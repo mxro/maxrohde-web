@@ -1,23 +1,23 @@
 ---
-title: "The Ultimate Guide to TypeScript Monorepos"
-date: "2021-11-20"
-categories: 
-  - "devops"
-  - "javascript"
-  - "serverless"
-tags: 
-  - "aws"
-  - "aws-lambda"
-  - "eslint"
-  - "jest"
-  - "monorepo"
-  - "next-js"
-  - "open-source"
-  - "programming"
-  - "react"
-  - "typescript"
-  - "yarn"
-coverImage: "construction-1486781.jpg"
+title: 'The Ultimate Guide to TypeScript Monorepos'
+date: '2021-11-20'
+categories:
+  - 'devops'
+  - 'javascript'
+  - 'serverless'
+tags:
+  - 'aws'
+  - 'aws-lambda'
+  - 'eslint'
+  - 'jest'
+  - 'monorepo'
+  - 'next-js'
+  - 'open-source'
+  - 'programming'
+  - 'react'
+  - 'typescript'
+  - 'yarn'
+coverImage: 'construction-1486781.jpg'
 ---
 
 I've written a couple of posts about how to set up JavaScript and TypeScript Monorepos over the past three years ([#1](https://maxrohde.com/2018/12/19/mastering-modular-javascript/), [#2](https://maxrohde.com/2018/12/24/graphql-apollo-starter-kit-lerna-node-js/), [#3](https://maxrohde.com/2018/12/27/graphql-node-js-and-react-monorepo-starter-kit/), [#4](https://maxrohde.com/2019/06/02/setting-up-continuous-deployment-with-lerna-and-buildkite/), [#5](https://maxrohde.com/2020/02/18/knex-and-typescript-starter-project/), [#6](https://maxrohde.com/2021/05/01/lambda-go-starter-project/), [#7](https://maxrohde.com/2021/10/01/typescript-monorepo-with-yarn-and-project-references/)), and I kind of thought I had it all figured out - but I didn't.
@@ -212,12 +212,7 @@ const nextConfig = {
   },
 };
 
-const config = withPlugins(
-  [
-    [withTM()],
-  ],
-  nextConfig
-);
+const config = withPlugins([[withTM()]], nextConfig);
 
 module.exports = config;
 ```

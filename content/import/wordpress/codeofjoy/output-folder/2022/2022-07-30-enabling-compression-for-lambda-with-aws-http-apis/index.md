@@ -1,18 +1,18 @@
 ---
-title: "Enabling Compression for Lambda with AWS HTTP APIs"
-date: "2022-07-30"
-categories: 
-  - "javascript"
-  - "serverless"
-tags: 
-  - "aws"
-  - "coding"
-  - "devops"
-  - "open-source"
-  - "programming"
-  - "rest"
-  - "typescript"
-coverImage: "iam_os-pmidin9x1ne-unsplash.jpg"
+title: 'Enabling Compression for Lambda with AWS HTTP APIs'
+date: '2022-07-30'
+categories:
+  - 'javascript'
+  - 'serverless'
+tags:
+  - 'aws'
+  - 'coding'
+  - 'devops'
+  - 'open-source'
+  - 'programming'
+  - 'rest'
+  - 'typescript'
+coverImage: 'iam_os-pmidin9x1ne-unsplash.jpg'
 ---
 
 [AWS HTTP APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html) provides a new way to deploy REST-based APIs in AWS; providing a number of simplifications over the original [REST APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-rest-api.html).
@@ -86,10 +86,10 @@ Essentially we need to:
 - Determine which compression formats the client accepts by querying the `accept-encoding` header.
 - If the client does not support compression, return the uncompressed payload.
 - If the client does support compression:
-    - apply the supported compression format (`br`, `gzip` or `deflate`),
-    - Base64 encode the result,
-    - set the `isBase64Encoded` property in the result, and
-    - set the Base64 encoded result as the `body` of the returned response.
+  - apply the supported compression format (`br`, `gzip` or `deflate`),
+  - Base64 encode the result,
+  - set the `isBase64Encoded` property in the result, and
+  - set the Base64 encoded result as the `body` of the returned response.
 
 ## Final Thoughts
 
@@ -97,6 +97,6 @@ Compression can be CPU intensive, thus it could be prudent to cache the compress
 
 If you have any ideas of improving the library, please be welcome to submit an [issue](https://github.com/goldstack/goldstack/issues) 🤗.
 
-* * *
+---
 
-Cover image by [iam\_os](https://unsplash.com/@iam_os).
+Cover image by [iam_os](https://unsplash.com/@iam_os).

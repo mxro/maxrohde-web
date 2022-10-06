@@ -1,10 +1,10 @@
 ---
-title: "Git Versioning: Beyond Revisr"
-date: "2018-01-18"
-tags: 
-  - "git"
-  - "wordpress"
-coverImage: "info.png"
+title: 'Git Versioning: Beyond Revisr'
+date: '2018-01-18'
+tags:
+  - 'git'
+  - 'wordpress'
+coverImage: 'info.png'
 ---
 
 Some time ago, I have written an article about how to [set up versioning for WordPress using git](https://maxrohde.com/2017/11/12/versioning-wordpress-with-git-and-revisr/). I now came across an article by Newt Labs which have created an infographic about the [justification for using git for WordPress](https://newtlabs.co.uk/why-git-is-really-important-for-your-wordpress-site-infographic/). I think this infographic is quite insightful, so I will provide it below (with the kind permission of Newt Labs).

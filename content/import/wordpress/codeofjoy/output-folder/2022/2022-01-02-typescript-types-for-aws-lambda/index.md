@@ -1,15 +1,15 @@
 ---
-title: "TypeScript Types for AWS Lambda"
-date: "2022-01-02"
-categories: 
-  - "devops"
-  - "javascript"
-tags: 
-  - "aws"
-  - "aws-lambda"
-  - "programming"
-  - "typescript"
-coverImage: "lambda_handler.png"
+title: 'TypeScript Types for AWS Lambda'
+date: '2022-01-02'
+categories:
+  - 'devops'
+  - 'javascript'
+tags:
+  - 'aws'
+  - 'aws-lambda'
+  - 'programming'
+  - 'typescript'
+coverImage: 'lambda_handler.png'
 ---
 
 [TypeScript](https://www.typescriptlang.org/) is an excellent language for writing AWS Lambda functions. Its flexible static typing allows for high developer productivity and since it can be transpiled into JavaScript, our code can be bundled into small deployment packages that allow for [fast Lambda cold starts](https://mikhail.io/serverless/coldstarts/aws/languages/), without need for [keeping 'warm' instances of our lambdas](https://dev.to/shivangchauhan7/how-to-prevent-lambda-cold-starts-using-serverless-framework-m44).
@@ -48,7 +48,10 @@ For version [1.0](https://docs.aws.amazon.com/apigateway/latest/developerguide/h
 Example for handler:
 
 ```typescript
-export type APIGatewayProxyHandler = Handler<APIGatewayProxyEvent, APIGatewayProxyResult>;
+export type APIGatewayProxyHandler = Handler<
+  APIGatewayProxyEvent,
+  APIGatewayProxyResult
+>;
 ```
 
 ### AWS API Gateway HTTP and REST API Proxy Integration V2.0
@@ -69,8 +72,14 @@ export interface APIGatewayEventRequestContextV2 { ... }
 Note that under version `2.0` the result of the invocation can an object or a string as well, so the following are also valid declarations for the handler (see [Lambda function response format](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-integrations-lambda.html#http-api-develop-integrations-lambda.response)):
 
 ```typescript
-export type APIGatewayProxyHandlerV2<T = never> = Handler<APIGatewayProxyEventV2, any>;
-export type APIGatewayProxyHandlerV2<T = never> = Handler<APIGatewayProxyEventV2, string>;
+export type APIGatewayProxyHandlerV2<T = never> = Handler<
+  APIGatewayProxyEventV2,
+  any
+>;
+export type APIGatewayProxyHandlerV2<T = never> = Handler<
+  APIGatewayProxyEventV2,
+  string
+>;
 ```
 
 If possible, replace `any` with your own custom type.

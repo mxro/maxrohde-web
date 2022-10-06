@@ -1,8 +1,8 @@
 ---
-title: "Click on Links in Editable JEditorPanes"
-date: "2010-04-16"
-categories: 
-  - "java"
+title: 'Click on Links in Editable JEditorPanes'
+date: '2010-04-16'
+categories:
+  - 'java'
 ---
 
 JEditorPane is a Java Swing component, which allows to display and edit rich text. Supported formats are RTF and HTML. When using HTML, the user can click on hyperlinks embedded in the documents. However, this only works when the JEditorPane is not in edit mode (setEditable(false)).
@@ -52,7 +52,7 @@ MouseMotionListener {
         private int curOffset;
         /**
          * Called for a mouse click event.
-         * If the component is read-only (ie a browser) then 
+         * If the component is read-only (ie a browser) then
          * the clicked event is used to drive an attempt to
          * follow the reference specified by a link.
          *
@@ -61,7 +61,7 @@ MouseMotionListener {
          */
         public void mouseClicked(MouseEvent e) {
                 JEditorPane editor = (JEditorPane) e.getSource();
-                if ( ((!editor.isEditable()) || e.getClickCount() == 2) 
+                if ( ((!editor.isEditable()) || e.getClickCount() == 2)
                                 &amp;&amp; SwingUtilities.isLeftMouseButton(e)) {
                         Point pt = new Point(e.getX(), e.getY());
                         int pos = editor.viewToModel(pt);

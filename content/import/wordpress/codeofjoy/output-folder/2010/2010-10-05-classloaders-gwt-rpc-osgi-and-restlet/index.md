@@ -1,8 +1,8 @@
 ---
-title: "Classloaders: GWT RPC, OSGi and Restlet"
-date: "2010-10-05"
-categories: 
-  - "java"
+title: 'Classloaders: GWT RPC, OSGi and Restlet'
+date: '2010-10-05'
+categories:
+  - 'java'
 ---
 
 **Problem**
