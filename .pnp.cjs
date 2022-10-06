@@ -1640,6 +1640,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["handlebars", "npm:4.7.7"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:0.4.5", {\
+          "packageLocation": "./.yarn/cache/@goldstack-infra-aws-npm-0.4.5-68b8949ce4-91d6523d2a.zip/node_modules/@goldstack/infra-aws/",\
+          "packageDependencies": [\
+            ["@goldstack/infra-aws", "npm:0.4.5"],\
+            ["@goldstack/infra", "npm:0.4.2"],\
+            ["@goldstack/utils-config", "npm:0.4.2"],\
+            ["@goldstack/utils-log", "npm:0.3.2"],\
+            ["@goldstack/utils-package", "npm:0.4.2"],\
+            ["@goldstack/utils-sh", "npm:0.5.2"],\
+            ["aws-sdk", "npm:2.1222.0"],\
+            ["axios", "npm:0.21.2"],\
+            ["handlebars", "npm:4.7.7"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@goldstack/nodemonx", [\
@@ -1707,6 +1722,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/utils-terraform", "npm:0.4.3"],\
             ["@goldstack/utils-terraform-aws", "npm:0.4.3"],\
             ["aws-sdk", "npm:2.1055.0"],\
+            ["uuid", "npm:8.3.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:0.4.5", {\
+          "packageLocation": "./.yarn/cache/@goldstack-template-email-send-npm-0.4.5-b3cf4027ff-40b80f905d.zip/node_modules/@goldstack/template-email-send/",\
+          "packageDependencies": [\
+            ["@goldstack/template-email-send", "npm:0.4.5"],\
+            ["@goldstack/infra", "npm:0.4.2"],\
+            ["@goldstack/infra-aws", "npm:0.4.5"],\
+            ["@goldstack/utils-cli", "npm:0.3.2"],\
+            ["@goldstack/utils-esbuild", "npm:0.5.2"],\
+            ["@goldstack/utils-package", "npm:0.4.2"],\
+            ["@goldstack/utils-package-config-embedded", "npm:0.5.2"],\
+            ["@goldstack/utils-terraform", "npm:0.4.5"],\
+            ["@goldstack/utils-terraform-aws", "npm:0.4.5"],\
+            ["aws-sdk", "npm:2.1222.0"],\
             ["uuid", "npm:8.3.0"]\
           ],\
           "linkType": "HARD"\
@@ -2387,6 +2419,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["yargs", "npm:17.5.1"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:0.4.5", {\
+          "packageLocation": "./.yarn/cache/@goldstack-utils-terraform-npm-0.4.5-6cec8ebd51-b69aa424d1.zip/node_modules/@goldstack/utils-terraform/",\
+          "packageDependencies": [\
+            ["@goldstack/utils-terraform", "npm:0.4.5"],\
+            ["@goldstack/infra", "npm:0.4.2"],\
+            ["@goldstack/infra-aws", "npm:0.4.5"],\
+            ["@goldstack/utils-config", "npm:0.4.2"],\
+            ["@goldstack/utils-docker", "npm:0.4.2"],\
+            ["@goldstack/utils-log", "npm:0.3.2"],\
+            ["@goldstack/utils-package", "npm:0.4.2"],\
+            ["@goldstack/utils-sh", "npm:0.5.2"],\
+            ["json-stable-stringify", "npm:1.0.1"],\
+            ["prompt-sync", "npm:4.2.0"],\
+            ["yargs", "npm:17.5.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@goldstack/utils-terraform-aws", [\
@@ -2428,6 +2477,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/utils-package", "npm:0.4.2"],\
             ["@goldstack/utils-sh", "npm:0.5.2"],\
             ["@goldstack/utils-terraform", "npm:0.4.4"],\
+            ["aws-sdk", "npm:2.1222.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:0.4.5", {\
+          "packageLocation": "./.yarn/cache/@goldstack-utils-terraform-aws-npm-0.4.5-c2ee80af6d-131b5dec60.zip/node_modules/@goldstack/utils-terraform-aws/",\
+          "packageDependencies": [\
+            ["@goldstack/utils-terraform-aws", "npm:0.4.5"],\
+            ["@goldstack/infra-aws", "npm:0.4.5"],\
+            ["@goldstack/utils-config", "npm:0.4.2"],\
+            ["@goldstack/utils-log", "npm:0.3.2"],\
+            ["@goldstack/utils-package", "npm:0.4.2"],\
+            ["@goldstack/utils-sh", "npm:0.5.2"],\
+            ["@goldstack/utils-terraform", "npm:0.4.5"],\
             ["aws-sdk", "npm:2.1222.0"]\
           ],\
           "linkType": "HARD"\
@@ -9192,7 +9255,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/email-send/",\
           "packageDependencies": [\
             ["email-send", "workspace:packages/email-send"],\
-            ["@goldstack/template-email-send", "npm:0.4.3"],\
+            ["@goldstack/template-email-send", "npm:0.4.5"],\
             ["@goldstack/template-email-send-cli", "npm:0.5.3"],\
             ["@goldstack/utils-git", "npm:0.2.2"],\
             ["@goldstack/utils-sh", "npm:0.5.2"],\
