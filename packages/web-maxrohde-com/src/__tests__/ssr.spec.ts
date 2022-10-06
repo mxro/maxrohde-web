@@ -27,9 +27,7 @@ describe('Should create page', () => {
   test('Should receive response and support parameters', async () => {
     const res = await fetch(`${getEndpoint()}/`);
     const response = await res.text();
-    expect(response).toContain('Hi there');
-    // ensure CSS is compiled correctly and correct class names injected
-    expect(response).toContain('message');
+    expect(response).toContain('Code of Joy');
   });
 
   afterAll(async () => {
