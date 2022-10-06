@@ -244,8 +244,6 @@ First we change the PersonResource Service description and define a POST service
 
 **public** **interface** PersonResource { @Post **public** Person copy(Person p);
 
-
-
 }
 
 Next we change the implementation of the service:
@@ -261,8 +259,6 @@ Next we change the implementation of the service:
 **return** p;
 
 }
-
-
 
 }
 

@@ -30,6 +30,4 @@ James Collins in his book '[Good to Great](http://en.wikipedia.org/wiki/Good_to_
 
 Apart from an obvious lack of compassion, this could be another downside of Steve Jobs' leadership style. Will Apple prevail to be as successful as they have been with Jobs at the helm? In any case, however great a leader Jobs was, I do not think that he is a good role model for future leaders. Since, looking at the descriptions in ‪Isaacson‬'s biography, it appears that some of his success was built on compromising the dignity of subordinates; and dignity, in my point of view, is something that should never be compromised on no matter how 'great' the endeavour (as should be the [law](http://www.nytimes.com/2014/05/03/business/steve-jobs-a-genius-at-pushing-boundaries-too.html)).
 
-
-
 Picture Credits: [http://en.wikipedia.org/wiki/File:Stevejobs_Macworld2005.jpg](http://en.wikipedia.org/wiki/File:Stevejobs_Macworld2005.jpg)

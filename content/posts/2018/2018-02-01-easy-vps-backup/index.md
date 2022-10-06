@@ -112,8 +112,6 @@ sudo ssh backup@...
 
 ```
 
-
-
 ### Schedule Regular Backups (Backup Client)
 
 - On the Backup Client, create the file /root/restic_password. Paste your password into this file.
