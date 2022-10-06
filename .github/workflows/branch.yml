@@ -20,9 +20,17 @@ jobs:
           yarn format-check
           yarn lint
 
+  test:
+    name: '🔍 Tests'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/goldstack-setup
+      - run: |
+          yarn test-ci
 
   audit:
-    name: '🔍 NPM Audit'
+    name: '🔒 NPM Audit'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
