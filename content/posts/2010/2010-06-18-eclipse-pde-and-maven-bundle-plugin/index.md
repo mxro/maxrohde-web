@@ -1,8 +1,8 @@
 ---
-title: "Eclipse PDE and Maven Bundle Plugin"
-date: "2010-06-18"
-categories: 
-  - "java"
+title: 'Eclipse PDE and Maven Bundle Plugin'
+date: '2010-06-18'
+categories:
+  - 'java'
 ---
 
 To get eclipse PDE working hand in hand with Maven is a rather tricky task. I have already written about some necessary [tweaks to get it working](http://nexnet.wordpress.com/2010/06/05/loading-resources-in-class-package-for-pde-using-eclipse-iam/).
@@ -39,7 +39,7 @@ Classpath entries such as the following are created to link to the Maven depende
 
 A comment is added to the project description
 
-<comment>NO\_M2ECLIPSE\_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
+<comment>NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
 
 (for me it seemed to work fine with eclipse iam.
 

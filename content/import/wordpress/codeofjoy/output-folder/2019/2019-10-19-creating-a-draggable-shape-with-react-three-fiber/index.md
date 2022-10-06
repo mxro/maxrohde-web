@@ -1,13 +1,13 @@
 ---
-title: "Creating a Draggable Shape with React Three Fiber"
-date: "2019-10-19"
-categories: 
-  - "javascript"
-tags: 
-  - "open-source"
-  - "react"
-  - "three-js"
-coverImage: "draggable.png"
+title: 'Creating a Draggable Shape with React Three Fiber'
+date: '2019-10-19'
+categories:
+  - 'javascript'
+tags:
+  - 'open-source'
+  - 'react'
+  - 'three-js'
+coverImage: 'draggable.png'
 ---
 
 I recently became interested how to render 3D graphics in the browser. I think [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) is an extremely powerful technology and may one day become an important way of rendering content on the web.
@@ -31,55 +31,65 @@ And here the link to the source code:
 I think the source code is pretty self-explanatory. Essentially all logic is encapsulated into `index.js`:
 
 ```javascript
-import ReactDOM from "react-dom"
-import React, { useRef, useState } from "react"
-import { Canvas, useThree, useFrame } from "react-three-fiber"
-import { useDrag } from "react-use-gesture"
-import "./index.css"
+import ReactDOM from 'react-dom';
+import React, { useRef, useState } from 'react';
+import { Canvas, useThree, useFrame } from 'react-three-fiber';
+import { useDrag } from 'react-use-gesture';
+import './index.css';
 
 function DraggableDodecahedron() {
-    const colors = ["hotpink", "red", "blue", "green", "yellow"];
-    const ref = useRef();
-    const [colorIdx, setColorIdx] = useState(0);
-    const [position, setPosition] = useState([0, 0, 0]);
-    const { size, viewport } = useThree();
-    const aspect = size.width / viewport.width;
-    useFrame(() => {
-        ref.current.rotation.z += 0.01
-        ref.current.rotation.x += 0.01
-    });
-    const bind = useDrag(({ offset: [x, y] }) => {
-        const [,, z] = position;
-        setPosition([x / aspect, -y / aspect, z]);
-    }, { pointerEvents: true });
+  const colors = ['hotpink', 'red', 'blue', 'green', 'yellow'];
+  const ref = useRef();
+  const [colorIdx, setColorIdx] = useState(0);
+  const [position, setPosition] = useState([0, 0, 0]);
+  const { size, viewport } = useThree();
+  const aspect = size.width / viewport.width;
+  useFrame(() => {
+    ref.current.rotation.z += 0.01;
+    ref.current.rotation.x += 0.01;
+  });
+  const bind = useDrag(
+    ({ offset: [x, y] }) => {
+      const [, , z] = position;
+      setPosition([x / aspect, -y / aspect, z]);
+    },
+    { pointerEvents: true }
+  );
 
-    return (
-        <mesh position={position} {...bind()}
-            ref={ref}
-            onClick={e => {
-                if (colorIdx === 4) {
-                    setColorIdx(0);
-                } else {
-                    setColorIdx(colorIdx+1);
-                }
-            }}
-            onPointerOver={e => console.log('hover')}
-            onPointerOut={e => console.log('unhover')}>
-
-            <dodecahedronBufferGeometry attach="geometry" />
-            <meshLambertMaterial attach="material" color={colors[colorIdx]} />
-
-        </mesh>
-    )
+  return (
+    <mesh
+      position={position}
+      {...bind()}
+      ref={ref}
+      onClick={(e) => {
+        if (colorIdx === 4) {
+          setColorIdx(0);
+        } else {
+          setColorIdx(colorIdx + 1);
+        }
+      }}
+      onPointerOver={(e) => console.log('hover')}
+      onPointerOut={(e) => console.log('unhover')}
+    >
+      <dodecahedronBufferGeometry attach="geometry" />
+      <meshLambertMaterial attach="material" color={colors[colorIdx]} />
+    </mesh>
+  );
 }
 
 ReactDOM.render(
-    <Canvas>
-        <spotLight intensity={1.2} position={[30, 30, 50]} angle={0.2} penumbra={1} castShadow />
-        <DraggableDodecahedron />
-    </Canvas>,
-    document.getElementById("root")
-)
+  <Canvas>
+    <spotLight
+      intensity={1.2}
+      position={[30, 30, 50]}
+      angle={0.2}
+      penumbra={1}
+      castShadow
+    />
+    <DraggableDodecahedron />
+  </Canvas>,
+  document.getElementById('root')
+);
 ```
 
 Noteworthy here is that instead of creating a Material, Geometry and Mesh directly, they are defined in JSX. Also, instead of having to request an animation frame, we are using the hook `useFrame` to drive the animation for our component.

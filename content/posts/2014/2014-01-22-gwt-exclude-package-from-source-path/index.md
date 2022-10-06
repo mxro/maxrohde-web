@@ -1,11 +1,11 @@
 ---
-title: "GWT Exclude Package From Source Path"
-date: "2014-01-22"
-categories: 
-  - "java"
-tags: 
-  - "google-web-toolkit"
-  - "gwt"
+title: 'GWT Exclude Package From Source Path'
+date: '2014-01-22'
+categories:
+  - 'java'
+tags:
+  - 'google-web-toolkit'
+  - 'gwt'
 ---
 
 **Problem**

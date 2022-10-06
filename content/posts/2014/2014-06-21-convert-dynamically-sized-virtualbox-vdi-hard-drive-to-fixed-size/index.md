@@ -1,10 +1,10 @@
 ---
-title: "Convert Dynamically Sized VirtualBox VDI Hard Drive to Fixed Size"
-date: "2014-06-21"
-categories: 
-  - "linux"
-tags: 
-  - "virtualbox"
+title: 'Convert Dynamically Sized VirtualBox VDI Hard Drive to Fixed Size'
+date: '2014-06-21'
+categories:
+  - 'linux'
+tags:
+  - 'virtualbox'
 ---
 
 ## The Problem

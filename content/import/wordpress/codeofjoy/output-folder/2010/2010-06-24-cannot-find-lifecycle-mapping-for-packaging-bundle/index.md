@@ -1,8 +1,8 @@
 ---
 title: "Cannot find lifecycle mapping for packaging: 'bundle'."
-date: "2010-06-24"
-categories: 
-  - "java"
+date: '2010-06-24'
+categories:
+  - 'java'
 ---
 
 **Problem**

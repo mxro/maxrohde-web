@@ -1,8 +1,8 @@
 ---
-title: "Regular Expression to Find HTML Comments in Java"
-date: "2012-08-17"
-categories: 
-  - "java"
+title: 'Regular Expression to Find HTML Comments in Java'
+date: '2012-08-17'
+categories:
+  - 'java'
 ---
 
 ## Problem

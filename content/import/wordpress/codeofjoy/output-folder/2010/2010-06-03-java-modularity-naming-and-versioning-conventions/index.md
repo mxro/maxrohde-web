@@ -1,8 +1,8 @@
 ---
-title: "Java Modularity: Naming and Versioning Conventions"
-date: "2010-06-03"
-categories: 
-  - "java"
+title: 'Java Modularity: Naming and Versioning Conventions'
+date: '2010-06-03'
+categories:
+  - 'java'
 ---
 
 **General Guidelines**

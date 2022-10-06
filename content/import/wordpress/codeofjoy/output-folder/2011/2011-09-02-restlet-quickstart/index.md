@@ -1,8 +1,8 @@
 ---
-title: "Restlet Quickstart"
-date: "2011-09-02"
-categories: 
-  - "java"
+title: 'Restlet Quickstart'
+date: '2011-09-02'
+categories:
+  - 'java'
 ---
 
 The Restlet framework is one of the possible options to provide Restful web services in Java. In many framework comparison, Restlet is criticized for being a little bit difficult to understand as well as to perform slightly worse than competing frameworks (e.g. [Apache Wink](http://en.wikipedia.org/wiki/Apache_Wink), [Jersey](http://jersey.java.net/), ...) ([Sangeetha, 2011](http://www.citeulike.org/user/mxro/article/9584259)). However, Restlet is also a very flexible framework and it is very lightweight, in that it has very few dependencies to heavyweight components, for instance servlet containers. This enables Restlet to play nicely with a number of technologies including Google Android, Google App Engine and Google Web Toolkit applications.
@@ -244,25 +244,21 @@ First we change the PersonResource Service description and define a POST service
 
 **public** **interface** PersonResource { @Post **public** Person copy(Person p);
 
-    
-
 }
 
 Next we change the implementation of the service:
 
 **import** org.restlet.resource.ServerResource;
 
-**public** **class** PersonServerResource **extends** ServerResource **implements** PersonResource {     
+**public** **class** PersonServerResource **extends** ServerResource **implements** PersonResource {
 
-    @Override
+@Override
 
-    **public** Person copy(**final** Person p) {
+**public** Person copy(**final** Person p) {
 
-        **return** p;
+**return** p;
 
-    }
-
-    
+}
 
 }
 

@@ -1,25 +1,25 @@
 ---
-title: "Setting up Prometheus and Grafana for CentOS / RHEL 7 Monitoring"
-date: "2018-01-23"
-categories: 
-  - "linux"
-tags: 
-  - "devops"
-  - "grafana"
-  - "metrics"
-  - "programming"
-  - "prometheus"
+title: 'Setting up Prometheus and Grafana for CentOS / RHEL 7 Monitoring'
+date: '2018-01-23'
+categories:
+  - 'linux'
+tags:
+  - 'devops'
+  - 'grafana'
+  - 'metrics'
+  - 'programming'
+  - 'prometheus'
 ---
 
 As mentioned in [my previous post](https://maxrohde.com/2018/01/23/setting-up-graylog-server/), I have long been looking for a centralised solution for collecting logs and monitoring metrics. I think my search was unsuccessful since I was looking for too many things in one solution. Instead I found now two separate solutions, one for log management ([using Graylog](https://maxrohde.com/2018/01/23/setting-up-graylog-server/)) and one for metrics (using [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/)). I deployed both of these on very inexpensive VPS machines and so far I am very happy with them.
 
-In this post, I provide some pointers how to set up the metrics solution based on Prometheus and Grafana. I assume you are using a RHEL / CentOS system as the server hosing Prometheus and Grafana and you are interested in the OS metrics for a CentOS system. This tutorial will guide you through setting up the Prometheus server, collecting metrics for it using [node\_exporter](https://github.com/prometheus/node_exporter) and finally how to create dashboards and alerts using Grafana for the collected metrics.
+In this post, I provide some pointers how to set up the metrics solution based on Prometheus and Grafana. I assume you are using a RHEL / CentOS system as the server hosing Prometheus and Grafana and you are interested in the OS metrics for a CentOS system. This tutorial will guide you through setting up the Prometheus server, collecting metrics for it using [node_exporter](https://github.com/prometheus/node_exporter) and finally how to create dashboards and alerts using Grafana for the collected metrics.
 
 ### Installing Prometheus Server
 
 - Follow the excellent instructions [here](https://www.enigma14.eu/martin/blog/2017/09/20/prometheus-installation-on-centos-7/) with the following modifications.
-    - Make sure to download the latest version of Prometheus (the link can be obtained on the [Prometheus download](https://prometheus.io/download/) page, this guide works with version 2.1.0)
-    - For the systemd service, use the following file:
+  - Make sure to download the latest version of Prometheus (the link can be obtained on the [Prometheus download](https://prometheus.io/download/) page, this guide works with version 2.1.0)
+  - For the systemd service, use the following file:
 
 ```
 
@@ -39,7 +39,7 @@ WantedBy=multi-user.target
 
 **Note**: This configuration will run the Prometheus server as root. In a production environment, it is highly recommended to run it as another user (e.g. 'prometheus')
 
-- If you are using a firewall, add the following rule to _/etc/sysconfig/iptables_ and restart service _iptables_:
+- If you are using a firewall, add the following rule to */etc/sysconfig/iptables* and restart service _iptables_:
 
 ```
 
@@ -52,7 +52,7 @@ WantedBy=multi-user.target
 
 - Go to http://yourserver.com:9090
 - Click on Graph
-- Enter the expression _http\_requests\_total_ and click **Execute**.
+- Enter the expression *http_requests_total* and click **Execute**.
 
 You should the data of http requests served by the Prometheus server itself. If you click on the tab graph, you can see the data as a graph.
 
@@ -76,7 +76,7 @@ ln -s node_exporter-0.15.2.linux-amd64 node_exporter
 
 ```
 
-- Define a service for node\_exporter in _/etc/systemd/system/node\_exporter.service_
+- Define a service for node_exporter in */etc/systemd/system/node_exporter.service*
 
 (or if you are using init.d, please see [this article](http://maxrohde.com/2018/02/01/configuring-an-initd-service-for-node_exporter/)).
 
@@ -97,7 +97,7 @@ WantedBy=default.target
 
 **Note**: This configuration will run the Grafana server as root. In a production environment, it is highly recommended to run it as another user (e.g. 'prometheus')
 
-(The _\--no-collector.diskstats_ is added above since diskstats often does not work in virtualized environments. If that is not an issue for you, be free to leave this argument out.)
+(The *\--no-collector.diskstats* is added above since diskstats often does not work in virtualized environments. If that is not an issue for you, be free to leave this argument out.)
 
 - Enable and start service
 
@@ -119,9 +119,9 @@ static_configs:
 - targets: ['localhost:9100']
 ```
 
-Now if you got to yourserver.com:9090/graph you can for instance enter the expression _node\_memory\_MemFree_ and see the free memory available on the server.
+Now if you got to yourserver.com:9090/graph you can for instance enter the expression *node_memory_MemFree* and see the free memory available on the server.
 
-You can also install node\_exporter on another server. Simply point the job definition then to this servers address; and of course remember to open port 9100 on the server.
+You can also install node_exporter on another server. Simply point the job definition then to this servers address; and of course remember to open port 9100 on the server.
 
 ### Installing Grafana
 
@@ -141,7 +141,7 @@ To install Grafana locally:
 
 ```
 
-- In the file _/etc/grafana/grafana.ini_, provide details for an SMTP connection which can be used for sending emails (section \[smtp\]).
+- In the file */etc/grafana/grafana.ini*, provide details for an SMTP connection which can be used for sending emails (section \[smtp\]).
 - Also update the host name in the field _domain_ to the address at which your server can be reached on the internet.
 
 ### Configuring Grafana
@@ -188,7 +188,7 @@ While Prometheus has some build in alerting facilities, alerting in Grafana is m
 ![panel](images/panel.png)
 
 - Next click on **Edit** in the menu which is shown above the panel
-- Go to the **Alert** tab and click on **C****reate Alert**
+- Go to the **Alert** tab and click on **C\*\***reate Alert\*\*
 
 ![create alert](images/create-alert.png)
 

@@ -1,21 +1,21 @@
 ---
-title: "Wholesome Goals for Every Day"
-date: "2020-04-18"
-categories: 
-  - "buddhism"
-  - "philosophy"
-tags: 
-  - "goals"
-  - "habit"
-  - "happiness"
-  - "life"
-  - "life-help"
-  - "love"
-  - "peace"
-  - "practice"
-  - "practices"
-  - "purpose"
-coverImage: "landscape-2090495.jpg"
+title: 'Wholesome Goals for Every Day'
+date: '2020-04-18'
+categories:
+  - 'buddhism'
+  - 'philosophy'
+tags:
+  - 'goals'
+  - 'habit'
+  - 'happiness'
+  - 'life'
+  - 'life-help'
+  - 'love'
+  - 'peace'
+  - 'practice'
+  - 'practices'
+  - 'purpose'
+coverImage: 'landscape-2090495.jpg'
 ---
 
 I've discussed a [number of practices](https://spearoflight.blog/practices/) that may aid in the path to enlightenment. Each of these, I believe is valuable and worthwhile to pursue; however, in their sum, they are quite an undertaking to accomplish, and it is very difficult to practice each of them daily. I, for once, fail at that miserably.

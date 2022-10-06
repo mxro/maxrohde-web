@@ -1,17 +1,17 @@
 ---
-title: "Deploy Lambda using SAM and Buildkite"
-date: "2019-06-08"
-categories: 
-  - "devops"
-  - "javascript"
-  - "serverless"
-tags: 
-  - "aws"
-  - "aws-lambda"
-  - "aws-sam"
-  - "buildkite"
-  - "serverless-application-model"
-coverImage: "screen-shot-2019-06-08-at-3.05.07-pm.png"
+title: 'Deploy Lambda using SAM and Buildkite'
+date: '2019-06-08'
+categories:
+  - 'devops'
+  - 'javascript'
+  - 'serverless'
+tags:
+  - 'aws'
+  - 'aws-lambda'
+  - 'aws-sam'
+  - 'buildkite'
+  - 'serverless-application-model'
+coverImage: 'screen-shot-2019-06-08-at-3.05.07-pm.png'
 ---
 
 One of the many good things about [Lambdas on AWS](https://aws.amazon.com/lambda/) is that they are quite easy to deploy. Simply speaking, all that one requires is a zip file of an application that then can be uploaded using an API call.
@@ -61,7 +61,7 @@ The script that is called in the pipeline simply calls the AWS SAM CLI to packag
 #!/bin/bash -e
 
 # Create packaged template and upload to S3
-sam package --template-file template.yml \ 
+sam package --template-file template.yml \
             --s3-bucket sam-buildkite-deployment-test \
             --output-template-file packaged.yml
 

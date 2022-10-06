@@ -1,11 +1,11 @@
 ---
-title: "Everything new in JavaScript since ES6"
-date: "2018-12-19"
-categories: 
-  - "javascript"
-tags: 
-  - "programming"
-coverImage: "js.jpg"
+title: 'Everything new in JavaScript since ES6'
+date: '2018-12-19'
+categories:
+  - 'javascript'
+tags:
+  - 'programming'
+coverImage: 'js.jpg'
 ---
 
 It is no secret that things in the tech world change rather rapidly. It's difficult to keep track of everything at the same time. For instance I have been working with JavaScript quite extensively some years ago but recently have been more involved with other tech stacks. Thus I have only followed the developments in the JavaScript world sporadically and was quite surprised by how many things have changed since the days of [JavaScript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do).
@@ -31,24 +31,20 @@ This is not a complete list of everything that has changed. For instance, I incl
 Promises for wrapping asynchronous code.
 
 ```javascript
-
-
 let p = new Promise((resolve, reject) => {
-
-   resolve("hello");
-
+  resolve('hello');
 });
 
-p.then((msg) => console.log(msg)); 
-
+p.then((msg) => console.log(msg));
 ```
 
 Executing asynchronous operations in parallel
 
 ```javascript
-
 let parallelOperation = Promise.all([p1, p2]);
-parallelOperation.then((data) => {let [res1, res2] = data; } );
+parallelOperation.then((data) => {
+  let [res1, res2] = data;
+});
 ```
 
 ### Default Parameters and Spread Operator
@@ -62,7 +58,7 @@ parallelOperation.then((data) => {let [res1, res2] = data; } );
 
 - `` `My String⏎NewLine` ``: Multi-line string literals
 - `` `Hello ${person.name}` ``: Intuitive string interpolation
-- ``const proc = sh`kill -9 ${pid}`;``: Tagged template literals for parsing custom languages. The example would result in calling the function `sh` with the parameters `(['kill -9 '], pid)`
+- `` const proc = sh`kill -9 ${pid}`; ``: Tagged template literals for parsing custom languages. The example would result in calling the function `sh` with the parameters `(['kill -9 '], pid)`
 
 ### Object Properties
 
@@ -95,20 +91,16 @@ parallelOperation.then((data) => {let [res1, res2] = data; } );
 `class` keyword for constructing simple classes.
 
 ```javascript
-
 class Point {
-
-  constructor (x, y) {
-     this.x = x;
-     this.y = y;
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
   }
 
-  move (deltax, deltay) {
-     new Point(this.x + deltax, this.y + deltay);
+  move(deltax, deltay) {
+    new Point(this.x + deltax, this.y + deltay);
   }
-
 }
-
 ```
 
 `extends` keyword for extending classes:
@@ -127,16 +119,11 @@ class Car extends Vehicle {
 `static` keyword for static methods
 
 ```javascript
-
-
 class Math {
-
   static add(x, y) {
     return x + y;
   }
-
 }
-
 ```
 
 `get` and `set` keywords for decorated property access.
@@ -184,7 +171,6 @@ new Rectangle(2, 2).area === 4;
 async/await for more expressive asynchronous operations
 
 ```javascript
-
 async function add1(x) {
   return x + 1;
 }
@@ -204,21 +190,17 @@ add2(5).then(console.log);
 Collect all not deconstructed properties from an object in another object:
 
 ```javascript
-
-
-var person = { firstName: "Paul", lastName: "Hendricks", password: "secret"};
-var {password, ...sanitisedPerson } = person;
+var person = { firstName: 'Paul', lastName: 'Hendricks', password: 'secret' };
+var { password, ...sanitisedPerson } = person;
 // sanitisedPerson = {firstName: "Paul", lastName: "Hendricks"}
-
 ```
 
 Spread object properties
 
 ```javascript
+let details = { firstName: 'Paul', lastName: 'Hendricks' };
 
-let details = { firstName: "Paul", lastName: "Hendricks" };
-
-let user = { ...details, password: "secret" };
+let user = { ...details, password: 'secret' };
 ```
 
 ### Finally for Promises
@@ -242,11 +224,9 @@ sayHello().then(() => console.log("success") )
 Special for loops that resolve promises before every iteration.
 
 ```javascript
-
-
 const promises = [
-  new Promise(resolve => resolve(1) ),
-  new Promise(resolve => resolve(2) )
+  new Promise((resolve) => resolve(1)),
+  new Promise((resolve) => resolve(2)),
 ];
 
 async function runAll() {

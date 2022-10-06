@@ -1,14 +1,14 @@
 ---
-title: "Why Does Anything Exist"
-date: "2019-08-18"
-categories: 
-  - "philosophy"
-tags: 
-  - "book"
-  - "existence"
-  - "life"
-  - "science"
-coverImage: "color-1235593.jpg"
+title: 'Why Does Anything Exist'
+date: '2019-08-18'
+categories:
+  - 'philosophy'
+tags:
+  - 'book'
+  - 'existence'
+  - 'life'
+  - 'science'
+coverImage: 'color-1235593.jpg'
 ---
 
 I've recently completed the book [Why Does the World Exist?: An Existential Detective Story](https://www.goodreads.com/review/show/2884918959) by Jim Holt. It was quite an entertaining read but also quite unsatisfactory, since I feel it didn't even come close to giving an answer to the question posed. At most, it provided some interesting examples of philosophical gymnastics such as discussions around if existence might be created by a rule that proves itself.

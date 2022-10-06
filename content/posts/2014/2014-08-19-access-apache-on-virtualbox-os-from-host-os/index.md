@@ -1,10 +1,10 @@
 ---
-title: "Access Apache on VirtualBox OS from Host OS"
-date: "2014-08-19"
-categories: 
-  - "linux"
-tags: 
-  - "virtualbox"
+title: 'Access Apache on VirtualBox OS from Host OS'
+date: '2014-08-19'
+categories:
+  - 'linux'
+tags:
+  - 'virtualbox'
 ---
 
 ## Problem

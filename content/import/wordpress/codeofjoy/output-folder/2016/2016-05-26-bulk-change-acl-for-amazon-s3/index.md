@@ -1,9 +1,9 @@
 ---
-title: "Bulk Change ACL for Amazon S3"
-date: "2016-05-26"
-tags: 
-  - "aws"
-  - "aws-s3"
+title: 'Bulk Change ACL for Amazon S3'
+date: '2016-05-26'
+tags:
+  - 'aws'
+  - 'aws-s3'
 ---
 
 Using [bucket policies](http://docs.aws.amazon.com/AmazonS3/latest/dev/using-iam-policies.html), it is easy to set [ACL settings](http://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html) for all new objects that are uploaded to Amazon S3.

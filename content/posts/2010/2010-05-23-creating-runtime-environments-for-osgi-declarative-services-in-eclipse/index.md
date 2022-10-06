@@ -1,8 +1,8 @@
 ---
-title: "Creating Runtime Environments for OSGi Declarative Services in Eclipse"
-date: "2010-05-23"
-categories: 
-  - "java"
+title: 'Creating Runtime Environments for OSGi Declarative Services in Eclipse'
+date: '2010-05-23'
+categories:
+  - 'java'
 ---
 
 This post is part of a series of posts on java modularity.
@@ -15,7 +15,7 @@ This tutorial depends on the part Part 1: [OSGi + Maven + Declarative Services +
 
 Right Click your project ServiceProvider and select Run as / Run Configurations
 
-Create a new Run Configuration under OSGi Framework with the name Wisdom\_configuration.
+Create a new Run Configuration under OSGi Framework with the name Wisdom_configuration.
 
 Add the bundle org.eclipse.equnix.util to the configuration.
 
@@ -35,7 +35,7 @@ osgi> ss
 
 Framework is launched.
 
-id        State Bundle 0        ACTIVE org.eclipse.osgi\_3.5.2.R35x\_v20100126          Fragments=2, 3 2        RESOLVED javax.transaction\_1.1.1.v201002111330          Master=0 3        RESOLVED org.eclipse.persistence.jpa.equinox.weaving\_1.1.3.v20091002-r5404          Master=0 5        ACTIVE org.eclipse.equinox.util\_1.0.100.v20090520-1800 6        ACTIVE org.eclipse.equinox.ds\_1.1.1.R35x\_v20090806 7        ACTIVE de.mxro.osgi.serviceProvider\_1.0.0.qualifier 8        ACTIVE de.mxro.osgi.serviceDefinition\_1.0.0.qualifier 9        ACTIVE org.eclipse.osgi.services\_3.2.0.v20090520-1800 Type „list“ to see all active services.
+id        State Bundle 0        ACTIVE org.eclipse.osgi_3.5.2.R35x_v20100126          Fragments=2, 3 2        RESOLVED javax.transaction_1.1.1.v201002111330          Master=0 3        RESOLVED org.eclipse.persistence.jpa.equinox.weaving_1.1.3.v20091002-r5404          Master=0 5        ACTIVE org.eclipse.equinox.util_1.0.100.v20090520-1800 6        ACTIVE org.eclipse.equinox.ds_1.1.1.R35x_v20090806 7        ACTIVE de.mxro.osgi.serviceProvider_1.0.0.qualifier 8        ACTIVE de.mxro.osgi.serviceDefinition_1.0.0.qualifier 9        ACTIVE org.eclipse.osgi.services_3.2.0.v20090520-1800 Type „list“ to see all active services.
 
 osgi> list All Components: ID        State                        Component Name                        Located in bundle 1        Satisfied                de.mxro.osgi.serviceProvider                        de.mxro.osgi.serviceProvider(bid=7)
 
@@ -55,7 +55,7 @@ Often, it can be helpful to have an „empty“ OSGi container, in which one can
 
 To create a runtime environment for such a case, you can again right click your SerivceProvider project and select Run/ Run Configurations.
 
-Create a new Run Configuration under OSGi Framework with the name Empty\_OSGi.
+Create a new Run Configuration under OSGi Framework with the name Empty_OSGi.
 
 This time only add the Target Platform bundles but not the bundles from your workspace.
 
@@ -69,7 +69,7 @@ osgi> ss
 
 Framework is launched.
 
-id        State Bundle 0        ACTIVE org.eclipse.osgi\_3.5.2.R35x\_v20100126          Fragments=2, 4 1        ACTIVE org.eclipse.osgi.services\_3.2.0.v20090520-1800 2        RESOLVED javax.transaction\_1.1.1.v201002111330          Master=0 3        ACTIVE org.eclipse.equinox.util\_1.0.100.v20090520-1800 4        RESOLVED org.eclipse.persistence.jpa.equinox.weaving\_1.1.3.v20091002-r5404          Master=0 5        ACTIVE org.eclipse.equinox.ds\_1.1.1.R35x\_v20090806 6        RESOLVED de.mxro.osgi.serviceDefinition\_1.0.0.qualifier 8        RESOLVED de.mxro.osgi.serviceProvider\_1.0.0.201005231854
+id        State Bundle 0        ACTIVE org.eclipse.osgi_3.5.2.R35x_v20100126          Fragments=2, 4 1        ACTIVE org.eclipse.osgi.services_3.2.0.v20090520-1800 2        RESOLVED javax.transaction_1.1.1.v201002111330          Master=0 3        ACTIVE org.eclipse.equinox.util_1.0.100.v20090520-1800 4        RESOLVED org.eclipse.persistence.jpa.equinox.weaving_1.1.3.v20091002-r5404          Master=0 5        ACTIVE org.eclipse.equinox.ds_1.1.1.R35x_v20090806 6        RESOLVED de.mxro.osgi.serviceDefinition_1.0.0.qualifier 8        RESOLVED de.mxro.osgi.serviceProvider_1.0.0.201005231854
 
 **Locate Maven Packages in Local Repository**
 

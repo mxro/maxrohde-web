@@ -1,10 +1,10 @@
 ---
-title: "PlantUML (Open Source Awesomeness)"
-date: "2018-02-06"
-categories: 
-  - "java"
-tags: 
-  - "open-source"
+title: 'PlantUML (Open Source Awesomeness)'
+date: '2018-02-06'
+categories:
+  - 'java'
+tags:
+  - 'open-source'
 ---
 
 I've always had a soft spot for diagrams. I think that representing information in various visual ways tremendously helps our thinking and understanding. Unfortunately it is often a big headache to create (and maintain) diagrams.

@@ -1,18 +1,18 @@
 ---
-title: "Beginners Guide to DynamoDB with Node.js"
-date: "2022-06-10"
-categories: 
-  - "javascript"
-  - "serverless"
-tags: 
-  - "aws"
-  - "coding"
-  - "dynamodb"
-  - "node-js"
-  - "programming"
-  - "tutorial"
-  - "typescript"
-coverImage: "tobias-fischer-pkbzaheg2ng-unsplash.jpg"
+title: 'Beginners Guide to DynamoDB with Node.js'
+date: '2022-06-10'
+categories:
+  - 'javascript'
+  - 'serverless'
+tags:
+  - 'aws'
+  - 'coding'
+  - 'dynamodb'
+  - 'node-js'
+  - 'programming'
+  - 'tutorial'
+  - 'typescript'
+coverImage: 'tobias-fischer-pkbzaheg2ng-unsplash.jpg'
 ---
 
 I have long been very sceptical of so called NoSQL databases. I believe that traditional SQL database provided better higher level abstractions for defining data structures and working with data. However, I have received a few queries for a [DynamoDB](https://aws.amazon.com/dynamodb/) template for my project builder [Goldstack](https://goldstack.party/) and I figured a module handling access to DynamoDB could be a good addition to the template library.
@@ -42,7 +42,7 @@ DynamoDB in essence is a spruced up [Key-Value Store](https://en.wikipedia.org/
 key --> value
 ```
 
-For instance, if we want to define a database of users, we need to determine the _key_ we want to use to identify users. Identifying the right key is usually more important than the value. Since DynamoDB is schemaless we can essentially put anything we like into the value without constraints. Thus we could define user data as follows:
+For instance, if we want to define a database of users, we need to determine the *key* we want to use to identify users. Identifying the right key is usually more important than the value. Since DynamoDB is schemaless we can essentially put anything we like into the value without constraints. Thus we could define user data as follows:
 
 ```
 `joe@email.com` --> {name: 'Joe', dob: '31st of January 2021'}`
@@ -61,7 +61,7 @@ Composite keys are a simple trick in which we combine two different fields toget
 [newsletterSubscribed, email] -> value
 ```
 
-An easy way to accomplish this is to just compose a composite string, such as `false#jane@email.com` but DynamoDB has got a special feature up its sleeve we can use for this: sort keys. DynamoDB allows us to define our key as a composite key that consists of two elements: a _partition key_ and a _sort key_. I do not like the name partition key since to me it sounds too much like primary key and essentially both partition key and sort key together are essentially the primary key of our table.
+An easy way to accomplish this is to just compose a composite string, such as `false#jane@email.com` but DynamoDB has got a special feature up its sleeve we can use for this: sort keys. DynamoDB allows us to define our key as a composite key that consists of two elements: a *partition key* and a *sort key*. I do not like the name partition key since to me it sounds too much like primary key and essentially both partition key and sort key together are essentially the primary key of our table.
 
 In any case, using partition key and sort key, we can define a composite key as follows:
 
@@ -107,7 +107,7 @@ The above schema now allows us very easily to query for all users for a company.
 
 ```
 partitionKey equals company#{name}
-sortKey starts_with user# 
+sortKey starts_with user#
 ```
 
 However, we cannot easily query for a user by email. DynamoDB queries always require a partition key (so that DynamoDB knows which node to send the query to) and if we just have a user email, we would not know which company the user belongs to. For this purpose, we would define a Global Secondary Index (`gsi1`) as follows:
@@ -119,7 +119,7 @@ User Entity: [partitionKey: company#{name}, sortKey: user#{email}, gsi1_partitio
 
 Now we can fire off a query for the particular user by querying our Global Secondary Index.
 
-The second pattern I wanted to discuss are many to many relationships. Let us say for instance that one user may belong to multiple companies. In a relational database, we would need to define an additional table to represent many-to-many relationships. In DynamoDB we likewise introduce new entities. Specifically we need to introduce two entities: _Company-User Relationship_ and _User-Company Relationship_. This will result in the following schema:
+The second pattern I wanted to discuss are many to many relationships. Let us say for instance that one user may belong to multiple companies. In a relational database, we would need to define an additional table to represent many-to-many relationships. In DynamoDB we likewise introduce new entities. Specifically we need to introduce two entities: *Company-User Relationship* and *User-Company Relationship*. This will result in the following schema:
 
 ```
 Company Entity: [partitionKey: company#{name}, sortKey: company#]
@@ -148,7 +148,7 @@ Moreover, while Terraform technically allows updating a DynamoDB table, it is re
 
 You may ask: since DynamoDB is schemaless why do we need to worry about migrations at all? While technically DynamoDB does not require us to define a schema before we start inserting and querying data, the partition keys, sort keys and Global Secondary Indexes we define sort of function as a schema and need to evolve along with our application. For instance, a new emerging query pattern may require us to define a new Global Secondary Index.
 
-An approach that allows us to take advantage both of the declarative power of Terraform as well as the advantages of defining our ‘schema’ in code, is to create our table and manage migrations in code, while using the [aws\_dynamodb\_table](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table) data attribute. We only need to supply the name of our DynamoDB table to this resource and then will be able to define supplementary resources for the table in Terraform (such as IAM permissions).
+An approach that allows us to take advantage both of the declarative power of Terraform as well as the advantages of defining our ‘schema’ in code, is to create our table and manage migrations in code, while using the [aws_dynamodb_table](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table) data attribute. We only need to supply the name of our DynamoDB table to this resource and then will be able to define supplementary resources for the table in Terraform (such as IAM permissions).
 
 In the accompanying example project, the DynamoDB table is referenced as follows from Terraform ([main.tf](https://github.com/goldstack/dynamodb-boilerplate/blob/master/packages/dynamodb-1/infra/aws/main.tf)):
 
@@ -163,32 +163,32 @@ The issue is now that `terraform plan` and `terraform apply` will fail if th
 This library will use the AWS SDK to create the table using the [`createTable`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#createTable-property) operation ([dynamoDBData.ts#L13](https://github.com/goldstack/goldstack/blob/master/workspaces/templates-lib/packages/template-dynamodb/src/dynamoDBData.ts#L13)):
 
 ```typescript
-  const res = client
-    .createTable({
-      TableName: tableName,
-      AttributeDefinitions: [
-        {
-          AttributeName: 'pk',
-          AttributeType: 'S',
-        },
-        {
-          AttributeName: 'sk',
-          AttributeType: 'S',
-        },
-      ],
-      KeySchema: [
-        {
-          AttributeName: 'pk',
-          KeyType: 'HASH',
-        },
-        {
-          AttributeName: 'sk',
-          KeyType: 'RANGE',
-        },
-      ],
-      BillingMode: 'PAY_PER_REQUEST',
-    })
-    .promise();
+const res = client
+  .createTable({
+    TableName: tableName,
+    AttributeDefinitions: [
+      {
+        AttributeName: 'pk',
+        AttributeType: 'S',
+      },
+      {
+        AttributeName: 'sk',
+        AttributeType: 'S',
+      },
+    ],
+    KeySchema: [
+      {
+        AttributeName: 'pk',
+        KeyType: 'HASH',
+      },
+      {
+        AttributeName: 'sk',
+        KeyType: 'RANGE',
+      },
+    ],
+    BillingMode: 'PAY_PER_REQUEST',
+  })
+  .promise();
 ```
 
 This creates a pretty vanilla DynamoDB table. Just enough to ensure there is something that Terraform can reference when setting up further infrastructure.
@@ -234,32 +234,32 @@ Defining our table in this way enables us to write sophisticated local tests usi
 For instance, in the following test, the template library will create a table in the local DynamoDB instance and run all required migrations as part of the [`connect`](https://github.com/goldstack/goldstack/blob/master/workspaces/templates-lib/packages/template-dynamodb/src/templateDynamoDBTable.ts#L80) method.
 
 ```typescript
-  it('Should connect to local table', async () => {
-    const tableName = await getTableName();
-    assert(tableName);
-    const dynamoDB = await connect();
-    assert(dynamoDB);
-    const tableInfo = await dynamoDB
-      .describeTable({ TableName: tableName })
-      .promise();
+it('Should connect to local table', async () => {
+  const tableName = await getTableName();
+  assert(tableName);
+  const dynamoDB = await connect();
+  assert(dynamoDB);
+  const tableInfo = await dynamoDB
+    .describeTable({ TableName: tableName })
+    .promise();
 
-    assert(tableInfo.Table?.TableStatus === 'ACTIVE');
-    const dynamoDB2 = await connect();
-    assert(dynamoDB2);
-  });
+  assert(tableInfo.Table?.TableStatus === 'ACTIVE');
+  const dynamoDB2 = await connect();
+  assert(dynamoDB2);
+});
 ```
 
 Both asserting that the table exist as well as running migrations only needs to be done once per cold start of our application. Therefore the `connect` method keeps a cache of already instantiated DynamoDB tables ([`templateDynamoDBTable.ts#L80`](https://github.com/goldstack/goldstack/blob/master/workspaces/templates-lib/packages/template-dynamodb/src/templateDynamoDBTable.ts#L80)):
 
 ```typescript
-  // ensure table initialisation and migrations are only performed once per cold start
-  const coldStartKey = getColdStartKey(packageConfig, deploymentName);
-  if (!coldStart.has(coldStartKey)) {
-    await assertTable(packageConfig, deploymentName, client);
+// ensure table initialisation and migrations are only performed once per cold start
+const coldStartKey = getColdStartKey(packageConfig, deploymentName);
+if (!coldStart.has(coldStartKey)) {
+  await assertTable(packageConfig, deploymentName, client);
 
-    await performMigrations(packageConfig, deploymentName, migrations, client);
-    coldStart.set(coldStartKey, true);
-  }
+  await performMigrations(packageConfig, deploymentName, migrations, client);
+  coldStart.set(coldStartKey, true);
+}
 ```
 
 ## Working With Data
@@ -267,7 +267,7 @@ Both asserting that the table exist as well as running migrations only needs to 
 In order to make use of DynamoDB in our application, we will want to insert, retrieve and query data. The easiest way to do so is using the [DynamoDB JavaScript SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html). For this, we simply need to instantiate the class `AWS.DynamoDB`:
 
 ```typescript
-const dynamodb = new AWS.DynamoDB({apiVersion: '2012-08-10'});
+const dynamodb = new AWS.DynamoDB({ apiVersion: '2012-08-10' });
 ```
 
 This class provides access to methods for both altering the configuration of our table (e.g. using [`updateTable`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB.html#updateTable-property)) as well as working with data. Generally in our application we will only want to write and read data to our table. For this, we can use the class [`AWS.DynamoDB.DocumentClient`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/DynamoDB/DocumentClient.html).
@@ -275,16 +275,15 @@ This class provides access to methods for both altering the configuration of our
 In the provided example project and template I created a number of utility classes to make connecting with DynamoDB easier (taking into account what infrastructure we have been setting up). We do not have to instantiate the client ourselves but can use a wrapper method as follows:
 
 ```typescript
-import {
-  getTableName,
-  connect,
-} from './table';
+import { getTableName, connect } from './table';
 
 const dynamodb = await connect();
-await dynamodb.putItem({ 
-  TableName: await getTableName(),
-  Item: {},
-  }).promise();
+await dynamodb
+  .putItem({
+    TableName: await getTableName(),
+    Item: {},
+  })
+  .promise();
 ```
 
 Where `./table` references the file [`table.ts`](https://github.com/goldstack/dynamodb-boilerplate/blob/master/packages/dynamodb-1/src/table.ts) included in the project. While it is generally not too difficult to connect with a DynamoDB table, these utilities take care of one major headache for us: local testing.
@@ -339,20 +338,20 @@ export function UserEntity<Name extends string>(
 Finally we can use the defined entity and table to read and write data:
 
 ```typescript
-    const table = await connectTable();
-    const Users = UserEntity(table);
+const table = await connectTable();
+const Users = UserEntity(table);
 
-    await Users.put({
-      pk: 'joe@email.com',
-      sk: 'admin',
-      name: 'Joe',
-      emailVerified: true,
-    });
+await Users.put({
+  pk: 'joe@email.com',
+  sk: 'admin',
+  name: 'Joe',
+  emailVerified: true,
+});
 
-    const { Item: user } = await Users.get<User, UserKey>(
-      { pk: 'joe@email.com', sk: 'admin' },
-      { attributes: ['name', 'pk'] }
-    );
+const { Item: user } = await Users.get<User, UserKey>(
+  { pk: 'joe@email.com', sk: 'admin' },
+  { attributes: ['name', 'pk'] }
+);
 ```
 
 ## Final Thoughts

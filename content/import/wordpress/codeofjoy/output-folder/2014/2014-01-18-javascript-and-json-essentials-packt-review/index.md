@@ -1,11 +1,11 @@
 ---
-title: "JavaScript and JSON Essentials (Packt) Review"
-date: "2014-01-18"
-categories: 
-  - "javascript"
-tags: 
-  - "json"
-  - "review"
+title: 'JavaScript and JSON Essentials (Packt) Review'
+date: '2014-01-18'
+categories:
+  - 'javascript'
+tags:
+  - 'json'
+  - 'review'
 ---
 
 '[JavaScript and JSON Essentials](http://www.packtpub.com/javascript-and-json-essentials/book?utm_source=Create.com&utm_medium=link&utm_campaign=JSON)' by Packt publishing is a hands-on guide to developing JavaScript/PHP based web applications while using the JSON data format. This review of the book contains a quick summary of the contents as well as points to consider if you think of purchasing the book.

@@ -1,16 +1,16 @@
 ---
-title: "Run GWT Generated Code in Nashorn"
-date: "2015-08-07"
-categories: 
-  - "java"
-tags: 
-  - "gwt"
-  - "jdk-nashorn"
+title: 'Run GWT Generated Code in Nashorn'
+date: '2015-08-07'
+categories:
+  - 'java'
+tags:
+  - 'gwt'
+  - 'jdk-nashorn'
 ---
 
 [GWT](http://www.gwtproject.org/) is a very useful tool to compile Java code into JavaScript.
 
-[Nashorn](https://en.wikipedia.org/wiki/Nashorn_(JavaScript_engine)) is Oracle's new JavaScript implementation which runs JavaScript scripts in Java.
+[Nashorn](<https://en.wikipedia.org/wiki/Nashorn_(JavaScript_engine)>) is Oracle's new JavaScript implementation which runs JavaScript scripts in Java.
 
 In order to run JavaScript server-side code within a Java server I now want to make an extensive GWT library available to this JavaScript code.
 

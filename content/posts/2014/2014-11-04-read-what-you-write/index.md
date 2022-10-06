@@ -1,12 +1,12 @@
 ---
-title: "Read What You Write"
-date: "2014-11-04"
-categories: 
-  - "contemplations"
-  - "productivity"
-tags: 
-  - "habits"
-  - "writing"
+title: 'Read What You Write'
+date: '2014-11-04'
+categories:
+  - 'contemplations'
+  - 'productivity'
+tags:
+  - 'habits'
+  - 'writing'
 ---
 
 Unquestionably there is value in the process of writing in itself; previously [muddy ideas are clarified](http://accountingprofessor.wordpress.com/2011/08/21/the-value-of-writing/) and new ideas emerge by bringing them on paper.

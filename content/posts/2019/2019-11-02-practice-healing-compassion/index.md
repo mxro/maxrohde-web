@@ -1,18 +1,18 @@
 ---
-title: "Practice: Healing Compassion"
-date: "2019-11-02"
-categories: 
-  - "buddhism"
-  - "psychology"
-tags: 
-  - "compassion"
-  - "enlightenment"
-  - "happiness"
-  - "life"
-  - "meditation"
-  - "practice"
-  - "practices"
-coverImage: "poverty-1148934.jpg"
+title: 'Practice: Healing Compassion'
+date: '2019-11-02'
+categories:
+  - 'buddhism'
+  - 'psychology'
+tags:
+  - 'compassion'
+  - 'enlightenment'
+  - 'happiness'
+  - 'life'
+  - 'meditation'
+  - 'practice'
+  - 'practices'
+coverImage: 'poverty-1148934.jpg'
 ---
 
 I have already written about a practice centred on the [powerful emotion of compassion](https://spearoflight.blog/tag/compassion/). However, today I came across an interesting variation of a practice on compassion (in the book [Happiness by Matthieu Ricard](https://www.amazon.com/Happiness-Guide-Developing-Lifes-Important/dp/0316167258)): one that reflects our own suffering onto others, and helps us heal from our own suffering. This practice works as follows:

@@ -1,13 +1,13 @@
 ---
-title: "Habit Tracking November: Getting There"
-date: "2019-12-04"
-categories: 
-  - "productivity"
-tags: 
-  - "exercise"
-  - "habits"
-  - "tracking"
-coverImage: "img_0716.jpg"
+title: 'Habit Tracking November: Getting There'
+date: '2019-12-04'
+categories:
+  - 'productivity'
+tags:
+  - 'exercise'
+  - 'habits'
+  - 'tracking'
+coverImage: 'img_0716.jpg'
 ---
 
 After having done [very poorly on keeping to my habits in October](https://spearoflight.blog/2019/11/05/habit-tracking-october-injured-and-distracted/), things have greatly improved in November. Here the overview for November:

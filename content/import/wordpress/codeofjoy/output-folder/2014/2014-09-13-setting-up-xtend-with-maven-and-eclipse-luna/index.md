@@ -1,11 +1,11 @@
 ---
-title: "Setting Up Xtend with Maven and eclipse (Luna)"
-date: "2014-09-13"
-categories: 
-  - "java"
-tags: 
-  - "eclipse"
-  - "maven"
+title: 'Setting Up Xtend with Maven and eclipse (Luna)'
+date: '2014-09-13'
+categories:
+  - 'java'
+tags:
+  - 'eclipse'
+  - 'maven'
 ---
 
 [Xtend](http://www.eclipse.org/xtend/) is currently my favourite alternative language for the JVM (closely followed by [Kotlin](http://kotlinlang.org/)). Unfortunately, I did not find a good guide of how to set up a Maven project within eclipse (Luna) which uses Xtend.

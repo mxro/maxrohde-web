@@ -1,8 +1,8 @@
 ---
-title: "Installing Maven under Windows Vista"
-date: "2010-05-30"
-categories: 
-  - "java"
+title: 'Installing Maven under Windows Vista'
+date: '2010-05-30'
+categories:
+  - 'java'
 ---
 
 It is fairly easy to set up Maven under Windows Vista, following this [Excellent tutorial](http://www.avajava.com/tutorials/lessons/what-is-maven-and-how-do-i-install-it.html).
@@ -15,4 +15,4 @@ The Systems Properties Dialog should open. Go to the tab Advanced and you can cl
 
 ![bildschirmfoto2010-05-30um15-31-20.png](images/bildschirmfoto2010-05-30um15-31-20.png)
 
-On my system, the variables where: JAVA\_HOME --> C:\\Program Files\\Java\\jdk1.6.0\_20 M2\_HOME --> C:\\Users\\mroh004.COM\\Documents\\Applications\\apache-maven-2.2.1
+On my system, the variables where: JAVA_HOME --> C:\\Program Files\\Java\\jdk1.6.0_20 M2_HOME --> C:\\Users\\mroh004.COM\\Documents\\Applications\\apache-maven-2.2.1

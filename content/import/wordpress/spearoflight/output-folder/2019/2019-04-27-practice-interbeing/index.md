@@ -1,21 +1,21 @@
 ---
-title: "Practice: Interbeing"
-date: "2019-04-27"
-categories: 
-  - "buddhism"
-  - "philosophy"
-tags: 
-  - "interbeing"
-  - "practice"
-  - "practices"
-coverImage: "sunrise-over-the-earth.jpg"
+title: 'Practice: Interbeing'
+date: '2019-04-27'
+categories:
+  - 'buddhism'
+  - 'philosophy'
+tags:
+  - 'interbeing'
+  - 'practice'
+  - 'practices'
+coverImage: 'sunrise-over-the-earth.jpg'
 ---
 
 We live in the illusion that we posses a self which is well delineated from the world around us. Whereas in fact, we are interwoven with everything around us in innumerable ways. No particle in the universe exists independently. Everything is affected by everything else.
 
 Modern science has shown the inter-relatedness of many social and natural phenomena. However even in ancient times, interbeing has long been seen as one of the fundamental truths about existence, especially in Eastern cultures.
 
-The principle of anatta is one of the foundations of Buddhist thought and asserts that there is no distinguishable self in any living being. As such, we each exist only within the context of everything that surrounds us. Pratītyasamutpāda is another principle which states that nothing is created in isolation. Anything is created in the context of something else which already exists. 
+The principle of anatta is one of the foundations of Buddhist thought and asserts that there is no distinguishable self in any living being. As such, we each exist only within the context of everything that surrounds us. Pratītyasamutpāda is another principle which states that nothing is created in isolation. Anything is created in the context of something else which already exists.
 
 Just like embracing [forgiveness](http://spearoflight.blog/2019/04/07/practice-forgiveness/) and [gratitude](http://spearoflight.blog/2019/04/21/practice-gratitude/), I believe that meditating on the inter-dependence of all things aids us in expanding our consciousness and brings us joy and wisdom. To aid in this meditation, I have developed the following simple practice:
 

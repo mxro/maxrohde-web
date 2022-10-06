@@ -1,8 +1,8 @@
 ---
-title: "Debugging, Testing and Deploying OSGi Applications"
-date: "2010-06-18"
-categories: 
-  - "java"
+title: 'Debugging, Testing and Deploying OSGi Applications'
+date: '2010-06-18'
+categories:
+  - 'java'
 ---
 
 Just a number of pointers on the debugging, testing and deployment of OSGi applications ...
@@ -190,7 +190,7 @@ These are all files necessary to start your application with one command. Naviga
 
 ```“bash”
 
-MacBookMX:target mx$ java -jar felix.jar 
+MacBookMX:target mx$ java -jar felix.jar
 No config.properties found.
 
 Welcome to Felix

@@ -1,16 +1,16 @@
 ---
-title: "Practice: Thought Mindfulness"
-date: "2019-03-30"
-categories: 
-  - "buddhism"
-  - "psychology"
-tags: 
-  - "meditation"
-  - "mind"
-  - "mindfulness"
-  - "practice"
-  - "practices"
-coverImage: "meditation-1384758.jpg"
+title: 'Practice: Thought Mindfulness'
+date: '2019-03-30'
+categories:
+  - 'buddhism'
+  - 'psychology'
+tags:
+  - 'meditation'
+  - 'mind'
+  - 'mindfulness'
+  - 'practice'
+  - 'practices'
+coverImage: 'meditation-1384758.jpg'
 ---
 
 Although our thoughts are arguably very important for who we are, we are often unaware of what is occupying our mind at any given moment. In this post, I describe a simple practice which helps in increasing awareness of our mind and thoughts.

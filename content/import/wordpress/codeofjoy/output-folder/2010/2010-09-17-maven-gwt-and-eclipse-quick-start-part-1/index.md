@@ -1,8 +1,8 @@
 ---
-title: "Maven, GWT and Eclipse Quick start (Part 1)"
-date: "2010-09-17"
-categories: 
-  - "java"
+title: 'Maven, GWT and Eclipse Quick start (Part 1)'
+date: '2010-09-17'
+categories:
+  - 'java'
 ---
 
 **Purpose**

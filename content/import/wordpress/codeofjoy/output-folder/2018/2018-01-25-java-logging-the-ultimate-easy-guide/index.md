@@ -1,13 +1,13 @@
 ---
-title: "Java Logging - The Ultimate, Easy Guide"
-date: "2018-01-25"
-categories: 
-  - "java"
-tags: 
-  - "devops"
-  - "log4j"
-  - "logging"
-  - "tutorial"
+title: 'Java Logging - The Ultimate, Easy Guide'
+date: '2018-01-25'
+categories:
+  - 'java'
+tags:
+  - 'devops'
+  - 'log4j'
+  - 'logging'
+  - 'tutorial'
 ---
 
 On first glance, logging looks like an exceedingly simple problem to solve. However, it is one of these problems which unfortunately become more and more complex the longer one looks at it.
@@ -78,11 +78,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class OutputLog { 
-  public static void main(String[] args) { 
-    Logger logger = LogManager.getLogger(); 
-    logger.error("Hi!"); 
-  } 
+public class OutputLog {
+  public static void main(String[] args) {
+    Logger logger = LogManager.getLogger();
+    logger.error("Hi!");
+  }
 }
 ```
 

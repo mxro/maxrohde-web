@@ -1,11 +1,11 @@
 ---
-title: "Copy EntrySet of a HashMap in Java"
-date: "2014-01-14"
-categories: 
-  - "java"
+title: 'Copy EntrySet of a HashMap in Java'
+date: '2014-01-14'
+categories:
+  - 'java'
 ---
 
-All the key-value pairs of a [Map](http://docs.oracle.com/javase/7/docs/api/java/util/Map.html) in Java can be accessed through the method .[entrySet()](http://docs.oracle.com/javase/7/docs/api/java/util/Map.html#entrySet()) on the Map interface. Sometimes it might be required to create a copy of the resulting list.
+All the key-value pairs of a [Map](http://docs.oracle.com/javase/7/docs/api/java/util/Map.html) in Java can be accessed through the method .[entrySet()](<http://docs.oracle.com/javase/7/docs/api/java/util/Map.html#entrySet()>) on the Map interface. Sometimes it might be required to create a copy of the resulting list.
 
 A straightforward approach would be to utilize the constructor of the [ArrayList](http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html) class, which accepts a list as parameter, such as
 

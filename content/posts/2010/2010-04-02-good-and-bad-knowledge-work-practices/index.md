@@ -1,8 +1,8 @@
 ---
-title: "Good and Bad Knowledge Work Practices"
-date: "2010-04-02"
-categories: 
-  - "java"
+title: 'Good and Bad Knowledge Work Practices'
+date: '2010-04-02'
+categories:
+  - 'java'
 ---
 
 Good and bad knowledge work practices ... work in progress and to be extended ...

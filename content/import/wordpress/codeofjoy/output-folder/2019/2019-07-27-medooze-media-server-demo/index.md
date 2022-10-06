@@ -1,14 +1,14 @@
 ---
-title: "Medooze Media Server Demo"
-date: "2019-07-27"
-categories: 
-  - "javascript"
-tags: 
-  - "coding"
-  - "node-js"
-  - "programming"
-  - "tutorial"
-coverImage: "video-1606945.png"
+title: 'Medooze Media Server Demo'
+date: '2019-07-27'
+categories:
+  - 'javascript'
+tags:
+  - 'coding'
+  - 'node-js'
+  - 'programming'
+  - 'tutorial'
+coverImage: 'video-1606945.png'
 ---
 
 I've recently done some research into [WebRTC](https://webrtc.org/) and specifically on how to stream media captured in the browser to a server. Initially I thought I could use something like [Kinesis Video Streams](https://aws.amazon.com/kinesis/video-streams/) and have AWS do the heavy lifting for me. Unfortunately this turned out way more complicated than I had anticipated so I started looking for other options.

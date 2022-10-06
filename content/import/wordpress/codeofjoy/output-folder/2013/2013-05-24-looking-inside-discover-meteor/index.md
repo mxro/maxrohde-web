@@ -1,10 +1,10 @@
 ---
-title: "Looking Inside ‘Discover Meteor’"
-date: "2013-05-24"
-categories: 
-  - "javascript"
-tags: 
-  - "review"
+title: 'Looking Inside ‘Discover Meteor’'
+date: '2013-05-24'
+categories:
+  - 'javascript'
+tags:
+  - 'review'
 ---
 
 Do you want to see the future of book publishing?

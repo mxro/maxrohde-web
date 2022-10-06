@@ -1,8 +1,8 @@
 ---
-title: "CLAP Protocol in Restlet and OSGi"
-date: "2010-09-28"
-categories: 
-  - "java"
+title: 'CLAP Protocol in Restlet and OSGi'
+date: '2010-09-28'
+categories:
+  - 'java'
 ---
 
 **Problem:**
@@ -17,13 +17,13 @@ import org.restlet.Context**;** import org.restlet.Request**;** import org.restl
 
 **public** **class** **ClassLoaderDirectory** **extends** Directory **{**
 
-        **private** ClassLoader \_cl**;**
+**private** ClassLoader \_cl**;**
 
-        **public** **ClassLoaderDirectory**(Context context**,** Reference rootLocalReference**,** ClassLoader cl**)** **{**
+**public** **ClassLoaderDirectory**(Context context**,** Reference rootLocalReference**,** ClassLoader cl**)** **{**
 
-                **super(**context**,** rootLocalReference**);**                 **this.**\_cl **\=** cl**;**         **}**
+**super(**context**,** rootLocalReference**);**                 **this.**\_cl **\=** cl**;**         **}**
 
-        @Override         **public** **void** **handle**(Request request**,** Response response**)** **{**                 **final** ClassLoader saveCL **\=** Thread**.**currentThread**().**getContextClassLoader**();**                 Thread**.**currentThread**().**setContextClassLoader**(**\_cl**);**                 **super.**handle**(**request**,** response**);**                 Thread**.**currentThread**().**setContextClassLoader**(**saveCL**);**         **}**
+@Override         **public** **void** **handle**(Request request**,** Response response**)** **{**                 **final** ClassLoader saveCL **\=** Thread**.**currentThread**().**getContextClassLoader**();**                 Thread**.**currentThread**().**setContextClassLoader**(**\_cl**);**                 **super.**handle**(**request**,** response**);**                 Thread**.**currentThread**().**setContextClassLoader**(**saveCL**);**         **}**
 
 **}** ([http://gist.github.com/602448](http://gist.github.com/602448))
 
@@ -31,39 +31,39 @@ Then we need a little helper class to allow using more than one classloader:
 
 **private** **static** **class** **CompositeClassLoader** **extends** ClassLoader **{**                  **private** Vector**<**ClassLoader**\>** classLoaders **\=** **new** Vector**<**ClassLoader**\>();**
 
-                        @Override                         **public** URL **getResource**(String name**)** **{**                                 **for** **(**ClassLoader cl **:** classLoaders**)** **{**
+@Override                         **public** URL **getResource**(String name**)** **{**                                 **for** **(**ClassLoader cl **:** classLoaders**)** **{**
 
-                                        URL resource **\=** cl**.**getResource**(**name**);**                                         **if** **(**resource **!=** **null)**                                                  **return** resource**;**
+URL resource **\=** cl**.**getResource**(**name**);**                                         **if** **(**resource **!=** **null)**                                                  **return** resource**;**
 
-                                **}**
+**}**
 
-                                **return** **null;**                         **}**
+**return** **null;**                         **}**
 
-                        @Override                         **public** Class**<?>** loadClass**(**String name**,** **boolean** resolve**)** **throws** ClassNotFoundException **{**
+@Override                         **public** Class**<?>** loadClass**(**String name**,** **boolean** resolve**)** **throws** ClassNotFoundException **{**
 
-                                **for** **(**ClassLoader cl **:** classLoaders**)** **{**                                  **try** **{**                                          **return** cl**.**loadClass**(**name**);**                                  **}** **catch** **(**ClassNotFoundException ex**)** **{**
+**for** **(**ClassLoader cl **:** classLoaders**)** **{**                                  **try** **{**                                          **return** cl**.**loadClass**(**name**);**                                  **}** **catch** **(**ClassNotFoundException ex**)** **{**
 
-                                 **}**                                 **}**
+**}**                                 **}**
 
-                                **throw** **new** **ClassNotFoundException**(name**);**                         **}**
+**throw** **new** **ClassNotFoundException**(name**);**                         **}**
 
-                 **public** **void** **addClassLoader**(ClassLoader cl**)** **{**                          classLoaders**.**add**(**cl**);**                  **}**
+**public** **void** **addClassLoader**(ClassLoader cl**)** **{**                          classLoaders**.**add**(**cl**);**                  **}**
 
-         **}** ([http://gist.github.com/602450](http://gist.github.com/602450))
+**}** ([http://gist.github.com/602450](http://gist.github.com/602450))
 
 Lastly, we create the Directory:
 
 @Override          **public** Restlet **createRoot**() **{**                  **final** Router router **\=** **new** Router**(**getContext**());**
 
-         getConnectorService**().**getClientProtocols**().**add**(**Protocol**.**FILE**);**                  getConnectorService**().**getClientProtocols**().**add**(**Protocol**.**CLAP**);**
+getConnectorService**().**getClientProtocols**().**add**(**Protocol**.**FILE**);**                  getConnectorService**().**getClientProtocols**().**add**(**Protocol**.**CLAP**);**
 
-                 LocalReference localReference **\=** LocalReference**.**createClapReference**(**LocalReference**.**CLAP\_THREAD**,** "/src/main/webapp/"**);**
+LocalReference localReference **\=** LocalReference**.**createClapReference**(**LocalReference**.**CLAP_THREAD**,** "/src/main/webapp/"**);**
 
-                 CompositeClassLoader customCL **\=** **new** CompositeClassLoader**();**                  customCL**.**addClassLoader**(**Thread**.**currentThread**().**getContextClassLoader**());**                  customCL**.**addClassLoader**(**Router**.**class**.**getClassLoader**());**
+CompositeClassLoader customCL **\=** **new** CompositeClassLoader**();**                  customCL**.**addClassLoader**(**Thread**.**currentThread**().**getContextClassLoader**());**                  customCL**.**addClassLoader**(**Router**.**class**.**getClassLoader**());**
 
-                 ClassLoaderDirectory directory **\=** **new** ClassLoaderDirectory**(**getContext**(),**                         localReference**,**                         customCL**);**        
+ClassLoaderDirectory directory **\=** **new** ClassLoaderDirectory**(**getContext**(),**                         localReference**,**                         customCL**);**
 
-                 router**.**attach**(**"/www"**,** directory**);**                  **return** router**;**          **}** ([http://gist.github.com/602451](http://gist.github.com/602451))
+router**.**attach**(**"/www"**,** directory**);**                  **return** router**;**          **}** ([http://gist.github.com/602451](http://gist.github.com/602451))
 
 Therewith, the Directory can load files stored in the bundle in which the server is started, even when the Restlet libraries are in a different bundle.
 

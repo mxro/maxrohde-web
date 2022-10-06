@@ -1,8 +1,8 @@
 ---
-title: "Fix HtmlUnit Memory Leak"
-date: "2013-01-05"
-categories: 
-  - "java"
+title: 'Fix HtmlUnit Memory Leak'
+date: '2013-01-05'
+categories:
+  - 'java'
 ---
 
 ## The Problem
@@ -33,7 +33,7 @@ final List<WebWindow> windows = webClient.getWebWindows();
 
 for (final WebWindow wd : windows) {
 
-    wd.getJobManager().removeAllJobs();
+wd.getJobManager().removeAllJobs();
 
 }
 

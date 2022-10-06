@@ -1,8 +1,8 @@
 ---
-title: "Get Free Memory on Unix System in Java"
-date: "2013-01-02"
-categories: 
-  - "java"
+title: 'Get Free Memory on Unix System in Java'
+date: '2013-01-02'
+categories:
+  - 'java'
 ---
 
 ## Background
@@ -58,8 +58,6 @@ throw new RuntimeException(
  }
 }
 ```
-
- 
 
 ## Resources
 

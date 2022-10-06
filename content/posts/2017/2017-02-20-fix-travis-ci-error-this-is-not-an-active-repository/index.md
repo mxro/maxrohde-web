@@ -1,8 +1,8 @@
 ---
 title: "Fix Travis CI Error 'This is not an active repository'"
-date: "2017-02-20"
-tags: 
-  - "github"
+date: '2017-02-20'
+tags:
+  - 'github'
 ---
 
 ### Problem

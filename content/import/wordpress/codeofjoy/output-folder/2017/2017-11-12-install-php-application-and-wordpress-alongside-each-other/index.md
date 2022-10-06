@@ -1,10 +1,10 @@
 ---
-title: "Install PHP Application and WordPress Alongside Each Other"
-date: "2017-11-12"
-categories: 
-  - "linux"
-tags: 
-  - "wordpress"
+title: 'Install PHP Application and WordPress Alongside Each Other'
+date: '2017-11-12'
+categories:
+  - 'linux'
+tags:
+  - 'wordpress'
 ---
 
 ### Problem
@@ -25,15 +25,16 @@ will open a page in a PHP application.
 - Install WordPress /usr/share/wordpress
 - Put the following lines into /usr/share/wordpress/.htacces **before** # BEGIN WordPress.
 
-<IfModule mod\_rewrite.c>
+<IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-RewriteCond "/var/www/html%{REQUEST\_URI}" -f
+RewriteCond "/var/www/html%{REQUEST_URI}" -f
 RewriteRule ^/?(.\*)$ /app/$1 \[L\]
 
 </IfModule>
 
 # BEGIN WordPress
+
 ...
 
 - Put the following line into /etc/httpd/conf/httpd.conf
@@ -46,7 +47,7 @@ Alias /wordpress /usr/share/wordpress
 DocumentRoot /usr/share/wordpress
 
 <Directory /usr/share/wordpress/>
- AddDefaultCharset UTF-8
+AddDefaultCharset UTF-8
 
 AllowOverride All
 

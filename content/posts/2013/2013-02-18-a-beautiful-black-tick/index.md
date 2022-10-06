@@ -1,6 +1,6 @@
 ---
-title: "A beautiful Black Tick"
-date: "2013-02-18"
+title: 'A beautiful Black Tick'
+date: '2013-02-18'
 ---
 
 When creating documents, tables and presentations, I am often looking for a simple symbol to express a 'tick' as in 'this is okay' or 'this is supported'.

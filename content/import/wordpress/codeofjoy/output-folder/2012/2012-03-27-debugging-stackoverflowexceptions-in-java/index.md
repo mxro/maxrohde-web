@@ -1,8 +1,8 @@
 ---
-title: "Debugging StackOverflowExceptions in Java"
-date: "2012-03-27"
-categories: 
-  - "java"
+title: 'Debugging StackOverflowExceptions in Java'
+date: '2012-03-27'
+categories:
+  - 'java'
 ---
 
 # Problem
@@ -13,23 +13,23 @@ For instance, the StackOverflowException reported in the following stack trace �
 
 Exception in thread "pool-1117-thread-1" java.lang.StackOverflowError
 
-    at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(Unknown Source)
+at java.util.concurrent.locks.AbstractQueuedSynchronizer.release(Unknown Source)
 
-    at java.util.concurrent.locks.ReentrantLock.unlock(Unknown Source)
+at java.util.concurrent.locks.ReentrantLock.unlock(Unknown Source)
 
-    at one.utils.jre.concurrent.JreConcurrency$4.unlock(JreConcurrency.java:146)
+at one.utils.jre.concurrent.JreConcurrency$4.unlock(JreConcurrency.java:146)
 
 … has the same cause as this stack trace:
 
 Exception in thread "pool-1115-thread-1" java.lang.StackOverflowError
 
-    at java.lang.String.endsWith(Unknown Source)
+at java.lang.String.endsWith(Unknown Source)
 
-    at mx.gwtutils.MxroGWTUtils.assertNoSlash(MxroGWTUtils.java:311)
+at mx.gwtutils.MxroGWTUtils.assertNoSlash(MxroGWTUtils.java:311)
 
-    at nx.core.nodes.v01.ReferenceData.<init>(ReferenceData.java:34)
+at nx.core.nodes.v01.ReferenceData.<init>(ReferenceData.java:34)
 
-    at nx.core.Nx.reference(Nx.java:156)
+at nx.core.Nx.reference(Nx.java:156)
 
 ## Solution
 

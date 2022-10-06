@@ -1,13 +1,13 @@
 ---
-title: "Sandboxing JavaScript in Java App – Link Collection"
-date: "2015-08-06"
-categories: 
-  - "java"
-tags: 
-  - "javascript"
-  - "jdk-nashorn"
-  - "jdk-rhino"
-  - "programming"
+title: 'Sandboxing JavaScript in Java App – Link Collection'
+date: '2015-08-06'
+categories:
+  - 'java'
+tags:
+  - 'javascript'
+  - 'jdk-nashorn'
+  - 'jdk-rhino'
+  - 'programming'
 ---
 
 The JVM is by design an insecure environment and it is generally difficult to run untrusted code in a sandboxed environment.

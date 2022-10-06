@@ -1,8 +1,8 @@
 ---
-title: "PhD Progress Presentation"
-date: "2010-05-07"
-categories: 
-  - "contemplations"
+title: 'PhD Progress Presentation'
+date: '2010-05-07'
+categories:
+  - 'contemplations'
 ---
 
 [Download (PPT)](http://dl.dropbox.com/u/957046/InstantLinnk/Knowledge_Netwo/Reports/040510/PhD_Progress_Presentation.pptx)

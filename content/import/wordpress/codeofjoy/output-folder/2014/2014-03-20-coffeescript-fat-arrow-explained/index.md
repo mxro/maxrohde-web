@@ -1,8 +1,8 @@
 ---
-title: "CoffeeScript Fat Arrow (=&gt;) explained"
-date: "2014-03-20"
-categories: 
-  - "javascript"
+title: 'CoffeeScript Fat Arrow (=&gt;) explained'
+date: '2014-03-20'
+categories:
+  - 'javascript'
 ---
 
 Anyone who has worked with JavaScript for anything but a very short time will have come across the problem that the meaning of 'this' is often ambiguous at best. [CoffeeScript](http://coffeescript.org/) attempts to mitigate this problem somewhat by introducing the [Fat Arrow operator](http://coffeescript.org/#fat-arrow) (=>). This operator can be used as a replacement for the thin arrow operator (->) used extensively in CoffeeScript for defining functions.
@@ -22,7 +22,7 @@ The fat arrow will 'override' the default meaning of the @ operator as follows, 
 _CoffeeScript_
 
 ```
-delayedAction = =>  
+delayedAction = =>
   alert(@messsage)
 
 setTimeout(delayedAction, 100);

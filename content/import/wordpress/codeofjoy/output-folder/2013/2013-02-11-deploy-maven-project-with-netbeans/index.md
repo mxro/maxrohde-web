@@ -1,10 +1,10 @@
 ---
-title: "Deploy Maven Project with Netbeans"
-date: "2013-02-11"
-categories: 
-  - "java"
-tags: 
-  - "maven"
+title: 'Deploy Maven Project with Netbeans'
+date: '2013-02-11'
+categories:
+  - 'java'
+tags:
+  - 'maven'
 ---
 
 ## Problem

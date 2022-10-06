@@ -1,11 +1,11 @@
 ---
-title: "Free Cloud-based Log and Metrics Management Solutions"
-date: "2017-12-28"
-categories: 
-  - "devops"
-tags: 
-  - "metrics"
-  - "monitoring"
+title: 'Free Cloud-based Log and Metrics Management Solutions'
+date: '2017-12-28'
+categories:
+  - 'devops'
+tags:
+  - 'metrics'
+  - 'monitoring'
 ---
 
 I have been looking around for a while for a cloud-based service which allows **collecting** logs and metrics and **analysing** them. I am particularly interested in a solution which can be deployed for free for smaller applications/amounts of data.

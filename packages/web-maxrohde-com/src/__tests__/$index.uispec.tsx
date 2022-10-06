@@ -7,6 +7,6 @@ describe('Render tests', () => {
   it('Should render component', () => {
     render(<Index posts={[]}></Index>);
 
-    expect(screen.getByText('run test', { exact: false })).toBeVisible();
+    expect(screen.getByText('Latest Posts', { exact: false })).toBeVisible();
   });
 });

@@ -1,15 +1,15 @@
 ---
-title: "onedb 0.0.6 powers appjangle"
-date: "2012-08-08"
-categories: 
-  - "java"
+title: 'onedb 0.0.6 powers appjangle'
+date: '2012-08-08'
+categories:
+  - 'java'
 ---
 
-The last few weeks a great number of improvements and changes have been made to the onedb database. Chiefly, with the development of the JavaScript API, onedb has been integrated into the new [appjangle](http://appjangle.com "appjangle") platform.
+The last few weeks a great number of improvements and changes have been made to the onedb database. Chiefly, with the development of the JavaScript API, onedb has been integrated into the new [appjangle](http://appjangle.com 'appjangle') platform.
 
 This platform is designed to enable not only to store data from applications from various platforms but also to aid you in developing and deploying these applications. Please note that the appjangle platform is currently in PREVIEW and various features are in the process of being completed.
 
-Currently, all already documented features of onedb are available on appjangle. However, it is not possible anymore to obtain an API key from the onedb website. Instead, [signing up for appjangle](http://appjangle.com/signup "appjangle sign up") will get you an API key you can use to develop Java applications.
+Currently, all already documented features of onedb are available on appjangle. However, it is not possible anymore to obtain an API key from the onedb website. Instead, [signing up for appjangle](http://appjangle.com/signup 'appjangle sign up') will get you an API key you can use to develop Java applications.
 
 There is a new, short tutorial helping to get started developing Java apps with appjangle/onedb. Check out:
 
@@ -31,7 +31,7 @@ If more data is to be uploaded or the data should also be private read protected
 
 A usage example for the seed operation can be found in the following Java App:
 
-[RapidDataUploadFromAnywhere.java](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/features/RapidDataUploadFromAnywhere.java "seed operation data upload example")
+[RapidDataUploadFromAnywhere.java](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/features/RapidDataUploadFromAnywhere.java 'seed operation data upload example')
 
 ### Binary Nodes
 
@@ -58,11 +58,11 @@ Note that you will need to add ".value.png" to the nodes address to assure it is
 
 ### Markdown Serialization
 
-Text nodes, which contain content in the [Markdown format](http://daringfireball.net/projects/markdown/ "Markdown"), can now be rendered into HTML automatically. Just add the marker `One.reference("https://u1.linnk.it/6wbnoq/Types/isMarkdown")` to your plain text node.
+Text nodes, which contain content in the [Markdown format](http://daringfireball.net/projects/markdown/ 'Markdown'), can now be rendered into HTML automatically. Just add the marker `One.reference("https://u1.linnk.it/6wbnoq/Types/isMarkdown")` to your plain text node.
 
 A sample Java app is available on github:
 
-[ServerSideMarkdownRendering.java](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/features/ServerSideMarkdownRendering.java "Server side markdown rendering example")
+[ServerSideMarkdownRendering.java](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/features/ServerSideMarkdownRendering.java 'Server side markdown rendering example')
 
 ### Template Rendering
 
@@ -70,7 +70,7 @@ A simple syntax allows now to embed text nodes within other text nodes. This is 
 
 See the sample Java app on github, which illustrates the template feature:
 
-[EmbeddingTextNodes.java](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/features/EmbeddingTextNodes.java "EmbeddingTextNodes.java")
+[EmbeddingTextNodes.java](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/features/EmbeddingTextNodes.java 'EmbeddingTextNodes.java')
 
 Using a slight variation of the syntax, it is also possible to embed HTML rendered from a Markdown template into a HTML page. The syntax for this is:
 
@@ -84,7 +84,7 @@ The onedb client engine now allows to interface with the user login and registra
 
 These operations do not only allow to register and login a user for the appjangle platform but also build login/registration capabilities for your own apps. These operations require to specify a `applicationNodeUri`. This can be an address to any node on the appjangle platform. The specified node can then function as a global unique identifier for your application and associated registered users.
 
-Have a look at the appjangle [login module](http://u1.linnk.it/0fs7dr/Apps1/aj-core-0.0.1.value.js "appjangle login module") and the appjangle [signin module](http://u1.linnk.it/0fs7dr/Apps1/appjangle_login.value.html) (you will need to check the page's source) for examples of usage of this API. The Java API works very similar to the JavaScript version and examples for this will be added shortly.
+Have a look at the appjangle [login module](http://u1.linnk.it/0fs7dr/Apps1/aj-core-0.0.1.value.js 'appjangle login module') and the appjangle [signin module](http://u1.linnk.it/0fs7dr/Apps1/appjangle_login.value.html) (you will need to check the page's source) for examples of usage of this API. The Java API works very similar to the JavaScript version and examples for this will be added shortly.
 
 ## Bug Fixes
 

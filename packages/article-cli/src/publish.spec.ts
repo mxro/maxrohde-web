@@ -27,7 +27,7 @@ describe('Article publishing', () => {
 
     await publish({
       table,
-      fileNamePattern: '*.md',
+      fileNamePattern: '2022',
       directoryToScan: './testData/content',
       dry: false,
     });

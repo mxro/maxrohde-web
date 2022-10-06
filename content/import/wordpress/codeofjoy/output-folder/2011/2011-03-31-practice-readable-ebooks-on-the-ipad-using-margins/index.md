@@ -1,6 +1,6 @@
 ---
-title: "Practice: Readable eBooks on the iPad using Margins"
-date: "2011-03-31"
+title: 'Practice: Readable eBooks on the iPad using Margins'
+date: '2011-03-31'
 ---
 
 Ubiquitous devices of all sizes have radically changed our reading experiences in the last couple of years. I have no problem in reading entire books using iBooks on the iPhone. Reading on the [iPad](http://www.apple.com/ipad/) has often been criticized for the potential strenuous effects of screen brightness. However, I most struggle with the format of the screen – it is actually wider than the normal page in a book we are used to. iBooks on the iPad mitigates this problem by including relatively wide margins on both sides of the displayed pages (iBooks on the iPhone does not have these margins).

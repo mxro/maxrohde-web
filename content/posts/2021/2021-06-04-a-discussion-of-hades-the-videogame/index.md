@@ -1,19 +1,19 @@
 ---
-title: "A Discussion of Hades, the Videogame"
-date: "2021-06-04"
-categories: 
-  - "games"
-tags: 
-  - "difficulty"
-  - "gaming"
-  - "hades"
-  - "randomness"
-  - "review"
-  - "risk"
-coverImage: "hades.jpg"
+title: 'A Discussion of Hades, the Videogame'
+date: '2021-06-04'
+categories:
+  - 'games'
+tags:
+  - 'difficulty'
+  - 'gaming'
+  - 'hades'
+  - 'randomness'
+  - 'review'
+  - 'risk'
+coverImage: 'hades.jpg'
 ---
 
-I am not very good at playing video games; I never played any games with a controller as a child and thus never got very good at using them. Somehow I still enjoy difficult games the most. I (unsuccessfully) played the games [Dark Souls](https://en.wikipedia.org/wiki/Dark_Souls) ('Prepare to Die Edition') and (somewhat more successful) [Dead Cells](https://en.wikipedia.org/wiki/Dead_Cells) both known to be punishingly difficult. Although these games made me fail constantly, I spent a lot more time with them than with other games with a more forgiving difficulty curve, such as Assassins Creed. Recently I managed to complete one run-through of [Hades](https://en.wikipedia.org/wiki/Hades_(video_game)), a game that also made me struggle quite a bit. I think Hades is really a brilliantly designed game, so I wanted to take some time to reflect upon the elements I think that make this game so enticing.
+I am not very good at playing video games; I never played any games with a controller as a child and thus never got very good at using them. Somehow I still enjoy difficult games the most. I (unsuccessfully) played the games [Dark Souls](https://en.wikipedia.org/wiki/Dark_Souls) ('Prepare to Die Edition') and (somewhat more successful) [Dead Cells](https://en.wikipedia.org/wiki/Dead_Cells) both known to be punishingly difficult. Although these games made me fail constantly, I spent a lot more time with them than with other games with a more forgiving difficulty curve, such as Assassins Creed. Recently I managed to complete one run-through of [Hades](<https://en.wikipedia.org/wiki/Hades_(video_game)>), a game that also made me struggle quite a bit. I think Hades is really a brilliantly designed game, so I wanted to take some time to reflect upon the elements I think that make this game so enticing.
 
 ## About the Game
 

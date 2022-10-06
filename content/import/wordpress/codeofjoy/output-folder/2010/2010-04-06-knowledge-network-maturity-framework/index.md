@@ -1,8 +1,8 @@
 ---
-title: "Knowledge Network Maturity Framework"
-date: "2010-04-06"
-categories: 
-  - "contemplations"
+title: 'Knowledge Network Maturity Framework'
+date: '2010-04-06'
+categories:
+  - 'contemplations'
 ---
 
 To transform the knowledge management of an organization from a traditional, repository-oriented structure into a knowledge network oriented structure is a complex process. The following maturity framework is meant to provide guidance in this process:

@@ -1,8 +1,8 @@
 ---
-title: "Automatic Refresh of Projects in Eclipse"
-date: "2011-02-25"
-categories: 
-  - "java"
+title: 'Automatic Refresh of Projects in Eclipse'
+date: '2011-02-25'
+categories:
+  - 'java'
 ---
 
 I am working with the Maven Eclipse Plugin, the [Maven Bundle Plugin](http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html) and the eclipse PDE.

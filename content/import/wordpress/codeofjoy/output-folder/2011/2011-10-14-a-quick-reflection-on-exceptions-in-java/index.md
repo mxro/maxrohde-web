@@ -1,8 +1,8 @@
 ---
-title: "A Quick Reflection on Exceptions in Java"
-date: "2011-10-14"
-categories: 
-  - "java"
+title: 'A Quick Reflection on Exceptions in Java'
+date: '2011-10-14'
+categories:
+  - 'java'
 ---
 
 Exceptions are a necessary evil of most software development endeavours. As much as we would like to design applications, which are equivalent to mathematical functions 'give me one input and always I will trustfully return you the same output', the real world IOExceptions, OutOfMemoryExceptions, DivideByZeroExceptions and their various evil cousins force us to consider a versatile and often unpredictable state often out of our control.
@@ -54,4 +54,4 @@ It is difficult to say which is the 'right' way of handling unexpected states si
 
 **Resources**
 
-Blog post "[Programming antipatterns](http://glenndejaeger.wordpress.com/2010/04/05/programming-antipatterns/ "Programming Antipattern")"
+Blog post "[Programming antipatterns](http://glenndejaeger.wordpress.com/2010/04/05/programming-antipatterns/ 'Programming Antipattern')"

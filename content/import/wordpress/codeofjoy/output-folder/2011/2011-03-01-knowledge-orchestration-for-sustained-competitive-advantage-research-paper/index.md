@@ -1,8 +1,8 @@
 ---
-title: "Knowledge Orchestration for Sustained Competitive Advantage (Research Paper)"
-date: "2011-03-01"
-categories: 
-  - "contemplations"
+title: 'Knowledge Orchestration for Sustained Competitive Advantage (Research Paper)'
+date: '2011-03-01'
+categories:
+  - 'contemplations'
 ---
 
 We have presented a paper at the [44th Hawaiian International Conference on System Sciences (HICSS) 2011](http://www.hicss.hawaii.edu/hicss_44/apahome44.htm).

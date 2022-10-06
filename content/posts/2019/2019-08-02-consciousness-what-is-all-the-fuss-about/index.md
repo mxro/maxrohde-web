@@ -1,14 +1,14 @@
 ---
-title: "Consciousness: What is all the Fuss About?"
-date: "2019-08-02"
-categories: 
-  - "philosophy"
-  - "psychology"
-tags: 
-  - "consciousness"
-  - "life"
-  - "opinion"
-coverImage: "mind-544404.png"
+title: 'Consciousness: What is all the Fuss About?'
+date: '2019-08-02'
+categories:
+  - 'philosophy'
+  - 'psychology'
+tags:
+  - 'consciousness'
+  - 'life'
+  - 'opinion'
+coverImage: 'mind-544404.png'
 ---
 
 Today I listened to a podcast from the show [Waking up with Sam Harris](https://samharris.org/podcast/). The topic of the podcast was [consciousness and the self](https://samharris.org/podcasts/113-consciousness-and-the-self/) the guest was a Anil K. Seth. I haven't finished the podcast yet (it is over three hours long) but even in the beginning I couldn't stop wondering why it would be necessary to make such a big deal about the concept of consciousness.

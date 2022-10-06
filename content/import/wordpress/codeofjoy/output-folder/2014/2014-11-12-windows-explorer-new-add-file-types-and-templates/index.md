@@ -1,6 +1,6 @@
 ---
-title: "Windows Explorer New: Add File Types and Templates"
-date: "2014-11-12"
+title: 'Windows Explorer New: Add File Types and Templates'
+date: '2014-11-12'
 ---
 
 Right clicking within a folder of the Windows Explorer allows access to a convenient way to create new files through the context menu:
@@ -17,7 +17,7 @@ This post discusses a number of ways how this context menu can be changed.
 
 ### Edit Menu Through Windows Registry
 
-Search for 'regedit' in the windows search and open the Registration Editor. The relevant entries for the 'New' context menu can be found under 'HKEY\_CLASSES\_ROOT'.
+Search for 'regedit' in the windows search and open the Registration Editor. The relevant entries for the 'New' context menu can be found under 'HKEY_CLASSES_ROOT'.
 
 ![](images/111214_2117_windowsexpl3.png)
 

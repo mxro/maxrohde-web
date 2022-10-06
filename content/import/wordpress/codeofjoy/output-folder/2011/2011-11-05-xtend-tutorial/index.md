@@ -1,8 +1,8 @@
 ---
-title: "Xtend Tutorial"
-date: "2011-11-05"
-categories: 
-  - "java"
+title: 'Xtend Tutorial'
+date: '2011-11-05'
+categories:
+  - 'java'
 ---
 
 The world is rife for a new dominant programming language! Actually, has been rife for a couple of years, which, however, does not stop Java and C++ from dominating the screens of many unfortunate developers. Apart from the inarguably impressive features offered by 'new' languages, such as Scala, Goovy, Ruby, Haskell, Clojure, Dart? and Go, I am highly suspicious of these languages: What happens to the **billions of lines of code written in legacy programming languages**? Will my Groovy app work with the next update of Groovy, or will it work in 10 years, when I have to update my app? I don't want something big, not the total reinvention of computing but would already be happy with more concise syntax to create inline objects, type inference and simple closures.
@@ -20,7 +20,7 @@ Xtend defines itself as a **language for Java developers**. In specific, it allo
 **UPDATE**: As Daniel pointed out below, Xtend is now [available on the Eclipse Marketplace](http://marketplace.eclipse.org/node/148396). Installing it from there rather following the instructions in this section, might be much easier!
 
 - Open the install new software dialog in eclipse
-- Connect to the XText release repository: [http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/](http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/ "Copy To Clipboard")
+- Connect to the XText release repository: [http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/](http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/ 'Copy To Clipboard')
 - Select all packages "TMF Xtext-2.1.0" (or of a newer version if available)
 - This includes the "Xtend2 SDK" mentioned in the [Xtend tutorial](http://www.eclipse.org/Xtext/xtend/). The other packages need to be selected since otherwise the Xtend editors will not work.
 
@@ -104,13 +104,13 @@ org.eclipse.xtext.base.lib
 
 **class** HelloWorld {
 
-    **def** **public** **void** helloWorld() {
+**def** **public** **void** helloWorld() {
 
-        **val** message = "Hello, World!";
+**val** message = "Hello, World!";
 
-        System::_out_.println('''«message»'''); 
+System::_out_.println('''«message»''');
 
-    }
+}
 
 }
 
@@ -124,11 +124,11 @@ Tip: writing the symbol "«" can be achieved by pressing CTRL + SHIFT + < (or ,)
 
 **public** **class** HelloWorld { **public** **void** helloWorld() { **final** String message = "Hello, World!";
 
-   StringConcatenation \_builder = **new** StringConcatenation();
+StringConcatenation \_builder = **new** StringConcatenation();
 
-   \_builder.append(message, "");
+\_builder.append(message, "");
 
-   System._out_.println(\_builder);
+System._out_.println(\_builder);
 
 }
 
@@ -141,17 +141,17 @@ Does not look 100% efficient but that's the tradeoff for source code generation.
 
 **public** **class** Application {
 
-    /\*\*
+/\*\*
 
-     \* **@param** args
+\* **@param** args
 
-     \*/
+\*/
 
-    **public** **static** **void** main(String\[\] args) {
+**public** **static** **void** main(String\[\] args) {
 
-        **new** HelloWorld().helloWorld();
+**new** HelloWorld().helloWorld();
 
-    }
+}
 
 }
 

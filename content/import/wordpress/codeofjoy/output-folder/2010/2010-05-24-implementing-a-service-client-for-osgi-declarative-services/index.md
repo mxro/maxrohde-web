@@ -1,8 +1,8 @@
 ---
-title: "Implementing a Service Client for OSGi Declarative Services"
-date: "2010-05-24"
-categories: 
-  - "java"
+title: 'Implementing a Service Client for OSGi Declarative Services'
+date: '2010-05-24'
+categories:
+  - 'java'
 ---
 
 This post is part of a series of posts on [java modularity](http://nexnet.wordpress.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/).
@@ -131,7 +131,7 @@ osgi> ss
 
 Framework is launched.
 
-id        State Bundle 0        ACTIVE org.eclipse.osgi\_3.5.2.R35x\_v20100126          Fragments=2, 3 2        RESOLVED javax.transaction\_1.1.1.v201002111330          Master=0 3        RESOLVED org.eclipse.persistence.jpa.equinox.weaving\_1.1.3.v20091002-r5404          Master=0 5        ACTIVE org.eclipse.equinox.util\_1.0.100.v20090520-1800 6        ACTIVE org.eclipse.equinox.ds\_1.1.1.R35x\_v20090806 8        ACTIVE de.mxro.osgi.serviceDefinition\_1.0.0.qualifier 9        ACTIVE org.eclipse.osgi.services\_3.2.0.v20090520-1800 12        ACTIVE de.mxro.osgi.serviceProvider\_1.0.0.qualifier 16        ACTIVE de.mxro.osgi.serviceClient\_1.0.0.qualifier 21        ACTIVE de.mxro.osgi.serviceProvider2.WisdomProvider2\_1.0.0
+id        State Bundle 0        ACTIVE org.eclipse.osgi_3.5.2.R35x_v20100126          Fragments=2, 3 2        RESOLVED javax.transaction_1.1.1.v201002111330          Master=0 3        RESOLVED org.eclipse.persistence.jpa.equinox.weaving_1.1.3.v20091002-r5404          Master=0 5        ACTIVE org.eclipse.equinox.util_1.0.100.v20090520-1800 6        ACTIVE org.eclipse.equinox.ds_1.1.1.R35x_v20090806 8        ACTIVE de.mxro.osgi.serviceDefinition_1.0.0.qualifier 9        ACTIVE org.eclipse.osgi.services_3.2.0.v20090520-1800 12        ACTIVE de.mxro.osgi.serviceProvider_1.0.0.qualifier 16        ACTIVE de.mxro.osgi.serviceClient_1.0.0.qualifier 21        ACTIVE de.mxro.osgi.serviceProvider2.WisdomProvider2_1.0.0
 
 osgi> stop 12 Wisdom was unset: 'A wrong decision is better than indecision.'
 

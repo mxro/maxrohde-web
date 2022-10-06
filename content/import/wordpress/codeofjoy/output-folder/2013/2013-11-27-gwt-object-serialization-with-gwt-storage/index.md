@@ -1,10 +1,10 @@
 ---
-title: "GWT Object Serialization with gwt-storage"
-date: "2013-11-27"
-categories: 
-  - "java"
-tags: 
-  - "gwt"
+title: 'GWT Object Serialization with gwt-storage'
+date: '2013-11-27'
+categories:
+  - 'java'
+tags:
+  - 'gwt'
 ---
 
 ## Problem

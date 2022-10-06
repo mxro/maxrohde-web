@@ -1,15 +1,15 @@
 ---
-title: "The Economy and Happiness"
-date: "2018-09-29"
-categories: 
-  - "economy"
-  - "society"
-tags: 
-  - "consumerism"
-  - "economics"
-  - "happiness"
-  - "inequality"
-coverImage: "titian_-_the_tribute_money_-_google_art_project_715452.jpg"
+title: 'The Economy and Happiness'
+date: '2018-09-29'
+categories:
+  - 'economy'
+  - 'society'
+tags:
+  - 'consumerism'
+  - 'economics'
+  - 'happiness'
+  - 'inequality'
+coverImage: 'titian_-_the_tribute_money_-_google_art_project_715452.jpg'
 ---
 
 By many measures, there has been tremendous progress in key well-being indicators for all of mankind. There is less poverty, less hunger, less violence and more prosperity than there has ever been in human history.
@@ -30,4 +30,4 @@ Not so long ago, towards the end of the 19th century and the beginning of the 20
 
 I think that we have become very successful at creating the world which we think we want; a world where we are free from material needs and where we can live in comfort. Unfortunately, I do not believe that this is the world which can give us deep and lasting happiness. Deep and lasting happiness is based on humility, time spend in a meaningful way, a natural and wholesome environment and constant giving and receiving of kindness and love. The combined economic power of the world is more than sufficient to supply us with the essentials we need for living and with means to engineer an environment which will enable us to find happiness. Nonetheless, [we are obsessed with growing our economic power through consumption](http://www.smh.com.au/comment/a-little-restraint-might-save-the-world-and-boost-happiness-20180108-h0fedv.html). Why? It is unnecessary. We should rather focus on channelling the economic power we have already created towards more noble and sustainable goals.
 
-Featured Image: [WikiMedia](https://commons.wikimedia.org/wiki/File:Titian_-_The_Tribute_Money_-_Google_Art_Project_(715452).jpg)
+Featured Image: [WikiMedia](<https://commons.wikimedia.org/wiki/File:Titian_-_The_Tribute_Money_-_Google_Art_Project_(715452).jpg>)

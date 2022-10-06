@@ -1,8 +1,8 @@
 ---
-title: "GWT deRPC to be Deprecated"
-date: "2011-02-21"
-categories: 
-  - "java"
+title: 'GWT deRPC to be Deprecated'
+date: '2011-02-21'
+categories:
+  - 'java'
 ---
 
 Direct evaluate Remote Procedure Calls (deRPCs) in GWT seem to be promising approach to transfer objects from server to browser. Rather than encoding objects into a stream of text in a legacy format, deRPC sends objects as JavaScript statements from server to client.

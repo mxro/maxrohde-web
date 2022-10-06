@@ -1,16 +1,16 @@
 ---
-title: "Practice: Joy"
-date: "2019-04-13"
-categories: 
-  - "buddhism"
-  - "psychology"
-tags: 
-  - "happiness"
-  - "joy"
-  - "life"
-  - "practice"
-  - "practices"
-coverImage: "the_roses_of_heliogabalus.jpg"
+title: 'Practice: Joy'
+date: '2019-04-13'
+categories:
+  - 'buddhism'
+  - 'psychology'
+tags:
+  - 'happiness'
+  - 'joy'
+  - 'life'
+  - 'practice'
+  - 'practices'
+coverImage: 'the_roses_of_heliogabalus.jpg'
 ---
 
 Joy is what makes the little moments in our life worthwhile. We may play a game, we may laugh with friends, we may dance, or draw or swim; any of the things nature has allowed us to find pleasure in. We need this joy and it is a great source of strength for us.

@@ -1,6 +1,6 @@
 ---
-title: "Relocating SVN repository for multiple projects in eclipse workspace"
-date: "2011-09-14"
+title: 'Relocating SVN repository for multiple projects in eclipse workspace'
+date: '2011-09-14'
 ---
 
 Although an SVN server is possibly a fixed anchor in dynamic and distributed development efforts, even these servers might have to be relocated from time to time. Surprisingly, this can be done quite swiftly, even in complex set ups, for instance an eclipse workspace comprised of dozens of projects stored on a number of different repositories. In the following, a few simple steps are listed to inform eclipse of the relocation of an SVN server or repository.

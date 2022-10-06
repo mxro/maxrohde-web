@@ -1,6 +1,6 @@
 ---
-title: "Twitter Flattery?"
-date: "2012-12-10"
+title: 'Twitter Flattery?'
+date: '2012-12-10'
 ---
 
 ![Twitter Flattery?](images/flattery.png)

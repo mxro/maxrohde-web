@@ -1,10 +1,10 @@
 ---
-title: "Forward All Email from Gmail (even SPAM)"
-date: "2015-06-18"
-categories: 
-  - "productivity"
-tags: 
-  - "productivity"
+title: 'Forward All Email from Gmail (even SPAM)'
+date: '2015-06-18'
+categories:
+  - 'productivity'
+tags:
+  - 'productivity'
 ---
 
 #### Problem

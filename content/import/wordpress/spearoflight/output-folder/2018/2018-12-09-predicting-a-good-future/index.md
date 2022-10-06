@@ -1,21 +1,21 @@
 ---
-title: "Predicting a Good Future"
-date: "2018-12-09"
-categories: 
-  - "economy"
-  - "philosophy"
-  - "politics"
-  - "society"
-tags: 
-  - "environment"
-  - "equality"
-  - "future"
-coverImage: "the_oracle.jpg"
+title: 'Predicting a Good Future'
+date: '2018-12-09'
+categories:
+  - 'economy'
+  - 'philosophy'
+  - 'politics'
+  - 'society'
+tags:
+  - 'environment'
+  - 'equality'
+  - 'future'
+coverImage: 'the_oracle.jpg'
 ---
 
 I recently read an article published by a German newspaper which was discussed how our future might look like in 2037. Trying to predict the future is something which has always fascinated me. I think we do far too little of that in comparison with how much of our attention we direct towards the past; just think about how many books are written about history versus those about the future!
 
-Maybe this is just because we have come to realise that predicting the future is too difficult; the world is so complex and moves into seemingly random directions. However, there are broader developments which play out over long stretches; such as the rise of China, the growing population of India or the decline of the political system in the United States. 
+Maybe this is just because we have come to realise that predicting the future is too difficult; the world is so complex and moves into seemingly random directions. However, there are broader developments which play out over long stretches; such as the rise of China, the growing population of India or the decline of the political system in the United States.
 
 I think it would be an interesting exercise to try to identify strong developments in our time which are very likely to continue in the future. If we have a list of those, we could then try to extrapolate from them.
 

@@ -1,11 +1,11 @@
 ---
-title: "onedb Tutorial: Getting Started and First Steps"
-date: "2012-05-06"
-categories: 
-  - "java"
+title: 'onedb Tutorial: Getting Started and First Steps'
+date: '2012-05-06'
+categories:
+  - 'java'
 ---
 
-[onedb](http://www.ononedb.com "onedb homepage") is the database engine at the heart of the [appjangle](http://appjangle.com) platform. This tutorial gives an overview of a number of capabilities of the onedb engine.
+[onedb](http://www.ononedb.com 'onedb homepage') is the database engine at the heart of the [appjangle](http://appjangle.com) platform. This tutorial gives an overview of a number of capabilities of the onedb engine.
 
 The following topics are discussed in this tutorial:
 
@@ -37,7 +37,7 @@ This part is still work in progress :)
 5. Managing Authorizations (TBA)
 6. Clear Versions (TBA)
 
-For further information about the motivation, concepts and design behind onedb, please check out [the other articles on the onedb website](http://cms.onedb.de/articles "onedb articles").
+For further information about the motivation, concepts and design behind onedb, please check out [the other articles on the onedb website](http://cms.onedb.de/articles 'onedb articles').
 
 ## Part I: Set up
 
@@ -45,17 +45,17 @@ For further information about the motivation, concepts and design behind onedb, 
 
 onedb is a cloud based database and therefore requires a cloud service provider to work.
 
-Currently, onedb is deployed as part of the [appjangle](http://appjangle.com "appjangle: application platform") platform.
+Currently, onedb is deployed as part of the [appjangle](http://appjangle.com 'appjangle: application platform') platform.
 
 Just head to the appjangle page and sign up. You will receive an email with a key for appjangle. You can use this key to initialize the onedb engine.
 
-[![](images/appjangle-email1.png "appjangle email")](http://nexnet.files.wordpress.com/2012/05/appjangle-email1.png)
+[![](images/appjangle-email1.png 'appjangle email')](http://nexnet.files.wordpress.com/2012/05/appjangle-email1.png)
 
 ### 2\. Download the client library
 
 Although onedb provides a simple REST interface, far superior usability and performance is provided by the supplied client libraries. You can download the latest version so the client libraries at
 
-> [http://cms.onedb.de/downloads](http://cms.onedb.de/downloads "onedb downloads")
+> [http://cms.onedb.de/downloads](http://cms.onedb.de/downloads 'onedb downloads')
 
 Note that there are two different client libraries:
 
@@ -76,7 +76,7 @@ The onedb client libraries can be linked to any Java application by adding them 
 Link onedb to a new eclipse project by following the steps below:
 
 1. Download the onedb Java Test Toolkit library as discussed above and store the 'oneTestJre.min-x.x.x.jar' file on your local machine.
-2. You will need to download and extract a suitable eclipse distribution. The [Eclipse IDE for Java Developers](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/indigosr2 "Eclipse IDE for Java Developers") will do fine to begin with.
+2. You will need to download and extract a suitable eclipse distribution. The [Eclipse IDE for Java Developers](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/indigosr2 'Eclipse IDE for Java Developers') will do fine to begin with.
 3. Start eclipse and create a new Java project through Menu File / New / Java Project
 
 ![Create a new eclipse project](https://docs.google.com/drawings/pub?id=1Jbuv1_M9e_irGDZzqDaRDt5e7t9njsV_DbmOrR7Adeo&w=535&h=358)
@@ -92,7 +92,7 @@ Link onedb to a new eclipse project by following the steps below:
 
 ![Add jar to classpath](https://docs.google.com/drawings/pub?id=1P6AALeFcvJqwE4ZUp18UOP3IbrRr1rL9ueX9paQHlrw&w=744&h=394)
 
-Now you can start using the onedb client library in the eclipse project. Go to [step 4](#initializingengine "Step 4: Initialize onedb engine") to continue.
+Now you can start using the onedb client library in the eclipse project. Go to [step 4](#initializingengine 'Step 4: Initialize onedb engine') to continue.
 
 #### Maven
 
@@ -156,9 +156,9 @@ onedb uses only a handful of core operations to compose flexible and expressive 
 
 ### 1\. Create Realm
 
-Realms are essential in working with onedb. Every item of data stored in the onedb cloud must be part of a realm. You can check the article "[onedb Architecture and Design](http://maxrohde.com/2012/05/06/onedb-architecture-and-design "onedb Architecture and Design")" to learn about the design concepts behind realms. This tutorial will walk through the practical steps necessary to create realms using the onedb Java API.
+Realms are essential in working with onedb. Every item of data stored in the onedb cloud must be part of a realm. You can check the article "[onedb Architecture and Design](http://maxrohde.com/2012/05/06/onedb-architecture-and-design 'onedb Architecture and Design')" to learn about the design concepts behind realms. This tutorial will walk through the practical steps necessary to create realms using the onedb Java API.
 
-If you have followed the steps above to link the downloaded library in eclipse, you will have an empty eclipse project, including a link to the library 'oneTestJre.min-x.x.x'. I will describe the following steps using eclipse in detail. If you are an eclipse whizz or [use another IDE](http://developer4life.blogspot.co.nz/2012/01/intellij-vs-eclipse.html "Intellij vs. Eclipse ") (or [no IDE at all](http://tellspk.wordpress.com/2011/07/24/using-vim-for-java-programming-maven-integration/ "Using Vim for Java programming – Maven Integration")), please feel free to skip any of following steps.
+If you have followed the steps above to link the downloaded library in eclipse, you will have an empty eclipse project, including a link to the library 'oneTestJre.min-x.x.x'. I will describe the following steps using eclipse in detail. If you are an eclipse whizz or [use another IDE](http://developer4life.blogspot.co.nz/2012/01/intellij-vs-eclipse.html 'Intellij vs. Eclipse ') (or [no IDE at all](http://tellspk.wordpress.com/2011/07/24/using-vim-for-java-programming-maven-integration/ 'Using Vim for Java programming – Maven Integration')), please feel free to skip any of following steps.
 
 You can add a Java file by right-clicking on the 'src' folder in your project and selecting New / Class. Add a new class ExploreOneDb as follows:
 
@@ -176,15 +176,15 @@ Chose the option `createRealm(String withTitle)`:
 
 ![Option Select realm selected](https://docs.google.com/drawings/pub?id=1sZwC79VfkjL2YAHbu1NXLTJlkc2FVu1LTF4Mg4IbVKo&w=387)
 
-The onedb client now requires the specification of a title of the realm, which is to be created. Realm titles have no special significance apart from that they help to [build descriptive URIs](http://looselyconnected.wordpress.com/2011/03/10/managing-relationships-between-resources-with-uris/ "Managing Relationships between Resources with URIs") for any nodes stored in the realm. Chose the title `"exploration"` and add a `.` after the closing brackets to see the context options for the `createRealm(..)` operation:
+The onedb client now requires the specification of a title of the realm, which is to be created. Realm titles have no special significance apart from that they help to [build descriptive URIs](http://looselyconnected.wordpress.com/2011/03/10/managing-relationships-between-resources-with-uris/ 'Managing Relationships between Resources with URIs') for any nodes stored in the realm. Chose the title `"exploration"` and add a `.` after the closing brackets to see the context options for the `createRealm(..)` operation:
 
 ![Context options for Create Realm](https://docs.google.com/drawings/pub?id=1sYZQKUvglRksWJ7QSnjcpq05h8yeX_XyotpLcxfxpPU&w=634&h=320)
 
 We can either specify a client session by choosing the `.in(OneClient client)` option or specify the operation, we would like to perform after the realm has been created successfully by choosing the option `.and(RealmCreated callback)`. Since there is no existing client session, we chose the second option.
 
-The parameter type `RealmCreated` or more precisely `When.RealmCreated` will help to define a so called [callback](https://codexplo.wordpress.com/2012/05/02/how-to-implement-callback-method-in-java-using-java-reflection/ "How to implement callback method in java using java reflection?") for the operation. A callback defines a method, which will be called once a remote operation is completed. Callbacks are used throughout the onedb APIs for all operations, which depend on remote systems.
+The parameter type `RealmCreated` or more precisely `When.RealmCreated` will help to define a so called [callback](https://codexplo.wordpress.com/2012/05/02/how-to-implement-callback-method-in-java-using-java-reflection/ 'How to implement callback method in java using java reflection?') for the operation. A callback defines a method, which will be called once a remote operation is completed. Callbacks are used throughout the onedb APIs for all operations, which depend on remote systems.
 
-Realms are managed by the onedb cloud and, therefore, the operation of requesting a realm needs to make a call to the remote onedb cloud. The duration of this call can vary significantly depending on your network connection and the way [messages are sent through the Internet](http://www.stevesouders.com/blog/2010/07/13/velocity-tcp-and-the-lower-bound-of-web-performance/ "Velocity: TCP and the Lower Bound of Web Performance"). In any case, the call to the remote cloud takes, in terms of computer time, very long. Using a callback enables your application to do some other useful work while it is waiting for the response from the onedb cloud.
+Realms are managed by the onedb cloud and, therefore, the operation of requesting a realm needs to make a call to the remote onedb cloud. The duration of this call can vary significantly depending on your network connection and the way [messages are sent through the Internet](http://www.stevesouders.com/blog/2010/07/13/velocity-tcp-and-the-lower-bound-of-web-performance/ 'Velocity: TCP and the Lower Bound of Web Performance'). In any case, the call to the remote cloud takes, in terms of computer time, very long. Using a callback enables your application to do some other useful work while it is waiting for the response from the onedb cloud.
 
 To define the callback for the `createRealm(..)` operation, chose the option `and(..)` and type within the brackets after `and`: `new When.`. This will show the available callbacks in the onedb API. Select the callback definition, which corresponds to the required parameter type indicated on top of the parameter.
 
@@ -343,7 +343,7 @@ One.load(One.reference("https://u1.linnk.it/bgbpce/explora"))
 });
 ```
 
-The callback method (`thenDo(..)`) returns a load result with a reference to the node, we have just loaded (`lr.loadedNode()`). The load result also returns a [client session](http://maxrohde.com/2012/05/06/onedb-architecture-and-design/#clients "Client Sessions in onedb") (`lr.client()`). We can retrieve the resolved loaded node as follows:
+The callback method (`thenDo(..)`) returns a load result with a reference to the node, we have just loaded (`lr.loadedNode()`). The load result also returns a [client session](http://maxrohde.com/2012/05/06/onedb-architecture-and-design/#clients 'Client Sessions in onedb') (`lr.client()`). We can retrieve the resolved loaded node as follows:
 
 ```java
 @Override
@@ -356,7 +356,7 @@ public void thenDo(WithLoadResult<Object> lr) {
 }
 ```
 
-For an in-depth discussion of the various node types and the `One.dereference(..)` operation please check the article "[A Practical Guide on Node Types in onedb](http://maxrohde.com/2012/05/15/node-types-in-onedb/ "onedb node types")".
+For an in-depth discussion of the various node types and the `One.dereference(..)` operation please check the article "[A Practical Guide on Node Types in onedb](http://maxrohde.com/2012/05/15/node-types-in-onedb/ 'onedb node types')".
 
 Run the application and you should get an output such as the following:
 
@@ -365,11 +365,11 @@ Node reference: One.reference("https://u1.linnk.it/bgbpce/explora")
 Resolved node: Nx.define(exploration).at(https://u1.linnk.it/bgbpce/explora)
 ```
 
-\[[full source code of example on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/G_GettingStarted_Load.java "Source code for Load Example")\]
+\[[full source code of example on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/G_GettingStarted_Load.java 'Source code for Load Example')\]
 
 ### 4\. Append
 
-Thus far, this tutorial walked through the steps of setting up a Java project, creating a realm and accessing this realm using a REST interface and the onedb API. Although [creating a realm inevitably results in the creation of one node](http://maxrohde.com/2012/05/06/onedb-architecture-and-design/#realms "onedb Realms") (the realm root), we have not really done a lot of work with nodes, for instance establishing connections. In this section, I will explain the most important operation to define nodes and connections between them: append.
+Thus far, this tutorial walked through the steps of setting up a Java project, creating a realm and accessing this realm using a REST interface and the onedb API. Although [creating a realm inevitably results in the creation of one node](http://maxrohde.com/2012/05/06/onedb-architecture-and-design/#realms 'onedb Realms') (the realm root), we have not really done a lot of work with nodes, for instance establishing connections. In this section, I will explain the most important operation to define nodes and connections between them: append.
 
 First create a new class `NodeOperations` and add a main method, which creates a new realm (check the creating a realm section above for details regarding the following code snippet):
 
@@ -432,7 +432,7 @@ public void thenDo(WithRealmCreatedResult r) {
 }
 ```
 
-\[[full source code on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/H_GettingStarted_AddClass.java "Example Adding Object with Class Definition")\]
+\[[full source code on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/H_GettingStarted_AddClass.java 'Example Adding Object with Class Definition')\]
 
 You can run the application and should receive the login information for the test realm such as `Created One.reference("https://u1.linnk.it/crd87h/ops"):hhz______ni`. We can use this reference to load both the realm and the associated `bob` object using the One API as described above under the [load operation](#load).
 
@@ -476,7 +476,7 @@ One.createRealm("ops").and(new When.RealmCreated() {
 });
 ```
 
-\[[full source code on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/I_GettingStarted_AddNodes.java "Customer Example with Nodes")\]
+\[[full source code on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/I_GettingStarted_AddNodes.java 'Customer Example with Nodes')\]
 
 If we access the realm created with the logic above using the REST interface, the data should be presented in a more accessible manner such as below:
 
@@ -518,7 +518,7 @@ One.createRealm("types").and(new When.RealmCreated() {
 });
 ```
 
-\[[full source code on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/J_GettingStarted_CustomerTypes.java "App Creating Customer Types")\]
+\[[full source code on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/J_GettingStarted_CustomerTypes.java 'App Creating Customer Types')\]
 
 Note here the slightly changed append statements with an added `atAddress(..)` parameter. Specifying the `atAddress` parameter allows to specify a precise address to be used for nodes; if `atAddress` is not specified, onedb will attempt to generate a suitable address.
 
@@ -553,13 +553,13 @@ One.append(addressValue).to(bob).in(client);
 One.append(addressType).to(addressValue).in(client);
 ```
 
-\[[full source code on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/K_GettingStarted_CustomerDefinition.java "Example App Define Customer Bob")\]
+\[[full source code on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/K_GettingStarted_CustomerDefinition.java 'Example App Define Customer Bob')\]
 
-Now, if we were to define a customer [Alice](http://xkcd.com/177/ "Alice and Bob"), we could reuse the type nodes for 'address' and 'customer' used for the definition of Bob.
+Now, if we were to define a customer [Alice](http://xkcd.com/177/ 'Alice and Bob'), we could reuse the type nodes for 'address' and 'customer' used for the definition of Bob.
 
 ### 5\. Select
 
-Querying data in onedb is done on a recursive from-node-to-node basis much in the spirit of [Linked Data](http://blog.typoplanet.de/2011/03/28/query-linked-data-cloud-typo3/ "Query the Linked Data Cloud using TYPO3"). In order to aid the navigation from node to node, onedb provides three operations to query the children of a node:
+Querying data in onedb is done on a recursive from-node-to-node basis much in the spirit of [Linked Data](http://blog.typoplanet.de/2011/03/28/query-linked-data-cloud-typo3/ 'Query the Linked Data Cloud using TYPO3'). In order to aid the navigation from node to node, onedb provides three operations to query the children of a node:
 
 `selectFrom(node).allChildren()`: Will return a list of the references of all children appended to the node.
 
@@ -583,7 +583,7 @@ One.append(
         .to(bob).in(r.client());
 ```
 
-\[[full source on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/L_GettingStarted_SelectCreateData.java "Source code for creating data")\]
+\[[full source on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/L_GettingStarted_SelectCreateData.java 'Source code for creating data')\]
 
 Note that you will have to replace the reference to the customer type defined above (`"https://u1.linnk.it/zednuw/types/customer"`) with the customer type you have created in the previous section.
 
@@ -663,7 +663,7 @@ One.selectFrom(lr.loadedNode())
         });
 ```
 
-\[[full source code on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/M_GettingStarted_SelectQueryData.java "Source code querying data")\]
+\[[full source code on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/M_GettingStarted_SelectQueryData.java 'Source code querying data')\]
 
 Running your application should result in an output such as shown below.
 
@@ -682,11 +682,11 @@ The select example makes heavy use of references (`One.reference(...)`) and valu
 
 Apart from creating realms and appending nodes in complex and deep arrangements, onedb supports to replace the value of nodes as well as removing nodes. However, it is often a good idea to avoid these operations whenever possible. onedb in its core is designed to enable distributed systems: any piece of data or node might be opened by multiple clients on the same or different devices.
 
-The operations remove and replace add one significant factor of uncertainty: mutability. While immutability is a [nice property of any software system](http://faisalferoz.wordpress.com/2007/12/21/immutable-design-pattern/ "Immutable Design Pattern"), it is crucial to the [success of distributed systems](http://pettermahlen.com/2010/05/04/immutability-a-constraint-that-empowers/ "Immutability: a constraint that empowers").
+The operations remove and replace add one significant factor of uncertainty: mutability. While immutability is a [nice property of any software system](http://faisalferoz.wordpress.com/2007/12/21/immutable-design-pattern/ 'Immutable Design Pattern'), it is crucial to the [success of distributed systems](http://pettermahlen.com/2010/05/04/immutability-a-constraint-that-empowers/ 'Immutability: a constraint that empowers').
 
 As long as we constrain ourselves to using the operations of createRealm, append and select, the data stored in onedb will be immutable. For instance, when we append a node representing the type customer to a 'types' node, it can be guaranteed that this node will be available to any client working with the system.
 
-The operation `remove`, in particular, can lead to unexpected and undesired situations in a system with many involved clients. However, there are cases, where using update and remove is just by far the [simplest](http://blog.williamgill.de/2012/02/19/simplicity/ "Simplicity") solution. To support these cases, onedb offers operations both to update and remove nodes from the network.
+The operation `remove`, in particular, can lead to unexpected and undesired situations in a system with many involved clients. However, there are cases, where using update and remove is just by far the [simplest](http://blog.williamgill.de/2012/02/19/simplicity/ 'Simplicity') solution. To support these cases, onedb offers operations both to update and remove nodes from the network.
 
 The update operation will replace a node value with another node value. The connections of a node remain unaffected by the update operation. The value of nodes with externally managed address can easily be updated as shown in the following:
 
@@ -738,9 +738,9 @@ One.replace(phase1Node)
         .in(client);
 ```
 
-\[[full source on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/N_GettingStarted_Replace.java "Source code example Replace")\]
+\[[full source on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/N_GettingStarted_Replace.java 'Source code example Replace')\]
 
-onedb stores a version every time a node is changed (e.g. replaced, a child is appended, a child is removed ..). Therefore, calling `One.clearVersions(...)` for nodes, which are frequently changed, can significantly increase the performance of loading and manipulating data. You can find an [example on github on how to use the clear versions operation](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/Nb_GettingStarted_Replace_With_Clear_Versions.java "Example Clear Versions").
+onedb stores a version every time a node is changed (e.g. replaced, a child is appended, a child is removed ..). Therefore, calling `One.clearVersions(...)` for nodes, which are frequently changed, can significantly increase the performance of loading and manipulating data. You can find an [example on github on how to use the clear versions operation](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/Nb_GettingStarted_Replace_With_Clear_Versions.java 'Example Clear Versions').
 
 ### 7\. Remove
 
@@ -774,4 +774,4 @@ If, however, a connection between nodes, which are in no direct parent-child rel
     One.remove(toBeKeptNode).fromNode(anotherNode).in(client);
 ```
 
-\[[full source on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/O_GettingStarted_Remove.java "onedb Remove Example")\]
+\[[full source on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/O_GettingStarted_Remove.java 'onedb Remove Example')\]

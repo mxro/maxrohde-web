@@ -1,8 +1,8 @@
 ---
-title: "Setting up a Maven Repository using Nexus and Artifactory"
-date: "2010-05-29"
-categories: 
-  - "java"
+title: 'Setting up a Maven Repository using Nexus and Artifactory'
+date: '2010-05-29'
+categories:
+  - 'java'
 ---
 
 Two popular alternatives are Nexus and Artifactory and it is highly debated, which is the [best option to use](http://weblogs.java.net/blog/johnsmart/archive/2010/01/03/tale-two-repository-managers-nexus-and-artifactory-compared-and-co). Nexus seems to have the smaller footprint on the server‘s memory.

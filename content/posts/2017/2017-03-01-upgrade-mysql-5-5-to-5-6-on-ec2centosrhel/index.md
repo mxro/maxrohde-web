@@ -1,11 +1,11 @@
 ---
-title: "Upgrade MySQL 5.5 to 5.6 on EC2/CentOS/RHEL"
-date: "2017-03-01"
-categories: 
-  - "aws"
-  - "linux"
-tags: 
-  - "mysql"
+title: 'Upgrade MySQL 5.5 to 5.6 on EC2/CentOS/RHEL'
+date: '2017-03-01'
+categories:
+  - 'aws'
+  - 'linux'
+tags:
+  - 'mysql'
 ---
 
 ### Problem
@@ -50,7 +50,7 @@ mysql -u root -p --force < data-for-upgrade.sql
 
 **\[9\]** Verify all tables will work in 5.6
 
-sudo mysql\_upgrade -u root -p --force
+sudo mysql_upgrade -u root -p --force
 
 **All done!**
 

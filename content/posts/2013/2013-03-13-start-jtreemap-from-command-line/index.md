@@ -1,8 +1,8 @@
 ---
-title: "Start JTreeMap from Command Line"
-date: "2013-03-13"
-categories: 
-  - "java"
+title: 'Start JTreeMap from Command Line'
+date: '2013-03-13'
+categories:
+  - 'java'
 ---
 
 In the course of writing up my thesis, I wanted to perform a simple source code analysis on the Appjangle code base. Since most of the code is as of now stored in a SVN repository, I used [StatSVN](http://www.statsvn.org/) for this purpose. StatSVN is really easy to use and generate some very nice statistics and diagrams.

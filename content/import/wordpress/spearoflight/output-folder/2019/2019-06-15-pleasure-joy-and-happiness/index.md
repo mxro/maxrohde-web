@@ -1,17 +1,17 @@
 ---
-title: "Pleasure, Joy and Happiness"
-date: "2019-06-15"
-categories: 
-  - "philosophy"
-  - "psychology"
-tags: 
-  - "definition"
-  - "emotions"
-  - "happiness"
-  - "joy"
-  - "life"
-  - "pleasure"
-coverImage: "16780721810_2565eff710_o.jpg"
+title: 'Pleasure, Joy and Happiness'
+date: '2019-06-15'
+categories:
+  - 'philosophy'
+  - 'psychology'
+tags:
+  - 'definition'
+  - 'emotions'
+  - 'happiness'
+  - 'joy'
+  - 'life'
+  - 'pleasure'
+coverImage: '16780721810_2565eff710_o.jpg'
 ---
 
 One of the marks of an expert is the knowledge of vocabulary within a specific domain and the ability to apply this vocabulary effectively and precisely. Listing to two engineers talk about the construction of a bridge, we would not understand much of their conversation, as long as we not happen to be a structural engineer ourselves.

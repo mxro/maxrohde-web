@@ -1,10 +1,10 @@
 ---
-title: "Test Latency Between Two Servers (Linux)"
-date: "2018-01-04"
-categories: 
-  - "linux"
-tags: 
-  - "devops"
+title: 'Test Latency Between Two Servers (Linux)'
+date: '2018-01-04'
+categories:
+  - 'linux'
+tags:
+  - 'devops'
 ---
 
 Today I was looking for a simple way to test the latency and bandwidth between two Linux servers.
@@ -16,10 +16,10 @@ ping x.x.x.x
 You can leave this running for a while and when you have seen enough data, just hit Ctrl + C to interrupt the program. This will result in an output such as the following:
 
 PING 168.235.94.7 (168.235.94.7) 56(84) bytes of data.
-64 bytes from 168.235.94.7: icmp\_seq=1 ttl=64 time=**0.180 ms**
-64 bytes from 168.235.94.7: icmp\_seq=2 ttl=64 time=**0.150 ms**
-64 bytes from 168.235.94.7: icmp\_seq=3 ttl=64 time=**0.148 ms**
-64 bytes from 168.235.94.7: icmp\_seq=4 ttl=64 time=**0.150 ms**
+64 bytes from 168.235.94.7: icmp_seq=1 ttl=64 time=**0.180 ms**
+64 bytes from 168.235.94.7: icmp_seq=2 ttl=64 time=**0.150 ms**
+64 bytes from 168.235.94.7: icmp_seq=3 ttl=64 time=**0.148 ms**
+64 bytes from 168.235.94.7: icmp_seq=4 ttl=64 time=**0.150 ms**
 ^C
 --- 168.235.94.7 ping statistics ---
 4 packets transmitted, 4 received, 0% packet loss, time 3000ms

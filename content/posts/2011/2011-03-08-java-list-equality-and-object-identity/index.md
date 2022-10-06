@@ -1,8 +1,8 @@
 ---
-title: "Java List Equality and Object Identity"
-date: "2011-03-08"
-categories: 
-  - "java"
+title: 'Java List Equality and Object Identity'
+date: '2011-03-08'
+categories:
+  - 'java'
 ---
 
 ## Problem
@@ -12,7 +12,7 @@ Java lists manage inserted objects based on their equality ([see List JavaDoc](h
 This becomes quite apparent in the following example:
 
 ```
-final List<String> list = new ArrayList<String>(); 
+final List<String> list = new ArrayList<String>();
 ```
 
 Here, we would usually expect "1" as result, since the String s2 has been inserted after the String s1 (which should have the index 0). However, Java prints "**0**" as answer in above example. 0 is returned since the indexOf(…) method only attempts to find an object which is equal to the passed parameter ("one") and not the identical object to the passed object (s2).

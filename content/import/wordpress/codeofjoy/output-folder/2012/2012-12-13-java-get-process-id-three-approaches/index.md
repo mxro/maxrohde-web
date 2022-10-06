@@ -1,10 +1,10 @@
 ---
-title: "Java Get Process Id: Three Approaches"
-date: "2012-12-13"
-categories: 
-  - "java"
-tags: 
-  - "tutorial"
+title: 'Java Get Process Id: Three Approaches'
+date: '2012-12-13'
+categories:
+  - 'java'
+tags:
+  - 'tutorial'
 ---
 
 Java provides no robust way to obtain the id of the OS process in which the application is running.
@@ -148,4 +148,4 @@ _Disadvantages:_
 
 [stackoverflow - How do I obtain the PID of a spawned java process](http://stackoverflow.com/questions/7834270/how-do-i-obtain-the-pid-of-a-spawned-java-process)
 
- [](http://stackoverflow.com/questions/7834270/how-do-i-obtain-the-pid-of-a-spawned-java-process)
+[](http://stackoverflow.com/questions/7834270/how-do-i-obtain-the-pid-of-a-spawned-java-process)

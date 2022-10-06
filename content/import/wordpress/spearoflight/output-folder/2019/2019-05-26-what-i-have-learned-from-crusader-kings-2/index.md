@@ -1,14 +1,14 @@
 ---
-title: "What I have Learned from Crusader Kings 2"
-date: "2019-05-26"
-categories: 
-  - "games"
-tags: 
-  - "crusader-kings"
-  - "crusader-kings-2"
-  - "experiences"
-  - "gaming"
-coverImage: "world.png"
+title: 'What I have Learned from Crusader Kings 2'
+date: '2019-05-26'
+categories:
+  - 'games'
+tags:
+  - 'crusader-kings'
+  - 'crusader-kings-2'
+  - 'experiences'
+  - 'gaming'
+coverImage: 'world.png'
 ---
 
 We often find ourselves in discussions if activities such as reading, watching TV, browsing the Internet or playing video games are good for you or not. I think this is like asking if a government is a good thing or not. The question is for the most part pointless since it doesn't matter so much if we do have a government or not but what kind of government it is.
@@ -45,7 +45,7 @@ Starting from a single county in Ireland, I managed to build up a sizeable realm
 
 I had manged with much scheming and trickery to change the succession laws in all of the kingdoms I ruled to primogeniture, which should assure that all kingdoms would pass on to my oldest son, and in absence of such, to my oldest daughter. However, upon my death, either through a bug in the game or arcane medieval laws, my oldest daughter received one kingdom, and my youngest daughter all the others. The character I took control over was my oldest daughter, and thus, in an instant the aspiring empire I had built was lost.
 
-\[caption id="attachment\_149" align="alignnone" width="387"\]![before the downfall](images/before-the-downfall.png) My character's titles before the downfall\[/caption\]
+\[caption id="attachment_149" align="alignnone" width="387"\]![before the downfall](images/before-the-downfall.png) My character's titles before the downfall\[/caption\]
 
 This taught me the lesson that even if things are going very well, one must not start to be careless, unless one risks to loose everything.
 

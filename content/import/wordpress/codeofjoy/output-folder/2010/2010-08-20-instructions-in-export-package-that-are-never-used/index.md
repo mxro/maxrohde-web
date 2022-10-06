@@ -1,8 +1,8 @@
 ---
-title: "Instructions in Export-Package that are never used"
-date: "2010-08-20"
-categories: 
-  - "java"
+title: 'Instructions in Export-Package that are never used'
+date: '2010-08-20'
+categories:
+  - 'java'
 ---
 
 **Problem**

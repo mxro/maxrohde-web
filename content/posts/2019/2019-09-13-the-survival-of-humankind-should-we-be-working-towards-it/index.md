@@ -1,16 +1,16 @@
 ---
-title: "The Survival of Humankind: Should We Be Working Towards It?"
-date: "2019-09-13"
-categories: 
-  - "philosophy"
-  - "politics"
-  - "society"
-tags: 
-  - "america"
-  - "economics"
-  - "environment"
-  - "world"
-coverImage: "art-711273.jpg"
+title: 'The Survival of Humankind: Should We Be Working Towards It?'
+date: '2019-09-13'
+categories:
+  - 'philosophy'
+  - 'politics'
+  - 'society'
+tags:
+  - 'america'
+  - 'economics'
+  - 'environment'
+  - 'world'
+coverImage: 'art-711273.jpg'
 ---
 
 Given that there does not appear to be a way open to us to determine what the purpose of life is, and therefore no way to know what is ultimately good and bad, it is only natural that there is some disagreement among us what it means to live a virtuous life.
@@ -35,4 +35,4 @@ I think the key reason why we don't work towards this goal with sensible intensi
 
 To make matters worse, if we like it or not, the United States of America are the country people around the world look for guidance on solving global problems. Unfortunately, recent years have shown that this exceptional nation is not interested in or willing to work towards creating a better future for all of humankind; instead American people seem to be focussed on their self-interest, and first of all, the four letter word in importance only second to God in politics: jobs. I hope that not only American people but people around the world come to realise that there are things more important than ourselves and those we share a language and culture with; that we will all be more well off if we truely work together on worthwhile goals.
 
-Picture Credit: [Theo\_Q](https://pixabay.com/users/Theo_Q-601049/)
+Picture Credit: [Theo_Q](https://pixabay.com/users/Theo_Q-601049/)

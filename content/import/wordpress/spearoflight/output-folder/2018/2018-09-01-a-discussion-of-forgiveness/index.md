@@ -1,18 +1,18 @@
 ---
-title: "A Discussion of Forgiveness"
-date: "2018-09-01"
-categories: 
-  - "philosophy"
-tags: 
-  - "beauty"
-  - "buddhism"
-  - "forgiveness"
-  - "goodness"
-  - "happiness"
-  - "life"
-  - "love"
-  - "virtues"
-coverImage: "785px-rembrandt_harmensz_van_rijn_-_return_of_the_prodigal_son_-_google_art_project.jpg"
+title: 'A Discussion of Forgiveness'
+date: '2018-09-01'
+categories:
+  - 'philosophy'
+tags:
+  - 'beauty'
+  - 'buddhism'
+  - 'forgiveness'
+  - 'goodness'
+  - 'happiness'
+  - 'life'
+  - 'love'
+  - 'virtues'
+coverImage: '785px-rembrandt_harmensz_van_rijn_-_return_of_the_prodigal_son_-_google_art_project.jpg'
 ---
 
 I've already mentioned that I believe that [gratitude and forgiveness are emotions which I believe we should foster within ourselves](http://spearoflight.blog/2018/08/20/eight-virtues-which-seem-not-all-that-bad/). Today I want to explore in a little bit further detail what makes up forgiveness and why it is such a powerful force to bring good to ourselves and the world.
@@ -33,7 +33,7 @@ But how can you love what you hate? How can you love what angers and disappoints
 
 Beauty is a lyrical quality which you can only perceive as the echoes of your own deep feelings. If you see or experience something which is beautiful, you can feel it in your heart, you can feel with your whole body. You cannot decide to find something beautiful or not; the emergence of beauty is automatic and natural.
 
-Goodness is closely related to beauty since we usually find good what we find beautiful and vice averse. Goodness, however, can cast a wider net and help us shift the focus away from the physical aspects of beauty. As with beauty, we can feel if something is good and right or not. We feel if an action we do is good or evil. We are quick to judge if the actions of others are good or evil. We can easily determine if a situation or arrangement in the world fosters good or evil.  
+Goodness is closely related to beauty since we usually find good what we find beautiful and vice averse. Goodness, however, can cast a wider net and help us shift the focus away from the physical aspects of beauty. As with beauty, we can feel if something is good and right or not. We feel if an action we do is good or evil. We are quick to judge if the actions of others are good or evil. We can easily determine if a situation or arrangement in the world fosters good or evil.
 
 If we can learn to love the abstract concepts of beauty and goodness, we can proceed to direct this love to three particular things which will aid us in fostering goodness.
 

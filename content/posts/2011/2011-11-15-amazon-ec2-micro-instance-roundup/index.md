@@ -1,6 +1,6 @@
 ---
-title: "Amazon EC2 Micro Instance Roundup"
-date: "2011-11-15"
+title: 'Amazon EC2 Micro Instance Roundup'
+date: '2011-11-15'
 ---
 
 Since some time now, Amazon offers a free (for 1 year) Micro Instance in their cloud for new sign ups. Micro instances are widely discussed as easy and relatively cheap way to run a cloud-based application (e.g. website/blog). Below a collection of a number of links regarding Amazon's Micro instance hosting.

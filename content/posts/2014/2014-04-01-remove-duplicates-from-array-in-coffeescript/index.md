@@ -1,8 +1,8 @@
 ---
-title: "Remove Duplicates from Array in CoffeeScript"
-date: "2014-04-01"
-categories: 
-  - "javascript"
+title: 'Remove Duplicates from Array in CoffeeScript'
+date: '2014-04-01'
+categories:
+  - 'javascript'
 ---
 
 **Problem**
@@ -22,7 +22,7 @@ You can use the following method to accomplish such:
 ```javascript
 removeDuplicates = (ar) ->
   if ar.length == 0
-    return []  
+    return []
   res = {}
   res[ar[key]] = ar[key] for key in [0..ar.length-1]
   value for key, value of res

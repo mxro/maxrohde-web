@@ -1,8 +1,8 @@
 ---
-title: "Selenium ChromeDriver Hangs on Startup"
-date: "2017-11-07"
-categories: 
-  - "java"
+title: 'Selenium ChromeDriver Hangs on Startup'
+date: '2017-11-07'
+categories:
+  - 'java'
 ---
 
 ### Problem
@@ -17,7 +17,7 @@ Only local connections are allowed.
 After a while, it would show the following error:
 
 Exception in thread "main" org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: exited abnormally
- (Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 2.6.32-042stab112.15 x86\_64) (WARNING: The server did not provide any stacktrace information)
+(Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 2.6.32-042stab112.15 x86_64) (WARNING: The server did not provide any stacktrace information)
 
 ### Solution
 

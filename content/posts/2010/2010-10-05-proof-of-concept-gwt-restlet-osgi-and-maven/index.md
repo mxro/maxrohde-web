@@ -1,8 +1,8 @@
 ---
-title: "Proof of Concept: GWT, Restlet, OSGi and Maven"
-date: "2010-10-05"
-categories: 
-  - "java"
+title: 'Proof of Concept: GWT, Restlet, OSGi and Maven'
+date: '2010-10-05'
+categories:
+  - 'java'
 ---
 
 After some difficulties I got a project working, which consists of a simple GWT application with a Restlet backend. The application consists of four OSGi bundles, which work inside eclipse PDE. Also, all of these modules and their dependencies are declared using Maven 2.
@@ -15,9 +15,9 @@ The user interface is based on google‘s standard project from the google eclip
 
 tstBtn.addClickHandler(new ClickHandler() {
 
-                        @Override                         public void onClick(ClickEvent event) {                          ClientResource r = new ClientResource("/ping");
+@Override                         public void onClick(ClickEvent event) {                          ClientResource r = new ClientResource("/ping");
 
-                         r.setOnResponse(new Uniform() {                          public void handle(Request request, Response response) {                          try {                          tstBtn.setText(response.getEntity().getText());                          } catch (IOException e) {                          e.printStackTrace();                          }                          }                          });                          r.get();                                                          }                                          });
+r.setOnResponse(new Uniform() {                          public void handle(Request request, Response response) {                          try {                          tstBtn.setText(response.getEntity().getText());                          } catch (IOException e) {                          e.printStackTrace();                          }                          }                          });                          r.get();                                                          }                                          });
 
 Clicking this button should result in the caption of the button being filled with a response from the server.
 
@@ -37,15 +37,15 @@ The send button should work in the same way as in the google example; only that 
 
 GWT Client:
 
-GreetingServiceAsync r = GWT.create(GreetingServiceAsync.class);                                 r.getClientResource().setReference("/services/greet");                                 r.getClientResource().getClientInfo().getAcceptedMediaTypes().add(new                                                 Preference<MediaType>(MediaType.APPLICATION\_JAVA\_OBJECT\_GWT));                                                                          r.greetServer(new Name(nameField.getText()), new AsyncCallback<String>() {
+GreetingServiceAsync r = GWT.create(GreetingServiceAsync.class);                                 r.getClientResource().setReference("/services/greet");                                 r.getClientResource().getClientInfo().getAcceptedMediaTypes().add(new                                                 Preference<MediaType>(MediaType.APPLICATION_JAVA_OBJECT_GWT));                                                                          r.greetServer(new Name(nameField.getText()), new AsyncCallback<String>() {
 
-                                        @Override                                         public void onFailure(Throwable caught) {                                                 // Show the RPC error message to the user                                                 dialogBox                                                                 .setText("Remote Procedure Call - Failure");                                                 serverResponseLabel                                                                 .addStyleName("serverResponseLabelError");                                                 serverResponseLabel.setHTML(SERVER\_ERROR+"<br/>"+caught.getMessage());                                                 dialogBox.center();                                                 closeButton.setFocus(true);                                                                                          }
+@Override                                         public void onFailure(Throwable caught) {                                                 // Show the RPC error message to the user                                                 dialogBox                                                                 .setText("Remote Procedure Call - Failure");                                                 serverResponseLabel                                                                 .addStyleName("serverResponseLabelError");                                                 serverResponseLabel.setHTML(SERVER_ERROR+"<br/>"+caught.getMessage());                                                 dialogBox.center();                                                 closeButton.setFocus(true);                                                                                          }
 
-                                        @Override                                         public void onSuccess(String result) {                                                 dialogBox.setText("Remote Procedure Call");                                                 serverResponseLabel                                                                 .removeStyleName("serverResponseLabelError");                                                 serverResponseLabel.setHTML(result);                                                 dialogBox.center();                                                 closeButton.setFocus(true);                                                                                          }                                                                          });
+@Override                                         public void onSuccess(String result) {                                                 dialogBox.setText("Remote Procedure Call");                                                 serverResponseLabel                                                                 .removeStyleName("serverResponseLabelError");                                                 serverResponseLabel.setHTML(result);                                                 dialogBox.center();                                                 closeButton.setFocus(true);                                                                                          }                                                                          });
 
 Restlet Server:
 
-public class GreetingServiceServerResource extends ServerResource implements GreetingService {        @Override         public Representation handle() {                                                    CompositeClassLoader customCL = new CompositeClassLoader();                  customCL.addClassLoader(Thread.currentThread().getContextClassLoader());                  customCL.addClassLoader(Name.class.getClassLoader());                                   ClassLoader oldCL = Thread.currentThread().getContextClassLoader();                  Thread.currentThread().setContextClassLoader(customCL);                                  Representation rep = super.handle();                                  Thread.currentThread().setContextClassLoader(oldCL);                                  return rep;         }        @Override         @Post         public String greetServer(Name name) throws IllegalArgumentException {                 System.out.println(“Name submitted: “+[name.name](http://name.name));                 return “Welcome “+[name.name](http://name.name)+” from Restlet!”;         }         
+public class GreetingServiceServerResource extends ServerResource implements GreetingService {        @Override         public Representation handle() {                                                    CompositeClassLoader customCL = new CompositeClassLoader();                  customCL.addClassLoader(Thread.currentThread().getContextClassLoader());                  customCL.addClassLoader(Name.class.getClassLoader());                                   ClassLoader oldCL = Thread.currentThread().getContextClassLoader();                  Thread.currentThread().setContextClassLoader(customCL);                                  Representation rep = super.handle();                                  Thread.currentThread().setContextClassLoader(oldCL);                                  return rep;         }        @Override         @Post         public String greetServer(Name name) throws IllegalArgumentException {                 System.out.println(“Name submitted: “+[name.name](http://name.name));                 return “Welcome “+[name.name](http://name.name)+” from Restlet!”;         }
 
 }
 
@@ -53,7 +53,7 @@ public class GreetingServiceServerResource extends ServerResource implements Gre
 
 Under equinox, the following modules were required:
 
-id        State Bundle 0        ACTIVE org.eclipse.osgi\_3.5.2.R35x\_v20100126          Fragments=2, 3 2        RESOLVED org.eclipse.persistence.jpa.equinox.weaving\_1.1.3.v20091002-r5404          Master=0 3        RESOLVED javax.transaction\_1.1.1.v201002111330          Master=0 17        ACTIVE org.hamcrest.core\_1.1.0.v20090501071000 18        ACTIVE thrdGWTUser\_0.0.2.SNAPSHOT 19        ACTIVE javax.servlet\_2.5.0.v200806031605 21        ACTIVE org.junit4\_4.5.0.v20090824 41        ACTIVE org.eclipse.osgi.services\_3.2.0.v20090520-1800 49        ACTIVE thrdRestletGWT\_0.0.2 50        ACTIVE thrdRestletExtSimple\_0.0.2 51        ACTIVE zzSampleGWTClient\_0.0.2 52        ACTIVE zzSampleRestletServer\_0.0.2
+id        State Bundle 0        ACTIVE org.eclipse.osgi_3.5.2.R35x_v20100126          Fragments=2, 3 2        RESOLVED org.eclipse.persistence.jpa.equinox.weaving_1.1.3.v20091002-r5404          Master=0 3        RESOLVED javax.transaction_1.1.1.v201002111330          Master=0 17        ACTIVE org.hamcrest.core_1.1.0.v20090501071000 18        ACTIVE thrdGWTUser_0.0.2.SNAPSHOT 19        ACTIVE javax.servlet_2.5.0.v200806031605 21        ACTIVE org.junit4_4.5.0.v20090824 41        ACTIVE org.eclipse.osgi.services_3.2.0.v20090520-1800 49        ACTIVE thrdRestletGWT_0.0.2 50        ACTIVE thrdRestletExtSimple_0.0.2 51        ACTIVE zzSampleGWTClient_0.0.2 52        ACTIVE zzSampleRestletServer_0.0.2
 
 **Lessons Learned and Helpful Resources**
 

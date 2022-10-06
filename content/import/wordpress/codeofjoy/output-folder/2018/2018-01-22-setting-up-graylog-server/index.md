@@ -1,12 +1,12 @@
 ---
-title: "Setting Up Graylog Server"
-date: "2018-01-22"
-categories: 
-  - "linux"
-tags: 
-  - "devops"
-  - "monitoring"
-  - "open-source"
+title: 'Setting Up Graylog Server'
+date: '2018-01-22'
+categories:
+  - 'linux'
+tags:
+  - 'devops'
+  - 'monitoring'
+  - 'open-source'
 ---
 
 [I have been looking around for an easy to use and reasonable priced solution for managing logs](https://maxrohde.com/2017/12/29/free-cloud-based-log-and-metrics-management-solutions/) distributed among many servers and system metrics for these servers. I had a brief look into setting up an [ELK system](https://www.elastic.co/webinars/introduction-elk-stack) but I found that looked quite cumbersome. Recently I came across [Graylog](https://www.graylog.org/) and I found it looked quite promising. I thus set up a little sample system.
@@ -53,7 +53,7 @@ sudo systemctl start rsyslog
 
 ```
 
-- Edit the file _/etc/rsyslog.conf_ and put the following line at the end, into the section marked as _\# ### begin forwarding rule ###_ (replace yourserver.com with your graylog server address.
+- Edit the file */etc/rsyslog.conf* and put the following line at the end, into the section marked as *\# ### begin forwarding rule ###* (replace yourserver.com with your graylog server address.
 
 ```
 

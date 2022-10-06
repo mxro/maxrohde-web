@@ -1,21 +1,21 @@
 ---
-title: "SES, Terraform and TypeScript Starter Project"
-date: "2022-04-26"
-categories: 
-  - "javascript"
-  - "serverless"
-tags: 
-  - "aws"
-  - "aws-ses"
-  - "boilerplate"
-  - "coding"
-  - "devops"
-  - "open-source"
-  - "programming"
-  - "terraform"
-  - "tutorial"
-  - "typescript"
-coverImage: "brett-jordan-lpzy4da9aro-unsplash-1.jpg"
+title: 'SES, Terraform and TypeScript Starter Project'
+date: '2022-04-26'
+categories:
+  - 'javascript'
+  - 'serverless'
+tags:
+  - 'aws'
+  - 'aws-ses'
+  - 'boilerplate'
+  - 'coding'
+  - 'devops'
+  - 'open-source'
+  - 'programming'
+  - 'terraform'
+  - 'tutorial'
+  - 'typescript'
+coverImage: 'brett-jordan-lpzy4da9aro-unsplash-1.jpg'
 ---
 
 [Amazon Simple Email Service (SES)](https://aws.amazon.com/ses/) is a serverless service for sending emails from your applications. Like other AWS services, you can send emails with SES using the [AWS REST API](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-rest-api.html) or the [AWS SDKs](https://aws.amazon.com/tools/). In this article, I want to look at how to send emails using SES with [TypeScript](https://www.typescriptlang.org/) specifically.
@@ -76,7 +76,7 @@ resource "aws_ses_domain_dkim" "ses_domain_dkim" {
 
 resource "aws_route53_record" "amazonses_dkim_record" {
   count   = 3
-  zone_id = data.aws_route53_zone.main.zone_id 
+  zone_id = data.aws_route53_zone.main.zone_id
   name    = "${element(aws_ses_domain_dkim.ses_domain_dkim.dkim_tokens, count.index)}._domainkey.${var.domain}"
   type    = "CNAME"
   ttl     = "600"
@@ -84,7 +84,7 @@ resource "aws_route53_record" "amazonses_dkim_record" {
 }
 
 resource "aws_route53_record" "spf_mail_from" {
-  zone_id = data.aws_route53_zone.main.zone_id 
+  zone_id = data.aws_route53_zone.main.zone_id
   name    = aws_ses_domain_mail_from.main.mail_from_domain
   type    = "TXT"
   ttl     = "600"
@@ -92,7 +92,7 @@ resource "aws_route53_record" "spf_mail_from" {
 }
 
 resource "aws_route53_record" "spf_domain" {
-  zone_id = data.aws_route53_zone.main.zone_id   
+  zone_id = data.aws_route53_zone.main.zone_id
   name    = var.domain
   type    = "TXT"
   ttl     = "600"
@@ -166,6 +166,6 @@ Simply select the templates you want to include in the project and then use the 
 
 Please raise an issue on [GitHub](https://github.com/goldstack/goldstack/issues) if you have an idea of how to improve this template. Note the [boilerplate](https://github.com/goldstack/ses-terraform-typescript-boilerplate) is automatically generated from the [template](https://github.com/goldstack/goldstack/tree/master/workspaces/templates/packages/email-send) defined in the Goldstack repository.
 
-* * *
+---
 
 Cover image by [Brett Jordan](https://unsplash.com/photos/LPZy4da9aRo)

@@ -1,8 +1,8 @@
 ---
-title: "Real Software Engineering"
-date: "2010-09-10"
-categories: 
-  - "contemplations"
+title: 'Real Software Engineering'
+date: '2010-09-10'
+categories:
+  - 'contemplations'
 ---
 
 Glenn Vanderburg gave a talk on at the Ruby Conference in Austin, Texas, August 26-28, 2010 ([link](http://confreaks.net/videos/282-lsrc2010-real-software-engineering)).

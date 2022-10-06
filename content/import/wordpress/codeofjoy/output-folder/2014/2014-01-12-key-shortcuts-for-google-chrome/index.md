@@ -1,13 +1,13 @@
 ---
-title: "Key Shortcuts for Google Chrome"
-date: "2014-01-12"
+title: 'Key Shortcuts for Google Chrome'
+date: '2014-01-12'
 ---
 
-It is no secret that in order to be more productive in software development, it is [good to know the keyboard shortcuts of the IDE](http://netbeanside61.blogspot.co.nz/2008/04/top-10-netbeans-ide-keyboard-shortcuts.html) or editor of your choice. Using the keyboard is an inevitable part of software development and many other tasks we do at a computer, the mouse, however, is often optional and while it may only take a second to move one hand from the keyboard to the mouse, this second repeated a thousand times still amounts to more than 15 minutes. 
+It is no secret that in order to be more productive in software development, it is [good to know the keyboard shortcuts of the IDE](http://netbeanside61.blogspot.co.nz/2008/04/top-10-netbeans-ide-keyboard-shortcuts.html) or editor of your choice. Using the keyboard is an inevitable part of software development and many other tasks we do at a computer, the mouse, however, is often optional and while it may only take a second to move one hand from the keyboard to the mouse, this second repeated a thousand times still amounts to more than 15 minutes.
 
 However, we can become more productive not just by using keyboard shortcuts in IDEs but also in other applications. One application most of us will use heavily is the web browser. I'm currently using Google Chrome most of the time and thus I wanted to explore if I could become faster at using Chrome by using a few keyboard shortcuts.
 
-While Google Chrome supports a great number of keyboard shortcuts ([complete list](https://support.google.com/chrome/answer/157179?hl=en "Chrome Keyboard Shortcuts")), to remember all of them would be impractical for all but the most expert users. Thus, I have assembled a small list of shortcuts, I believe can already help to boost productivity in Google Chrome significantly:
+While Google Chrome supports a great number of keyboard shortcuts ([complete list](https://support.google.com/chrome/answer/157179?hl=en 'Chrome Keyboard Shortcuts')), to remember all of them would be impractical for all but the most expert users. Thus, I have assembled a small list of shortcuts, I believe can already help to boost productivity in Google Chrome significantly:
 
 Ctrl + t: Open a **new tab** in the currently open window
 
@@ -15,7 +15,7 @@ Ctrl + Tab: Switch to the **next tab** in the currently open window
 
 Ctrl + Shift + Tab: Switch to the **previous tab** in the currently open window
 
-Ctrl + w: Closes the current tab 
+Ctrl + w: Closes the current tab
 
 Alt + d / Ctrl + l: Switch to **address bar** and highlights all text (useful for copy&paste and new search)
 

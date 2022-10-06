@@ -1,13 +1,13 @@
 ---
-title: "A systematic tool for improving typing speed"
-date: "2013-07-28"
+title: 'A systematic tool for improving typing speed'
+date: '2013-07-28'
 ---
 
 ## Background
 
 Skills are in demand. Presentation skills, communication skills, leadership skills! Without a doubt, you cannot have enough of these. Unfortunately, we often forget about the little and less-glamorous skills, which underlie these high-value skills. Spelling? Grammar? Typing? What small-minded people would care about these?
 
-I didn't until a read a little book called '[Mastery](http://en.wikipedia.org/wiki/Mastery_(book))' by Robert Greene in which a distinction is made between soft skills and hard skills. Soft skills are the high value skills such as leadership, communication or having a good strategy during a tennis match. Hard skills are the 'smaller' skills such as being able to use a computer mouse, hitting the forehand just right or typing fast on the computer keyboard. Greene claims that we don't pay enough attention to these hard skills and instead focus too much on the soft skills. That's a pity, since hard skills are so much easier to train for and improve than soft skills.
+I didn't until a read a little book called '[Mastery](<http://en.wikipedia.org/wiki/Mastery_(book)>)' by Robert Greene in which a distinction is made between soft skills and hard skills. Soft skills are the high value skills such as leadership, communication or having a good strategy during a tennis match. Hard skills are the 'smaller' skills such as being able to use a computer mouse, hitting the forehand just right or typing fast on the computer keyboard. Greene claims that we don't pay enough attention to these hard skills and instead focus too much on the soft skills. That's a pity, since hard skills are so much easier to train for and improve than soft skills.
 
 Anyway, learning about these soft and hard skills and being shown my own preference to focus on hard rather than soft skills motivated me to seek to improve some of my 'hard skills'. I chose to begin with touch typing. I always thought I was a faster typer, and probably I'm faster than the average by merit of hacking on the keyboard for a large part of the day. However, I did not use any touch typing technique but used my very own system, which involved a lot of finger-flying on the keyboard. Then, my partner crushed me in a [typing speed test](http://10fastfingers.com/) (90 wmp (she), 40 wmp (me)) which shattered my believe in my typing abilities.
 

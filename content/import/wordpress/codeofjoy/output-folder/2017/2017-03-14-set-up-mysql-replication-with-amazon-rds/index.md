@@ -1,10 +1,10 @@
 ---
-title: "Set up MySQL Replication with Amazon RDS"
-date: "2017-03-14"
-tags: 
-  - "aws"
-  - "devops"
-  - "mysql"
+title: 'Set up MySQL Replication with Amazon RDS'
+date: '2017-03-14'
+tags:
+  - 'aws'
+  - 'devops'
+  - 'mysql'
 ---
 
 ### Problem
@@ -13,7 +13,7 @@ You have an existing server that runs a MySQL database (either on EC2 or not) an
 
 After you follow the [instructions from Amazon](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.External.Repl.html), your slave reports the IO status:
 
-Slave\_IO\_State: Connecting to master
+Slave_IO_State: Connecting to master
 
 ... and the replication does not work.
 
@@ -27,13 +27,13 @@ In step 6 \`**create a user that will be used for replication**\`: It says you s
 
 One way to do this is as follows:
 
-- Create the 'repl\_user' for the domain '%', e.g.:
+- Create the 'repl_user' for the domain '%', e.g.:
 
-CREATE USER 'repl\_user'@'%' IDENTIFIED BY '<password>';
+CREATE USER 'repl_user'@'%' IDENTIFIED BY '<password>';
 
 - Also do the grants for this user
 
-GRANT REPLICATION CLIENT, REPLICATION SLAVE ON \*.\* TO 'repl\_user'@'%' IDENTIFIED BY '<password>';
+GRANT REPLICATION CLIENT, REPLICATION SLAVE ON \*.\* TO 'repl_user'@'%' IDENTIFIED BY '<password>';
 
 - Open port 3306 on your server for any IP address.
 - Then the replication should work.
@@ -41,14 +41,14 @@ GRANT REPLICATION CLIENT, REPLICATION SLAVE ON \*.\* TO 'repl\_user'@'%' IDENTIF
 
 SHOW PROCESSLIST;
 
-- Find the process with the user repl\_user and get the IP address from there. This is the IP address for your Amazon RDS slave server.
-- Delete the user 'repl\_user'@'%' on the master
-- Create the user 'repl\_user'@'\[IP address of slave\]' on the master
+- Find the process with the user repl_user and get the IP address from there. This is the IP address for your Amazon RDS slave server.
+- Delete the user 'repl_user'@'%' on the master
+- Create the user 'repl_user'@'\[IP address of slave\]' on the master
 - Modify your firewall of your master to only accept connections on port 3306 from the IP address of the slave.
 - Restart replication with
 
-call mysql.rds\_stop\_replication;
-call mysql.rds\_start\_replication;
+call mysql.rds_stop_replication;
+call mysql.rds_start_replication;
 
 - And check the status with
 

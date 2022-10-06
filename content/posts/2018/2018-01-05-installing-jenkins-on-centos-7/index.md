@@ -1,13 +1,13 @@
 ---
-title: "Installing Jenkins on Centos 7"
-date: "2018-01-05"
-categories: 
-  - "java"
-tags: 
-  - "devops"
-  - "jenkins"
-  - "linux"
-  - "programming"
+title: 'Installing Jenkins on Centos 7'
+date: '2018-01-05'
+categories:
+  - 'java'
+tags:
+  - 'devops'
+  - 'jenkins'
+  - 'linux'
+  - 'programming'
 ---
 
 I set up a Jenkins server on a brand new Centos 7 VPS. In the following the instructions for doing this in case you are looking at doing the same:
@@ -61,7 +61,7 @@ ssh-keygen -t rsa
 sudo chown -R jenkins:jenkins /var/lib/jenkins/.ssh
 
 - Copy the public generated key to your git server (or add it in the GitHub/BitBucket web interface)
-- Assure your git server is listed in the known\_hosts file. In my case, since I am using BitBucket my /var/lib/jenkins/.ssh/known\_hosts file contains something like the following
+- Assure your git server is listed in the known_hosts file. In my case, since I am using BitBucket my /var/lib/jenkins/.ssh/known_hosts file contains something like the following
 
 bitbucket.org,104.192.143.3 ssh-rsa \[...\]
 

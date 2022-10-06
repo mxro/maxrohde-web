@@ -1,8 +1,8 @@
 ---
-title: "GWT Warning “Non-canonical source package”"
-date: "2011-02-15"
-categories: 
-  - "java"
+title: 'GWT Warning “Non-canonical source package”'
+date: '2011-02-15'
+categories:
+  - 'java'
 ---
 
 **The Problem**

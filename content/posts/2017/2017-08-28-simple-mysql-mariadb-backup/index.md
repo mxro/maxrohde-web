@@ -1,10 +1,10 @@
 ---
-title: "Simple MySQL / MariaDB Backup"
-date: "2017-08-28"
-categories: 
-  - "linux"
-tags: 
-  - "mysql"
+title: 'Simple MySQL / MariaDB Backup'
+date: '2017-08-28'
+categories:
+  - 'linux'
+tags:
+  - 'mysql'
 ---
 
 There are many ways to back up a MySQL or MariaDB server. Some ways [include using mysqldump, mydumper, LVM Snapshots or XtraBackup](https://www.slideshare.net/MariaDB/best-practices-for-maria-db-and-mysql-backups). However, any robust backup solution boils down to one key requirement:
@@ -68,8 +68,8 @@ Now a binary logs should be written into the logs folder in your MySQL data dir.
 
 On _Database Server_:
 
-- Create the folder _/var/lib/mysql/dumps_
-- Create the script /_usr/local/mysql\_dump.sh_ and copy the contents of [mariadb-backup.sh](https://github.com/mxro/mariadb-backup.sh/blob/master/mariadb-backup.sh) into this script.
+- Create the folder */var/lib/mysql/dumps*
+- Create the script /_usr/local/mysql_dump.sh_ and copy the contents of [mariadb-backup.sh](https://github.com/mxro/mariadb-backup.sh/blob/master/mariadb-backup.sh) into this script.
 - Search for the line starting with dumpopts. In this line, provide your mysql username and password.
 - Make the script executable
 
@@ -89,7 +89,7 @@ sudo chmod +x /usr/local/mysql_dump.sh
 
 #### systemd
 
-- Create _/etc/systemd/system/mysql\_dump.service_
+- Create _/etc/systemd/system/mysql_dump.service_
 
 ```
 
@@ -101,7 +101,7 @@ Type=oneshot
 ExecStart=/usr/local/mysql_dump.sh
 ```
 
-- Create _/etc/systemd/system/mysql\_dump.timer_
+- Create _/etc/systemd/system/mysql_dump.timer_
 
 ```
 
@@ -124,7 +124,7 @@ sudo systemctl start mysql_dump.timer
 
 ### Step 3: Write Script to Backup Files to Remote Server
 
-On the _Backup Server_:
+On the *Backup Server*:
 
 - Log into your Backup Server. Create a user _mysqlbackup_ here:
 
@@ -150,7 +150,7 @@ mkdir dumps
 
 On the _Database Server_:
 
-- Copy public key for root user from /root/.ssh/id\_rsa.pub
+- Copy public key for root user from /root/.ssh/id_rsa.pub
 - If the public key for root does not exist, run:
 
 ```
@@ -186,7 +186,7 @@ sudo ssh mysqlbackup@yourservername.com
 ```
 
 - If the SSH does not work for some reason, check [this guide](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2) for more information.
-- Create the script /usr/local/mysql\_backup.sh. Replace yourserver.com with the address/IP of your server.
+- Create the script /usr/local/mysql_backup.sh. Replace yourserver.com with the address/IP of your server.
 
 ```
 
@@ -215,7 +215,7 @@ sudo chmod +x /usr/local/mysql_backup.sh
 
 #### systemd
 
-- Create the file _/etc/systemd/system/mysql\_backup.service_
+- Create the file */etc/systemd/system/mysql_backup.service*
 
 ```
 
@@ -227,7 +227,7 @@ Type=oneshot
 ExecStart=/usr/local/mysql_backup.sh
 ```
 
-- Create the file _/etc/systemd/system/mysql\_backup.timer_
+- Create the file _/etc/systemd/system/mysql_backup.timer_
 
 ```
 

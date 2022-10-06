@@ -1,6 +1,6 @@
 ---
-title: "Appjangle Java Client Libraries with Local Persistence"
-date: "2013-07-28"
+title: 'Appjangle Java Client Libraries with Local Persistence'
+date: '2013-07-28'
 ---
 
 Appjangle has long supported Desktop Java, Android and JavaScript applications. However, with the most recent releases of client libraries (0.2.0 and 0.2.1) client libraries with more dedicated support for the Android and Desktop Java platform have been made available. Specifically, while before both Android and Desktop Java applications used the appjangle-java client libraries, now Android applications can use the [appjange-android](http://appjangle.com/downloads) client libraries and Desktop Java applications can use the [appjangle-jre](http://appjangle.com/downloads) client libraries.

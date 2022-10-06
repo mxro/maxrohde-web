@@ -1,8 +1,8 @@
 ---
-title: "Cannot add files to svn ignore in eclipse"
-date: "2010-12-11"
-categories: 
-  - "java"
+title: 'Cannot add files to svn ignore in eclipse'
+date: '2010-12-11'
+categories:
+  - 'java'
 ---
 
 **The Problem**

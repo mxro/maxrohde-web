@@ -1,11 +1,11 @@
 ---
-title: "Camera Movement with Three.js"
-date: "2019-10-25"
-categories: 
-  - "javascript"
-tags: 
-  - "open-source"
-  - "three-js"
+title: 'Camera Movement with Three.js'
+date: '2019-10-25'
+categories:
+  - 'javascript'
+tags:
+  - 'open-source'
+  - 'three-js'
 ---
 
 I have recently been working on small example application using [three.js](https://threejs.org/) and [react-three-fiber](https://github.com/react-spring/react-three-fiber). In the first two iterations, I first developed a simple draggable shape floating in space and then supported multiple shapes that can be moved on a physical plane. In this post, I am going to be extending the example to support camera movements. Here links to the previous two iterations and the one developed in this post:
@@ -62,30 +62,38 @@ function App() {
 In react-three-fiber, the useful `useFrame` hook is available where we then calculate the camera movement:
 
 ```javascript
-    useFrame((_, delta) => {
-        // move camera according to key pressed
-        Object.entries(keyPressed).forEach((e) => {
-            const [key, start] = e;
-            const duration = new Date().getTime() - start;
+useFrame((_, delta) => {
+  // move camera according to key pressed
+  Object.entries(keyPressed).forEach((e) => {
+    const [key, start] = e;
+    const duration = new Date().getTime() - start;
 
-            // increase momentum if key pressed longer
-            let momentum = Math.sqrt(duration + 200) * 0.01 + 0.05;
+    // increase momentum if key pressed longer
+    let momentum = Math.sqrt(duration + 200) * 0.01 + 0.05;
 
-            // adjust for actual time passed
-            momentum = momentum * delta / 0.016;
+    // adjust for actual time passed
+    momentum = (momentum * delta) / 0.016;
 
-            // increase momentum if camera higher
-            momentum = momentum + camera.position.z * 0.02;
+    // increase momentum if camera higher
+    momentum = momentum + camera.position.z * 0.02;
 
-            switch (key) {
-                case 'w': camera.translateY(momentum); break;
-                case 's': camera.translateY(-momentum); break;
-                case 'd': camera.translateX(momentum); break;
-                case 'a': camera.translateX(-momentum); break;
-                default:
-            }
-        });
-    });
+    switch (key) {
+      case 'w':
+        camera.translateY(momentum);
+        break;
+      case 's':
+        camera.translateY(-momentum);
+        break;
+      case 'd':
+        camera.translateX(momentum);
+        break;
+      case 'a':
+        camera.translateX(-momentum);
+        break;
+      default:
+    }
+  });
+});
 ```
 
 We first calculate the `duration` how long a key is pressed and then use this to determine the momentum. Finally we use this momentum to update the position of the camera.
@@ -95,19 +103,19 @@ We first calculate the `duration` how long a key is pressed and then use this to
 We use the mouse wheel to zoom in and out. For this, the position of the camera needs to change along the z axis.
 
 ```javascript
-    const mouseWheel = (e) => {
-        let delta = e.wheelDelta;
-        delta = delta / 240;
-        delta = -delta;
-        if (delta <= 0) {
-            delta -= camera.position.z * 0.1;
-        } else {
-            delta += camera.position.z * 0.1;
-        }
-        if (camera.position.z + delta > 1 && camera.position.z + delta < 200) {
-            camera.translateZ(delta);
-        }
-    };
+const mouseWheel = (e) => {
+  let delta = e.wheelDelta;
+  delta = delta / 240;
+  delta = -delta;
+  if (delta <= 0) {
+    delta -= camera.position.z * 0.1;
+  } else {
+    delta += camera.position.z * 0.1;
+  }
+  if (camera.position.z + delta > 1 && camera.position.z + delta < 200) {
+    camera.translateZ(delta);
+  }
+};
 ```
 
 Here we simply determine the direction in which the wheel is scrolled and adjust the position of the camera to be higher or lower accordingly. There is a certain range in which the camera is permitted. If it gets to close to the ground or too far away from it, its position is not changed anymore even if the mouse wheel is turned.
@@ -118,12 +126,12 @@ In case of an dynamic camera, we need a bit more calculation to be done which I 
 
 ```javascript
 const get3DPosition = ({ screenX, screenY, camera }) => {
-    var vector = new THREE.Vector3(screenX, screenY, 0.5);
-    vector.unproject(camera);
-    var dir = vector.sub(camera.position).normalize();
-    var distance = - camera.position.z / dir.z;
-    var pos = camera.position.clone().add(dir.multiplyScalar(distance));
-    return [pos.x, pos.y, 0];
+  var vector = new THREE.Vector3(screenX, screenY, 0.5);
+  vector.unproject(camera);
+  var dir = vector.sub(camera.position).normalize();
+  var distance = -camera.position.z / dir.z;
+  var pos = camera.position.clone().add(dir.multiplyScalar(distance));
+  return [pos.x, pos.y, 0];
 };
 ```
 

@@ -1,6 +1,6 @@
 ---
-title: "Google Analytics Does Not Load – Shows Yellow Bar"
-date: "2013-05-21"
+title: 'Google Analytics Does Not Load – Shows Yellow Bar'
+date: '2013-05-21'
 ---
 
 ## The Problem

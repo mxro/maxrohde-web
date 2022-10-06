@@ -1,8 +1,8 @@
 ---
-title: "XStream: Cannot create java.beans.PropertyChangeSupport by JDK serialization"
-date: "2010-06-26"
-categories: 
-  - "java"
+title: 'XStream: Cannot create java.beans.PropertyChangeSupport by JDK serialization'
+date: '2010-06-26'
+categories:
+  - 'java'
 ---
 
 **Problem**

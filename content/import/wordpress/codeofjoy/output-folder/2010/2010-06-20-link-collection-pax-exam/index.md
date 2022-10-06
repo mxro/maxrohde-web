@@ -1,8 +1,8 @@
 ---
-title: "Link Collection: Pax Exam"
-date: "2010-06-20"
-categories: 
-  - "java"
+title: 'Link Collection: Pax Exam'
+date: '2010-06-20'
+categories:
+  - 'java'
 ---
 
 Pax Exam is a very useful framework to write automatic tests for OSGi bundles in multiple OSGi containers.

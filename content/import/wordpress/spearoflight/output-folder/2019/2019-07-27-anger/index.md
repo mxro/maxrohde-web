@@ -1,14 +1,14 @@
 ---
-title: "Anger"
-date: "2019-07-27"
-categories: 
-  - "philosophy"
-  - "psychology"
-tags: 
-  - "anger"
-  - "emotions"
-  - "life"
-coverImage: "eugecc80ne_delacroix_-_le_28_juillet._la_libertecc81_guidant_le_peuple.jpg"
+title: 'Anger'
+date: '2019-07-27'
+categories:
+  - 'philosophy'
+  - 'psychology'
+tags:
+  - 'anger'
+  - 'emotions'
+  - 'life'
+coverImage: 'eugecc80ne_delacroix_-_le_28_juillet._la_libertecc81_guidant_le_peuple.jpg'
 ---
 
 We all know how it feels to be angry. We can be angry in the small, maybe about something we forgot and for which only we ourselves are to blame. We can be angry in the big, as a people who feel that others are taking advantage of us.

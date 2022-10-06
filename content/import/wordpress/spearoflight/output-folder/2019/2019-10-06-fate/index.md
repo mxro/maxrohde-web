@@ -1,15 +1,15 @@
 ---
-title: "Fate"
-date: "2019-10-06"
-categories: 
-  - "buddhism"
-  - "philosophy"
-  - "psychology"
-tags: 
-  - "destiny"
-  - "fate"
-  - "life"
-coverImage: "runes-4267425.jpg"
+title: 'Fate'
+date: '2019-10-06'
+categories:
+  - 'buddhism'
+  - 'philosophy'
+  - 'psychology'
+tags:
+  - 'destiny'
+  - 'fate'
+  - 'life'
+coverImage: 'runes-4267425.jpg'
 ---
 
 In life, things are bound to happen to us. Sometimes they are caused by our actions or inaction but, more often than not, things just happen for no apparent reason. I believe that how we think about the latter affects our well-being tremendously.

@@ -1,12 +1,12 @@
 ---
-title: "GraphQL Apollo Starter Kit (Lerna, Node.js)"
-date: "2018-12-23"
-categories: 
-  - "javascript"
-tags: 
-  - "graphql"
-  - "lerna-js"
-  - "open-source"
+title: 'GraphQL Apollo Starter Kit (Lerna, Node.js)'
+date: '2018-12-23'
+categories:
+  - 'javascript'
+tags:
+  - 'graphql'
+  - 'lerna-js'
+  - 'open-source'
 ---
 
 In many ways developing in Node.js is very fast and lightweight. However it can also be bewildering at times. Mostly so since for everything there seems to be more than one established way of doing things. Moreover, the _right_ way to do something can change within 3 to 6 months, so best practices documented in books and blogs quickly become obsolete.

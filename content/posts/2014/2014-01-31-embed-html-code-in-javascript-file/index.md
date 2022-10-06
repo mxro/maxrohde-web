@@ -1,8 +1,8 @@
 ---
-title: "Embed HTML Code in JavaScript File"
-date: "2014-01-31"
-categories: 
-  - "javascript"
+title: 'Embed HTML Code in JavaScript File'
+date: '2014-01-31'
+categories:
+  - 'javascript'
 ---
 
 **Problem**
@@ -25,13 +25,13 @@ Then apply the following two simple regular expressions on the html code to gene
 ```javascript
 var safeHtml = html
 
-.replace(/\n/g, "\\n")
+  .replace(/\n/g, '\\n')
 
-.replace(/\"/g, "\\\"")
+  .replace(/\"/g, '\\"');
 ```
 
 You can use this String now to build a JavaScript file:
 
 ```javascript
-var myScript = 'var html="'+safeHtml+'";';
+var myScript = 'var html="' + safeHtml + '";';
 ```

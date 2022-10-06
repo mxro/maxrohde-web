@@ -1,14 +1,14 @@
 ---
-title: "Breathing"
-date: "2019-07-06"
-categories: 
-  - "psychology"
-tags: 
-  - "breathing"
-  - "health"
-  - "life"
-  - "meditation"
-coverImage: "meditation-2214532.jpg"
+title: 'Breathing'
+date: '2019-07-06'
+categories:
+  - 'psychology'
+tags:
+  - 'breathing'
+  - 'health'
+  - 'life'
+  - 'meditation'
+coverImage: 'meditation-2214532.jpg'
 ---
 
 Without a doubt, our body and mind are connected. Without our body, our mind cannot be. If we strive for a strong and enlightened mind, we must also strive for a strong and healthy body. Of course, it is still possible to achieve an enlightened mind even in a body stricken by sickness but it is just so much easier to achieve this [if our body is strong](http://spearoflight.blog/2019/04/19/practice-exercise/).

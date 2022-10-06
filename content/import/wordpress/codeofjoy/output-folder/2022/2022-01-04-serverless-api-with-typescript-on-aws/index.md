@@ -1,19 +1,19 @@
 ---
-title: "Serverless API with TypeScript on AWS"
-date: "2022-01-04"
-categories: 
-  - "devops"
-  - "javascript"
-tags: 
-  - "aws"
-  - "coding"
-  - "programming"
-  - "rest"
-  - "serverless"
-  - "terraform"
-  - "tutorial"
-  - "typescript"
-coverImage: "serverless-api-architecture.png"
+title: 'Serverless API with TypeScript on AWS'
+date: '2022-01-04'
+categories:
+  - 'devops'
+  - 'javascript'
+tags:
+  - 'aws'
+  - 'coding'
+  - 'programming'
+  - 'rest'
+  - 'serverless'
+  - 'terraform'
+  - 'tutorial'
+  - 'typescript'
+coverImage: 'serverless-api-architecture.png'
 ---
 
 There are many ways to stand up a REST API. Nearly every programming language provides a way for us to develop a simple web server, such as [Express.js](https://dev.to/geekygeeky/get-started-with-es6-javascript-for-writing-nodejs-using-express-544h), [Go Gin](https://dev.to/21yunbox/how-to-deploy-go-gin-to-a-server-36d) or [Python Flask](https://dev.to/sm0ke/flask-bootstrap-templates-open-source-and-free-m2b). However, with the [advent of serverless computing](https://medium.com/@chakrabartis/server-less-eats-the-infrastructure-2a3d0ef66363), we need to rethink some of the fundamentals of how APIs are developed and deployed. Chiefly:
@@ -73,7 +73,7 @@ The HTTP API for our solution provides the following features:
 - Provide us with a public HTTP endpoint that clients can call
 - Route requests to Lambdas based on the request path
 
-Defining an API Gateway using Terraform is actually quite simple, see [api\_gateway.tf](https://github.com/mxro/typescript-serverless-api/blob/master/packages/lambda-api/infra/aws/api_gateway.tf):
+Defining an API Gateway using Terraform is actually quite simple, see [api_gateway.tf](https://github.com/mxro/typescript-serverless-api/blob/master/packages/lambda-api/infra/aws/api_gateway.tf):
 
 ```hcl
 resource "aws_apigatewayv2_api" "api" {
@@ -178,12 +178,12 @@ Here we return a simple JSON object that AWS Gateway will automatically transfor
 
 [https://typescript-serverless-api.examples.dev.goldstack.party/echo?message=TypeScript](https://typescript-serverless-api.examples.dev.goldstack.party/echo?message=TypeScript)
 
-To run this code, we need to define the infrastructure for a Lambda to contain the code. For this we can use the Terraform resource [`aws_lambda_function`](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_function), see [lambda\_routes#L13](https://github.com/mxro/typescript-serverless-api/blob/master/packages/lambda-api/infra/aws/lambda_routes.tf#L13):
+To run this code, we need to define the infrastructure for a Lambda to contain the code. For this we can use the Terraform resource [`aws_lambda_function`](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_function), see [lambda_routes#L13](https://github.com/mxro/typescript-serverless-api/blob/master/packages/lambda-api/infra/aws/lambda_routes.tf#L13):
 
 ```hcl
 resource "aws_lambda_function" "this" {
   for_each  = var.lambdas
-  
+
   function_name =  lookup(each.value, "function_name", null)
 
   filename = data.archive_file.empty_lambda.output_path
@@ -200,7 +200,7 @@ resource "aws_lambda_function" "this" {
 
 There is more than one way to link a Lambda function to an API gateway, see [Choose an API Gateway API integration type](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-integration-types.html) on the AWS documentation.
 
-In our case, we choose a `AWS_PROXY` integration, see [lambda\_routes.tf#L52](https://github.com/mxro/typescript-serverless-api/blob/master/packages/lambda-api/infra/aws/lambda_routes.tf#L52)
+In our case, we choose a `AWS_PROXY` integration, see [lambda_routes.tf#L52](https://github.com/mxro/typescript-serverless-api/blob/master/packages/lambda-api/infra/aws/lambda_routes.tf#L52)
 
 ```hcl
 resource "aws_apigatewayv2_integration" "this" {
@@ -218,13 +218,13 @@ resource "aws_apigatewayv2_integration" "this" {
 
 Note the integration method here is `"POST"` but this is related to how the API Gateway invokes the Lambda function. The HTTP methods that the gateway will serve are defined as part of the routes.
 
-There are a number of other things we need to configure to get our Lambdas working. For a full reference, please see the files [lambda\_routes.tf](https://github.com/mxro/typescript-serverless-api/blob/master/packages/lambda-api/infra/aws/lambda_routes.tf) and [lambda\_shared.tf](https://github.com/mxro/typescript-serverless-api/blob/master/packages/lambda-api/infra/aws/lambda_shared.tf)
+There are a number of other things we need to configure to get our Lambdas working. For a full reference, please see the files [lambda_routes.tf](https://github.com/mxro/typescript-serverless-api/blob/master/packages/lambda-api/infra/aws/lambda_routes.tf) and [lambda_shared.tf](https://github.com/mxro/typescript-serverless-api/blob/master/packages/lambda-api/infra/aws/lambda_shared.tf)
 
 ## Route Configuration
 
 After having configured the API Gateway, the Lambda infrastructure and the integration between Gateway and Lambda, we still need to configure what paths in the API are linked to which Lambda functions.
 
-This can be achieved in Terraform using the [`aws_apigatewayv2_route`](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/apigatewayv2_route) resource, see [lambda\_routes.tf#L43](https://github.com/mxro/typescript-serverless-api/blob/master/packages/lambda-api/infra/aws/lambda_routes.tf#L43):
+This can be achieved in Terraform using the [`aws_apigatewayv2_route`](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/apigatewayv2_route) resource, see [lambda_routes.tf#L43](https://github.com/mxro/typescript-serverless-api/blob/master/packages/lambda-api/infra/aws/lambda_routes.tf#L43):
 
 ```hcl
 resource "aws_apigatewayv2_route" "this" {
@@ -265,5 +265,5 @@ Overall it took me a fair amount of time to get a basic API up and running and I
 
 - [AWS API Gateway v2 (HTTP/Websocket) Terraform module](https://github.com/terraform-aws-modules/terraform-aws-apigateway-v2) - Provides a good integrated example of how to configure most aspects of a Lambda integration
 - [Provisioning AWS API Gateway using Terraform](https://ksarath.medium.com/provisioning-aws-api-gateway-using-terraform-95f64b492397)
-- [How to prevent AWS SAM from creating the default “Stage” in the API gateway stage](https://towardsaws.com/how-to-prevent-aws-sam-from-creating-the-default-stage-in-api-gateway-stage-6f4950d08c7) - I came across a similar error but since I am using Terraform this was caused by the HTTP APIs _quick create_ (see [apigatewayv2\_api#target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/apigatewayv2_api#target))
+- [How to prevent AWS SAM from creating the default “Stage” in the API gateway stage](https://towardsaws.com/how-to-prevent-aws-sam-from-creating-the-default-stage-in-api-gateway-stage-6f4950d08c7) - I came across a similar error but since I am using Terraform this was caused by the HTTP APIs _quick create_ (see [apigatewayv2_api#target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/apigatewayv2_api#target))
 - [How to use source maps in AWS Lambda with Node.js](https://serverless.pub/aws-lambda-node-sourcemaps/) - I used to use [source-map-support](https://www.npmjs.com/package/source-map-support) before but this is [no longer need in Node v12+](https://nodejs.medium.com/source-maps-in-node-js-482872b56116)

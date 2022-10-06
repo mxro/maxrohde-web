@@ -1,12 +1,12 @@
 ---
-title: "Optimse Next.js SEO"
-date: "2021-03-14"
-categories: 
-  - "javascript"
-tags: 
-  - "next-js-framework"
-  - "programming"
-coverImage: "internet-search-engine-1433323.jpg"
+title: 'Optimse Next.js SEO'
+date: '2021-03-14'
+categories:
+  - 'javascript'
+tags:
+  - 'next-js-framework'
+  - 'programming'
+coverImage: 'internet-search-engine-1433323.jpg'
 ---
 
 [Next.js](https://nextjs.org/) is an awesome framework for building websites and web applications. I have covered Next.js in multiple posts on this blog, such as [Next.js with Bootstrap Getting Started](https://maxrohde.com/2020/03/06/next-js-with-bootstrap-getting-started/). One of the advantages of Next.js is that it can generate static or server-side rendered versions of pages developed with React. This is great for making it easy for search engines to crawl your site.
@@ -70,7 +70,7 @@ It is likely that your application will have pages that do not provide value for
 For these pages it makes sense to prevent search engines from ignoring your page. For this, simply add the following `meta` element into your \`\` as shown above.
 
 ```html
-<meta name="robots" content="noindex">
+<meta name="robots" content="noindex" />
 ```
 
 ### Generate a Sitemap
@@ -107,7 +107,7 @@ npm install @sergeymyssak/nextjs-sitemap
 And add a script into your `package.json`:
 
 ```json
-…  
+…
   "scripts": {
    …
     "generate-sitemap": "node sitemap-generator.js",

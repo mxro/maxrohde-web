@@ -1,14 +1,14 @@
 ---
-title: "The Art of Thinking Clearly - Book Review"
-date: "2022-02-26"
-categories: 
-  - "psychology"
-tags: 
-  - "book-reviews"
-  - "books"
-  - "life"
-  - "self-improvement"
-coverImage: "sasha-freemind-pv5weeyxmwu-unsplash.jpg"
+title: 'The Art of Thinking Clearly - Book Review'
+date: '2022-02-26'
+categories:
+  - 'psychology'
+tags:
+  - 'book-reviews'
+  - 'books'
+  - 'life'
+  - 'self-improvement'
+coverImage: 'sasha-freemind-pv5weeyxmwu-unsplash.jpg'
 ---
 
 I have long been fascinated with the research on human biases and how they can affect our decision making. I've read a bit of Kahneman's work and have seen it cited in many other books. I never quite got around to finishing 'Thinking, Fast and Slow' though. Ralf Dobelli's The Art of Thinking Clearly provides an easily digestible summary of the research on human biases, neatly packaged into a list of 100 biases, each with their own short description.

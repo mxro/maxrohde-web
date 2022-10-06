@@ -1,8 +1,8 @@
 ---
-title: "Restlet HTTPS"
-date: "2010-10-06"
-categories: 
-  - "java"
+title: 'Restlet HTTPS'
+date: '2010-10-06'
+categories:
+  - 'java'
 ---
 
 **Problem**

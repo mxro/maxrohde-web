@@ -1,11 +1,11 @@
 ---
-title: "Determine Which JDK Version a JAR/Class File Was Compiled With"
-date: "2018-01-11"
-categories: 
-  - "java"
-tags: 
-  - "programming"
-coverImage: "java_programming_language_logo-svg-e1515987274897.png"
+title: 'Determine Which JDK Version a JAR/Class File Was Compiled With'
+date: '2018-01-11'
+categories:
+  - 'java'
+tags:
+  - 'programming'
+coverImage: 'java_programming_language_logo-svg-e1515987274897.png'
 ---
 
 Today I came across a nasty error which occurred in a deployed Java application only but not during development or integration tests. The error went something like the following:

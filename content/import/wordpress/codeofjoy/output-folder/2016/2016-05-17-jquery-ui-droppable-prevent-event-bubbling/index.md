@@ -1,8 +1,8 @@
 ---
-title: "JQuery UI Droppable: Prevent Event Bubbling"
-date: "2016-05-17"
-categories: 
-  - "javascript"
+title: 'JQuery UI Droppable: Prevent Event Bubbling'
+date: '2016-05-17'
+categories:
+  - 'javascript'
 ---
 
 [JQuery UI Droppable](https://jqueryui.com/droppable/) is a great framework for implementing drag and drop features in a web application.
@@ -18,20 +18,20 @@ In this case, it is sufficient to add the property [greedy: true](http://api.jqu
 This is a bit tricky, since setting the greedy property will only prevent events bubbling up to the parent. If the two elements are independent (but somehow one floats on top of the other), we need to add some extra code to the drop handlers for both elements:
 
 elem.droppable({
- ...
- drop: function( event, ui ) {
+...
+drop: function( event, ui ) {
 
-   var elementAtPoint = document.elementFromPoint(event.pageX-1, event.pageY-1);
- 
-   if (!$.contains(elem\[0\], elementAtPoint)) {
-     // not really meant for this element
-     return;
-   }
+var elementAtPoint = document.elementFromPoint(event.pageX-1, event.pageY-1);
 
-   // handle drop for this element
+if (!$.contains(elem\[0\], elementAtPoint)) {
+// not really meant for this element
+return;
+}
 
- }
- ...
+// handle drop for this element
+
+}
+...
 });
 
 Replace elem with the two respective elements that are droppable.

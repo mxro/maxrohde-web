@@ -1,8 +1,8 @@
 ---
-title: "Build and Dependency Management: Lean Maven"
-date: "2010-05-25"
-categories: 
-  - "java"
+title: 'Build and Dependency Management: Lean Maven'
+date: '2010-05-25'
+categories:
+  - 'java'
 ---
 
 Modern applications depend on a great number of third party libraries, or libraries, which are developed as part of a project or in other places in the organization. Managing these dependencies is a daunting task. If, for instance, in the scenario depicted below, the module 1 must be added to a project, module 2 to 4 must be downloaded from respective locations and added to the project.

@@ -1,17 +1,17 @@
 ---
-title: "Easy VPS Backup"
-date: "2018-02-01"
-categories: 
-  - "linux"
-tags: 
-  - "devops"
+title: 'Easy VPS Backup'
+date: '2018-02-01'
+categories:
+  - 'linux'
+tags:
+  - 'devops'
 ---
 
 I love VPS providers such as [RamNode](http://ramnode.com/) or [ServerCheap](https://servercheap.net/) which provide excellent performance at a low price point. Unfortunately, when going with most VPS providers, there are no easy built-in facilities for backing up and restoring the data of your servers (such as with AWS EC2 snapshots). Thankfully, there is some powerful, easy to use and open source software available to take care of the backups for us!
 
 In this article, I am going to show how to easily do a backup of your VPS using **[restic](https://github.com/restic/restic)**. Another tool you might want to look at is [Duplicity](http://duplicity.nongnu.org/), which provides a higher level of security but which is also more difficult to use. (And there are a many, many [other alternatives](https://github.com/restic/others) available as well.)
 
-You will need to have access to two servers to follow the following. One server which should be backed up (in the following referred to as B_ackup Client_) and one server which will host your backups (in the following referred to as B_ackup Server_).
+You will need to have access to two servers to follow the following. One server which should be backed up (in the following referred to as B*ackup Client*) and one server which will host your backups (in the following referred to as B*ackup Server*).
 
 ### Installing Restic (on Backup Client)
 
@@ -55,7 +55,7 @@ chmod +x /opt/restic
 
 ### Establishing SSH Connection
 
-- On the Backup Client generate an SSH private and public key (Confirm location \`/root/.ssh/id\_rsa\` and provide no passphrase)
+- On the Backup Client generate an SSH private and public key (Confirm location \`/root/.ssh/id_rsa\` and provide no passphrase)
 
 ```
 
@@ -68,13 +68,13 @@ ssh-keygen -t rsa -b 4096
 ```
 
 
-cat /root/.ssh/id_rsa.pub 
+cat /root/.ssh/id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDG3en ...
 
 ```
 
 - On the Backup Server, create a new user called backup
-- Copy the public key from the Backup Client to the Backup Server so that Backup Client is authorised to access it via SSH. Just copy the output from above and paste it at the end of the authorized\_keys file
+- Copy the public key from the Backup Client to the Backup Server so that Backup Client is authorised to access it via SSH. Just copy the output from above and paste it at the end of the authorized_keys file
 
 ```
 
@@ -112,11 +112,9 @@ sudo ssh backup@...
 
 ```
 
- 
-
 ### Schedule Regular Backups (Backup Client)
 
-- On the Backup Client, create the file /root/restic\_password. Paste your password into this file.
+- On the Backup Client, create the file /root/restic_password. Paste your password into this file.
 - Create the script file /root/restic.sh (replace with the details of your servers)
 
 ```

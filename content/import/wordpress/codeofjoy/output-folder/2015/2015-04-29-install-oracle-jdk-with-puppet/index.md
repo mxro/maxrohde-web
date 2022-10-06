@@ -1,11 +1,11 @@
 ---
-title: "Install Oracle JDK with Puppet"
-date: "2015-04-29"
-categories: 
-  - "linux"
-tags: 
-  - "java"
-  - "puppet"
+title: 'Install Oracle JDK with Puppet'
+date: '2015-04-29'
+categories:
+  - 'linux'
+tags:
+  - 'java'
+  - 'puppet'
 ---
 
 # Problem
@@ -40,20 +40,20 @@ As of 26th of Mai 2017, the configuration needs to be adjusted as follows (Thank
 
 Within ~/manifests/install.pp adjust the following variables:
 
-$default\_8\_update = ‘131’ $default\_8\_build = ’11’ $default\_8\_hash = ‘d54c1d3a095b4ff2b6607d096fa80163’
+$default_8_update = ‘131’ $default_8_build = ’11’ $default_8_hash = ‘d54c1d3a095b4ff2b6607d096fa80163’
 
 As of 30th of April 2015, this would be the configuration for the latest JDK version on 64 bit Linux:
 
-class { 'jdk\_oracle':
+class { 'jdk_oracle':
 
-    version => '8',
+version => '8',
 
-    version\_update => '45',
+version_update => '45',
 
-    version\_build => '14',
+version_build => '14',
 
-    platform => 'x64',
+platform => 'x64',
 
-    ensure => 'installed',
+ensure => 'installed',
 
 }

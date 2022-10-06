@@ -1,10 +1,10 @@
 ---
-title: "Clipboard Sharing Between VirtualBox Host and Linux Guest Stops Working"
-date: "2014-11-09"
-categories: 
-  - "linux"
-tags: 
-  - "virtualbox"
+title: 'Clipboard Sharing Between VirtualBox Host and Linux Guest Stops Working'
+date: '2014-11-09'
+categories:
+  - 'linux'
+tags:
+  - 'virtualbox'
 ---
 
 **Problem**

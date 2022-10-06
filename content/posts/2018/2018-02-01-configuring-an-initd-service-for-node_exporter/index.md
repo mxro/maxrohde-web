@@ -1,21 +1,21 @@
 ---
-title: "Configuring an initd Service for node_exporter"
-date: "2018-02-01"
-categories: 
-  - "devops"
-tags: 
-  - "grafana"
-  - "linux"
-  - "metrics"
-  - "prometheus"
+title: 'Configuring an initd Service for node_exporter'
+date: '2018-02-01'
+categories:
+  - 'devops'
+tags:
+  - 'grafana'
+  - 'linux'
+  - 'metrics'
+  - 'prometheus'
 ---
 
 I recently wrote an article showing how to configure [Prometheus and Grafana for easy metrics collection](http://maxrohde.com/2018/01/23/setting-up-prometheus-and-grafana-for-centos-rhel-7-monitoring/). In that article, I assumed that the system which should be monitored would use the [systemd](https://en.wikipedia.org/wiki/Systemd) approach for defining services.
 
-I now had to set up the [node\_exporter](https://github.com/prometheus/node_exporter) utility on a system which uses the initd approach. Thus, I provide some simple instructions here on how to accomplish that.
+I now had to set up the [node_exporter](https://github.com/prometheus/node_exporter) utility on a system which uses the initd approach. Thus, I provide some simple instructions here on how to accomplish that.
 
 - Go to the directory /opt
-- [Download the latest version of the node\_exporter executable](https://prometheus.io/download/#node_exporter) suitable for your system.
+- [Download the latest version of the node_exporter executable](https://prometheus.io/download/#node_exporter) suitable for your system.
 
 ```
 
@@ -42,7 +42,7 @@ ln -s node_exporter-* node_exporter
 
 ```
 
-- Create the file _/opt/node\_exporter/node\_exporter.sh_ and add the following content:
+- Create the file */opt/node_exporter/node_exporter.sh* and add the following content:
 
 ```
 
@@ -53,7 +53,7 @@ ln -s node_exporter-* node_exporter
 
 ```
 
-- Create the file /etc/init.d/node\_exporter and add the following content ([based on this sample init.d script](https://gist.github.com/naholyr/4275302)):
+- Create the file /etc/init.d/node_exporter and add the following content ([based on this sample init.d script](https://gist.github.com/naholyr/4275302)):
 
 ```
 
@@ -130,7 +130,7 @@ esac
 
 **Note 1**: This sample script runs the script as user root. For production environments, it is highly recommended to configure another user (such as 'prometheus') which runs the script.
 
-**Note 2**: Also check out this init.d script made specifically for node\_exporter: [node.exporter.default by eloo](https://gist.github.com/eloo/a06d7c70ff2a841b7bb98cd322b851b9).
+**Note 2**: Also check out this init.d script made specifically for node_exporter: [node.exporter.default by eloo](https://gist.github.com/eloo/a06d7c70ff2a841b7bb98cd322b851b9).
 
 - Make both files executable
 
@@ -163,4 +163,4 @@ chkconfig --add node_exporter
 
 ```
 
-All done! Now you can configure your Prometheus server to grab the metrics from the node\_exporter instance.
+All done! Now you can configure your Prometheus server to grab the metrics from the node_exporter instance.

@@ -1,15 +1,15 @@
 ---
-title: "Deploy Next.js to AWS"
-date: "2021-01-30"
-categories: 
-  - "javascript"
-tags: 
-  - "aws"
-  - "aws-s3"
-  - "cloudfront"
-  - "goldstack"
-  - "next-js-framework"
-  - "terraform"
+title: 'Deploy Next.js to AWS'
+date: '2021-01-30'
+categories:
+  - 'javascript'
+tags:
+  - 'aws'
+  - 'aws-s3'
+  - 'cloudfront'
+  - 'goldstack'
+  - 'next-js-framework'
+  - 'terraform'
 ---
 
 [Next.js](https://nextjs.org/) is becoming ever more popular these days and rightfully so. It is an extremely powerful and well-made framework that provides some very useful abstractions for developing React applications.
@@ -38,7 +38,7 @@ Running this script will output a bundled, stand-alone version of the Next.js ap
 
 We will need an S3 bucket to store the files resulting from the Next.js build process. This essentially is just a public S3 bucket.
 
-Below the Terraform for generating such a bucket using the [aws\_s3\_bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket) resource. Note here:
+Below the Terraform for generating such a bucket using the [aws_s3_bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket) resource. Note here:
 
 - The permissions for public read are set by `acl = "public-read"` but we also need a public read bucket policy that is defined
 - The `index_document` and `error_document` correspond to those output in the previous step.
@@ -113,7 +113,7 @@ We first need to configure an origin that points to our S3 bucket defined earlie
     domain_name = aws_s3_bucket.website_root.website_endpoint
 
     origin_id   = "origin-bucket-${aws_s3_bucket.website_root.id}"
-    
+
     custom_origin_config {
       http_port = 80
       https_port = 443

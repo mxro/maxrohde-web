@@ -1,8 +1,8 @@
 ---
-title: "Migrate Projects to Maven/Subversion Development Environment"
-date: "2010-05-31"
-categories: 
-  - "java"
+title: 'Migrate Projects to Maven/Subversion Development Environment'
+date: '2010-05-31'
+categories:
+  - 'java'
 ---
 
 This post contains a number of experiences made while making a Swing desktop application modular using Maven and Subversion.

@@ -1,14 +1,14 @@
 ---
-title: "Advantages of Using React Hooks"
-date: "2019-06-29"
-categories: 
-  - "javascript"
-tags: 
-  - "functional-programming"
-  - "programming"
-  - "react"
-  - "react-hooks"
-coverImage: "screen-shot-2019-06-29-at-5.04.48-pm.png"
+title: 'Advantages of Using React Hooks'
+date: '2019-06-29'
+categories:
+  - 'javascript'
+tags:
+  - 'functional-programming'
+  - 'programming'
+  - 'react'
+  - 'react-hooks'
+coverImage: 'screen-shot-2019-06-29-at-5.04.48-pm.png'
 ---
 
 I always had the feeling that React is just a bit to complex, a bit to 'heavy' to be a truely elegant solution to the problem of building complex user interfaces in JavaScript. Two issues, for instance, are the general project setup, exemplified by the need to have [create-react-app](https://github.com/facebook/create-react-app), and class-based components, with all their `componentDidMount` and `this` references.
@@ -35,27 +35,27 @@ class User1 extends Component {
 
   getUser() {
     this.setState({ isLoading: true, error: null });
-  
-    axios.get(`https://jsonplaceholder.typicode.com/users/${this.state.userId}`)
-      .then(result => {
+
+    axios
+      .get(`https://jsonplaceholder.typicode.com/users/${this.state.userId}`)
+      .then((result) => {
         if (this.state.unmounted) {
           return;
         }
         this.setState({
           userName: result.data.name,
-          isLoading: false
-        })
-      }
-      )
-      .catch(error => {
+          isLoading: false,
+        });
+      })
+      .catch((error) => {
         if (this.state.unmounted) {
           return;
         }
 
         this.setState({
           error,
-          isLoading: false
-        })
+          isLoading: false,
+        });
       });
   }
 
@@ -72,16 +72,26 @@ class User1 extends Component {
   }
 
   render() {
-    return (<>
-      {this.state.isLoading ? <p>Loading ...</p> : <></>}
-      {this.state.error ? <p>Cannot load user</p> : <></>}
-      {!this.state.isLoading && !this.state.error ? <p>{this.state.userName}</p> : <></>}
-      <button onClick={() => {
-        const newUserId = this.state.userId + 1;
-        this.setState({ userId: newUserId }, this.getUser);
-        this.getUser();
-      }} >Next</button>
-    </>);
+    return (
+      <>
+        {this.state.isLoading ? <p>Loading ...</p> : <></>}
+        {this.state.error ? <p>Cannot load user</p> : <></>}
+        {!this.state.isLoading && !this.state.error ? (
+          <p>{this.state.userName}</p>
+        ) : (
+          <></>
+        )}
+        <button
+          onClick={() => {
+            const newUserId = this.state.userId + 1;
+            this.setState({ userId: newUserId }, this.getUser);
+            this.getUser();
+          }}
+        >
+          Next
+        </button>
+      </>
+    );
   }
 }
 ```
@@ -105,8 +115,10 @@ function User2(props) {
       setIsLoading(true);
       setIsError(false);
       let response;
-      try { 
-        response = await axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`);
+      try {
+        response = await axios.get(
+          `https://jsonplaceholder.typicode.com/users/${userId}`
+        );
       } catch (e) {
         setIsError(true);
         setIsLoading(false);
@@ -122,12 +134,14 @@ function User2(props) {
     };
   }, [userId]);
 
-  return (<>
-    {isLoading ? <p>Loading ...</p> : <></>}
-    {isError ? <p>Cannot load user</p> : <></>}
-    {!isLoading && !isError && name ? <p>{name}</p> : <></>}
-    <button onClick={() => setUserId(userId + 1)} >Next</button>
-  </>);
+  return (
+    <>
+      {isLoading ? <p>Loading ...</p> : <></>}
+      {isError ? <p>Cannot load user</p> : <></>}
+      {!isLoading && !isError && name ? <p>{name}</p> : <></>}
+      <button onClick={() => setUserId(userId + 1)}>Next</button>
+    </>
+  );
 }
 ```
 
@@ -136,9 +150,9 @@ Here we use `useState` to define a number of state variables and `useEffect` to 
 `useEffect` replaces the functionality of `componentDidMount` and `componentDidUpdate` in the class-based components. I think it allows reacting to state changes in a much more elegant way. Firstly by linking it to the state of `userId` the `useEffect` handler we have defined will only trigger when the `userId` status has been updated, without us having to add any additional tests and logic around that. Secondly, it elegantly handles both the cases for when the component mounts as well as when the component state changes: by always triggering on component mount, and subsequently on changes to the userId. Thirdly, by returning a function as the result of the `useEffect` handler ...
 
 ```javascript
-    return () => {
-      cancelled = true;
-    };
+return () => {
+  cancelled = true;
+};
 ```
 
 ... we have a very easy way to deal with the component unmounting when a request is in flight.
@@ -156,12 +170,14 @@ function User3(props) {
     performFetch(`https://jsonplaceholder.typicode.com/users/${userId}`);
   }, [userId, performFetch]);
 
-  return (<>
-    {isLoading ? <p>Loading ...</p> : <></>}
-    {isError ? <p>Cannot load user</p> : <></>}
-    {!isLoading && !isError && data ? <p>{data.name}</p> : <></>}
-    <button onClick={() => setUserId(userId + 1)} >Next</button>
-  </>);
+  return (
+    <>
+      {isLoading ? <p>Loading ...</p> : <></>}
+      {isError ? <p>Cannot load user</p> : <></>}
+      {!isLoading && !isError && data ? <p>{data.name}</p> : <></>}
+      <button onClick={() => setUserId(userId + 1)}>Next</button>
+    </>
+  );
 }
 ```
 
