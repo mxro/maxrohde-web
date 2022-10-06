@@ -62,13 +62,13 @@ export const publish = async (args: PublishArgs): Promise<void> => {
   const pattern = `**/*${args.fileNamePattern}*`;
   console.log(`Searching for articles in ${resolve(contentDir)}`);
   console.log(`  using pattern: [${pattern}]`);
-  const matches = (
+  let matches = (
     await fg([pattern], {
       cwd: contentDir,
       onlyDirectories: true,
     })
   ).map((path) => `${contentDir}/${path}/index.md`);
-
+  matches = matches.filter((path) => existsSync(path));
   console.log('Found articles');
   console.log(matches);
   const results = await Promise.all(
