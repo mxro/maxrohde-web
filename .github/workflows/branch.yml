@@ -1,0 +1,25 @@
+name: Branch build
+run-name: ${{ github.actor }} pushes some code 🚀
+on: [push]
+
+
+jobs:
+  build:
+    name: 'Build'
+    strategy:
+      matrix:
+        node-version: [16.x]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - name: Install Yarn
+        run: npm install -g yarn@1.22.11
+      - name: Install
+        run: yarn install
+      - name: Build
+        run: yarn build
