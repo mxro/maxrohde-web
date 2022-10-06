@@ -1,12 +1,12 @@
 import { Client } from '@notionhq/client';
 import { QueryDatabaseResponse } from '@notionhq/client/build/src/api-endpoints';
 import { execSync } from 'child_process';
-import config from './config.json';
 import { posix, resolve } from 'path';
 
-const notion = new Client({ auth: config.secret });
-
 (async () => {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const config = require('./config.json');
+  const notion = new Client({ auth: config.secret });
   // https://www.notion.so/mxro/3242ae0a3fd54a3a9ff5fc42e2665fe7?v=526a90bb93f44fa58effb33befd2ef0d
   const databaseId = '3242ae0a3fd54a3a9ff5fc42e2665fe7';
 
