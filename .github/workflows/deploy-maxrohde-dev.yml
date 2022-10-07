@@ -3,7 +3,7 @@ run-name: Deploy maxrohde.com to dev by ${{ github.actor }} 🚀
 on:
   push:
     branches:
-      - issue-26-cd
+      - master
 
 jobs:
   build:
