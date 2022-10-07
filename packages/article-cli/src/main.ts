@@ -30,6 +30,9 @@ import { wordpressToMarkdown } from './wordpressToMarkdown';
       const fileNamePattern = pattern;
 
       const env = options.env;
+
+      process.env.GOLDSTACK_DEPLOYMENT = env;
+
       const table = await connectTable({
         deploymentName: env,
       });
