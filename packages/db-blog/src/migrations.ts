@@ -50,6 +50,7 @@ export const createMigrations = (): InputMigrations<DynamoDBContext> => {
           })
           .promise();
         let status: PromiseResult<DynamoDB.DescribeTableOutput, AWSError>;
+        let gsi: DynamoDB.GlobalSecondaryIndexDescription | undefined;
         do {
           console.log('Checking table status');
           status = await params.context.client
@@ -60,7 +61,15 @@ export const createMigrations = (): InputMigrations<DynamoDBContext> => {
           if (status.$response.error) {
             throw new Error('Cannot check table status');
           }
-        } while (status.Table?.TableStatus !== 'ACTIVE');
+          gsi = status.Table?.GlobalSecondaryIndexes?.find((idx) => {
+            return idx.IndexName === 'path-index';
+          });
+        } while (
+          status.Table?.TableStatus !== 'ACTIVE' &&
+          gsi &&
+          !gsi.Backfilling &&
+          gsi.IndexStatus === 'ACTIVE'
+        );
       },
     },
     {

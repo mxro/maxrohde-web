@@ -7,6 +7,16 @@ export interface LoadPostsArgs {
   dynamodb: DynamoDB;
 }
 
+export function normalisePath(path: string): string {
+  if (path.startsWith('/')) {
+    path = path.slice(1);
+  }
+  if (path.endsWith('/')) {
+    return path.slice(0, path.length - 1);
+  }
+  return path;
+}
+
 export async function loadPosts({
   dynamodb,
   postIds,

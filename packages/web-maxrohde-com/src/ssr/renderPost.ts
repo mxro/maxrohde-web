@@ -17,6 +17,8 @@ import {
   BlogMetricPK,
 } from 'db-blog';
 
+import { normalisePath } from './../lib/posts';
+
 import PostPage from '../components/pages/PostPage';
 import ErrorPage, { ErrorPageProps } from '../components/pages/ErrorPage';
 
@@ -28,11 +30,12 @@ export async function renderPost({
   const table = await connectTable();
 
   const Posts = new Entity({ ...deepCopy(PostEntity), table } as const);
+  const path = normalisePath(event.rawPath);
   const postQueryResultPromise = Posts.query(PostPK({ blog: 'maxrohde.com' }), {
     reverse: true,
     limit: 10,
     index: 'path-index',
-    eq: event.rawPath.slice(1), //'2022/01/16/memory-system-part-4-symbolic-systems',
+    eq: path, //'2022/01/16/memory-system-part-4-symbolic-systems',
   });
 
   const BlogMetrics = new Entity({
