@@ -1,5 +1,4 @@
-
-name: Deploy maxrohde.com dev 
+name: Deploy maxrohde.com dev
 run-name: Deploy maxrohde.com to dev by ${{ github.actor }} 🚀
 on:
   push:
@@ -8,15 +7,16 @@ on:
 
 jobs:
   build:
-    name: '✈️ Deploy to Dev'
+    name: '✈️ Deploy to https://dev.home.mxro.de'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: ./.github/actions/goldstack-setup
       - run: |
           cd packages/web-maxrohde-com
+          yarn deploy dev
     env:
       AWS_USER_NAME: awsUser
       AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
       AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-      AWS_DEFAULT_REGION: us-west-2 
+      AWS_DEFAULT_REGION: us-west-2
