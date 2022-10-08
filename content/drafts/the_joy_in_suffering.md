@@ -24,4 +24,4 @@ We cannot feel compassion, if there is no strive. We cannot forgive if no mistak
 
 We should thus not turn away from suffering, try to avoid it all cost, or let it dominate our life. Instead, we should understand that suffering can help us be more appreciative of what is beautiful, find joy and to help us find deeper, more selfless love.
 
- should see it as the foundation for deep and meaningful insight, one that we can only climb by seeing beauty, and finding compassion, love and joy.
+should see it as the foundation for deep and meaningful insight, one that we can only climb by seeing beauty, and finding compassion, love and joy.

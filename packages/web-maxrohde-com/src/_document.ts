@@ -14,7 +14,7 @@ const renderDocument = async (
 <html>
   <head>
     ${
-      process.env.DEPLOYMENT_NAME === 'prod'
+      process.env.GOLDSTACK_DEPLOYMENT === 'prod'
         ? `
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJMHNEGWN0"></script>

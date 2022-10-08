@@ -6,7 +6,7 @@ It is explained that only the most outstanding individuals would be allowed into
 
 The story is centred around the main character Eleanor who is said to be brought to this place by mistake; after having lived a less than virtuous life. She gets paired up with a moral philosophy professor as her supposed soul mate who she asks to teach her to be a good person.
 
-I think we really got to give credit to the entertainment industry to be bold enough to produce and air a thought-provoking show about moral philosophy. Personally, The Good Place made me think about the following questions: 
+I think we really got to give credit to the entertainment industry to be bold enough to produce and air a thought-provoking show about moral philosophy. Personally, The Good Place made me think about the following questions:
 
 - What does it mean to be good?
 - Should we be good?
@@ -23,7 +23,7 @@ Thus I think a good working definition of what it means to be good is that it me
 
 While this undoubtedly a very simplistic view on moral philosophy I think it is also a very powerful one, especially since it is rooted in what we are as human beings.
 
-There is a much wider discussion to be had what objective good is (with the definition above being a wholly subjective one). But I think that may be one of the topics where more wisdom can be attained from avoiding discussing it too deeply rather than pondering it too deeply. A strategy the Buddha suggests for a number of questions such as whether the world is eternal or if the self is identical to the body or not (see [The Unanswered Questions](https://en.wikipedia.org/wiki/The_unanswered_questions)). 
+There is a much wider discussion to be had what objective good is (with the definition above being a wholly subjective one). But I think that may be one of the topics where more wisdom can be attained from avoiding discussing it too deeply rather than pondering it too deeply. A strategy the Buddha suggests for a number of questions such as whether the world is eternal or if the self is identical to the body or not (see [The Unanswered Questions](https://en.wikipedia.org/wiki/The_unanswered_questions)).
 
 # Should we be good?
 
@@ -46,7 +46,7 @@ Also I think, just as any other human being, I am selfish in little things from 
 Thus while I am sure that I won't make it to the fictional Good Place, I find some comfort in that often I at least try to be good; but certainly want to try to be better, which leads me to the last question I wanted to discuss:
 
 # How can I be better?
- 
+
 I believe that one of the greatest enablers of being a better person is humility, and specifically the acknowledgement of ignorance; much bad has been brought upon the world that was seeded from good intentions - because we thought we had it all figured out, although we didn't. Thus I want to try to learn to be more humble, and to acknowledge that there is more what I don't know than I think I don't know.
 
 I also want to be very mindful of excuses I may make up to act selfishly; instead to try to err on trading progress on my long-term goals with the immediate happiness of others.
@@ -66,4 +66,3 @@ Kamaswami: “And what’s the use of that? For example, the fasting—what is i
 Siddhartha: “It is very good, sir. When a person has nothing to eat, fasting is the smartest thing he could do. When, for example, Siddhartha hadn’t learned to fast, he would have to accept any kind of service before this day is up, whether it may be with you or wherever, because hunger would force him to do so. But like this, Siddhartha can wait calmly, he knows no impatience, he knows no emergency, for a long time he can allow hunger to besiege him and can laugh about it. This, sir, is what fasting is good for.”
 
 The questions I have discussed in this article each are probably deserving of their own discipline, and I provided a very brief and subjective discussion here. I hope though that anyone reading this article could benefit in one simple way: by having some motivation to ask these questions yourself and see what your answers will be.
- 

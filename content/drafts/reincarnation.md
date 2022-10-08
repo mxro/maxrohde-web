@@ -1,5 +1,3 @@
-
-
 Have reincarnation as one of the concepts that can bring us solace (along with the existing of a God or benevolent power).
 
 However note that it is better to understand it in a different way than presented by hindusim and buddhism. It is a more fluid concept.
