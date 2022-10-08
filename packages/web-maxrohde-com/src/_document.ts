@@ -25,6 +25,7 @@ const renderDocument = async (
 
   gtag('config', 'G-JJMHNEGWN0');
 </script>
+<meta name="google-site-verification" content="UStW42ElnbQombE-juP0Q5gmDqmN54dImU-b21VlQ24" />
     `
         : ''
     }
