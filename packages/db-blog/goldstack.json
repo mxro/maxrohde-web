@@ -8,11 +8,20 @@
     {
       "name": "dev",
       "configuration": {
-        "tableName": "maxrohde-blog"
+        "tableName": "maxrohde-blog-dev"
       },
       "awsUser": "awsUser",
       "awsRegion": "us-west-2",
       "tfStateKey": "db-blog-dev-805d05f56f47931fe5be.tfstate"
+    },
+    {
+      "name": "prod",
+      "configuration": {
+        "tableName": "maxrohde-blog-prod"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2",
+      "tfStateKey": "db-blog-prod-7a39c5b659a3700bf9c1.tfstate"
     }
   ]
 }

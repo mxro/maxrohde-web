@@ -49,35 +49,58 @@ export async function renderPost({
     }
   );
 
-  const [postQueryResult, visits] = await Promise.all([
+  let [postQueryResult, visits] = await Promise.all([
     postQueryResultPromise,
     visitsPromise,
   ]);
 
-  if (
-    !postQueryResult.Items ||
-    postQueryResult.Count !== 1 ||
-    !visits.Items ||
-    visits.Count !== 1
-  ) {
-    return renderPage<ErrorPageProps>({
-      component: ErrorPage,
-      appendToHead: '<title>Post not found</title>',
-      properties: {
-        message: 'Post not found',
-      },
-      entryPoint: __filename,
-      event: event,
+  visits = visits;
+  if (!visits.Items || visits.Count !== 1) {
+    console.error('Cannot load view count');
+  }
+  if (!postQueryResult.Items || postQueryResult.Count !== 1) {
+    const pathSegments = path.split('/');
+    pathSegments[2] = String(Number(pathSegments[2]) - 1); // to account for WP date weirdness
+
+    // original WP link: https://maxrohde.com/2022/08/13/a-guide-to-css-modules-with-react/
+    // required link: https://maxrohde.com/2022/08/12/a-guide-to-css-modules-with-react
+
+    postQueryResult = await Posts.query(PostPK({ blog: 'maxrohde.com' }), {
+      reverse: true,
+      limit: 10,
+      index: 'path-index',
+      eq: pathSegments.join('/'), //'2022/01/16/memory-system-part-4-symbolic-systems',
     });
+
+    if (!postQueryResult.Items || postQueryResult.Count !== 1) {
+      return renderPage<ErrorPageProps>({
+        component: ErrorPage,
+        appendToHead: '<title>Post not found</title>',
+        properties: {
+          message: 'Post not found',
+        },
+        entryPoint: __filename,
+        event: event,
+      });
+    }
+
+    return {
+      statusCode: 301,
+      headers: {
+        Location: `https://maxrohde.com/${pathSegments.join('/')}`,
+      },
+    };
   }
 
-  const visitsCount = visits.Items[0].value;
-
-  BlogMetrics.put({
-    blog: 'maxrohde.com',
-    metricId: 'views',
-    value: visitsCount + 1,
-  }).catch((e) => console.error('Cannot update views', e));
+  let visitsCount = 100000;
+  if (visits.Items && visits.Count === 1) {
+    visitsCount = visits.Items[0].value;
+    BlogMetrics.put({
+      blog: 'maxrohde.com',
+      metricId: 'views',
+      value: visitsCount + 1,
+    }).catch((e) => console.error('Cannot update views', e));
+  }
 
   const post = postQueryResult.Items[0];
   const res = renderPage<PostProps>({

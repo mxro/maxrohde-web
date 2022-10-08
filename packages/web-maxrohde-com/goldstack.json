@@ -10,41 +10,82 @@
       "configuration": {
         "lambdas": {
           "ANY /": {
-            "function_name": "maxrohde--__index",
+            "function_name": "maxrohde-dev--__index",
             "route": "ANY /"
           },
           "ANY /about": {
-            "function_name": "maxrohde-about",
+            "function_name": "maxrohde-dev-about",
             "route": "ANY /about"
           },
           "ANY /categories/{id}": {
-            "function_name": "maxrohde-categories-_id_",
+            "function_name": "maxrohde-dev-categories-_id_",
             "route": "ANY /categories/{id}"
           },
           "ANY /robots.txt": {
-            "function_name": "maxrohde-robots_txt",
+            "function_name": "maxrohde-dev-robots_txt",
             "route": "ANY /robots.txt"
           },
           "ANY /sitemap.xml": {
-            "function_name": "maxrohde-sitemap_xml",
+            "function_name": "maxrohde-dev-sitemap_xml",
             "route": "ANY /sitemap.xml"
           },
           "ANY /tags/{id}": {
-            "function_name": "maxrohde-tags-_id_",
+            "function_name": "maxrohde-dev-tags-_id_",
             "route": "ANY /tags/{id}"
           },
           "ANY /{post+}": {
-            "function_name": "maxrohde-_post__",
+            "function_name": "maxrohde-dev-_post__",
             "route": "ANY /{post+}"
           }
         },
-        "lambdaNamePrefix": "maxrohde",
+        "lambdaNamePrefix": "maxrohde-dev",
         "domain": "dev.home.mxro.de",
         "hostedZoneDomain": "mxro.de"
       },
       "awsUser": "awsUser",
       "awsRegion": "us-west-2",
       "tfStateKey": "server-side-rendering-dev-946fcb843ad1d06f7e18.tfstate"
+    },
+    {
+      "name": "prod",
+      "configuration": {
+        "lambdas": {
+          "ANY /": {
+            "function_name": "maxrohde-prod--__index",
+            "route": "ANY /"
+          },
+          "ANY /about": {
+            "function_name": "maxrohde-prod-about",
+            "route": "ANY /about"
+          },
+          "ANY /categories/{id}": {
+            "function_name": "maxrohde-prod-categories-_id_",
+            "route": "ANY /categories/{id}"
+          },
+          "ANY /robots.txt": {
+            "function_name": "maxrohde-prod-robots_txt",
+            "route": "ANY /robots.txt"
+          },
+          "ANY /sitemap.xml": {
+            "function_name": "maxrohde-prod-sitemap_xml",
+            "route": "ANY /sitemap.xml"
+          },
+          "ANY /tags/{id}": {
+            "function_name": "maxrohde-prod-tags-_id_",
+            "route": "ANY /tags/{id}"
+          },
+          "ANY /{post+}": {
+            "function_name": "maxrohde-prod-_post__",
+            "route": "ANY /{post+}"
+          }
+        },
+        "lambdaNamePrefix": "maxrohde-prod",
+        "domain": "maxrohde.com",
+        "hostedZoneDomain": "maxrohde.com"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2",
+      "tfStateKey": "server-side-rendering-prod-9241dfab78652931e675.tfstate"
     }
   ]
 }
