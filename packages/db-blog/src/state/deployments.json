@@ -5,12 +5,27 @@
       "table_arn": {
         "sensitive": false,
         "type": "string",
-        "value": "arn:aws:dynamodb:us-west-2:444001402733:table/maxrohde-blog"
+        "value": "arn:aws:dynamodb:us-west-2:444001402733:table/maxrohde-blog-dev"
       },
       "table_name": {
         "sensitive": false,
         "type": "string",
-        "value": "maxrohde-blog"
+        "value": "maxrohde-blog-dev"
+      }
+    }
+  },
+  {
+    "name": "prod",
+    "terraform": {
+      "table_arn": {
+        "sensitive": false,
+        "type": "string",
+        "value": "arn:aws:dynamodb:us-west-2:444001402733:table/maxrohde-blog-prod"
+      },
+      "table_name": {
+        "sensitive": false,
+        "type": "string",
+        "value": "maxrohde-blog-prod"
       }
     }
   }

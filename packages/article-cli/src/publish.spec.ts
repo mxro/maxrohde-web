@@ -8,10 +8,26 @@ import {
   deepCopy,
 } from 'db-blog';
 import { Entity } from 'dynamodb-toolbox';
+import { findPrepareFiles, prepare } from './prepare';
 import { publish, extractPathElements } from './publish';
 
 // needs to be long to download Docker image etc.
 jest.setTimeout(120000);
+
+describe('Article prepare', () => {
+  it.only('Should find articles', async () => {
+    const files = await findPrepareFiles({
+      directoryToScan: './testData/draft',
+      fileNamePattern: 'six',
+      dry: false,
+    });
+
+    expect(files.length).toEqual(1);
+    expect(files[0]).toContain(
+      'six-virtues-according-to-positive-psychology.md'
+    );
+  });
+});
 
 describe('Article publishing', () => {
   it('Should have correct path regex', () => {

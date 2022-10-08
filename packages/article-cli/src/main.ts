@@ -6,6 +6,7 @@ import { mergePosts } from './mergePosts';
 import { publish } from './publish';
 import { wordpressPreprocessFile } from './wordpressPreprocess';
 import { wordpressToMarkdown } from './wordpressToMarkdown';
+import { prepare } from './prepare';
 
 (async () => {
   const program = new Command();
@@ -16,10 +17,25 @@ import { wordpressToMarkdown } from './wordpressToMarkdown';
     .version(packageJson.version);
 
   program
+    .command('prepare')
+    .description('Moves drafts to posts directory')
+    .argument(
+      '<pattern>',
+      'The pattern matching the drafts that should be moved.'
+    )
+    .option('-d, --dry', 'Dry run - do not move')
+    .action(async (pattern, options) => {
+      await prepare({
+        dry: options.dry || false,
+        fileNamePattern: pattern,
+      });
+    });
+
+  program
     .command('publish')
     .description('Publishes an article')
     .argument('<filename>', 'The filename of the article to publish')
-    .option('-s, --dry', 'Dry run - do not publish')
+    .option('-d, --dry', 'Dry run - do not publish')
     .option(
       '-c, --categories <categories>',
       'Comma separated list of categories'
