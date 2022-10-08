@@ -102,6 +102,15 @@ export async function renderPost({
     }).catch((e) => console.error('Cannot update views', e));
   }
 
+  if (event.rawPath.endsWith('/')) {
+    return {
+      statusCode: 301,
+      headers: {
+        Location: `https://maxrohde.com/${path}`,
+      },
+    };
+  }
+
   const post = postQueryResult.Items[0];
   const res = renderPage<PostProps>({
     component: PostPage,

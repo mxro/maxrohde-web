@@ -48,7 +48,7 @@ const PostPage = (props: PostProps): JSX.Element => {
         </div>
         <div className="basis-1/5">
           <p className="pt-24">
-            Insights for developing lean applications with ease 💻 and my
+            Insights for developing lean applications with ease 😎 and my
             musings on life and leadership ✍.
           </p>
 
