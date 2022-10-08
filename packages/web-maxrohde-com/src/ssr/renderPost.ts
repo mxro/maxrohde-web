@@ -137,13 +137,14 @@ export async function renderPost({
           : ''
       }
       <meta name="twitter:card" content="summary_large_image" />
-      <link href="/_goldstack/static/lib/prismjs/1.29.0/prism.css" rel="stylesheet" />
+      <link rel="preload" as="style" href="/_goldstack/static/lib/prismjs/1.29.0/prism.css" onload="this.onload=null;this.rel='stylesheet'" />
+      <noscript><link rel="stylesheet" href="/_goldstack/static/lib/prismjs/1.29.0/prism.css"></noscript>
       <style>
         code {
           font-size: 0.9rem !important;
         }
       </style>
-      <script src="/_goldstack/static/lib/prismjs/1.29.0/prism.js" ></script>
+      <script src="/_goldstack/static/lib/prismjs/1.29.0/prism.js" defer></script>
     `,
     properties: {
       post,
