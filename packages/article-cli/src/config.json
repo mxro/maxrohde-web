@@ -1,6 +1,7 @@
 {
   "postsDir": "./../../content/posts",
   "draftsDir": "./../../../writing",
+  "draftsAttachmentsDir": "./../../../writing/Resources",
   "codeOfJoyPostsDir": "./../../content/import/wordpress/codeofjoy/output-folder",
   "codeOfJoyXmlExport": "./../../content/import/wordpress/input/codeofjoy-before-preprocess.xml",
   "codeOfJoyXmlFixed": "./../../content/import/wordpress/input/codeofjoy.xml",

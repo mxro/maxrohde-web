@@ -25,9 +25,11 @@ import { deleteAll } from './database/delete';
       'The pattern matching the drafts that should be moved.'
     )
     .option('-d, --dry', 'Dry run - do not move')
+    .option('-k, --keep', 'Do not remove any source files')
     .action(async (pattern, options) => {
       await prepare({
         dry: options.dry || false,
+        keep: options.keep || false,
         fileNamePattern: pattern,
       });
     });
