@@ -3,6 +3,7 @@
 import {
   APIGatewayProxyEventV2,
   APIGatewayProxyResultV2,
+  APIGatewayProxyStructuredResultV2,
 } from 'aws-lambda/trigger/api-gateway-proxy';
 import { renderPage } from '../render';
 import { PostProps } from './../components/pages/PostPage';
@@ -15,6 +16,8 @@ import {
   PostPK,
   BlogMetricEntity,
   BlogMetricPK,
+  connect,
+  getTableName,
 } from 'db-blog';
 
 import { normalisePath } from './../lib/posts';
@@ -34,7 +37,6 @@ export async function renderPost({
   const postQueryResultPromise = Posts.query(PostPK({ blog: 'maxrohde.com' }), {
     reverse: true,
     limit: 10,
-    index: 'path-index',
     eq: path, //'2022/01/16/memory-system-part-4-symbolic-systems',
   });
 
@@ -59,35 +61,31 @@ export async function renderPost({
     console.error('Cannot load view count');
   }
   if (!postQueryResult.Items || postQueryResult.Count !== 1) {
-    const pathSegments = path.split('/');
-    pathSegments[2] = String(Number(pathSegments[2]) - 1); // to account for WP date weirdness
+    // pathSegments[2] = String(Number(pathSegments[2]) - 1); // to account for WP date weirdness
 
     // original WP link: https://maxrohde.com/2022/08/13/a-guide-to-css-modules-with-react/
     // required link: https://maxrohde.com/2022/08/12/a-guide-to-css-modules-with-react
 
+    const newPath = getPreviousDaysPath(path);
+    if (!newPath) {
+      return renderNotFound(event);
+    }
+
     postQueryResult = await Posts.query(PostPK({ blog: 'maxrohde.com' }), {
       reverse: true,
       limit: 10,
-      index: 'path-index',
-      eq: pathSegments.join('/'), //'2022/01/16/memory-system-part-4-symbolic-systems',
+      eq: newPath,
+      //'2022/01/16/memory-system-part-4-symbolic-systems',
     });
 
     if (!postQueryResult.Items || postQueryResult.Count !== 1) {
-      return renderPage<ErrorPageProps>({
-        component: ErrorPage,
-        appendToHead: '<title>Post not found</title>',
-        properties: {
-          message: 'Post not found',
-        },
-        entryPoint: __filename,
-        event: event,
-      });
+      return renderNotFound(event);
     }
 
     return {
       statusCode: 301,
       headers: {
-        Location: `https://maxrohde.com/${pathSegments.join('/')}`,
+        Location: `https://maxrohde.com/${newPath}`,
       },
     };
   }
@@ -112,11 +110,12 @@ export async function renderPost({
   }
 
   const post = postQueryResult.Items[0];
+  if (!post) {
+    return renderNotFound(event);
+  }
   const res = renderPage<PostProps>({
     component: PostPage,
     appendToHead: `
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>${post.title} - Code of Joy</title>
       <meta property="og:type" content="article" />
       <meta property="og:title" content="${post.title}" />
@@ -154,5 +153,60 @@ export async function renderPost({
     entryPoint: __filename,
     event: event,
   });
+  return res;
+}
+
+function getPreviousDaysPath(path: string): string | undefined {
+  const pathSegments = path.split('/');
+  if (pathSegments.length < 4) {
+    return undefined;
+  }
+  const [year, month, day] = [
+    parseInt(pathSegments[0], 10),
+    parseInt(pathSegments[1], 10),
+    parseInt(pathSegments[2], 10),
+  ];
+  const postDate = new Date(Date.UTC(year, month - 1, day));
+  postDate.setDate(postDate.getDate() - 1);
+
+  const newPath = `${postDate
+    .toISOString()
+    .slice(0, 10)
+    .replaceAll(/\-/g, '/')}/${pathSegments.slice(3).join('/')}`;
+  return newPath;
+}
+
+async function renderNotFound(
+  event: APIGatewayProxyEventV2
+): Promise<APIGatewayProxyResultV2> {
+  const res: APIGatewayProxyStructuredResultV2 = (await renderPage<ErrorPageProps>(
+    {
+      component: ErrorPage,
+      appendToHead: '<title>Post not found</title>',
+      properties: {
+        message: 'Post not found',
+      },
+      entryPoint: __filename,
+      event: event,
+    }
+  )) as APIGatewayProxyStructuredResultV2;
+
+  const dynamoDB = await connect();
+  await dynamoDB
+    .updateItem({
+      TableName: await getTableName(),
+      Key: {
+        pk: { S: BlogMetricPK({ blog: 'maxrohde.com' }) },
+        sk: { S: `post-miss#${event.rawPath}` },
+      },
+      ExpressionAttributeValues: { ':inc': { N: '1' } },
+      UpdateExpression: 'ADD #v :inc',
+      ExpressionAttributeNames: {
+        '#v': 'value',
+      },
+    })
+    .promise();
+
+  res.statusCode = 404;
   return res;
 }

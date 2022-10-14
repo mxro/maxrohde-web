@@ -11,7 +11,7 @@ tags:
 coverImage: 'meditation-2214532.jpg'
 ---
 
-Without a doubt, our body and mind are connected. Without our body, our mind cannot be. If we strive for a strong and enlightened mind, we must also strive for a strong and healthy body. Of course, it is still possible to achieve an enlightened mind even in a body stricken by sickness but it is just so much easier to achieve this [if our body is strong](http://spearoflight.blog/2019/04/19/practice-exercise/).
+Without a doubt, our body and mind are connected. Without our body, our mind cannot be. If we strive for a strong and enlightened mind, we must also strive for a strong and healthy body. Of course, it is still possible to achieve an enlightened mind even in a body stricken by sickness but it is just so much easier to achieve this [if our body is strong](https://maxrohde.com/2019/04/19/practice-exercise/).
 
 One of the most effective ways to use our body to strengthen our mind is by controlling our breath. Thankfully our depth and speed of breathing is something we can control easily. We can make ourselves breathe slow and deep. This in turn has a positive effect on our body and on our mind. Our heart rate reduces and our mind becomes calmer. In that state, it is easier for us to be strong and pursue positive thoughts.
 

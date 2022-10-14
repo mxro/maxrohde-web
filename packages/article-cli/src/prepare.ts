@@ -3,7 +3,7 @@ import { cp, cpSync, existsSync, mkdirSync, rmSync } from 'fs';
 
 import { resolve } from 'path';
 import config from './config.json';
-import { parseMarkdown } from './markdown';
+import { parseMarkdown } from './markdown/markdown';
 
 export interface PrepareArgs {
   fileNamePattern: string;

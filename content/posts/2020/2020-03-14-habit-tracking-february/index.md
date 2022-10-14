@@ -8,13 +8,13 @@ tags:
 coverImage: 'annotation-2020-03-14-154027.png'
 ---
 
-This post is to document the tracking of my habits for the month of February 2020 according to my [habit tracking system](https://spearoflight.blog/2019/08/03/simple-habit-tracking-system/).
+This post is to document the tracking of my habits for the month of February 2020 according to my [habit tracking system](https://maxrohde.com/2019/08/03/simple-habit-tracking-system/).
 
 Here the overview of how I tracked against the habits I aimed to follow this month:
 
 ![](https://spearoflight.files.wordpress.com/2020/03/img_3038.jpg?w=1024)
 
-- _Exercise and Stretching_: Similarly to [January](https://spearoflight.blog/2020/02/03/habit-tracking-january/), I was again able to exercise quite regularly. This included both running and playing RingFit. However, I found that I still became very stiff when exercising a few days in a row. I also got back pain which I attribute to my scooter - which does not have suspension and solid rubber wheels and which I have been driving quite extensively to get to and from work. I got my back checked out and in an x-ray they found some mild form of osteoarthritis. My doctor told me there is no cure for this but I suspect that exercise and stretching may help control the condition. I will need to find out in the next few months what exercises to do for this.
+- _Exercise and Stretching_: Similarly to [January](https://maxrohde.com/2020/02/03/habit-tracking-january/), I was again able to exercise quite regularly. This included both running and playing RingFit. However, I found that I still became very stiff when exercising a few days in a row. I also got back pain which I attribute to my scooter - which does not have suspension and solid rubber wheels and which I have been driving quite extensively to get to and from work. I got my back checked out and in an x-ray they found some mild form of osteoarthritis. My doctor told me there is no cure for this but I suspect that exercise and stretching may help control the condition. I will need to find out in the next few months what exercises to do for this.
 - _Emails_: I managed to stay on top of my inbox quite well throughout the month.
 - _Meditation_: While I was getting back into meditation at the end of January, I didn't follow through with this in February.
 

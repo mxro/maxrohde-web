@@ -4,6 +4,7 @@ import Header from '../Header';
 import TagList from '../TagList';
 
 import type { Post as PostType } from 'db-blog';
+import ErrorPage from './ErrorPage';
 
 export interface PostProps {
   post?: PostType;
@@ -13,14 +14,14 @@ export interface PostProps {
 
 const PostPage = (props: PostProps): JSX.Element => {
   if (!props.post) {
-    return <>Post does not exist.</>;
+    return <ErrorPage message="Post does not exist"></ErrorPage>;
   }
   return (
     <>
       <Header></Header>
 
-      <div className="flex flex-row container mx-auto relative bg-white pt-16 pb-8 max-w-7xl px-4 sm:px-6">
-        <div className="basis-4/5 px-4 sm:px-6">
+      <div className="flex flex-row container mx-auto relative bg-white md:pt-16 pb-8 max-w-7xl px-4 sm:px-6">
+        <div className="basis-4/5 px-4 sm:px-6 max-w-full">
           <article className={'prose lg:prose-xl border-b border-gray-300'}>
             <h1>{props.post.title}</h1>
             <div
@@ -46,7 +47,7 @@ const PostPage = (props: PostProps): JSX.Element => {
             </div>
           )}
         </div>
-        <div className="basis-1/5">
+        <div className="hidden md:block basis-1/5">
           <p className="pt-24">
             Insights for developing lean applications with ease 😎 and my
             musings on life and leadership ✍.

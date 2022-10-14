@@ -26,15 +26,12 @@ const BlogListItem = (props: BlogListItemProps): JSX.Element => {
           <div className="space-y-6">
             <div>
               <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                <a
-                  className="text-gray-900 dark:text-gray-100"
-                  href={`/${props.path}`}
-                >
+                <a className="text-gray-900" href={`/${props.path}`}>
                   {props.title}
                 </a>
                 <span className="float-right">
                   <dt className="sr-only">Published on</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  <dd className="text-base font-medium leading-6 text-gray-500 ">
                     <time dateTime={props.datePublished}>
                       {new Date(props.datePublished).toLocaleDateString()}
                     </time>
@@ -48,13 +45,13 @@ const BlogListItem = (props: BlogListItemProps): JSX.Element => {
                 ></TagList>
               )}
             </div>
-            <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+            <div className="prose max-w-none text-gray-500">
               {props.summary}
             </div>
           </div>
           <div className="text-base font-medium leading-6">
             <a
-              className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+              className="text-primary-500 hover:text-primary-600"
               aria-label="Read more"
               href={`/${props.path}`}
             >

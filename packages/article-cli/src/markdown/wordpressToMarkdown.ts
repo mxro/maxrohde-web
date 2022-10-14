@@ -2,7 +2,7 @@ import { execSync } from 'child_process';
 
 import { rm } from 'fs/promises';
 
-import config from './config.json';
+import config from './../config.json';
 
 export async function wordpressToMarkdown(): Promise<void> {
   // delete output folders to force re-processing of existing articles

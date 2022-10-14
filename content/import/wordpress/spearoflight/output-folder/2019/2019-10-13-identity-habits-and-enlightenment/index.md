@@ -23,7 +23,7 @@ This line of thinking made me consider if building habits around a strong sense 
 
 I think it is quite important to develop an identity and have a life purpose. These should, however, be very carefully chosen. In choosing an identity, we should choose something which is helping us towards a path of greater happiness and enlightenment, rather than something which helps us achieve a lesser goal. Also our identity and purpose should not be dependent on external factors but only on things completely under our control. In the book [Eternal Dharma](https://www.goodreads.com/review/show/2921883200), some possible life goals were discussed which I think were quite interesting. They centred around bringing love and kindness into the world. Here some further examples of identities/purposes which might be safe to adapt:
 
-- [To provide the most benefit to the world given my abilities](https://spearoflight.blog/2019/09/27/my-life-goals/)
+- [To provide the most benefit to the world given my abilities](https://maxrohde.com/2019/09/27/my-life-goals/)
 - To find inner peace and enlightenment
 - To be kind in every action
 

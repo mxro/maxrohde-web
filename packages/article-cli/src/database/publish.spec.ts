@@ -8,14 +8,14 @@ import {
   deepCopy,
 } from 'db-blog';
 import { Entity } from 'dynamodb-toolbox';
-import { findPrepareFiles, prepare } from './prepare';
+import { findPrepareFiles, prepare } from '../prepare';
 import { publish, extractPathElements } from './publish';
 
 // needs to be long to download Docker image etc.
 jest.setTimeout(120000);
 
 describe('Article prepare', () => {
-  it.only('Should find articles', async () => {
+  it('Should find articles', async () => {
     const files = await findPrepareFiles({
       directoryToScan: './testData/draft',
       fileNamePattern: 'six',
@@ -54,7 +54,6 @@ describe('Article publishing', () => {
       {
         reverse: true,
         limit: 10,
-        index: 'path-index',
         eq: '2022/01/16/memory-system-part-4-symbolic-systems',
       }
     );

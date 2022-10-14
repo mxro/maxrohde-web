@@ -1,6 +1,6 @@
 import fg from 'fast-glob';
-import config from './config.json';
-import { parseMarkdown } from './markdown';
+import config from '../config.json';
+import { parseMarkdown } from '../markdown/markdown';
 
 import {
   PostEntity,
@@ -12,7 +12,7 @@ import {
 import { Entity } from 'dynamodb-toolbox';
 
 import { convert as htmlToText } from 'html-to-text';
-import { fixCoverImageLink } from './images';
+import { fixCoverImageLink } from '../markdown/images';
 import { resolve } from 'path';
 
 import { dirname, join } from 'path';
@@ -97,6 +97,7 @@ export const publish = async (args: PublishArgs): Promise<void> => {
         title: post.metadata.title,
         contentHtml: post.html,
         summary:
+          post.metadata.summary ||
           htmlToText(post.html, {
             wordwrap: false,
             selectors: [
@@ -152,7 +153,7 @@ export const publish = async (args: PublishArgs): Promise<void> => {
       const post = result.post;
       const categories: string[] = [];
       if (post.metadata.categories) {
-        categories.push(post.metadata.categories);
+        categories.push(...post.metadata.categories);
       }
       if (args.categories) {
         categories.push(...args.categories);

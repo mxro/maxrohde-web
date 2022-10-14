@@ -61,7 +61,7 @@ Secondly, we have a natural ability to perceive and appreciate beauty.
 
 We do not just see and experience things, we imbue them with meaning. That what is beautiful can touch us deeply.
 
-Lastly, we have the ability to perceive a higher, abstract force such as a god, the connectedness of all things or universal love (see also [Touch Heaven](https://spearoflight.blog/2019/11/16/touch-heaven/)).
+Lastly, we have the ability to perceive a higher, abstract force such as a god, the connectedness of all things or universal love (see also [Touch Heaven](https://maxrohde.com/2019/11/16/touch-heaven/)).
 
 \> In anguish and desperation, I reached out as I had many times before to the presence I call the Beloved. This unconditionally loving and wakeful awareness had always been a refuge for me.
 

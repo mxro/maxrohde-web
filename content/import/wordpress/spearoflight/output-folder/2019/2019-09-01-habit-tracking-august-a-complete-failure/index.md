@@ -9,7 +9,7 @@ tags:
 coverImage: 'fail-1714367.jpg'
 ---
 
-I have previously posted about a [new system I have adopted for tracking my habits](https://spearoflight.blog/2019/08/03/simple-habit-tracking-system/). In the month of July, I think I did reasonably well in sticking to the habits I have set out to adopt. My system is designed to make it easy to enter data (simply use a marker pen) and to provide an immediate visual overview of how well things are going.
+I have previously posted about a [new system I have adopted for tracking my habits](https://maxrohde.com/2019/08/03/simple-habit-tracking-system/). In the month of July, I think I did reasonably well in sticking to the habits I have set out to adopt. My system is designed to make it easy to enter data (simply use a marker pen) and to provide an immediate visual overview of how well things are going.
 
 For July, it is easy to see that there is a lot more green than there is red or yellow. I didn't do perfectly but I managed to exercise, mediate and learn quite regularly as can be seen in the below image.
 

@@ -24,7 +24,7 @@ Love is a central tenant of many world religions. In Christianity both the love 
 
 1 Thessalonians 3:12
 
-In Buddhism love or loving-kindness is known as one of the [four immeasurable minds](http://spearoflight.blog/2018/08/28/the-four-immeasurable-minds/). It is in essence the strong wish that all sentient beings be well and happy:
+In Buddhism love or loving-kindness is known as one of the [four immeasurable minds](https://maxrohde.com/2018/08/28/the-four-immeasurable-minds/). It is in essence the strong wish that all sentient beings be well and happy:
 
 > Radiate boundless love towards the entire world — above, below, and across — unhindered, without ill will, without enmity.
 
@@ -40,6 +40,6 @@ While we should practice our ability to feel this kind of love in every action a
 6. Think of all sentient beings. Cows grooming their calves; lion brothers fighting for their territory; elephants wandering together. Can you find love for each and every one?
 7. Think of existence as a whole; every particle in the universe, every field and power, seemingly endless time itself. Can you find love for this vessel in which we exist?
 
-Love just like [gratitude](http://spearoflight.blog/2019/04/21/practice-gratitude/) and [forgiveness](http://spearoflight.blog/2019/04/07/practice-forgiveness/) is a powerful, deep emotion. We have a natural ability to love and using this ability may make us stronger and wiser. Unfortunately in times when we are weak, it is often difficult to find love, and much easier to find hatred and self-pity. If we find ourselves unable to love easily, we may follow some of [the other practices](http://spearoflight.blog/2019/04/19/practices-for-enlightenment/) to help us be stronger and unlock our ability to love unconditionally again.
+Love just like [gratitude](https://maxrohde.com/2019/04/21/practice-gratitude/) and [forgiveness](https://maxrohde.com/2019/04/07/practice-forgiveness/) is a powerful, deep emotion. We have a natural ability to love and using this ability may make us stronger and wiser. Unfortunately in times when we are weak, it is often difficult to find love, and much easier to find hatred and self-pity. If we find ourselves unable to love easily, we may follow some of [the other practices](https://maxrohde.com/2019/04/19/practices-for-enlightenment/) to help us be stronger and unlock our ability to love unconditionally again.
 
 Image credit: Dan Sudermann

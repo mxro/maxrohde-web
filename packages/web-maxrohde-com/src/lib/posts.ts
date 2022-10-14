@@ -21,30 +21,49 @@ export async function loadPosts({
   dynamodb,
   postIds,
 }: LoadPostsArgs): Promise<Post[]> {
+  if (postIds.length === 0) {
+    return [];
+  }
   const postQueryResult = await dynamodb
-    .executeStatement({
-      Statement: `SELECT * FROM "${await getTableName()}"."path-index" 
-       WHERE pk = '${PostPK({ blog: 'maxrohde.com' })}'
-         AND path IN [${postIds.map((el) => `'${el}'`).join(',')}]`,
-      ReturnConsumedCapacity: 'INDEXES',
-      Limit: 50,
+    .batchGetItem({
+      RequestItems: {
+        [await getTableName()]: {
+          Keys: postIds.map((el) => {
+            return {
+              pk: DynamoDB.Converter.input(PostPK({ blog: 'maxrohde.com' })),
+              sk: DynamoDB.Converter.input(el),
+            };
+          }),
+        },
+      },
     })
     .promise();
+  // await dynamodb
+  //   .executeStatement({
+  //     Statement: `SELECT * FROM "${await getTableName()}"
+  //      WHERE "pk" = '${PostPK({ blog: 'maxrohde.com' })}'
+  //      AND "path" IN [${postIds.map((el) => `'${el}'`).join(', ')}]`,
+  //     ReturnConsumedCapacity: 'INDEXES',
+  //     Limit: 50,
+  //   })
+  //   .promise();
 
-  console.log(
-    'ConsumedCapacity for loading posts',
-    postQueryResult.ConsumedCapacity
-  );
+  // console.log(
+  //   'ConsumedCapacity for loading posts',
+  //   postQueryResult.ConsumedCapacity
+  // );
 
-  if (!postQueryResult.Items) {
+  if (!postQueryResult.Responses) {
     throw new Error('Could not load post');
   }
 
-  const posts = postQueryResult.Items.map((post) => {
+  const posts = postQueryResult.Responses[await getTableName()].map((post) => {
     const parsedPost = DynamoDB.Converter.unmarshall(post);
-    parsedPost.datePublished = parsedPost.sk;
+    parsedPost.path = parsedPost.sk;
     return parsedPost;
   }) as Post[];
 
+  // no idea why this is required
+  posts.sort((a, b) => b.path.localeCompare(a.path));
   return posts;
 }

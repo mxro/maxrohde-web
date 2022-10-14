@@ -14,7 +14,7 @@ coverImage: '0_the_vitruvian_man_-_by_leonardo_da_vinci.jpg'
 
 With all the distractions in our life, we often forget what is most fundamental to our existence: our own bodies. We should take time to be mindful of how our body feels. Do we have pain somewhere? Do we feel relaxed or tense?
 
-This is the first post of a series in which I will discuss [various practices](http://spearoflight.blog/2019/04/19/practices-for-enlightenment/) which may help in reaching a happier, more satisfied and more enlightened state of mind. The practice I describe here may help us to become more mindful of our bodies, the temple from which we must utter all our prayers.
+This is the first post of a series in which I will discuss [various practices](https://maxrohde.com/2019/04/19/practices-for-enlightenment/) which may help in reaching a happier, more satisfied and more enlightened state of mind. The practice I describe here may help us to become more mindful of our bodies, the temple from which we must utter all our prayers.
 
 These are the steps to follow:
 

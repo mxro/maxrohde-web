@@ -12,9 +12,8 @@ const ErrorPage = (props: ErrorPageProps): JSX.Element => {
       <Header></Header>
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <h1 className="text-3xl font-extrabold pt-24 pb-24">
-          Something Went Wrong 🤔
+          {props.message} 🤔
         </h1>
-        <p>{props.message}</p>
       </div>
       <Footer></Footer>
     </>

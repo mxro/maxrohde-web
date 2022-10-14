@@ -14,7 +14,7 @@ Virtue seems like a dusty old concept which fits in an 18th century - but not in
 
 Virtues, however, are a key pillar of leading happy and meaningful lives since they provide a shortcut to meaning; rather than having to ponder the nature of existence in our every waking moment, we can fall back to a handy list of virtues to guide our decisions; assuming the more we follow these, the more meaningful our lives may become.
 
-I have recently written [about six virtues](http://spearoflight.blog/2018/08/14/six-virtues-according-to-positive-psychology/) which were identified by positive psychologists. Thinking about virtues in a scientific setting is a very laudable exercise and can lead to tremendous insights. However, I personally found the list of virtues lacking in some respects. So based on the original six virtues proposed I have composed my own list of desirable virtues:
+I have recently written [about six virtues](https://maxrohde.com/2018/08/14/six-virtues-according-to-positive-psychology/) which were identified by positive psychologists. Thinking about virtues in a scientific setting is a very laudable exercise and can lead to tremendous insights. However, I personally found the list of virtues lacking in some respects. So based on the original six virtues proposed I have composed my own list of desirable virtues:
 
 ## Being wise
 

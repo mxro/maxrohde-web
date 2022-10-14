@@ -4,8 +4,8 @@ import {
   TagMappingEntity,
   TagEntity,
   PostPK,
-  Post,
   TagMappingPK,
+  PostGsiName,
 } from './entities';
 import deepCopy from 'deep-copy';
 import { connectTable, stopLocalDynamoDB } from './table';
@@ -76,6 +76,7 @@ describe('DynamoDB Table', () => {
 
     const postQueryResult = await Posts.query(PostPK({ blog: 'blog1' }), {
       reverse: true,
+      index: PostGsiName,
       limit: 10,
     });
 

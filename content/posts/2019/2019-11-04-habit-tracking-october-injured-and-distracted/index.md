@@ -12,13 +12,13 @@ tags:
 coverImage: 'habits-october.png'
 ---
 
-Following my [new system for tracking habits](https://spearoflight.blog/2019/08/03/simple-habit-tracking-system/) I have again kept track of various habits I try to follow. Here the overview for October.
+Following my [new system for tracking habits](https://maxrohde.com/2019/08/03/simple-habit-tracking-system/) I have again kept track of various habits I try to follow. Here the overview for October.
 
 ![](https://spearoflight.files.wordpress.com/2019/11/habits-october.png?w=1024)
 
 Habit Tracking October
 
-Overall, I didn't do very well, just like in [September](https://spearoflight.blog/2019/10/03/habit-tracking-september-technological-enhancement/). Here my notes on the individual habits:
+Overall, I didn't do very well, just like in [September](https://maxrohde.com/2019/10/03/habit-tracking-september-technological-enhancement/). Here my notes on the individual habits:
 
 - **Exercise and Stretching**: Since I injured my rib at the end of September, I was not able to do much exercise. The two times I managed to do so I went on strenuous walks, first to the [Werribee Gorge](https://www.parks.vic.gov.au/places-to-see/parks/werribee-gorge-state-park) and then to the [1000 Steps](https://visitdandenongranges.com.au/1000-steps).
 - **Emails**: I have adopted a new habit where I aim to have less than five emails in my personal inbox (certainly not possible with my work one). I managed to do so quite consistently. I think it stresses me when too many emails pile up in my personal inbox so I think keeping things managed day by day is a good habit to adopt.

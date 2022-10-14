@@ -40,6 +40,7 @@ export async function renderTag({
     TagMappingPK({ blog: 'maxrohde.com', tagId }),
     {
       limit: 10,
+      reverse: true,
       startKey: event.queryStringParameters?.nextToken
         ? {
             pk: TagMappingPK({ blog: 'maxrohde.com', tagId }),

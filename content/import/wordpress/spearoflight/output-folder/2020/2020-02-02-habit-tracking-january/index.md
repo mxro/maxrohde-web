@@ -9,7 +9,7 @@ tags:
 coverImage: '2019-01-31-janurary-habits.jpg'
 ---
 
-I found the [system for habit tracking](https://spearoflight.blog/2019/08/03/simple-habit-tracking-system/) I adopted in July last year overall quite insightful and useful for keeping me on track for simple habits. I thus decided to continue following this system in the new year.
+I found the [system for habit tracking](https://maxrohde.com/2019/08/03/simple-habit-tracking-system/) I adopted in July last year overall quite insightful and useful for keeping me on track for simple habits. I thus decided to continue following this system in the new year.
 
 Due to travel around Christmas and New Years it took me a while to get back into following my habits regularly. Here the overview of all habits for January:
 

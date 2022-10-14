@@ -10,7 +10,7 @@ tags:
 coverImage: 'img_0716.jpg'
 ---
 
-After having done [very poorly on keeping to my habits in October](https://spearoflight.blog/2019/11/05/habit-tracking-october-injured-and-distracted/), things have greatly improved in November. Here the overview for November:
+After having done [very poorly on keeping to my habits in October](https://maxrohde.com/2019/11/05/habit-tracking-october-injured-and-distracted/), things have greatly improved in November. Here the overview for November:
 
 ![](https://spearoflight.files.wordpress.com/2019/12/img_0716.jpg?w=1024)
 

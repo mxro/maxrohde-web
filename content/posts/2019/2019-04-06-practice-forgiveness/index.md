@@ -18,7 +18,7 @@ coverImage: 'forgive_and_ye_shall_be_forgiven.jpg'
 
 I think it is human nature that we are constantly disappointed with ourselves and others. One fundamental driver for this is our [struggle between altruism and selfishness](https://en.wikipedia.org/wiki/The_Selfish_Gene). We are programmed to be supportive and helpful to those around us but we are also programmed to look out for our own interests. Which ones of these directions we follow is a constant source of uncertainty for us and, if we inevitably choose the path of selfishness occasionally, we are bound to be disappointed with ourselves. Likewise, we are disappointed with others if we observe them doing the same.
 
-Given this constant struggle and disappointment, [I believe it is critical for us to embrace forgiveness](http://spearoflight.blog/2018/09/01/a-discussion-of-forgiveness/) in order to keep a balanced and happy mind. Thus I have developed the following very simple practice that may aid us in being more forgiving.
+Given this constant struggle and disappointment, [I believe it is critical for us to embrace forgiveness](https://maxrohde.com/2018/09/01/a-discussion-of-forgiveness/) in order to keep a balanced and happy mind. Thus I have developed the following very simple practice that may aid us in being more forgiving.
 
 1. Breathe in slowly and deeply until your lungs are filled with air. Hold your breath for three seconds and then slowly exhale. Repeat for three times.
 2. Forgive yourself for all the things you have done wrong, said wrong or thought wrong today or in the past. Remember that you are worthy of love, even if you make mistakes or are misguided.

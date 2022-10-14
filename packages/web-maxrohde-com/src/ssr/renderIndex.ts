@@ -6,7 +6,14 @@ import {
 } from 'aws-lambda/trigger/api-gateway-proxy';
 import { renderPage } from '../render';
 
-import { connectTable, Entity, deepCopy, PostEntity, PostPK } from 'db-blog';
+import {
+  connectTable,
+  Entity,
+  deepCopy,
+  PostEntity,
+  PostPK,
+  PostGsiName,
+} from 'db-blog';
 
 import IndexPage, { IndexProps } from '../components/pages/IndexPage';
 import ErrorPage, { ErrorPageProps } from '../components/pages/ErrorPage';
@@ -22,6 +29,7 @@ export async function renderIndex({
   const postQueryResult = await Posts.query(PostPK({ blog: 'maxrohde.com' }), {
     reverse: true,
     limit: 10,
+    index: PostGsiName,
     startKey: event.queryStringParameters?.loadFrom
       ? {
           sk: event.queryStringParameters.loadFrom,

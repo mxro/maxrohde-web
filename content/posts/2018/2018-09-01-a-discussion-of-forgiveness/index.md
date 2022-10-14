@@ -15,7 +15,7 @@ tags:
 coverImage: '785px-rembrandt_harmensz_van_rijn_-_return_of_the_prodigal_son_-_google_art_project.jpg'
 ---
 
-I've already mentioned that I believe that [gratitude and forgiveness are emotions which I believe we should foster within ourselves](http://spearoflight.blog/2018/08/20/eight-virtues-which-seem-not-all-that-bad/). Today I want to explore in a little bit further detail what makes up forgiveness and why it is such a powerful force to bring good to ourselves and the world.
+I've already mentioned that I believe that [gratitude and forgiveness are emotions which I believe we should foster within ourselves](https://maxrohde.com/2018/08/20/eight-virtues-which-seem-not-all-that-bad/). Today I want to explore in a little bit further detail what makes up forgiveness and why it is such a powerful force to bring good to ourselves and the world.
 
 ## What is Forgiveness
 

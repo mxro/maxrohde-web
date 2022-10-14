@@ -15,7 +15,7 @@ tags:
 coverImage: 'poverty-1148934.jpg'
 ---
 
-I have already written about a practice centred on the [powerful emotion of compassion](https://spearoflight.blog/tag/compassion/). However, today I came across an interesting variation of a practice on compassion (in the book [Happiness by Matthieu Ricard](https://www.amazon.com/Happiness-Guide-Developing-Lifes-Important/dp/0316167258)): one that reflects our own suffering onto others, and helps us heal from our own suffering. This practice works as follows:
+I have already written about a practice centred on the [powerful emotion of compassion](https://maxrohde.com/tag/compassion/). However, today I came across an interesting variation of a practice on compassion (in the book [Happiness by Matthieu Ricard](https://www.amazon.com/Happiness-Guide-Developing-Lifes-Important/dp/0316167258)): one that reflects our own suffering onto others, and helps us heal from our own suffering. This practice works as follows:
 
 1. Imagine those that encounter more hardships in their lives than you do; either by experiencing your hardships more severely or by having hardships from which you are spared.
 2. Send those all your love and compassion. Imagine this as a force of positive spirit emanating from you and reaching others, alleviating their hardships, if only by the fact that it is acknowledged by someone who cares.

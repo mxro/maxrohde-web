@@ -4,7 +4,14 @@ import { InputMigrations } from 'umzug/lib/types';
 import DynamoDB from 'aws-sdk/clients/dynamodb';
 import { AWSError } from 'aws-sdk/lib/error';
 import { PromiseResult } from 'aws-sdk/lib/request';
-import { connectTable, deepCopy, Entity, BlogMetricEntity } from './table';
+import {
+  connectTable,
+  deepCopy,
+  Entity,
+  BlogMetricEntity,
+  PostGsi,
+  PostGsiName,
+} from './table';
 
 /**
  * Umzug migrations applied during connection see https://github.com/sequelize/umzug#migrations
@@ -12,7 +19,7 @@ import { connectTable, deepCopy, Entity, BlogMetricEntity } from './table';
 export const createMigrations = (): InputMigrations<DynamoDBContext> => {
   return [
     {
-      name: '2022-09-19-create-path-gsi',
+      name: '2022-09-19-create-published-gsi',
       up: async (params) => {
         await params.context.client
           .updateTable({
@@ -23,30 +30,11 @@ export const createMigrations = (): InputMigrations<DynamoDBContext> => {
                 AttributeType: 'S',
               },
               {
-                AttributeName: 'path',
+                AttributeName: 'datePublished',
                 AttributeType: 'S',
               },
             ],
-            GlobalSecondaryIndexUpdates: [
-              {
-                Create: {
-                  IndexName: 'path-index',
-                  KeySchema: [
-                    {
-                      AttributeName: 'pk',
-                      KeyType: 'HASH',
-                    },
-                    {
-                      AttributeName: 'path',
-                      KeyType: 'RANGE',
-                    },
-                  ],
-                  Projection: {
-                    ProjectionType: 'ALL',
-                  },
-                },
-              },
-            ],
+            GlobalSecondaryIndexUpdates: [PostGsi],
           })
           .promise();
         let status: PromiseResult<DynamoDB.DescribeTableOutput, AWSError>;
@@ -62,7 +50,7 @@ export const createMigrations = (): InputMigrations<DynamoDBContext> => {
             throw new Error('Cannot check table status');
           }
           gsi = status.Table?.GlobalSecondaryIndexes?.find((idx) => {
-            return idx.IndexName === 'path-index';
+            return idx.IndexName === PostGsiName;
           });
         } while (
           status.Table?.TableStatus !== 'ACTIVE' &&
@@ -87,7 +75,7 @@ export const createMigrations = (): InputMigrations<DynamoDBContext> => {
         await BlogMetrics.put({
           blog: 'maxrohde.com',
           metricId: 'views',
-          value: 1506126, // as of 2/10/2022
+          value: 1510782, // as of 15/10/2022
         });
       },
     },
