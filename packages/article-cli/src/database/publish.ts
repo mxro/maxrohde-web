@@ -17,7 +17,7 @@ import { resolve } from 'path';
 
 import { dirname, join } from 'path';
 import { existsSync } from 'fs';
-import { copyFile } from 'fs/promises';
+import { copyFile, cp, mkdir } from 'fs/promises';
 import assert from 'assert';
 
 export interface PublishArgs {
@@ -57,6 +57,20 @@ async function copyCoverImage(
   console.log('Copied cover image to ', coverImageDest);
 }
 
+async function copyAttachments(
+  filename: string,
+  postPath: string
+): Promise<void> {
+  const imageDir = `${dirname}/images`;
+  const attachmentsDir = config['attachmentsImagePath'];
+  const postAttachmentDir = `${attachmentsDir}/${postPath}`;
+  if (!existsSync(imageDir)) {
+    return;
+  }
+  await mkdir(postAttachmentDir, { recursive: true });
+  await cp(imageDir, postAttachmentDir, { recursive: true });
+}
+
 export const publish = async (args: PublishArgs): Promise<void> => {
   const contentDir = args.directoryToScan || config['postsDir'];
   const pattern = `**/*${args.fileNamePattern}*`;
@@ -92,6 +106,7 @@ export const publish = async (args: PublishArgs): Promise<void> => {
         await copyCoverImage(result.filename, post.metadata.coverImage);
       }
 
+      await copyAttachments(result.filename, result.path);
       return Posts.put({
         blog: 'maxrohde.com',
         title: post.metadata.title,

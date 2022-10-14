@@ -8,7 +8,7 @@ import {
   writeFileSync,
 } from 'fs';
 
-import { resolve } from 'path';
+import { basename, resolve } from 'path';
 import config from './config.json';
 import { parseMarkdown, ParseMarkdownResult } from './markdown/markdown';
 
@@ -91,7 +91,7 @@ function moveCoverImage(
   if (!args.dry) {
     mkdirSync(postImageDir, { recursive: true });
     if (coverImageSrc) {
-      cpSync(coverImageSrc, postImageDir);
+      cpSync(coverImageSrc, `${postImageDir}/${basename(coverImageSrc)}`);
       if (!args.keep) {
         rmSync(coverImageSrc);
       }
@@ -121,7 +121,7 @@ function moveAttachments(
     const link = `${attachmentsDir}/${match[1]}`;
     if (existsSync(link)) {
       if (!args.dry) {
-        cpSync(link, postImageDir);
+        cpSync(link, `${postImageDir}/${basename(link)}`);
         if (!args.keep) {
           rmSync(link);
         }
