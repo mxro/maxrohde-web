@@ -57,6 +57,8 @@ export async function prepare(args: PrepareArgs): Promise<void> {
       const attachmentsDir = `${args.directoryToScan || config['drafts']}/${
         post.metadata.id
       }`;
+      mkdirSync(`${dir}/images`, { recursive: true });
+      cpSync()
       if (existsSync(attachmentsDir)) {
         if (!args.dry) {
           cpSync(attachmentsDir, `${dir}/images`);

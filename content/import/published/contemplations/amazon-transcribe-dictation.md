@@ -1,9 +1,0 @@
-I have been doing some research on how to do speech to text conversion. Initially, I thought there may be a good IOS app that I could simply use on my iPhone. But while there were a number of apps available to support dictation most of these seem to be focused on allowing you to upload your files to a page transcription service rather than using the AI transcription services that are available nowadays. 
-
-I have also had to look at the major cloud providers and found that Amazon Transcribe seems to offer the best accuracy in dictation. It is actually pretty easy to try out Amazon Transcribe. For this one can simply go to the AWS management console (an AWS account is needed). On the console, simply click a button to start streaming your audio input and Amazon Transcribe will then transcribe your spoken text for you. 
-
-That seems to be pretty accurate. But I am puzzled why there is no simple IOS app or even a Web app available to let one make use of this service. I think this would be particularly powerful if you could run it as a mobile app that then gives you the output of your spoken words as text. 
-
-The AWS interface even seems to miss an option to upload an audio file. That would make it easy to just record an audio file on your IOS device and then upload it AWS to generate the transcript. The text transcribed through the console also misses a lot of contextual information such as time stamps back into your audio files (there is an option to download a JSON file that contains all this information but this is not very easy to work with). 
-
-I will have a bit of a further look around for other services to do speech-to-text conversion. If I do not find anything, I think I will consider implementing a small little open source app that acts as a minimal wrapper around Amazon Transcribe to allow for low-fidelity dictation using this service. 
