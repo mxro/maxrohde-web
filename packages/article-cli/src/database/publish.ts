@@ -61,7 +61,7 @@ async function copyAttachments(
   filename: string,
   postPath: string
 ): Promise<void> {
-  const imageDir = `${dirname}/images`;
+  const imageDir = `${dirname(filename)}/images`;
   const attachmentsDir = config['attachmentsImagePath'];
   const postAttachmentDir = `${attachmentsDir}/${postPath}`;
   if (!existsSync(imageDir)) {
@@ -71,6 +71,22 @@ async function copyAttachments(
   await cp(imageDir, postAttachmentDir, { recursive: true });
 }
 
+function fixAttachmentsLinksInHtml(html: string, postPath: string): string {
+  return html.replaceAll(
+    /"images\//g,
+    `"/_goldstack/static/img/attachments/${postPath}/`
+  );
+}
+
+function fixAttachmentsLinksInMarkdown(
+  markdown: string,
+  postPath: string
+): string {
+  return markdown.replaceAll(
+    /\(images\//g,
+    `(/_goldstack/static/img/attachments/${postPath}/`
+  );
+}
 export const publish = async (args: PublishArgs): Promise<void> => {
   const contentDir = args.directoryToScan || config['postsDir'];
   const pattern = `**/*${args.fileNamePattern}*`;
@@ -107,10 +123,15 @@ export const publish = async (args: PublishArgs): Promise<void> => {
       }
 
       await copyAttachments(result.filename, result.path);
+      const fixedHtml = fixAttachmentsLinksInHtml(post.html, result.path);
+      const fixedMarkdown = fixAttachmentsLinksInMarkdown(
+        post.markdown,
+        result.path
+      );
       return Posts.put({
         blog: 'maxrohde.com',
         title: post.metadata.title,
-        contentHtml: post.html,
+        contentHtml: fixedHtml,
         summary:
           post.metadata.summary ||
           htmlToText(post.html, {
@@ -121,7 +142,7 @@ export const publish = async (args: PublishArgs): Promise<void> => {
             ],
           }).slice(0, 150) + '...',
         path: result.path,
-        contentMarkdown: post.markdown,
+        contentMarkdown: fixedMarkdown,
         authorEmail: 'max@temp.com',
         tags: post.metadata.tags ? post.metadata.tags.join(',') : [],
         categories: post.metadata.categories

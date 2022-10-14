@@ -26,16 +26,17 @@ export async function renderIndex({
   const table = await connectTable();
 
   const Posts = new Entity({ ...deepCopy(PostEntity), table });
+  const startKey = event.queryStringParameters?.loadFrom
+    ? {
+        sk: event.queryStringParameters.loadFrom,
+        pk: 'maxrohde.com#Post',
+      }
+    : undefined;
+
   const postQueryResult = await Posts.query(PostPK({ blog: 'maxrohde.com' }), {
     reverse: true,
     limit: 10,
-    index: PostGsiName,
-    startKey: event.queryStringParameters?.loadFrom
-      ? {
-          sk: event.queryStringParameters.loadFrom,
-          pk: 'maxrohde.com#Post',
-        }
-      : undefined,
+    startKey,
   });
 
   if (!postQueryResult.Items) {

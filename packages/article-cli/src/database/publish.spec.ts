@@ -19,6 +19,7 @@ describe('Article prepare', () => {
     const files = await findPrepareFiles({
       directoryToScan: './testData/draft',
       fileNamePattern: 'six',
+      keep: false,
       dry: false,
     });
 
