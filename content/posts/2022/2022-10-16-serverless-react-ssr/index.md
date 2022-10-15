@@ -1,7 +1,7 @@
 ---
 title: 'Serverless React SSR'
-date: '2022-10-15'
-coverImage: 'lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg'
+date: '2022-10-16'
+coverImage: 'serverless-react-ssr-cover.jpg'
 id: 'serverless-react-ssr'
 summary: 'Explores how to implement React Server-Side Rendering (SSR) in a serverless way on AWS using a lightweight framework.'
 tags:
