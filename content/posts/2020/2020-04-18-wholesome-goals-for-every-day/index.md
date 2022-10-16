@@ -18,7 +18,7 @@ tags:
 coverImage: 'landscape-2090495.jpg'
 ---
 
-I've discussed a [number of practices](https://spearoflight.blog/practices/) that may aid in the path to enlightenment. Each of these, I believe is valuable and worthwhile to pursue; however, in their sum, they are quite an undertaking to accomplish, and it is very difficult to practice each of them daily. I, for once, fail at that miserably.
+I've discussed a [number of practices](https://maxrohde.com/practices/) that may aid in the path to enlightenment. Each of these, I believe is valuable and worthwhile to pursue; however, in their sum, they are quite an undertaking to accomplish, and it is very difficult to practice each of them daily. I, for once, fail at that miserably.
 
 Thus I have thought about if there could be a small number of goals, which we could weave into our everyday lives. So, rather than explicitly settling down to perform a practice, we instead set ourselves a number of signposts for our thoughts and actions we try to follow morning to evening. After some deliberation, I could come up with the following:
 
@@ -30,7 +30,7 @@ Without being of a calm mind and in harmony with ourselves, it is difficult to g
 
 ### Find love for the existence and every living being within it (including yourself)
 
-I have already discussed that [love is a powerful emotion](https://spearoflight.blog/2019/05/11/practice-love/) to guide us towards a happier and more enlightened state of mind. I truly think that the feeling of love might be the one key to unlocking a better life for ourselves and others. It is a great gift to us that we have been given the ability to love and we should embrace this gift as much as we possibly can. I think in order make the best use of our ability to love, we should cast the net as wide as possible, including not only ourselves but every other living, feeling being, as well as the wonder that anything exists at all and that we have been given such beautiful universe to live and think in.
+I have already discussed that [love is a powerful emotion](https://maxrohde.com/2019/05/11/practice-love/) to guide us towards a happier and more enlightened state of mind. I truly think that the feeling of love might be the one key to unlocking a better life for ourselves and others. It is a great gift to us that we have been given the ability to love and we should embrace this gift as much as we possibly can. I think in order make the best use of our ability to love, we should cast the net as wide as possible, including not only ourselves but every other living, feeling being, as well as the wonder that anything exists at all and that we have been given such beautiful universe to live and think in.
 
 ![](https://spearoflight.files.wordpress.com/2020/04/elephant-1170108.jpg?w=300)
 

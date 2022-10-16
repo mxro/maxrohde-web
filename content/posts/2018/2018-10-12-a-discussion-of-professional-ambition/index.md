@@ -15,7 +15,7 @@ coverImage: 'rubens_peter_paul_-_the_fall_of_icarus.jpg'
 
 In our modern world, our basic material needs are often met easily. Especially for those which were fortunate enough to obtain a good education. It thus puzzles me why people are often so ambitious in their work.
 
-I don't want to be misunderstood. For me, [working hard and trying our best are treasured values](http://spearoflight.blog/2018/08/20/eight-virtues-which-seem-not-all-that-bad/). What puzzles me about peoples' ambition is not so much that they work hard but what for.
+I don't want to be misunderstood. For me, [working hard and trying our best are treasured values](https://maxrohde.com/2018/08/20/eight-virtues-which-seem-not-all-that-bad/). What puzzles me about peoples' ambition is not so much that they work hard but what for.
 
 For me, work has a spiritual meaning. I believe that through our labours we can give back to the world which bestowed us with existence. If we are fortunate enough to have talents and skills, we can use them to benefit those among us less fortunate.
 

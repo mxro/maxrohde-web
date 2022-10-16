@@ -1687,6 +1687,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["umzug", "npm:3.1.1"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:0.2.6", {\
+          "packageLocation": "./.yarn/cache/@goldstack-template-dynamodb-npm-0.2.6-1d5848a7f3-26a34118c9.zip/node_modules/@goldstack/template-dynamodb/",\
+          "packageDependencies": [\
+            ["@goldstack/template-dynamodb", "npm:0.2.6"],\
+            ["@aws-sdk/util-dynamodb", "npm:3.87.0"],\
+            ["@goldstack/infra", "npm:0.4.2"],\
+            ["@goldstack/infra-aws", "npm:0.4.5"],\
+            ["@goldstack/utils-esbuild", "npm:0.5.2"],\
+            ["@goldstack/utils-package", "npm:0.4.2"],\
+            ["@goldstack/utils-package-config-embedded", "npm:0.5.2"],\
+            ["@goldstack/utils-terraform", "npm:0.4.5"],\
+            ["aws-sdk", "npm:2.1222.0"],\
+            ["testcontainers", "npm:8.12.0"],\
+            ["umzug", "npm:3.1.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@goldstack/template-dynamodb-cli", [\
@@ -7287,7 +7304,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["async-each", "npm:1.0.3"],\
             ["braces", "npm:2.3.2"],\
             ["fsevents", "patch:fsevents@npm%3A1.2.13#~builtin<compat/fsevents>::version=1.2.13&hash=18f3a7"],\
-            ["glob-parent", "npm:3.1.0"],\
+            ["glob-parent", "npm:5.1.2"],\
             ["inherits", "npm:2.0.4"],\
             ["is-binary-path", "npm:1.0.1"],\
             ["is-glob", "npm:4.0.1"],\
@@ -8307,7 +8324,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["db-blog", "workspace:packages/db-blog"],\
             ["@aws-sdk/util-dynamodb", "npm:3.87.0"],\
-            ["@goldstack/template-dynamodb", "npm:0.2.5"],\
+            ["@goldstack/template-dynamodb", "npm:0.2.6"],\
             ["@goldstack/template-dynamodb-cli", "npm:0.5.5"],\
             ["@goldstack/utils-sh", "npm:0.5.2"],\
             ["@types/ejs", "npm:3.1.1"],\
@@ -11550,28 +11567,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["glob-parent", [\
-        ["npm:3.1.0", {\
-          "packageLocation": "./.yarn/cache/glob-parent-npm-3.1.0-31416ad085-653d559237.zip/node_modules/glob-parent/",\
-          "packageDependencies": [\
-            ["glob-parent", "npm:3.1.0"],\
-            ["is-glob", "npm:3.1.0"],\
-            ["path-dirname", "npm:1.0.2"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:5.1.2", {\
           "packageLocation": "./.yarn/cache/glob-parent-npm-5.1.2-021ab32634-f4f2bfe242.zip/node_modules/glob-parent/",\
           "packageDependencies": [\
             ["glob-parent", "npm:5.1.2"],\
             ["is-glob", "npm:4.0.1"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:6.0.2", {\
-          "packageLocation": "./.yarn/cache/glob-parent-npm-6.0.2-2cbef12738-c13ee97978.zip/node_modules/glob-parent/",\
-          "packageDependencies": [\
-            ["glob-parent", "npm:6.0.2"],\
-            ["is-glob", "npm:4.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -12987,14 +12987,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["is-glob", [\
-        ["npm:3.1.0", {\
-          "packageLocation": "./.yarn/cache/is-glob-npm-3.1.0-ea0bd3271e-9d483bca84.zip/node_modules/is-glob/",\
-          "packageDependencies": [\
-            ["is-glob", "npm:3.1.0"],\
-            ["is-extglob", "npm:2.1.1"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:4.0.1", {\
           "packageLocation": "./.yarn/cache/is-glob-npm-4.0.1-341760116f-84627cad11.zip/node_modules/is-glob/",\
           "packageDependencies": [\
@@ -17259,15 +17251,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["path-dirname", [\
-        ["npm:1.0.2", {\
-          "packageLocation": "./.yarn/cache/path-dirname-npm-1.0.2-d158cba006-0d2f6604ae.zip/node_modules/path-dirname/",\
-          "packageDependencies": [\
-            ["path-dirname", "npm:1.0.2"]\
-          ],\
-          "linkType": "HARD"\
-        }]\
-      ]],\
       ["path-exists", [\
         ["npm:3.0.0", {\
           "packageLocation": "./.yarn/cache/path-exists-npm-3.0.0-e80371aa68-96e92643aa.zip/node_modules/path-exists/",\
@@ -20766,7 +20749,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["didyoumean", "npm:1.2.2"],\
             ["dlv", "npm:1.1.3"],\
             ["fast-glob", "npm:3.2.12"],\
-            ["glob-parent", "npm:6.0.2"],\
+            ["glob-parent", "npm:5.1.2"],\
             ["is-glob", "npm:4.0.3"],\
             ["lilconfig", "npm:2.0.6"],\
             ["normalize-path", "npm:3.0.0"],\

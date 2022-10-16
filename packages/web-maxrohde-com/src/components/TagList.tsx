@@ -13,7 +13,7 @@ interface TagItemProps {
 const TagItem = (props: TagItemProps): JSX.Element => {
   return (
     <a
-      className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+      className="mr-3 text-sm font-medium uppercase text-primary-500 hover:text-primary-600 "
       href={`${props.baseLink}${props.id}`}
     >
       {props.id}

@@ -1,4 +1,4 @@
-import { Entity, Table as ToolboxTable } from 'dynamodb-toolbox';
+import { Table as ToolboxTable } from 'dynamodb-toolbox';
 import DynamoDB from 'aws-sdk/clients/dynamodb';
 
 export type Table = ToolboxTable<string, 'pk', 'sk'>;
@@ -7,14 +7,14 @@ export function createTable(
   dynamoDB: DynamoDB.DocumentClient,
   tableName: string
 ): Table {
+  const indexes = {};
+  indexes[PostGsiName] = { partitionKey: 'pk', sortKey: 'datePublished' };
   return new ToolboxTable({
     name: tableName,
     partitionKey: 'pk',
     sortKey: 'sk',
     DocumentClient: dynamoDB,
-    indexes: {
-      'path-index': { partitionKey: 'pk', sortKey: 'path' },
-    },
+    indexes: indexes,
   });
 }
 
@@ -43,7 +43,7 @@ export const PostEntity = {
       partitionKey: true,
     },
     blog: { type: 'string', required: 'always' },
-    path: { type: 'string', required: 'always' },
+    path: { type: 'string', sortKey: true },
     summary: { type: 'string', required: 'always' },
     authorEmail: { type: 'string', required: 'always' },
     title: { type: 'string', required: 'always' },
@@ -52,9 +52,30 @@ export const PostEntity = {
     categories: { type: 'string' },
     contentHtml: { type: 'string', required: 'always' },
     contentMarkdown: { type: 'string', required: 'always' },
-    datePublished: { type: 'string', sortKey: true },
+    datePublished: { type: 'string', required: 'always' },
   },
 } as const;
+
+export const PostGsiName = 'published';
+
+export const PostGsi: DynamoDB.GlobalSecondaryIndexUpdate = {
+  Create: {
+    IndexName: PostGsiName,
+    KeySchema: [
+      {
+        AttributeName: 'pk',
+        KeyType: 'HASH',
+      },
+      {
+        AttributeName: 'datePublished',
+        KeyType: 'RANGE',
+      },
+    ],
+    Projection: {
+      ProjectionType: 'ALL',
+    },
+  },
+};
 
 export const TagPK = (data: { blog: string }): string => `${data.blog}#Tag`;
 
@@ -76,7 +97,7 @@ export const TagEntity = {
 } as const;
 
 export const TagMappingPK = (data: { blog: string; tagId: string }): string =>
-  `${data.blog}#${data.tagId}`;
+  `${data.blog}#Tag#${data.tagId}`;
 
 export const TagMappingEntity = {
   name: 'TagMapping',
@@ -95,7 +116,7 @@ export const TagMappingEntity = {
 export const CategoryMappingPK = (data: {
   blog: string;
   categoryId: string;
-}): string => `${data.blog}#${data.categoryId}`;
+}): string => `${data.blog}#Category#${data.categoryId}`;
 
 export const CategoryMappingEntity = {
   name: 'Category',

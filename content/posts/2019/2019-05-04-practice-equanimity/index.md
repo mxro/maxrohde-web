@@ -16,7 +16,7 @@ coverImage: 'coast-192979.jpg'
 
 A key insight of Buddhist philosophy is that the highest goal to strive for should not be boundless happiness - since that is bound to disappoint - but instead a sound evenness of mind, equanimity. Equanimity requires us to overcome attachment, to brace us against the loss of even what is most dear to us.
 
-As part of our regular practice we may try to seek this evenness. Prepare ourselves for the struggles ahead and find solace in the belief that we must not be overly joyful to have a good life (although when [joy does find us, we may embrace it](http://spearoflight.blog/2019/04/14/practice-joy/)).
+As part of our regular practice we may try to seek this evenness. Prepare ourselves for the struggles ahead and find solace in the belief that we must not be overly joyful to have a good life (although when [joy does find us, we may embrace it](https://maxrohde.com/2019/04/14/practice-joy/)).
 
 1. Take four deep breaths.
 2. Think of something that troubles you. This might be something that has happened, might happen or a general state of things.
@@ -27,7 +27,7 @@ This practice is motivated by something I came across in the book '[Positive Int
 
 Finding equanimity though requires more than just following this practice or others. It requires finding a whole new perspective of life and our place in it. We need to become very good at recognising our own feelings and desires and becoming their master rather than being controlled by them.
 
-Finding equanimity is also something which can hardly be achieved in isolation. Other practices such as finding compassion, love, understanding the nature of [interbeing](http://spearoflight.blog/2019/04/27/practice-interbeing/) and impermanence are critical for us to achieve true and lasting equanimity.
+Finding equanimity is also something which can hardly be achieved in isolation. Other practices such as finding compassion, love, understanding the nature of [interbeing](https://maxrohde.com/2019/04/27/practice-interbeing/) and impermanence are critical for us to achieve true and lasting equanimity.
 
 > Just as a mighty boulder stirs not with the wind, so the wise are never moved either by praise or blame.
 

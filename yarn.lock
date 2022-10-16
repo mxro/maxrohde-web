@@ -1082,7 +1082,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@goldstack/template-dynamodb@npm:0.2.5, @goldstack/template-dynamodb@npm:^0.2.5":
+"@goldstack/template-dynamodb@npm:0.2.5":
   version: 0.2.5
   resolution: "@goldstack/template-dynamodb@npm:0.2.5"
   dependencies:
@@ -1097,6 +1097,24 @@ __metadata:
     testcontainers: ^8.12.0
     umzug: ^3.1.1
   checksum: 5481173db86ed169d13418461515fb829cf95b9de3e6da24e53a9abd3756ce74a9734c7388ebcf5cea277902947a4bf6da2feeec48f8f6c19d580eb7e77eff6f
+  languageName: node
+  linkType: hard
+
+"@goldstack/template-dynamodb@npm:^0.2.6":
+  version: 0.2.6
+  resolution: "@goldstack/template-dynamodb@npm:0.2.6"
+  dependencies:
+    "@aws-sdk/util-dynamodb": ^3.87.0
+    "@goldstack/infra": 0.4.2
+    "@goldstack/infra-aws": 0.4.5
+    "@goldstack/utils-esbuild": 0.5.2
+    "@goldstack/utils-package": 0.4.2
+    "@goldstack/utils-package-config-embedded": 0.5.2
+    "@goldstack/utils-terraform": 0.4.5
+    aws-sdk: ^2.1222.0
+    testcontainers: ^8.12.0
+    umzug: ^3.1.1
+  checksum: 26a34118c9f56cb9dd1172e9ae181f7596ff0f0cb8216b2046f71bb0c73f52942b5c55d5ca6e5000b7f673449d754165ecdd7df740cfe2d750d530a34d5e518b
   languageName: node
   linkType: hard
 
@@ -6980,7 +6998,7 @@ __metadata:
   resolution: "db-blog@workspace:packages/db-blog"
   dependencies:
     "@aws-sdk/util-dynamodb": ^3.87.0
-    "@goldstack/template-dynamodb": ^0.2.5
+    "@goldstack/template-dynamodb": ^0.2.6
     "@goldstack/template-dynamodb-cli": ^0.5.5
     "@goldstack/utils-sh": ^0.5.2
     "@types/ejs": ^3
@@ -9887,31 +9905,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob-parent@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "glob-parent@npm:3.1.0"
-  dependencies:
-    is-glob: ^3.1.0
-    path-dirname: ^1.0.0
-  checksum: 653d559237e89a11b9934bef3f392ec42335602034c928590544d383ff5ef449f7b12f3cfa539708e74bc0a6c28ab1fe51d663cc07463cdf899ba92afd85a855
-  languageName: node
-  linkType: hard
-
-"glob-parent@npm:^5.1.0, glob-parent@npm:^5.1.2, glob-parent@npm:~5.1.2":
+"glob-parent@npm:5.1.2":
   version: 5.1.2
   resolution: "glob-parent@npm:5.1.2"
   dependencies:
     is-glob: ^4.0.1
   checksum: f4f2bfe2425296e8a47e36864e4f42be38a996db40420fe434565e4480e3322f18eb37589617a98640c5dc8fdec1a387007ee18dbb1f3f5553409c34d17f425e
-  languageName: node
-  linkType: hard
-
-"glob-parent@npm:^6.0.2":
-  version: 6.0.2
-  resolution: "glob-parent@npm:6.0.2"
-  dependencies:
-    is-glob: ^4.0.3
-  checksum: c13ee97978bef4f55106b71e66428eb1512e71a7466ba49025fc2aec59a5bfb0954d5abd58fc5ee6c9b076eef4e1f6d3375c2e964b88466ca390da4419a786a8
   languageName: node
   linkType: hard
 
@@ -11222,7 +11221,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-extglob@npm:^2.1.0, is-extglob@npm:^2.1.1":
+"is-extglob@npm:^2.1.1":
   version: 2.1.1
   resolution: "is-extglob@npm:2.1.1"
   checksum: df033653d06d0eb567461e58a7a8c9f940bd8c22274b94bf7671ab36df5719791aae15eef6d83bbb5e23283967f2f984b8914559d4449efda578c775c4be6f85
@@ -11256,15 +11255,6 @@ __metadata:
   dependencies:
     has-tostringtag: ^1.0.0
   checksum: d54644e7dbaccef15ceb1e5d91d680eb5068c9ee9f9eb0a9e04173eb5542c9b51b5ab52c5537f5703e48d5fddfd376817c1ca07a84a407b7115b769d4bdde72b
-  languageName: node
-  linkType: hard
-
-"is-glob@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "is-glob@npm:3.1.0"
-  dependencies:
-    is-extglob: ^2.1.0
-  checksum: 9d483bca84f16f01230f7c7c8c63735248fe1064346f292e0f6f8c76475fd20c6f50fc19941af5bec35f85d6bf26f4b7768f39a48a5f5fdc72b408dc74e07afc
   languageName: node
   linkType: hard
 
@@ -15244,13 +15234,6 @@ __metadata:
   version: 0.0.1
   resolution: "path-browserify@npm:0.0.1"
   checksum: ae8dcd45d0d3cfbaf595af4f206bf3ed82d77f72b4877ae7e77328079e1468c84f9386754bb417d994d5a19bf47882fd253565c18441cd5c5c90ae5187599e35
-  languageName: node
-  linkType: hard
-
-"path-dirname@npm:^1.0.0":
-  version: 1.0.2
-  resolution: "path-dirname@npm:1.0.2"
-  checksum: 0d2f6604ae05a252a0025318685f290e2764ecf9c5436f203cdacfc8c0b17c24cdedaa449d766beb94ab88cc7fc70a09ec21e7933f31abc2b719180883e5e33f
   languageName: node
   linkType: hard
 

@@ -10,13 +10,13 @@ coverImage: 'workout-program.png'
 
 April marks the slow descent into Autumn in the Southern Hemisphere. Like everywhere else in the world, we are still in lockdown. I am working from home, which is not too bad.
 
-I was able to stick to many of my habits quite successfully in April, especially in comparison to [March](https://spearoflight.blog/2020/04/04/march-review-embracing-notion/):
+I was able to stick to many of my habits quite successfully in April, especially in comparison to [March](https://maxrohde.com/2020/04/04/march-review-embracing-notion/):
 
 ![](https://spearoflight.files.wordpress.com/2020/05/habits-april.png?w=950)
 
 Habit Tracking April
 
-I think I am really starting to establish a habit around daily touch typing practice and keeping my emails in check, which is heartening after working on this for [several months](https://spearoflight.blog/2019/08/03/simple-habit-tracking-system/).
+I think I am really starting to establish a habit around daily touch typing practice and keeping my emails in check, which is heartening after working on this for [several months](https://maxrohde.com/2019/08/03/simple-habit-tracking-system/).
 
 Here my thoughts on my individual habits:
 

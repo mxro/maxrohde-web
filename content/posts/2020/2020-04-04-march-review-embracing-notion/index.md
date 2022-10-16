@@ -8,11 +8,11 @@ tags:
 coverImage: 'notion-quotes-1.png'
 ---
 
-Since July 2019, I have written monthly about how I am going with sticking to my [simple habit tracking system](http://spearoflight.blog/2019/08/03/simple-habit-tracking-system/). I think from this month onwards I will try something a little different, where I will write more generally about anything that I would like to reflect upon for the past month, and what I am planning to do for the next.
+Since July 2019, I have written monthly about how I am going with sticking to my [simple habit tracking system](https://maxrohde.com/2019/08/03/simple-habit-tracking-system/). I think from this month onwards I will try something a little different, where I will write more generally about anything that I would like to reflect upon for the past month, and what I am planning to do for the next.
 
 I haven't quite figured out if I will use a set format for this, or just see how things go on a month by month basis. I will still talk about my habits since that is an important aspect of every month I would like to reflect upon.
 
-As I outlined in my original post, I adopted a paper based system for tracking my habits and getting a quick overview of how I am tracking, such as captured in the image of my habits tracking sheet from [last month](https://spearoflight.blog/2020/03/14/habit-tracking-february/).
+As I outlined in my original post, I adopted a paper based system for tracking my habits and getting a quick overview of how I am tracking, such as captured in the image of my habits tracking sheet from [last month](https://maxrohde.com/2020/03/14/habit-tracking-february/).
 
 ![](https://spearoflight.files.wordpress.com/2020/03/img_3038.jpg?w=1024)
 

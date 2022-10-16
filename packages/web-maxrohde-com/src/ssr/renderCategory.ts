@@ -44,6 +44,7 @@ export async function renderCategory({
     CategoryMappingPK({ blog: 'maxrohde.com', categoryId }),
     {
       limit: 10,
+      reverse: true,
       startKey: event.queryStringParameters?.nextToken
         ? {
             pk: CategoryMappingPK({ blog: 'maxrohde.com', categoryId }),

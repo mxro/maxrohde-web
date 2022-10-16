@@ -42,6 +42,6 @@ If I was to rank, pleasure, joy and happiness, I would say that happiness is the
 
 However, that being said, I don't think we should try to eliminate pleasure or joy from our lives. They are a gift to us, they can provide us with energy and motivation for taking on the challenges of our lives.
 
-In the beginning of this article, I have stated to goal to come up with a definition for pleasure, joy and happiness that is useful. I think the definitions provide above are useful, in that they can direct us in how to approach each of these emotions: For happiness, I think we should not be afraid that we may find too much of it and try to bring plenty of it into our lives; we should seek pleasure in moderation; and make sure that we [embrace the right kind of joy](https://spearoflight.blog/2019/04/14/practice-joy/), joy at things which guide us and others on a path to happiness.
+In the beginning of this article, I have stated to goal to come up with a definition for pleasure, joy and happiness that is useful. I think the definitions provide above are useful, in that they can direct us in how to approach each of these emotions: For happiness, I think we should not be afraid that we may find too much of it and try to bring plenty of it into our lives; we should seek pleasure in moderation; and make sure that we [embrace the right kind of joy](https://maxrohde.com/2019/04/14/practice-joy/), joy at things which guide us and others on a path to happiness.
 
 Image credit: [torbakhopper](https://www.flickr.com/photos/gazeronly/16780721810)

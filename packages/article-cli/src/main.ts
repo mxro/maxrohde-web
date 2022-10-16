@@ -1,12 +1,13 @@
 import { Command } from 'commander';
-import { connectTable } from 'db-blog';
+import { connect, connectTable } from 'db-blog';
 import config from './config.json';
 import packageJson from './../package.json';
 import { mergePosts } from './mergePosts';
-import { publish } from './publish';
-import { wordpressPreprocessFile } from './wordpressPreprocess';
-import { wordpressToMarkdown } from './wordpressToMarkdown';
-import { prepare } from './prepare';
+import { publish } from './database/publish';
+import { wordpressPreprocessFile } from './markdown/wordpressPreprocess';
+import { wordpressToMarkdown } from './markdown/wordpressToMarkdown';
+import { prepare } from './prepare/prepare';
+import { deleteAll } from './database/delete';
 
 (async () => {
   const program = new Command();
@@ -24,9 +25,11 @@ import { prepare } from './prepare';
       'The pattern matching the drafts that should be moved.'
     )
     .option('-d, --dry', 'Dry run - do not move')
+    .option('-k, --keep', 'Do not remove any source files')
     .action(async (pattern, options) => {
       await prepare({
         dry: options.dry || false,
+        keep: options.keep || false,
         fileNamePattern: pattern,
       });
     });
@@ -64,6 +67,42 @@ import { prepare } from './prepare';
       });
     });
 
+  program
+    .command('reset-db')
+    .description('Delete all items in database')
+    .option('-d, --dry', 'Dry run - do not publish')
+    .requiredOption('-e, --env <env>', 'Environment to use')
+    .action(async (options) => {
+      const env = options.env;
+
+      process.env.GOLDSTACK_DEPLOYMENT = env;
+
+      const table = await connect();
+      await deleteAll({
+        table,
+        dry: options.dry,
+      });
+      await deleteAll({
+        table,
+        dry: options.dry,
+      });
+      await deleteAll({
+        table,
+        dry: options.dry,
+      });
+      await deleteAll({
+        table,
+        dry: options.dry,
+      });
+      await deleteAll({
+        table,
+        dry: options.dry,
+      });
+      await deleteAll({
+        table,
+        dry: options.dry,
+      });
+    });
   program
     .command('fix-wordpress')
     .description('Fixes Wordpress XML file input')

@@ -17,7 +17,7 @@ Modern science has shown the inter-relatedness of many social and natural phenom
 
 The principle of anatta is one of the foundations of Buddhist thought and asserts that there is no distinguishable self in any living being. As such, we each exist only within the context of everything that surrounds us. Pratītyasamutpāda is another principle which states that nothing is created in isolation. Anything is created in the context of something else which already exists.
 
-Just like embracing [forgiveness](http://spearoflight.blog/2019/04/07/practice-forgiveness/) and [gratitude](http://spearoflight.blog/2019/04/21/practice-gratitude/), I believe that meditating on the inter-dependence of all things aids us in expanding our consciousness and brings us joy and wisdom. To aid in this meditation, I have developed the following simple practice:
+Just like embracing [forgiveness](https://maxrohde.com/2019/04/07/practice-forgiveness/) and [gratitude](https://maxrohde.com/2019/04/21/practice-gratitude/), I believe that meditating on the inter-dependence of all things aids us in expanding our consciousness and brings us joy and wisdom. To aid in this meditation, I have developed the following simple practice:
 
 1. Breathe in and out slowly three times.
 2. Become aware of your body and its current place in space.

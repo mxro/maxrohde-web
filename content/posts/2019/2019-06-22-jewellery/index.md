@@ -16,7 +16,7 @@ coverImage: 'gold-1369453.jpg'
 
 Ornaments are an important part of nature. Flowers use them to attract bees. Birds use them to attract mates. Frogs use them as protection from predators. It is therefore not very surprising that jewellery, face painting, tattoos and other ornamental devices are one of the many things which are shared by all know human cultures.
 
-[I often talk about spiritual values](http://spearoflight.blog/2019/04/19/practices-for-enlightenment/) and the spiritual dimension of our existence and how it is an important part of living our life fully. Beauty and art are important bridges to the spiritual world and jewellery and other ornaments can convey beauty, and we should embrace them as valuable enrichment of our lives.
+[I often talk about spiritual values](https://maxrohde.com/2019/04/19/practices-for-enlightenment/) and the spiritual dimension of our existence and how it is an important part of living our life fully. Beauty and art are important bridges to the spiritual world and jewellery and other ornaments can convey beauty, and we should embrace them as valuable enrichment of our lives.
 
 Unfortunately jewellery is often used for other purposes than to delight our aesthetic and spiritual senses. The most important of these is the visual expression of power since jewellery is not chosen for its aesthetic value alone but for how expensive it is.
 

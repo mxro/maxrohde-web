@@ -31,17 +31,17 @@ I believe that to attain wisdom and foster goodness in our lives, we need to con
 
 This has motivated me to design the following simple practices, which may help in achieving a more balanced, meaningful and enlightened life:
 
-- [Practice: Body Mindfulness](http://spearoflight.blog/2019/03/23/practice-body-mindfulness/)
-- [Practice: Thought Mindfulness](http://spearoflight.blog/2019/03/31/practice-thought-mindfulness/)
-- [Practice: Forgiveness](http://spearoflight.blog/2019/04/07/practice-forgiveness/)
-- [Practice: Joy](http://spearoflight.blog/2019/04/14/practice-joy/)
-- [Practice: Exercise](http://spearoflight.blog/2019/04/19/practice-exercise/)
-- [Practice: Gratitude](http://spearoflight.blog/2019/04/21/practice-gratitude/)
-- [Practice: Interbeing](http://spearoflight.blog/2019/04/27/practice-interbeing/)
-- [Practice: Equanimity](http://spearoflight.blog/2019/05/05/practice-equanimity/)
-- [Practice: Love](http://spearoflight.blog/2019/05/11/practice-love/)
-- [Practice: Irrelevance and Impermanence](http://spearoflight.blog/2019/05/19/practice-irrelevance-and-impermanence/)
-- [Practice: Healing Compassion](http://spearoflight.blog/2019/11/02/practice-healing-compassion/)
+- [Practice: Body Mindfulness](https://maxrohde.com/2019/03/23/practice-body-mindfulness/)
+- [Practice: Thought Mindfulness](https://maxrohde.com/2019/03/31/practice-thought-mindfulness/)
+- [Practice: Forgiveness](https://maxrohde.com/2019/04/07/practice-forgiveness/)
+- [Practice: Joy](https://maxrohde.com/2019/04/14/practice-joy/)
+- [Practice: Exercise](https://maxrohde.com/2019/04/19/practice-exercise/)
+- [Practice: Gratitude](https://maxrohde.com/2019/04/21/practice-gratitude/)
+- [Practice: Interbeing](https://maxrohde.com/2019/04/27/practice-interbeing/)
+- [Practice: Equanimity](https://maxrohde.com/2019/05/05/practice-equanimity/)
+- [Practice: Love](https://maxrohde.com/2019/05/11/practice-love/)
+- [Practice: Irrelevance and Impermanence](https://maxrohde.com/2019/05/19/practice-irrelevance-and-impermanence/)
+- [Practice: Healing Compassion](https://maxrohde.com/2019/11/02/practice-healing-compassion/)
 
 I believe these practices can enable us to be stronger and wiser. Of course, we need to find a way to embed them into our lives in a regular manner, for instance every morning or every evening; since a practice can only unfold its power when practised repeatedly.
 

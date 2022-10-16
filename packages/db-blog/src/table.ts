@@ -14,6 +14,7 @@ import { createMigrations } from './migrations';
 
 import deepCopy from 'deep-copy';
 
+export { DynamoDB };
 export { deepCopy };
 
 export { Entity } from 'dynamodb-toolbox';

@@ -11,7 +11,7 @@ tags:
 coverImage: 'man-1508901.jpg'
 ---
 
-As written before, I have adopted a [new system for tracking my habits](https://spearoflight.blog/2019/08/03/simple-habit-tracking-system/). This primarily involves keeping track of whether or not I am getting to do certain activities in a day or not and recording this in a simple table. I have already reported my success in tracking my habits for [July](https://spearoflight.blog/2019/08/03/simple-habit-tracking-system/) and [August](https://spearoflight.blog/2019/09/02/habit-tracking-august-a-complete-failure/).
+As written before, I have adopted a [new system for tracking my habits](https://maxrohde.com/2019/08/03/simple-habit-tracking-system/). This primarily involves keeping track of whether or not I am getting to do certain activities in a day or not and recording this in a simple table. I have already reported my success in tracking my habits for [July](https://maxrohde.com/2019/08/03/simple-habit-tracking-system/) and [August](https://maxrohde.com/2019/09/02/habit-tracking-august-a-complete-failure/).
 
 While things were going very well in July, August saw me struggling to stick to any of the habits; chiefly I think, since I struggled with a winter cold (living in Australia, yes, we have winter in August).
 
