@@ -1,16 +1,10 @@
 import fg from 'fast-glob';
-import {
-  cpSync,
-  existsSync,
-  mkdirSync,
-  readFileSync,
-  rmSync,
-  writeFileSync,
-} from 'fs';
+import { cpSync, existsSync, mkdirSync, rmSync } from 'fs';
 
 import { basename, resolve } from 'path';
-import config from './config.json';
-import { parseMarkdown, ParseMarkdownResult } from './markdown/markdown';
+import config from '../config.json';
+import { parseMarkdown, ParseMarkdownResult } from '../markdown/markdown';
+import { moveAttachments } from './moveAttachments';
 
 export interface PrepareArgs {
   fileNamePattern: string;
@@ -102,43 +96,5 @@ function moveCoverImage(
       console.log(`dry: Copy file ${coverImageSrc} to ${postImageDir}`);
       console.log(`dry: Remove file ${coverImageSrc}`);
     }
-  }
-}
-
-function moveAttachments(
-  file: string,
-  postDir: string,
-  args: PrepareArgs,
-  postFile: string
-) {
-  const content = readFileSync(file, 'utf8').toString();
-
-  let newContent = `${content}`;
-  const matches = content.matchAll(/\[[^\]]*\]\(([^)]*)\)*/g);
-  for (const match of matches) {
-    const attachmentsDir = config['draftsAttachmentsDir'];
-    const postImageDir = `${postDir}/images`;
-    const link = `${attachmentsDir}/${match[1]}`;
-    if (existsSync(link)) {
-      if (!args.dry) {
-        cpSync(link, `${postImageDir}/${basename(link)}`);
-        if (!args.keep) {
-          rmSync(link);
-        }
-      } else {
-        console.log(`dry: Copy file ${link} to ${postImageDir}`);
-        console.log(`dry: Delete file ${link}`);
-      }
-    }
-    newContent = newContent.replaceAll(
-      new RegExp(`${match[1]}`, 'g'),
-      `images/${match[1]}`
-    );
-  }
-
-  if (!args.dry) {
-    writeFileSync(postFile, newContent);
-  } else {
-    console.log('dry: Writing new content\n====\n', newContent, '\n====');
   }
 }

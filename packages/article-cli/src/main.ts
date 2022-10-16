@@ -6,7 +6,7 @@ import { mergePosts } from './mergePosts';
 import { publish } from './database/publish';
 import { wordpressPreprocessFile } from './markdown/wordpressPreprocess';
 import { wordpressToMarkdown } from './markdown/wordpressToMarkdown';
-import { prepare } from './prepare';
+import { prepare } from './prepare/prepare';
 import { deleteAll } from './database/delete';
 
 (async () => {

@@ -8,7 +8,7 @@ import {
   deepCopy,
 } from 'db-blog';
 import { Entity } from 'dynamodb-toolbox';
-import { findPrepareFiles, prepare } from '../prepare';
+import { findPrepareFiles, prepare } from '../prepare/prepare';
 import { publish, extractPathElements } from './publish';
 
 // needs to be long to download Docker image etc.
