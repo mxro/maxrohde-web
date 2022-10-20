@@ -13,10 +13,12 @@ import {
   PostEntity,
   PostPK,
   PostGsiName,
+  connect,
 } from 'db-blog';
 
 import IndexPage, { IndexProps } from '../components/pages/IndexPage';
 import ErrorPage, { ErrorPageProps } from '../components/pages/ErrorPage';
+import { loadPosts } from '../lib/posts';
 
 export async function renderIndex({
   event,
@@ -24,6 +26,7 @@ export async function renderIndex({
   event: APIGatewayProxyEventV2;
 }): Promise<APIGatewayProxyResultV2> {
   const table = await connectTable();
+  const dynamodb = await connect();
 
   const Posts = new Entity({ ...deepCopy(PostEntity), table });
   const startKey = event.queryStringParameters?.loadFrom
@@ -33,13 +36,27 @@ export async function renderIndex({
       }
     : undefined;
 
-  const postQueryResult = await Posts.query(PostPK({ blog: 'maxrohde.com' }), {
+  const latestPostQuery = Posts.query(PostPK({ blog: 'maxrohde.com' }), {
     reverse: true,
     limit: 10,
     startKey,
   });
 
-  if (!postQueryResult.Items) {
+  const pinnedPostsQuery = loadPosts({
+    dynamodb,
+    postIds: [
+      '2022/10/16/serverless-react-ssr',
+      '2021/11/20/the-ultimate-guide-to-typescript-monorepos',
+      '2022/06/10/beginners-guide-to-dynamodb-with-node-js',
+    ],
+  });
+
+  const [latestPostQueryResult, pinnedPostsQueryResult] = await Promise.all([
+    latestPostQuery,
+    pinnedPostsQuery,
+  ]);
+
+  if (!latestPostQueryResult.Items) {
     return renderPage<ErrorPageProps>({
       component: ErrorPage,
       appendToHead: `
@@ -64,10 +81,12 @@ export async function renderIndex({
       <meta property="og:description" content="Code and Contemplations by Max Rohde 🤗" />
     `,
     properties: {
-      lastTimestamp: postQueryResult.LastEvaluatedKey?.sk,
-      posts: postQueryResult.Items.map((post) => {
+      lastTimestamp: latestPostQueryResult.LastEvaluatedKey?.sk,
+      posts: latestPostQueryResult.Items.map((post) => {
         return post;
       }),
+      firstPage: startKey === undefined,
+      pinnedPosts: pinnedPostsQueryResult,
     },
     entryPoint: __filename,
     event: event,
