@@ -5,7 +5,7 @@ import Index from '../routes/$index';
 
 describe('Render tests', () => {
   it('Should render component', () => {
-    render(<Index posts={[]}></Index>);
+    render(<Index posts={[]} pinnedPosts={[]} firstPage={true}></Index>);
 
     expect(screen.getByText('Latest Posts', { exact: false })).toBeVisible();
   });
