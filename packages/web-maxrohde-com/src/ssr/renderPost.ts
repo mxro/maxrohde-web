@@ -129,6 +129,11 @@ export async function renderPost({
       }
       <meta name="twitter:creator" content="@mxro" />
       <meta name="twitter:site" content="@mxro" />
+      ${
+        post.summary
+          ? `<meta name="description" content="${post.summary}">`
+          : ''
+      }
       <meta name="twitter:text:title" content="${post.title}" />
       ${
         post.coverImage
@@ -161,19 +166,26 @@ function getPreviousDaysPath(path: string): string | undefined {
   if (pathSegments.length < 4) {
     return undefined;
   }
-  const [year, month, day] = [
-    parseInt(pathSegments[0], 10),
-    parseInt(pathSegments[1], 10),
-    parseInt(pathSegments[2], 10),
-  ];
-  const postDate = new Date(Date.UTC(year, month - 1, day));
-  postDate.setDate(postDate.getDate() - 1);
 
-  const newPath = `${postDate
-    .toISOString()
-    .slice(0, 10)
-    .replaceAll(/\-/g, '/')}/${pathSegments.slice(3).join('/')}`;
-  return newPath;
+  try {
+    const [year, month, day] = [
+      parseInt(pathSegments[0], 10),
+      parseInt(pathSegments[1], 10),
+      parseInt(pathSegments[2], 10),
+    ];
+    const postDate = new Date(Date.UTC(year, month - 1, day));
+    postDate.setDate(postDate.getDate() - 1);
+
+    const newPath = `${postDate
+      .toISOString()
+      .slice(0, 10)
+      .replaceAll(/\-/g, '/')}/${pathSegments.slice(3).join('/')}`;
+    return newPath;
+  } catch (e) {
+    console.error('Cannot get previous date for path', path);
+    console.error(e);
+    return undefined;
+  }
 }
 
 async function renderNotFound(
