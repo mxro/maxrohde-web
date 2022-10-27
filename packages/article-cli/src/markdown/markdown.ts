@@ -19,7 +19,13 @@ export const parseMarkdown = async (
   );
   const markdown = parsed.content;
   const metadata = parsed.data;
-  const html = marked.parse(markdown);
+  let html = marked.parse(markdown);
+  // ensuring to escape html that has no businesses being
+  // provided in the generated article html
+  html = html.replaceAll('<script', '&lt;script');
+  html = html.replaceAll('</script', '&lt;script');
+  html = html.replaceAll('<body', '&lt;body');
+  html = html.replaceAll('</body', '&lt;body');
   const slug = path.basename(filename).replace(/\.md$/, '');
   return {
     metadata,

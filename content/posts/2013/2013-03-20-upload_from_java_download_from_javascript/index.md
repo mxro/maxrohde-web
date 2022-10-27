@@ -1,6 +1,7 @@
 ---
 title: 'Tutorial: Upload from Java, Download from JavaScript'
 date: '2013-03-20'
+summary: 'Appjangle Tutorial for Java and JavaScript interoperability'
 categories:
   - 'java'
   - 'javascript'
@@ -8,7 +9,7 @@ tags:
   - 'tutorial'
 ---
 
-This tutorial.describes how a simple unit of data, the text 'Hello, Java!' can be uploaded from a Java application and retrieved with a JavaScript application.
+This tutorial describes how a simple unit of data, the text 'Hello, Java!' can be uploaded from a Java application and retrieved with a JavaScript application.
 
 ## Upload from Java
 
@@ -36,6 +37,7 @@ Copy the downloaded .jar file into a your project directory (e.g. 'lib') and add
 
 Create a new class with the name 'Upload'. Add a Java `main` method to the class as follows:
 
+```
 import io.nextweb.Query;
 import io.nextweb.Session;
 import io.nextweb.jre.Nextweb;
@@ -53,12 +55,15 @@ public class Upload {
     }
 
 }
+```
 
 Running this application should result in an output such as the following:
 
+```
 Created:
 node("http://slicnet.com/seed1/seed1/2/1/2/h/sd/Hello\_\_1",
 class java.lang.String)
+```
 
 You can now access the created node using the reported URI. For instance, by opening [http://slicnet.com/seed1/seed1/2/1/2/h/sd/Hello\_\_1](http://slicnet.com/seed1/seed1/2/1/2/h/sd/Hello__1)
 
@@ -82,14 +87,16 @@ Extract the project and open app.html in your faverioute HTML/JS editor.
 
 #### Step 2: Write App to Download Data
 
+
 Replace the text `// Your JavaScript here` with the following application:
 
-<body>
-    <script
+```
+&lt;body>
+    &lt;script
         src="http://appjangle.com/js/v01/appjangle/appjangle.nocache.js">
-    </script>
+    &lt;/script>
 
-    <script>
+    &lt;script>
         window.onNextwebOnedb = function() {
             var session = Nextweb.createSession();
             var hello = session
@@ -99,9 +106,10 @@ Replace the text `// Your JavaScript here` with the following application:
                         .appendChild(document.createTextNode(node.value()));
             });
         }
-    </script>
+    &lt;/script>
 
-</body>
+&lt;/body>
+```
 
 Save app.html and close your editor.
 
@@ -125,10 +133,13 @@ Past the URL into your web browser. Add to the end of the URL `.value.html` an
 
 Loading the page should result in the output (also see an example deployed app [here](http://u1.linnk.it/qc8sbw/usr/apps/textsync/docs/hello-javascript-001.value.html)):
 
+```
 > Hello, Java
+```
 
 It's not 'Hello, JavaScript' since here we are loading the node created by the Java Hello, World application described above. Check out the [Nextweb.io API docs](http://nextweb.io/) to find out how to change the text stored in the Appjangle cloud to a more fitting 'Hello, JavaScript'.
 
 [![](images/scr-appjangle-javascript-deployed.PNG)](http://dl.dropbox.com/u/957046/static/assets/1210/scr-appjangle-javascript-deployed.PNG)
 
 _This tutorial is also published on the [Appjangle blog](http://appjangle.blogspot.com/2013/03/tutorial-upload-from-java-download-from.html)._
+

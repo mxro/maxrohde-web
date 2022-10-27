@@ -5,7 +5,6 @@ id: 'how-to-remember-64-things-a-systematic-memory-system'
 categories:
   - 'contemplations'
 date: '2022-10-28'
-coverImage: 'pexels-ivan-samkov-4238511.jpg'
 summary: 'Describes a system to remember a list with 64 items using the Loci technique.'
 tags:
   - 'memory'

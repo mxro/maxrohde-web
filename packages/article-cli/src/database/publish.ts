@@ -128,6 +128,7 @@ export const publish = async (args: PublishArgs): Promise<void> => {
         post.markdown,
         result.path
       );
+
       return Posts.put({
         blog: 'maxrohde.com',
         title: post.metadata.title,
