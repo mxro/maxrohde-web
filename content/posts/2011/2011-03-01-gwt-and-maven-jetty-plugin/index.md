@@ -15,7 +15,7 @@ In combination with the Maven Jetty Plugin it is very easy to deploy Maven depen
 
 <table style="border-collapse:collapse;" border="0"><colgroup><col style="width:638px;"></colgroup><tbody valign="top"><tr><td style="padding-left:7px;padding-right:7px;border-top:solid .5pt;border-left:solid .5pt;border-bottom:solid .5pt;border-right:solid .5pt;"><p><span style="font-family:Courier New;">&lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</span></p><p><span style="font-family:Courier New;">&lt;artifactId&gt;maven-war-plugin&lt;/artifactId&gt;</span></p><p><span style="font-family:Courier New;">&lt;version&gt;2.1.1&lt;/version&gt;</span></p></td></tr></tbody></table>
 
-Maven Gwt Plugin ([see repository location](http://nexnet.wordpress.com/2010/12/14/gwt-maven-plugin-2-1-1-snapshot-repository/))
+Maven Gwt Plugin ([see repository location](http://maxrohde.com/2010/12/14/gwt-maven-plugin-2-1-1-snapshot-repository/))
 
 <table style="border-collapse:collapse;" border="0"><colgroup><col style="width:638px;"></colgroup><tbody valign="top"><tr><td style="padding-left:7px;padding-right:7px;border-top:solid .5pt;border-left:solid .5pt;border-bottom:solid .5pt;border-right:solid .5pt;"><p><span style="font-family:Courier New;">&lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;</span></p><p><span style="font-family:Courier New;">&lt;artifactId&gt;gwt-maven-plugin&lt;/artifactId&gt;</span></p><p><span style="font-family:Courier New;">&lt;version&gt;2.1.1-SNAPSHOT&lt;/version&gt;</span></p></td></tr></tbody></table>
 

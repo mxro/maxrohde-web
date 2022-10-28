@@ -5,9 +5,9 @@ categories:
   - 'java'
 ---
 
-I have already written about how to [change the directory of applications deployed in tomcat 7](http://nexnet.wordpress.com/2011/05/01/change-the-path-of-applications-in-tomcat/) by configuring the server.xml. However, there is an easier way to change the deployment directory using the tomcat manager.
+I have already written about how to [change the directory of applications deployed in tomcat 7](http://maxrohde.com/2011/05/01/change-the-path-of-applications-in-tomcat/) by configuring the server.xml. However, there is an easier way to change the deployment directory using the tomcat manager.
 
-1. Deploy the WAR file using tomcat manager's web upload feature (make sure to [change the manager's web.xml if you are deploying large applications in tomcat 7](http://nexnet.wordpress.com/2011/04/27/large-war-file-cannot-be-deployed-in-tomcat-7/)).
+1. Deploy the WAR file using tomcat manager's web upload feature (make sure to [change the manager's web.xml if you are deploying large applications in tomcat 7](http://maxrohde.com/2011/04/27/large-war-file-cannot-be-deployed-in-tomcat-7/)).
 
 ![](images/053011_0133_deploytomca1.png)
 

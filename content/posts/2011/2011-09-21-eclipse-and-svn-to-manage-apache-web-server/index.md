@@ -30,7 +30,7 @@ You can check the success of this step by typing in your remote console 'svn –
 
 It is sensible to install a subversion server on a different machine than your web server. This will also allow for an easy way to backup various configuration files from your web server.
 
-Again, there are numerous instructions for setting up a subversion server. See for instance, [this post for setting one up on Ubuntu](http://nexnet.wordpress.com/2010/05/13/setting-up-a-subversion-server-on-ubuntu-9-10/). One of the easiest ways is using [VisualSVN to install a subversion server as a windows service](http://www.visualsvn.com/server/).
+Again, there are numerous instructions for setting up a subversion server. See for instance, [this post for setting one up on Ubuntu](http://maxrohde.com/2010/05/13/setting-up-a-subversion-server-on-ubuntu-9-10/). One of the easiest ways is using [VisualSVN to install a subversion server as a windows service](http://www.visualsvn.com/server/).
 
 ![](images/092111_0029_eclipseands1.png)
 

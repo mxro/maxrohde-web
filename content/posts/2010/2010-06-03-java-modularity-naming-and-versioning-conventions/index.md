@@ -19,7 +19,7 @@ categories:
 
 There are two main problems with third party libraries: (1) They often do not provide Maven artifact data (no pom.xml) (2) They often do not provide OSGi Metadata (in META-INF/MANIFEST.MF)
 
-In case (1) there are two options: (1) Manually create a pom.xml for these libraries and upload them to your Maven repository (eg Nexus). (2) Directly embed the libraries in your modules as JAR files, as extracted class files or as source files (see [OSGi: Libraries Requiring Access to Bundle ClassLoader](http://nexnet.wordpress.com/2010/06/06/osgi-libraries-requiring-access-to-bundle-classloader/)).
+In case (1) there are two options: (1) Manually create a pom.xml for these libraries and upload them to your Maven repository (eg Nexus). (2) Directly embed the libraries in your modules as JAR files, as extracted class files or as source files (see [OSGi: Libraries Requiring Access to Bundle ClassLoader](http://maxrohde.com/2010/06/06/osgi-libraries-requiring-access-to-bundle-classloader/)).
 
 The first option still leaves the problem that these libraries, though they now have become proper Maven dependencies, will not work in the OSGi container at Runtime as they are lacking OSGi meta-data.
 

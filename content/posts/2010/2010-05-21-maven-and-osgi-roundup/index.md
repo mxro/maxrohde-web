@@ -5,7 +5,7 @@ categories:
   - 'java'
 ---
 
-A number of links concerning Maven and OSGi. Also see the [Java Modularity Tutorials (OSGi, Declarative Services and Maven)](http://nexnet.wordpress.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/).
+A number of links concerning Maven and OSGi. Also see the [Java Modularity Tutorials (OSGi, Declarative Services and Maven)](http://maxrohde.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/).
 
 **Maven + NetBeans**
 

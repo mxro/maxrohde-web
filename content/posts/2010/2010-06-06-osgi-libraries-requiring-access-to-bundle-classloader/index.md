@@ -17,7 +17,7 @@ SCHWERWIEGEND: Application class de.mxro.textedit.gdocseditor.gui.GoogleDocsEdit
 
 I would recommend to create such modules in the following way. First, set up a Java project in eclipse. Make sure the source and output folders follow Maven convention (src/main/java, target/classes). Using the Eclipse IAM plugin, convert the project into a Maven project.
 
-Add the dependencies to third party libraries you need. If you cannot find a Maven repository, which has these artifacts, upload them on a [local Nexus or Artifactory server](http://nexnet.wordpress.com/2010/05/29/setting-up-a-maven-repository-using-nexus-and-artifactory/).
+Add the dependencies to third party libraries you need. If you cannot find a Maven repository, which has these artifacts, upload them on a [local Nexus or Artifactory server](http://maxrohde.com/2010/05/29/setting-up-a-maven-repository-using-nexus-and-artifactory/).
 
 Add the Maven dependency plugin and an additional resource definition to your project pom.xml:
 

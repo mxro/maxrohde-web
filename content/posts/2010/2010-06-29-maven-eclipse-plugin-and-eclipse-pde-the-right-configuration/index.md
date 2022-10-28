@@ -17,6 +17,6 @@ As noted on the [Maven Eclipse plugin website](http://maven.apache.org/plugins/m
 
 **Maven arguments**
 
-As mentioned before, [Maven should be called with an additional argument to assure that the eclipse plugin does not attempt to define links between the eclipse plugins](http://nexnet.wordpress.com/2010/06/25/maven-eclipse-plugin-problem-with-project-dependencies/). One way of generating the eclipse meta-data is the following:
+As mentioned before, [Maven should be called with an additional argument to assure that the eclipse plugin does not attempt to define links between the eclipse plugins](http://maxrohde.com/2010/06/25/maven-eclipse-plugin-problem-with-project-dependencies/). One way of generating the eclipse meta-data is the following:
 
 mvn eclipse:clean clean package eclipse:eclipse -Declipse.pde -Declipse.useProjectReferences=false install

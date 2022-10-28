@@ -24,7 +24,7 @@ The template consists of
 - I use the bundle plugin to copy the MANIFEST.MF file, rather than using Maven 2 to generate the bundle definition file
 - A build.properties file, allowing to run and debug the file using the eclipse Plugin Development Environment (PDE)
 
-It is described as part of the java modularity tutorials, how to create these bundles in eclipse ([OSGi + Maven + Declarative Services + eclipse](http://nexnet.wordpress.com/2010/05/23/osgi-maven-declarative-services-eclipse/)).
+It is described as part of the java modularity tutorials, how to create these bundles in eclipse ([OSGi + Maven + Declarative Services + eclipse](http://maxrohde.com/2010/05/23/osgi-maven-declarative-services-eclipse/)).
 
 This template offers the following **advantages**:
 
@@ -39,4 +39,4 @@ Using the template has the following **disadvantages**:
 
 - Often, adding a dependency from a public repository leads to the addition of many dependencies from the referenced project, which are not necessary in the current project. This can be mitigated by maintaining a custom Maven repository.
 
-This post is part of a series of posts on [java modular software development](http://nexnet.wordpress.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/).
+This post is part of a series of posts on [java modular software development](http://maxrohde.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/).

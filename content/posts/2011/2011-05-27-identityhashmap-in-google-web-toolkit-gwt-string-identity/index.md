@@ -71,7 +71,7 @@ this.value = value;
 
 }
 
-Note: This class is not serializable for GWT RPC. See [this post](http://nexnet.wordpress.com/2011/03/02/gwt-object-serialization-problems-and-some-workarounds/) for possible workarounds for serialization for immutable objects.
+Note: This class is not serializable for GWT RPC. See [this post](http://maxrohde.com/2011/03/02/gwt-object-serialization-problems-and-some-workarounds/) for possible workarounds for serialization for immutable objects.
 
 ### Resources
 

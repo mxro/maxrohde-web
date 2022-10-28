@@ -7,7 +7,7 @@ categories:
 
 This post is part of a series of posts on java modularity.
 
-This tutorial depends on the part Part 1: [OSGi + Maven + Declarative Services + eclipse](http://nexnet.wordpress.com/2010/05/23/osgi-maven-declarative-services-eclipse/)
+This tutorial depends on the part Part 1: [OSGi + Maven + Declarative Services + eclipse](http://maxrohde.com/2010/05/23/osgi-maven-declarative-services-eclipse/)
 
 **Summary:** I show in this tutorial how a convenient launch configuration for the bundles created in the first part can be created using eclipse PDE. Also, I show how the bundles can be manually installed from the local Maven repository. The configurations are specifically aligned to run declarative services.
 

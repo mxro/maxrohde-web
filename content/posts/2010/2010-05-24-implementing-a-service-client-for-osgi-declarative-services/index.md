@@ -5,7 +5,7 @@ categories:
   - 'java'
 ---
 
-This post is part of a series of posts on [java modularity](http://nexnet.wordpress.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/).
+This post is part of a series of posts on [java modularity](http://maxrohde.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/).
 
 **Summary:** I show in this tutorial how we can create a simple component using the eclipse IDE, which calls the services, we have created in the previous parts. Again, the component is deployed as Maven package and can be tested in an eclipse runtime environment and an Apache Felix instance.
 
@@ -105,7 +105,7 @@ Note that first the bind method was called and then the activate method.
 
 (If the OSGi container is not working as expected, it might help to reinitialize the container using the commands „shutdown“, „init“, „close“ and restarting it.)
 
-We can manually load the bundle, [we have created in NetBeans](http://nexnet.wordpress.com/2010/05/24/osgi-maven-declarative-services-apache-felix-scr-netbeans/) from the local Maven repository.
+We can manually load the bundle, [we have created in NetBeans](http://maxrohde.com/2010/05/24/osgi-maven-declarative-services-apache-felix-scr-netbeans/) from the local Maven repository.
 
 osgi> install [file:///Users/mx/.m2/repository/de/mxro/osgi/serviceProvider2/WisdomProvider2/1.0.0/WisdomProvider2-1.0.0.jar](///Users/mx/.m2/repository/de/mxro/osgi/serviceProvider2/WisdomProvider2/1.0.0/WisdomProvider2-1.0.0.jar) Bundle id is 21
 

@@ -9,7 +9,7 @@ Just a number of pointers on the debugging, testing and deployment of OSGi appli
 
 **Debugging**
 
-Debugging is often an essential activity if the application just does not want to work as it is supposed to. Eclipse offers strong support for debugging of OSGi applications through the Plug-In Development Environment (PDE). I have written a number of posts describing how [eclipse PDE can be set up to work together with Maven](http://nexnet.wordpress.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/). There are a few tricky issues such as [Loading Resources in Class Package for PDE using Eclipse IAM](http://nexnet.wordpress.com/2010/06/05/loading-resources-in-class-package-for-pde-using-eclipse-iam/).
+Debugging is often an essential activity if the application just does not want to work as it is supposed to. Eclipse offers strong support for debugging of OSGi applications through the Plug-In Development Environment (PDE). I have written a number of posts describing how [eclipse PDE can be set up to work together with Maven](http://maxrohde.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/). There are a few tricky issues such as [Loading Resources in Class Package for PDE using Eclipse IAM](http://maxrohde.com/2010/06/05/loading-resources-in-class-package-for-pde-using-eclipse-iam/).
 
 **Testing**
 

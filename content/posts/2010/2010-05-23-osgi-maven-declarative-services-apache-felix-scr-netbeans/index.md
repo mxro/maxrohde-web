@@ -5,9 +5,9 @@ categories:
   - 'java'
 ---
 
-This post is part of a series of posts on [java modularity with OSGi and Declarative Services](http://nexnet.wordpress.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/).
+This post is part of a series of posts on [java modularity with OSGi and Declarative Services](http://maxrohde.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/).
 
-Please follow the previous parts first ([part 1](http://nexnet.wordpress.com/2010/05/23/osgi-maven-declarative-services-eclipse/), [part 2](http://nexnet.wordpress.com/2010/05/23/osgi-maven-pax-runner-apache-felix-equinox/), [part 3](http://nexnet.wordpress.com/2010/05/24/creating-runtime-environments-for-osgi-declarative-services-in-eclipse/))
+Please follow the previous parts first ([part 1](http://maxrohde.com/2010/05/23/osgi-maven-declarative-services-eclipse/), [part 2](http://maxrohde.com/2010/05/23/osgi-maven-pax-runner-apache-felix-equinox/), [part 3](http://maxrohde.com/2010/05/24/creating-runtime-environments-for-osgi-declarative-services-in-eclipse/))
 
 **Summary:** This tutorial describes how the NetBeans IDE can be used to define OSGi bundles in Maven projects. These bundles again use declarative services. In this tutorial, the declarative services are implemented using the Apache Felix Maven SCR plugin.
 

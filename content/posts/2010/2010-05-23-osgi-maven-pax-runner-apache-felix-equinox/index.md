@@ -7,7 +7,7 @@ categories:
 
 This post is part of a series on java modularity.
 
-Please first follow the tutorial on [OSGi + Maven + Declarative Services in eclipse](http://nexnet.wordpress.com/2010/05/23/osgi-maven-declarative-services-eclipse/)
+Please first follow the tutorial on [OSGi + Maven + Declarative Services in eclipse](http://maxrohde.com/2010/05/23/osgi-maven-declarative-services-eclipse/)
 
 **Summary:** In this tutorial I show how the OSGi bundles with declarative services, which were created in the previous post can be tested using Pax Runner running Equinox and Apache Felix.
 

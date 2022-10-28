@@ -13,7 +13,7 @@ The following GAE project provides and interactive demo comparing the performanc
 
 All the demos show that **vanilla GWT has significantly better performance than GXT**. This performance gap becomes even larger when the scale of the examples increases (both more complex combination of widgets as well as simply more data (200 instead of 10 items)).
 
-This reassures me in my position to use [GXT only and only if vanilla GWT is missing an essential feature](http://nexnet.wordpress.com/2010/12/12/smartgwt-and-ext-gwtgxt-or-the-question-of-the-gwt-ui-framework/). For instance, the built in support for drag and drop in GXT is light-years ahead of what vanilla GWT widgets offer and is extremely difficult to replicate. However, the claim that GXT 'looks better' out of the box than GWT should not justify the adoption of this framework, as the visual representation of GWT is relatively simple to enhance to one's own expectations.
+This reassures me in my position to use [GXT only and only if vanilla GWT is missing an essential feature](http://maxrohde.com/2010/12/12/smartgwt-and-ext-gwtgxt-or-the-question-of-the-gwt-ui-framework/). For instance, the built in support for drag and drop in GXT is light-years ahead of what vanilla GWT widgets offer and is extremely difficult to replicate. However, the claim that GXT 'looks better' out of the box than GWT should not justify the adoption of this framework, as the visual representation of GWT is relatively simple to enhance to one's own expectations.
 
 Below an example output generated from the tool:
 

@@ -5,7 +5,7 @@ categories:
   - 'java'
 ---
 
-To get eclipse PDE working hand in hand with Maven is a rather tricky task. I have already written about some necessary [tweaks to get it working](http://nexnet.wordpress.com/2010/06/05/loading-resources-in-class-package-for-pde-using-eclipse-iam/).
+To get eclipse PDE working hand in hand with Maven is a rather tricky task. I have already written about some necessary [tweaks to get it working](http://maxrohde.com/2010/06/05/loading-resources-in-class-package-for-pde-using-eclipse-iam/).
 
 Another way is to use the [Apache Felix Maven bundle plugin](http://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html). This Maven plugin is able to generate the necessary files for the eclipse PDE to work with the Maven files. It does so by copying the JARs that the Maven project depends on and by altering the .classpath and .project files of the project.
 
@@ -17,7 +17,7 @@ The Maven dependencies are directly copied to the project‘s main folder. The d
 
 ![bildschirmfoto2010-06-19um10-49-191.png](images/bildschirmfoto2010-06-19um10-49-191.png)
 
-This must be configured in the project‘s pom.xml file. (1) <packaging>bundle</packaging> must be added (2) A plugin to copy the dependencies must be added (I added a further execution to unpack the dependencies for reasons described in [OSGi: Libraries Requiring Access to Bundle ClassLoader](http://nexnet.wordpress.com/2010/06/06/osgi-libraries-requiring-access-to-bundle-classloader/))
+This must be configured in the project‘s pom.xml file. (1) <packaging>bundle</packaging> must be added (2) A plugin to copy the dependencies must be added (I added a further execution to unpack the dependencies for reasons described in [OSGi: Libraries Requiring Access to Bundle ClassLoader](http://maxrohde.com/2010/06/06/osgi-libraries-requiring-access-to-bundle-classloader/))
 
 <plugin> <artifactId>maven-dependency-plugin</artifactId> <executions> <execution> <id>unpack-dependencies</id> <phase>generate-resources</phase> <goals> <goal>unpack-dependencies</goal> </goals> <configuration> <includeGroupIds>org.swinglabs,org.jdesktop,com.sun</includeGroupIds> </configuration> </execution> <execution> <id>copy-dependencies</id> <phase>process-sources</phase> <goals> <goal>copy-dependencies</goal> </goals> <configuration> <outputDirectory>${basedir}</outputDirectory> <overWriteReleases>false</overWriteReleases> <overWriteSnapshots>false</overWriteSnapshots> <overWriteIfNewer>true</overWriteIfNewer> </configuration> </execution> </executions> </plugin>
 

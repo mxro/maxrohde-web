@@ -5,7 +5,7 @@ categories:
   - 'java'
 ---
 
-NetBeans and eclipse can work together fairly well. So the strength of both platforms can be leveraged for application development. One way is to share the source folders as discussed in this post. A more advanced approach is to use Maven, which [I described in a number of other posts](http://nexnet.wordpress.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/).
+NetBeans and eclipse can work together fairly well. So the strength of both platforms can be leveraged for application development. One way is to share the source folders as discussed in this post. A more advanced approach is to use Maven, which [I described in a number of other posts](http://maxrohde.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/).
 
 A few issues regarding shared source folders are discussed in the following:
 

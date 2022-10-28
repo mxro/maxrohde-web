@@ -5,7 +5,7 @@ categories:
   - 'java'
 ---
 
-In a previous post, I have provided an example of a possible [Maven configuration to use the maven eclipse plugin with eclipse PDE](http://nexnet.wordpress.com/2010/06/29/maven-eclipse-plugin-and-eclipse-pde-the-right-configuration/). Besides these settings, which are the same for every project, each bundle needs to be configured as OSGi bundle in order to be usable by eclipse PDE.
+In a previous post, I have provided an example of a possible [Maven configuration to use the maven eclipse plugin with eclipse PDE](http://maxrohde.com/2010/06/29/maven-eclipse-plugin-and-eclipse-pde-the-right-configuration/). Besides these settings, which are the same for every project, each bundle needs to be configured as OSGi bundle in order to be usable by eclipse PDE.
 
 <properties\>                 <module.group\></module.group\> <!-- Maven groupId -->                 <module.name\></module.name\> <!-- Maven artifactId -->                 <module.version\></module.version\> <!-- Maven artifact version -->                 <module.description\></module.description\>                 <module.url\>[http://www.mxro.de/](http://www.mxro.de/)</module.url\>                 <module.importedPackages\>\*                 </module.importedPackages\>                 <module.exportedContents\></module.exportedContents\>                 <module.exportedPackages\>                         </module.exportedPackages\>                 <module.embeddedDependencies\>                 </module.embeddedDependencies\>                 <module.embedTransitive\>false                 </module.embedTransitive\>                 <module.serviceDefinitions\>                 </module.serviceDefinitions\>         </properties\>
 

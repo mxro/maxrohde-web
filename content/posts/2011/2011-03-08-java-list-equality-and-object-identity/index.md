@@ -49,7 +49,7 @@ import java.util.Collection;
 * equality (.equals) to identify elements.<br/>
 * <br/>
 * See: <a href=
-* "http://nexnet.wordpress.com/2011/03/09/java-list-equality-and-object-identity/"
+* "http://maxrohde.com/2011/03/09/java-list-equality-and-object-identity/"
 * >KnowledgeNetworks: Java List Equality and Object Identity</a>
 *
 * @author <a href="http://www.mxro.de/">Max Rohde</a>

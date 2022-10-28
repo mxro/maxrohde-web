@@ -33,7 +33,7 @@ The main discussion on the net seems to boil down to three alternatives: (1) Sma
 
 **(-)** Licensed under GPL, therefore for any commercial product a licence must be bought.
 
-**(-)** The [performance of GXT is 2x to 10x slower than vanilla GWT](http://nexnet.wordpress.com/2011/02/12/gxt-vs-vanilla-gwt-performance/).
+**(-)** The [performance of GXT is 2x to 10x slower than vanilla GWT](http://maxrohde.com/2011/02/12/gxt-vs-vanilla-gwt-performance/).
 
 **(-)** Senacha has recently given a lot of attention to their Senacha Touch framework for developing cross-platform mobile applications. It seems they have been given less attention to Ext GWT in the recent past. However, this could also be a plus if features from Sencha Touch are migrated to Ext GWT.
 

@@ -7,7 +7,7 @@ categories:
 
 **Purpose**
 
-Show using the [example project created in part 1](http://nexnet.wordpress.com/2010/09/17/maven-gwt-and-eclipse-quick-start-part-1/) different ways in which a GWT application can be deployed. In a nutshell, the html file of your application can be deployed to any place you desire - another server or even a local machine. However, the generated JavaScript needs to remain on the same server, which hosts the RPC services your application uses.
+Show using the [example project created in part 1](http://maxrohde.com/2010/09/17/maven-gwt-and-eclipse-quick-start-part-1/) different ways in which a GWT application can be deployed. In a nutshell, the html file of your application can be deployed to any place you desire - another server or even a local machine. However, the generated JavaScript needs to remain on the same server, which hosts the RPC services your application uses.
 
 **Overview**
 

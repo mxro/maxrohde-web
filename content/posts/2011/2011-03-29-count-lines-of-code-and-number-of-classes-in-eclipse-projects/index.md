@@ -25,7 +25,7 @@ The lines of code can be determined by searching all the Java source files in th
 
 **Note:** If you would like to count only non-empty lines, you can use the expression: '\\s+\\n' instead of '\\n' (Thanks, [Anshul](http://maxrohde.com/2011/03/30/count-lines-of-code-and-number-of-classes-in-eclipse-projects/#comment-1145)!)
 
-4\. Perform the search. The total matches reported in the Search tab at the bottom of your screen should approximate the lines of code in your Java sources. The matches reported for individual Java files, should represent the lines of codes for these files (actually the lines in the file -1 as pointed out by [shahnaz below](http://nexnet.wordpress.com/2011/03/30/count-lines-of-code-and-number-of-classes-in-eclipse-projects/#comment-288) :) ).
+4\. Perform the search. The total matches reported in the Search tab at the bottom of your screen should approximate the lines of code in your Java sources. The matches reported for individual Java files, should represent the lines of codes for these files (actually the lines in the file -1 as pointed out by [shahnaz below](http://maxrohde.com/2011/03/30/count-lines-of-code-and-number-of-classes-in-eclipse-projects/#comment-288) :) ).
 
 ![](images/032911_2338_countlineso3.png)
 

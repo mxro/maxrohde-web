@@ -11,11 +11,11 @@ I made the very troublesome discovery that **different rules apply for Gwt to co
 
 _Problem:_
 
-I have already written about [issues concerning immutable objects](http://nexnet.wordpress.com/2011/02/16/serializing-immutable-objects-in-gwt/). **final fields are treated as being transient** and therewith ignored when serializing and deserializing objects.
+I have already written about [issues concerning immutable objects](http://maxrohde.com/2011/02/16/serializing-immutable-objects-in-gwt/). **final fields are treated as being transient** and therewith ignored when serializing and deserializing objects.
 
 _Workaround:_
 
-**Remove the final modifier from any fields you require**. This is the only workaround I could find. Even the ([possibly deprecated](http://nexnet.wordpress.com/2011/02/21/gwt-derpc-to-be-deprecated/)) deRPC does not work with final fields.
+**Remove the final modifier from any fields you require**. This is the only workaround I could find. Even the ([possibly deprecated](http://maxrohde.com/2011/02/21/gwt-derpc-to-be-deprecated/)) deRPC does not work with final fields.
 
 # Generic Java Objects
 
