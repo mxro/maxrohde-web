@@ -3,7 +3,7 @@ publish: true
 title: 'Levels of Enlightenment'
 date: '2022-10-29'
 coverImage: 'pexels-cao-haiyun-5765826.jpg'
-summary: 'Argues that enlightenment is not attained absoluelty. Instead it is achieved in steps, including plenty of backsliding.'
+summary: 'Argues that enlightenment is not attained absolutely. Instead it is achieved in steps, including plenty of backsliding.'
 id: 'levels-of-enlightenment'
 tags:
   - 'buddhism'
