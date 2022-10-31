@@ -1,6 +1,10 @@
 ---
 title: 'Infinitest for Eclipse: Quick Tutorial'
 date: '2011-04-09'
+tags:
+  - 'eclipse'
+  - 'java'
+  - 'programming'
 categories:
   - 'java'
 ---
@@ -33,8 +37,10 @@ Infinitest can be disabled in the eclipse preference window. It adds a top level
 
 I encountered some problems with [GWTTestCases](http://google-web-toolkit.googlecode.com/svn/javadoc/2.2/com/google/gwt/junit/client/GWTTestCase.html). For every GWTTestCase in my projects, Infinitest reported:
 
+```
 Description    Resource    Path    Location    Type
 
 NoClassDefFoundError (com/google/gwt/dev/cfg/Condition) in GwtTestGwtCollaborationScenario.    GwtTestGwtCollaborationScenario.java    /nxServerGwt/src/test/java/nx/servergwt/tests/hosted    line 0    Infinitest Test Failure
+```
 
 The only solution I found was to remove these test cases from the eclipse projects build path (right click the .java file and select Build Path / Exclude).
