@@ -39,7 +39,7 @@ const About = (): JSX.Element => {
             </li>
             <li className="pt-4">
               <a
-                href="https://dev.to/mxro"
+                href="https://twitter.com/mxro"
                 className="text-blue-600 hover:text-blue-900 transition duration-300 ease-in-out"
               >
                 <svg
