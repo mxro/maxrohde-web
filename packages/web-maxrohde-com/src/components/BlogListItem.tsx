@@ -19,7 +19,7 @@ const BlogListItem = (props: BlogListItemProps): JSX.Element => {
       <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
         <dl>
           {props.coverImage && (
-            <img className="w-64" src={props.coverImage}></img>
+            <img loading="lazy" className="w-64" src={props.coverImage}></img>
           )}
         </dl>
         <div className="space-y-5 xl:col-span-3">
