@@ -45,6 +45,7 @@ Create a class AncientWisdomProvider in the package de.mxro.osgu.serviceProvider
 
 Implement the Interface Wisdom, add an import and implement the method defined by the interface.
 
+```
 package de.mxro.osgi.serviceProvider2;
 
 import de.mxro.osgi.serviceDefintion.Wisdom;
@@ -54,6 +55,7 @@ import de.mxro.osgi.serviceDefintion.Wisdom;
 public String getWisdom() { return "A good decision is based on knowledge and not on numbers."; // Plato }
 
 }
+```
 
 **Add JavaDoc Meta Data to Define Declarative Service**
 
@@ -65,6 +67,7 @@ JavaDoc annotations have the advantage that the class can still remain a highly 
 
 To turn the AncientWisdomProvider class into a component offering a service, we simply have to add the following JavaDoc annotations.
 
+```
 package de.mxro.osgi.serviceProvider2;
 
 import de.mxro.osgi.serviceDefintion.Wisdom;
@@ -74,6 +77,7 @@ import de.mxro.osgi.serviceDefintion.Wisdom;
 public String getWisdom() { return “A good decision is based on knowledge and not on numbers.”; // Plato }
 
 }
+```
 
 **Compile the Declarative Service using Maven Felix SCR Plugin**
 
@@ -85,19 +89,25 @@ Open the node Project Files under the WisdomProvider and open the file pom.xml.
 
 We need to add the maven-scr-plugin to the plugins node.
 
+```
 <plugin> <groupId>org.apache.felix</groupId> <artifactId>maven-scr-plugin</artifactId> <executions> <execution> <id>generate-scr-scrdescriptor</id> <goals> <goal>scr</goal> </goals> </execution> </executions> </plugin>
+```
 
 ![bildschirmfoto2010-05-24um12-47-14.png](images/bildschirmfoto2010-05-24um12-47-14.png)
 
 Also change the maven-bundle-plugin to add the import of the service definition:
 
+```
 <plugin> <groupId>org.apache.felix</groupId> <artifactId>maven-bundle-plugin</artifactId> <version>2.0.1</version> <extensions>true</extensions> **<configuration> <instructions> <Import-Package>de.mxro.osgi.serviceDefinition,org.osgi.framework</Import-Package> </instructions> </configuration>** </plugin>
+```
 
 Now we can right-click the WisomProvider2 project and select „Clean and Build“.
 
 The log should contain the following lines:
 
+```
 \[scr:scr\] Generating 2 MetaType Descriptors to /Users/mx/NetBeansProjects/WisdomProvider2/target/scr-plugin-generated/OSGI-INF/metatype/metatype.xml Writing abstract service descriptor /Users/mx/NetBeansProjects/WisdomProvider2/target/scr-plugin-generated/OSGI-INF/scr-plugin/scrinfo.xml with 1 entries. Generating 1 Service Component Descriptors to /Users/mx/NetBeansProjects/WisdomProvider2/target/scr-plugin-generated/**OSGI-INF/serviceComponents.xml** ... \[install:install\] Installing /Users/mx/NetBeansProjects/WisdomProvider2/target/WisdomProvider2-1.0.0.jar to **/Users/mx/.m2/repository/de/mxro/osgi/serviceProvider2/WisdomProvider2/1.0.0/WisdomProvider2-1.0.0.jar**
+```
 
 This project has been added the the local Maven repository as well.
 
@@ -111,11 +121,15 @@ MacBookMX:bin mx$ ./pax-run.sh --clean --platform=felix --profiles=ds
 
 Install the ServiceDefinition bundle, which was created in eclipse, where we can find the location in the local repository, which should look similar to:
 
+```
 /Users/mx/.m2/repository/de/mxro/osgi/serviceDefinition/ServiceDefinition/1.0.0/ServiceDefinition-1.0.0.jar
+```
 
 We can also install the WisomProvider2 bundle from the path we have seen above in the compiler log.
 
+```
 /Users/mx/.m2/repository/de/mxro/osgi/serviceProvider2/WisdomProvider2/1.0.0/WisdomProvider2-1.0.0.jar
+```
 
 ![bildschirmfoto2010-05-24um13-00-47.png](images/bildschirmfoto2010-05-24um13-00-47.png)
 
@@ -149,6 +163,7 @@ Again add a dependency to the ServiceDefinition package:
 
 Again add the interface Wisdom, add the import and implement the abstract method.
 
+```
 package de.mxro.osgi.serviceConsumer;
 
 import de.mxro.osgi.serviceDefintion.Wisdom;
@@ -158,9 +173,11 @@ import de.mxro.osgi.serviceDefintion.Wisdom;
 public String getWisdom() { throw new UnsupportedOperationException("Not supported yet."); }
 
 }
+```
 
 Add a field of the type Wisdom and change the getWisdom method:
 
+```
 public class WisdomProclaimer implements Wisdom {
 
 Wisdom wisdom;
@@ -168,11 +185,13 @@ Wisdom wisdom;
 public String getWisdom() { System.out.println(wisdom.getWisdom()); return wisdom.getWisdom(); }
 
 }
+```
 
 (as you can see, we are implementing a Proxy Service)
 
 Add the JavaDoc annotations:
 
+```
 /\*\* \* **@scr.component immediate=“true”** \* **@scr.service** \* \* @author mx \*/ public class WisdomProclaimer implements Wisdom {
 
 /\*\* **@scr.reference cardinality=“1..1”, dynamic=“false”** \*/ Wisdom wisdom;
@@ -180,6 +199,7 @@ Add the JavaDoc annotations:
 public String getWisdom() { System.out.println(wisdom.getWisdom()); return wisdom.getWisdom(); }
 
 }
+``
 
 Other annotations can for instance be: **properties:** @scr.property name=“\[property name\]“ value=“\[property name\]“ **service with interface definition:** @scr.service interface=“de.yourclass“
 
@@ -189,7 +209,9 @@ You also need to add the Maven SCR Plugin to the maven pom.xml file of this proj
 
 Also change the maven-bundle-plugin to add the import of the service definition:
 
+```xml
 <plugin> <groupId>org.apache.felix</groupId> <artifactId>maven-bundle-plugin</artifactId> <version>2.0.1</version> <extensions>true</extensions> **<configuration> <instructions> <Import-Package>de.mxro.osgi.serviceDefinition,org.osgi.framework</Import-Package> </instructions> </configuration>** </plugin>
+```
 
 You can right-click the project WisdomProclaimer and select „Clean and Build“.
 
@@ -209,8 +231,12 @@ You can check in the generated OSGI-INF
 
 ![bildschirmfoto2010-05-24um13-30-59.png](images/bildschirmfoto2010-05-24um13-30-59.png)
 
-<?xml version\=“1.0” encoding\=“UTF-8”?\> <components xmlns:scr=“[http://www.osgi.org/xmlns/scr/v1.0.0](http://www.osgi.org/xmlns/scr/v1.0.0)”\> <scr:component enabled=“true” immediate=“true” name=“de.mxro.osgi.serviceConsumer.WisdomProclaimer”\> <implementation class=“de.mxro.osgi.serviceConsumer.WisdomProclaimer”/> <service servicefactory=“false”\> <provide interface=“de.mxro.osgi.serviceDefintion.Wisdom”/> </service\> <property name=“service.pid” value=“de.mxro.osgi.serviceConsumer.WisdomProclaimer”/> <reference name=“wisdom” interface=“de.mxro.osgi.serviceDefintion.Wisdom” cardinality=“1..1” policy=“static” bind=“bindWisdom” unbind=“unbindWisdom”/> </scr:component\> </components\>
+```
+&gt;?xml version\=“1.0” encoding\=“UTF-8”?\&lt; &lt;components xmlns:scr=“[http://www.osgi.org/xmlns/scr/v1.0.0](http://www.osgi.org/xmlns/scr/v1.0.0)”\> <scr:component enabled=“true” immediate=“true” name=“de.mxro.osgi.serviceConsumer.WisdomProclaimer”\> <implementation class=“de.mxro.osgi.serviceConsumer.WisdomProclaimer”/> <service servicefactory=“false”\> <provide interface=“de.mxro.osgi.serviceDefintion.Wisdom”/> </service\> <property name=“service.pid” value=“de.mxro.osgi.serviceConsumer.WisdomProclaimer”/> <reference name=“wisdom” interface=“de.mxro.osgi.serviceDefintion.Wisdom” cardinality=“1..1” policy=“static” bind=“bindWisdom” unbind=“unbindWisdom”/> </scr:component\> </components\>
+```
 
 You can go back to the instance of Felix, which we have opened earlier.
 
+```
 \-> install file:///Users/mx/.m2/repository/de/mxro/osgi/serviceConsumer/WisdomProclaimer/1.0.0/WisdomProclaimer-1.0.0.jar Bundle ID: 13 -> start 13 -> ps START LEVEL 6 ID State Level Name ID State Level Name \[ 0\] \[Active \] \[ 0\] System Bundle (2.0.2) \[ 1\] \[Active \] \[ 5\] Apache Felix Declarative Services (1.0.8) \[ 2\] \[Active \] \[ 1\] Apache Felix Shell Service (1.4.1) \[ 3\] \[Active \] \[ 1\] Apache Felix Shell TUI (1.4.1) \[ 4\] \[Active \] \[ 5\] ServiceDefinition (1.0.0.qualifier) \[ 6\] \[Active \] \[ 5\] ServiceProvider (1.0.0.qualifier) \[ 13\] \[Active \] \[ 5\] WisdomProclaimer OSGi Bundle (1.0.0) \[ 18\] \[Active \] \[ 5\] WisdomProvider2 OSGi Bundle (1.0.0) -> scr list Id State Name \[ 1\] \[active \] de.mxro.osgi.serviceProvider \[ 8\] \[active \] de.mxro.osgi.serviceConsumer.WisdomProclaimer \[ 9\] \[registered \] de.mxro.osgi.serviceProvider2.AncientWisdomProvider ->
+```
