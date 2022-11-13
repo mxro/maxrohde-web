@@ -42,6 +42,7 @@ This has motivated me to design the following simple practices, which may help i
 - [Practice: Love](https://maxrohde.com/2019/05/11/practice-love/)
 - [Practice: Irrelevance and Impermanence](https://maxrohde.com/2019/05/19/practice-irrelevance-and-impermanence/)
 - [Practice: Healing Compassion](https://maxrohde.com/2019/11/02/practice-healing-compassion/)
+- [Practice: Mind Focus](https://maxrohde.com/2022/11/13/practice-mind-focus-meditation)
 
 I believe these practices can enable us to be stronger and wiser. Of course, we need to find a way to embed them into our lives in a regular manner, for instance every morning or every evening; since a practice can only unfold its power when practised repeatedly.
 
