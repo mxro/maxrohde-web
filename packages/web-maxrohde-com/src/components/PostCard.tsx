@@ -10,6 +10,7 @@ const PostCard = (props: PostCardProps): JSX.Element => {
       <div className="border-2 border-gray-200 rounded-lg">
         <img
           className="object-cover object-center w-full lg:h-48 md:h-36"
+          loading="lazy"
           src={props.coverImage}
           alt="blog"
         />

@@ -79,6 +79,7 @@ export async function renderIndex({
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Max Rohde's Blog - Code of Joy" />
       <meta property="og:description" content="Code and Contemplations by Max Rohde 🤗" />
+      <meta property="description" content="Code and Contemplations by Max Rohde 🤗" />
     `,
     properties: {
       lastTimestamp: latestPostQueryResult.LastEvaluatedKey?.sk,
