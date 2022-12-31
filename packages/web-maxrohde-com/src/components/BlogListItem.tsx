@@ -16,12 +16,12 @@ export interface BlogListItemProps {
 const BlogListItem = (props: BlogListItemProps): JSX.Element => {
   return (
     <>
-      <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
-        <dl>
+      <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-start xl:space-y-0">
+        <div className="xl:col-span-1">
           {props.coverImage && (
             <img loading="lazy" className="w-64" src={props.coverImage}></img>
           )}
-        </dl>
+        </div>
         <div className="space-y-5 xl:col-span-3">
           <div className="space-y-6">
             <div>
