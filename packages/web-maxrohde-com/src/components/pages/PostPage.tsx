@@ -16,6 +16,12 @@ const PostPage = (props: PostProps): JSX.Element => {
   if (!props.post) {
     return <ErrorPage message="Post does not exist"></ErrorPage>;
   }
+  const [hydrated, setHydrated] = React.useState(false);
+  React.useEffect(() => {
+    // This forces a rerender, so the date is rendered
+    // the second time but not the first
+    setHydrated(true);
+  }, []);
   return (
     <>
       <Header></Header>
@@ -65,7 +71,7 @@ const PostPage = (props: PostProps): JSX.Element => {
           <h3 className="pt-8 font-medium leading-tight text-xl mt-0 mb-2">
             Blog Stats
           </h3>
-          <p>{props.visits.toLocaleString()} views</p>
+          <p>{hydrated ? props.visits.toLocaleString() : props.visits} views</p>
         </div>
       </div>
 

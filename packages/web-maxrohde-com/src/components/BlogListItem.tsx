@@ -14,6 +14,12 @@ export interface BlogListItemProps {
  * based on https://tailwind-nextjs-starter-blog.vercel.app/
  */
 const BlogListItem = (props: BlogListItemProps): JSX.Element => {
+  const [hydrated, setHydrated] = React.useState(false);
+  React.useEffect(() => {
+    // This forces a rerender, so the date is rendered
+    // the second time but not the first
+    setHydrated(true);
+  }, []);
   return (
     <>
       <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-start xl:space-y-0">
@@ -33,7 +39,9 @@ const BlogListItem = (props: BlogListItemProps): JSX.Element => {
                   <dt className="sr-only">Published on</dt>
                   <dd className="text-base font-medium leading-6 text-gray-500 ">
                     <time dateTime={props.datePublished}>
-                      {new Date(props.datePublished).toLocaleDateString()}
+                      {hydrated
+                        ? new Date(props.datePublished).toLocaleDateString()
+                        : new Date(props.datePublished).toUTCString()}
                     </time>
                   </dd>
                 </span>
