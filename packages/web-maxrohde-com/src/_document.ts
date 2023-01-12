@@ -33,7 +33,7 @@ const renderDocument = async (
     }
     ${props.injectIntoHead}
     ${
-      !process.env.AWS_LAMBDA_FUNCTION_NAME
+      process.env.GOLDSTACK_DEPLOYMENT === 'local'
         ? '<script src="https://cdn.tailwindcss.com?plugins=typography"></script>'
         : ''
     }
