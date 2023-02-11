@@ -9,7 +9,9 @@ categories:
 
 Maven uploads work fine using the normal goal deploy:deploy, but when using deploy:deploy-file it seems like the authentication information in the settings.xml is ignored. So, it is not possible to upload to a Nexus repository, which requires password authentication for upload of artifacts.
 
+```
 mvn deploy:deploy-file -DpomFile=/Volumes/local/online/Programmierung/Modules/thrdArtifactDeployer/target/classes/de/mxro/thrd/artifactdeployer/artifacts/javaws.pom -Dfile=/Volumes/local/online/Programmierung/Modules/thrdArtifactDeployer/target/classes/de/mxro/thrd/artifactdeployer/artifacts/javaws.jar -DrepositoryID=thirdparty -Durl=http://yournexusserver:8080/nexus/content/repositories/thirdparty
+```
 
 **Solution**
 
@@ -21,7 +23,9 @@ This seems to be a bug in Maven (see bug reports below). Maybe [downloading the 
 
 I tired using the version 2.2.0, 2.2.1 and 3.0-beta1. All of them did not work in my case. (I tired curl to upload the artifact directly and that worked ...).
 
+```
 curl --request PUT --user username:pass http://yournexusserver:8080/nexus/content/repositories/thirdparty/com/sun/javaws/1.0/javaws-1.1.jar --data @/Volumes/local/online/Programmierung/Modules/thrdArtifactDeployer/target/classes/de/mxro/thrd/artifactdeployer/artifacts/javaws.jar --verbose
+```
 
 As a workaround, it is possible to upload artifacts manually using the Nexus web interface.
 
