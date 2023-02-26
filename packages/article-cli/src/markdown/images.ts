@@ -3,9 +3,13 @@ export function fixCoverImageLink(link: string): string {
 }
 
 export function fixContentLinks(markdown: string): string {
-  const res = markdown.replaceAll(
+  let res = markdown.replaceAll(
     /https:\/\/spearoflight.files.wordpress.com\//g,
     '/_goldstack/static/img/spearoflight-media/'
+  );
+  res = markdown.replaceAll(
+    /https:\/\/shalveena.files.wordpress.com\//g,
+    '/_goldstack/static/img/shalveena.com-media/'
   );
   return res;
 }
