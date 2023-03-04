@@ -28,6 +28,9 @@ Astronomical Clock ([Hermann](https://pixabay.com/photos/astronomical-clock-cloc
   const result = fixContentLinks(content);
 
   expect(result).toContain(
-    '_goldstack/static/img/spearoflight-media/2021/11/astronomical-clock-408306_1920.jpg?w=1024'
+    'https://legacy-cdn.pureleap.com/static/spearoflight-media/2021/11/astronomical-clock-408306_1920.jpg?w=1024'
+  );
+  expect(result).toContain(
+    'https://legacy-cdn.pureleap.com/static/spearoflight-media/2021/11/currency-5029101_1920.jpg?w=1024'
   );
 });
