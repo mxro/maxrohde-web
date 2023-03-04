@@ -103,25 +103,13 @@ import { deleteAll } from './database/delete';
         dry: options.dry,
       });
     });
-  program
-    .command('fix-wordpress')
-    .description('Fixes Wordpress XML file input')
-    .action(async () => {
-      await wordpressPreprocessFile(
-        config['codeOfJoyXmlExport'],
-        config['codeOfJoyXmlFixed']
-      );
-      await wordpressPreprocessFile(
-        config['spearOfLightXmlExport'],
-        config['spearOfLightXmlFixed']
-      );
-    });
 
   program
     .command('wordpress-to-markdown')
     .description('Converts Wordpress XML to Markdown')
-    .action(async () => {
-      await wordpressToMarkdown();
+    .requiredOption('-b, --blog <blogName>', 'Blog to process')
+    .action(async (options) => {
+      await wordpressToMarkdown(options.blog);
     });
 
   program

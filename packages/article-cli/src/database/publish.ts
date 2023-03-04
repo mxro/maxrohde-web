@@ -153,6 +153,7 @@ export const publish = async (args: PublishArgs): Promise<void> => {
           ? fixCoverImageLink(post.metadata.coverImage)
           : undefined,
         datePublished: new Date(post.metadata.date).toISOString(),
+        canonicalUrl: post.metadata.canonicalUrl,
       });
     })
   );

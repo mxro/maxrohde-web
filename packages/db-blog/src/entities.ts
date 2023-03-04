@@ -30,6 +30,7 @@ export type Post = {
   tags?: string;
   categories?: string;
   contentMarkdown: string;
+  canonicalUrl?: string;
 };
 
 export const PostPK = (data: { blog: string }): string => `${data.blog}#Post`;
@@ -53,6 +54,7 @@ export const PostEntity = {
     contentHtml: { type: 'string', required: 'always' },
     contentMarkdown: { type: 'string', required: 'always' },
     datePublished: { type: 'string', required: 'always' },
+    canonicalUrl: { type: 'string' },
   },
 } as const;
 

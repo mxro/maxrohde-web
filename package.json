@@ -26,7 +26,8 @@
     "test-watch": "nodemonx --watch . --exec 'yarn test-ci'"
   },
   "resolutions": {
-    "glob-parent": "5.1.2"
+    "glob-parent": "5.1.2",
+    "http-cache-semantics": "4.1.1"
   },
   "dependencies": {
     "lighthouse": "^9.6.8"
