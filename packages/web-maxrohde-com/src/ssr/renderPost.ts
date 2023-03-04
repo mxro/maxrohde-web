@@ -117,6 +117,12 @@ export async function renderPost({
     component: PostPage,
     appendToHead: `
       <title>${post.title} - Code of Joy</title>
+      ${
+        post.canonicalUrl
+          ? `<link rel="canonical" href="${post.canonicalUrl}" />
+`
+          : ''
+      }
       <meta property="og:type" content="article" />
       <meta property="og:title" content="${post.title}" />
       <meta property="article:published_time" content="${post.datePublished}" />
