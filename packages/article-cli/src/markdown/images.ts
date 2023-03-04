@@ -7,7 +7,7 @@ export function fixContentLinks(markdown: string): string {
     /https:\/\/spearoflight.files.wordpress.com\//g,
     '/_goldstack/static/img/spearoflight-media/'
   );
-  res = markdown.replaceAll(
+  res = res.replaceAll(
     /https:\/\/shalveena.files.wordpress.com\//g,
     '/_goldstack/static/img/shalveena.com-media/'
   );
