@@ -14,5 +14,4 @@ tags:
 title: TypeScript Monorepo with Yarn and Project References
 ---
 
-
 Please find an updated and extended version of this post here: [The Ultimate Guide to TypeScript Monorepos](https://maxrohde.com/2021/11/20/the-ultimate-guide-to-typescript-monorepos/).
