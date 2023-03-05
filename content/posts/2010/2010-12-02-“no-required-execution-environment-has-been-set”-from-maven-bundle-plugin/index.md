@@ -1,6 +1,7 @@
 ---
-title: '“No required execution environment has been set” from Maven Bundle Plugin'
-date: '2010-12-02'
+date: "2010-12-02"
+primaryBlog: maxrohde.com
+title: “No required execution environment has been set” from Maven Bundle Plugin
 ---
 
 **The Problem**

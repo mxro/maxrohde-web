@@ -1,6 +1,7 @@
 ---
-title: 'Links of the Week (weekly)'
-date: '2013-02-17'
+date: "2013-02-17"
+primaryBlog: maxrohde.com
+title: Links of the Week (weekly)
 ---
 
 Interesting links discovered this week:

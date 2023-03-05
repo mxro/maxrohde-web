@@ -1,10 +1,11 @@
 ---
-title: 'Deploy Maven Project with Netbeans'
-date: '2013-02-11'
 categories:
-  - 'java'
+- java
+date: "2013-02-11"
+primaryBlog: maxrohde.com
 tags:
-  - 'maven'
+- maven
+title: Deploy Maven Project with Netbeans
 ---
 
 ## Problem

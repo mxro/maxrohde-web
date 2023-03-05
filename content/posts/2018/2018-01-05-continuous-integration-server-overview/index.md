@@ -1,12 +1,13 @@
 ---
-title: 'Continuous Integration Server Overview'
-date: '2018-01-05'
 categories:
-  - 'java'
+- java
+coverImage: jenkins.png
+date: "2018-01-05"
+primaryBlog: maxrohde.com
 tags:
-  - 'jenkins'
-  - 'open-source'
-coverImage: 'jenkins.png'
+- jenkins
+- open-source
+title: Continuous Integration Server Overview
 ---
 
 Since I plan to set up a continuous integration server in the near future, I had a quick look around for open source and cloud-based solutions; my main concern was finding something which will work for a small scale project and result in reasonable costs.

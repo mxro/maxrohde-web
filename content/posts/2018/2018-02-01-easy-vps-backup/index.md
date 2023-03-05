@@ -1,10 +1,11 @@
 ---
-title: 'Easy VPS Backup'
-date: '2018-02-01'
 categories:
-  - 'linux'
+- linux
+date: "2018-02-01"
+primaryBlog: maxrohde.com
 tags:
-  - 'devops'
+- devops
+title: Easy VPS Backup
 ---
 
 I love VPS providers such as [RamNode](http://ramnode.com/) or [ServerCheap](https://servercheap.net/) which provide excellent performance at a low price point. Unfortunately, when going with most VPS providers, there are no easy built-in facilities for backing up and restoring the data of your servers (such as with AWS EC2 snapshots). Thankfully, there is some powerful, easy to use and open source software available to take care of the backups for us!

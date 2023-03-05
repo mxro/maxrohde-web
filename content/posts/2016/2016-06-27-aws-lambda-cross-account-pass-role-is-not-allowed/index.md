@@ -1,9 +1,10 @@
 ---
-title: 'AWS Lambda: Cross-account pass role is not allowed.'
-date: '2016-06-27'
+date: "2016-06-27"
+primaryBlog: maxrohde.com
 tags:
-  - 'aws'
-  - 'aws-lambda'
+- aws
+- aws-lambda
+title: 'AWS Lambda: Cross-account pass role is not allowed.'
 ---
 
 Today I came across the following exception while working with the [AWS SDK for Amazon Lambda](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/lambda/AWSLambda.html):

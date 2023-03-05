@@ -1,15 +1,16 @@
 ---
-title: 'Public, Communal and Familial Spirit'
-date: '2021-05-28'
 categories:
-  - 'philosophy'
-  - 'politics'
-  - 'society'
+- philosophy
+- politics
+- society
+coverImage: hands.jpg
+date: "2021-05-28"
+primaryBlog: maxrohde.com
 tags:
-  - 'charity'
-  - 'essay'
-  - 'public-spirit'
-coverImage: 'hands.jpg'
+- charity
+- essay
+- public-spirit
+title: Public, Communal and Familial Spirit
 ---
 
 To me there is little doubt that the best way to live our lives is to attempt to do so in the service of others. A hedonistic, self-serving and selfish way of life is thankfully something that does not give us much lasting fulfilment; thankfully so since if we attempt to help others, and others attempt to help us, it is likely that we will all be better off for it.

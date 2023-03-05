@@ -1,8 +1,9 @@
 ---
-title: 'Maven Eclipse Plugin and Eclipse PDE: The Right Configuration'
-date: '2010-06-29'
 categories:
-  - 'java'
+- java
+date: "2010-06-29"
+primaryBlog: maxrohde.com
+title: 'Maven Eclipse Plugin and Eclipse PDE: The Right Configuration'
 ---
 
 **pom.xml**

@@ -1,8 +1,9 @@
 ---
-title: 'Subversion and Maven'
-date: '2010-05-31'
 categories:
-  - 'java'
+- java
+date: "2010-05-31"
+primaryBlog: maxrohde.com
+title: Subversion and Maven
 ---
 
 Maven and subversion both manage different versions of development projects but they have different focusses. While Maven focusses on the management of whole modules/projects/packages, subversion manages each and every file of the development.

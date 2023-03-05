@@ -1,8 +1,9 @@
 ---
-title: 'Work Contexts'
-date: '2010-03-29'
 categories:
-  - 'contemplations'
+- contemplations
+date: "2010-03-29"
+primaryBlog: maxrohde.com
+title: Work Contexts
 ---
 
 Sometimes the most difficult thing is to get started. Many writers have described the experience of sitting in front a blank sheet of paper and just not knowing what would be the first line to put. In this article, I want to provide a brief exploration what makes up a work context; or the prerequisites, which enable us to start working on a task effectively.

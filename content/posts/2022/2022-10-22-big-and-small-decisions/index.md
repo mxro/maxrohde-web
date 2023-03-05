@@ -1,16 +1,18 @@
 ---
-title: Big and Small Decisions
-summary: Discusses the differences between deliberate ('big') and subconsious ('small') decisions.
-id: big-and-small-decisions
-date: '2022-10-22'
-coverImage: 'pexels-pixabay-33535.jpg'
-tags:
-  - 'decision-making'
-  - 'psychology'
-  - 'management'
 categories:
-  - 'contemplations'
+- contemplations
+coverImage: pexels-pixabay-33535.jpg
+date: "2022-10-22"
+id: big-and-small-decisions
+primaryBlog: maxrohde.com
 publish: true
+summary: Discusses the differences between deliberate ('big') and subconsious ('small')
+  decisions.
+tags:
+- decision-making
+- psychology
+- management
+title: Big and Small Decisions
 ---
 
 We make a lot of decisions in our lives: which food to pick from the menu, which brand of pasta to get from the store, which job offer to accept. I want to argue in this article that it is helpful to divide the decisions we make into two broad categories: big decisions and small decisions. I will start with defining what I mean by these respectively.
@@ -28,4 +30,3 @@ Therefore we should be mindful to make more big decisions. They might be more di
 I think the pattern of big and small decisions also applies to organisations and countries. For the latter, political decision making might either be driven by the political demands and forces of the present (small decisions) or by careful, pragmatic and logical deliberations aligned towards the long-term good.
 
 In organisations, if there are too many big decisions, we would call it static and bureaucratic. If there are too many small decisions, we would see the organisation as aimless and chaotic. In this context, it thus needs to be carefully considered, which decisions are to be taken deliberately and which ones in an agile, ad-hoc manner.
-

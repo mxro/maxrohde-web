@@ -1,14 +1,15 @@
 ---
-title: 'Create and Drag Shapes with Three.js, React and Cannon.js'
-date: '2019-10-23'
 categories:
-  - 'javascript'
+- javascript
+coverImage: v2.png
+date: "2019-10-23"
+primaryBlog: maxrohde.com
 tags:
-  - 'open-source'
-  - 'react'
-  - 'react-hooks'
-  - 'three-js'
-coverImage: 'v2.png'
+- open-source
+- react
+- react-hooks
+- three-js
+title: Create and Drag Shapes with Three.js, React and Cannon.js
 ---
 
 Following up from [my article published a few days ago](https://maxrohde.com/2019/10/19/creating-a-draggable-shape-with-react-three-fiber/), I have now extended and improved the simple WebGL application that I originally developed using [Three.js](https://threejs.org/) and [react-three-fiber](https://github.com/react-spring/react-three-fiber).

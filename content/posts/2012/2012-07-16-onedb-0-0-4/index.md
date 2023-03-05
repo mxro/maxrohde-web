@@ -1,8 +1,9 @@
 ---
-title: 'onedb 0.0.4'
-date: '2012-07-16'
 categories:
-  - 'java'
+- java
+date: "2012-07-16"
+primaryBlog: maxrohde.com
+title: onedb 0.0.4
 ---
 
 The version 0.0.4 of the core client library and the test library for [onedb](http://www.onedb.de 'onedb cloud database') have been released. In addition to a small enhancement and bugfix also some documentation has been added. Please find the details below.

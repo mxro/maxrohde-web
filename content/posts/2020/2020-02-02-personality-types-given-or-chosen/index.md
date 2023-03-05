@@ -1,14 +1,15 @@
 ---
-title: 'Personality Types: Given or Chosen?'
-date: '2020-02-02'
 categories:
-  - 'psychology'
+- psychology
+coverImage: hands-423794.jpg
+date: "2020-02-02"
+primaryBlog: maxrohde.com
 tags:
-  - 'life'
-  - 'personality'
-  - 'personas'
-  - 'temperament'
-coverImage: 'hands-423794.jpg'
+- life
+- personality
+- personas
+- temperament
+title: 'Personality Types: Given or Chosen?'
 ---
 
 Since the ancient times, we were interested in categorising people into categories based on their personality types. Hippocrates distinguished between the four fundamental personality types of sanguine, choleric, melancholic and phlegmatic. More modern approaches identified different categories, such as _Popular Sanguine_, _Perfect Melancholy_, _Powerful Choleric_ and _Peaceful Plegmatic_ from the popular book [Personality Plus](https://www.amazon.com.au/Personality-Plus-Understand-Understanding-Yourself/dp/080075445X).

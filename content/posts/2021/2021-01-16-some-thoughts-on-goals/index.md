@@ -1,16 +1,17 @@
 ---
-title: 'Some Thoughts on Goals'
-date: '2021-01-16'
 categories:
-  - 'philosophy'
-  - 'psychology'
+- philosophy
+- psychology
+coverImage: sunset-675847.jpg
+date: "2021-01-16"
+primaryBlog: maxrohde.com
 tags:
-  - 'goals'
-  - 'management'
-  - 'measurement'
-  - 'productivity'
-  - 'purpose'
-coverImage: 'sunset-675847.jpg'
+- goals
+- management
+- measurement
+- productivity
+- purpose
+title: Some Thoughts on Goals
 ---
 
 With a new year just having started, it is high season for goal setting. I myself had no intention before the turn of the year to make any specific effort to set or revise goals. However, ever since the date switched over to 1/1/2021, it is like some dark gravity pulls me towards wanting to reflect upon the past year and to define plans for the new one. I eventually succumbed to my urges and have been meddling with a review of my year and my goals. In the context of that, I had some general thoughts on goals and goal setting that I thought I share in this post.

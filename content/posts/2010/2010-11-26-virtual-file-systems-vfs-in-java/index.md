@@ -1,8 +1,9 @@
 ---
-title: 'Virtual File Systems (VFS) in Java'
-date: '2010-11-26'
 categories:
-  - 'java'
+- java
+date: "2010-11-26"
+primaryBlog: maxrohde.com
+title: Virtual File Systems (VFS) in Java
 ---
 
 Many different solutions to persistence follow a similar structure: a hierarchical organization into files and folders. It appears sensible to access these representations using a common application interface.

@@ -1,8 +1,9 @@
 ---
-title: 'Functional Java'
-date: '2010-09-30'
 categories:
-  - 'java'
+- java
+date: "2010-09-30"
+primaryBlog: maxrohde.com
+title: Functional Java
 ---
 
 **+++Google Guava+++**

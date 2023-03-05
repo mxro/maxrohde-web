@@ -1,6 +1,7 @@
 ---
-title: 'Copy and Paste from HTML Tables with Empty Cells'
-date: '2013-03-18'
+date: "2013-03-18"
+primaryBlog: maxrohde.com
+title: Copy and Paste from HTML Tables with Empty Cells
 ---
 
 ## Problem

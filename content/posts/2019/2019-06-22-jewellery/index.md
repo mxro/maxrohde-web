@@ -1,17 +1,18 @@
 ---
-title: 'Jewellery'
-date: '2019-06-22'
 categories:
-  - 'economy'
-  - 'philosophy'
+- economy
+- philosophy
+coverImage: gold-1369453.jpg
+date: "2019-06-22"
+primaryBlog: maxrohde.com
 tags:
-  - 'art'
-  - 'environment'
-  - 'happiness'
-  - 'jewellery'
-  - 'life'
-  - 'opinion'
-coverImage: 'gold-1369453.jpg'
+- art
+- environment
+- happiness
+- jewellery
+- life
+- opinion
+title: Jewellery
 ---
 
 Ornaments are an important part of nature. Flowers use them to attract bees. Birds use them to attract mates. Frogs use them as protection from predators. It is therefore not very surprising that jewellery, face painting, tattoos and other ornamental devices are one of the many things which are shared by all know human cultures.

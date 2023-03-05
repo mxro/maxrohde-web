@@ -1,14 +1,15 @@
 ---
-title: 'Celebrity, Public Attention and Those That Do Good'
-date: '2019-06-12'
 categories:
-  - 'politics'
+- politics
+coverImage: audience-868074.jpg
+date: "2019-06-12"
+primaryBlog: maxrohde.com
 tags:
-  - 'altruism'
-  - 'celebrity'
-  - 'life'
-  - 'media'
-coverImage: 'audience-868074.jpg'
+- altruism
+- celebrity
+- life
+- media
+title: Celebrity, Public Attention and Those That Do Good
 ---
 
 It is without a doubt that not all of us attract the same amount of attention in the public eye. Those which hold positions of power in industry or government, those which are successful in sports or the arts, those which do especially heinous crimes and those which are rich (and good-looking) dominate mass and social media.

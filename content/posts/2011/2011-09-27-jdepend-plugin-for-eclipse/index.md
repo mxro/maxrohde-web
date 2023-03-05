@@ -1,8 +1,9 @@
 ---
-title: 'JDepend Plugin for Eclipse'
-date: '2011-09-27'
 categories:
-  - 'java'
+- java
+date: "2011-09-27"
+primaryBlog: maxrohde.com
+title: JDepend Plugin for Eclipse
 ---
 
 The other day I came across another interesting static source code analysis plugin for eclipse: [JDepend](http://clarkware.com/software/JDepend.html'). JDepend calculates a number of quality metrics for Java packages (therewith it has a slightly different unit of analysis to other tools, which focus on methods, classes or projects).

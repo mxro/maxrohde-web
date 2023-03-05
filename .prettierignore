@@ -3,6 +3,7 @@ webDist/
 distWeb/
 distLambda/
 goldstackLocal/
+packages/web-maxrohde-com/static/generated/
 coverage/
 node_modules/
 .next/

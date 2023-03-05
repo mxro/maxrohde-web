@@ -1,8 +1,9 @@
 ---
-title: 'Fix HtmlUnit Memory Leak'
-date: '2013-01-05'
 categories:
-  - 'java'
+- java
+date: "2013-01-05"
+primaryBlog: maxrohde.com
+title: Fix HtmlUnit Memory Leak
 ---
 
 ## The Problem

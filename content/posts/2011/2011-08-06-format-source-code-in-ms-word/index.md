@@ -1,6 +1,7 @@
 ---
-title: 'Format Source Code in MS Word'
-date: '2011-08-06'
+date: "2011-08-06"
+primaryBlog: maxrohde.com
+title: Format Source Code in MS Word
 ---
 
 ## The Problem

@@ -1,8 +1,9 @@
 ---
-title: 'Rendering Beautiful PDF Documents with Calibre'
-date: '2015-01-27'
+date: "2015-01-27"
+primaryBlog: maxrohde.com
 tags:
-  - 'productivity'
+- productivity
+title: Rendering Beautiful PDF Documents with Calibre
 ---
 
 The free software [Calibre](http://calibre-ebook.com/) allows to convert various ebook formats (such as EPUB and MOBI) into PDF documents.

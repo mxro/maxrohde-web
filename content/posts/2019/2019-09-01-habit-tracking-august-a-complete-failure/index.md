@@ -1,12 +1,13 @@
 ---
-title: 'Habit Tracking August: A Complete Failure'
-date: '2019-09-01'
 categories:
-  - 'productivity'
+- productivity
+coverImage: fail-1714367.jpg
+date: "2019-09-01"
+primaryBlog: maxrohde.com
 tags:
-  - 'habits'
-  - 'life'
-coverImage: 'fail-1714367.jpg'
+- habits
+- life
+title: 'Habit Tracking August: A Complete Failure'
 ---
 
 I have previously posted about a [new system I have adopted for tracking my habits](https://maxrohde.com/2019/08/03/simple-habit-tracking-system/). In the month of July, I think I did reasonably well in sticking to the habits I have set out to adopt. My system is designed to make it easy to enter data (simply use a marker pen) and to provide an immediate visual overview of how well things are going.

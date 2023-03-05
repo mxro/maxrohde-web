@@ -1,13 +1,14 @@
 ---
-title: 'The Delicate Balance Between Want-To and Have-To'
-date: '2014-12-02'
 categories:
-  - 'productivity'
+- productivity
+date: "2014-12-02"
+primaryBlog: maxrohde.com
 tags:
-  - 'happiness'
-  - 'life'
-  - 'purpose'
-  - 'stress'
+- happiness
+- life
+- purpose
+- stress
+title: The Delicate Balance Between Want-To and Have-To
 ---
 
 Organizing tasks is no small effort as anyone [who](https://dynamicit.wordpress.com/2010/06/18/gtd-with-outlook-2010-and-onenote-2010-processing-and-organizing-your-onenote-inbox/) [has](https://homoavionus.wordpress.com/2013/09/27/ios-7-reminders-app-an-un-usable-way-of-organizing-your-tasks/) [tried](https://honcompany.wordpress.com/2014/03/05/4-simple-ways-to-organize-your-tasks/) surely knows. While a simple list of tasks suffices for a few days (the good, old [To Do list](http://qz.com/225576/the-company-that-wants-your-to-do-list-to-be-fun/)), such lists customarily outgrow their format; there’ll simply be too many items and the list once devised to make our life more structured and organized becomes the very evidence that it isn’t.

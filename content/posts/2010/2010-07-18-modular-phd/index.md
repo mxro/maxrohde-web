@@ -1,8 +1,9 @@
 ---
-title: 'Modular PhD'
-date: '2010-07-18'
 categories:
-  - 'contemplations'
+- contemplations
+date: "2010-07-18"
+primaryBlog: maxrohde.com
+title: Modular PhD
 ---
 
 The basic idea of modularity is not limited to software design. Indeed, modularity finds its inspiration in many natural and social phenomenae. Baldwin and Clark (1997) transfer the concept of modularity to management in an impactful research article published in the Harward Business Review (see [Baldwin and Clark, 1997](http://www.citeulike.org/user/mxro/article/1423599)). They distinguish three design rules elemental to modularity:

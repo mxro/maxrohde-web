@@ -1,8 +1,9 @@
 ---
-title: 'onedb Architecture and Design'
-date: '2012-05-05'
 categories:
-  - 'java'
+- java
+date: "2012-05-05"
+primaryBlog: maxrohde.com
+title: onedb Architecture and Design
 ---
 
 This article gives a brief overview of a number of key design concepts underlying the [onedb](http://www.onedb.de 'onedb') service:

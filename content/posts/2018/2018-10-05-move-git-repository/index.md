@@ -1,8 +1,9 @@
 ---
-title: 'Move git repository'
-date: '2018-10-05'
+date: "2018-10-05"
+primaryBlog: maxrohde.com
 tags:
-  - 'github'
+- github
+title: Move git repository
 ---
 
 Sometimes it is necessary to move the location of a git repository; be it from one GitHub repo to another or moving a repo from [GitHub](https://github.com/) to [Bitbucket](https://bitbucket.org/product). This can be surprisingly tricky since one needs to make sure to include all branches, tags, etc. when copying the data.

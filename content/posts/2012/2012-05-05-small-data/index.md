@@ -1,6 +1,7 @@
 ---
+date: "2012-05-05"
+primaryBlog: maxrohde.com
 title: 'Small Data is Beautiful: A Case for Connected Applications'
-date: '2012-05-05'
 ---
 
 Think about getting the persistence back-end of your next web app right ... [sharding](http://instagram-engineering.tumblr.com/post/10853187575/sharding-ids-at-instagram 'Sharding & IDs at Instagram'), [replication](http://weblogtoolscollection.com/archives/2010/03/27/scaling-wordpress-part-1-using-mysql-replication-and-hyperdb/ 'Scaling WordPress Part 1: Using MySQL Replication and HyperDB'), [mapping](http://database-programmer.blogspot.co.nz/2010/12/historical-perspective-of-orm-and.html 'Historical Perspective of ORM and Alternatives'), [partitioning](http://blog.mayflower.de/archives/353-Is-MySQL-partitioning-useful-for-very-big-real-life-problems.html 'Is MySQL-partitioning useful for very big real-life-problems?'), [consistency](http://karlssonondatabases.blogspot.co.nz/2012/02/more-on-database-consistency.html 'Database Consistency'), [latency](http://www.allthingsdistributed.com/2012/01/amazon-dynamodb.html 'Amazon Dynamo DB Low-Latency Cloud DB'), [indices](http://jasonwilder.com/blog/2012/02/08/optimizing-mongodb-indexes/ 'Optimizing MongoDB Indexes'), [durability](http://stackoverflow.com/questions/3340484/how-do-in-memory-databases-provide-durability 'Stackoverflow: How do in-memory databases provide durability?'), [atomicity](http://lewesam.wordpress.com/2012/04/08/replication-atomicity-and-order-in-distributed-systems/ 'Replication, atomicity and order in distributed systems'), [isolation](http://kamalmeet.com/?p=88 'Isolation levels of a database') ... any terms familiar?

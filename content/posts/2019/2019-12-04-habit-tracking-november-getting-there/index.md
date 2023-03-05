@@ -1,13 +1,14 @@
 ---
-title: 'Habit Tracking November: Getting There'
-date: '2019-12-04'
 categories:
-  - 'productivity'
+- productivity
+coverImage: img_0716.jpg
+date: "2019-12-04"
+primaryBlog: maxrohde.com
 tags:
-  - 'exercise'
-  - 'habits'
-  - 'tracking'
-coverImage: 'img_0716.jpg'
+- exercise
+- habits
+- tracking
+title: 'Habit Tracking November: Getting There'
 ---
 
 After having done [very poorly on keeping to my habits in October](https://maxrohde.com/2019/11/05/habit-tracking-october-injured-and-distracted/), things have greatly improved in November. Here the overview for November:

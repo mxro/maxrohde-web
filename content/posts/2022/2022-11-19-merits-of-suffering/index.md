@@ -1,17 +1,18 @@
 ---
-title: 'The Merits of Suffering'
-date: '2022-11-19'
-coverImage: 'pexels-netaly-reshef-191070.jpg'
-summary: 'No one likes to suffer; but suffering is often the portal to a richer life.'
-id: 'merits-of-suffering'
-tags:
-  - 'joy'
-  - 'suffering'
-  - 'beauty'
-  - 'buddhism'
-  - 'happiness'
 categories:
-  - 'contemplations'
+- contemplations
+coverImage: pexels-netaly-reshef-191070.jpg
+date: "2022-11-19"
+id: merits-of-suffering
+primaryBlog: maxrohde.com
+summary: No one likes to suffer; but suffering is often the portal to a richer life.
+tags:
+- joy
+- suffering
+- beauty
+- buddhism
+- happiness
+title: The Merits of Suffering
 ---
 
 It is true that many of us live blessed lives: we enjoy peace, many freedoms, wealth and have friends and family who love us. But it is also true that our lives are never free of pain and strive, most of it caused by no one else but ourselves and the remainder by the crushing force of fortune.

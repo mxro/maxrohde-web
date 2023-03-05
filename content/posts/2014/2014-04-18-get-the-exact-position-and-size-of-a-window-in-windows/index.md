@@ -1,6 +1,7 @@
 ---
-title: 'Get the Exact Position and Size of a Window in Windows'
-date: '2014-04-18'
+date: "2014-04-18"
+primaryBlog: maxrohde.com
+title: Get the Exact Position and Size of a Window in Windows
 ---
 
 ## Problem

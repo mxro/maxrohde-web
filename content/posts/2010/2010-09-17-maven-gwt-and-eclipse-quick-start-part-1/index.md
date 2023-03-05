@@ -1,8 +1,9 @@
 ---
-title: 'Maven, GWT and Eclipse Quick start (Part 1)'
-date: '2010-09-17'
 categories:
-  - 'java'
+- java
+date: "2010-09-17"
+primaryBlog: maxrohde.com
+title: Maven, GWT and Eclipse Quick start (Part 1)
 ---
 
 **Purpose**

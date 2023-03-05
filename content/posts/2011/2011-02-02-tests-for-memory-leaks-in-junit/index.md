@@ -1,8 +1,9 @@
 ---
-title: 'Tests for Memory Leaks in JUnit'
-date: '2011-02-02'
 categories:
-  - 'java'
+- java
+date: "2011-02-02"
+primaryBlog: maxrohde.com
+title: Tests for Memory Leaks in JUnit
 ---
 
 Although Java features an automatic garbage collector automatically clearing up unused objects and therewith unused memory, memory leaks can occur (and do occur from time to time). This is often caused by 'circular' references between objects.

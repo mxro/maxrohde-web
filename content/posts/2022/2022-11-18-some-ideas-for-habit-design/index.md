@@ -1,15 +1,17 @@
 ---
-id: 'some-ideas-for-habit-design'
-title: 'Some Ideas for Habit Design'
-coverImage: 'pexels-polina-tankilevitch-3735780.jpg'
-date: '2022-11-18'
-summary: "To change one's behaviour is not always easy - what can help is to start with some well-designed habits."
 categories:
-  - 'contemplations'
+- contemplations
+coverImage: pexels-polina-tankilevitch-3735780.jpg
+date: "2022-11-18"
+id: some-ideas-for-habit-design
+primaryBlog: maxrohde.com
+summary: To change one's behaviour is not always easy - what can help is to start
+  with some well-designed habits.
 tags:
-  - 'habits'
-  - 'psychology'
-  - 'self-improvement'
+- habits
+- psychology
+- self-improvement
+title: Some Ideas for Habit Design
 ---
 
 In our modern world, we are all urged to work on being better versions of ourselves; maybe it is exercising more, eating more healthy food, or learning new skills. The ultimate weapon suggested achieving this are often habits; the idea that if we make a behaviour an automatic habit—we simply do without thinking about it—we do not need to exert our limited willpower to make us do what we naturally would refrain from doing. Perhaps you don't quite enjoy waking up at 5 am to go for a run - but if you manage to make this a habit, it will be easy for you to do. That, at least, is the theory. I have my reservations about this, as I discussed in my article [Some Thoughts on Habits](https://maxrohde.com/2021/08/25/some-thoughts-on-habits).

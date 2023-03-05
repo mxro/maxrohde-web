@@ -10174,6 +10174,12 @@ __metadata:
   languageName: node
   linkType: hard
 
+"go-transform-cli@workspace:packages/go-transform-cli":
+  version: 0.0.0-use.local
+  resolution: "go-transform-cli@workspace:packages/go-transform-cli"
+  languageName: unknown
+  linkType: soft
+
 "good-listener@npm:^1.2.2":
   version: 1.2.2
   resolution: "good-listener@npm:1.2.2"

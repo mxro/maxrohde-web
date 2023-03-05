@@ -1,14 +1,15 @@
 ---
-title: 'Memory System Part 2: 3x3 Grid'
-date: '2021-11-23'
 categories:
-  - 'psychology'
+- psychology
+coverImage: abstract-2105402_1920.jpg
+date: "2021-11-23"
+primaryBlog: maxrohde.com
 tags:
-  - 'life'
-  - 'memory'
-  - 'mnemonic'
-  - 'productivity'
-coverImage: 'abstract-2105402_1920.jpg'
+- life
+- memory
+- mnemonic
+- productivity
+title: 'Memory System Part 2: 3x3 Grid'
 ---
 
 I have outlined in [part 1 of this series](https://spearoflight.wordpress.com/2021/11/15/memory-system-part-1-ancient-techniques-and-modern-applications/) possible applications for an improved memory. The two applications I suggested were: (1) to be able to aid our imagination and creativity and (2) create more memorable stories. I think the second application is really only relevant for those who want to become better creators of fictional stories, whereas the first application really should be of relevance to everyone. In this article, I will introduce a simple technique I believe can be of use for the first application of improved memory; to help us keep our ideas and thoughts organized while using no other tool but our imagination.

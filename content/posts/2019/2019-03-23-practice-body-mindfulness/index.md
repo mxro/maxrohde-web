@@ -1,15 +1,16 @@
 ---
-title: 'Practice: Body Mindfulness'
-date: '2019-03-23'
 categories:
-  - 'buddhism'
-  - 'psychology'
+- buddhism
+- psychology
+coverImage: 0_the_vitruvian_man_-_by_leonardo_da_vinci.jpg
+date: "2019-03-23"
+primaryBlog: maxrohde.com
 tags:
-  - 'breathing'
-  - 'meditation'
-  - 'practice'
-  - 'practices'
-coverImage: '0_the_vitruvian_man_-_by_leonardo_da_vinci.jpg'
+- breathing
+- meditation
+- practice
+- practices
+title: 'Practice: Body Mindfulness'
 ---
 
 With all the distractions in our life, we often forget what is most fundamental to our existence: our own bodies. We should take time to be mindful of how our body feels. Do we have pain somewhere? Do we feel relaxed or tense?

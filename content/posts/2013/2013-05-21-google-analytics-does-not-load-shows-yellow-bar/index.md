@@ -1,6 +1,7 @@
 ---
-title: 'Google Analytics Does Not Load – Shows Yellow Bar'
-date: '2013-05-21'
+date: "2013-05-21"
+primaryBlog: maxrohde.com
+title: Google Analytics Does Not Load – Shows Yellow Bar
 ---
 
 ## The Problem

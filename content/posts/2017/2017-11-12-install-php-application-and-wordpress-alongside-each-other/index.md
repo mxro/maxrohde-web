@@ -1,10 +1,11 @@
 ---
-title: 'Install PHP Application and WordPress Alongside Each Other'
-date: '2017-11-12'
 categories:
-  - 'linux'
+- linux
+date: "2017-11-12"
+primaryBlog: maxrohde.com
 tags:
-  - 'wordpress'
+- wordpress
+title: Install PHP Application and WordPress Alongside Each Other
 ---
 
 ### Problem

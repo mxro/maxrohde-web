@@ -1,8 +1,9 @@
 ---
-title: 'Maven Eclipse Plugin: Update MANIFEST.MF (Eclipse Problem)'
-date: '2010-07-01'
 categories:
-  - 'java'
+- java
+date: "2010-07-01"
+primaryBlog: maxrohde.com
+title: 'Maven Eclipse Plugin: Update MANIFEST.MF (Eclipse Problem)'
 ---
 
 **Problem**

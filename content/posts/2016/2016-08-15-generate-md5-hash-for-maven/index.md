@@ -1,10 +1,11 @@
 ---
-title: 'Generate md5 Hash for Maven'
-date: '2016-08-15'
 categories:
-  - 'java'
+- java
+date: "2016-08-15"
+primaryBlog: maxrohde.com
 tags:
-  - 'maven'
+- maven
+title: Generate md5 Hash for Maven
 ---
 
 [Maven](https://maven.apache.org/what-is-maven.html) creates and checks [MD5 checksums](https://en.wikipedia.org/wiki/MD5) at various times. For instance, when downloading an artifact from a repository, Maven checks whether the checksum of the downloaded files (e.g. POM, JAR) is correct.

@@ -1,8 +1,9 @@
 ---
-title: 'Designing Micro Services the Right Way'
-date: '2018-12-09'
+date: "2018-12-09"
+primaryBlog: maxrohde.com
 tags:
-  - 'programming'
+- programming
+title: Designing Micro Services the Right Way
 ---
 
 For a few years now, micro services have been all the rage when it comes to the architecture of large applications. Personally I have always been a bit puzzled about what was so new a great about micro services in comparison to what came before them: Service Oriented Architecture (SOA). Indeed, SOA itself is often portrayed as a frightful antipattern from our past to be mentioned in the same breath as CORBA.

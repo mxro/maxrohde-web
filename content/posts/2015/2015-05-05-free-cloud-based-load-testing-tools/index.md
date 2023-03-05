@@ -1,6 +1,7 @@
 ---
-title: 'Free Cloud Based Load Testing Tools'
-date: '2015-05-05'
+date: "2015-05-05"
+primaryBlog: maxrohde.com
+title: Free Cloud Based Load Testing Tools
 ---
 
 Good load testing of web and cloud applications should involve many concurrent connections originating from diverse networks. To set up such tests on your own is not trivial and probably very expensive. Thankfully, there are numerous service providers, which allow to use their infrastructure for testing your applications.

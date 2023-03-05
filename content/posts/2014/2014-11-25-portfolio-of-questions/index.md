@@ -1,9 +1,10 @@
 ---
-title: 'Writing Tip: Portfolio of Questions'
-date: '2014-11-25'
+date: "2014-11-25"
+primaryBlog: maxrohde.com
 tags:
-  - 'questions'
-  - 'writing'
+- questions
+- writing
+title: 'Writing Tip: Portfolio of Questions'
 ---
 
 One of the beauties of most forms of written text is their linearity; that everything has a place between the beginning and the end provides a great aid for our mind to comprehend complex information. Our mind loves shortcuts, and taking messy, multidimensional reality into this compact single-dimensional form has therefore a tempting appeal.

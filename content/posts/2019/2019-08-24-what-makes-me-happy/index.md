@@ -1,14 +1,15 @@
 ---
-title: 'What Makes Me Happy?'
-date: '2019-08-24'
 categories:
-  - 'buddhism'
-  - 'philosophy'
-  - 'psychology'
+- buddhism
+- philosophy
+- psychology
+coverImage: elephant-111695.jpg
+date: "2019-08-24"
+primaryBlog: maxrohde.com
 tags:
-  - 'happiness'
-  - 'life'
-coverImage: 'elephant-111695.jpg'
+- happiness
+- life
+title: What Makes Me Happy?
 ---
 
 I am currently reading the book ['Happiness' by Matthieu Ricard](https://www.goodreads.com/book/show/96885.Happiness) and a small exercise is presented at the end of the first chapter. The exercise is to think about what gives us pleasure and happiness. This question got me contemplating for quite a while. It appears I am not thinking very often about whether I am happy or not, let alone the causes of my happiness. I usually live with the assumption that my life is quite a happy one, unless there is something specific happening that upsets me.

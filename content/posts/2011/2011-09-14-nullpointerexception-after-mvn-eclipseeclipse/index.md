@@ -1,8 +1,9 @@
 ---
-title: 'NullPointerException after mvn eclipse:eclipse'
-date: '2011-09-14'
 categories:
-  - 'java'
+- java
+date: "2011-09-14"
+primaryBlog: maxrohde.com
+title: NullPointerException after mvn eclipse:eclipse
 ---
 
 ### Problem

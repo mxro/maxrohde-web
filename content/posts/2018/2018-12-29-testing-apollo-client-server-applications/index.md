@@ -1,14 +1,15 @@
 ---
-title: 'Testing Apollo Client/Server Applications'
-date: '2018-12-29'
 categories:
-  - 'javascript'
+- javascript
+coverImage: apollo.png
+date: "2018-12-29"
+primaryBlog: maxrohde.com
 tags:
-  - 'graphql'
-  - 'jest'
-  - 'node-js'
-  - 'open-source'
-coverImage: 'apollo.png'
+- graphql
+- jest
+- node-js
+- open-source
+title: Testing Apollo Client/Server Applications
 ---
 
 Following up on the [GraphQL, Node.JS and React Monorepo Starter Kit](https://maxrohde.com/2018/12/27/graphql-node-js-and-react-monorepo-starter-kit/) and [GraphQL Apollo Starter Kit (Lerna, Node.js)](https://maxrohde.com/2018/12/24/graphql-apollo-starter-kit-lerna-node-js/), I have now created an extended example which includes facilities to run unit and integration tests using [Jest](https://jestjs.io/).

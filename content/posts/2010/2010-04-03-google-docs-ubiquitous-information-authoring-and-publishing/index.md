@@ -1,8 +1,9 @@
 ---
-title: 'Google Docs: Ubiquitous Information Authoring and Publishing'
-date: '2010-04-03'
 categories:
-  - 'contemplations'
+- contemplations
+date: "2010-04-03"
+primaryBlog: maxrohde.com
+title: 'Google Docs: Ubiquitous Information Authoring and Publishing'
 ---
 
 Google Docs is a cloud computing service, which allows to store and edit formatted text, presentations, and spreadsheets using an online interface. Google Docs can thereby be access from most devices, which support access to the web and JavaScript. This makes Google Docs a great tool to author information of different kind in ubiquitous situations.

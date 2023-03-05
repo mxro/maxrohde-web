@@ -1,17 +1,18 @@
 ---
-title: 'How Important is Work'
-id: 'how-important-is-work'
-date: '2022-11-14'
-coverImage: 'pexels-fauxels-3183197.jpg'
-summary: 'Work is an important part of our lives - but how important should it be?'
 categories:
-  - 'contemplations'
+- contemplations
+coverImage: pexels-fauxels-3183197.jpg
+date: "2022-11-14"
+id: how-important-is-work
+primaryBlog: maxrohde.com
+summary: Work is an important part of our lives - but how important should it be?
 tags:
-  - 'work'
-  - 'productivity'
-  - 'philosophy'
-  - 'business'
-  - 'success'
+- work
+- productivity
+- philosophy
+- business
+- success
+title: How Important is Work
 ---
 
 It has become generally accepted that we enjoy our work more when we are given autonomy, the work is not too challenging or easy, and we feel that our work has purpose. While I think autonomy and finding the right level of challenge are undoubtedly beneficial, I have been considering for a while if there are potential downsides to having work that is too purposeful and enjoyable.

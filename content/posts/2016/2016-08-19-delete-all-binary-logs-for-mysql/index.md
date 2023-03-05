@@ -1,10 +1,11 @@
 ---
-title: 'Delete All Binary Logs for MySQL'
-date: '2016-08-19'
 categories:
-  - 'linux'
+- linux
+date: "2016-08-19"
+primaryBlog: maxrohde.com
 tags:
-  - 'mysql'
+- mysql
+title: Delete All Binary Logs for MySQL
 ---
 
 Today I discovered that one of my servers mysteriously ran out of disk space.

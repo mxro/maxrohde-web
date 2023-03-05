@@ -1,8 +1,9 @@
 ---
-title: 'Deployment of GWT Applications (Part 2)'
-date: '2010-09-19'
 categories:
-  - 'java'
+- java
+date: "2010-09-19"
+primaryBlog: maxrohde.com
+title: Deployment of GWT Applications (Part 2)
 ---
 
 **Purpose**

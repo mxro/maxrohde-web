@@ -1,8 +1,9 @@
 ---
-title: 'onedb 0.0.3: Client API and Documentation Updated'
-date: '2012-05-20'
 categories:
-  - 'java'
+- java
+date: "2012-05-20"
+primaryBlog: maxrohde.com
+title: 'onedb 0.0.3: Client API and Documentation Updated'
 ---
 
 A new version for the onedb client libraries (0.0.3) is now available for [direct download](http://cms.onedb.de/downloads 'onedb downloads') or as maven dependency.

@@ -1,8 +1,9 @@
 ---
-title: 'Debugging, Testing and Deploying OSGi Applications'
-date: '2010-06-18'
 categories:
-  - 'java'
+- java
+date: "2010-06-18"
+primaryBlog: maxrohde.com
+title: Debugging, Testing and Deploying OSGi Applications
 ---
 
 Just a number of pointers on the debugging, testing and deployment of OSGi applications ...

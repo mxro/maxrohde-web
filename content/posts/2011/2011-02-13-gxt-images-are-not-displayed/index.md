@@ -1,8 +1,9 @@
 ---
-title: 'GXT Images are not displayed'
-date: '2011-02-13'
 categories:
-  - 'java'
+- java
+date: "2011-02-13"
+primaryBlog: maxrohde.com
+title: GXT Images are not displayed
 ---
 
 **The Problem**

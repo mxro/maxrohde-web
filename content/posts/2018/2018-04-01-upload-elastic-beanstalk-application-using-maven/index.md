@@ -1,6 +1,7 @@
 ---
-title: 'Upload Elastic Beanstalk Application using Maven'
-date: '2018-04-01'
+date: "2018-04-01"
+primaryBlog: maxrohde.com
+title: Upload Elastic Beanstalk Application using Maven
 ---
 
 [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) is well established service of the AWS cloud and can be used as a powerful platform to deploy applications in various languages. In this short tutorial, I will outline how to conveniently deploy a Tomcat application to AWS Elastic Beanstalk using the [beanstalk-maven-plugin.](http://beanstalker.ingenieux.com.br/beanstalk-maven-plugin)
