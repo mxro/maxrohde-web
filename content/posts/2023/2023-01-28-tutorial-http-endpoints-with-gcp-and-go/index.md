@@ -13,6 +13,7 @@ tags:
 - go
 title: Tutorial HTTP Endpoints with GCP Function (2nd Gen) and Go
 ---
+
 [Cloud Functions](https://cloud.google.com/functions/) provide a lightweight execution environment for code in various languages. They are the serverless compute solutions in Google Cloud Platform (GCP) that is similar to [AWS Lambda](https://aws.amazon.com/lambda/) functions in AWS.
 
 There are two different versions of Cloud Functions available: _1st Gen_ and _2nd Gen_. [2nd Gen is recommended for all new projects](https://cloud.google.com/functions/docs/concepts/version-comparison).

@@ -90,7 +90,7 @@ func (c *CLI) SetPrimaryBlogAction(ctx *kong.Context) error {
 			return err
 		}
 
-		newContent := "---\n" + string(y) + "---\n" + body
+		newContent := "---\n" + string(y) + "---\n\n" + body
 
 		if err := ioutil.WriteFile(path, []byte(newContent), 0644); err != nil {
 			return err
