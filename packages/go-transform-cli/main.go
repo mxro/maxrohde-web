@@ -7,9 +7,10 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/gernest/front"
+
 	"github.com/alecthomas/kong"
 	"github.com/gobwas/glob"
-	"github.com/gomarkdown/markdown/parser"
 	"gopkg.in/yaml.v2"
 )
 
@@ -67,18 +68,35 @@ func (c *CLI) ProcessFiles(ctx *kong.Context, fn processorFn) error {
 func (c *CLI) SetPrimaryBlogAction(ctx *kong.Context) error {
 	return c.ProcessFiles(ctx, func(path string) error {
 		fmt.Printf("Processing %s\n", path)
-		data, err := ioutil.ReadFile(path)
+		data, err := os.Open(path)
 		if err != nil {
 			return err
 		}
-		// Create a parser with YAML frontmatter extension
-		p := parser.NewWithExtensions(parser.)
 
-		// Parse markdown and extract frontmatter
-		p.Parse(data)
-		frontmatter := p.FrontMatter()
+		m := front.NewMatter()
+		m.Handle("---", front.YAMLHandler)
+		frontmatterMap, body, err := m.Parse(data)
+		if err != nil {
+			return err
+		}
 
-		fmt.Printf("%v", frontmatter)
+		fmt.Printf("The front matter is:\n%#v\n", frontmatterMap)
+		fmt.Printf("The body size is:\n%v\n", len(body))
+
+		frontmatterMap["primaryBlog"] = c.SetPrimaryBlog.PrimaryBlog
+
+		y, err := yaml.Marshal(frontmatterMap)
+		if err != nil {
+			return err
+		}
+
+		newContent := "---\n" + string(y) + "---\n" + body
+
+		if err := ioutil.WriteFile(path, []byte(newContent), 0644); err != nil {
+			return err
+		}
+
+		// fmt.Printf(newContent)
 
 		return nil
 	})
