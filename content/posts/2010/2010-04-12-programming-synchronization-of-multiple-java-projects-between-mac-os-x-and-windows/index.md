@@ -1,8 +1,9 @@
 ---
-title: 'Programming: Synchronization of Multiple Java Projects between Mac OS X and Windows'
-date: '2010-04-12'
 categories:
-  - 'java'
+- java
+date: "2010-04-12"
+primaryBlog: maxrohde.com
+title: 'Programming: Synchronization of Multiple Java Projects between Mac OS X and Windows'
 ---
 
 Subversion or SVN is a widely used technology to support collaborative software development. It is best described by the two most important commands. The user can _commit_ changes a svn repository. This leads to the changed files being uploaded to the server. The second command is _update_, which downloads all changes from the server made by other users. Manually triggering these two commands is an essential part of work with Subversion. It is therewith no real-time synchronization solution such as Dropbox ([getdropbox.com](http://getdropbox.com)). However, this might also not be desirable because a software developer might prefer to work with his or her local copy of the software, until it is mature enough to be committed to the repository.

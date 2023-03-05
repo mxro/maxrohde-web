@@ -1,8 +1,9 @@
 ---
-title: 'Maven Module for gwt-exporter'
-date: '2012-07-08'
 categories:
-  - 'java'
+- java
+date: "2012-07-08"
+primaryBlog: maxrohde.com
+title: Maven Module for gwt-exporter
 ---
 
 [gwt-exporter](http://code.google.com/p/gwt-exporter/) is an awesome library to generate usable JavaScript APIs for [Google Web Toolkit](https://developers.google.com/web-toolkit/) applications.

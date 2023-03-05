@@ -1,8 +1,9 @@
 ---
-title: 'Good and Bad Knowledge Work Practices'
-date: '2010-04-02'
 categories:
-  - 'java'
+- java
+date: "2010-04-02"
+primaryBlog: maxrohde.com
+title: Good and Bad Knowledge Work Practices
 ---
 
 Good and bad knowledge work practices ... work in progress and to be extended ...

@@ -1,6 +1,7 @@
 ---
-title: 'Links of the Week (weekly)'
-date: '2012-12-30'
+date: "2012-12-30"
+primaryBlog: maxrohde.com
+title: Links of the Week (weekly)
 ---
 
 - [HttpClient - HttpClient SSL Guide](http://hc.apache.org/httpclient-3.x/sslguide.html)

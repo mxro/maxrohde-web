@@ -1,8 +1,9 @@
 ---
-title: 'A Practical Guide on Node Types in onedb'
-date: '2012-05-15'
 categories:
-  - 'java'
+- java
+date: "2012-05-15"
+primaryBlog: maxrohde.com
+title: A Practical Guide on Node Types in onedb
 ---
 
 onedb is at its heart a cloud-based platform [to connect pieces of information from various applications](http://maxrohde.com/2012/05/06/introducing-onedb/ 'onedb overview'). These 'pieces of information' are represented and accessed in various ways in the onedb API.

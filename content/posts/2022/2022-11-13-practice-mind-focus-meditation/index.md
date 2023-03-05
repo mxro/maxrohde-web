@@ -1,15 +1,17 @@
 ---
-title: 'Practice: Mind Focus Meditation'
-summary: 'Describes a mediation practice in which the mind is directed to the body, surroundings and interconnectedness.'
-id: 'practice-mind-focus-meditation'
-date: '2022-11-13'
-coverImage: 'pexels-luis-dalvan-3978594.jpg'
 categories:
-  - contemplations
+- contemplations
+coverImage: pexels-luis-dalvan-3978594.jpg
+date: "2022-11-13"
+id: practice-mind-focus-meditation
+primaryBlog: maxrohde.com
+summary: Describes a mediation practice in which the mind is directed to the body,
+  surroundings and interconnectedness.
 tags:
-  - meditation
-  - practice
-  - practices
+- meditation
+- practice
+- practices
+title: 'Practice: Mind Focus Meditation'
 ---
 
 One of the challenges for me to do meditation is to decide how to meditate. There are so many different practices, and I am not the type who would be satisfied with simply doing any of them; I want to do those that will work the best for me and that are grounded in best practice and science. I have already collected a number of [practices on this blog](https://maxrohde.com/2019/04/19/practices-for-enlightenment) but I am afraid that I am not very good at practising them.

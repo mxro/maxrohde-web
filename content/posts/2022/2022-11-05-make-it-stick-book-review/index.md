@@ -1,20 +1,21 @@
 ---
-publish: true
-title: 'Make It Stick - Book Review'
-date: '2022-11-05'
-id: 'make-it-stick-book-review'
-coverImage: 'pexels-bruno-bueno-3854816.jpg'
-summary: 'Review and summary of the book Make It Stick by Chip and Dan Heath'
-tags:
-  - 'book-review'
-  - 'memory'
-  - 'book'
-  - 'writing'
-  - 'non-fiction'
-  - 'business'
 categories:
-  - 'book-reviews'
-  - 'contemplations'
+- book-reviews
+- contemplations
+coverImage: pexels-bruno-bueno-3854816.jpg
+date: "2022-11-05"
+id: make-it-stick-book-review
+primaryBlog: maxrohde.com
+publish: true
+summary: Review and summary of the book Make It Stick by Chip and Dan Heath
+tags:
+- book-review
+- memory
+- book
+- writing
+- non-fiction
+- business
+title: Make It Stick - Book Review
 ---
 
 [Make It Stick](https://www.goodreads.com/review/show/4866472090) is an excellent non-fiction book. It synthesizes large amounts of academic research into easy to apply guidelines for becoming better at communicating. Specifically, to compose messages that are easy to understand, remember and that spur people to act. Five attributes are suggested that messages should contain. I will list each of these attributes and the authors' suggestions to realise them below.

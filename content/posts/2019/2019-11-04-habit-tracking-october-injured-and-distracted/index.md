@@ -1,15 +1,16 @@
 ---
-title: 'Habit Tracking October: Injured and Distracted'
-date: '2019-11-04'
 categories:
-  - 'productivity'
+- productivity
+coverImage: habits-october.png
+date: "2019-11-04"
+primaryBlog: maxrohde.com
 tags:
-  - 'exercise'
-  - 'habit'
-  - 'habits'
-  - 'meditation'
-  - 'tracking'
-coverImage: 'habits-october.png'
+- exercise
+- habit
+- habits
+- meditation
+- tracking
+title: 'Habit Tracking October: Injured and Distracted'
 ---
 
 Following my [new system for tracking habits](https://maxrohde.com/2019/08/03/simple-habit-tracking-system/) I have again kept track of various habits I try to follow. Here the overview for October.

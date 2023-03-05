@@ -1,16 +1,17 @@
 ---
-title: 'Life Purpose in the Modern World: Beyond Family'
-date: '2018-09-30'
 categories:
-  - 'philosophy'
-  - 'society'
+- philosophy
+- society
+coverImage: john-singleton-copley-the-copley-family-1776-1777.jpg
+date: "2018-09-30"
+primaryBlog: maxrohde.com
 tags:
-  - 'biology'
-  - 'controversial'
-  - 'family'
-  - 'life'
-  - 'purpose'
-coverImage: 'john-singleton-copley-the-copley-family-1776-1777.jpg'
+- biology
+- controversial
+- family
+- life
+- purpose
+title: 'Life Purpose in the Modern World: Beyond Family'
 ---
 
 We live in an age where there is a short supply of higher purpose. Sure, there are the world religions which might promises us a place in heaven upon proper conduct - but most of the premises these religions are based upon are difficult to take seriously in the 21st century.

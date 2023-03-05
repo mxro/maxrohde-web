@@ -1,8 +1,9 @@
 ---
-title: 'Proof of Concept: GWT, Restlet, OSGi and Maven'
-date: '2010-10-05'
 categories:
-  - 'java'
+- java
+date: "2010-10-05"
+primaryBlog: maxrohde.com
+title: 'Proof of Concept: GWT, Restlet, OSGi and Maven'
 ---
 
 After some difficulties I got a project working, which consists of a simple GWT application with a Restlet backend. The application consists of four OSGi bundles, which work inside eclipse PDE. Also, all of these modules and their dependencies are declared using Maven 2.

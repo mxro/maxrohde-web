@@ -1,8 +1,9 @@
 ---
-title: 'Remove Duplicates from Array in CoffeeScript'
-date: '2014-04-01'
 categories:
-  - 'javascript'
+- javascript
+date: "2014-04-01"
+primaryBlog: maxrohde.com
+title: Remove Duplicates from Array in CoffeeScript
 ---
 
 **Problem**

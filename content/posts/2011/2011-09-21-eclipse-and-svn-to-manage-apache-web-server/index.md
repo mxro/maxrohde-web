@@ -1,8 +1,9 @@
 ---
-title: 'Eclipse and SVN to manage Apache Web Server'
-date: '2011-09-21'
 categories:
-  - 'java'
+- java
+date: "2011-09-21"
+primaryBlog: maxrohde.com
+title: Eclipse and SVN to manage Apache Web Server
 ---
 
 In order to configure a simple Apache Web Server, I found myself many a time connecting to a UNIX system using putty, fiddling around with various configuration files using pico or vim. I don't want to count the times I deleted some configuration I later missed dearly or forgetting to close some xml element. Two of the main problems for me were:

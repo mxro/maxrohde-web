@@ -1,15 +1,16 @@
 ---
-title: 'Express.js on Lambda Getting Started'
-date: '2021-02-20'
 categories:
-  - 'javascript'
+- javascript
+coverImage: untitled-drawing.png
+date: "2021-02-20"
+primaryBlog: maxrohde.com
 tags:
-  - 'aws'
-  - 'aws-lambda'
-  - 'express-js'
-  - 'open-source'
-  - 'programming'
-coverImage: 'untitled-drawing.png'
+- aws
+- aws-lambda
+- express-js
+- open-source
+- programming
+title: Express.js on Lambda Getting Started
 ---
 
 [AWS Lambda](https://aws.amazon.com/lambda/) is a cost efficient and easy way to deploy server applications. [Express.js](https://expressjs.com/) is a very popular Node.js framework that makes it very easy to develop REST APIs. This post will go through the basics of deploying an Express.js application to AWS Lambda.

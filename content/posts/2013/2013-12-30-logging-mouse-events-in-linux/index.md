@@ -1,8 +1,9 @@
 ---
-title: 'Logging Mouse Events in Linux'
-date: '2013-12-30'
 categories:
-  - 'linux'
+- linux
+date: "2013-12-30"
+primaryBlog: maxrohde.com
+title: Logging Mouse Events in Linux
 ---
 
 **Problem**

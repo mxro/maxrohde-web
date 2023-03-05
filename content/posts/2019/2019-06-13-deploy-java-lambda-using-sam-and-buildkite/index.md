@@ -1,18 +1,19 @@
 ---
-title: 'Deploy Java Lambda using SAM and Buildkite'
-date: '2019-06-13'
 categories:
-  - 'devops'
-  - 'java'
+- devops
+- java
+coverImage: screen-shot-2019-06-14-at-7.18.14-am.png
+date: "2019-06-13"
+primaryBlog: maxrohde.com
 tags:
-  - 'aws'
-  - 'aws-lambda'
-  - 'aws-sam'
-  - 'buildkite'
-  - 'maven'
-  - 'serverless'
-  - 'serverless-application-model'
-coverImage: 'screen-shot-2019-06-14-at-7.18.14-am.png'
+- aws
+- aws-lambda
+- aws-sam
+- buildkite
+- maven
+- serverless
+- serverless-application-model
+title: Deploy Java Lambda using SAM and Buildkite
 ---
 
 I've recently covered how to deploy a [Node JS based Lambda using SAM and Buildkite](https://maxrohde.com/2019/06/08/deploy-lambda-using-sam-and-buildkite/). I would say that this should cover most use cases, since I believe a majority of AWS Lambdas are implemented with JavaScript.

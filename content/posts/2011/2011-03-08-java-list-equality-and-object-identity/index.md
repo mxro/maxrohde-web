@@ -1,8 +1,9 @@
 ---
-title: 'Java List Equality and Object Identity'
-date: '2011-03-08'
 categories:
-  - 'java'
+- java
+date: "2011-03-08"
+primaryBlog: maxrohde.com
+title: Java List Equality and Object Identity
 ---
 
 ## Problem

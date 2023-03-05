@@ -1,8 +1,9 @@
 ---
-title: 'Debugging StackOverflowExceptions in Java'
-date: '2012-03-27'
 categories:
-  - 'java'
+- java
+date: "2012-03-27"
+primaryBlog: maxrohde.com
+title: Debugging StackOverflowExceptions in Java
 ---
 
 # Problem

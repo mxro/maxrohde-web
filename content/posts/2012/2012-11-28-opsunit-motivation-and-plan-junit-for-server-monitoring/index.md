@@ -1,6 +1,7 @@
 ---
-title: 'OpsUnit Motivation and Plan (JUnit for server monitoring)'
-date: '2012-11-28'
+date: "2012-11-28"
+primaryBlog: maxrohde.com
+title: OpsUnit Motivation and Plan (JUnit for server monitoring)
 ---
 
 While the infrastructure for [Appjangle](http://appjangle.com/) and [Nextweb](http://nextweb.io) has been humming along without any major problems, I have been thinking about ways to improve the long-time stability of the servers.

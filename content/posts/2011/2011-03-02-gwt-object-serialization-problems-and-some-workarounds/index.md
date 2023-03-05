@@ -1,8 +1,9 @@
 ---
-title: 'GWT Object Serialization: Problems and (some) workarounds'
-date: '2011-03-02'
 categories:
-  - 'java'
+- java
+date: "2011-03-02"
+primaryBlog: maxrohde.com
+title: 'GWT Object Serialization: Problems and (some) workarounds'
 ---
 
 I made the very troublesome discovery that **different rules apply for Gwt to convert Java objects to JavaScript objects and using Java objects as parameters in Gwt's remote procedure calls** (RPC). Following a list of issues arising when using Gwt RPC (but not in Java->JavaScript conversion).

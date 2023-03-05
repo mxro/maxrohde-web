@@ -1,6 +1,7 @@
 ---
-title: 'Missing Name After . Operation'
-date: '2012-07-08'
+date: "2012-07-08"
+primaryBlog: maxrohde.com
+title: Missing Name After . Operation
 ---
 
 ## Problem

@@ -1,8 +1,9 @@
 ---
-title: 'Converting youtube video link to embed link with JavaScript'
-date: '2012-09-11'
 categories:
-  - 'javascript'
+- javascript
+date: "2012-09-11"
+primaryBlog: maxrohde.com
+title: Converting youtube video link to embed link with JavaScript
 ---
 
 Videos on youtube usually have a URI such as the following:

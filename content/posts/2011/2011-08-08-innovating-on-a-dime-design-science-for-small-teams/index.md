@@ -1,8 +1,9 @@
 ---
-title: 'Innovating on a Dime: Design Science for Small Teams'
-date: '2011-08-08'
 categories:
-  - 'contemplations'
+- contemplations
+date: "2011-08-08"
+primaryBlog: maxrohde.com
+title: 'Innovating on a Dime: Design Science for Small Teams'
 ---
 
 Disruptive technological innovations often originate from surprisingly small beginnings**.** Giants of the Internet age such as the omnipresent Google search engine and the Facebook social networking platform have initially been designed and developed by small and independent teams. These examples are attractive to design science researchers in information systems, who desire to deliver new and innovative artifacts.

@@ -1,8 +1,9 @@
 ---
-title: 'GXT vs vanilla GWT Performance'
-date: '2011-02-12'
 categories:
-  - 'java'
+- java
+date: "2011-02-12"
+primaryBlog: maxrohde.com
+title: GXT vs vanilla GWT Performance
 ---
 
 The performance of a user interface based framework can often be a subjective matter. For me, for instance, the responsiveness of [SmartGWT](http://www.smartclient.com/smartgwt/showcase/) is slower than those of [Ext Gwt (GXT)](http://www.sencha.com/products/extgwt/), plain GWT 'feels' faster than GXT. However, such subjective measures are often quite unsatisfactory and might be wrong. It is great news that [Dustin Mallory](http://lifeandcode.net/2011/01/gxt-vs-gwt-performance/) has attempted to measure the difference in performance of these UI frameworks with greater accuracy.

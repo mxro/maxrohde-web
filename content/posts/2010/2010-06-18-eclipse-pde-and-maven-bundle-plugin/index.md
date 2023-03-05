@@ -1,8 +1,9 @@
 ---
-title: 'Eclipse PDE and Maven Bundle Plugin'
-date: '2010-06-18'
 categories:
-  - 'java'
+- java
+date: "2010-06-18"
+primaryBlog: maxrohde.com
+title: Eclipse PDE and Maven Bundle Plugin
 ---
 
 To get eclipse PDE working hand in hand with Maven is a rather tricky task. I have already written about some necessary [tweaks to get it working](http://maxrohde.com/2010/06/05/loading-resources-in-class-package-for-pde-using-eclipse-iam/).

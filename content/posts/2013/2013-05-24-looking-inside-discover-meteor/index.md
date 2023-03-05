@@ -1,10 +1,11 @@
 ---
-title: 'Looking Inside ‘Discover Meteor’'
-date: '2013-05-24'
 categories:
-  - 'javascript'
+- javascript
+date: "2013-05-24"
+primaryBlog: maxrohde.com
 tags:
-  - 'review'
+- review
+title: Looking Inside ‘Discover Meteor’
 ---
 
 Do you want to see the future of book publishing?

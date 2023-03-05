@@ -80,8 +80,8 @@ func (c *CLI) SetPrimaryBlogAction(ctx *kong.Context) error {
 			return err
 		}
 
-		fmt.Printf("The front matter is:\n%#v\n", frontmatterMap)
-		fmt.Printf("The body size is:\n%v\n", len(body))
+		// fmt.Printf("The front matter is:\n%#v\n", frontmatterMap)
+		// fmt.Printf("The body size is:\n%v\n", len(body))
 
 		frontmatterMap["primaryBlog"] = c.SetPrimaryBlog.PrimaryBlog
 

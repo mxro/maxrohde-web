@@ -1,12 +1,13 @@
 ---
-title: 'Tutorial: Upload from Java, Download from JavaScript'
-date: '2013-03-20'
-summary: 'Appjangle Tutorial for Java and JavaScript interoperability'
 categories:
-  - 'java'
-  - 'javascript'
+- java
+- javascript
+date: "2013-03-20"
+primaryBlog: maxrohde.com
+summary: Appjangle Tutorial for Java and JavaScript interoperability
 tags:
-  - 'tutorial'
+- tutorial
+title: 'Tutorial: Upload from Java, Download from JavaScript'
 ---
 
 This tutorial describes how a simple unit of data, the text 'Hello, Java!' can be uploaded from a Java application and retrieved with a JavaScript application.
@@ -142,4 +143,3 @@ It's not 'Hello, JavaScript' since here we are loading the node created by the J
 [![](images/scr-appjangle-javascript-deployed.PNG)](http://dl.dropbox.com/u/957046/static/assets/1210/scr-appjangle-javascript-deployed.PNG)
 
 _This tutorial is also published on the [Appjangle blog](http://appjangle.blogspot.com/2013/03/tutorial-upload-from-java-download-from.html)._
-

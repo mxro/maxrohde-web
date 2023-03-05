@@ -1,17 +1,18 @@
 ---
-title: 'The Merits of Slack'
-date: '2020-05-08'
 categories:
-  - 'philosophy'
+- philosophy
+coverImage: pigs-4028140_1920.jpg
+date: "2020-05-08"
+primaryBlog: maxrohde.com
 tags:
-  - 'better-world'
-  - 'economics'
-  - 'happiness'
-  - 'life'
-  - 'productivity'
-  - 'purpose'
-  - 'slack'
-coverImage: 'pigs-4028140_1920.jpg'
+- better-world
+- economics
+- happiness
+- life
+- productivity
+- purpose
+- slack
+title: The Merits of Slack
 ---
 
 There are two meanings we generally assign to the word slack. First, we can understand it as a form of laziness or being negligent. If we say a company has slack safety procedures, we express that these are insufficient and that not enough attention and effort is dedicated to these. There are few merits in this form of slack. However, slack in a more literal sense simply means that something is loose or not tight, such as a rope which is hanging about loosely without much tension. I think that slack in this latter understanding has many merits which I shall discuss in the following.

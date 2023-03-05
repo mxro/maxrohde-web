@@ -1,8 +1,9 @@
 ---
-title: 'Declarative Services, Exceptions and Eclipse PDE'
-date: '2010-08-20'
 categories:
-  - 'java'
+- java
+date: "2010-08-20"
+primaryBlog: maxrohde.com
+title: Declarative Services, Exceptions and Eclipse PDE
 ---
 
 **Problem**

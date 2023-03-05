@@ -1,10 +1,11 @@
 ---
-title: 'New Online Markdown Editor'
-date: '2012-08-23'
 categories:
-  - 'javascript'
+- javascript
+date: "2012-08-23"
+primaryBlog: maxrohde.com
 tags:
-  - 'markdown'
+- markdown
+title: New Online Markdown Editor
 ---
 
 [nodejump](http://nodejump.com) is a small web application to create and publish web pages using the Markdown markup language.

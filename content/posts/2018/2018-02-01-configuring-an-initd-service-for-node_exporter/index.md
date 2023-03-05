@@ -1,13 +1,14 @@
 ---
-title: 'Configuring an initd Service for node_exporter'
-date: '2018-02-01'
 categories:
-  - 'devops'
+- devops
+date: "2018-02-01"
+primaryBlog: maxrohde.com
 tags:
-  - 'grafana'
-  - 'linux'
-  - 'metrics'
-  - 'prometheus'
+- grafana
+- linux
+- metrics
+- prometheus
+title: Configuring an initd Service for node_exporter
 ---
 
 I recently wrote an article showing how to configure [Prometheus and Grafana for easy metrics collection](http://maxrohde.com/2018/01/23/setting-up-prometheus-and-grafana-for-centos-rhel-7-monitoring/). In that article, I assumed that the system which should be monitored would use the [systemd](https://en.wikipedia.org/wiki/Systemd) approach for defining services.

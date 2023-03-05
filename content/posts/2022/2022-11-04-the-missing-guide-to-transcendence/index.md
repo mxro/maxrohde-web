@@ -1,18 +1,19 @@
 ---
-title: 'The Missing Guide to Transcendence'
-publish: true
-id: 'the-missing-guide-to-transcendence'
-coverImage: 'pexels-ekrulila-4402272.jpg'
-date: '2022-11-04'
-tags:
-  - 'transcendence'
-  - 'philosophy'
-  - 'christianity'
-  - 'virtues'
-  - 'religion'
 categories:
-  - 'contemplations'
-  - 'philosophy'
+- contemplations
+- philosophy
+coverImage: pexels-ekrulila-4402272.jpg
+date: "2022-11-04"
+id: the-missing-guide-to-transcendence
+primaryBlog: maxrohde.com
+publish: true
+tags:
+- transcendence
+- philosophy
+- christianity
+- virtues
+- religion
+title: The Missing Guide to Transcendence
 ---
 
 Many religions and self-help books suggest that there is one way to achieve a better and more virtuous life. For instance, there are the ten commandments in Christianity, the Five Pillars of Islam or the Noble Eightfold Path in Buddhism. Moreover, aside from core fundamental teachings, religions often feature thousands more; and of these, very few – if any – are presented as being optional. Islam for instance has the 75 Good Manners – but even these comprise only a small portion of all the rules presented. The Old Testament of Christianity alone is said to [contain more than 600 rules](https://www.abc.net.au/reslib/201407/r1308729_17984331.pdf).

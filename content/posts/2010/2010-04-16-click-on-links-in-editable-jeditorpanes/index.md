@@ -1,8 +1,9 @@
 ---
-title: 'Click on Links in Editable JEditorPanes'
-date: '2010-04-16'
 categories:
-  - 'java'
+- java
+date: "2010-04-16"
+primaryBlog: maxrohde.com
+title: Click on Links in Editable JEditorPanes
 ---
 
 JEditorPane is a Java Swing component, which allows to display and edit rich text. Supported formats are RTF and HTML. When using HTML, the user can click on hyperlinks embedded in the documents. However, this only works when the JEditorPane is not in edit mode (setEditable(false)).

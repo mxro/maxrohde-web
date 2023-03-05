@@ -1,8 +1,9 @@
 ---
-title: 'Deploy Tomcat Applications in Custom Directory'
-date: '2011-05-30'
 categories:
-  - 'java'
+- java
+date: "2011-05-30"
+primaryBlog: maxrohde.com
+title: Deploy Tomcat Applications in Custom Directory
 ---
 
 I have already written about how to [change the directory of applications deployed in tomcat 7](http://maxrohde.com/2011/05/01/change-the-path-of-applications-in-tomcat/) by configuring the server.xml. However, there is an easier way to change the deployment directory using the tomcat manager.

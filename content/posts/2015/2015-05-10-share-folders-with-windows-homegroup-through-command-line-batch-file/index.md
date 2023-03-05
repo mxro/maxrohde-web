@@ -1,6 +1,7 @@
 ---
-title: 'Share Folders With Windows Homegroup Through Command Line / Batch File'
-date: '2015-05-10'
+date: "2015-05-10"
+primaryBlog: maxrohde.com
+title: Share Folders With Windows Homegroup Through Command Line / Batch File
 ---
 
 If you have a folder

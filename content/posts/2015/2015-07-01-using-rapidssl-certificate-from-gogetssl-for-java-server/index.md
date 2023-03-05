@@ -1,10 +1,11 @@
 ---
-title: 'Using RapidSSL Certificate from GoGetSSL for Java Server'
-date: '2015-07-01'
 categories:
-  - 'java'
+- java
+date: "2015-07-01"
+primaryBlog: maxrohde.com
 tags:
-  - 'ssl'
+- ssl
+title: Using RapidSSL Certificate from GoGetSSL for Java Server
 ---
 
 **IMPORTANT**: I found it a lot easier and less error prone to use the GUI tool Portecle to go about generating a SSL certificate/key. You can find my instructions to do so in [another post](http://maxrohde.com/2015/08/03/use-signed-ssl-certificate-with-java/).

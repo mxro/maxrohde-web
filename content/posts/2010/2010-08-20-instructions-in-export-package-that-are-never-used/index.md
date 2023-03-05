@@ -1,8 +1,9 @@
 ---
-title: 'Instructions in Export-Package that are never used'
-date: '2010-08-20'
 categories:
-  - 'java'
+- java
+date: "2010-08-20"
+primaryBlog: maxrohde.com
+title: Instructions in Export-Package that are never used
 ---
 
 **Problem**

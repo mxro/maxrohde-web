@@ -1,21 +1,22 @@
 ---
-title: 'SES, Terraform and TypeScript Starter Project'
-date: '2022-04-26'
 categories:
-  - 'javascript'
-  - 'serverless'
+- javascript
+- serverless
+coverImage: brett-jordan-lpzy4da9aro-unsplash-1.jpg
+date: "2022-04-26"
+primaryBlog: maxrohde.com
 tags:
-  - 'aws'
-  - 'aws-ses'
-  - 'boilerplate'
-  - 'coding'
-  - 'devops'
-  - 'open-source'
-  - 'programming'
-  - 'terraform'
-  - 'tutorial'
-  - 'typescript'
-coverImage: 'brett-jordan-lpzy4da9aro-unsplash-1.jpg'
+- aws
+- aws-ses
+- boilerplate
+- coding
+- devops
+- open-source
+- programming
+- terraform
+- tutorial
+- typescript
+title: SES, Terraform and TypeScript Starter Project
 ---
 
 [Amazon Simple Email Service (SES)](https://aws.amazon.com/ses/) is a serverless service for sending emails from your applications. Like other AWS services, you can send emails with SES using the [AWS REST API](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-rest-api.html) or the [AWS SDKs](https://aws.amazon.com/tools/). In this article, I want to look at how to send emails using SES with [TypeScript](https://www.typescriptlang.org/) specifically.
@@ -165,7 +166,3 @@ Simply select the templates you want to include in the project and then use the 
 ## Help Make the Template and Boilerplate Better
 
 Please raise an issue on [GitHub](https://github.com/goldstack/goldstack/issues) if you have an idea of how to improve this template. Note the [boilerplate](https://github.com/goldstack/ses-terraform-typescript-boilerplate) is automatically generated from the [template](https://github.com/goldstack/goldstack/tree/master/workspaces/templates/packages/email-send) defined in the Goldstack repository.
-
----
-
-Cover image by [Brett Jordan](https://unsplash.com/photos/LPZy4da9aRo)

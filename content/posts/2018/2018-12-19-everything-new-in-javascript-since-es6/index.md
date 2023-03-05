@@ -1,11 +1,12 @@
 ---
-title: 'Everything new in JavaScript since ES6'
-date: '2018-12-19'
 categories:
-  - 'javascript'
+- javascript
+coverImage: js.jpg
+date: "2018-12-19"
+primaryBlog: maxrohde.com
 tags:
-  - 'programming'
-coverImage: 'js.jpg'
+- programming
+title: Everything new in JavaScript since ES6
 ---
 
 It is no secret that things in the tech world change rather rapidly. It's difficult to keep track of everything at the same time. For instance I have been working with JavaScript quite extensively some years ago but recently have been more involved with other tech stacks. Thus I have only followed the developments in the JavaScript world sporadically and was quite surprised by how many things have changed since the days of [JavaScript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do).

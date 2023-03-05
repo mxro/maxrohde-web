@@ -1,6 +1,7 @@
 ---
-title: 'Google’s 10 Minute Test Plan – Attributes'
-date: '2013-03-01'
+date: "2013-03-01"
+primaryBlog: maxrohde.com
+title: Google’s 10 Minute Test Plan – Attributes
 ---
 
 James A. Whittaker, of considerable testing fame, has published both on the [Google Testing blog](http://googletesting.blogspot.co.nz/2011/09/10-minute-test-plan.html) as well as in [IEEE Software](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6148203) an article on the so called '10 Minute Test Plan'. This test plan is also described in detail in the book 'How Google Tests Software' ([Whittaker, Arbon, and Carollo, 2012](http://www.citeulike.org/user/mxro/article/11854866)). I read all three versions and I think the article on IEEE Software is the quickest and most pleasant to read (however, you will either have to pay for the article or be part of an institution that has subscribed to IEEE xplore).

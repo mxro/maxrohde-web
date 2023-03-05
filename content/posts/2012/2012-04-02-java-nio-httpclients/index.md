@@ -1,8 +1,9 @@
 ---
-title: 'Java NIO HttpClients'
-date: '2012-04-02'
 categories:
-  - 'java'
+- java
+date: "2012-04-02"
+primaryBlog: maxrohde.com
+title: Java NIO HttpClients
 ---
 
 Java's non-blocking IO (NIO) is a complex, yet amazingly powerful addition to Java to build scalable and performant network applications. The capabilities of Java NIO are particularly impressive if compared with alternative ways in the JRE to connect to web resources over http. Here is a small collection of libraries and tutorial, which can aid in building asynchronous Java NIO based http clients.

@@ -1,8 +1,9 @@
 ---
-title: 'Key-Value Stores for Java'
-date: '2011-10-24'
 categories:
-  - 'java'
+- java
+date: "2011-10-24"
+primaryBlog: maxrohde.com
+title: Key-Value Stores for Java
 ---
 
 One common theme in discussions of persistence is to be critical of the traditional SQL databases, which have been successfully used in business applications for decades. As alternative to these SQL databases, often so called NoSQL solutions are advocated. NoSQL, essentially, dramatically simplifies the kind of data, which can be managed by the database. Often, a simple key-value store is at the heart of the database. Such stores allow the user to store data in a similar way as it has long been known for the [Map](http://download.oracle.com/javase/6/docs/api/java/util/Map.html) data structure. However, whereas the traditionally Maps have been used in-memory, e.g. to hold data temporarily, which fits on one system's memory, NoSQL key value stores are designed to persist and scale up to millions or billions of key-value records, distributed among potentially thousands of servers. As can be expected, in the Java space, there is not one all-encompassing NoSQL solution but various (mostly free and open source) offerings compete with varying features.

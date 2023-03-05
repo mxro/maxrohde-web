@@ -1,12 +1,13 @@
 ---
-title: 'Infinitest for Eclipse: Quick Tutorial'
-date: '2011-04-09'
-tags:
-  - 'eclipse'
-  - 'java'
-  - 'programming'
 categories:
-  - 'java'
+- java
+date: "2011-04-09"
+primaryBlog: maxrohde.com
+tags:
+- eclipse
+- java
+- programming
+title: 'Infinitest for Eclipse: Quick Tutorial'
 ---
 
 If there are multiple dependent projects in an eclipse workspace, it can be tedious to run the unit test of all these projects manually. Often, a failed unit test caused by a change in a different project than where the unit test is located is only discovered with a significant time gap. From there, it becomes difficult to trace back to the initial change causing the unit test to fail.

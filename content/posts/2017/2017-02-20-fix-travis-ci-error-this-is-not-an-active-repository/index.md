@@ -1,8 +1,9 @@
 ---
-title: "Fix Travis CI Error 'This is not an active repository'"
-date: '2017-02-20'
+date: "2017-02-20"
+primaryBlog: maxrohde.com
 tags:
-  - 'github'
+- github
+title: Fix Travis CI Error 'This is not an active repository'
 ---
 
 ### Problem

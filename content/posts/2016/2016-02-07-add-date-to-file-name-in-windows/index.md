@@ -1,8 +1,9 @@
 ---
-title: 'Add Date to File Name in Windows'
-date: '2016-02-07'
 categories:
-  - 'productivity'
+- productivity
+date: "2016-02-07"
+primaryBlog: maxrohde.com
+title: Add Date to File Name in Windows
 ---
 
 I like to organize my files by prefixing the current date and time to the file name. Yes, sorting files by date created and date modified more or less accomplishes the same thing but I just find it to be more organized this way.

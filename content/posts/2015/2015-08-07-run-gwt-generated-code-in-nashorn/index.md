@@ -1,11 +1,12 @@
 ---
-title: 'Run GWT Generated Code in Nashorn'
-date: '2015-08-07'
 categories:
-  - 'java'
+- java
+date: "2015-08-07"
+primaryBlog: maxrohde.com
 tags:
-  - 'gwt'
-  - 'jdk-nashorn'
+- gwt
+- jdk-nashorn
+title: Run GWT Generated Code in Nashorn
 ---
 
 [GWT](http://www.gwtproject.org/) is a very useful tool to compile Java code into JavaScript.

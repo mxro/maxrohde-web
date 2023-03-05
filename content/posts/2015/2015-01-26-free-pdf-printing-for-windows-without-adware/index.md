@@ -1,11 +1,12 @@
 ---
-title: 'Free PDF Printing for Windows without Adware'
-date: '2015-01-26'
 categories:
-  - 'productivity'
+- productivity
+coverImage: freepdf-print.png
+date: "2015-01-26"
+primaryBlog: maxrohde.com
 tags:
-  - 'tools'
-coverImage: 'freepdf-print.png'
+- tools
+title: Free PDF Printing for Windows without Adware
 ---
 
 Printing from any windows application to a PDF printer is not supported in the most recent Windows versions by default.

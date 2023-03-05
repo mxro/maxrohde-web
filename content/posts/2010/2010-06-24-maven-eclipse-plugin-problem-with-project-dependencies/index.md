@@ -1,8 +1,9 @@
 ---
-title: 'Maven-Eclipse-Plugin: Problem with Project Dependencies'
-date: '2010-06-24'
 categories:
-  - 'java'
+- java
+date: "2010-06-24"
+primaryBlog: maxrohde.com
+title: 'Maven-Eclipse-Plugin: Problem with Project Dependencies'
 ---
 
 **Problem**

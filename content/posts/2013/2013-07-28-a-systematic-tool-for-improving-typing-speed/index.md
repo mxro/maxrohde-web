@@ -1,6 +1,7 @@
 ---
-title: 'A systematic tool for improving typing speed'
-date: '2013-07-28'
+date: "2013-07-28"
+primaryBlog: maxrohde.com
+title: A systematic tool for improving typing speed
 ---
 
 ## Background

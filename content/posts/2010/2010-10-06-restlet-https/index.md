@@ -1,8 +1,9 @@
 ---
-title: 'Restlet HTTPS'
-date: '2010-10-06'
 categories:
-  - 'java'
+- java
+date: "2010-10-06"
+primaryBlog: maxrohde.com
+title: Restlet HTTPS
 ---
 
 **Problem**

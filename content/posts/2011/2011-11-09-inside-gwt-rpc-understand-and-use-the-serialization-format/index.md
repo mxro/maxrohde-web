@@ -1,8 +1,9 @@
 ---
-title: 'Inside GWT RPC: Understand and Use the Serialization Format'
-date: '2011-11-09'
 categories:
-  - 'java'
+- java
+date: "2011-11-09"
+primaryBlog: maxrohde.com
+title: 'Inside GWT RPC: Understand and Use the Serialization Format'
 ---
 
 [GWT RPC](http://code.google.com/webtoolkit/doc/latest/tutorial/RPC.html) is a technology with both great promises as well as many practical pitfalls. On the one hand, GWT RPC magically handles the transport of objects from a Java server to a JavaScript based client, without any need to create and maintain legacy data formats (e.g. in JSON). On the other hand, caused by the architecture of GWT RPC, it is easy to bloat up the size of JavaScript clients, since any for any object transported from server to client, the client needs a type-specific scaffold to instantiate the types in JavaScript. Calling eval(…), in contrast, is a much more lightweight solution. Moreover, serializing and deserializing large object graphs can be a performance hog, both for server and client.

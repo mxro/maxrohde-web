@@ -1,8 +1,9 @@
 ---
-title: 'Install Maven on Windows 7'
-date: '2010-09-27'
 categories:
-  - 'java'
+- java
+date: "2010-09-27"
+primaryBlog: maxrohde.com
+title: Install Maven on Windows 7
 ---
 
 **Steps**

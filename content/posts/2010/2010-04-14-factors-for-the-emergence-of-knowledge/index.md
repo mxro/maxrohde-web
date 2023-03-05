@@ -1,8 +1,9 @@
 ---
-title: 'Factors for the Emergence of Knowledge'
-date: '2010-04-14'
 categories:
-  - 'contemplations'
+- contemplations
+date: "2010-04-14"
+primaryBlog: maxrohde.com
+title: Factors for the Emergence of Knowledge
 ---
 
 Understanding knowledge as rooted in application implicates understanding knowledge as emergent. Knowledge emerges from how people do things in a social environment ([Orlikowski, 2002](http://www.citeulike.org/user/mxro/article/3739501)). Here, I want to suggest a few factors, which have an influence on how knowledge emergences in an organizational context.

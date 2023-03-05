@@ -1,14 +1,15 @@
 ---
-title: 'Memory and Character'
-date: '2019-08-18'
 categories:
-  - 'psychology'
-  - 'quotes'
+- psychology
+- quotes
+coverImage: narrative-794978.jpg
+date: "2019-08-18"
+primaryBlog: maxrohde.com
 tags:
-  - 'character'
-  - 'memory'
-  - 'mnemonic'
-coverImage: 'narrative-794978.jpg'
+- character
+- memory
+- mnemonic
+title: Memory and Character
 ---
 
 I have long been interested in finding ways to improve my memory. I think I generally have quite a poor memory, especially for names, numbers and other 'details'. Our current technologies are not exactly helping as is discussed in the aptly titled "[World Without Mind: The Existential Threat of Big Tech](https://www.nytimes.com/2017/10/02/books/review/world-without-mind-franklin-foer.html)" by Franklin Foer. I have always had a feeling that this is undesirable.

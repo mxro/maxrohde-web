@@ -1,8 +1,9 @@
 ---
-title: 'Maven and Eclipse: New Website'
-date: '2011-09-14'
 categories:
-  - 'java'
+- java
+date: "2011-09-14"
+primaryBlog: maxrohde.com
+title: 'Maven and Eclipse: New Website'
 ---
 
 After having published a number of posts on Maven and integration between Maven and eclipse in particular, I have been thinking for a while to summarize some best practices in a post. I have found that these best practices are actually too long and too interdependent to fit nicely in a blog post. Therefore, I have created a little webpage: [http://eclipsemaven.mxro.de/](http://eclipsemaven.mxro.de 'Eclipse Maven templates').

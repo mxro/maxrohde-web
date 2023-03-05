@@ -1,16 +1,17 @@
 ---
-title: 'The Merits of Slow Reading'
-date: '2022-10-15'
-publish: true
-id: 'the-merits-of-slow-reading'
-coverImage: 'perfecto-capucine-3gC4gBnD3Xs-unsplash.jpg'
-summary: 'Makes an argument that quantity matters little when it comes to reading'
-tags:
-  - 'productivity'
-  - 'reading'
-  - 'mindfulness'
 categories:
-  - 'contemplations'
+- contemplations
+coverImage: perfecto-capucine-3gC4gBnD3Xs-unsplash.jpg
+date: "2022-10-15"
+id: the-merits-of-slow-reading
+primaryBlog: maxrohde.com
+publish: true
+summary: Makes an argument that quantity matters little when it comes to reading
+tags:
+- productivity
+- reading
+- mindfulness
+title: The Merits of Slow Reading
 ---
 
 Most of us would agree that reading is a good way to spend our time. It certainly beats browsing on social media or watching TV. I use [Goodreads](images/https://www.goodreads.com/user/show/65924679-max-rohde) to keep track of the books that I am reading and my reviews for these books. I recently got a notification from them to join the [2022 Reading Challenge](images/https://www.goodreads.com/challenges/show/11636-2022-reading-challenge). The idea of this challenge is to motivate us to read more books; by setting a target of how many books we want to read in a year.

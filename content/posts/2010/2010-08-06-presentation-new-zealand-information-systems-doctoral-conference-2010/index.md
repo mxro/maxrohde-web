@@ -1,8 +1,9 @@
 ---
-title: 'Presentation: New Zealand Information Systems Doctoral Conference 2010'
-date: '2010-08-06'
 categories:
-  - 'contemplations'
+- contemplations
+date: "2010-08-06"
+primaryBlog: maxrohde.com
+title: 'Presentation: New Zealand Information Systems Doctoral Conference 2010'
 ---
 
 [citeulike](http://www.citeulike.org/user/mxro/article/7540570)

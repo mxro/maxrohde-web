@@ -1,19 +1,20 @@
 ---
-title: 'The Four Immeasurable Minds'
-date: '2018-08-28'
 categories:
-  - 'buddhism'
-  - 'philosophy'
+- buddhism
+- philosophy
+coverImage: 1280px-closeup_head_shot_of_giant_gautama_buddha_statue_in_buddha_park_of_ravangla_sikkim.jpg
+date: "2018-08-28"
+primaryBlog: maxrohde.com
 tags:
-  - 'compassion'
-  - 'equanimiy'
-  - 'happiness'
-  - 'joy'
-  - 'life'
-  - 'love'
-  - 'the-four-immeasurable-minds'
-  - 'thich-nhat-hanh'
-coverImage: '1280px-closeup_head_shot_of_giant_gautama_buddha_statue_in_buddha_park_of_ravangla_sikkim.jpg'
+- compassion
+- equanimiy
+- happiness
+- joy
+- life
+- love
+- the-four-immeasurable-minds
+- thich-nhat-hanh
+title: The Four Immeasurable Minds
 ---
 
 I have long had an interest to learn more about Buddhism. Actually I bought myself a book on Buddhism many years ago while I was visiting Thailand. This book did not really grasp my attention and I always wanted to explore this topic further.

@@ -1,13 +1,14 @@
 ---
-title: 'Resize EC2 Volume (without Resizing Partition)'
-date: '2017-03-21'
 categories:
-  - 'linux'
+- linux
+date: "2017-03-21"
+primaryBlog: maxrohde.com
 tags:
-  - 'aws'
-  - 'devops'
-  - 'ec2'
-  - 'programming'
+- aws
+- devops
+- ec2
+- programming
+title: Resize EC2 Volume (without Resizing Partition)
 ---
 
 ### Problem

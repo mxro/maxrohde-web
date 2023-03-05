@@ -1,8 +1,9 @@
 ---
-title: 'Wrap-up: Critical Linnk Functionality'
-date: '2010-04-01'
 categories:
-  - 'contemplations'
+- contemplations
+date: "2010-04-01"
+primaryBlog: maxrohde.com
+title: 'Wrap-up: Critical Linnk Functionality'
 ---
 
 We have extensively tested [Linnk](http://www.linnk.de/). Stemming from this test, along with user feedback received by email, we have compiled the following list of the most wanted features:

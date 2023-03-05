@@ -1,8 +1,9 @@
 ---
-title: 'Java Code Reusability'
-date: '2010-10-11'
 categories:
-  - 'java'
+- java
+date: "2010-10-11"
+primaryBlog: maxrohde.com
+title: Java Code Reusability
 ---
 
 The Java world is in movement. After Oracle‘s purchase of Sun there is a great amount of uncertainty regarding the future of this programming language.

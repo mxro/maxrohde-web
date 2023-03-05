@@ -1,12 +1,13 @@
 ---
-title: 'A Comparison of Data Models in BaaS (Backend-as-a-Service)'
-date: '2014-09-09'
 categories:
-  - 'java'
-  - 'javascript'
+- java
+- javascript
+coverImage: 090914_0208_acomparison5.png
+date: "2014-09-09"
+primaryBlog: maxrohde.com
 tags:
-  - 'firebase'
-coverImage: '090914_0208_acomparison5.png'
+- firebase
+title: A Comparison of Data Models in BaaS (Backend-as-a-Service)
 ---
 
 While Backed-as-a-Service (BaaS) - and their [stepbrothers PaaS](http://blog.cobia.net/cobiacomm/2013/03/15/paas-services-and-backend-as-a-service-baas/) - offerings should sensibly support various [domain-specific data models](http://lostechies.com/jimmybogard/2010/02/04/strengthening-your-domain-a-primer/) for the application they support, these services are inherently built on a 'meta' data model. This meta data model lays the constraints for all domain-specific data and should thus be an important consideration in selecting or not selecting a BaaS solution.

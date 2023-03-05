@@ -1,8 +1,9 @@
 ---
-title: 'Creating Runtime Environments for OSGi Declarative Services in Eclipse'
-date: '2010-05-23'
 categories:
-  - 'java'
+- java
+date: "2010-05-23"
+primaryBlog: maxrohde.com
+title: Creating Runtime Environments for OSGi Declarative Services in Eclipse
 ---
 
 This post is part of a series of posts on java modularity.

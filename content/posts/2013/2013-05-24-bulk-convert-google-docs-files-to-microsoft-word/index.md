@@ -1,6 +1,7 @@
 ---
-title: 'Bulk Convert Google Docs Files to Microsoft Word'
-date: '2013-05-24'
+date: "2013-05-24"
+primaryBlog: maxrohde.com
+title: Bulk Convert Google Docs Files to Microsoft Word
 ---
 
 ## Background
