@@ -37,6 +37,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/email-send"\
       },\
       {\
+        "name": "go-transform-cli",\
+        "reference": "workspace:packages/go-transform-cli"\
+      },\
+      {\
         "name": "web-maxrohde-com",\
         "reference": "workspace:packages/web-maxrohde-com"\
       },\
@@ -52,6 +56,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["db-blog", ["workspace:packages/db-blog"]],\
       ["db-notion", ["workspace:packages/db-notion"]],\
       ["email-send", ["workspace:packages/email-send"]],\
+      ["go-transform-cli", ["workspace:packages/go-transform-cli"]],\
       ["maxrohde-web", ["workspace:."]],\
       ["web-maxrohde-com", ["workspace:packages/web-maxrohde-com"]],\
       ["web-mxro-de", ["workspace:packages/web-mxro-de"]]\
@@ -11793,6 +11798,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["minimatch", "npm:3.0.4"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["go-transform-cli", [\
+        ["workspace:packages/go-transform-cli", {\
+          "packageLocation": "./packages/go-transform-cli/",\
+          "packageDependencies": [\
+            ["go-transform-cli", "workspace:packages/go-transform-cli"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["good-listener", [\

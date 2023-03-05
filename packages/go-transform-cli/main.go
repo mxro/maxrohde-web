@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 
 	"github.com/alecthomas/kong"
-	"gopkg.in/yaml.v2"
-
 	"github.com/gobwas/glob"
+	"github.com/gomarkdown/markdown/parser"
+	"gopkg.in/yaml.v2"
 )
 
 type CLI struct {
@@ -47,19 +47,41 @@ func ReadConfig() *Config {
 	return &config
 }
 
-func (c *CLI) SetPrimaryBlogAction(ctx *kong.Context) error {
+type processorFn func(string) error
+
+func (c *CLI) ProcessFiles(ctx *kong.Context, fn processorFn) error {
 	g := glob.MustCompile(c.SetPrimaryBlog.GlobPattern)
 
 	err := filepath.Walk(ReadConfig().RootDir, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			return err
 		}
-		if !info.IsDir() && g.Match(path) {
-			fmt.Println(path + " is a markdown file")
+		if !info.IsDir() && g.Match(path) && filepath.Ext(path) == ".md" {
+			return fn(path)
 		}
 		return nil
 	})
 	return err
+}
+
+func (c *CLI) SetPrimaryBlogAction(ctx *kong.Context) error {
+	return c.ProcessFiles(ctx, func(path string) error {
+		fmt.Printf("Processing %s\n", path)
+		data, err := ioutil.ReadFile(path)
+		if err != nil {
+			return err
+		}
+		// Create a parser with YAML frontmatter extension
+		p := parser.NewWithExtensions(parser.)
+
+		// Parse markdown and extract frontmatter
+		p.Parse(data)
+		frontmatter := p.FrontMatter()
+
+		fmt.Printf("%v", frontmatter)
+
+		return nil
+	})
 }
 
 func (c *CLI) Run(ctx *kong.Context) error {
