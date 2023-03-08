@@ -22,11 +22,11 @@ type CLI struct {
 	} `cmd:"" help:"Set the primary blog in Markdown files."`
 	SetSecondaryBlogs struct {
 		SecondaryBlogs string `arg:"" help:"The secondary blogs to set. Comma separated."`
-		GlobPattern    string `arg:"" help:"The glob pattern to match files." type:"path"`
+		GlobPattern    string `arg:"" help:"The glob pattern to match files."`
 	} `cmd:"" help:"Set the secondary blogs in Markdown files."`
 	SetAuthors struct {
 		Authors     string `arg:"" help:"The authors for the blog to set. Comma separated."`
-		GlobPattern string `arg:"" help:"The glob pattern to match files." type:"path"`
+		GlobPattern string `arg:"" help:"The glob pattern to match files."`
 	} `cmd:"" help:"Set the authors in Markdown files."`
 }
 
@@ -55,9 +55,10 @@ func ReadConfig() *Config {
 
 type processorFn func(string) error
 
-func (c *CLI) ProcessFiles(ctx *kong.Context, fn processorFn) error {
-	g := glob.MustCompile(c.SetPrimaryBlog.GlobPattern)
+func (c *CLI) ProcessFiles(ctx *kong.Context, pattern string, fn processorFn) error {
+	g := glob.MustCompile(pattern)
 
+	fmt.Println(pattern)
 	err := filepath.Walk(ReadConfig().RootDir, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			return err
@@ -71,7 +72,7 @@ func (c *CLI) ProcessFiles(ctx *kong.Context, fn processorFn) error {
 }
 
 func (c *CLI) SetPrimaryBlogAction(ctx *kong.Context) error {
-	return c.ProcessFiles(ctx, func(path string) error {
+	return c.ProcessFiles(ctx, c.SetPrimaryBlog.GlobPattern, func(path string) error {
 		fmt.Printf("Processing %s\n", path)
 		data, err := os.Open(path)
 		if err != nil {
@@ -102,8 +103,8 @@ func (c *CLI) SetPrimaryBlogAction(ctx *kong.Context) error {
 	})
 }
 
-func (c *CLI) SetAuthor(ctx *kong.Context) error {
-	return c.ProcessFiles(ctx, func(path string) error {
+func (c *CLI) SetAuthorsAction(ctx *kong.Context) error {
+	return c.ProcessFiles(ctx, c.SetAuthors.GlobPattern, func(path string) error {
 		fmt.Printf("Processing %s\n", path)
 		data, err := os.Open(path)
 		if err != nil {
@@ -137,13 +138,11 @@ func (c *CLI) SetAuthor(ctx *kong.Context) error {
 func (c *CLI) Run(ctx *kong.Context) error {
 	switch ctx.Command() {
 	case "set-primary-blog <primary-blog> <glob-pattern>":
-		// fmt.Printf("The primary blog is %s\n", c.SetPrimaryBlog.PrimaryBlog)
 		return c.SetPrimaryBlogAction(ctx)
 	case "set-secondary-blogs <secondary-blogs> <glob-pattern>":
 		return nil
 	case "set-authors <authors> <glob-pattern>":
-		return c.SetAuthor(ctx)
-
+		return c.SetAuthorsAction(ctx)
 	default:
 		return fmt.Errorf("unknown command %s", ctx.Command())
 	}
