@@ -8,6 +8,7 @@ import {
   Table,
   deepCopy,
   CategoryMappingEntity,
+  Post,
 } from 'db-blog';
 import { Entity } from 'dynamodb-toolbox';
 
@@ -87,6 +88,7 @@ function fixAttachmentsLinksInMarkdown(
     `(/_goldstack/static/img/attachments/${postPath}/`
   );
 }
+
 export const publish = async (args: PublishArgs): Promise<void> => {
   const contentDir = args.directoryToScan || config['postsDir'];
   const pattern = `**/*${args.fileNamePattern}*`;
@@ -129,8 +131,11 @@ export const publish = async (args: PublishArgs): Promise<void> => {
         result.path
       );
 
-      return Posts.put({
-        blog: 'maxrohde.com',
+      const postData: Post = {
+        blog: post.metadata.blog,
+        secondaryBlogs: post.metadata.secondaryBlogs
+          ? post.metadata.secondaryBlogs.join(',')
+          : undefined,
         title: post.metadata.title,
         contentHtml: fixedHtml,
         summary:
@@ -144,7 +149,7 @@ export const publish = async (args: PublishArgs): Promise<void> => {
           }).slice(0, 150) + '...',
         path: result.path,
         contentMarkdown: fixedMarkdown,
-        authorEmail: 'max@temp.com',
+        authors: 'max',
         tags: post.metadata.tags ? post.metadata.tags.join(',') : [],
         categories: post.metadata.categories
           ? post.metadata.categories.join(',')
@@ -154,7 +159,12 @@ export const publish = async (args: PublishArgs): Promise<void> => {
           : undefined,
         datePublished: new Date(post.metadata.date).toISOString(),
         canonicalUrl: post.metadata.canonicalUrl,
-      });
+      };
+
+      // publish for primary blog
+      await Posts.put(postData);
+
+      return publishToSecondaryBlogs(postData);
     })
   );
 
@@ -180,6 +190,23 @@ export const publish = async (args: PublishArgs): Promise<void> => {
       );
     })
   );
+
+  async function publishToSecondaryBlogs(post: Post) {
+    if (!post.secondaryBlogs) {
+      return;
+    }
+
+    return Promise.all(
+      post.secondaryBlogs.split(',').map((secondaryBlog) => {
+        return Posts.put({
+          ...post,
+          blog: secondaryBlog,
+          canonicalUrl:
+            post.canonicalUrl || `https://${post.blog}/${post.path}`,
+        });
+      })
+    );
+  }
 
   const CategoryMappings = new Entity({
     ...deepCopy(CategoryMappingEntity),

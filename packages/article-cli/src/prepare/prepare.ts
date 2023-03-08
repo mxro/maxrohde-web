@@ -44,6 +44,9 @@ export async function prepare(args: PrepareArgs): Promise<void> {
       if (!post.metadata.id) {
         throw new Error('Post `id` needs to be provided');
       }
+      if (!post.metadata.blog) {
+        throw new Error('Post `blog` needs to be provided');
+      }
       const year = new Date(post.metadata.date).getFullYear();
       const postDir = `${args.postsDir || config['postsDir']}/${year}/${
         post.metadata.date

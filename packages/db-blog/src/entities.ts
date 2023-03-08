@@ -20,13 +20,14 @@ export function createTable(
 
 export type Post = {
   blog: string;
+  secondaryBlogs?: string;
   path: string;
   title: string;
   coverImage?: string;
   datePublished: string;
   contentHtml: string;
   summary: string;
-  authorEmail: string;
+  authors: string;
   tags?: string;
   categories?: string;
   contentMarkdown: string;
@@ -44,9 +45,10 @@ export const PostEntity = {
       partitionKey: true,
     },
     blog: { type: 'string', required: 'always' },
+    secondaryBlogs: { type: 'string' },
     path: { type: 'string', sortKey: true },
     summary: { type: 'string', required: 'always' },
-    authorEmail: { type: 'string', required: 'always' },
+    authors: { type: 'string', required: 'always' },
     title: { type: 'string', required: 'always' },
     coverImage: { type: 'string' },
     tags: { type: 'string' },

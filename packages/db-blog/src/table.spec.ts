@@ -20,7 +20,7 @@ describe('DynamoDB Table', () => {
     await Posts.put({
       blog: 'blog1',
       title: 'Post 1',
-      authorEmail: 'dummy@dummy.com',
+      authors: 'dummy',
       contentHtml: '<p>Post 1</p>',
       summary: 'summary1',
       contentMarkdown: 'Post 1',
@@ -34,7 +34,7 @@ describe('DynamoDB Table', () => {
       title: 'Post 2',
       path: '2022/09/18/post-2',
       summary: 'summary2',
-      authorEmail: 'dummy@dummy.com',
+      authors: 'dummy',
       contentHtml: '<p>Post 2</p>',
       contentMarkdown: 'Post 2',
       datePublished: '2022-09-18T00:12:39.158Z',
