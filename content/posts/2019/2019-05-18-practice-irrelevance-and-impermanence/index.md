@@ -4,7 +4,7 @@ categories:
 - philosophy
 coverImage: nasa_earthrise_as08-14-2383_apollo_8_1968-12-24.jpg
 date: "2019-05-18"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - enlightenment
 - law

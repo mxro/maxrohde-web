@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2014-03-20"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: CoffeeScript Fat Arrow (=&gt;) explained
 ---
 

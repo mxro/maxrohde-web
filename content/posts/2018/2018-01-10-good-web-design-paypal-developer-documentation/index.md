@@ -1,7 +1,7 @@
 ---
 coverImage: paypal-developer-documentation.png
 date: "2018-01-10"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Good Web Design: PayPal Developer Documentation'
 ---
 

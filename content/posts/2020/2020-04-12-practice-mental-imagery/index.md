@@ -3,7 +3,7 @@ categories:
 - buddhism
 coverImage: mountain-1624284.jpg
 date: "2020-04-12"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - meditation
 - practice

@@ -2,7 +2,7 @@
 categories:
 - linux
 date: "2016-02-09"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - ec2
 - puppet

@@ -3,7 +3,7 @@ categories:
 - philosophy
 coverImage: cave-690348.jpg
 date: "2020-04-04"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - enlightenment
 - life

@@ -2,7 +2,7 @@
 categories:
 - contemplations
 date: "2010-04-04"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Knowledge Networks Project Directions and Assumptions
 ---
 

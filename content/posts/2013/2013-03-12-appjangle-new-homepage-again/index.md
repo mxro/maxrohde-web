@@ -1,6 +1,6 @@
 ---
 date: "2013-03-12"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Appjangle: New Homepage (Again)'
 ---
 

@@ -3,7 +3,7 @@ categories:
 - javascript
 coverImage: date-namer.png
 date: "2018-09-30"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - open-source
 - tools

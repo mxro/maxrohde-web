@@ -1,6 +1,6 @@
 ---
 date: "2013-05-21"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Google Analytics Does Not Load – Shows Yellow Bar
 ---
 

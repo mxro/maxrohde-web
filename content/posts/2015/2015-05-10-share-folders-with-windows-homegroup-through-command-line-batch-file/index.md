@@ -1,6 +1,6 @@
 ---
 date: "2015-05-10"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Share Folders With Windows Homegroup Through Command Line / Batch File
 ---
 

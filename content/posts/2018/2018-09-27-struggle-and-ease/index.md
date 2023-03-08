@@ -3,7 +3,7 @@ categories:
 - philosophy
 coverImage: runners.jpg
 date: "2018-09-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - ease
 - enlightenment

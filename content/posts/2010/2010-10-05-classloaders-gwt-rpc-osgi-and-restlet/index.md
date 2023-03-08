@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-10-05"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Classloaders: GWT RPC, OSGi and Restlet'
 ---
 

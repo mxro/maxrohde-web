@@ -3,7 +3,7 @@ categories:
 - javascript
 coverImage: lautaro-andreani-uysbcu9rp3y-unsplash.jpg
 date: "2022-03-17"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - bootstrap

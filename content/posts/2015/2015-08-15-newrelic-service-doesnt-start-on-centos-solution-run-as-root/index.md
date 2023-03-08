@@ -2,7 +2,7 @@
 categories:
 - linux
 date: "2015-08-15"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'newrelic service doesn’t start on CentOS: Solution Run as Root'
 ---
 

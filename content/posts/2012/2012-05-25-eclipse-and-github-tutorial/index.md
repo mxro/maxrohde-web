@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2012-05-25"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Eclipse and Github Tutorial
 ---
 

@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-02-12"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: GXT vs vanilla GWT Performance
 ---
 

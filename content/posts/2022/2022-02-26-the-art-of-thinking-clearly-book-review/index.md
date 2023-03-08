@@ -3,7 +3,7 @@ categories:
 - psychology
 coverImage: sasha-freemind-pv5weeyxmwu-unsplash.jpg
 date: "2022-02-26"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - book-reviews
 - books

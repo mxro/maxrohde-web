@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2014-01-14"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Copy EntrySet of a HashMap in Java
 ---
 

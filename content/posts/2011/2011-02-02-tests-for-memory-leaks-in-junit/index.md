@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-02-02"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Tests for Memory Leaks in JUnit
 ---
 

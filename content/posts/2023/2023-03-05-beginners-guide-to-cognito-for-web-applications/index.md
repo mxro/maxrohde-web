@@ -7,7 +7,7 @@ categories:
 coverImage: Cognito-Cover.jpg
 date: "2023-03-05"
 id: beginners-guide-to-cognito-for-web-applications
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - cognito
 - serverless

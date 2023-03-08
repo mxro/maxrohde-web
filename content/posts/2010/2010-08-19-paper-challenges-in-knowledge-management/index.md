@@ -2,7 +2,7 @@
 categories:
 - contemplations
 date: "2010-08-19"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Paper: Challenges in Knowledge Management'
 ---
 

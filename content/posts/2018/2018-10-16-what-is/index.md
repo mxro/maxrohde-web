@@ -3,7 +3,7 @@ categories:
 - philosophy
 coverImage: 1280px-van_gogh_-_starry_night.jpg
 date: "2018-10-16"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - buddhism
 - existence

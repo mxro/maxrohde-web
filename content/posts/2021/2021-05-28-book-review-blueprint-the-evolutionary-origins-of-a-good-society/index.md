@@ -4,7 +4,7 @@ categories:
 - psychology
 - society
 date: "2021-05-28"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - book
 - book-review

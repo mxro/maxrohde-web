@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-11-05"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Xtend Tutorial
 ---
 

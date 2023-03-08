@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-05-20"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'GWT setSize(): Do not use “inherit”'
 ---
 

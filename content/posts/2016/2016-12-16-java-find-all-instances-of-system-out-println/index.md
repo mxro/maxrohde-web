@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2016-12-16"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - eclipse
 - programming

@@ -5,7 +5,7 @@ categories:
 - psychology
 coverImage: spiral-1037508.jpg
 date: "2019-06-29"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - happiness
 - quotes

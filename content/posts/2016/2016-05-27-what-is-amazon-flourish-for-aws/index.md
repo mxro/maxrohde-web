@@ -2,7 +2,7 @@
 categories:
 - serverless
 date: "2016-05-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - aws-lambda

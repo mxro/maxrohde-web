@@ -4,7 +4,7 @@ categories:
 - psychology
 coverImage: sunset-675847.jpg
 date: "2021-01-16"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - goals
 - management

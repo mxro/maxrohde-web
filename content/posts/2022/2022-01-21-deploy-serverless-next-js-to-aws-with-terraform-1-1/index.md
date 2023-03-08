@@ -3,7 +3,7 @@ categories:
 - javascript
 coverImage: developer-g0eeed467d_1920.png
 date: "2022-01-21"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - cloudfront

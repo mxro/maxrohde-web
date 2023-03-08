@@ -4,7 +4,7 @@ categories:
 - society
 coverImage: robert_moses_with_battery_bridge_model.jpg
 date: "2019-08-30"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - corruption
 - gorbachev

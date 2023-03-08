@@ -5,7 +5,7 @@ categories:
 coverImage: go_cover.png
 date: "2023-01-28"
 id: tutorial-http-endpoints-with-gcp-and-go
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - gcp
 - cloud-functions

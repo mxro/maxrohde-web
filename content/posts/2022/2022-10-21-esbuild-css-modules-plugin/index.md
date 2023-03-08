@@ -5,7 +5,7 @@ categories:
 coverImage: jeffrey-leung-NYcUkFJuxg0-unsplash.jpg
 date: "2022-10-21"
 id: esbuild-css-modules-plugin
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 summary: esbuild plugin for supporting CSS Modules in React Server-Side Rendering.
 tags:
 - esbuild

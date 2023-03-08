@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2012-03-16"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'GWT: ‘A widget that has an existing parent widget may not be added to the
   detach list’'
 ---

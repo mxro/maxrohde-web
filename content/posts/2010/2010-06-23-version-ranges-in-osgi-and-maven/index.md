@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-06-23"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Version Ranges in OSGi and Maven
 ---
 

@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2014-08-18"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - git
 - github

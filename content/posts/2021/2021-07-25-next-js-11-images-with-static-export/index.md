@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2021-07-25"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - next-js

@@ -2,7 +2,7 @@
 categories:
 - devops
 date: "2017-12-28"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - metrics
 - monitoring

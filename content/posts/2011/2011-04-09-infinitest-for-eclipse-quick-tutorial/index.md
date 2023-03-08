@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-04-09"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - eclipse
 - java

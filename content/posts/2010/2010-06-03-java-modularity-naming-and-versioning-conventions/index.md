@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-06-03"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Java Modularity: Naming and Versioning Conventions'
 ---
 

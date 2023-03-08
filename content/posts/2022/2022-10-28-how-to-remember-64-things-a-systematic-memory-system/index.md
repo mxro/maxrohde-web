@@ -3,7 +3,7 @@ categories:
 - contemplations
 date: "2022-10-28"
 id: how-to-remember-64-things-a-systematic-memory-system
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 publish: true
 summary: Describes a system to remember a list with 64 items using the Loci technique.
 tags:

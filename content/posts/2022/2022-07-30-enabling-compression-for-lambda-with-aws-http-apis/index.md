@@ -4,7 +4,7 @@ categories:
 - serverless
 coverImage: iam_os-pmidin9x1ne-unsplash.jpg
 date: "2022-07-30"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - coding

@@ -2,7 +2,7 @@
 categories:
 - productivity
 date: "2019-04-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - linux
 - productivity

@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-06-20"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Link Collection: Pax Exam'
 ---
 

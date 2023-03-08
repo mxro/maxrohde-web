@@ -3,7 +3,7 @@ categories:
 - java
 - javascript
 date: "2013-03-20"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 summary: Appjangle Tutorial for Java and JavaScript interoperability
 tags:
 - tutorial

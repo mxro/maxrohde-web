@@ -2,7 +2,7 @@
 categories:
 - linux
 date: "2016-10-19"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - virtualbox
 title: Sharing Folders with VirtualBox

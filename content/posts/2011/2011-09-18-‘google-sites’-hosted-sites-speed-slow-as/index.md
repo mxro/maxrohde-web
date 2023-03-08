@@ -1,6 +1,6 @@
 ---
 date: "2011-09-18"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: '‘Google Sites’ hosted Sites Speed: Slow as!'
 ---
 

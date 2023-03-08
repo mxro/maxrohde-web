@@ -3,7 +3,7 @@ categories:
 - aws
 - linux
 date: "2017-03-01"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - mysql
 title: Upgrade MySQL 5.5 to 5.6 on EC2/CentOS/RHEL

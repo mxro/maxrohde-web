@@ -1,6 +1,6 @@
 ---
 date: "2010-05-12"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'NZISDC: The Inaugural New Zealand Information Systems Doctoral Conference'
 ---
 

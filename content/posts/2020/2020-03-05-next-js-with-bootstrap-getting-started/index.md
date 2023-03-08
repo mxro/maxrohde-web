@@ -3,7 +3,7 @@ categories:
 - javascript
 coverImage: banner.png
 date: "2020-03-05"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - bootstrap
 - next-js-framework

@@ -4,7 +4,7 @@ categories:
 - javascript
 coverImage: lambda_handler.png
 date: "2022-01-02"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - aws-lambda

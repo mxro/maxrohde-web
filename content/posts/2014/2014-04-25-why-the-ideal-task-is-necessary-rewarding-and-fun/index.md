@@ -2,7 +2,7 @@
 categories:
 - productivity
 date: "2014-04-25"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - productivity
 - project-management

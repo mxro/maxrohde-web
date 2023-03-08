@@ -2,7 +2,7 @@
 categories:
 - linux
 date: "2012-04-28"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'UNIX Bash: Create incrementally numbered directories'
 ---
 

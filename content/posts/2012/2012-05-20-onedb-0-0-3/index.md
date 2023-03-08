@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2012-05-20"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'onedb 0.0.3: Client API and Documentation Updated'
 ---
 

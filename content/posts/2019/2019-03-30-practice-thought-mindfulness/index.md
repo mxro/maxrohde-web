@@ -4,7 +4,7 @@ categories:
 - psychology
 coverImage: meditation-1384758.jpg
 date: "2019-03-30"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - meditation
 - mind

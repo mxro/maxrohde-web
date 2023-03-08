@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2013-02-11"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - maven
 title: Deploy Maven Project with Netbeans

@@ -2,7 +2,7 @@
 categories:
 - linux
 date: "2015-06-08"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Remove Hard Disk in Linux in 3 Easy Steps
 ---
 

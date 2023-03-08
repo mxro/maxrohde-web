@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-05-29"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Setting up a Maven Repository using Nexus and Artifactory
 ---
 

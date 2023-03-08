@@ -4,7 +4,7 @@ categories:
 - quotes
 coverImage: narrative-794978.jpg
 date: "2019-08-18"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - character
 - memory

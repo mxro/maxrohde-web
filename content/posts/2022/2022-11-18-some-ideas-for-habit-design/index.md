@@ -4,7 +4,7 @@ categories:
 coverImage: pexels-polina-tankilevitch-3735780.jpg
 date: "2022-11-18"
 id: some-ideas-for-habit-design
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 summary: To change one's behaviour is not always easy - what can help is to start
   with some well-designed habits.
 tags:

@@ -5,7 +5,7 @@ categories:
 coverImage: dim-hou-BjD3KhnTIkg-unsplash.jpg
 date: "2022-11-01"
 id: esbuild-ignore-with-comments-plugin
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 summary: esbuild plugin that allows ignoring specific files by adding comments into
   the source code.
 tags:

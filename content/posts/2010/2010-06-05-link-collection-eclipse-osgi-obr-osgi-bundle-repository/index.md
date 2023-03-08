@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-06-05"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Link Collection: Eclipse OSGi OBR (OSGi Bundle Repository)'
 ---
 

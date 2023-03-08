@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2013-01-05"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Fix HtmlUnit Memory Leak
 ---
 

@@ -2,7 +2,7 @@
 categories:
 - contemplations
 date: "2010-04-10"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Software: PDF Split and Merge'
 ---
 

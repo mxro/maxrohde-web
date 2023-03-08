@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-10-24"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Key-Value Stores for Java
 ---
 

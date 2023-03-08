@@ -4,7 +4,7 @@ categories:
 coverImage: page.jpg
 date: "2022-10-15"
 id: quality-vs-quantity-in-writing
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 publish: true
 tags:
 - writing

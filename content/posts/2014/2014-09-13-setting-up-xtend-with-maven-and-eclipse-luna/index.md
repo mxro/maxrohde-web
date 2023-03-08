@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2014-09-13"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - eclipse
 - maven

@@ -3,7 +3,7 @@ categories:
 - contemplations
 - productivity
 date: "2014-11-04"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - habits
 - writing

@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2013-01-02"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Get Free Memory on Unix System in Java
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: "2017-03-14"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - devops

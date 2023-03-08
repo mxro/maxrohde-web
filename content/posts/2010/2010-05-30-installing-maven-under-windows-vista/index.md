@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-05-30"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Installing Maven under Windows Vista
 ---
 

@@ -4,7 +4,7 @@ categories:
 - psychology
 coverImage: forgive_and_ye_shall_be_forgiven.jpg
 date: "2019-04-06"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - christianity
 - enlightenment

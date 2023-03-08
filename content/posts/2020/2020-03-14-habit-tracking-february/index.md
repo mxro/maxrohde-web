@@ -3,7 +3,7 @@ categories:
 - productivity
 coverImage: annotation-2020-03-14-154027.png
 date: "2020-03-14"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - habits
 title: Habit Tracking February

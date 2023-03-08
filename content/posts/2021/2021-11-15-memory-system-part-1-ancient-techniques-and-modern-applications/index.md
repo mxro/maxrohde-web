@@ -3,7 +3,7 @@ categories:
 - philosophy
 coverImage: memory_temple.jpg
 date: "2021-11-15"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - mastery
 - memory

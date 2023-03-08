@@ -1,6 +1,6 @@
 ---
 date: "2013-05-24"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Bulk Convert Google Docs Files to Microsoft Word
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: "2011-11-15"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Amazon EC2 Micro Instance Roundup
 ---
 

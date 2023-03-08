@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-03-02"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'GWT Object Serialization: Problems and (some) workarounds'
 ---
 

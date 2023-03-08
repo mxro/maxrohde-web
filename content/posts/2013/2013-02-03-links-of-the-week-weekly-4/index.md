@@ -1,6 +1,6 @@
 ---
 date: "2013-02-03"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Links of the Week (weekly)
 ---
 

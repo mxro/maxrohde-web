@@ -5,7 +5,7 @@ categories:
 - serverless
 coverImage: construction-1486781.jpg
 date: "2021-11-20"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - aws-lambda

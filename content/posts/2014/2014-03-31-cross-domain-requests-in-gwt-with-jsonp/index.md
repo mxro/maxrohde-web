@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2014-03-31"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - gwt
 title: Cross-Domain Requests in GWT with JSONP

@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-12-11"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Cannot add files to svn ignore in eclipse
 ---
 

@@ -4,7 +4,7 @@ categories:
 - psychology
 coverImage: mind-544404.png
 date: "2019-08-02"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - consciousness
 - life

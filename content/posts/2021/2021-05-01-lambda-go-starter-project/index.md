@@ -3,7 +3,7 @@ categories:
 - devops
 - javascript
 date: "2021-05-01"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - aws-lambda

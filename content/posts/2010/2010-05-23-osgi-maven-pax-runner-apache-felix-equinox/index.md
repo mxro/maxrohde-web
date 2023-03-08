@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-05-23"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: OSGi + Maven + Pax Runner + Apache Felix + Equinox
 ---
 

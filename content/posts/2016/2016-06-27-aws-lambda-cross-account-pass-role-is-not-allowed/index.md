@@ -1,6 +1,6 @@
 ---
 date: "2016-06-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - aws-lambda

@@ -4,7 +4,7 @@ categories:
 - psychology
 coverImage: eugecc80ne_delacroix_-_le_28_juillet._la_libertecc81_guidant_le_peuple.jpg
 date: "2019-07-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - anger
 - emotions

@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-02-25"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Automatic Refresh of Projects in Eclipse
 ---
 

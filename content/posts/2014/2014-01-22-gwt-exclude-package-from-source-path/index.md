@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2014-01-22"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - google-web-toolkit
 - gwt

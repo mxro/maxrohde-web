@@ -2,7 +2,7 @@
 categories:
 - linux
 date: "2017-08-28"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - mysql
 title: Simple MySQL / MariaDB Backup

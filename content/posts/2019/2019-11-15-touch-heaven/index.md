@@ -4,7 +4,7 @@ categories:
 - psychology
 coverImage: michelangelo_-_creation_of_adam_cropped.jpg
 date: "2019-11-15"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - afterlife
 - life

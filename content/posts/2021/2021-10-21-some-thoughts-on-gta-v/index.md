@@ -3,7 +3,7 @@ categories:
 - games
 coverImage: trunk.jpg
 date: "2021-10-21"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - game-review
 - gta-v

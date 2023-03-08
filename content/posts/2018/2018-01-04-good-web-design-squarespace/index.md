@@ -1,7 +1,7 @@
 ---
 coverImage: squarspace.png
 date: "2018-01-04"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Good Web Design: Squarespace'
 ---
 

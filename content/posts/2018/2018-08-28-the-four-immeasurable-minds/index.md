@@ -4,7 +4,7 @@ categories:
 - philosophy
 coverImage: 1280px-closeup_head_shot_of_giant_gautama_buddha_statue_in_buddha_park_of_ravangla_sikkim.jpg
 date: "2018-08-28"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - compassion
 - equanimiy

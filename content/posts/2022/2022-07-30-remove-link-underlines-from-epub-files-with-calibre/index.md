@@ -2,7 +2,7 @@
 categories:
 - coding
 date: "2022-07-30"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - calibre
 - ebooks

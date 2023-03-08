@@ -2,7 +2,7 @@
 categories:
 - linux
 date: "2014-08-19"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - virtualbox
 title: Access Apache on VirtualBox OS from Host OS

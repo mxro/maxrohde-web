@@ -2,7 +2,7 @@
 categories:
 - contemplations
 date: "2010-04-14"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Factors for the Emergence of Knowledge
 ---
 

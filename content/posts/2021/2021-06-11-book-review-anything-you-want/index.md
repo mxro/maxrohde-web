@@ -2,7 +2,7 @@
 categories:
 - book-reviews
 date: "2021-06-11"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - book
 - book-review

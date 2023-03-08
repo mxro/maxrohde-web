@@ -3,7 +3,7 @@ categories:
 - javascript
 coverImage: v2.png
 date: "2019-10-23"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - open-source
 - react

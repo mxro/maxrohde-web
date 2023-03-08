@@ -1,6 +1,6 @@
 ---
 date: "2020-01-15"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Habit Tracking December: Lost in Travel'
 ---
 

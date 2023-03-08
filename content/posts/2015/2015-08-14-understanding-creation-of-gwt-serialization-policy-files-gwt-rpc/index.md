@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2015-08-14"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - gwt
 - programming

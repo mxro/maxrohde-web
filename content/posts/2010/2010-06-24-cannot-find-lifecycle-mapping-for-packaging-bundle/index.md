@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-06-24"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Cannot find lifecycle mapping for packaging: ''bundle''.'
 ---
 

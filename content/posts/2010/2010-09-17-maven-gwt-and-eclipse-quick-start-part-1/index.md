@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-09-17"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Maven, GWT and Eclipse Quick start (Part 1)
 ---
 

@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-09-30"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Functional Java
 ---
 

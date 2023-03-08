@@ -2,7 +2,7 @@
 categories:
 - contemplations
 date: "2010-03-29"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Work Contexts
 ---
 

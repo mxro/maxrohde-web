@@ -83,7 +83,7 @@ func (c *CLI) SetPrimaryBlogAction(ctx *kong.Context) error {
 		// fmt.Printf("The front matter is:\n%#v\n", frontmatterMap)
 		// fmt.Printf("The body size is:\n%v\n", len(body))
 
-		frontmatterMap["primaryBlog"] = c.SetPrimaryBlog.PrimaryBlog
+		frontmatterMap["blog"] = c.SetPrimaryBlog.PrimaryBlog
 
 		y, err := yaml.Marshal(frontmatterMap)
 		if err != nil {

@@ -3,7 +3,7 @@ categories:
 - leadership
 - productivity
 date: "2014-05-19"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - psychology
 title: The Conscious Mind as Trainer

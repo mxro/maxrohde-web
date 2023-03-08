@@ -4,7 +4,7 @@ categories:
 - philosophy
 coverImage: mt-vesuvius.jpg
 date: "2018-09-05"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - economics
 - extinction

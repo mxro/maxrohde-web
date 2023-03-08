@@ -1,6 +1,6 @@
 ---
 date: "2015-05-05"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Free Cloud Based Load Testing Tools
 ---
 

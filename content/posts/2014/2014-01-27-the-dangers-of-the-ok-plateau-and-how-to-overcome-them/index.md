@@ -2,7 +2,7 @@
 categories:
 - productivity
 date: "2014-01-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - daniel-coyle
 - daniel-goleman

@@ -4,7 +4,7 @@ categories:
 - serverless
 coverImage: tobias-fischer-pkbzaheg2ng-unsplash.jpg
 date: "2022-06-10"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - coding

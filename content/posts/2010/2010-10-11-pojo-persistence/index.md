@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-10-11"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: POJO Persistence
 ---
 

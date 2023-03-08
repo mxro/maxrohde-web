@@ -3,7 +3,7 @@ categories:
 - javascript
 coverImage: draggable.png
 date: "2019-10-19"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - open-source
 - react

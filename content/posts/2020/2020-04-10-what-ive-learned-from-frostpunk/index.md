@@ -3,7 +3,7 @@ categories:
 - games
 coverImage: image-3.png
 date: "2020-04-10"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - fate
 - game-review

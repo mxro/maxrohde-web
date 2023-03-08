@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2012-05-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: New Repository for OSGi-ready Maven Artifacts
 ---
 

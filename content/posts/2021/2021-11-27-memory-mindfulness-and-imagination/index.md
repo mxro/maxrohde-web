@@ -5,7 +5,7 @@ categories:
 - psychology
 coverImage: shine-3902368_1920.jpg
 date: "2021-11-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - life
 - meditation

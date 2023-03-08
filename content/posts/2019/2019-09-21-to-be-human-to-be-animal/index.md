@@ -4,7 +4,7 @@ categories:
 - psychology
 coverImage: animal-3892140.jpg
 date: "2019-09-21"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - biology
 - human

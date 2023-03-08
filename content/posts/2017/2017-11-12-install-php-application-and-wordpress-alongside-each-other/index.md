@@ -2,7 +2,7 @@
 categories:
 - linux
 date: "2017-11-12"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - wordpress
 title: Install PHP Application and WordPress Alongside Each Other

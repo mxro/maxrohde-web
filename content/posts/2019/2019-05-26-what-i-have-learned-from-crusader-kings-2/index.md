@@ -3,7 +3,7 @@ categories:
 - games
 coverImage: world.png
 date: "2019-05-26"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - crusader-kings
 - crusader-kings-2

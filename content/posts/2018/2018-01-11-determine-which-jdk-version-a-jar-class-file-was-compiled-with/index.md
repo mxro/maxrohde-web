@@ -3,7 +3,7 @@ categories:
 - java
 coverImage: java_programming_language_logo-svg-e1515987274897.png
 date: "2018-01-11"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - programming
 title: Determine Which JDK Version a JAR/Class File Was Compiled With

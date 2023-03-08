@@ -3,7 +3,7 @@ categories:
 - psychology
 coverImage: astronomical-clock-408306_1920.jpg
 date: "2022-01-16"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - life
 - memory

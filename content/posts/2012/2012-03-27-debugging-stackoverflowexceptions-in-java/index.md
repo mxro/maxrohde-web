@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2012-03-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Debugging StackOverflowExceptions in Java
 ---
 

@@ -2,7 +2,7 @@
 categories:
 - contemplations
 date: "2010-04-06"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Knowledge Network Maturity Framework
 ---
 

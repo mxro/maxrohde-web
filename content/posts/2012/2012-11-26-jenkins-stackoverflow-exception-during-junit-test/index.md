@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2012-11-26"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - jenkins
 - junit

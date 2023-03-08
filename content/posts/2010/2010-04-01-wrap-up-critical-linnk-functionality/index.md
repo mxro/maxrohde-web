@@ -2,7 +2,7 @@
 categories:
 - contemplations
 date: "2010-04-01"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Wrap-up: Critical Linnk Functionality'
 ---
 

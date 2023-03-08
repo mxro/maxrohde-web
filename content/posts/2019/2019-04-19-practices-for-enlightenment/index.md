@@ -5,7 +5,7 @@ categories:
 - psychology
 coverImage: kiyomizu-dera-by-utagawa-hiroshige.jpg
 date: "2019-04-19"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - breathing
 - enlightenment

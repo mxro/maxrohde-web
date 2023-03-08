@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-09-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: SVN Ignore Eclipse Project Files
 ---
 

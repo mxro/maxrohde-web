@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-05-22"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: OSGi + Maven + Declarative Services + eclipse
 ---
 

@@ -4,7 +4,7 @@ categories:
 coverImage: pexels-fauxels-3183197.jpg
 date: "2022-11-14"
 id: how-important-is-work
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 summary: Work is an important part of our lives - but how important should it be?
 tags:
 - work

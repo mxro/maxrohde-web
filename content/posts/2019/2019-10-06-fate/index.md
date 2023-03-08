@@ -5,7 +5,7 @@ categories:
 - psychology
 coverImage: runes-4267425.jpg
 date: "2019-10-06"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - destiny
 - fate

@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2015-07-01"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - ssl
 title: Using RapidSSL Certificate from GoGetSSL for Java Server

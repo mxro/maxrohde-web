@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2014-01-18"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - json
 - review

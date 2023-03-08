@@ -2,7 +2,7 @@
 categories:
 - book-reviews
 date: "2021-05-08"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - book-review
 - learning

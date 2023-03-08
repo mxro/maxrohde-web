@@ -3,7 +3,7 @@ categories:
 - philosophy
 coverImage: be-511557.jpg
 date: "2019-04-20"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - buddhism
 - gratitude

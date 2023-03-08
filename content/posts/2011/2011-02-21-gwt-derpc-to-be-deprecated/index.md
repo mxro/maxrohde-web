@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-02-21"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: GWT deRPC to be Deprecated
 ---
 

@@ -1,7 +1,7 @@
 ---
 coverImage: pexels-realtoughcandycom-11035386.jpg
 date: "2022-08-12"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - coding
 - css

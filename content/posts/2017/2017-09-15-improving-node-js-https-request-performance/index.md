@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2017-09-15"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Improving Node.js https request performance
 ---
 

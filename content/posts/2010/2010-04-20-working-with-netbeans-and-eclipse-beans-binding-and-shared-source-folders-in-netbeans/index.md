@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-04-20"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Working with NetBeans and Eclipse: Beans Binding and Shared Source Folders
   in NetBeans'
 ---

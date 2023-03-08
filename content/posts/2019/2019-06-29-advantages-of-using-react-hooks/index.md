@@ -3,7 +3,7 @@ categories:
 - javascript
 coverImage: screen-shot-2019-06-29-at-5.04.48-pm.png
 date: "2019-06-29"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - functional-programming
 - programming

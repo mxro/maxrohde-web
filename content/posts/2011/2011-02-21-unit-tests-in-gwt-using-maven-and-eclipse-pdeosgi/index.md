@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-02-21"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Unit Tests in GWT (using Maven and eclipse PDE/OSGi)
 ---
 

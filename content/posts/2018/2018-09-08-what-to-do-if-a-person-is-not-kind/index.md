@@ -3,7 +3,7 @@ categories:
 - psychology
 coverImage: jan_de_bray_001.jpg
 date: "2018-09-08"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - happiness
 - kindness

@@ -2,7 +2,7 @@
 categories:
 - contemplations
 date: "2010-04-03"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Google Docs: Ubiquitous Information Authoring and Publishing'
 ---
 

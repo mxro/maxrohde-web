@@ -1,6 +1,6 @@
 ---
 date: "2014-09-08"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - gradle
 - maven

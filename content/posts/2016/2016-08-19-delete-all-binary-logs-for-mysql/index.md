@@ -2,7 +2,7 @@
 categories:
 - linux
 date: "2016-08-19"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - mysql
 title: Delete All Binary Logs for MySQL

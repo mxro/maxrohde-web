@@ -5,7 +5,7 @@ categories:
 - society
 coverImage: rubens_peter_paul_-_the_fall_of_icarus.jpg
 date: "2018-10-12"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - happinnes
 - life

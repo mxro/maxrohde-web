@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-05-01"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Change the path of applications in Tomcat
 ---
 

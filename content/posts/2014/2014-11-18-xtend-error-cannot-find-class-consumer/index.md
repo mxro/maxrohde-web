@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2014-11-18"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Xtend Error: Cannot find class Consumer'
 ---
 

@@ -4,7 +4,7 @@ categories:
 coverImage: pexels-veeterzy-38136.jpg
 date: "2022-11-01"
 id: guidelines-for-fictional-worlds
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 publish: true
 tags:
 - writing

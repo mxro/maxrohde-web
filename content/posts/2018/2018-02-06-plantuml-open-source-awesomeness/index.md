@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2018-02-06"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - open-source
 title: PlantUML (Open Source Awesomeness)

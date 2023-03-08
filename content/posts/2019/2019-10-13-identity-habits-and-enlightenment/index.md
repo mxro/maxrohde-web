@@ -5,7 +5,7 @@ categories:
 - psychology
 coverImage: chimpanzee-3703230.jpg
 date: "2019-10-13"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - habits
 - identity

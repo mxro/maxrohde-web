@@ -4,7 +4,7 @@ categories:
 coverImage: pexels-cao-haiyun-5765826.jpg
 date: "2022-10-29"
 id: levels-of-enlightenment
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 publish: true
 summary: Argues that enlightenment is not attained absolutely. Instead it is achieved
   in steps, including plenty of backsliding.

@@ -1,6 +1,6 @@
 ---
 date: "2018-10-05"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - github
 title: Move git repository

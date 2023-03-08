@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-05-25"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Java Modularity Tutorials (OSGi, Declarative Services and Maven)
 ---
 

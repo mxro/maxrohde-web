@@ -1,6 +1,6 @@
 ---
 date: "2021-10-05"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 title: Amazon Transcribe for Dictation

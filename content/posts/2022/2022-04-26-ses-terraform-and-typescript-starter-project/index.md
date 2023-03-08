@@ -4,7 +4,7 @@ categories:
 - serverless
 coverImage: brett-jordan-lpzy4da9aro-unsplash-1.jpg
 date: "2022-04-26"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - aws-ses

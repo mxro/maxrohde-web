@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-06-06"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'OSGi: Libraries Requiring Access to Bundle ClassLoader'
 ---
 

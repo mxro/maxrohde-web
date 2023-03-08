@@ -4,7 +4,7 @@ categories:
 coverImage: pexels-netaly-reshef-191070.jpg
 date: "2022-11-19"
 id: merits-of-suffering
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 summary: No one likes to suffer; but suffering is often the portal to a richer life.
 tags:
 - joy

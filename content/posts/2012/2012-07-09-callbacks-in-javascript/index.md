@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2012-07-09"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Callbacks in JavaScript
 ---
 

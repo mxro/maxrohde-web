@@ -3,7 +3,7 @@ categories:
 - javascript
 coverImage: untitled-drawing.png
 date: "2021-02-20"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - aws-lambda

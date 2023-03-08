@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-09-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: JDepend Plugin for Eclipse
 ---
 

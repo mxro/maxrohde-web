@@ -4,7 +4,7 @@ categories:
 coverImage: pexels-markus-spiske-4439901.jpg
 date: "2023-01-06"
 id: fixing-next-js-error-next-config-options-detected
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 publish: true
 tags:
 - nextjs

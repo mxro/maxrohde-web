@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-09-03"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Java RPC: An Overview'
 ---
 

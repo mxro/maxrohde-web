@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2018-01-05"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - devops
 - jenkins

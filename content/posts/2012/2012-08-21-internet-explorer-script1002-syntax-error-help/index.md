@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2012-08-21"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Internet Explorer ‘SCRIPT1002: Syntax error’: Help!?!'
 ---
 

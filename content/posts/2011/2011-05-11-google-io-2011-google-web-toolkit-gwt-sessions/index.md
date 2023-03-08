@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-05-11"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Google I/O 2011 Google Web Toolkit (GWT) Sessions
 ---
 

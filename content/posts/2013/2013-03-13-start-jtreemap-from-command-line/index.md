@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2013-03-13"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Start JTreeMap from Command Line
 ---
 

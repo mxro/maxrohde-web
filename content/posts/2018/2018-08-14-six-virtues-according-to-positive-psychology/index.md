@@ -3,7 +3,7 @@ categories:
 - psychology
 coverImage: 1280px-anton_francesco_dello_scheggia_-_the_seven_virtues_-_google_art_project.jpg
 date: "2018-08-14"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - happiness
 - meaning

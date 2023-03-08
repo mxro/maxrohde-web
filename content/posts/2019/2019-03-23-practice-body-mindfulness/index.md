@@ -4,7 +4,7 @@ categories:
 - psychology
 coverImage: 0_the_vitruvian_man_-_by_leonardo_da_vinci.jpg
 date: "2019-03-23"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - breathing
 - meditation

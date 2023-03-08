@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2012-08-08"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Jangle Java: Synchronization'
 ---
 

@@ -5,7 +5,7 @@ categories:
 - psychology
 coverImage: hand-2223109.jpg
 date: "2019-07-07"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - economics
 - health

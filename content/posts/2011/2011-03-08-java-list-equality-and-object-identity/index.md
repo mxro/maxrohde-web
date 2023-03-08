@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-03-08"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Java List Equality and Object Identity
 ---
 

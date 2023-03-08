@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2012-05-06"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'onedb Tutorial: Getting Started and First Steps'
 ---
 

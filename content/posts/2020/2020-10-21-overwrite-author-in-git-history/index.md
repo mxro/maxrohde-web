@@ -1,7 +1,7 @@
 ---
 coverImage: image.png
 date: "2020-10-21"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - coding
 - git

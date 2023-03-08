@@ -2,7 +2,7 @@
 categories:
 - productivity
 date: "2015-01-29"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - productivity
 title: Free Cloud CRM for Small Business

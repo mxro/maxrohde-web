@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2014-01-31"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Embed HTML Code in JavaScript File
 ---
 

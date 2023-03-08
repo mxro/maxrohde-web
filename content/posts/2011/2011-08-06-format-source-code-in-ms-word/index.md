@@ -1,6 +1,6 @@
 ---
 date: "2011-08-06"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Format Source Code in MS Word
 ---
 

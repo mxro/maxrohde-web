@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2013-09-06"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - netty
 - ssl

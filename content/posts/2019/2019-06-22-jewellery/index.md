@@ -4,7 +4,7 @@ categories:
 - philosophy
 coverImage: gold-1369453.jpg
 date: "2019-06-22"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - art
 - environment

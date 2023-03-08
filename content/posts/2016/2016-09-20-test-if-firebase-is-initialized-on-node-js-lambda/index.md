@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2016-09-20"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - firebase
 - node-js

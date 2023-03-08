@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2019-10-25"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - open-source
 - three-js

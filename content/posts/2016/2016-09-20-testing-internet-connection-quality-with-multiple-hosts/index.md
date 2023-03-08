@@ -1,6 +1,6 @@
 ---
 date: "2016-09-20"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Testing Internet Connection Quality (with multiple hosts)
 ---
 

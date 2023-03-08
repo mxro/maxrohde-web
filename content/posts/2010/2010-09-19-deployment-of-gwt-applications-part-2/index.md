@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-09-19"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Deployment of GWT Applications (Part 2)
 ---
 

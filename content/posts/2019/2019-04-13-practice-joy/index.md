@@ -4,7 +4,7 @@ categories:
 - psychology
 coverImage: the_roses_of_heliogabalus.jpg
 date: "2019-04-13"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - happiness
 - joy

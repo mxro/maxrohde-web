@@ -2,7 +2,7 @@
 categories:
 - contemplations
 date: "2010-08-06"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Presentation: New Zealand Information Systems Doctoral Conference 2010'
 ---
 

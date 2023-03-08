@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-10-22"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Maven: Compile all projects in eclipse workspace'
 ---
 

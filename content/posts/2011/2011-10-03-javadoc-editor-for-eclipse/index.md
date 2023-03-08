@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-10-03"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: JavaDoc Editor for eclipse
 ---
 

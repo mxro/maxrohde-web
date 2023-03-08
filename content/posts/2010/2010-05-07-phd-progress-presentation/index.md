@@ -2,7 +2,7 @@
 categories:
 - contemplations
 date: "2010-05-07"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: PhD Progress Presentation
 ---
 

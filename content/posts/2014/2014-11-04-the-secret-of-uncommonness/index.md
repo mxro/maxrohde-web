@@ -2,7 +2,7 @@
 categories:
 - contemplations
 date: "2014-11-04"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - writing
 title: The Secret of Uncommonness

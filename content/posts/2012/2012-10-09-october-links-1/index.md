@@ -1,6 +1,6 @@
 ---
 date: "2012-10-09"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: October Links 1
 ---
 

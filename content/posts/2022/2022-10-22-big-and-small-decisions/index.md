@@ -4,7 +4,7 @@ categories:
 coverImage: pexels-pixabay-33535.jpg
 date: "2022-10-22"
 id: big-and-small-decisions
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 publish: true
 summary: Discusses the differences between deliberate ('big') and subconsious ('small')
   decisions.

@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-02-16"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Serializing Immutable Objects in GWT
 ---
 

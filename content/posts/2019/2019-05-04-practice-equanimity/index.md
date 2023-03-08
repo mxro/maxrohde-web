@@ -5,7 +5,7 @@ categories:
 - psychology
 coverImage: coast-192979.jpg
 date: "2019-05-04"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - equanimity
 - life

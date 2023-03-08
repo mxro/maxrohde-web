@@ -1,7 +1,7 @@
 ---
 coverImage: notion-quotes-1.png
 date: "2020-04-04"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - habits
 - knowledge-management

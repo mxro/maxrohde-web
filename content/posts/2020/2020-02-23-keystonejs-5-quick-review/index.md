@@ -3,7 +3,7 @@ categories:
 - javascript
 coverImage: keystone-1.png
 date: "2020-02-23"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - graphql
 - keystonejs

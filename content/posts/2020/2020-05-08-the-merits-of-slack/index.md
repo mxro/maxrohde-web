@@ -3,7 +3,7 @@ categories:
 - philosophy
 coverImage: pigs-4028140_1920.jpg
 date: "2020-05-08"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - better-world
 - economics

@@ -1,6 +1,6 @@
 ---
 date: "2022-06-10"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - cloudfront

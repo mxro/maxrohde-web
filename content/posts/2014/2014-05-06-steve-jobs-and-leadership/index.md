@@ -2,7 +2,7 @@
 categories:
 - leadership
 date: "2014-05-06"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - isaacson
 - steve-jobs

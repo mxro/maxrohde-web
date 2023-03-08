@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2021-01-30"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - aws-s3

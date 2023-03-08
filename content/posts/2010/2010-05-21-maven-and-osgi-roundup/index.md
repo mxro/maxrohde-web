@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-05-21"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Maven and OSGi Roundup
 ---
 

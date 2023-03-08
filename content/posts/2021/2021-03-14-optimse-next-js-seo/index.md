@@ -3,7 +3,7 @@ categories:
 - javascript
 coverImage: internet-search-engine-1433323.jpg
 date: "2021-03-14"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - next-js-framework
 - programming

@@ -4,7 +4,7 @@ categories:
 coverImage: perfecto-capucine-3gC4gBnD3Xs-unsplash.jpg
 date: "2022-10-15"
 id: the-merits-of-slow-reading
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 publish: true
 summary: Makes an argument that quantity matters little when it comes to reading
 tags:

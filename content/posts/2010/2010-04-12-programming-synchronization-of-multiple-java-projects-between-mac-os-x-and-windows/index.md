@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-04-12"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Programming: Synchronization of Multiple Java Projects between Mac OS X and Windows'
 ---
 

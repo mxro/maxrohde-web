@@ -4,7 +4,7 @@ categories:
 - javascript
 coverImage: 090914_0208_acomparison5.png
 date: "2014-09-09"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - firebase
 title: A Comparison of Data Models in BaaS (Backend-as-a-Service)

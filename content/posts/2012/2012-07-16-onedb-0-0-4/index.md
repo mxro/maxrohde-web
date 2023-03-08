@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2012-07-16"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: onedb 0.0.4
 ---
 

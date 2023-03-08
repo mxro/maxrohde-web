@@ -1,6 +1,6 @@
 ---
 date: "2012-10-20"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Design Principles for Mobile Apps: (1) Simplicity'
 ---
 

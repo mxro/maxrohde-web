@@ -4,7 +4,7 @@ categories:
 coverImage: pexels-luis-dalvan-3978594.jpg
 date: "2022-11-13"
 id: practice-mind-focus-meditation
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 summary: Describes a mediation practice in which the mind is directed to the body,
   surroundings and interconnectedness.
 tags:

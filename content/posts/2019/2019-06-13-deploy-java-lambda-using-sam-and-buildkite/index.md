@@ -4,7 +4,7 @@ categories:
 - java
 coverImage: screen-shot-2019-06-14-at-7.18.14-am.png
 date: "2019-06-13"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - aws-lambda

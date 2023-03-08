@@ -5,7 +5,7 @@ categories:
 - psychology
 coverImage: elephant-4120822.jpg
 date: "2019-05-11"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - christianity
 - happiness

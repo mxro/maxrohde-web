@@ -1,6 +1,6 @@
 ---
 date: "2017-01-18"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - virtualbox
 title: 'Cannot Install VirtualBox Guest Additions: Installer Hangs'

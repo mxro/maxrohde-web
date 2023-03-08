@@ -1,7 +1,7 @@
 ---
 coverImage: discobolus_kleomelos_louvre_g111.jpg
 date: "2019-04-19"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - exercise
 - exercises

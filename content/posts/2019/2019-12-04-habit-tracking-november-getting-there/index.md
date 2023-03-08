@@ -3,7 +3,7 @@ categories:
 - productivity
 coverImage: img_0716.jpg
 date: "2019-12-04"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - exercise
 - habits

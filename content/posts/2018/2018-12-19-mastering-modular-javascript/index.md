@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2018-12-19"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - programming
 title: Mastering Modular JavaScript

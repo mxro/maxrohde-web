@@ -3,7 +3,7 @@ categories:
 - java
 coverImage: jenkins.png
 date: "2018-01-05"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - jenkins
 - open-source

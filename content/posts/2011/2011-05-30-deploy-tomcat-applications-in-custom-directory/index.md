@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-05-30"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Deploy Tomcat Applications in Custom Directory
 ---
 

@@ -4,7 +4,7 @@ categories:
 - psychology
 coverImage: monotony-4565247_1920.jpg
 date: "2021-08-25"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - habits
 - life

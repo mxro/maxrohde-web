@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-09-25"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: GWT + OSGi + Maven
 ---
 

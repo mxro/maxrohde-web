@@ -1,6 +1,6 @@
 ---
 date: "2014-11-12"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Windows Explorer New: Add File Types and Templates'
 ---
 

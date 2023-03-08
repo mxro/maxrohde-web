@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2012-08-23"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Beware of BootstrapCDN :(
 ---
 

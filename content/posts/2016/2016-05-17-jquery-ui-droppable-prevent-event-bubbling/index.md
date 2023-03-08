@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2016-05-17"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'JQuery UI Droppable: Prevent Event Bubbling'
 ---
 

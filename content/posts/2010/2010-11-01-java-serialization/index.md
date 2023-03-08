@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-11-01"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Java Serialization
 ---
 

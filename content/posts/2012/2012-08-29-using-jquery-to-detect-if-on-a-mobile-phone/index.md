@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2012-08-29"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - jquery
 - mobile

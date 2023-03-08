@@ -5,7 +5,7 @@ categories:
 - society
 coverImage: hands.jpg
 date: "2021-05-28"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - charity
 - essay

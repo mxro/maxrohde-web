@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-05-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'IdentityHashMap in Google Web Toolkit (GWT): String Identity'
 ---
 

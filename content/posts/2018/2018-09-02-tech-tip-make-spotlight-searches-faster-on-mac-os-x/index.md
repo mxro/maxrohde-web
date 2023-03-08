@@ -1,6 +1,6 @@
 ---
 date: "2018-09-02"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Tech Tip: Make Spotlight Searches Faster on Mac OS X'
 ---
 

@@ -6,7 +6,7 @@ categories:
 - society
 coverImage: watch-4638673.jpg
 date: "2021-09-10"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - life
 - school

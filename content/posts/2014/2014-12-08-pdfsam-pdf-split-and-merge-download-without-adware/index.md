@@ -1,6 +1,6 @@
 ---
 date: "2014-12-08"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'pdfsam/ PDF Split and Merge: Download without Adware'
 ---
 

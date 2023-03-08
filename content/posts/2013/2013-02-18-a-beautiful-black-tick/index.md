@@ -1,6 +1,6 @@
 ---
 date: "2013-02-18"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: A beautiful Black Tick
 ---
 

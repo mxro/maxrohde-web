@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-05-20"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: NetBeans Application Platform Footprint (NetBeans 6.9 Beta)
 ---
 

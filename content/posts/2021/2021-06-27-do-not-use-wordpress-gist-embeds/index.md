@@ -2,7 +2,7 @@
 categories:
 - productivity
 date: "2021-06-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - coding
 - github

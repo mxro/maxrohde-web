@@ -4,7 +4,7 @@ categories:
 - serverless
 coverImage: jessica-johnston-nnh2l-k77nc-unsplash.jpg
 date: "2022-04-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - aws-s3

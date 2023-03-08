@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-06-01"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Eclipse PDE and Maven
 ---
 

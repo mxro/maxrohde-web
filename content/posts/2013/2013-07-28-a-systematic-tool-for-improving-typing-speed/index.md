@@ -1,6 +1,6 @@
 ---
 date: "2013-07-28"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: A systematic tool for improving typing speed
 ---
 

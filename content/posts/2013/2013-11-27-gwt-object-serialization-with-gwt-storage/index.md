@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2013-11-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - gwt
 title: GWT Object Serialization with gwt-storage

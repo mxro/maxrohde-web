@@ -2,7 +2,7 @@
 categories:
 - linux
 date: "2018-02-01"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - devops
 title: Easy VPS Backup

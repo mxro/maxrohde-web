@@ -1,6 +1,6 @@
 ---
 date: "2014-11-25"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - questions
 - writing

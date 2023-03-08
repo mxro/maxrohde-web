@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2014-01-14"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'CoffeeKup: Add Class to Elements'
 ---
 

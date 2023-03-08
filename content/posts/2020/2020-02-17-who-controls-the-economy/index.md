@@ -3,7 +3,7 @@ categories:
 - politics
 coverImage: bills-496229.jpg
 date: "2020-02-17"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - economics
 - economy

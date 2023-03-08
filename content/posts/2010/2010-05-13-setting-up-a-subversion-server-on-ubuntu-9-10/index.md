@@ -1,6 +1,6 @@
 ---
 date: "2010-05-13"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Setting up a Subversion Server on Ubuntu 9.10
 ---
 

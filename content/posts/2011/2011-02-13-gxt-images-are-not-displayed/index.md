@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-02-13"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: GXT Images are not displayed
 ---
 

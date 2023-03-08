@@ -2,7 +2,7 @@
 categories:
 - contemplations
 date: "2010-09-10"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: An analysis of research in computing disciplines
 ---
 

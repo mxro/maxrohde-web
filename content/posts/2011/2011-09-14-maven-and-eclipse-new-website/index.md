@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-09-14"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Maven and Eclipse: New Website'
 ---
 

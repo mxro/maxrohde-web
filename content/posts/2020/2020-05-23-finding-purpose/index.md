@@ -5,7 +5,7 @@ categories:
 - psychology
 coverImage: long-eared-owl-2118554.jpg
 date: "2020-05-23"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - happiness
 - life

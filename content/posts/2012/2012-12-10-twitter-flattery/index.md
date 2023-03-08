@@ -1,6 +1,6 @@
 ---
 date: "2012-12-10"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Twitter Flattery?
 ---
 

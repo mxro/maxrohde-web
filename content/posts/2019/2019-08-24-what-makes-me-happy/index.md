@@ -5,7 +5,7 @@ categories:
 - psychology
 coverImage: elephant-111695.jpg
 date: "2019-08-24"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - happiness
 - life

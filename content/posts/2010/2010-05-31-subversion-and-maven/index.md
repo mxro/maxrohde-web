@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-05-31"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Subversion and Maven
 ---
 

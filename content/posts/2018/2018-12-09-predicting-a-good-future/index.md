@@ -6,7 +6,7 @@ categories:
 - society
 coverImage: the_oracle.jpg
 date: "2018-12-09"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - environment
 - equality

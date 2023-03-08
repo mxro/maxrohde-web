@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2012-12-13"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - tutorial
 title: 'Java Get Process Id: Three Approaches'

@@ -3,7 +3,7 @@ categories:
 - psychology
 coverImage: meditation-2214532.jpg
 date: "2019-07-06"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - breathing
 - health

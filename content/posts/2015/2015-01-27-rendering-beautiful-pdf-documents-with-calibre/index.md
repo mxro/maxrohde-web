@@ -1,6 +1,6 @@
 ---
 date: "2015-01-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - productivity
 title: Rendering Beautiful PDF Documents with Calibre

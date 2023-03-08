@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-04-16"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Click on Links in Editable JEditorPanes
 ---
 

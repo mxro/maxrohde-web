@@ -2,7 +2,7 @@
 categories:
 - contemplations
 date: "2010-05-04"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Computer Supported Knowledge Network Interaction WORKING PAPER
 ---
 

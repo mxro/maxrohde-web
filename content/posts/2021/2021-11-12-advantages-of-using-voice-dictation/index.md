@@ -1,7 +1,7 @@
 ---
 coverImage: ciceron_denuncia_a_catilina_por_cesare_maccari.jpg
 date: "2021-11-12"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - dictation
 - mastery

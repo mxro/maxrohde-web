@@ -4,7 +4,7 @@ categories:
 - javascript
 coverImage: serverless-api-architecture.png
 date: "2022-01-04"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - coding

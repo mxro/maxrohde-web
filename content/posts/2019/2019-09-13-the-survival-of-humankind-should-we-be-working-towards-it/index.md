@@ -5,7 +5,7 @@ categories:
 - society
 coverImage: art-711273.jpg
 date: "2019-09-13"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - america
 - economics

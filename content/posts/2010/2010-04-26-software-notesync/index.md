@@ -2,7 +2,7 @@
 categories:
 - contemplations
 date: "2010-04-26"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Software: NoteSync
 ---
 

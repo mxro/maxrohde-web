@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-03-01"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Gwt and Maven Jetty Plugin
 ---
 

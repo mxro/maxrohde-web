@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-08-20"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Instructions in Export-Package that are never used
 ---
 

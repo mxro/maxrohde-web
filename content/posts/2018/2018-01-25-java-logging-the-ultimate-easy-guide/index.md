@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2018-01-25"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - devops
 - log4j

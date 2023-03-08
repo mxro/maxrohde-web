@@ -3,7 +3,7 @@ categories:
 - philosophy
 coverImage: old-woman-574278.jpg
 date: "2019-12-08"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - death
 - immortality

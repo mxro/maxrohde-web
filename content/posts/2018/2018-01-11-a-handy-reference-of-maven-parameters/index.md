@@ -3,7 +3,7 @@ categories:
 - java
 coverImage: maven-logo-black-on-white.png
 date: "2018-01-11"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - maven
 title: A Handy Reference of Maven Parameters

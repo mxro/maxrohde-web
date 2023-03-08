@@ -2,7 +2,7 @@
 categories:
 - linux
 date: "2015-04-29"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - java
 - puppet

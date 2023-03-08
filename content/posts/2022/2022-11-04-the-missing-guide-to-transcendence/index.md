@@ -5,7 +5,7 @@ categories:
 coverImage: pexels-ekrulila-4402272.jpg
 date: "2022-11-04"
 id: the-missing-guide-to-transcendence
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 publish: true
 tags:
 - transcendence

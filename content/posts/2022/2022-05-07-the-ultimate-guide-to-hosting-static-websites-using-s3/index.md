@@ -4,7 +4,7 @@ categories:
 - serverless
 coverImage: florian-olivo-4hbj-eymz1o-unsplash.jpg
 date: "2022-05-07"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - amazon-route-53
 - aws

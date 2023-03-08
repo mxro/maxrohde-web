@@ -2,7 +2,7 @@
 categories:
 - productivity
 date: "2014-12-02"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - happiness
 - life

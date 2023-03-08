@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-06-06"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Slow Startup for Swing Applications in Eclipse Equinox
 ---
 

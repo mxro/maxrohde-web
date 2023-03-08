@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2013-03-26"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - programming
 - review

@@ -3,7 +3,7 @@ categories:
 - politics
 coverImage: audience-868074.jpg
 date: "2019-06-12"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - altruism
 - celebrity

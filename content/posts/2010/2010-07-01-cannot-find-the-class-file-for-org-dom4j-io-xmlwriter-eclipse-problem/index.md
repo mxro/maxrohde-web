@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-07-01"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Cannot find the class file for org.dom4j.io.XMLWriter (Eclipse Problem)
 ---
 

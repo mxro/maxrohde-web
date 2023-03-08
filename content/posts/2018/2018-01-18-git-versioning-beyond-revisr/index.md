@@ -1,7 +1,7 @@
 ---
 coverImage: info.png
 date: "2018-01-18"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - git
 - wordpress

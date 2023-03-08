@@ -2,7 +2,7 @@
 categories:
 - productivity
 date: "2016-02-07"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Add Date to File Name in Windows
 ---
 

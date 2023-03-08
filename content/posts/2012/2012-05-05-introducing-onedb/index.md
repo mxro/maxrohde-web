@@ -3,7 +3,7 @@ categories:
 - contemplations
 - java
 date: "2012-05-05"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Introducing onedb: Connect Small Data in the Cloud'
 ---
 

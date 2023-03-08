@@ -2,7 +2,7 @@
 categories:
 - contemplations
 date: "2010-07-18"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Presentation: PhD Proposal and Feedback Doctoral Consortium PACIS 2010'
 ---
 

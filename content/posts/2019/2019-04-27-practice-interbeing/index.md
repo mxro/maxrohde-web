@@ -4,7 +4,7 @@ categories:
 - philosophy
 coverImage: sunrise-over-the-earth.jpg
 date: "2019-04-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - interbeing
 - practice

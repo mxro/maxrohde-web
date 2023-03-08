@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-04-02"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Good and Bad Knowledge Work Practices
 ---
 

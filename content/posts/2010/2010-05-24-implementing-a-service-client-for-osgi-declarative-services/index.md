@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-05-24"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Implementing a Service Client for OSGi Declarative Services
 ---
 

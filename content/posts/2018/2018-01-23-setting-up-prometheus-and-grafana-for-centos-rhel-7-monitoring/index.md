@@ -2,7 +2,7 @@
 categories:
 - linux
 date: "2018-01-23"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - devops
 - grafana

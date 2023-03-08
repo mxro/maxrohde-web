@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2013-02-12"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - github
 title: Appjangle First Showcase Completed!

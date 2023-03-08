@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-06-29"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Maven Eclipse Plugin and Eclipse PDE: The Right Configuration'
 ---
 

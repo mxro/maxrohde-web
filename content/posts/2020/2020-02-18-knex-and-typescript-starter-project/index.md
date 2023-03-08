@@ -3,7 +3,7 @@ categories:
 - javascript
 coverImage: annotation-2020-02-18-201721.png
 date: "2020-02-18"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - programming
 - typescript

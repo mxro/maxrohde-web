@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-10-28"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Java Object Serialization and Deserialization
 ---
 

@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-11-26"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Virtual File Systems (VFS) in Java
 ---
 

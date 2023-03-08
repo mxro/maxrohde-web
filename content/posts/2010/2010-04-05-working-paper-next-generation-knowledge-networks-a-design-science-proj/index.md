@@ -2,7 +2,7 @@
 categories:
 - contemplations
 date: "2010-04-05"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Working Paper: Next Generation Knowledge Networks: A Design Science Project'
 ---
 

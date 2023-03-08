@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2012-05-15"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: A Practical Guide on Node Types in onedb
 ---
 

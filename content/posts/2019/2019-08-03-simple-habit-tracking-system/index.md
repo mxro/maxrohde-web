@@ -3,7 +3,7 @@ categories:
 - psychology
 coverImage: writing-828911.jpg
 date: "2019-08-03"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - habit
 - habits

@@ -2,7 +2,7 @@
 categories:
 - javascript
 date: "2018-12-23"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - graphql
 - lerna-js

@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-06-18"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Debugging, Testing and Deploying OSGi Applications
 ---
 

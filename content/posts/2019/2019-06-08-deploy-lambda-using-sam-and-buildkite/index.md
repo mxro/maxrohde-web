@@ -5,7 +5,7 @@ categories:
 - serverless
 coverImage: screen-shot-2019-06-08-at-3.05.07-pm.png
 date: "2019-06-08"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - aws
 - aws-lambda

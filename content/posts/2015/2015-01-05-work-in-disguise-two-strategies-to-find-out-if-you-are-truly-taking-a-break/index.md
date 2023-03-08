@@ -2,7 +2,7 @@
 categories:
 - productivity
 date: "2015-01-05"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - life
 - productivity

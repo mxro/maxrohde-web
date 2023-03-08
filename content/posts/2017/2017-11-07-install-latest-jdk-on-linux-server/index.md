@@ -3,7 +3,7 @@ categories:
 - java
 - linux
 date: "2017-11-07"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: Install Latest JDK on Linux Server
 ---
 

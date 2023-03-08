@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2011-10-14"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: A Quick Reflection on Exceptions in Java
 ---
 

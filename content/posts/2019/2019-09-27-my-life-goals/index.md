@@ -3,7 +3,7 @@ categories:
 - philosophy
 coverImage: way-918900.jpg
 date: "2019-09-27"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - blog
 - goals

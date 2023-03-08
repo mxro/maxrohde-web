@@ -4,7 +4,7 @@ categories:
 - philosophy
 coverImage: landscape-2090495.jpg
 date: "2020-04-18"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - goals
 - habit

@@ -4,7 +4,7 @@ categories:
 - psychology
 coverImage: girl-2696947.jpg
 date: "2019-07-16"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - body
 - mind

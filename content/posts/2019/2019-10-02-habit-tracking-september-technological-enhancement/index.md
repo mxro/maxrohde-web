@@ -3,7 +3,7 @@ categories:
 - productivity
 coverImage: man-1508901.jpg
 date: "2019-10-02"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - blog
 - habit

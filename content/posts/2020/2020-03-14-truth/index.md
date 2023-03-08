@@ -3,7 +3,7 @@ categories:
 - philosophy
 coverImage: sunrise-3850768.jpg
 date: "2020-03-14"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - enlightenment
 - reason

@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2017-03-18"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 tags:
 - open-source
 - programming

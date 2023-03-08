@@ -2,7 +2,7 @@
 categories:
 - java
 date: "2010-10-05"
-primaryBlog: maxrohde.com
+blog: maxrohde.com
 title: 'Proof of Concept: GWT, Restlet, OSGi and Maven'
 ---
 
