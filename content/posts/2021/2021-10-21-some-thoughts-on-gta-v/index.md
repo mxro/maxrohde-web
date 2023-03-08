@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - games
 coverImage: trunk.jpg
 date: "2021-10-21"
-blog: maxrohde.com
 tags:
 - game-review
 - gta-v

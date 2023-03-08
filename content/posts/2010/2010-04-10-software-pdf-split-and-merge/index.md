@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2010-04-10"
-blog: maxrohde.com
 title: 'Software: PDF Split and Merge'
 ---
 

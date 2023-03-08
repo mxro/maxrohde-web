@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2010-08-19"
-blog: maxrohde.com
 title: 'Paper: Challenges in Knowledge Management'
 ---
 

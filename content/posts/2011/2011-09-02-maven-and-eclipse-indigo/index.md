@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-09-02"
-blog: maxrohde.com
 title: Maven and Eclipse Indigo
 ---
 

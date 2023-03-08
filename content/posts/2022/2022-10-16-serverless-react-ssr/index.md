@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 - code
 coverImage: serverless-react-ssr-cover.jpg
 date: "2022-10-16"
 id: serverless-react-ssr
-blog: maxrohde.com
 summary: Explores how to implement React Server-Side Rendering (SSR) in a serverless
   way on AWS using a lightweight framework.
 tags:

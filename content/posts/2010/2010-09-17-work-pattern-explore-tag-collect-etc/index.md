@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2010-09-17"
-blog: maxrohde.com
 title: 'Work Pattern: Explore, Tag, Collect (ETC)'
 ---
 

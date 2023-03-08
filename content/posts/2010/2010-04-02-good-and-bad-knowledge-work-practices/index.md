@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-04-02"
-blog: maxrohde.com
 title: Good and Bad Knowledge Work Practices
 ---
 

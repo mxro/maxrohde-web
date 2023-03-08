@@ -1,6 +1,8 @@
 ---
-date: "2012-11-28"
+authors:
+- max
 blog: maxrohde.com
+date: "2012-11-28"
 title: OpsUnit Motivation and Plan (JUnit for server monitoring)
 ---
 

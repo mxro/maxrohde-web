@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-04-20"
-blog: maxrohde.com
 title: 'Working with NetBeans and Eclipse: Beans Binding and Shared Source Folders
   in NetBeans'
 ---

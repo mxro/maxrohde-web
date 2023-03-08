@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 - politics
 - society
 coverImage: hands.jpg
 date: "2021-05-28"
-blog: maxrohde.com
 tags:
 - charity
 - essay

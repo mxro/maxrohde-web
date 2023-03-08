@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2014-08-14"
-blog: maxrohde.com
 tags:
 - eclipse
 - maven

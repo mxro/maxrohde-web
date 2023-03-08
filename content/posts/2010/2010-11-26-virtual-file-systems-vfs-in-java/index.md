@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-11-26"
-blog: maxrohde.com
 title: Virtual File Systems (VFS) in Java
 ---
 

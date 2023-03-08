@@ -1,7 +1,9 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 coverImage: info.png
 date: "2018-01-18"
-blog: maxrohde.com
 tags:
 - git
 - wordpress

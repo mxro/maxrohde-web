@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2010-09-10"
-blog: maxrohde.com
 title: Real Software Engineering
 ---
 

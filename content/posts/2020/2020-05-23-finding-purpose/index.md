@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - buddhism
 - philosophy
 - psychology
 coverImage: long-eared-owl-2118554.jpg
 date: "2020-05-23"
-blog: maxrohde.com
 tags:
 - happiness
 - life

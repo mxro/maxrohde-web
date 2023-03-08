@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2013-01-02"
-blog: maxrohde.com
 title: Get Free Memory on Unix System in Java
 ---
 

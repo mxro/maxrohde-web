@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-11-05"
-blog: maxrohde.com
 title: Xtend Tutorial
 ---
 

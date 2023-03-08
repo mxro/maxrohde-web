@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - linux
 date: "2012-04-17"
-blog: maxrohde.com
 title: Run a Background Unix Process (even if user is disconnected)
 ---
 

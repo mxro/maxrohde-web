@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - productivity
 coverImage: habits-october.png
 date: "2019-11-04"
-blog: maxrohde.com
 tags:
 - exercise
 - habit

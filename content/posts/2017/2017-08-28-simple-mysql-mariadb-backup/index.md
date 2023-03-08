@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - linux
 date: "2017-08-28"
-blog: maxrohde.com
 tags:
 - mysql
 title: Simple MySQL / MariaDB Backup

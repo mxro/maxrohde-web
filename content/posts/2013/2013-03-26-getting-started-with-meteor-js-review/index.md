@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2013-03-26"
-blog: maxrohde.com
 tags:
 - programming
 - review

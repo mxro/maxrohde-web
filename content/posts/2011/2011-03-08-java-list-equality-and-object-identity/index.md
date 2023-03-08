@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-03-08"
-blog: maxrohde.com
 title: Java List Equality and Object Identity
 ---
 

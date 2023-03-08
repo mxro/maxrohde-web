@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2013-02-12"
-blog: maxrohde.com
 tags:
 - github
 title: Appjangle First Showcase Completed!

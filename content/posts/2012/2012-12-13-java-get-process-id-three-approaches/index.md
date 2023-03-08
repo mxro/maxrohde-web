@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2012-12-13"
-blog: maxrohde.com
 tags:
 - tutorial
 title: 'Java Get Process Id: Three Approaches'

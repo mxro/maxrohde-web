@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2016-09-23"
-blog: maxrohde.com
 title: Fix PhoneGap Shows Black Screen after Splash
 ---
 

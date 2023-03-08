@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2014-01-18"
-blog: maxrohde.com
 tags:
 - json
 - review

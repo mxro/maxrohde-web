@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2013-02-11"
-blog: maxrohde.com
 tags:
 - maven
 title: Deploy Maven Project with Netbeans

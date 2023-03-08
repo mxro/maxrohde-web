@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-05-23"
-blog: maxrohde.com
 title: Creating Runtime Environments for OSGi Declarative Services in Eclipse
 ---
 

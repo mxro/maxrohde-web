@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2018-02-06"
-blog: maxrohde.com
 tags:
 - open-source
 title: PlantUML (Open Source Awesomeness)

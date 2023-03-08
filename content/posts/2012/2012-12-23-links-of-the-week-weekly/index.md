@@ -1,6 +1,8 @@
 ---
-date: "2012-12-23"
+authors:
+- max
 blog: maxrohde.com
+date: "2012-12-23"
 title: Links of the Week (weekly)
 ---
 

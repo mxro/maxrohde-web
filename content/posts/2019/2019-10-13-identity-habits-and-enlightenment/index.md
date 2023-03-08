@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - buddhism
 - philosophy
 - psychology
 coverImage: chimpanzee-3703230.jpg
 date: "2019-10-13"
-blog: maxrohde.com
 tags:
 - habits
 - identity

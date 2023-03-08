@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - devops
 - javascript
 coverImage: serverless-api-architecture.png
 date: "2022-01-04"
-blog: maxrohde.com
 tags:
 - aws
 - coding

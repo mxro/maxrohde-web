@@ -1,6 +1,8 @@
 ---
-date: "2010-12-12"
+authors:
+- max
 blog: maxrohde.com
+date: "2010-12-12"
 title: SmartGWT and Ext GWT/GXT (or the question of the GWT UI framework)
 ---
 

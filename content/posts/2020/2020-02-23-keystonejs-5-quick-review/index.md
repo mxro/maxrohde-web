@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 coverImage: keystone-1.png
 date: "2020-02-23"
-blog: maxrohde.com
 tags:
 - graphql
 - keystonejs

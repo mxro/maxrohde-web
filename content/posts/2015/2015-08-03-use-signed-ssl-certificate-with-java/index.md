@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2015-08-03"
-blog: maxrohde.com
 tags:
 - programming
 - security

@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-02-02"
-blog: maxrohde.com
 title: Tests for Memory Leaks in JUnit
 ---
 

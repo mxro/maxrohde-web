@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - buddhism
 - philosophy
 - psychology
 coverImage: coast-192979.jpg
 date: "2019-05-04"
-blog: maxrohde.com
 tags:
 - equanimity
 - life

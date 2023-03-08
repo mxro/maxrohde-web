@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - buddhism
 - psychology
 coverImage: poverty-1148934.jpg
 date: "2019-11-02"
-blog: maxrohde.com
 tags:
 - compassion
 - enlightenment

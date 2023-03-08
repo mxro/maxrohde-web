@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2012-08-21"
-blog: maxrohde.com
 title: 'Internet Explorer ‘SCRIPT1002: Syntax error’: Help!?!'
 ---
 

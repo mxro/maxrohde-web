@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - buddhism
 - psychology
 coverImage: the_roses_of_heliogabalus.jpg
 date: "2019-04-13"
-blog: maxrohde.com
 tags:
 - happiness
 - joy

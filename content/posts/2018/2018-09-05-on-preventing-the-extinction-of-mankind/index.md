@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - economy
 - philosophy
 coverImage: mt-vesuvius.jpg
 date: "2018-09-05"
-blog: maxrohde.com
 tags:
 - economics
 - extinction

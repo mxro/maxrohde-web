@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 - psychology
 coverImage: michelangelo_-_creation_of_adam_cropped.jpg
 date: "2019-11-15"
-blog: maxrohde.com
 tags:
 - afterlife
 - life

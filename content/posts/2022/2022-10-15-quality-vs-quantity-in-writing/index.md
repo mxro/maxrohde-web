@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 coverImage: page.jpg
 date: "2022-10-15"
 id: quality-vs-quantity-in-writing
-blog: maxrohde.com
 publish: true
 tags:
 - writing

@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2013-08-26"
-blog: maxrohde.com
 tags:
 - gwt
 title: GWT RPC Serialization for LocalStorage

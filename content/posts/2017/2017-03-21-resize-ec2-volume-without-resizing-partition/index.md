@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - linux
 date: "2017-03-21"
-blog: maxrohde.com
 tags:
 - aws
 - devops

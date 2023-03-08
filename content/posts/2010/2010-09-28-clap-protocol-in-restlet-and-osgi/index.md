@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-09-28"
-blog: maxrohde.com
 title: CLAP Protocol in Restlet and OSGi
 ---
 

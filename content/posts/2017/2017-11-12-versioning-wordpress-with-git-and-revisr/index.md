@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - linux
 date: "2017-11-12"
-blog: maxrohde.com
 tags:
 - git
 - programming

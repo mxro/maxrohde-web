@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 coverImage: jenkins.png
 date: "2018-01-05"
-blog: maxrohde.com
 tags:
 - jenkins
 - open-source

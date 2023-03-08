@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - buddhism
 - philosophy
 - psychology
 coverImage: elephant-4120822.jpg
 date: "2019-05-11"
-blog: maxrohde.com
 tags:
 - christianity
 - happiness

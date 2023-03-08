@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 coverImage: developer-g0eeed467d_1920.png
 date: "2022-01-21"
-blog: maxrohde.com
 tags:
 - aws
 - cloudfront

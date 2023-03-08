@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - book-reviews
 date: "2021-06-11"
-blog: maxrohde.com
 tags:
 - book
 - book-review

@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2014-10-22"
-blog: maxrohde.com
 tags:
 - writing
 title: 'When am I Ready to Start Writing: Preparedness of Knowledge and Style'

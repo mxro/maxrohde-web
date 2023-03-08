@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2010-08-06"
-blog: maxrohde.com
 title: 'Presentation: New Zealand Information Systems Doctoral Conference 2010'
 ---
 

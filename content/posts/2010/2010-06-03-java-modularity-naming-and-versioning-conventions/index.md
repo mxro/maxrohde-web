@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-06-03"
-blog: maxrohde.com
 title: 'Java Modularity: Naming and Versioning Conventions'
 ---
 

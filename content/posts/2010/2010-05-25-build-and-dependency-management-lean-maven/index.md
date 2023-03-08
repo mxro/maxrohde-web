@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-05-25"
-blog: maxrohde.com
 title: 'Build and Dependency Management: Lean Maven'
 ---
 

@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2013-03-13"
-blog: maxrohde.com
 title: Start JTreeMap from Command Line
 ---
 

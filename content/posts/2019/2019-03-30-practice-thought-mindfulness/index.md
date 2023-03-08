@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - buddhism
 - psychology
 coverImage: meditation-1384758.jpg
 date: "2019-03-30"
-blog: maxrohde.com
 tags:
 - meditation
 - mind

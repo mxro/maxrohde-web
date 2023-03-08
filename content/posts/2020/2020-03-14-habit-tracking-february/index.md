@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - productivity
 coverImage: annotation-2020-03-14-154027.png
 date: "2020-03-14"
-blog: maxrohde.com
 tags:
 - habits
 title: Habit Tracking February

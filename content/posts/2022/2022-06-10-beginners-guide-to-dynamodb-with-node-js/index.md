@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 - serverless
 coverImage: tobias-fischer-pkbzaheg2ng-unsplash.jpg
 date: "2022-06-10"
-blog: maxrohde.com
 tags:
 - aws
 - coding

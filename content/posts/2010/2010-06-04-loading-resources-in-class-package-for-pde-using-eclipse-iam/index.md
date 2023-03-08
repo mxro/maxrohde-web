@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-06-04"
-blog: maxrohde.com
 title: Loading Resources in Class Package for PDE using Eclipse IAM
 ---
 

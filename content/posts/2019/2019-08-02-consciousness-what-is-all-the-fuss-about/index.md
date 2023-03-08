@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 - psychology
 coverImage: mind-544404.png
 date: "2019-08-02"
-blog: maxrohde.com
 tags:
 - consciousness
 - life

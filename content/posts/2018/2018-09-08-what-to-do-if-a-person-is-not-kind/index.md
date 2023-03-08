@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - psychology
 coverImage: jan_de_bray_001.jpg
 date: "2018-09-08"
-blog: maxrohde.com
 tags:
 - happiness
 - kindness

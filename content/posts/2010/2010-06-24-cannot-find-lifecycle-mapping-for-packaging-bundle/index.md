@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-06-24"
-blog: maxrohde.com
 title: 'Cannot find lifecycle mapping for packaging: ''bundle''.'
 ---
 

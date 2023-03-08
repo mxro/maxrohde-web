@@ -1,6 +1,8 @@
 ---
-date: "2011-04-08"
+authors:
+- max
 blog: maxrohde.com
+date: "2011-04-08"
 title: Models Driven Development and Domain Specific Languages
 ---
 

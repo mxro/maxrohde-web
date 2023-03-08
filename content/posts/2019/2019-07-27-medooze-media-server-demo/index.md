@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 coverImage: video-1606945.png
 date: "2019-07-27"
-blog: maxrohde.com
 tags:
 - coding
 - node-js

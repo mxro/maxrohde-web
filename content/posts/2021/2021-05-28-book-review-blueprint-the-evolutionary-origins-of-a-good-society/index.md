@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - book-reviews
 - psychology
 - society
 date: "2021-05-28"
-blog: maxrohde.com
 tags:
 - book
 - book-review

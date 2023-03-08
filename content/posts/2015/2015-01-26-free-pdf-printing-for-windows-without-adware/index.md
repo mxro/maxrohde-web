@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - productivity
 coverImage: freepdf-print.png
 date: "2015-01-26"
-blog: maxrohde.com
 tags:
 - tools
 title: Free PDF Printing for Windows without Adware

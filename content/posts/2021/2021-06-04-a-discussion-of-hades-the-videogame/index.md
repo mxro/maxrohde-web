@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - games
 coverImage: hades.jpg
 date: "2021-06-04"
-blog: maxrohde.com
 tags:
 - difficulty
 - gaming

@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - buddhism
 - philosophy
 - psychology
 coverImage: shine-3902368_1920.jpg
 date: "2021-11-27"
-blog: maxrohde.com
 tags:
 - life
 - meditation

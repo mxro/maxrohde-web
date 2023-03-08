@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2018-04-08"
-blog: maxrohde.com
 tags:
 - linux
 title: Upgrade to Oracle JDK 10 on CentOS/RHEL

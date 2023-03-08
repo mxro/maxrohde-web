@@ -1,6 +1,8 @@
 ---
-date: "2014-04-18"
+authors:
+- max
 blog: maxrohde.com
+date: "2014-04-18"
 title: Get the Exact Position and Size of a Window in Windows
 ---
 

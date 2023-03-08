@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - serverless
 date: "2016-05-27"
-blog: maxrohde.com
 tags:
 - aws
 - aws-lambda

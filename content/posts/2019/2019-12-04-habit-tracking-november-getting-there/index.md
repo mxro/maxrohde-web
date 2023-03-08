@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - productivity
 coverImage: img_0716.jpg
 date: "2019-12-04"
-blog: maxrohde.com
 tags:
 - exercise
 - habits

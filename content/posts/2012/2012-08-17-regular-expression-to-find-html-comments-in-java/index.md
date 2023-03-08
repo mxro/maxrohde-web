@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2012-08-17"
-blog: maxrohde.com
 title: Regular Expression to Find HTML Comments in Java
 ---
 

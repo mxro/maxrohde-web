@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-09-02"
-blog: maxrohde.com
 title: 'Axis2 on Tomcat using Ubuntu: Internal Server Error'
 ---
 

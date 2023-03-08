@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - buddhism
 - philosophy
 - psychology
 coverImage: elephant-111695.jpg
 date: "2019-08-24"
-blog: maxrohde.com
 tags:
 - happiness
 - life

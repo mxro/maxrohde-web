@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - productivity
 coverImage: fail-1714367.jpg
 date: "2019-09-01"
-blog: maxrohde.com
 tags:
 - habits
 - life

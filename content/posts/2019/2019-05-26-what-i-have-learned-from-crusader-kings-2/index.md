@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - games
 coverImage: world.png
 date: "2019-05-26"
-blog: maxrohde.com
 tags:
 - crusader-kings
 - crusader-kings-2

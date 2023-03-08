@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - politics
 coverImage: bills-496229.jpg
 date: "2020-02-17"
-blog: maxrohde.com
 tags:
 - economics
 - economy

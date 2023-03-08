@@ -1,6 +1,8 @@
 ---
-date: "2011-03-31"
+authors:
+- max
 blog: maxrohde.com
+date: "2011-03-31"
 title: 'Practice: Readable eBooks on the iPad using Margins'
 ---
 

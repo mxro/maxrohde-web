@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 coverImage: v2.png
 date: "2019-10-23"
-blog: maxrohde.com
 tags:
 - open-source
 - react

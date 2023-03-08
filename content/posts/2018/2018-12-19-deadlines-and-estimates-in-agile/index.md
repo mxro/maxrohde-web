@@ -1,6 +1,8 @@
 ---
-date: "2018-12-19"
+authors:
+- max
 blog: maxrohde.com
+date: "2018-12-19"
 tags:
 - project-management
 title: Deadlines and Estimates in Agile

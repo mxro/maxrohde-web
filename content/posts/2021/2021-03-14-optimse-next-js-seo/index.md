@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 coverImage: internet-search-engine-1433323.jpg
 date: "2021-03-14"
-blog: maxrohde.com
 tags:
 - next-js-framework
 - programming

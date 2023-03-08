@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2017-09-15"
-blog: maxrohde.com
 title: Improving Node.js https request performance
 ---
 

@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-06-29"
-blog: maxrohde.com
 title: 'Maven Eclipse Plugin and Eclipse PDE: The Right Configuration'
 ---
 

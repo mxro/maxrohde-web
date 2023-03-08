@@ -1,6 +1,8 @@
 ---
-date: "2012-05-13"
+authors:
+- max
 blog: maxrohde.com
+date: "2012-05-13"
 title: 'onedb 0.0.2: Update for Client Libraries'
 ---
 

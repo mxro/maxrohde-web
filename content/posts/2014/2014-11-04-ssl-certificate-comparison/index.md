@@ -1,6 +1,8 @@
 ---
-date: "2014-11-04"
+authors:
+- max
 blog: maxrohde.com
+date: "2014-11-04"
 tags:
 - ssl
 title: SSL Certificate Comparison

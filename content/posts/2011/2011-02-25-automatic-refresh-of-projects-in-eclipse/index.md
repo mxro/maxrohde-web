@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-02-25"
-blog: maxrohde.com
 title: Automatic Refresh of Projects in Eclipse
 ---
 

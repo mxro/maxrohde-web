@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - buddhism
 - philosophy
 - psychology
 coverImage: spiral-1037508.jpg
 date: "2019-06-29"
-blog: maxrohde.com
 tags:
 - happiness
 - quotes

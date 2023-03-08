@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2012-03-16"
-blog: maxrohde.com
 title: 'GWT Serialization: ‘Expected type ''int'' but received an out-of-range value’'
 ---
 

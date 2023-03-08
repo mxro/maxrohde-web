@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - buddhism
 - philosophy
 - psychology
 coverImage: runes-4267425.jpg
 date: "2019-10-06"
-blog: maxrohde.com
 tags:
 - destiny
 - fate

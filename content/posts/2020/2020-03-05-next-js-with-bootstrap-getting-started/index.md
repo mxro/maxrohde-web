@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 coverImage: banner.png
 date: "2020-03-05"
-blog: maxrohde.com
 tags:
 - bootstrap
 - next-js-framework

@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-06-01"
-blog: maxrohde.com
 title: Eclipse PDE and Maven
 ---
 

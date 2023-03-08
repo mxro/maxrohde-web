@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - linux
 date: "2018-01-04"
-blog: maxrohde.com
 tags:
 - devops
 title: Test Latency Between Two Servers (Linux)

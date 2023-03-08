@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 coverImage: js.jpg
 date: "2018-12-19"
-blog: maxrohde.com
 tags:
 - programming
 title: Everything new in JavaScript since ES6

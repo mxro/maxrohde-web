@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2010-03-29"
-blog: maxrohde.com
 title: Work Contexts
 ---
 

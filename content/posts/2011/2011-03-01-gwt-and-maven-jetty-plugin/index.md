@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-03-01"
-blog: maxrohde.com
 title: Gwt and Maven Jetty Plugin
 ---
 

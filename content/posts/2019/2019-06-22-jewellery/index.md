@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - economy
 - philosophy
 coverImage: gold-1369453.jpg
 date: "2019-06-22"
-blog: maxrohde.com
 tags:
 - art
 - environment

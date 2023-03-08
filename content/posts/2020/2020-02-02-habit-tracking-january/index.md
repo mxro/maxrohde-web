@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - productivity
 coverImage: 2019-01-31-janurary-habits.jpg
 date: "2020-02-02"
-blog: maxrohde.com
 tags:
 - habits
 - tracking

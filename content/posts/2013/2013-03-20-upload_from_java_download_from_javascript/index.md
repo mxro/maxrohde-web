@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 - javascript
 date: "2013-03-20"
-blog: maxrohde.com
 summary: Appjangle Tutorial for Java and JavaScript interoperability
 tags:
 - tutorial

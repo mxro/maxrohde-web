@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - psychology
 coverImage: astronomical-clock-408306_1920.jpg
 date: "2022-01-16"
-blog: maxrohde.com
 tags:
 - life
 - memory

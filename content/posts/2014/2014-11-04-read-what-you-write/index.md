@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 - productivity
 date: "2014-11-04"
-blog: maxrohde.com
 tags:
 - habits
 - writing

@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - games
 coverImage: image-3.png
 date: "2020-04-10"
-blog: maxrohde.com
 tags:
 - fate
 - game-review

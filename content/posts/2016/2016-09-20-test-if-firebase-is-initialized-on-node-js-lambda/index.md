@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2016-09-20"
-blog: maxrohde.com
 tags:
 - firebase
 - node-js

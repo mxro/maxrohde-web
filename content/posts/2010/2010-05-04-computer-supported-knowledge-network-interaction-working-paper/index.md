@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2010-05-04"
-blog: maxrohde.com
 title: Computer Supported Knowledge Network Interaction WORKING PAPER
 ---
 

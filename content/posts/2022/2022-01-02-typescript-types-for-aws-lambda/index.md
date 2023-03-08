@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - devops
 - javascript
 coverImage: lambda_handler.png
 date: "2022-01-02"
-blog: maxrohde.com
 tags:
 - aws
 - aws-lambda

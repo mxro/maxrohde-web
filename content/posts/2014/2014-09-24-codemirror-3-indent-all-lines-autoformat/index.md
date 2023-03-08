@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2014-09-24"
-blog: maxrohde.com
 title: CodeMirror 3 Indent All Lines / Autoformat
 ---
 

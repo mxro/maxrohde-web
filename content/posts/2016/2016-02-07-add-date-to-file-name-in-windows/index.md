@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - productivity
 date: "2016-02-07"
-blog: maxrohde.com
 title: Add Date to File Name in Windows
 ---
 

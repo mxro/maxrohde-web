@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-05-24"
-blog: maxrohde.com
 title: NetBeans Application Platform Core Modules
 ---
 

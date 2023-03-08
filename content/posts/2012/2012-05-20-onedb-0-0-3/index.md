@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2012-05-20"
-blog: maxrohde.com
 title: 'onedb 0.0.3: Client API and Documentation Updated'
 ---
 

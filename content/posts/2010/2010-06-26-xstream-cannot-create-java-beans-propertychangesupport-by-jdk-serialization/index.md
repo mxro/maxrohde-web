@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-06-26"
-blog: maxrohde.com
 title: 'XStream: Cannot create java.beans.PropertyChangeSupport by JDK serialization'
 ---
 

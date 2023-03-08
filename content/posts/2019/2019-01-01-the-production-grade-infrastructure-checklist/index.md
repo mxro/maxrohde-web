@@ -1,6 +1,8 @@
 ---
-date: "2019-01-01"
+authors:
+- max
 blog: maxrohde.com
+date: "2019-01-01"
 tags:
 - devops
 - security

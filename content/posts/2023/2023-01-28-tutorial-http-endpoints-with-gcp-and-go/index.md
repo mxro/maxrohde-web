@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - devops
 - go
 coverImage: go_cover.png
 date: "2023-01-28"
 id: tutorial-http-endpoints-with-gcp-and-go
-blog: maxrohde.com
 tags:
 - gcp
 - cloud-functions

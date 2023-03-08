@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-09-21"
-blog: maxrohde.com
 title: Eclipse and SVN to manage Apache Web Server
 ---
 

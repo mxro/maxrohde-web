@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - linux
 date: "2016-02-09"
-blog: maxrohde.com
 tags:
 - ec2
 - puppet

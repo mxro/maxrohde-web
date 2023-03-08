@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-04-27"
-blog: maxrohde.com
 title: Installing Apache 2 and Tomcat 7
 ---
 

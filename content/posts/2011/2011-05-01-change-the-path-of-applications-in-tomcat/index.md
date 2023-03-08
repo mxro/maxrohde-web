@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-05-01"
-blog: maxrohde.com
 title: Change the path of applications in Tomcat
 ---
 

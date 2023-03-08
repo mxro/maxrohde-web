@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 - linux
 date: "2017-11-07"
-blog: maxrohde.com
 title: Install Latest JDK on Linux Server
 ---
 

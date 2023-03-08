@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - linux
 date: "2015-04-29"
-blog: maxrohde.com
 tags:
 - java
 - puppet

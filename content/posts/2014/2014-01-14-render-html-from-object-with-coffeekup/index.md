@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2014-01-14"
-blog: maxrohde.com
 title: Render HTML from Object with CoffeeKup
 ---
 

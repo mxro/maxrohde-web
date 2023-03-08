@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2021-01-30"
-blog: maxrohde.com
 tags:
 - aws
 - aws-s3

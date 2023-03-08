@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-09-27"
-blog: maxrohde.com
 title: SVN Ignore Eclipse Project Files
 ---
 

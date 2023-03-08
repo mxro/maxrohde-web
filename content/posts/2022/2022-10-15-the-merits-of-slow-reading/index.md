@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 coverImage: perfecto-capucine-3gC4gBnD3Xs-unsplash.jpg
 date: "2022-10-15"
 id: the-merits-of-slow-reading
-blog: maxrohde.com
 publish: true
 summary: Makes an argument that quantity matters little when it comes to reading
 tags:

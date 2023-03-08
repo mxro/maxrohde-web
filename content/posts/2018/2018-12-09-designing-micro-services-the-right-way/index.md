@@ -1,6 +1,8 @@
 ---
-date: "2018-12-09"
+authors:
+- max
 blog: maxrohde.com
+date: "2018-12-09"
 tags:
 - programming
 title: Designing Micro Services the Right Way

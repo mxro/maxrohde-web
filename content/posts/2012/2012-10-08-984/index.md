@@ -1,6 +1,8 @@
 ---
-date: "2012-10-08"
+authors:
+- max
 blog: maxrohde.com
+date: "2012-10-08"
 title: ""
 ---
 

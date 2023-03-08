@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 - psychology
 coverImage: girl-2696947.jpg
 date: "2019-07-16"
-blog: maxrohde.com
 tags:
 - body
 - mind

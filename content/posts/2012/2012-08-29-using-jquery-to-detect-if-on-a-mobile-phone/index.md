@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2012-08-29"
-blog: maxrohde.com
 tags:
 - jquery
 - mobile

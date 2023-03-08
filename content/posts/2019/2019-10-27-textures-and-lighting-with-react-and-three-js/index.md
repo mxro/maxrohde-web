@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 coverImage: version-4.png
 date: "2019-10-27"
-blog: maxrohde.com
 tags:
 - open-source
 - programming

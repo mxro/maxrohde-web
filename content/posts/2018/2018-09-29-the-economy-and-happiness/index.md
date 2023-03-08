@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - economy
 - society
 coverImage: titian_-_the_tribute_money_-_google_art_project_715452.jpg
 date: "2018-09-29"
-blog: maxrohde.com
 tags:
 - consumerism
 - economics

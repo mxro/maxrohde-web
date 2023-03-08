@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2012-05-05"
-blog: maxrohde.com
 title: onedb Architecture and Design
 ---
 

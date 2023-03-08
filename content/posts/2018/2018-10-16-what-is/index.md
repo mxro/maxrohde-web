@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 coverImage: 1280px-van_gogh_-_starry_night.jpg
 date: "2018-10-16"
-blog: maxrohde.com
 tags:
 - buddhism
 - existence

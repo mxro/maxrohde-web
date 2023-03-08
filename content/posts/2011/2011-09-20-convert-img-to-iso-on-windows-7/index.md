@@ -1,6 +1,8 @@
 ---
-date: "2011-09-20"
+authors:
+- max
 blog: maxrohde.com
+date: "2011-09-20"
 title: Convert IMG to ISO on Windows 7
 ---
 

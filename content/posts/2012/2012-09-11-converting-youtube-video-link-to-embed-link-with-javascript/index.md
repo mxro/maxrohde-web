@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2012-09-11"
-blog: maxrohde.com
 title: Converting youtube video link to embed link with JavaScript
 ---
 

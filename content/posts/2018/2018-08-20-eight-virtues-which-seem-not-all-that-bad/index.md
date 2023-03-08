@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 coverImage: 2048px-lorenzo_lotto_-_allc3a9gorie_de_la_vertu_et_du_vice_1.jpg
 date: "2018-08-20"
-blog: maxrohde.com
 tags:
 - happiness
 - meaning

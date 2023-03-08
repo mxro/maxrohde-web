@@ -1,6 +1,8 @@
 ---
-date: "2013-07-28"
+authors:
+- max
 blog: maxrohde.com
+date: "2013-07-28"
 title: Appjangle Java Client Libraries with Local Persistence
 ---
 

@@ -1,6 +1,8 @@
 ---
-date: "2012-05-05"
+authors:
+- max
 blog: maxrohde.com
+date: "2012-05-05"
 title: 'Small Data is Beautiful: A Case for Connected Applications'
 ---
 

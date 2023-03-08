@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-03-29"
-blog: maxrohde.com
 title: Count lines of code and number of classes in eclipse projects
 ---
 

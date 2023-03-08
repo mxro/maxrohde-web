@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 coverImage: screen-shot-2019-06-02-at-8.37.03-pm.png
 date: "2019-06-02"
-blog: maxrohde.com
 tags:
 - devops
 - lerna-js

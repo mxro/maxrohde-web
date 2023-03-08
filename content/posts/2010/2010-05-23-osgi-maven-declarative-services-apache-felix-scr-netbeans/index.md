@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-05-23"
-blog: maxrohde.com
 title: OSGi + Maven + Declarative Services + Apache Felix SCR + NetBeans
 ---
 

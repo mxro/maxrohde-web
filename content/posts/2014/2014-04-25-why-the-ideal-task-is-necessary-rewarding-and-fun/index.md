@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - productivity
 date: "2014-04-25"
-blog: maxrohde.com
 tags:
 - productivity
 - project-management

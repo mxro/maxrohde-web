@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 coverImage: runners.jpg
 date: "2018-09-27"
-blog: maxrohde.com
 tags:
 - ease
 - enlightenment

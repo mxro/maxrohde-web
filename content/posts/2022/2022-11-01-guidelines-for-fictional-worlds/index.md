@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 coverImage: pexels-veeterzy-38136.jpg
 date: "2022-11-01"
 id: guidelines-for-fictional-worlds
-blog: maxrohde.com
 publish: true
 tags:
 - writing

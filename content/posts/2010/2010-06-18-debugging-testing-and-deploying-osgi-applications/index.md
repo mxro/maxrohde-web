@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-06-18"
-blog: maxrohde.com
 title: Debugging, Testing and Deploying OSGi Applications
 ---
 

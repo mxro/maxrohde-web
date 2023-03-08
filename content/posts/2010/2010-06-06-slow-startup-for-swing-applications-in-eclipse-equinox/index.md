@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-06-06"
-blog: maxrohde.com
 title: Slow Startup for Swing Applications in Eclipse Equinox
 ---
 

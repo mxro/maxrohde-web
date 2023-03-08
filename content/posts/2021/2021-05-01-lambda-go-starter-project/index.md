@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - devops
 - javascript
 date: "2021-05-01"
-blog: maxrohde.com
 tags:
 - aws
 - aws-lambda

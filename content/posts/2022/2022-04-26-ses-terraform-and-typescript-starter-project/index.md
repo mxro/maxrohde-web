@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 - serverless
 coverImage: brett-jordan-lpzy4da9aro-unsplash-1.jpg
 date: "2022-04-26"
-blog: maxrohde.com
 tags:
 - aws
 - aws-ses

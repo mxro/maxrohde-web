@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-10-24"
-blog: maxrohde.com
 title: Key-Value Stores for Java
 ---
 

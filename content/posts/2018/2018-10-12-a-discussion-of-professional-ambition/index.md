@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - economy
 - psychology
 - society
 coverImage: rubens_peter_paul_-_the_fall_of_icarus.jpg
 date: "2018-10-12"
-blog: maxrohde.com
 tags:
 - happinnes
 - life

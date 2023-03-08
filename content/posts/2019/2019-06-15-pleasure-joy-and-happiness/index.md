@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 - psychology
 coverImage: 16780721810_2565eff710_o.jpg
 date: "2019-06-15"
-blog: maxrohde.com
 tags:
 - definition
 - emotions

@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-05-31"
-blog: maxrohde.com
 title: Subversion and Maven
 ---
 

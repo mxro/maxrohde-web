@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - politics
 coverImage: audience-868074.jpg
 date: "2019-06-12"
-blog: maxrohde.com
 tags:
 - altruism
 - celebrity

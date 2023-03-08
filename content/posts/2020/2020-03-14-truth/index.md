@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 coverImage: sunrise-3850768.jpg
 date: "2020-03-14"
-blog: maxrohde.com
 tags:
 - enlightenment
 - reason

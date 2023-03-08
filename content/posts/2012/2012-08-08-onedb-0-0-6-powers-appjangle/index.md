@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2012-08-08"
-blog: maxrohde.com
 title: onedb 0.0.6 powers appjangle
 ---
 

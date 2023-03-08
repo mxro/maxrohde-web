@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-09-12"
-blog: maxrohde.com
 title: 'Java 8: Key Features (I would love to see)'
 ---
 
