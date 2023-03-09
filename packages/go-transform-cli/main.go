@@ -135,14 +135,41 @@ func (c *CLI) SetAuthorsAction(ctx *kong.Context) error {
 	})
 }
 
+func (c *CLI) SetIdAction(ctx *kong.Context) error {
+	return c.ProcessFiles(ctx, c.SetId.GlobPattern, func(path string) error {
+		fmt.Printf("Processing %s\n", path)
+
+		// Getting parent directory
+		parent := filepath.Dir(path)
+		// Getting parent name
+		parentName := filepath.Base(parent)
+		// Splitting by "-"
+		parts := strings.Split(parentName, "-")
+		// Removing first 3 elements
+		parts = parts[3:]
+		// Joining by "-"
+		id := strings.Join(parts, "-")
+
+		perr := ProcessFrontMatter(path, func(m map[string]interface{}) error {
+			m["id"] = id
+			return nil
+		})
+
+		if perr != nil {
+			return perr
+		}
+
+		return nil
+	})
+}
 func (c *CLI) Run(ctx *kong.Context) error {
 	switch ctx.Command() {
 	case "set-primary-blog <primary-blog> <glob-pattern>":
 		return c.SetPrimaryBlogAction(ctx)
-	case "set-secondary-blogs <secondary-blogs> <glob-pattern>":
-		return nil
 	case "set-authors <authors> <glob-pattern>":
 		return c.SetAuthorsAction(ctx)
+	case "set-id <glob-pattern>":
+		return c.SetIdAction(ctx)
 	default:
 		return fmt.Errorf("unknown command %s", ctx.Command())
 	}
