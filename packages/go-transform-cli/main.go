@@ -61,6 +61,7 @@ func (c *CLI) ProcessFiles(ctx *kong.Context, pattern string, fn processorFn) er
 		if err != nil {
 			return err
 		}
+		fmt.Printf("Walking %s\n", path)
 		if !info.IsDir() && g.Match(path) && filepath.Ext(path) == ".md" {
 			return fn(path)
 		}
@@ -115,6 +116,7 @@ func (c *CLI) SetPrimaryBlogAction(ctx *kong.Context) error {
 			return perr
 		}
 
+		fmt.Printf("Processing finished %s\n", path)
 		return nil
 	})
 }
@@ -162,6 +164,7 @@ func (c *CLI) SetIdAction(ctx *kong.Context) error {
 		return nil
 	})
 }
+
 func (c *CLI) Run(ctx *kong.Context) error {
 	switch ctx.Command() {
 	case "set-primary-blog <primary-blog> <glob-pattern>":
@@ -179,6 +182,10 @@ func main() {
 	cli := New()
 	ctx := kong.Parse(cli, kong.Name("transform-cli"), kong.Description("Transforms blog data."))
 
-	cli.Run(ctx)
+	err := cli.Run(ctx)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
 
 }
