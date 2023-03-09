@@ -3,6 +3,9 @@ title: 'The Art of Thinking Clearly - Book Review'
 date: '2022-02-26'
 categories:
   - 'psychology'
+blog: 'maxrohde.com'
+authors:
+  - max
 tags:
   - 'book-reviews'
   - 'books'
