@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2010-04-10"
-primaryBlog: maxrohde.com
 title: 'Proposed Practice: Digitize and Organize Handwritten Notes'
 ---
 

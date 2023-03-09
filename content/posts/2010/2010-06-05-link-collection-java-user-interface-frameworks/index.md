@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-06-05"
-primaryBlog: maxrohde.com
 title: 'Link Collection: Java User Interface Frameworks'
 ---
 

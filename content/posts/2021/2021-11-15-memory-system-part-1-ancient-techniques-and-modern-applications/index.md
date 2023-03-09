@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 coverImage: memory_temple.jpg
 date: "2021-11-15"
-primaryBlog: maxrohde.com
 tags:
 - mastery
 - memory

@@ -1,7 +1,7 @@
 import fg from 'fast-glob';
 import { cpSync, existsSync, mkdirSync, rmSync } from 'fs';
 
-import { basename, resolve } from 'path';
+import path, { basename, resolve } from 'path';
 import config from '../config.json';
 import { parseMarkdown, ParseMarkdownResult } from '../markdown/markdown';
 import { moveAttachments } from './moveAttachments';
@@ -27,6 +27,7 @@ export async function findPrepareFiles(args: PrepareArgs): Promise<string[]> {
     })
   ).map((path) => `${contentDir}/${path}`);
   matches = matches.filter((path) => existsSync(path));
+  matches = matches.filter((p) => path.extname(p) === '.md');
   console.log('Found articles');
   console.log(matches);
   return matches;
@@ -39,10 +40,17 @@ export async function prepare(args: PrepareArgs): Promise<void> {
     files.map(async (file) => {
       const post = await parseMarkdown(file);
       if (!post.metadata.date) {
-        throw new Error('Post `date` needs to be provided');
+        throw new Error(
+          'Post `date` needs to be provided and is not for ' + file
+        );
       }
       if (!post.metadata.id) {
-        throw new Error('Post `id` needs to be provided');
+        throw new Error(
+          'Post `id` needs to be provided and is not for ' + file
+        );
+      }
+      if (!post.metadata.blog) {
+        throw new Error('Post `blog` needs to be provided');
       }
       const year = new Date(post.metadata.date).getFullYear();
       const postDir = `${args.postsDir || config['postsDir']}/${year}/${

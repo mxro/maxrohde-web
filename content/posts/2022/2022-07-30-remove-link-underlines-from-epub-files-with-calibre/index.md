@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - coding
 date: "2022-07-30"
-primaryBlog: maxrohde.com
 tags:
 - calibre
 - ebooks

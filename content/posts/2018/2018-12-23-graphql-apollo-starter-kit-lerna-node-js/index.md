@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2018-12-23"
-primaryBlog: maxrohde.com
 tags:
 - graphql
 - lerna-js

@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2014-11-04"
-primaryBlog: maxrohde.com
 tags:
 - writing
 title: The Secret of Uncommonness

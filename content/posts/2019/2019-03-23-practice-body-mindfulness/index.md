@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - buddhism
 - psychology
 coverImage: 0_the_vitruvian_man_-_by_leonardo_da_vinci.jpg
 date: "2019-03-23"
-primaryBlog: maxrohde.com
 tags:
 - breathing
 - meditation

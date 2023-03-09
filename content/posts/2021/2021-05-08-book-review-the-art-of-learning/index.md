@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - book-reviews
 date: "2021-05-08"
-primaryBlog: maxrohde.com
 tags:
 - book-review
 - learning

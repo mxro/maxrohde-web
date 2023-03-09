@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2010-04-05"
-primaryBlog: maxrohde.com
 title: 'Working Paper: Next Generation Knowledge Networks: A Design Science Project'
 ---
 

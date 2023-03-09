@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2010-04-14"
-primaryBlog: maxrohde.com
 title: Factors for the Emergence of Knowledge
 ---
 

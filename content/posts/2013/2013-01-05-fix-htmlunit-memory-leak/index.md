@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2013-01-05"
-primaryBlog: maxrohde.com
 title: Fix HtmlUnit Memory Leak
 ---
 

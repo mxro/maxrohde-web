@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2017-02-20"
-primaryBlog: maxrohde.com
 tags:
 - github
 title: Fix Travis CI Error 'This is not an active repository'

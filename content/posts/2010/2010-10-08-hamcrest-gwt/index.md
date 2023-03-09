@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-10-08"
-primaryBlog: maxrohde.com
 title: Hamcrest GWT
 ---
 

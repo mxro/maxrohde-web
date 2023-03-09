@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2012-08-23"
-primaryBlog: maxrohde.com
 tags:
 - markdown
 title: New Online Markdown Editor

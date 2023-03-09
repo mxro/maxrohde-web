@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-02-12"
-primaryBlog: maxrohde.com
 title: GXT vs vanilla GWT Performance
 ---
 

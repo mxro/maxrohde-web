@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2015-08-06"
-primaryBlog: maxrohde.com
 tags:
 - javascript
 - jdk-nashorn

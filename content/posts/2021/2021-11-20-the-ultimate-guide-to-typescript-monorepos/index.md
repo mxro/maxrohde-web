@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - devops
 - javascript
 - serverless
 coverImage: construction-1486781.jpg
 date: "2021-11-20"
-primaryBlog: maxrohde.com
 tags:
 - aws
 - aws-lambda

@@ -3,6 +3,9 @@ title: 'Memory System Part 4: Symbolic Systems'
 date: '2022-01-16'
 categories:
   - 'psychology'
+blog: 'maxrohde.com'
+authors:
+  - max
 tags:
   - 'life'
   - 'memory'

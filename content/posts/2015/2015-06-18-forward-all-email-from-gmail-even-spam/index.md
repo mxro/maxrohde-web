@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - productivity
 date: "2015-06-18"
-primaryBlog: maxrohde.com
 tags:
 - productivity
 title: Forward All Email from Gmail (even SPAM)

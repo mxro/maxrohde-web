@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 - psychology
 coverImage: monotony-4565247_1920.jpg
 date: "2021-08-25"
-primaryBlog: maxrohde.com
 tags:
 - habits
 - life

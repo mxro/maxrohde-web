@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2010-04-03"
-primaryBlog: maxrohde.com
 title: 'Google Docs: Ubiquitous Information Authoring and Publishing'
 ---
 

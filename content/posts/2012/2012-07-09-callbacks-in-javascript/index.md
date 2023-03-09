@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2012-07-09"
-primaryBlog: maxrohde.com
 title: Callbacks in JavaScript
 ---
 

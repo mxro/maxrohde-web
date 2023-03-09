@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2011-08-06"
-primaryBlog: maxrohde.com
 title: Format Source Code in MS Word
 ---
 

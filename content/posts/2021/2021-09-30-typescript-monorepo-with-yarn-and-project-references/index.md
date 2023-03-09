@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2021-09-30"
-primaryBlog: maxrohde.com
 tags:
 - coding
 - goldstack

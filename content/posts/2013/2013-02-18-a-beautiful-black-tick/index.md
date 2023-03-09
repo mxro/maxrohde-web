@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2013-02-18"
-primaryBlog: maxrohde.com
 title: A beautiful Black Tick
 ---
 

@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 coverImage: cave-690348.jpg
 date: "2020-04-04"
-primaryBlog: maxrohde.com
 tags:
 - enlightenment
 - life

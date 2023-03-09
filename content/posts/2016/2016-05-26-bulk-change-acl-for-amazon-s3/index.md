@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2016-05-26"
-primaryBlog: maxrohde.com
 tags:
 - aws
 - aws-s3

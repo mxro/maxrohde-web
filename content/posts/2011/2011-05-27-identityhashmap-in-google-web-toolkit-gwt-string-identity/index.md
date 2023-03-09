@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-05-27"
-primaryBlog: maxrohde.com
 title: 'IdentityHashMap in Google Web Toolkit (GWT): String Identity'
 ---
 

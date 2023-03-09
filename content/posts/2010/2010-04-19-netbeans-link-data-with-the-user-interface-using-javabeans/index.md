@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-04-19"
-primaryBlog: maxrohde.com
 title: 'NetBeans: Link Data with the User Interface using JavaBeans'
 ---
 

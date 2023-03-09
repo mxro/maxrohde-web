@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2013-02-03"
-primaryBlog: maxrohde.com
 tags:
 - netty
 - ssl

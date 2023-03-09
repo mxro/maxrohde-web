@@ -1,7 +1,9 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 coverImage: paypal-developer-documentation.png
 date: "2018-01-10"
-primaryBlog: maxrohde.com
 title: 'Good Web Design: PayPal Developer Documentation'
 ---
 

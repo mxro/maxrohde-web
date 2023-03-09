@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2012-05-25"
-primaryBlog: maxrohde.com
 title: Eclipse and Github Tutorial
 ---
 

@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - linux
 date: "2015-04-24"
-primaryBlog: maxrohde.com
 tags:
 - mysql
 - puppet

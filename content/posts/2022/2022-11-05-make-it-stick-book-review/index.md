@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - book-reviews
 - contemplations
 coverImage: pexels-bruno-bueno-3854816.jpg
 date: "2022-11-05"
 id: make-it-stick-book-review
-primaryBlog: maxrohde.com
 publish: true
 summary: Review and summary of the book Make It Stick by Chip and Dan Heath
 tags:

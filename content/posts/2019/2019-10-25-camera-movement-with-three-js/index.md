@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2019-10-25"
-primaryBlog: maxrohde.com
 tags:
 - open-source
 - three-js

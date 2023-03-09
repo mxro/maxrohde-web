@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2011-08-08"
-primaryBlog: maxrohde.com
 title: 'Innovating on a Dime: Design Science for Small Teams'
 ---
 

@@ -40,5 +40,3 @@ export function moveAttachments(
     // console.log('dry: Writing new content\n====\n', newContent, '\n====');
   }
 }
-
-export function findAttachmentLinks() {}

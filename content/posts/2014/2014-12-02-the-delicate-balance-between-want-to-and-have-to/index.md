@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - productivity
 date: "2014-12-02"
-primaryBlog: maxrohde.com
 tags:
 - happiness
 - life

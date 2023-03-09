@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2010-05-07"
-primaryBlog: maxrohde.com
 title: PhD Progress Presentation
 ---
 

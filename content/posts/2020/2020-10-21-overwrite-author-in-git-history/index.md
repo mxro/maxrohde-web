@@ -1,7 +1,9 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 coverImage: image.png
 date: "2020-10-21"
-primaryBlog: maxrohde.com
 tags:
 - coding
 - git

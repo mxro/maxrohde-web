@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 coverImage: lautaro-andreani-uysbcu9rp3y-unsplash.jpg
 date: "2022-03-17"
-primaryBlog: maxrohde.com
 tags:
 - aws
 - bootstrap

@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 - psychology
 coverImage: forgive_and_ye_shall_be_forgiven.jpg
 date: "2019-04-06"
-primaryBlog: maxrohde.com
 tags:
 - christianity
 - enlightenment

@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-05-31"
-primaryBlog: maxrohde.com
 title: Migrate Projects to Maven/Subversion Development Environment
 ---
 

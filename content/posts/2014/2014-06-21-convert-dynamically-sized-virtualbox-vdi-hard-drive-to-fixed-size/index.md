@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - linux
 date: "2014-06-21"
-primaryBlog: maxrohde.com
 tags:
 - virtualbox
 title: Convert Dynamically Sized VirtualBox VDI Hard Drive to Fixed Size

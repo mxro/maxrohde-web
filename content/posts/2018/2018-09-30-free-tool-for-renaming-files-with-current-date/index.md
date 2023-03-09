@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 coverImage: date-namer.png
 date: "2018-09-30"
-primaryBlog: maxrohde.com
 tags:
 - open-source
 - tools

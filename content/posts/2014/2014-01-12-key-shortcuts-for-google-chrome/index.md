@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2014-01-12"
-primaryBlog: maxrohde.com
 title: Key Shortcuts for Google Chrome
 ---
 

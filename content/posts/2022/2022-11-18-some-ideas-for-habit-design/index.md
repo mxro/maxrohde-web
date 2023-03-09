@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 coverImage: pexels-polina-tankilevitch-3735780.jpg
 date: "2022-11-18"
 id: some-ideas-for-habit-design
-primaryBlog: maxrohde.com
 summary: To change one's behaviour is not always easy - what can help is to start
   with some well-designed habits.
 tags:

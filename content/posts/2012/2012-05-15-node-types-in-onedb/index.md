@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2012-05-15"
-primaryBlog: maxrohde.com
 title: A Practical Guide on Node Types in onedb
 ---
 

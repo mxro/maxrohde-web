@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2010-04-01"
-primaryBlog: maxrohde.com
 title: 'Wrap-up: Critical Linnk Functionality'
 ---
 

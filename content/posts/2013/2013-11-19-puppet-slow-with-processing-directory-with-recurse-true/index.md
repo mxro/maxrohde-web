@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - linux
 date: "2013-11-19"
-primaryBlog: maxrohde.com
 tags:
 - puppet
 title: Puppet Slow With Processing Directory with ‘recurse =&gt; true’

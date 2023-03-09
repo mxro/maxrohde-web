@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - productivity
 date: "2021-06-27"
-primaryBlog: maxrohde.com
 tags:
 - coding
 - github

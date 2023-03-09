@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - psychology
 coverImage: meditation-2214532.jpg
 date: "2019-07-06"
-primaryBlog: maxrohde.com
 tags:
 - breathing
 - health

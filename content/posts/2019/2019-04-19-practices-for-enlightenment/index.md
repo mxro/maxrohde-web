@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - buddhism
 - philosophy
 - psychology
 coverImage: kiyomizu-dera-by-utagawa-hiroshige.jpg
 date: "2019-04-19"
-primaryBlog: maxrohde.com
 tags:
 - breathing
 - enlightenment

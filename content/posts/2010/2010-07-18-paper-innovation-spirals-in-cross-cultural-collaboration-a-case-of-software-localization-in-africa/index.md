@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2010-07-18"
-primaryBlog: maxrohde.com
 title: 'Paper: Innovation Spirals in Cross-Cultural Collaboration: A Case of Software
   Localization in Africa'
 ---

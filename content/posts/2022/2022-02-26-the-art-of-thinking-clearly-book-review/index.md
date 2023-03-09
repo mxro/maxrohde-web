@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - psychology
 coverImage: sasha-freemind-pv5weeyxmwu-unsplash.jpg
 date: "2022-02-26"
-primaryBlog: maxrohde.com
 tags:
 - book-reviews
 - books

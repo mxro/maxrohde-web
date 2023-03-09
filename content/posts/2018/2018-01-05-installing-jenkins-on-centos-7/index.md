@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2018-01-05"
-primaryBlog: maxrohde.com
 tags:
 - devops
 - jenkins

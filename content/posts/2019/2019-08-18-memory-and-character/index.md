@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - psychology
 - quotes
 coverImage: narrative-794978.jpg
 date: "2019-08-18"
-primaryBlog: maxrohde.com
 tags:
 - character
 - memory

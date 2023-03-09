@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - buddhism
 - philosophy
 - psychology
 coverImage: game-of-thrones-4180794_1920.jpg
 date: "2021-11-25"
-primaryBlog: maxrohde.com
 tags:
 - life
 - memory

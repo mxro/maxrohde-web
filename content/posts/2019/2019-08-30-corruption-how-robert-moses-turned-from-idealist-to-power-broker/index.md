@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - politics
 - society
 coverImage: robert_moses_with_battery_bridge_model.jpg
 date: "2019-08-30"
-primaryBlog: maxrohde.com
 tags:
 - corruption
 - gorbachev

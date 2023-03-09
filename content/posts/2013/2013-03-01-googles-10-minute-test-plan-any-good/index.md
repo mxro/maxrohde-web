@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2013-03-01"
-primaryBlog: maxrohde.com
 title: Google’s 10 Minute Test Plan – Attributes
 ---
 

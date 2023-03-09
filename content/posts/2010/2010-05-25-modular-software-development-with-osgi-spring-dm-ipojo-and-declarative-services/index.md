@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-05-25"
-primaryBlog: maxrohde.com
 title: Modular Software Development with OSGi, Spring DM, iPOJO and Declarative Services
 ---
 

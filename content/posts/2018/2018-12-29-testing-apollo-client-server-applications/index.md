@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 coverImage: apollo.png
 date: "2018-12-29"
-primaryBlog: maxrohde.com
 tags:
 - graphql
 - jest

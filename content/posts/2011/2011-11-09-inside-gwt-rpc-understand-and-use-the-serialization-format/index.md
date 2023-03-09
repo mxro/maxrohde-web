@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-11-09"
-primaryBlog: maxrohde.com
 title: 'Inside GWT RPC: Understand and Use the Serialization Format'
 ---
 

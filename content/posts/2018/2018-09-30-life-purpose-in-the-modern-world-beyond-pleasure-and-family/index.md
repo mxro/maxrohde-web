@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 - society
 coverImage: john-singleton-copley-the-copley-family-1776-1777.jpg
 date: "2018-09-30"
-primaryBlog: maxrohde.com
 tags:
 - biology
 - controversial

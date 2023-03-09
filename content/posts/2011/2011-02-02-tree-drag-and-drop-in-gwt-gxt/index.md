@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-02-02"
-primaryBlog: maxrohde.com
 title: Tree Drag and Drop in GWT / GXT
 ---
 

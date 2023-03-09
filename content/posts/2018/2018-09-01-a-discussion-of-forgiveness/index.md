@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 coverImage: 785px-rembrandt_harmensz_van_rijn_-_return_of_the_prodigal_son_-_google_art_project.jpg
 date: "2018-09-01"
-primaryBlog: maxrohde.com
 tags:
 - beauty
 - buddhism

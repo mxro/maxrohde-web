@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 coverImage: be-511557.jpg
 date: "2019-04-20"
-primaryBlog: maxrohde.com
 tags:
 - buddhism
 - gratitude

@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 coverImage: strapi-4.png
 date: "2020-02-24"
-primaryBlog: maxrohde.com
 tags:
 - headless-cms
 title: Strapi 2020 Quick Review

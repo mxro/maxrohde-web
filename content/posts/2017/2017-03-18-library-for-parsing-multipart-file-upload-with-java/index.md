@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2017-03-18"
-primaryBlog: maxrohde.com
 tags:
 - open-source
 - programming

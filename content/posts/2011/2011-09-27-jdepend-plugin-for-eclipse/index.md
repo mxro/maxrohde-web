@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-09-27"
-primaryBlog: maxrohde.com
 title: JDepend Plugin for Eclipse
 ---
 

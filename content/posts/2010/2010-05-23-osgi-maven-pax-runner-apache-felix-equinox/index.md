@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-05-23"
-primaryBlog: maxrohde.com
 title: OSGi + Maven + Pax Runner + Apache Felix + Equinox
 ---
 

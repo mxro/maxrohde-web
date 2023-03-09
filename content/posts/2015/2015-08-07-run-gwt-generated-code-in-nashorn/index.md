@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2015-08-07"
-primaryBlog: maxrohde.com
 tags:
 - gwt
 - jdk-nashorn

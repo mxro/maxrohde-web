@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2014-01-31"
-primaryBlog: maxrohde.com
 title: Embed HTML Code in JavaScript File
 ---
 

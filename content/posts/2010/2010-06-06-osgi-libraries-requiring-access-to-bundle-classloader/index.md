@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-06-06"
-primaryBlog: maxrohde.com
 title: 'OSGi: Libraries Requiring Access to Bundle ClassLoader'
 ---
 

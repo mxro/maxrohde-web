@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 coverImage: maven-logo-black-on-white.png
 date: "2018-01-11"
-primaryBlog: maxrohde.com
 tags:
 - maven
 title: A Handy Reference of Maven Parameters

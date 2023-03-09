@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2016-08-19"
-primaryBlog: maxrohde.com
 tags:
 - aws
 - cloudwatch

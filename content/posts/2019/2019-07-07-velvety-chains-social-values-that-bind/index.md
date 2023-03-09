@@ -1,11 +1,13 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - economy
 - philosophy
 - psychology
 coverImage: hand-2223109.jpg
 date: "2019-07-07"
-primaryBlog: maxrohde.com
 tags:
 - economics
 - health

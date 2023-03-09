@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-04-27"
-primaryBlog: maxrohde.com
 title: Large WAR file cannot be deployed in Tomcat 7
 ---
 

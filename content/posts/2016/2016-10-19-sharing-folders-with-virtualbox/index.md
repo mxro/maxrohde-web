@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - linux
 date: "2016-10-19"
-primaryBlog: maxrohde.com
 tags:
 - virtualbox
 title: Sharing Folders with VirtualBox

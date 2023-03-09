@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2010-12-03"
-primaryBlog: maxrohde.com
 title: Leverage Eclipse to Create Executable OSGi based Applications
 ---
 

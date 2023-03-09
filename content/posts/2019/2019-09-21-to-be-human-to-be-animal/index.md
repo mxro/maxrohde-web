@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 - psychology
 coverImage: animal-3892140.jpg
 date: "2019-09-21"
-primaryBlog: maxrohde.com
 tags:
 - biology
 - human

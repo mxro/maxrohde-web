@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-03-02"
-primaryBlog: maxrohde.com
 title: 'GWT Object Serialization: Problems and (some) workarounds'
 ---
 

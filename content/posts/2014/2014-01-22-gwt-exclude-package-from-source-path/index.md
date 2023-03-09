@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2014-01-22"
-primaryBlog: maxrohde.com
 tags:
 - google-web-toolkit
 - gwt

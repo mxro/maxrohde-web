@@ -1,7 +1,9 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 coverImage: squarspace.png
 date: "2018-01-04"
-primaryBlog: maxrohde.com
 title: 'Good Web Design: Squarespace'
 ---
 

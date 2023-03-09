@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - buddhism
 - philosophy
 coverImage: landscape-2090495.jpg
 date: "2020-04-18"
-primaryBlog: maxrohde.com
 tags:
 - goals
 - habit

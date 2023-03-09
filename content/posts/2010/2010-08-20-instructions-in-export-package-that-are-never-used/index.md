@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-08-20"
-primaryBlog: maxrohde.com
 title: Instructions in Export-Package that are never used
 ---
 

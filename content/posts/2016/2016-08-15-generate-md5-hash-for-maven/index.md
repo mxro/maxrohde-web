@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2016-08-15"
-primaryBlog: maxrohde.com
 tags:
 - maven
 title: Generate md5 Hash for Maven

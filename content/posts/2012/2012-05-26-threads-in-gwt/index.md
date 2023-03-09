@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2012-05-26"
-primaryBlog: maxrohde.com
 title: Threads in GWT?
 ---
 

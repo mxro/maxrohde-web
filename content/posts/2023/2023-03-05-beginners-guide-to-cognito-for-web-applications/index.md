@@ -1,4 +1,7 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 canonicalUrl: https://www.freecodecamp.org/news/how-to-use-cognito-for-web-applications/
 categories:
 - devops
@@ -7,7 +10,6 @@ categories:
 coverImage: Cognito-Cover.jpg
 date: "2023-03-05"
 id: beginners-guide-to-cognito-for-web-applications
-primaryBlog: maxrohde.com
 tags:
 - cognito
 - serverless

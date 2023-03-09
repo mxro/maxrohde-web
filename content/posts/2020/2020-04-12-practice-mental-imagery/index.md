@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - buddhism
 coverImage: mountain-1624284.jpg
 date: "2020-04-12"
-primaryBlog: maxrohde.com
 tags:
 - meditation
 - practice

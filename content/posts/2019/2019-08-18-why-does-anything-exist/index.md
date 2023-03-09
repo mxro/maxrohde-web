@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 coverImage: color-1235593.jpg
 date: "2019-08-18"
-primaryBlog: maxrohde.com
 tags:
 - book
 - existence

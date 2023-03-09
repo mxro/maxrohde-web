@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2021-10-30"
-primaryBlog: maxrohde.com
 tags:
 - coding
 - open-source

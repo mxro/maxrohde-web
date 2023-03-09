@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-02-21"
-primaryBlog: maxrohde.com
 title: GWT deRPC to be Deprecated
 ---
 

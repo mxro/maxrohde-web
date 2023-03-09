@@ -1,10 +1,12 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 - serverless
 coverImage: jaime-spaniol-dsqu3n5o3sg-unsplash.jpg
 date: "2022-03-10"
-primaryBlog: maxrohde.com
 tags:
 - aws
 - boilerplate

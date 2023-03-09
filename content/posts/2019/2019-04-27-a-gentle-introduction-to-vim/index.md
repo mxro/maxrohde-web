@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - productivity
 date: "2019-04-27"
-primaryBlog: maxrohde.com
 tags:
 - linux
 - productivity

@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2014-11-25"
-primaryBlog: maxrohde.com
 tags:
 - questions
 - writing

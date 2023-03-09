@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2012-04-02"
-primaryBlog: maxrohde.com
 title: Java NIO HttpClients
 ---
 

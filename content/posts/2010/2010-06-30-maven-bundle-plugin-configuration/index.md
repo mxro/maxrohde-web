@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-06-30"
-primaryBlog: maxrohde.com
 title: Maven Bundle Plugin Configuration
 ---
 

@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2016-12-04"
-primaryBlog: maxrohde.com
 tags:
 - amazon-route-53
 - aws

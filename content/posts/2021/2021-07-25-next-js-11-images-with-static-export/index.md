@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2021-07-25"
-primaryBlog: maxrohde.com
 tags:
 - aws
 - next-js

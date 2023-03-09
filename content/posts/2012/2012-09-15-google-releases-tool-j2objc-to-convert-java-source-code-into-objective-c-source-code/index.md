@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2012-09-15"
-primaryBlog: maxrohde.com
 tags:
 - google-web-toolkit
 title: Google Releases Tool J2ObjC to convert Java Source Code into Objective-C Source

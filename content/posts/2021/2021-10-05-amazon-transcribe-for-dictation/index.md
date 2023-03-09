@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2021-10-05"
-primaryBlog: maxrohde.com
 tags:
 - aws
 title: Amazon Transcribe for Dictation

@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 coverImage: untitled-drawing.png
 date: "2021-02-20"
-primaryBlog: maxrohde.com
 tags:
 - aws
 - aws-lambda

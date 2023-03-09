@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-10-03"
-primaryBlog: maxrohde.com
 title: JavaDoc Editor for eclipse
 ---
 

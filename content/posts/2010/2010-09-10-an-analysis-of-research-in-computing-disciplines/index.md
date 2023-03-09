@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - contemplations
 date: "2010-09-10"
-primaryBlog: maxrohde.com
 title: An analysis of research in computing disciplines
 ---
 

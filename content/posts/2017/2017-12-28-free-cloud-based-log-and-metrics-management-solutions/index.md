@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - devops
 date: "2017-12-28"
-primaryBlog: maxrohde.com
 tags:
 - metrics
 - monitoring

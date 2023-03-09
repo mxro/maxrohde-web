@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2012-11-28"
-primaryBlog: maxrohde.com
 title: Signing up for Apple Developer Program on Windows
 ---
 

@@ -1,4 +1,7 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 - productivity
@@ -6,7 +9,6 @@ categories:
 - society
 coverImage: watch-4638673.jpg
 date: "2021-09-10"
-primaryBlog: maxrohde.com
 tags:
 - life
 - school

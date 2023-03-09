@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2016-05-17"
-primaryBlog: maxrohde.com
 title: 'JQuery UI Droppable: Prevent Event Bubbling'
 ---
 

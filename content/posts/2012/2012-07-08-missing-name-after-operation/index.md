@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2012-07-08"
-primaryBlog: maxrohde.com
 title: Missing Name After . Operation
 ---
 

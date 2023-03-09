@@ -1,7 +1,9 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 coverImage: workout-program.png
 date: "2020-05-08"
-primaryBlog: maxrohde.com
 tags:
 - exercise
 - habits

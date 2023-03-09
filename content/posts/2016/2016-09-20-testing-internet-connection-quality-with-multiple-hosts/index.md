@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2016-09-20"
-primaryBlog: maxrohde.com
 title: Testing Internet Connection Quality (with multiple hosts)
 ---
 

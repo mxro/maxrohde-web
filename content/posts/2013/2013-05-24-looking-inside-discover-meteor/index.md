@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2013-05-24"
-primaryBlog: maxrohde.com
 tags:
 - review
 title: Looking Inside ‘Discover Meteor’

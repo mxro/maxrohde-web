@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2013-03-18"
-primaryBlog: maxrohde.com
 title: Copy and Paste from HTML Tables with Empty Cells
 ---
 

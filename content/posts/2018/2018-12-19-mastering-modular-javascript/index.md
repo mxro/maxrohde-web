@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2018-12-19"
-primaryBlog: maxrohde.com
 tags:
 - programming
 title: Mastering Modular JavaScript

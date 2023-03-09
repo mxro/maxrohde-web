@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - devops
 date: "2018-02-01"
-primaryBlog: maxrohde.com
 tags:
 - grafana
 - linux

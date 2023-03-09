@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - philosophy
 coverImage: old-woman-574278.jpg
 date: "2019-12-08"
-primaryBlog: maxrohde.com
 tags:
 - death
 - immortality

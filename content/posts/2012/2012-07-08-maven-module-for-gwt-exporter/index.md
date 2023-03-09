@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2012-07-08"
-primaryBlog: maxrohde.com
 title: Maven Module for gwt-exporter
 ---
 

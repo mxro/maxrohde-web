@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-10-05"
-primaryBlog: maxrohde.com
 title: GWT Module XXX not found in project sources or resources.
 ---
 

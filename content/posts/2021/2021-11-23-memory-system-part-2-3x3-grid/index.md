@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - psychology
 coverImage: abstract-2105402_1920.jpg
 date: "2021-11-23"
-primaryBlog: maxrohde.com
 tags:
 - life
 - memory

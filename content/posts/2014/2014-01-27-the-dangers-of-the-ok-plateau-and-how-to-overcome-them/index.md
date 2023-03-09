@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - productivity
 date: "2014-01-27"
-primaryBlog: maxrohde.com
 tags:
 - daniel-coyle
 - daniel-goleman

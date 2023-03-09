@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2011-09-14"
-primaryBlog: maxrohde.com
 title: Relocating SVN repository for multiple projects in eclipse workspace
 ---
 

@@ -1,4 +1,7 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - economy
 - philosophy
@@ -6,7 +9,6 @@ categories:
 - society
 coverImage: the_oracle.jpg
 date: "2018-12-09"
-primaryBlog: maxrohde.com
 tags:
 - environment
 - equality

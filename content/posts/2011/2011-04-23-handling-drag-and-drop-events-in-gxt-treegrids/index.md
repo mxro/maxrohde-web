@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2011-04-23"
-primaryBlog: maxrohde.com
 title: Handling Drag and Drop Events in Gxt TreeGrids
 ---
 

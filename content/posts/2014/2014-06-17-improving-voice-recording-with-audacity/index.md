@@ -1,6 +1,8 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 date: "2014-06-17"
-primaryBlog: maxrohde.com
 title: Improving Voice Recording with Audacity
 ---
 

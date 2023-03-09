@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2012-11-26"
-primaryBlog: maxrohde.com
 tags:
 - jenkins
 title: Embedding Jenkins in Java App

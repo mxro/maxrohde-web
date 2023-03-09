@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - javascript
 date: "2014-03-28"
-primaryBlog: maxrohde.com
 tags:
 - bootstrap
 title: Insert Text at Caret Position in Summernote Editor for Bootstrap

@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-09-25"
-primaryBlog: maxrohde.com
 title: Setting up and starting a web server in eclipse PDE (Quickstart)
 ---
 

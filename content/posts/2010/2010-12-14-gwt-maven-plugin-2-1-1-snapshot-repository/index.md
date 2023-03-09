@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-12-14"
-primaryBlog: maxrohde.com
 title: Gwt-maven-plugin-2.1.1-SNAPSHOT repository
 ---
 

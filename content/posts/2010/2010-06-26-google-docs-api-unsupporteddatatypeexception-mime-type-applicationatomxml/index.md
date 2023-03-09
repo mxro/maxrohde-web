@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-06-26"
-primaryBlog: maxrohde.com
 title: 'Google Docs API: UnsupportedDataTypeException MIME type application/atom+xml'
 ---
 

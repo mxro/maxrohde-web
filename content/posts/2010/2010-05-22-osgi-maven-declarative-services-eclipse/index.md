@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2010-05-22"
-primaryBlog: maxrohde.com
 title: OSGi + Maven + Declarative Services + eclipse
 ---
 

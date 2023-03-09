@@ -1,9 +1,11 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - psychology
 coverImage: hands-423794.jpg
 date: "2020-02-02"
-primaryBlog: maxrohde.com
 tags:
 - life
 - personality

@@ -1,8 +1,10 @@
 ---
+authors:
+- max
+blog: maxrohde.com
 categories:
 - java
 date: "2016-12-16"
-primaryBlog: maxrohde.com
 tags:
 - eclipse
 - programming
