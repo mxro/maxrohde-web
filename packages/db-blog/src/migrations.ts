@@ -79,5 +79,24 @@ export const createMigrations = (): InputMigrations<DynamoDBContext> => {
         });
       },
     },
+    {
+      name: '2023-03-10-init-view-count',
+      up: async (params) => {
+        const table = await connectTable({
+          client: params.context.client,
+        });
+
+        const BlogMetrics = new Entity({
+          ...deepCopy(BlogMetricEntity),
+          table,
+        } as const);
+
+        await BlogMetrics.put({
+          blog: 'shalveena.com',
+          metricId: 'views',
+          value: 6221, // as of 10/13/2023
+        });
+      },
+    },
   ];
 };

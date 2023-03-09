@@ -182,7 +182,7 @@ export const publish = async (args: PublishArgs): Promise<void> => {
       return Promise.all(
         post.metadata.tags.map((tag: string) => {
           return TagMappings.put({
-            blog: 'maxrohde.com',
+            blog: post.metadata.blog,
             postPath: result.path,
             tagId: tag,
           });
@@ -229,7 +229,7 @@ export const publish = async (args: PublishArgs): Promise<void> => {
       return Promise.all(
         categories.map((category: string) => {
           return CategoryMappings.put({
-            blog: 'maxrohde.com',
+            blog: post.metadata.blog,
             postPath: result.path,
             categoryId: category,
           });
