@@ -40,10 +40,14 @@ export async function prepare(args: PrepareArgs): Promise<void> {
     files.map(async (file) => {
       const post = await parseMarkdown(file);
       if (!post.metadata.date) {
-        throw new Error('Post `date` needs to be provided');
+        throw new Error(
+          'Post `date` needs to be provided and is not for ' + file
+        );
       }
       if (!post.metadata.id) {
-        throw new Error('Post `id` needs to be provided');
+        throw new Error(
+          'Post `id` needs to be provided and is not for ' + file
+        );
       }
       if (!post.metadata.blog) {
         throw new Error('Post `blog` needs to be provided');

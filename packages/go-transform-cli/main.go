@@ -20,14 +20,13 @@ type CLI struct {
 		PrimaryBlog string `arg:"" help:"The primary blog to set."`
 		GlobPattern string `arg:"" help:"The glob pattern to match files."`
 	} `cmd:"" help:"Set the primary blog in Markdown files."`
-	SetSecondaryBlogs struct {
-		SecondaryBlogs string `arg:"" help:"The secondary blogs to set. Comma separated."`
-		GlobPattern    string `arg:"" help:"The glob pattern to match files."`
-	} `cmd:"" help:"Set the secondary blogs in Markdown files."`
 	SetAuthors struct {
 		Authors     string `arg:"" help:"The authors for the blog to set. Comma separated."`
 		GlobPattern string `arg:"" help:"The glob pattern to match files."`
 	} `cmd:"" help:"Set the authors in Markdown files."`
+	SetId struct {
+		GlobPattern string `arg:"" help:"The glob pattern to match files."`
+	} `cmd:"" help:"Defines an id field in the frontmatter based on the file path"`
 }
 
 type Config struct {
@@ -58,7 +57,6 @@ type processorFn func(string) error
 func (c *CLI) ProcessFiles(ctx *kong.Context, pattern string, fn processorFn) error {
 	g := glob.MustCompile(pattern)
 
-	fmt.Println(pattern)
 	err := filepath.Walk(ReadConfig().RootDir, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
 			return err
@@ -71,32 +69,50 @@ func (c *CLI) ProcessFiles(ctx *kong.Context, pattern string, fn processorFn) er
 	return err
 }
 
+type frontmatterProcessorFn func(map[string]interface{}) error
+
+func ProcessFrontMatter(path string, processor frontmatterProcessorFn) error {
+	data, err := os.Open(path)
+	if err != nil {
+		return err
+	}
+
+	m := front.NewMatter()
+	m.Handle("---", front.YAMLHandler)
+	frontmatterMap, body, err := m.Parse(data)
+	if err != nil {
+		return err
+	}
+
+	serr := processor(frontmatterMap)
+	if serr != nil {
+		return err
+	}
+
+	y, err := yaml.Marshal(frontmatterMap)
+	if err != nil {
+		return err
+	}
+
+	newContent := "---\n" + string(y) + "---\n\n" + body
+
+	if err := ioutil.WriteFile(path, []byte(newContent), 0644); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *CLI) SetPrimaryBlogAction(ctx *kong.Context) error {
 	return c.ProcessFiles(ctx, c.SetPrimaryBlog.GlobPattern, func(path string) error {
 		fmt.Printf("Processing %s\n", path)
-		data, err := os.Open(path)
-		if err != nil {
-			return err
-		}
 
-		m := front.NewMatter()
-		m.Handle("---", front.YAMLHandler)
-		frontmatterMap, body, err := m.Parse(data)
-		if err != nil {
-			return err
-		}
-
-		frontmatterMap["blog"] = c.SetPrimaryBlog.PrimaryBlog
-
-		y, err := yaml.Marshal(frontmatterMap)
-		if err != nil {
-			return err
-		}
-
-		newContent := "---\n" + string(y) + "---\n\n" + body
-
-		if err := ioutil.WriteFile(path, []byte(newContent), 0644); err != nil {
-			return err
+		perr := ProcessFrontMatter(path, func(m map[string]interface{}) error {
+			m["blog"] = c.SetPrimaryBlog.PrimaryBlog
+			return nil
+		})
+		if perr != nil {
+			return perr
 		}
 
 		return nil
@@ -106,29 +122,13 @@ func (c *CLI) SetPrimaryBlogAction(ctx *kong.Context) error {
 func (c *CLI) SetAuthorsAction(ctx *kong.Context) error {
 	return c.ProcessFiles(ctx, c.SetAuthors.GlobPattern, func(path string) error {
 		fmt.Printf("Processing %s\n", path)
-		data, err := os.Open(path)
-		if err != nil {
-			return err
-		}
 
-		m := front.NewMatter()
-		m.Handle("---", front.YAMLHandler)
-		frontmatterMap, body, err := m.Parse(data)
-		if err != nil {
-			return err
-		}
-
-		frontmatterMap["authors"] = strings.Split(c.SetAuthors.Authors, ",")
-
-		y, err := yaml.Marshal(frontmatterMap)
-		if err != nil {
-			return err
-		}
-
-		newContent := "---\n" + string(y) + "---\n\n" + body
-
-		if err := ioutil.WriteFile(path, []byte(newContent), 0644); err != nil {
-			return err
+		perr := ProcessFrontMatter(path, func(m map[string]interface{}) error {
+			m["authors"] = strings.Split(c.SetAuthors.Authors, ",")
+			return nil
+		})
+		if perr != nil {
+			return perr
 		}
 
 		return nil
