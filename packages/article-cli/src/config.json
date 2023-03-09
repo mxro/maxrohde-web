@@ -1,6 +1,6 @@
 {
   "postsDir": "./../../content/posts",
-  "draftsDir": "./../../../writing",
+  "draftsDir": "./../../content/import",
   "draftsAttachmentsDir": "./../../../writing/Resources",
   "shalveenaPostsDir": "./../../content/import/wordpress/shalveena/output-folder",
   "shalveenaXmlExport": "./../../content/import/wordpress/shalveena.xml",

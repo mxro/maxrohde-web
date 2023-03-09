@@ -1,7 +1,7 @@
 import fg from 'fast-glob';
 import { cpSync, existsSync, mkdirSync, rmSync } from 'fs';
 
-import { basename, resolve } from 'path';
+import path, { basename, resolve } from 'path';
 import config from '../config.json';
 import { parseMarkdown, ParseMarkdownResult } from '../markdown/markdown';
 import { moveAttachments } from './moveAttachments';
@@ -27,6 +27,7 @@ export async function findPrepareFiles(args: PrepareArgs): Promise<string[]> {
     })
   ).map((path) => `${contentDir}/${path}`);
   matches = matches.filter((path) => existsSync(path));
+  matches = matches.filter((p) => path.extname(p) === '.md');
   console.log('Found articles');
   console.log(matches);
   return matches;
