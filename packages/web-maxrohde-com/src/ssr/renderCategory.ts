@@ -16,9 +16,17 @@ import {
 } from 'db-blog';
 
 import AWS from 'aws-sdk';
-import TagPage, { TagProps } from '../components/pages/TagPage';
+
+export interface TagProps {
+  id: string;
+  posts: BlogListItemProps[];
+  nextToken?: string;
+}
+
+import TagPage from '../components/pages/TagPage';
 
 import { loadPosts } from '../lib/posts';
+import { BlogListItemProps } from 'dynamodb-blog';
 
 export async function renderCategory({
   event,

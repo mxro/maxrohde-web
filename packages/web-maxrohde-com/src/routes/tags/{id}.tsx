@@ -12,7 +12,7 @@ export const handler: SSRHandler = async (
   event: APIGatewayProxyEventV2,
   context: APIGatewayProxyResultV2
 ) => {
-  return renderTag.renderTag({ event });
+  return renderTag.renderTag({ event, renderPage, PageComponent: TagPage });
 };
 
 hydrate(TagPage);

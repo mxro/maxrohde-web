@@ -4,7 +4,6 @@ import {
   APIGatewayProxyEventV2,
   APIGatewayProxyResultV2,
 } from 'aws-lambda/trigger/api-gateway-proxy';
-import { renderPage } from '../render';
 
 import {
   connect,
@@ -16,14 +15,21 @@ import {
 } from 'db-blog';
 
 import AWS from 'aws-sdk';
-import TagPage, { TagProps } from '../components/pages/TagPage';
 
 import { loadPosts } from '../lib/posts';
+import { TagProps } from './renderCategory';
+import { PartialRenderPageProps } from '@goldstack/template-ssr';
 
 export async function renderTag({
+  renderPage,
   event,
+  PageComponent,
 }: {
   event: APIGatewayProxyEventV2;
+  renderPage: (
+    props: PartialRenderPageProps<TagProps>
+  ) => Promise<APIGatewayProxyResultV2>;
+  PageComponent: (props: TagProps) => JSX.Element;
 }): Promise<APIGatewayProxyResultV2> {
   const dynamodb = await connect();
   AWS.config.logger = console;
@@ -63,8 +69,8 @@ export async function renderTag({
     postIds,
   });
 
-  return renderPage<TagProps>({
-    component: TagPage,
+  return renderPage({
+    component: PageComponent,
     appendToHead: `<title>${tagId} - Code of Joy</title>`,
     properties: {
       id: tagId,

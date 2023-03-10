@@ -16,9 +16,18 @@ import {
   connect,
 } from 'db-blog';
 
-import IndexPage, { IndexProps } from '../components/pages/IndexPage';
-import ErrorPage, { ErrorPageProps } from '../components/pages/ErrorPage';
+import IndexPage from '../components/pages/IndexPage';
+import ErrorPage from '../components/pages/ErrorPage';
 import { loadPosts } from '../lib/posts';
+import { BlogListItemProps } from 'dynamodb-blog';
+import { ErrorPageProps } from './renderPost';
+
+export interface IndexProps {
+  posts: BlogListItemProps[];
+  pinnedPosts: BlogListItemProps[];
+  firstPage: boolean;
+  lastTimestamp?: string;
+}
 
 export async function renderIndex({
   event,

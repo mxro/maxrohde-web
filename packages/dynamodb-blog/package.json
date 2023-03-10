@@ -2,6 +2,9 @@
   "name": "dynamodb-blog",
   "version": "0.1.0",
   "main": "./src/dynamoDBBlog",
+  "dependencies": {
+    "db-blog": "workspace:^"
+  },
   "devDependencies": {
     "@types/jest": "^29.0.1",
     "@types/react": "^18.0.15",

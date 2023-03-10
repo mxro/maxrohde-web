@@ -23,8 +23,11 @@ import {
 import { normalisePath } from './../lib/posts';
 
 import PostPage from '../components/pages/PostPage';
-import ErrorPage, { ErrorPageProps } from '../components/pages/ErrorPage';
+import ErrorPage from '../components/pages/ErrorPage';
 
+export interface ErrorPageProps {
+  message: string;
+}
 export async function renderPost({
   event,
 }: {

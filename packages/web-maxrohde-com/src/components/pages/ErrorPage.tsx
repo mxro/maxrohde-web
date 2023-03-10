@@ -1,10 +1,7 @@
 import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
-
-export interface ErrorPageProps {
-  message: string;
-}
+import { ErrorPageProps } from '../../ssr/renderPost';
 
 const ErrorPage = (props: ErrorPageProps): JSX.Element => {
   return (
