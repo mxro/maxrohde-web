@@ -11,6 +11,8 @@
   "spearOfLightXmlExport": "./../../content/import/wordpress/input/spearoflight-before-preprocess.xml",
   "spearOfLightXmlFixed": "./../../content/import/wordpress/input/spearoflight.xml",
   "spearOfLightPostsDir": "./../../content/import/wordpress/spearoflight/output-folder",
-  "coverImagePath": "./../web-maxrohde-com/static/img/cover",
-  "attachmentsImagePath": "./../web-maxrohde-com/static/img/attachments"
+  "maxrohdeCoverImagePath": "./../web-maxrohde-com/static/img/cover",
+  "maxrohdeAttachmentsImagePath": "./../web-maxrohde-com/static/img/attachments",
+  "shalveenaCoverImagePath": "./../web-shalveena-com/static/img/cover",
+  "shalveenaAttachmentsImagePath": "./../web-shalveena-com/static/img/attachments"
 }
