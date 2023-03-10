@@ -77,6 +77,8 @@ func ProcessFrontMatter(path string, processor frontmatterProcessorFn) error {
 		return err
 	}
 
+	defer data.Close()
+
 	m := front.NewMatter()
 	m.Handle("---", front.YAMLHandler)
 	frontmatterMap, body, err := m.Parse(data)
