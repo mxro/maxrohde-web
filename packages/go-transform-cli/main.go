@@ -95,7 +95,7 @@ func ProcessFrontMatter(path string, processor frontmatterProcessorFn) error {
 	}
 
 	if strings.HasPrefix(body, "---") {
-		body = strings.Replace("---\n", "", 1)
+		body = strings.Replace(body, "---\n", "", 1)
 	}
 	fmt.Printf("New Frontmatter:\n%s\nNew Body:\n%s", string(newFrontmatter), body)
 	newContent := "---\n" + string(newFrontmatter) + "---\n\n" + body
