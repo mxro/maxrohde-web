@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Will you marry me? A dream come true"
 date: "2013-07-27"
-title: Will you marry me? A dream come true
+categories: 
+  - "journal"
 ---
 
 On the night of 14 June 2013, our last day in Phuket, as I prepared for bed and turned the pillow a sheet of paper peeked out from underneath. "What is this? And what is it doing here in the bed?" I wondered, somewhat perplexed.

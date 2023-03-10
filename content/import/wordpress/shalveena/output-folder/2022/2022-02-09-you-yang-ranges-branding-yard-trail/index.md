@@ -1,18 +1,17 @@
 ---
-blog: shalveena.com
-categories:
-- travels
-coverImage: img_6620.jpg
+title: "You Yang Ranges: Branding Yard Trail"
 date: "2022-02-09"
-tags:
-- explore-australia
-- explore-victoria
-- travel-australia
-- travel-local
-- travel-melbourne
-- victoria
-- you-yang-ranges
-title: 'You Yang Ranges: Branding Yard Trail'
+categories: 
+  - "travels"
+tags: 
+  - "explore-australia"
+  - "explore-victoria"
+  - "travel-australia"
+  - "travel-local"
+  - "travel-melbourne"
+  - "victoria"
+  - "you-yang-ranges"
+coverImage: "img_6620.jpg"
 ---
 
 We have been to the You Yangs a few times, but we usually do the Flinders Peak walk. This time, we tried something different: the Branding Yard Trail. It was a category 2 walk with gentle slopes and a nice walking path. It took us about 1.5 hours return and was a 5km trail.

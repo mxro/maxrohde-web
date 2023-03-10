@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "The Power of Questions"
 date: "2012-12-08"
-title: The Power of Questions
+categories: 
+  - "journal"
 ---
 
 [![](https://shalveena.files.wordpress.com/2012/12/3f8d7-dscf2143.jpg?w=300)](https://shalveena.files.wordpress.com/2012/12/3f8d7-dscf2143.jpg)

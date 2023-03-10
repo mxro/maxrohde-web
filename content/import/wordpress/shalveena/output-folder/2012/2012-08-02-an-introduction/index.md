@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "An Introduction"
 date: "2012-08-02"
-title: An Introduction
+categories: 
+  - "journal"
 ---
 
 [![](https://shalveena.files.wordpress.com/2012/08/c5198-dscn0076.jpg?w=300)](https://shalveena.files.wordpress.com/2012/08/c5198-dscn0076.jpg)

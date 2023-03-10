@@ -1,19 +1,18 @@
 ---
-blog: shalveena.com
-categories:
-- recipes
+title: "Ultimate Vegan Ramen"
 date: "2019-02-16"
-tags:
-- asian-food
-- comfort-food
-- dinner
-- family-favourites
-- maxs-favourites
-- shallys-favourites
-- soups
-- vegan-recipes
-- weekend-cooking
-title: Ultimate Vegan Ramen
+categories: 
+  - "recipes"
+tags: 
+  - "asian-food"
+  - "comfort-food"
+  - "dinner"
+  - "family-favourites"
+  - "maxs-favourites"
+  - "shallys-favourites"
+  - "soups"
+  - "vegan-recipes"
+  - "weekend-cooking"
 ---
 
 ## ![IMG_9160x](images/img_9160x.jpg)

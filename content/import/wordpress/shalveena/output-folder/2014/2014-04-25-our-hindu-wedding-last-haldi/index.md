@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Our Hindu Wedding: Last Haldi"
 date: "2014-04-25"
-title: 'Our Hindu Wedding: Last Haldi'
+categories: 
+  - "journal"
 ---
 
 [![](images/bcdb4-dsc_0695.jpg)](https://shalveena.files.wordpress.com/2014/04/bcdb4-dsc_0695.jpg)

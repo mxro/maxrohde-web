@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "The Lunch Dialogue: Negotiation for Beginners"
 date: "2013-11-28"
-title: 'The Lunch Dialogue: Negotiation for Beginners'
+categories: 
+  - "journal"
 ---
 
 Today we had the opportunity to have a couple of hours a senior mediator at work, to learn some tips and tricks about how to be better negotiators.

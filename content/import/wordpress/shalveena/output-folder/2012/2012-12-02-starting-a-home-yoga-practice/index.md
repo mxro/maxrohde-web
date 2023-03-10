@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Starting a home yoga practice"
 date: "2012-12-02"
-title: Starting a home yoga practice
+categories: 
+  - "journal"
 ---
 
 In the last post I mentioned that the challenge for this month is to do yoga 5 days a week. However, going to yoga classes is out of the question for me - I know myself well enough to know that I will not be able to keep that up, at least not with my current schedule (and to be honest I may not have enough motivation to do so!). So instead, I will set up to do some yoga at home, 5 days a week. There are heaps of yoga videos, blogs and instructors accessible on the web.  

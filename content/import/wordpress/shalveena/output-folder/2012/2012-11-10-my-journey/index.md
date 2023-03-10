@@ -1,10 +1,11 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "My Journey"
 date: "2012-11-10"
-title: My Journey
+categories: 
+  - "journal"
 ---
+
+  
 
 [![](https://shalveena.files.wordpress.com/2012/11/f1a0e-dscf1494.jpg?w=300)](https://shalveena.files.wordpress.com/2012/11/f1a0e-dscf1494.jpg)
 

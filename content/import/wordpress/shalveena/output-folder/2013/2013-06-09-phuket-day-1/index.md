@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- travels
+title: "Phuket: Day 1"
 date: "2013-06-09"
-title: 'Phuket: Day 1'
+categories: 
+  - "travels"
 ---
 
 Travel date: 8 and 9 June 2013

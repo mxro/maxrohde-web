@@ -1,20 +1,19 @@
 ---
-blog: shalveena.com
-categories:
-- lunch-and-dinner
-- recipes
-coverImage: img_3857.jpeg
+title: "Chickpea, Sweet Potato and Rocket Salad"
 date: "2020-09-19"
-tags:
-- easy-meals
-- healthy-food
-- oil-free
-- salads
-- summer-salads
-- wfpb
-- wfpb-no-oil
-- whole-food-plant-based
-title: Chickpea, Sweet Potato and Rocket Salad
+categories: 
+  - "lunch-and-dinner"
+  - "recipes"
+tags: 
+  - "easy-meals"
+  - "healthy-food"
+  - "oil-free"
+  - "salads"
+  - "summer-salads"
+  - "wfpb"
+  - "wfpb-no-oil"
+  - "whole-food-plant-based"
+coverImage: "img_3857.jpeg"
 ---
 
 A few days ago, both Max and I discovered that we our clothes are feeling a bit snug! 😳 We blame it entirely on this coronavirus pandemic and the lockdown we have been in for what seems like a lifetime here in Melbourne. This 'discovery' prompted us (Max in particular) to think about cleaning up our diet a bit. We decided that we will cut out oil and processed foods from our diet (although some things like soy milk and nut butters are staying in out of necessity and the fact that neither of us has the time to make those things from scratch). I must admit, I cannot imagine eating food without oil. I mean, I don't like foods with too much oil (we never deep fry anything) but I do like some oil in my food. So, the challenge, then, is how to cook food that tastes good but doesn't require oil? And how in the world can I fry stuff without oil?? That is a tough one for me.

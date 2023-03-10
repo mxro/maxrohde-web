@@ -1,19 +1,18 @@
 ---
-blog: shalveena.com
-categories:
-- recipes
-coverImage: img_0209.jpg
+title: "Potato and Leek Soup"
 date: "2019-09-24"
-tags:
-- comfort-food
-- potatoes
-- shallys-favourites
-- side-dishes
-- soups
-- vegan
-- vegan-recipes
-- winter-warming-recipes
-title: Potato and Leek Soup
+categories: 
+  - "recipes"
+tags: 
+  - "comfort-food"
+  - "potatoes"
+  - "shallys-favourites"
+  - "side-dishes"
+  - "soups"
+  - "vegan"
+  - "vegan-recipes"
+  - "winter-warming-recipes"
+coverImage: "img_0209.jpg"
 ---
 
 I love potatoes - in all shapes and forms (except for plain boiled potatoes)! This soup is perfect for my fellow potato lovers (and even if you don't like potatoes, I urge you to give this a try). It is easy, fast, and yummy!

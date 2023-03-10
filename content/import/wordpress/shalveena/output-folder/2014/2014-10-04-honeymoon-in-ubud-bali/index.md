@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- travels
+title: "Honeymoon in Ubud, Bali"
 date: "2014-10-04"
-title: Honeymoon in Ubud, Bali
+categories: 
+  - "travels"
 ---
 
 [![](images/a76ce-fotor0920190336.png)](https://shalveena.files.wordpress.com/2014/10/a76ce-fotor0920190336.png)

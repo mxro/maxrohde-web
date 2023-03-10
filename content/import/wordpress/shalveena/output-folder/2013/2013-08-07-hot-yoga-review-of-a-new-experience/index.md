@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Hot Yoga - Review of a new experience"
 date: "2013-08-07"
-title: Hot Yoga - Review of a new experience
+categories: 
+  - "journal"
 ---
 
 <table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;"><tbody><tr><td style="text-align:center;"><a href="https://shalveena.files.wordpress.com/2013/08/90e75-4513.jpg" style="margin-left:auto;margin-right:auto;"><img border="0" src="images/d33e7-4713.jpg" style="margin-left:auto;margin-right:auto;"><img border="0" src="https://shalveena.files.wordpress.com/2013/08/d33e7-4713.jpg?w=300" height="212" width="320"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">Photo of the heated studio, from East West Bikram Yoga Newmarket</td></tr></tbody></table>

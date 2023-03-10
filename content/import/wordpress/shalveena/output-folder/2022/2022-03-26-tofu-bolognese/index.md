@@ -1,21 +1,20 @@
 ---
-blog: shalveena.com
-categories:
-- lunch-and-dinner
-- recipes
-coverImage: img_7302.jpg
+title: "Tofu Bolognese"
 date: "2022-03-26"
-tags:
-- clean-eating
-- comfort-food
-- dinner
-- maxs-favourites
-- tofu-bologense
-- vegan-recipes
-- wfpb
-- whole-food-plant-based
-- whole-food-plant-based-recipes
-title: Tofu Bolognese
+categories: 
+  - "lunch-and-dinner"
+  - "recipes"
+tags: 
+  - "clean-eating"
+  - "comfort-food"
+  - "dinner"
+  - "maxs-favourites"
+  - "tofu-bologense"
+  - "vegan-recipes"
+  - "wfpb"
+  - "whole-food-plant-based"
+  - "whole-food-plant-based-recipes"
+coverImage: "img_7302.jpg"
 ---
 
 This bologense sauce is magical! It tastes better than the meat based bolognese sauce I used to make before we became plant based. You must try it!  

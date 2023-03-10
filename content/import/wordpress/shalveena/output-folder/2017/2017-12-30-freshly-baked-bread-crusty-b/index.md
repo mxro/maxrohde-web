@@ -1,15 +1,14 @@
 ---
-blog: shalveena.com
-categories:
-- recipes
-coverImage: imag1937.jpg
+title: "Freshly Baked Bread: Crusty B."
 date: "2017-12-30"
-tags:
-- bread
-- sharlenes-favourites
-- vegan-baking
-- vegan-recipes
-title: 'Freshly Baked Bread: Crusty B.'
+categories: 
+  - "recipes"
+tags: 
+  - "bread"
+  - "sharlenes-favourites"
+  - "vegan-baking"
+  - "vegan-recipes"
+coverImage: "imag1937.jpg"
 ---
 
 ## Ingredients

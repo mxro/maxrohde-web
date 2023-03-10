@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Challenge: October 2012"
 date: "2012-09-30"
-title: 'Challenge: October 2012'
+categories: 
+  - "journal"
 ---
 
 Last month, I made a challenge to make a decision to actively do something. Instead of sitting down and watching TV, and thinking of all the things that we want to so ( or often saying we will do), we should take the chance available right at that moment to do something.

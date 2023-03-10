@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Sports and Me? We don't match...most of the time"
 date: "2013-09-07"
-title: Sports and Me? We don't match...most of the time
+categories: 
+  - "journal"
 ---
 
 I've never been particularly sporty or fit. Okay, okay, so I was quite unfit actually. Back at high school, I was dropped off, and picked up from, school every day. I did not walk anywhere. We had a very car-centric culture, where every bit of travelling was done by car (public transport you say? I had never been in a bus!).  

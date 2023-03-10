@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Music: The Expression of Life"
 date: "2012-08-27"
-title: 'Music: The Expression of Life'
+categories: 
+  - "journal"
 ---
 
 [![](https://shalveena.files.wordpress.com/2012/08/6fd64-img_0941.jpg?w=225)](https://shalveena.files.wordpress.com/2012/08/6fd64-img_0941.jpg)

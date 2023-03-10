@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- recipes
+title: "Mince with feta on brown rice"
 date: "2012-11-26"
-title: Mince with feta on brown rice
+categories: 
+  - "recipes"
 ---
 
 [![](https://shalveena.files.wordpress.com/2012/11/97a2d-dscf2674.jpg?w=300)](https://shalveena.files.wordpress.com/2012/11/97a2d-dscf2674.jpg)

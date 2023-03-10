@@ -1,19 +1,18 @@
 ---
-blog: shalveena.com
-categories:
-- lunch-and-dinner
-- recipes
-coverImage: img_5094.jpeg
+title: "Mujadara: Lentils &amp; Bulgur Pilaf"
 date: "2022-12-30"
-tags:
-- beans
-- dinner
-- lebanese-food
-- maxs-favourites
-- shallys-favourites
-- vegan
-- vegan-recipes
-title: 'Mujadara: Lentils &amp; Bulgur Pilaf'
+categories: 
+  - "lunch-and-dinner"
+  - "recipes"
+tags: 
+  - "beans"
+  - "dinner"
+  - "lebanese-food"
+  - "maxs-favourites"
+  - "shallys-favourites"
+  - "vegan"
+  - "vegan-recipes"
+coverImage: "img_5094.jpeg"
 ---
 
 Our whole family LOVES this dish. It's like a Lebanese version of the pilau that my family used to make in Fiji.

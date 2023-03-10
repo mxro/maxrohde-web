@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "A weekend of sunshine"
 date: "2012-10-28"
-title: A weekend of sunshine
+categories: 
+  - "journal"
 ---
 
 Earlier this month, we siezed the opportunity to have a little trip to Cornwall Park, in Auckland Central.

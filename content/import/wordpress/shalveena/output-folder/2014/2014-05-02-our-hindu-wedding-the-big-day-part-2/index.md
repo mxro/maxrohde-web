@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Our Hindu Wedding: The Big Day Part 2"
 date: "2014-05-02"
-title: 'Our Hindu Wedding: The Big Day Part 2'
+categories: 
+  - "journal"
 ---
 
 In the Hindu wedding, the groom and his guests arrive at the bride's house (or the hall) for the wedding. Max and his family were to arrive at around 6.30 PM. Around 3 PM, I started getting ready for the wedding. I had a lady come over to the house to do my makeup and hair and another lady came over to do Sharlene's hair and Mum's makeup.

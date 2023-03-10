@@ -1,18 +1,17 @@
 ---
-blog: shalveena.com
-categories:
-- lunch-and-dinner
-- recipes
-coverImage: img_4243.jpg
+title: "Easy Tomato Pasta with Basil Pesto Tempeh"
 date: "2020-11-07"
-tags:
-- easy-dinner
-- easy-meals
-- easy-pasta-recipes
-- vegan-recipes
-- whole-food-plant-based
-- wholegrain-pasta
-title: Easy Tomato Pasta with Basil Pesto Tempeh
+categories: 
+  - "lunch-and-dinner"
+  - "recipes"
+tags: 
+  - "easy-dinner"
+  - "easy-meals"
+  - "easy-pasta-recipes"
+  - "vegan-recipes"
+  - "whole-food-plant-based"
+  - "wholegrain-pasta"
+coverImage: "img_4243.jpg"
 ---
 
 I wanted an easy to make dish today that still felt luxurious like it had been simmering all afternoon. This hit the spot. This dish is delicious and comes together really easily and relatively quickly. It is also very versatile so if you don't have anything from the ingredients list, feel free to substitute it and to make additions as you like.

@@ -1,18 +1,17 @@
 ---
-blog: shalveena.com
-categories:
-- lunch-and-dinner
-- recipes
-coverImage: img_4254.jpg
+title: "Creamy Dreamy Pasta with Asparagus, Zucchini and Mushrooms"
 date: "2020-11-09"
-tags:
-- asparagus-and-mushrooms
-- cashew-cream-pasta
-- creamy-pasta
-- vegan-creamy-pasta
-- vegan-pasta-recipes
-- wholefood-plant-based-recipes
-title: Creamy Dreamy Pasta with Asparagus, Zucchini and Mushrooms
+categories: 
+  - "lunch-and-dinner"
+  - "recipes"
+tags: 
+  - "asparagus-and-mushrooms"
+  - "cashew-cream-pasta"
+  - "creamy-pasta"
+  - "vegan-creamy-pasta"
+  - "vegan-pasta-recipes"
+  - "wholefood-plant-based-recipes"
+coverImage: "img_4254.jpg"
 ---
 
 It's asparagus season here in Melbourne so we have been enjoying more asparagus in our meals. Before we became vegan, I used to sometimes make spinach with cream, which came together quickly and tasted delicious. Well, no more cream for us, but with this recipe we definitely didn't miss it. In fact, I think this tastes way nicer than the cream version! In this version, I didn't use spinach but instead opted for asparagus, zucchini and mushrooms but a meatier texture and more variety. The Creamy Spinach version will be posted up later, I promise!

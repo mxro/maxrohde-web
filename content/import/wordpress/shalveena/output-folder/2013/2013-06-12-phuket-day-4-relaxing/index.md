@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- travels
+title: "Phuket Day 4 - Relaxing"
 date: "2013-06-12"
-title: Phuket Day 4 - Relaxing
+categories: 
+  - "travels"
 ---
 
 For this morning, we finally had a chance to go outside the resort for breakfast as the weather was clear.

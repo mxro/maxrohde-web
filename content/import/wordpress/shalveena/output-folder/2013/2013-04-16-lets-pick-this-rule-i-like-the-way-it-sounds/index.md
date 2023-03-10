@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Lets pick this rule, I like the way it sounds"
 date: "2013-04-16"
-title: Lets pick this rule, I like the way it sounds
+categories: 
+  - "journal"
 ---
 
 Sometimes, at some point of our career as litigators, we come across one of _those_ lawyers or law firms. Yes, one of _those_ that make life infinitely more difficult than it has to be, that make a mountain from an ant hill.

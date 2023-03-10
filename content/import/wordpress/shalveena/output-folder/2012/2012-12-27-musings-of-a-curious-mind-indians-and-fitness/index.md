@@ -1,10 +1,11 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Musings of a curious mind: Indians and Fitness"
 date: "2012-12-27"
-title: 'Musings of a curious mind: Indians and Fitness'
+categories: 
+  - "journal"
 ---
+
+  
 
 **Sunday 23 December 2012**
 

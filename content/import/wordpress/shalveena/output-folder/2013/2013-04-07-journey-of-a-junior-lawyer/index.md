@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Journey of a Junior Lawyer"
 date: "2013-04-07"
-title: Journey of a Junior Lawyer
+categories: 
+  - "journal"
 ---
 
 As I recall my first days and tentative steps into the legal world, I realise that the legal world is very different to the image one may have from university.

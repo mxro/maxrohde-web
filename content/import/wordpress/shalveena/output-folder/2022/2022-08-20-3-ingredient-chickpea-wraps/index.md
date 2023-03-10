@@ -1,15 +1,14 @@
 ---
-blog: shalveena.com
-categories:
-- lunch-and-dinner
-- recipes
-coverImage: img_7569-1.jpg
+title: "3 Ingredient Chickpea Wraps"
 date: "2022-08-20"
-tags:
-- clean-eating
-- vegan-recipes
-- whole-food-plant-based
-title: 3 Ingredient Chickpea Wraps
+categories: 
+  - "lunch-and-dinner"
+  - "recipes"
+tags: 
+  - "clean-eating"
+  - "vegan-recipes"
+  - "whole-food-plant-based"
+coverImage: "img_7569-1.jpg"
 ---
 
 This wrap is magical! It's made with only chickpea flour, salt and water but tastes phenomenal. It's super healthy, fluffy, light and delicious.

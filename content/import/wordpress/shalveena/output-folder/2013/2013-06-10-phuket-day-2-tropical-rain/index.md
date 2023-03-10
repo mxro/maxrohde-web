@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- travels
+title: "Phuket Day 2 - Tropical Rain"
 date: "2013-06-10"
-title: Phuket Day 2 - Tropical Rain
+categories: 
+  - "travels"
 ---
 
 Date: 10 June 2013

@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- travels
+title: "The Beauty of Queenstown - Final Part"
 date: "2013-01-05"
-title: The Beauty of Queenstown - Final Part
+categories: 
+  - "travels"
 ---
 
 [![](https://shalveena.files.wordpress.com/2013/01/b9de5-p1010863.jpg?w=300)](https://shalveena.files.wordpress.com/2013/01/b9de5-p1010863.jpg)

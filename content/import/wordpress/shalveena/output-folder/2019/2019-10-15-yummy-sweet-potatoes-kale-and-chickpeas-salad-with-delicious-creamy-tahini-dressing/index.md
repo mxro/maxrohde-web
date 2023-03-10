@@ -1,19 +1,17 @@
 ---
-blog: shalveena.com
-categories:
-- lunch-and-dinner
-- recipes
-coverImage: img_0375.jpg
+title: "Yummy Sweet Potatoes, Kale and Chickpeas Salad with delicious creamy Tahini Dressing"
 date: "2019-10-15"
-tags:
-- kale
-- salads
-- side-dishes
-- summer-salads
-- vegan
-- vegan-recipes
-title: Yummy Sweet Potatoes, Kale and Chickpeas Salad with delicious creamy Tahini
-  Dressing
+categories: 
+  - "lunch-and-dinner"
+  - "recipes"
+tags: 
+  - "kale"
+  - "salads"
+  - "side-dishes"
+  - "summer-salads"
+  - "vegan"
+  - "vegan-recipes"
+coverImage: "img_0375.jpg"
 ---
 
 We don't eat many salads around here. Mainly because of two reasons: 1. I'm not a fan of raw food, and 2. I'm often looking for quick dinners after work and making a salad adds to another thing to worry about and increases the time it takes to get dinner on the table!

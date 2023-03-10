@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Our Hindu Wedding - Day One"
 date: "2014-03-23"
-title: Our Hindu Wedding - Day One
+categories: 
+  - "journal"
 ---
 
 Two days before the actual wedding day, Max and I could not see each other any more until the wedding day.

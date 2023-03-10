@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Big Changes for a Little Girl"
 date: "2012-11-10"
-title: Big Changes for a Little Girl
+categories: 
+  - "journal"
 ---
 
 [![](https://shalveena.files.wordpress.com/2012/11/73208-scan0027.jpg?w=300)](https://shalveena.files.wordpress.com/2012/11/73208-scan0027.jpg)

@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Neighbours from around the World"
 date: "2015-04-23"
-title: Neighbours from around the World
+categories: 
+  - "journal"
 ---
 
 [![](images/d6827-1855864167_08cbd5f505_o.jpg)](https://shalveena.files.wordpress.com/2015/04/d6827-1855864167_08cbd5f505_o.jpg)

@@ -1,14 +1,13 @@
 ---
-blog: shalveena.com
-categories:
-- journal
-coverImage: img_3344-e1515039546218.jpg
+title: "What is in our Pantry?"
 date: "2018-01-04"
-tags:
-- kitchen-items
-- organising
-- vegan
-title: What is in our Pantry?
+categories: 
+  - "journal"
+tags: 
+  - "kitchen-items"
+  - "organising"
+  - "vegan"
+coverImage: "img_3344-e1515039546218.jpg"
 ---
 
 Since we became vegan, I realise we have many, many more spices, herbs and oils in our pantry. Over time, it has also become more cluttered and dis-organised.

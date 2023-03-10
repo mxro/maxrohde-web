@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- recipes
+title: "Green bean salad with pan fried chicken"
 date: "2014-12-21"
-title: Green bean salad with pan fried chicken
+categories: 
+  - "recipes"
 ---
 
 [![](images/aeed0-img_4709.jpg)](https://shalveena.files.wordpress.com/2014/12/aeed0-img_4709.jpg)

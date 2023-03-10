@@ -1,13 +1,14 @@
 ---
-blog: shalveena.com
-categories:
-- recipes
-coverImage: img_3371.jpg
+title: "Caramel Popcorn"
 date: "2018-08-19"
-tags:
-- vegan-snacks
-title: Caramel Popcorn
+categories: 
+  - "recipes"
+tags: 
+  - "vegan-snacks"
+coverImage: "img_3371.jpg"
 ---
+
+ 
 
 ## Ingredients
 

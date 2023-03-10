@@ -1,18 +1,17 @@
 ---
-blog: shalveena.com
-categories:
-- lunch-and-dinner
-- recipes
-coverImage: img_6223.jpg
+title: "Satay Peanut Noodles"
 date: "2021-12-15"
-tags:
-- dinner
-- easy-meals
-- noodles
-- vegan
-- vegan-recipes
-- weeknight-dinner
-title: Satay Peanut Noodles
+categories: 
+  - "lunch-and-dinner"
+  - "recipes"
+tags: 
+  - "dinner"
+  - "easy-meals"
+  - "noodles"
+  - "vegan"
+  - "vegan-recipes"
+  - "weeknight-dinner"
+coverImage: "img_6223.jpg"
 ---
 
 This dish is just the right amount of hot, spicy & sweet. Perfect for Summer :)  

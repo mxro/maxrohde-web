@@ -1,20 +1,19 @@
 ---
-blog: shalveena.com
-categories:
-- lunch-and-dinner
-- recipes
-coverImage: img_8383.jpg
+title: "Lebanese Green Beans"
 date: "2023-02-03"
-tags:
-- beans
-- cheap-vegan-eats
-- easy-vegan-dinner
-- lebanese-food
-- maxs-favourites
-- shallys-favourites
-- vegan
-- vegan-recipes
-title: Lebanese Green Beans
+categories: 
+  - "lunch-and-dinner"
+  - "recipes"
+tags: 
+  - "beans"
+  - "cheap-vegan-eats"
+  - "easy-vegan-dinner"
+  - "lebanese-food"
+  - "maxs-favourites"
+  - "shallys-favourites"
+  - "vegan"
+  - "vegan-recipes"
+coverImage: "img_8383.jpg"
 ---
 
 If you don't like green breans, if you think they are boring and easily overcooked, you've got to try these!

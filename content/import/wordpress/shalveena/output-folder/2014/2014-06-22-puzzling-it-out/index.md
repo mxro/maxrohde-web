@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Puzzling it out"
 date: "2014-06-22"
-title: Puzzling it out
+categories: 
+  - "journal"
 ---
 
 I am reading "The Happiness Project: Or, Why I Spent a Year Trying to Sing in the Morning, Clean My Closets, Fight Right, Read Aristotle, and Generally Have More Fun" by Gretchen Rubin.  

@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Finally, I tried an actual yoga class!"
 date: "2013-04-11"
-title: Finally, I tried an actual yoga class!
+categories: 
+  - "journal"
 ---
 
 [![](https://shalveena.files.wordpress.com/2013/04/776d9-images.jpeg?w=275)](https://shalveena.files.wordpress.com/2013/04/776d9-images.jpeg)

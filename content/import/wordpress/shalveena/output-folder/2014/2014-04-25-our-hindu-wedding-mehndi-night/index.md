@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Our Hindu Wedding: Mehndi Night"
 date: "2014-04-25"
-title: 'Our Hindu Wedding: Mehndi Night'
+categories: 
+  - "journal"
 ---
 
 These are some pictures from the last haldi:

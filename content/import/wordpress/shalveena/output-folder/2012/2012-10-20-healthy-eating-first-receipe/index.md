@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- recipes
+title: "Healthy Eating - first receipe"
 date: "2012-10-20"
-title: Healthy Eating - first receipe
+categories: 
+  - "recipes"
 ---
 
 I have been wanting to record the foods we eat at home as a collection on cooking ideas. Finally, here is the first recipe:  

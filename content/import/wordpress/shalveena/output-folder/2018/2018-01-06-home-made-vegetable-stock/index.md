@@ -1,20 +1,19 @@
 ---
-blog: shalveena.com
-categories:
-- recipes
-coverImage: img_3398-edited.jpeg
+title: "Home-made Vegetable Stock"
 date: "2018-01-06"
-tags:
-- clean-eating
-- crueltyfree
-- plant-based
-- stock
-- vegan
-- vegan-recipes
-- vegetables
-- wfpb
-- whole-food-plant-based
-title: Home-made Vegetable Stock
+categories: 
+  - "recipes"
+tags: 
+  - "clean-eating"
+  - "crueltyfree"
+  - "plant-based"
+  - "stock"
+  - "vegan"
+  - "vegan-recipes"
+  - "vegetables"
+  - "wfpb"
+  - "whole-food-plant-based"
+coverImage: "img_3398-edited.jpeg"
 ---
 
 Recipes often call for stock, but I found it difficult to find a good vegetable stock without added, unwanted, ingredients such as maltodextrin and sugar. I searched online for healthy, tasty alternatives. I tried each one that I could find, but none was right. I remember one of them tasted like mud!

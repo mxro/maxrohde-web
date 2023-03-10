@@ -1,22 +1,21 @@
 ---
-blog: shalveena.com
-categories:
-- lunch-and-dinner
-- recipes
-coverImage: img_0426.jpg
+title: "Quick Soba Noodles Salad"
 date: "2019-10-22"
-tags:
-- asian-food
-- asian-vegan
-- easy-dinner
-- no-salt
-- noodles
-- salads
-- vegan
-- vegan-recipes
-- vegetables
-- whole-food-plant-based
-title: Quick Soba Noodles Salad
+categories: 
+  - "lunch-and-dinner"
+  - "recipes"
+tags: 
+  - "asian-food"
+  - "asian-vegan"
+  - "easy-dinner"
+  - "no-salt"
+  - "noodles"
+  - "salads"
+  - "vegan"
+  - "vegan-recipes"
+  - "vegetables"
+  - "whole-food-plant-based"
+coverImage: "img_0426.jpg"
 ---
 
 Dinners that are QUICK and TASTY are the best. This is ticks both of those boxes.

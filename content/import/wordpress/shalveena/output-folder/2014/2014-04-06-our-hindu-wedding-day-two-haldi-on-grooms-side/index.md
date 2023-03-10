@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Our Hindu Wedding - Day Two - Haldi on Groom's side"
 date: "2014-04-06"
-title: Our Hindu Wedding - Day Two - Haldi on Groom's side
+categories: 
+  - "journal"
 ---
 
 My many thanks to my in-laws, who flew to Melbourne all the way from Germany for the wedding AND so readily accepted and agreed to take full part in the ceremonies.

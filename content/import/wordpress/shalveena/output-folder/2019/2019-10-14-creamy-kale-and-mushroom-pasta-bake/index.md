@@ -1,18 +1,17 @@
 ---
-blog: shalveena.com
-categories:
-- lunch-and-dinner
-- recipes
-coverImage: img_0355.jpg
+title: "Creamy Kale and Mushroom Pasta Bake"
 date: "2019-10-14"
-tags:
-- comfort-food
-- italian-food
-- pasta
-- pasta-bake
-- vegan
-- vegan-recipes
-title: Creamy Kale and Mushroom Pasta Bake
+categories: 
+  - "lunch-and-dinner"
+  - "recipes"
+tags: 
+  - "comfort-food"
+  - "italian-food"
+  - "pasta"
+  - "pasta-bake"
+  - "vegan"
+  - "vegan-recipes"
+coverImage: "img_0355.jpg"
 ---
 
 I love pasta bakes - but it has proven difficult to make vegan versions with the same satisfying taste of comfort food. That is, until I found [this pasta bake recipe from Izy Hossack](https://topwithcinnamon.com/creamy-cauliflower-mushroom-kale-pasta-bake-vegan-option/). It tastes delicious and has all the warmth and satisfaction of comfort food without being unhealthy! The secret? Cauliflower! Yes, there is a whole head of cauliflower hidden in this recipe! My version below is slightly changed from the original recipe from Izy.

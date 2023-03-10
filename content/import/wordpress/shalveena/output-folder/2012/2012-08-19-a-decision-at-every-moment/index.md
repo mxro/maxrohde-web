@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "A decision at every moment"
 date: "2012-08-19"
-title: A decision at every moment
+categories: 
+  - "journal"
 ---
 
 Many a times, we may catch ourselves complaining about the dulness of life, about the mundane routines we go through. But we don't seem to contemplate all the opportunities available to us in every moment of our life.  

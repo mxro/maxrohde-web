@@ -1,9 +1,8 @@
 ---
-blog: shalveena.com
-categories:
-- journal
+title: "Who do you want to be?"
 date: "2013-07-12"
-title: Who do you want to be?
+categories: 
+  - "journal"
 ---
 
 <table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2013/07/f7573-dscn0235.jpg"><img src="https://shalveena.files.wordpress.com/2013/07/f7573-dscn0235.jpg?w=300" width="320" height="240" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">What tomorrow will bring, no one knows. But we can work towards a vision of how we want our tomorrow to be, and who we want to be with each new day</td></tr></tbody></table>

@@ -1,17 +1,16 @@
 ---
-blog: shalveena.com
-categories:
-- recipes
-coverImage: img_9388.jpg
+title: "My favourite, easy, go-to Dal"
 date: "2019-04-17"
-tags:
-- dinner
-- indian-food
-- indian-vegan-recipes
-- lentils
-- maxs-favourites
-- shallys-favourites
-title: My favourite, easy, go-to Dal
+categories: 
+  - "recipes"
+tags: 
+  - "dinner"
+  - "indian-food"
+  - "indian-vegan-recipes"
+  - "lentils"
+  - "maxs-favourites"
+  - "shallys-favourites"
+coverImage: "img_9388.jpg"
 ---
 
 I read this article from Dr Michael Greger about the significantly lower rates of cancer in India as compared to the USA and was absolutely blown away.  

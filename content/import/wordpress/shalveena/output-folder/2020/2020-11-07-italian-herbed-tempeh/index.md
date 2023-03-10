@@ -1,16 +1,15 @@
 ---
-blog: shalveena.com
-categories:
-- lunch-and-dinner
-- recipes
-coverImage: img_4240.jpg
+title: "Italian Herbed Tempeh"
 date: "2020-11-07"
-tags:
-- tempeh
-- tempeh-recipes
-- vegan-protein
-- whole-food-plant-based
-title: Italian Herbed Tempeh
+categories: 
+  - "lunch-and-dinner"
+  - "recipes"
+tags: 
+  - "tempeh"
+  - "tempeh-recipes"
+  - "vegan-protein"
+  - "whole-food-plant-based"
+coverImage: "img_4240.jpg"
 ---
 
 I must admit, I'm not a huge fan of beans. According to Dr Greger though, we must have multiple servings of beans every day. In comes tempeh to the rescue. It's made from beans and is minimally processed, and it tastes great!
