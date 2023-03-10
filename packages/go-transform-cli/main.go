@@ -61,7 +61,6 @@ func (c *CLI) ProcessFiles(ctx *kong.Context, pattern string, fn processorFn) er
 		if err != nil {
 			return err
 		}
-		fmt.Printf("Walking %s\n", path)
 		if !info.IsDir() && g.Match(path) && filepath.Ext(path) == ".md" {
 			return fn(path)
 		}
