@@ -79,7 +79,8 @@ func ProcessFrontMatter(path string, processor frontmatterProcessorFn) error {
 	defer data.Close()
 
 	var frontmatterMap map[string]interface{}
-	body, err := frontmatter.Parse(data, &frontmatterMap)
+	rest, err := frontmatter.Parse(data, &frontmatterMap)
+	body := string(rest)
 	serr := processor(frontmatterMap)
 	if serr != nil {
 		return err
