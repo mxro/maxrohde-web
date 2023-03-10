@@ -1,10 +1,11 @@
 import fg from 'fast-glob';
 import { cpSync, existsSync, mkdirSync, rmSync } from 'fs';
 
-import path, { basename, resolve } from 'path';
+import path, { resolve } from 'path';
 import config from '../config.json';
-import { parseMarkdown, ParseMarkdownResult } from '../markdown/markdown';
+import { parseMarkdown } from '../markdown/markdown';
 import { moveAttachments } from './moveAttachments';
+import { moveCoverImage } from './moveCoverImage';
 
 export interface PrepareArgs {
   fileNamePattern: string;
@@ -66,7 +67,7 @@ export async function prepare(args: PrepareArgs): Promise<void> {
         console.log('dry: Create dir', postDir);
         console.log(`dry: Copy file ${file} to ${postFile}`);
       }
-      moveCoverImage(postDir, post, args);
+      moveCoverImage({ file, dir: postDir, post, args });
       moveAttachments(file, postDir, args, postFile);
 
       if (!args.keep) {
@@ -78,31 +79,4 @@ export async function prepare(args: PrepareArgs): Promise<void> {
       }
     })
   );
-}
-
-function moveCoverImage(
-  dir: string,
-  post: ParseMarkdownResult,
-  args: PrepareArgs
-) {
-  const attachmentsDir = config['draftsAttachmentsDir'];
-  const postImageDir = `${dir}/images`;
-  const coverImageSrc = post.metadata.coverImage
-    ? `${attachmentsDir}/${post.metadata.coverImage}`
-    : undefined;
-  if (!args.dry) {
-    mkdirSync(postImageDir, { recursive: true });
-    if (coverImageSrc) {
-      cpSync(coverImageSrc, `${postImageDir}/${basename(coverImageSrc)}`);
-      if (!args.keep) {
-        rmSync(coverImageSrc);
-      }
-    }
-  } else {
-    console.log('dry: create dir', postImageDir);
-    if (coverImageSrc) {
-      console.log(`dry: Copy file ${coverImageSrc} to ${postImageDir}`);
-      console.log(`dry: Remove file ${coverImageSrc}`);
-    }
-  }
 }

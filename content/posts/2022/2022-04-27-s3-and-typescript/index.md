@@ -124,3 +124,7 @@ Usually when working with an S3 bucket in an application, we would want the appl
 ## Help Make the Template and Boilerplate Better
 
 Please raise an issue on [GitHub](https://github.com/goldstack/goldstack/issues) if you have an idea of how to improve the S3 template and boilerplate.
+
+---
+
+Cover image by [Jessica Johnston](https://unsplash.com/photos/nnH2l-k77nc)

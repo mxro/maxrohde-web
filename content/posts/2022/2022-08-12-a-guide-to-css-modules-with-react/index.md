@@ -279,3 +279,7 @@ I explored this in the context of building a lightweight framework for Serverles
 If you are interested in exploring the framework, which includes end-to-end support, please see the Goldstack [Server-Side Rendering template](https://goldstack.party/templates/server-side-rendering).
 
 For any suggestions, ideas and comments, please be welcome to head to GitHub and [create an issue](https://github.com/goldstack/goldstack/issues) 🤗.
+
+---
+
+Image by [RealToughCandy.com](https://www.pexels.com/photo/man-love-people-woman-11035386/)

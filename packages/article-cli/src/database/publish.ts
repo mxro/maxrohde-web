@@ -1,25 +1,21 @@
 import fg from 'fast-glob';
 import config from '../config.json';
-import { parseMarkdown } from '../markdown/markdown';
+import { parseMarkdown, ParseMarkdownResult } from '../markdown/markdown';
 
-import {
-  PostEntity,
-  TagMappingEntity,
-  Table,
-  deepCopy,
-  CategoryMappingEntity,
-  Post,
-} from 'db-blog';
-import { Entity } from 'dynamodb-toolbox';
+import { Table } from 'db-blog';
 
-import { convert as htmlToText } from 'html-to-text';
-import { fixCoverImageLink } from '../markdown/images';
 import { resolve } from 'path';
 
-import { dirname, join } from 'path';
 import { existsSync } from 'fs';
-import { copyFile, cp, mkdir } from 'fs/promises';
-import assert from 'assert';
+import { createPosts } from './publishPost';
+import { createTags } from './publishTags';
+import { createCategories } from './publishCategories';
+
+export type ResultType = {
+  post: ParseMarkdownResult;
+  path: string;
+  filename: string;
+};
 
 export interface PublishArgs {
   fileNamePattern: string;
@@ -45,47 +41,13 @@ export function extractPathElements(filename: string): string[] {
   return firstMatch?.slice(1) || [];
 }
 
-async function copyCoverImage(
-  filename: string,
-  coverImage: string
-): Promise<void> {
-  const dir = dirname(filename);
-  const coverImagePath = join(dir, 'images', coverImage);
-  assert(existsSync(coverImagePath));
-  const coverImagesDestPath = config['coverImagePath'];
-  const coverImageDest = join(coverImagesDestPath, coverImage);
-  await copyFile(coverImagePath, coverImageDest);
-  console.log('Copied cover image to ', coverImageDest);
-}
-
-async function copyAttachments(
-  filename: string,
+export function fixAttachmentsLinksInHtml(
+  html: string,
   postPath: string
-): Promise<void> {
-  const imageDir = `${dirname(filename)}/images`;
-  const attachmentsDir = config['attachmentsImagePath'];
-  const postAttachmentDir = `${attachmentsDir}/${postPath}`;
-  if (!existsSync(imageDir)) {
-    return;
-  }
-  await mkdir(postAttachmentDir, { recursive: true });
-  await cp(imageDir, postAttachmentDir, { recursive: true });
-}
-
-function fixAttachmentsLinksInHtml(html: string, postPath: string): string {
+): string {
   return html.replaceAll(
     /"images\//g,
     `"/_goldstack/static/img/attachments/${postPath}/`
-  );
-}
-
-function fixAttachmentsLinksInMarkdown(
-  markdown: string,
-  postPath: string
-): string {
-  return markdown.replaceAll(
-    /\(images\//g,
-    `(/_goldstack/static/img/attachments/${postPath}/`
   );
 }
 
@@ -103,7 +65,7 @@ export const publish = async (args: PublishArgs): Promise<void> => {
   matches = matches.filter((path) => existsSync(path));
   console.log('Found articles');
   console.log(matches);
-  const results = await Promise.all(
+  const results: ResultType[] = await Promise.all(
     matches.map(async (filename) => {
       return {
         post: await parseMarkdown(filename),
@@ -113,128 +75,9 @@ export const publish = async (args: PublishArgs): Promise<void> => {
     })
   );
 
-  const Posts = new Entity({ ...deepCopy(PostEntity), table: args.table });
+  await createPosts(args, results);
 
-  await Promise.all(
-    results.map(async (result) => {
-      const post = result.post;
-      console.log('Publishing article:', result.path);
+  await createTags(args, results);
 
-      if (post.metadata.coverImage) {
-        await copyCoverImage(result.filename, post.metadata.coverImage);
-      }
-
-      await copyAttachments(result.filename, result.path);
-      const fixedHtml = fixAttachmentsLinksInHtml(post.html, result.path);
-      const fixedMarkdown = fixAttachmentsLinksInMarkdown(
-        post.markdown,
-        result.path
-      );
-
-      const postData: Post = {
-        blog: post.metadata.blog,
-        secondaryBlogs: post.metadata.secondaryBlogs
-          ? post.metadata.secondaryBlogs.join(',')
-          : undefined,
-        title: post.metadata.title,
-        contentHtml: fixedHtml,
-        summary:
-          post.metadata.summary ||
-          htmlToText(post.html, {
-            wordwrap: false,
-            selectors: [
-              { selector: 'a', options: { ignoreHref: true } },
-              { selector: 'img', format: 'skip' },
-            ],
-          }).slice(0, 150) + '...',
-        path: result.path,
-        contentMarkdown: fixedMarkdown,
-        authors: 'max',
-        tags: post.metadata.tags ? post.metadata.tags.join(',') : [],
-        categories: post.metadata.categories
-          ? post.metadata.categories.join(',')
-          : [],
-        coverImage: post.metadata.coverImage
-          ? fixCoverImageLink(post.metadata.coverImage)
-          : undefined,
-        datePublished: new Date(post.metadata.date).toISOString(),
-        canonicalUrl: post.metadata.canonicalUrl,
-      };
-
-      // publish for primary blog
-      await Posts.put(postData);
-
-      return publishToSecondaryBlogs(postData);
-    })
-  );
-
-  const TagMappings = new Entity({
-    ...deepCopy(TagMappingEntity),
-    table: args.table,
-  } as const);
-
-  await Promise.all(
-    results.map(async (result) => {
-      const post = result.post;
-      if (!post.metadata.tags) {
-        return Promise.all([]);
-      }
-      return Promise.all(
-        post.metadata.tags.map((tag: string) => {
-          return TagMappings.put({
-            blog: post.metadata.blog,
-            postPath: result.path,
-            tagId: tag,
-          });
-        })
-      );
-    })
-  );
-
-  async function publishToSecondaryBlogs(post: Post) {
-    if (!post.secondaryBlogs) {
-      return;
-    }
-
-    return Promise.all(
-      post.secondaryBlogs.split(',').map((secondaryBlog) => {
-        return Posts.put({
-          ...post,
-          blog: secondaryBlog,
-          canonicalUrl:
-            post.canonicalUrl || `https://${post.blog}/${post.path}`,
-        });
-      })
-    );
-  }
-
-  const CategoryMappings = new Entity({
-    ...deepCopy(CategoryMappingEntity),
-    table: args.table,
-  } as const);
-
-  await Promise.all(
-    results.map(async (result) => {
-      const post = result.post;
-      const categories: string[] = [];
-      if (post.metadata.categories) {
-        categories.push(...post.metadata.categories);
-      }
-      if (args.categories) {
-        categories.push(...args.categories);
-      }
-      if (categories.length === 0) {
-        return Promise.all([]);
-      }
-      return Promise.all(
-        categories.map((category: string) => {
-          return CategoryMappings.put({
-            blog: post.metadata.blog,
-            postPath: result.path,
-            categoryId: category,
-          });
-        })
-      );
-    })
-  );
+  await createCategories(args, results);
 };

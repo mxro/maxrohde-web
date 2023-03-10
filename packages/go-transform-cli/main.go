@@ -8,8 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gernest/front"
-
+	"github.com/adrg/frontmatter"
 	"github.com/alecthomas/kong"
 	"github.com/gobwas/glob"
 	"gopkg.in/yaml.v2"
@@ -77,24 +76,22 @@ func ProcessFrontMatter(path string, processor frontmatterProcessorFn) error {
 		return err
 	}
 
-	m := front.NewMatter()
-	m.Handle("---", front.YAMLHandler)
-	frontmatterMap, body, err := m.Parse(data)
-	if err != nil {
-		return err
-	}
+	defer data.Close()
 
+	var frontmatterMap map[string]interface{}
+	rest, err := frontmatter.Parse(data, &frontmatterMap)
+	body := string(rest)
 	serr := processor(frontmatterMap)
 	if serr != nil {
 		return err
 	}
 
-	y, err := yaml.Marshal(frontmatterMap)
+	newFrontmatter, err := yaml.Marshal(frontmatterMap)
 	if err != nil {
 		return err
 	}
 
-	newContent := "---\n" + string(y) + "---\n\n" + body
+	newContent := "---\n" + string(newFrontmatter) + "---\n" + body
 
 	if err := ioutil.WriteFile(path, []byte(newContent), 0644); err != nil {
 		return err
@@ -115,6 +112,7 @@ func (c *CLI) SetPrimaryBlogAction(ctx *kong.Context) error {
 			return perr
 		}
 
+		fmt.Printf("Processing finished %s\n", path)
 		return nil
 	})
 }
@@ -162,6 +160,7 @@ func (c *CLI) SetIdAction(ctx *kong.Context) error {
 		return nil
 	})
 }
+
 func (c *CLI) Run(ctx *kong.Context) error {
 	switch ctx.Command() {
 	case "set-primary-blog <primary-blog> <glob-pattern>":
@@ -179,6 +178,10 @@ func main() {
 	cli := New()
 	ctx := kong.Parse(cli, kong.Name("transform-cli"), kong.Description("Transforms blog data."))
 
-	cli.Run(ctx)
+	err := cli.Run(ctx)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
 
 }

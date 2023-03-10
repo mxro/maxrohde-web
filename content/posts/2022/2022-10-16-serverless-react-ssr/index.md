@@ -402,3 +402,5 @@ I had a great time developing what in essence is a fullstack framework for devel
 However, if you want to give this for a spin, head over to [Goldstack](https://goldstack.party) and select the _Server-Side Rendering_ template. Alternatively, you can also clone the [`react-srr`](https://github.com/goldstack/react-ssr) repository which is automatically kept in sync with the template.
 
 If you have any thoughts or ideas, please don't hesitate to [reach out on the social platforms](https://maxrohde.com/about) or by creating an [issue](https://github.com/goldstack/goldstack/issues) 🤗.
+
+

@@ -137,3 +137,7 @@ Relying on the static HTML export of Next.js comes with several trade-offs:
 - Manual configuration required to server files in the `public/` image directly, for details see [404 Not found for files in public folder](https://docs.goldstack.party/docs/modules/app-nextjs#404-not-found-for-files-in-public-folder-1)
 
 There are many different ways to deploy Next.js to AWS, for instance using [AWS Amplify](https://dev.to/aws/deploy-a-next-js-app-to-aws-amplify-3571) or using [EC2](https://medium.com/today-i-solved/how-to-deploy-next-js-on-aws-ec2-with-ssl-https-7980ec6fe8d3). The solution pursued in the example project aims to provide a lightweight, yet flexible solution that makes full use of the capabilities of Terraform while creating low-cost, scalable infrastructure. If you have any questions or ideas how to improve this approach, please be welcome to head over to the [Goldstack GitHub project](https://github.com/goldstack/goldstack#readme) and raise an issue.
+
+---
+
+Cover image by [kreatikar](https://pixabay.com/illustrations/developer-programmer-technology-3461405/)

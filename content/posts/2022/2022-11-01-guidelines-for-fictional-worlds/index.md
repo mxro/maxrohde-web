@@ -43,3 +43,4 @@ The world should have the potential to crystallise as an easily identifiable con
 The fictional world should provide a platform in which concepts meaningful for our current experiences may be discussed. For instance, the world of Lord of the Rings provides a powerful backdrop for exploring the theme of friendship. The world of Star Wars reflects our own personal "good versus evil" struggles as well as the same on political level.
 
 The most beautiful aspect of writing fiction for me is, that there is no limit as to what we can try and what may make a beautiful story. As such, these guidelines should be seen as nothing but some inspiration and not strict rules. There are limitless ways in which fictional worlds can be conceived, and these guidelines are based on what has worked in the past, rather than what will delight us in the future.
+

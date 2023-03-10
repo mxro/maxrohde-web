@@ -168,3 +168,7 @@ Simply select the templates you want to include in the project and then use the 
 ## Help Make the Template and Boilerplate Better
 
 Please raise an issue on [GitHub](https://github.com/goldstack/goldstack/issues) if you have an idea of how to improve this template. Note the [boilerplate](https://github.com/goldstack/ses-terraform-typescript-boilerplate) is automatically generated from the [template](https://github.com/goldstack/goldstack/tree/master/workspaces/templates/packages/email-send) defined in the Goldstack repository.
+
+---
+
+Cover image by [Brett Jordan](https://unsplash.com/photos/LPZy4da9aRo)

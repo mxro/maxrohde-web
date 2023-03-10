@@ -277,3 +277,7 @@ Hosting a simple static website is one of those things one would expect to be ea
 While I hope this article provides some guidance for setting up S3 static web hosting, I am certain for someone who is not an expert in AWS it will still take many hours to set up things successfully. Thus I created the [static website](https://goldstack.party/templates/static-website) template to help anyone set up a working website in a fraction of the time usually required; while not sacrificing any flexibility, since all infrastructure is defined in Terraform and can easily be changed and extended.
 
 Consider helping out making this template better for others by [raising an issue in GitHub](https://github.com/goldstack/goldstack/issues) if you encounter any problems or have questions or ideas.
+
+---
+
+Cover image by [Florian Olivo](https://unsplash.com/photos/4hbJ-eymZ1o)

@@ -254,3 +254,7 @@ ok      example.com/cfv2  0.348s
 It is very easy to create a public API endpoint using Cloud Functions. The result is returned very fast. Even when a cold start is required, the response should be rendered in under 200 ms. This [compares quite well to serverless API performance on AWS](https://maxrohde.com/2022/10/16/serverless-react-ssr).
 
 Unfortunately, the API we created is not suitable for anything but the most basic prototyping. For a real API, we will likely want to use our own domain. This appears to be quite complicated in GCP. We will need a [Load Balancer](https://cloud.google.com/load-balancing/), a [serverless NEG](https://cloud.google.com/load-balancing/docs/negs/serverless-neg-concepts) and an [API Gateway](https://cloud.google.com/api-gateway) among some other components. See [Getting started with HTTP(S) Load Balancing for API Gateway](https://cloud.google.com/api-gateway/docs/gateway-serverless-neg) and [HTTP(S) Load Balancing for API Gateway](https://cloud.google.com/api-gateway/docs/gateway-load-balancing).
+
+
+
+

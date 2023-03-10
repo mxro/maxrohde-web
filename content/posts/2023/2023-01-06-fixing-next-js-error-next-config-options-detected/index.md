@@ -15,6 +15,7 @@ tags:
 title: 'Fixing Next.js Error: Invalid next.config.js Options Detected'
 ---
 
+
 I have recently upgraded the [Next.js](https://goldstack.party/templates/nextjs) and [Next.js + Bootstrap](https://goldstack.party/templates/nextjs-bootstrap) Goldstack templates to [Next.js 13](https://nextjs.org/blog/next-13).
 
 After following the [upgrade instructions](https://nextjs.org/docs/upgrading#upgrading-from-12-to-13), I encountered encountered a few errors that I document here along with the solutions that I found. 

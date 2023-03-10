@@ -32,3 +32,4 @@ Therefore we should be mindful to make more big decisions. They might be more di
 I think the pattern of big and small decisions also applies to organisations and countries. For the latter, political decision making might either be driven by the political demands and forces of the present (small decisions) or by careful, pragmatic and logical deliberations aligned towards the long-term good.
 
 In organisations, if there are too many big decisions, we would call it static and bureaucratic. If there are too many small decisions, we would see the organisation as aimless and chaotic. In this context, it thus needs to be carefully considered, which decisions are to be taken deliberately and which ones in an agile, ad-hoc manner.
+
