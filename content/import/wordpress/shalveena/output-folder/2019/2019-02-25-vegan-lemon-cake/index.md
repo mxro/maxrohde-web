@@ -1,12 +1,13 @@
 ---
-title: "Vegan Lemon Cake"
+blog: shalveena.com
+categories:
+- recipes
+coverImage: img_20190222_173410_451.jpg
 date: "2019-02-25"
-categories: 
-  - "recipes"
-tags: 
-  - "desserts"
-  - "vegan"
-coverImage: "img_20190222_173410_451.jpg"
+tags:
+- desserts
+- vegan
+title: Vegan Lemon Cake
 ---
 
 Way before I went vegan I used to love baking up sweet treats for myself and the family, one of our favourites was this super moist lemon cake that I made a few times. But after becoming vegan I pretty much stopped baking because I didn't know how to make anything without using eggs. A few days ago I was seriously craving some sugar and was feeling inspired to finally hit the kitchen and try to veganise my lemon cake recipe. Spoiler alert: it was a huge hit with the fam :))

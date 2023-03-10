@@ -1,18 +1,19 @@
 ---
-title: "Tomato Bulgur with Kale and Fava Beans"
+blog: shalveena.com
+categories:
+- lunch-and-dinner
+- recipes
+coverImage: img_0439.jpg
 date: "2019-10-26"
-categories: 
-  - "lunch-and-dinner"
-  - "recipes"
-tags: 
-  - "beans"
-  - "bulgur"
-  - "easy-dinner"
-  - "kale"
-  - "maxs-favourites"
-  - "vegan"
-  - "vegan-recipes"
-coverImage: "img_0439.jpg"
+tags:
+- beans
+- bulgur
+- easy-dinner
+- kale
+- maxs-favourites
+- vegan
+- vegan-recipes
+title: Tomato Bulgur with Kale and Fava Beans
 ---
 
 I'm always looking for more ways to incorporate greens and beans into our food. This tomato bulgur recipe with kale and fava beans is a great way to do just that. It's also very YUMMY. Max absolutely loves it (so do I!). And the great thing is that it uses ingredients that I usually have in my pantry/fridge. To top it all of, it is also super easy and fast to put together.

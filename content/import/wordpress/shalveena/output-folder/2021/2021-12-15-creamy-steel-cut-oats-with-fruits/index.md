@@ -1,20 +1,21 @@
 ---
-title: "Creamy Steel Cut Oats with Fruits"
+blog: shalveena.com
+categories:
+- breakfast
+- recipes
+coverImage: 4f8e69a3-eca9-42c4-96a0-c9aaa7a48264.jpg
 date: "2021-12-15"
-categories: 
-  - "breakfast"
-  - "recipes"
-tags: 
-  - "breakfast-recipes"
-  - "clean-eating"
-  - "comfort-food"
-  - "oats"
-  - "shallys-favourites"
-  - "vegan"
-  - "vegan-breakfast"
-  - "vegan-recipes"
-  - "whole-food-plant-based"
-coverImage: "4f8e69a3-eca9-42c4-96a0-c9aaa7a48264.jpg"
+tags:
+- breakfast-recipes
+- clean-eating
+- comfort-food
+- oats
+- shallys-favourites
+- vegan
+- vegan-breakfast
+- vegan-recipes
+- whole-food-plant-based
+title: Creamy Steel Cut Oats with Fruits
 ---
 
 This breakfast is SOOOO yummy and healthy. It's one of our go-to breakfasts. In fact, we eat it almost every other day 😄

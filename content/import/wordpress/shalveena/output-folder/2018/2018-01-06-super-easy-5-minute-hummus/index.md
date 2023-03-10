@@ -1,18 +1,17 @@
 ---
-title: "Super Easy 5 Minute Hummus"
+blog: shalveena.com
+categories:
+- recipes
+coverImage: img_3353-e1515201108912.jpg
 date: "2018-01-06"
-categories: 
-  - "recipes"
-tags: 
-  - "clean-eating"
-  - "hummus"
-  - "plant-based"
-  - "vegan"
-  - "vegan-recipes"
-coverImage: "img_3353-e1515201108912.jpg"
+tags:
+- clean-eating
+- hummus
+- plant-based
+- vegan
+- vegan-recipes
+title: Super Easy 5 Minute Hummus
 ---
-
- 
 
 Since going vegan I have been trying to make a lot of things at home, one of those things being hummus. Out of all the recipes I have found, every single one has had tonnes of tahini in it and the thing is, I _really_ don't like tahini! But without it the hummus just doesn't taste right... So one day I had an epiphany, could I use less tahini and still get the same results? YES, you most certainly can. And that's how this recipe came about; it is pretty much identical to [this recipe from Minimalist Baker](https://minimalistbaker.com/best-ever-5-minute-microwave-hummus/) but with less than half of the tahini.
 

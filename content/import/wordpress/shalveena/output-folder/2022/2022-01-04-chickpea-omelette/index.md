@@ -1,20 +1,21 @@
 ---
-title: "Chickpea Omelette"
+blog: shalveena.com
+categories:
+- lunch-and-dinner
+- recipes
+coverImage: img_6475.jpg
 date: "2022-01-04"
-categories: 
-  - "lunch-and-dinner"
-  - "recipes"
-tags: 
-  - "breakfast"
-  - "clean-eating"
-  - "healthy-breakfast"
-  - "omelette"
-  - "vegan"
-  - "vegan-egg"
-  - "vegan-omelette"
-  - "vegan-recipes"
-  - "whole-food-plant-based"
-coverImage: "img_6475.jpg"
+tags:
+- breakfast
+- clean-eating
+- healthy-breakfast
+- omelette
+- vegan
+- vegan-egg
+- vegan-omelette
+- vegan-recipes
+- whole-food-plant-based
+title: Chickpea Omelette
 ---
 
 Servings: 1

@@ -1,8 +1,9 @@
 ---
-title: "Our Hindu Wedding - Day Two - Haldi on Bride's side"
+blog: shalveena.com
+categories:
+- journal
 date: "2014-04-06"
-categories: 
-  - "journal"
+title: Our Hindu Wedding - Day Two - Haldi on Bride's side
 ---
 
 Haldi ceremony is when tumeric paste is applied to the hands, feet and face of the bride and groom. It is to purify and beautify the couple and is an opportunity for the friends and family to have fun (not so for the poor bride and groom who have to get yellow paste put all over them!!).

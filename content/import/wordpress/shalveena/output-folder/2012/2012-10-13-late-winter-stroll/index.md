@@ -1,11 +1,10 @@
 ---
-title: "Late Winter Stroll"
+blog: shalveena.com
+categories:
+- journal
 date: "2012-10-13"
-categories: 
-  - "journal"
+title: Late Winter Stroll
 ---
-
- 
 
 A couple of weekends ago, Max and I decided to take a stroll around the neighbourhood, which is something we often do. The weather seemed to be getting better and it was a sunny change from the days of Winter. Here are some pictures from our weekend stroll - 7th August 2012.
 

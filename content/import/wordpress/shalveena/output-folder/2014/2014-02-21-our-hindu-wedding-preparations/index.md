@@ -1,8 +1,9 @@
 ---
-title: "Our Hindu Wedding - Preparations"
+blog: shalveena.com
+categories:
+- journal
 date: "2014-02-21"
-categories: 
-  - "journal"
+title: Our Hindu Wedding - Preparations
 ---
 
 I've always dreamed of my wedding, as many girls do. Yet in all that dreaming we somehow seem to look over or somehow manage to completely miss all the planning, headache, stress, money issues and heartache associated with a wedding. Call it naiveté, youth, or ignorance but so it was the case with me.

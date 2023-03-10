@@ -1,8 +1,9 @@
 ---
-title: "An Amazing Team"
+blog: shalveena.com
+categories:
+- journal
 date: "2013-05-14"
-categories: 
-  - "journal"
+title: An Amazing Team
 ---
 
 In today's world, we have a tendency to forget some of the wonders we have around us in our daily life. The things we are privileged to have, the opportunities and experiences that fill our days.

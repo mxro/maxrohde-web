@@ -1,8 +1,9 @@
 ---
-title: "Phuket - Last Day in Paradise"
+blog: shalveena.com
+categories:
+- travels
 date: "2013-06-16"
-categories: 
-  - "travels"
+title: Phuket - Last Day in Paradise
 ---
 
 Max finally persuaded me to try out the local food stall down the road from the resort. So, as the sky was clear on the 5th day of our stay in Phuket (14 June 2013), we set off for the local food stall - for our breakfast.

@@ -1,14 +1,15 @@
 ---
-title: "Our Parents in Us"
+blog: shalveena.com
+categories:
+- articles
 date: "2020-10-10"
-categories: 
-  - "articles"
-tags: 
-  - "blessed"
-  - "family"
-  - "gratitude"
-  - "reflections"
-  - "reflections-about-life"
+tags:
+- blessed
+- family
+- gratitude
+- reflections
+- reflections-about-life
+title: Our Parents in Us
 ---
 
 ![](https://shalveena.files.wordpress.com/2020/10/img20180706120830-1.jpg?w=997)

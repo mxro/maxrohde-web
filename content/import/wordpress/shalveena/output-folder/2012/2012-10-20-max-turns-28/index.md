@@ -1,11 +1,11 @@
 ---
-title: "Max turns 28"
+blog: shalveena.com
+categories:
+- journal
 date: "2012-10-20"
-categories: 
-  - "journal"
+title: Max turns 28
 ---
 
-  
 On 12 September 2012, Maxi turned 28 years young :) I spent quite some time thinking about what to do  to celebrate it - it was not easy! Eventually, I decided that a dinner date at Orbit restaurant in the Sky Tower will be something worth the night - the restaurant spins slowly so you can see a beautiful bird's eye view of Auckland city. Unfornunately, the dinner was not great, but it was all in all a good day.  
   
 We started it with Maxi getting his presents in bed, followed by the work-day, then a nice dinner date. Below are some pictures from the day!  

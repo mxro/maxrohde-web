@@ -1,8 +1,9 @@
 ---
-title: "Fresh Start and First Beginnings"
+blog: shalveena.com
+categories:
+- journal
 date: "2012-11-12"
-categories: 
-  - "journal"
+title: Fresh Start and First Beginnings
 ---
 
 Last week, I wrote about how I want to record [my journey](http://www.shalveena.com/2012/11/my-journey.html), as I try to re-invent my life into one focused on health, fitness and wholesome living. As mentioned, during the numerous hours spent browsing blogs on the web, I came across a variety of websites where the authors talked about the journey that brought them to where they are today. However, all the posts were written in retrospect - the author has now reached the goal and looks back at how he/she got there then writes about it.  

@@ -1,14 +1,15 @@
 ---
-title: "Chocolate Bliss Balls"
+blog: shalveena.com
+categories:
+- recipes
+coverImage: img20171202151528-e1514874907760.jpg
 date: "2017-12-30"
-categories: 
-  - "recipes"
-tags: 
-  - "raw-food"
-  - "sharlenes-favourites"
-  - "vegan-recipes"
-  - "vegan-snacks"
-coverImage: "img20171202151528-e1514874907760.jpg"
+tags:
+- raw-food
+- sharlenes-favourites
+- vegan-recipes
+- vegan-snacks
+title: Chocolate Bliss Balls
 ---
 
 ## Ingredients

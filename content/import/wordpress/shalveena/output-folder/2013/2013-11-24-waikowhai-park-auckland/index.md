@@ -1,8 +1,9 @@
 ---
-title: "Waikowhai Park Auckland"
+blog: shalveena.com
+categories:
+- journal
 date: "2013-11-24"
-categories: 
-  - "journal"
+title: Waikowhai Park Auckland
 ---
 
 Fresh green leaves against clear blue skies

@@ -1,11 +1,10 @@
 ---
-title: "Quick Tomato and Vegetable Soup"
+blog: shalveena.com
+categories:
+- recipes
 date: "2014-02-22"
-categories: 
-  - "recipes"
+title: Quick Tomato and Vegetable Soup
 ---
-
-  
 
 [![](images/3b41e-20140222tomatoandvegesoup1.jpg)](https://shalveena.files.wordpress.com/2014/02/3b41e-20140222tomatoandvegesoup1.jpg)
 

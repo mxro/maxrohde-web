@@ -1,8 +1,9 @@
 ---
-title: "The beauty of Autumn in Auckland"
+blog: shalveena.com
+categories:
+- journal
 date: "2014-05-11"
-categories: 
-  - "journal"
+title: The beauty of Autumn in Auckland
 ---
 
 [![](images/379d6-img_1184.jpg)](https://shalveena.files.wordpress.com/2014/05/379d6-img_1184.jpg)

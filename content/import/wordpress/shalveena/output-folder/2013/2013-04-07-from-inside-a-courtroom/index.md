@@ -1,8 +1,9 @@
 ---
-title: "From inside a Courtroom"
+blog: shalveena.com
+categories:
+- journal
 date: "2013-04-07"
-categories: 
-  - "journal"
+title: From inside a Courtroom
 ---
 
 The rules surrounding litigation, courtroom etiquette, and procedures are enough to confuse any junior lawyer. Regardless, we all have to start somewhere. Slowly, we learn to navigate our way through the intertwined web of legal jargon, etiquette, procedures and rules of conduct. Making some mistakes along the way, heck, even looking the fool sometimes (but being a young lawyer has one advantage at least - the seniors and Judge come to understand and somewhat accept the blank face that may be displayed for a split second before we find the right words to reply or the right directions to seek).

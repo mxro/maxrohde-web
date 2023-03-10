@@ -1,8 +1,9 @@
 ---
-title: "Our Hindu Wedding: The Big Day Part 1"
+blog: shalveena.com
+categories:
+- journal
 date: "2014-04-26"
-categories: 
-  - "journal"
+title: 'Our Hindu Wedding: The Big Day Part 1'
 ---
 
 On the day of the wedding, before the actual wedding ceremony, there is another little ceremony where I get to dress up and then I have my first meal of the day (sweet rice and _puri_) with little girls. My mum's brother is then supposed to come to the _Mandap_ with mango leaves and take away any evil wishes or bad luck before I begin the wedding ceremony.

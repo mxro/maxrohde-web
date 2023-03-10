@@ -1,20 +1,21 @@
 ---
-title: "Fresh basil, tomatoes and chickpeas pasta"
+blog: shalveena.com
+categories:
+- lunch-and-dinner
+- recipes
+coverImage: img_5203.jpg
 date: "2021-02-26"
-categories: 
-  - "lunch-and-dinner"
-  - "recipes"
-tags: 
-  - "beans"
-  - "easy-meals"
-  - "easy-vegan-dinner"
-  - "tomatoes-and-basil"
-  - "vegan-pasta-dishes"
-  - "vegan-pasta-recipes"
-  - "vegan-recipes"
-  - "vegan-weeknight-dinner"
-  - "whole-food-plant-based"
-coverImage: "img_5203.jpg"
+tags:
+- beans
+- easy-meals
+- easy-vegan-dinner
+- tomatoes-and-basil
+- vegan-pasta-dishes
+- vegan-pasta-recipes
+- vegan-recipes
+- vegan-weeknight-dinner
+- whole-food-plant-based
+title: Fresh basil, tomatoes and chickpeas pasta
 ---
 
 ## Ingredients

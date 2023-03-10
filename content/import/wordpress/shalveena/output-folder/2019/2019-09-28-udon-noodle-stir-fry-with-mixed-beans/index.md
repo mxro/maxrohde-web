@@ -1,9 +1,10 @@
 ---
-title: "Udon Noodle Stir Fry with Mixed Beans"
+blog: shalveena.com
+categories:
+- recipes
+coverImage: img_0215.jpg
 date: "2019-09-28"
-categories: 
-  - "recipes"
-coverImage: "img_0215.jpg"
+title: Udon Noodle Stir Fry with Mixed Beans
 ---
 
 My poor wife had to work very long hours one day last week and so I got command of the kitchen again. I cooked up something _interesting_ since I wanted to use both udon noodles and beans. Anyway, it didn't taste all too bad and thus I present here without further ado the recipe:

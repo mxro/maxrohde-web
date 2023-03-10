@@ -1,12 +1,10 @@
 ---
-title: "Garlicky Chicken with Lemon-Anchovy Sauce"
+blog: shalveena.com
+categories:
+- recipes
 date: "2015-04-19"
-categories: 
-  - "recipes"
+title: Garlicky Chicken with Lemon-Anchovy Sauce
 ---
-
-  
-  
 
 [![](images/4f0ea-img_7029.jpg)](https://shalveena.files.wordpress.com/2015/04/4f0ea-img_7029.jpg)
 

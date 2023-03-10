@@ -1,13 +1,14 @@
 ---
-title: "Creamy Tahini Maple Dressing"
+blog: shalveena.com
+categories:
+- recipes
 date: "2020-09-19"
-categories: 
-  - "recipes"
-tags: 
-  - "oil-free"
-  - "sauces"
-  - "tahini-sauce"
-  - "wfpb-no-oil"
+tags:
+- oil-free
+- sauces
+- tahini-sauce
+- wfpb-no-oil
+title: Creamy Tahini Maple Dressing
 ---
 
 This sauce is creamy, a little sweet from the maple syrup, with a hint of acidity from the apple cider vinegar. It pairs wonderfully with our [Chickpea, Sweet Potato and Rocket Salad](https://shalveena.com/2020/09/19/chickpea-sweet-potato-and-rocket-salad/). And, to top it off, it is oil free!

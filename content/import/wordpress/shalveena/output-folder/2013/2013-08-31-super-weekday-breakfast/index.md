@@ -1,8 +1,9 @@
 ---
-title: "Super Weekday Breakfast"
+blog: shalveena.com
+categories:
+- recipes
 date: "2013-08-31"
-categories: 
-  - "recipes"
+title: Super Weekday Breakfast
 ---
 
 Every morning, from Monday to Friday, we have this breakfast to start our day. Often times, it is too much of an effort to make a hot meal during the weekdays for breakfast. And after trying many sorts of muesli, I have to say, a bowl of muesli in milk just doesn't do it for me. It does not start my day well and it certainly doesn't give me something to look forward to in the morning. 

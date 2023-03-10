@@ -1,8 +1,9 @@
 ---
-title: "Indian Tea for Beginners"
+blog: shalveena.com
+categories:
+- recipes
 date: "2014-02-22"
-categories: 
-  - "recipes"
+title: Indian Tea for Beginners
 ---
 
 [![](images/4218e-photo1.jpg)](https://shalveena.files.wordpress.com/2014/02/4218e-photo1.jpg)

@@ -1,16 +1,17 @@
 ---
-title: "German Vanilla Christmas Cookies"
+blog: shalveena.com
+categories:
+- dessert
+- recipes
+coverImage: img_6198.jpg
 date: "2021-12-17"
-categories: 
-  - "dessert"
-  - "recipes"
-tags: 
-  - "christmas"
-  - "christmas-cookies"
-  - "home-baking"
-  - "shallys-favourites"
-  - "vegan-christmas"
-coverImage: "img_6198.jpg"
+tags:
+- christmas
+- christmas-cookies
+- home-baking
+- shallys-favourites
+- vegan-christmas
+title: German Vanilla Christmas Cookies
 ---
 
 The other weekend, something surprising happened. My husband ventured to the kitchen and started taking out ingredients to make German Christmas cookies. He said it reminded him of cooking with his grandma when he was a child. The cookies turned out nice, but a bit hard and could have used a bit more sugar. This prompted me to try my hand and making some German Christmas cookies for him.

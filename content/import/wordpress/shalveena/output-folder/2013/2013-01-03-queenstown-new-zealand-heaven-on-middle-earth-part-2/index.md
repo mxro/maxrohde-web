@@ -1,11 +1,10 @@
 ---
-title: "Queenstown, New Zealand: Heaven on Middle Earth (Part 2)"
+blog: shalveena.com
+categories:
+- travels
 date: "2013-01-03"
-categories: 
-  - "travels"
+title: 'Queenstown, New Zealand: Heaven on Middle Earth (Part 2)'
 ---
-
- 
 
 <table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2013/01/dscn1135.jpg"><img src="https://shalveena.files.wordpress.com/2013/01/dscn1135.jpg?w=300" width="400" height="300" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">View from our hotel room</td></tr></tbody></table>
 
