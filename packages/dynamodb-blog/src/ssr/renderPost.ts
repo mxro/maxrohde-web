@@ -1,13 +1,19 @@
 /* esbuild-ignore ui */
 
+import { PartialRenderPageProps } from '@goldstack/template-ssr';
 import {
   APIGatewayProxyEventV2,
   APIGatewayProxyResultV2,
   APIGatewayProxyStructuredResultV2,
 } from 'aws-lambda/trigger/api-gateway-proxy';
-import { renderPage } from '../render';
-import { PostProps } from './../components/pages/PostPage';
 
+import type { Post as PostType } from 'db-blog';
+
+export interface PostProps {
+  post?: PostType;
+  visits: number;
+  exists: boolean;
+}
 import {
   connectTable,
   Entity,
@@ -22,16 +28,25 @@ import {
 
 import { normalisePath } from './../lib/posts';
 
-import PostPage from '../components/pages/PostPage';
-import ErrorPage from '../components/pages/ErrorPage';
-
 export interface ErrorPageProps {
   message: string;
 }
 export async function renderPost({
   event,
+  renderPage,
+  renderErrorPage,
+  PageComponent,
+  ErrorPageComponent,
 }: {
   event: APIGatewayProxyEventV2;
+  renderPage: (
+    props: PartialRenderPageProps<PostProps>
+  ) => Promise<APIGatewayProxyResultV2>;
+  renderErrorPage: (
+    props: PartialRenderPageProps<ErrorPageProps>
+  ) => Promise<APIGatewayProxyResultV2>;
+  PageComponent: (props: PostProps) => JSX.Element;
+  ErrorPageComponent: (props: ErrorPageProps) => JSX.Element;
 }): Promise<APIGatewayProxyResultV2> {
   const table = await connectTable();
 
@@ -71,7 +86,7 @@ export async function renderPost({
 
     const newPath = getPreviousDaysPath(path);
     if (!newPath) {
-      return renderNotFound(event);
+      return renderNotFound(event, renderErrorPage, ErrorPageComponent);
     }
 
     postQueryResult = await Posts.query(PostPK({ blog: 'maxrohde.com' }), {
@@ -82,7 +97,7 @@ export async function renderPost({
     });
 
     if (!postQueryResult.Items || postQueryResult.Count !== 1) {
-      return renderNotFound(event);
+      return renderNotFound(event, renderErrorPage, ErrorPageComponent);
     }
 
     return {
@@ -114,10 +129,10 @@ export async function renderPost({
 
   const post = postQueryResult.Items[0];
   if (!post) {
-    return renderNotFound(event);
+    return renderNotFound(event, renderErrorPage, ErrorPageComponent);
   }
-  const res = renderPage<PostProps>({
-    component: PostPage,
+  const res = renderPage({
+    component: PageComponent,
     appendToHead: `
       <title>${post.title} - Code of Joy</title>
       ${
@@ -198,19 +213,21 @@ function getPreviousDaysPath(path: string): string | undefined {
 }
 
 async function renderNotFound(
-  event: APIGatewayProxyEventV2
+  event: APIGatewayProxyEventV2,
+  renderErrorPage: (
+    props: PartialRenderPageProps<ErrorPageProps>
+  ) => Promise<APIGatewayProxyResultV2>,
+  ErrorPageComponent: (props: ErrorPageProps) => JSX.Element
 ): Promise<APIGatewayProxyResultV2> {
-  const res: APIGatewayProxyStructuredResultV2 = (await renderPage<ErrorPageProps>(
-    {
-      component: ErrorPage,
-      appendToHead: '<title>Post not found</title>',
-      properties: {
-        message: 'Post not found',
-      },
-      entryPoint: __filename,
-      event: event,
-    }
-  )) as APIGatewayProxyStructuredResultV2;
+  const res: APIGatewayProxyStructuredResultV2 = (await renderErrorPage({
+    component: ErrorPageComponent,
+    appendToHead: '<title>Post not found</title>',
+    properties: {
+      message: 'Post not found',
+    },
+    entryPoint: __filename,
+    event: event,
+  })) as APIGatewayProxyStructuredResultV2;
 
   const dynamoDB = await connect();
   await dynamoDB

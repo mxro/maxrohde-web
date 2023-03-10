@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "main": "./src/dynamoDBBlog",
   "dependencies": {
+    "@goldstack/template-ssr": "^0.3.7",
+    "aws-sdk": "^2.1222.0",
     "db-blog": "workspace:^"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.88",
     "@types/jest": "^29.0.1",
+    "@types/node": "^18.7.13",
     "@types/react": "^18.0.15",
     "@types/testing-library__jest-dom": "^5.14.5",
     "@types/testing-library__react": "^10.2.0",

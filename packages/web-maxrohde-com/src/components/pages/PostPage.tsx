@@ -1,16 +1,9 @@
 import React from 'react';
 import Footer from '../Footer';
 import Header from '../Header';
-import { TagList } from 'dynamodb-blog';
+import { PostProps, TagList } from 'dynamodb-blog';
 
-import type { Post as PostType } from 'db-blog';
 import ErrorPage from './ErrorPage';
-
-export interface PostProps {
-  post?: PostType;
-  visits: number;
-  exists: boolean;
-}
 
 const PostPage = (props: PostProps): JSX.Element => {
   if (!props.post) {

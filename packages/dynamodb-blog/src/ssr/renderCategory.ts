@@ -4,8 +4,8 @@ import {
   APIGatewayProxyEventV2,
   APIGatewayProxyResultV2,
 } from 'aws-lambda/trigger/api-gateway-proxy';
-import { renderPage } from '../render';
 
+import { PartialRenderPageProps } from '@goldstack/template-ssr';
 import {
   CategoryMappingEntity,
   CategoryMappingPK,
@@ -23,15 +23,19 @@ export interface TagProps {
   nextToken?: string;
 }
 
-import TagPage from '../components/pages/TagPage';
-
 import { loadPosts } from '../lib/posts';
 import { BlogListItemProps } from 'dynamodb-blog';
 
 export async function renderCategory({
   event,
+  renderPage,
+  PageComponent,
 }: {
   event: APIGatewayProxyEventV2;
+  renderPage: (
+    props: PartialRenderPageProps<TagProps>
+  ) => Promise<APIGatewayProxyResultV2>;
+  PageComponent: (props: TagProps) => JSX.Element;
 }): Promise<APIGatewayProxyResultV2> {
   const dynamodb = await connect();
   AWS.config.logger = console;
@@ -75,8 +79,8 @@ export async function renderCategory({
     postIds,
   });
 
-  return renderPage<TagProps>({
-    component: TagPage,
+  return renderPage({
+    component: PageComponent,
     appendToHead: `<title>${categoryId} - Code of Joy</title>`,
     properties: {
       id: categoryId,

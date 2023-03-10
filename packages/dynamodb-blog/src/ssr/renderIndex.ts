@@ -4,7 +4,6 @@ import {
   APIGatewayProxyEventV2,
   APIGatewayProxyResultV2,
 } from 'aws-lambda/trigger/api-gateway-proxy';
-import { renderPage } from '../render';
 
 import {
   connectTable,
@@ -16,11 +15,10 @@ import {
   connect,
 } from 'db-blog';
 
-import IndexPage from '../components/pages/IndexPage';
-import ErrorPage from '../components/pages/ErrorPage';
 import { loadPosts } from '../lib/posts';
 import { BlogListItemProps } from 'dynamodb-blog';
 import { ErrorPageProps } from './renderPost';
+import { PartialRenderPageProps } from '@goldstack/template-ssr';
 
 export interface IndexProps {
   posts: BlogListItemProps[];
@@ -31,8 +29,20 @@ export interface IndexProps {
 
 export async function renderIndex({
   event,
+  renderPage,
+  renderErrorPage,
+  PageComponent,
+  ErrorPageComponent,
 }: {
   event: APIGatewayProxyEventV2;
+  renderPage: (
+    props: PartialRenderPageProps<IndexProps>
+  ) => Promise<APIGatewayProxyResultV2>;
+  renderErrorPage: (
+    props: PartialRenderPageProps<ErrorPageProps>
+  ) => Promise<APIGatewayProxyResultV2>;
+  PageComponent: (props: IndexProps) => JSX.Element;
+  ErrorPageComponent: (props: ErrorPageProps) => JSX.Element;
 }): Promise<APIGatewayProxyResultV2> {
   const table = await connectTable();
   const dynamodb = await connect();
@@ -66,8 +76,8 @@ export async function renderIndex({
   ]);
 
   if (!latestPostQueryResult.Items) {
-    return renderPage<ErrorPageProps>({
-      component: ErrorPage,
+    return renderErrorPage({
+      component: ErrorPageComponent,
       appendToHead: `
       <title>Could not load posts</title>
       `,
@@ -78,8 +88,8 @@ export async function renderIndex({
       event: event,
     });
   }
-  return renderPage<IndexProps>({
-    component: IndexPage,
+  return renderPage({
+    component: PageComponent,
     appendToHead: `
     
       <meta charset="UTF-8">
