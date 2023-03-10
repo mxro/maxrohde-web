@@ -8,8 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/gernest/front"
-
+	"github.com/adrg/frontmatter"
 	"github.com/alecthomas/kong"
 	"github.com/gobwas/glob"
 	"gopkg.in/yaml.v2"
@@ -79,13 +78,8 @@ func ProcessFrontMatter(path string, processor frontmatterProcessorFn) error {
 
 	defer data.Close()
 
-	m := front.NewMatter()
-	m.Handle("---", front.YAMLHandler)
-	frontmatterMap, body, err := m.Parse(data)
-	if err != nil {
-		return err
-	}
-
+	var frontmatterMap map[string]interface{}
+	body, err := frontmatter.Parse(data, &frontmatterMap)
 	serr := processor(frontmatterMap)
 	if serr != nil {
 		return err
