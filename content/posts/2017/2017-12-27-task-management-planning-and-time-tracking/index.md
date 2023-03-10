@@ -1,11 +1,12 @@
 ---
-title: 'Task Management, Planning and Time Tracking'
-date: '2017-12-27'
+blog: maxrohde.com
 categories:
-  - 'productivity'
+- productivity
+date: "2017-12-27"
 tags:
-  - 'productivity'
-  - 'project-management'
+- productivity
+- project-management
+title: Task Management, Planning and Time Tracking
 ---
 
 I've long been looking for a tool that allows me to **plan tasks**, **manage them** and **track time** for myself and for a small team. Unfortunately, I have not been very successful thus far to find a effective, robust and affordable solution for this.

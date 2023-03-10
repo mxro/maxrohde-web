@@ -1,16 +1,17 @@
 ---
-publish: true
-title: "Guidelines for Fictional Worlds"
-id: "guidelines-for-fictional-worlds"
-date: "2022-11-01"
-coverImage: "pexels-veeterzy-38136.jpg"
-tags:
-  - "writing"
-  - "writing tips"
-  - "star-wars"
-  - "lord-of-the-rings"
+blog: maxrohde.com
 categories:
-  - "contemplations"
+- contemplations
+coverImage: pexels-veeterzy-38136.jpg
+date: "2022-11-01"
+id: guidelines-for-fictional-worlds
+publish: true
+tags:
+- writing
+- writing tips
+- star-wars
+- lord-of-the-rings
+title: Guidelines for Fictional Worlds
 ---
 
 For some stories, it is of little importance in which fictional world they are set in. For instance, many Shakespearean classics can be told in the context of different times and places. Other stories such as the Lord of the Rings are deeply interwoven with their context and cannot easily be separated from it. I believe that a rich context for a story, which might be a highly detailed fictional world such as Middle Earth or an authentic account of a real place and time, can make a story more interesting and engaging. I have been thinking about what characteristics a fictional world should have so that it would be interesting for me to write fiction within it, as well as that it is capable of enhancing my message.

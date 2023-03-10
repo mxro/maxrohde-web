@@ -1,18 +1,19 @@
 ---
-title: 'Finding Purpose'
-date: '2020-05-23'
+blog: maxrohde.com
 categories:
-  - 'buddhism'
-  - 'philosophy'
-  - 'psychology'
+- buddhism
+- philosophy
+- psychology
+coverImage: long-eared-owl-2118554.jpg
+date: "2020-05-23"
 tags:
-  - 'happiness'
-  - 'life'
-  - 'love'
-  - 'meaning'
-  - 'purpose'
-  - 'religion'
-coverImage: 'long-eared-owl-2118554.jpg'
+- happiness
+- life
+- love
+- meaning
+- purpose
+- religion
+title: Finding Purpose
 ---
 
 For most of human history, we shared a strong belief in the supernatural. This anchored our spiritual life and helped us answer some of lives most painful questions; such as what is the purpose of my life and what awaits me after I die.

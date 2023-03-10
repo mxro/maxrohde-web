@@ -1,8 +1,9 @@
 ---
-title: 'Software: Notational Velocity (Note taking)'
-date: '2010-04-08'
+blog: maxrohde.com
 categories:
-  - 'contemplations'
+- contemplations
+date: "2010-04-08"
+title: 'Software: Notational Velocity (Note taking)'
 ---
 
 National Velocity proposes to “to loosen the mental blockages to recording information and to scrape away the tartar of convention that handicaps its retrieval” ([](http://Notional.net) [http://notational.net/](http://notational.net/), 9/4/2010).

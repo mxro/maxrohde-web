@@ -1,19 +1,20 @@
 ---
-title: 'Lambda Go Starter Project'
-date: '2021-05-01'
+blog: maxrohde.com
 categories:
-  - 'devops'
-  - 'javascript'
+- devops
+- javascript
+date: "2021-05-01"
 tags:
-  - 'aws'
-  - 'aws-lambda'
-  - 'gin'
-  - 'golang'
-  - 'open-source'
-  - 'programming'
-  - 'serverless'
-  - 'starter-project'
-  - 'terraform'
+- aws
+- aws-lambda
+- gin
+- golang
+- open-source
+- programming
+- serverless
+- starter-project
+- terraform
+title: Lambda Go Starter Project
 ---
 
 Serverless development allows deploying low-cost, low-maintenance applications. Go is an [ever-more popular language](https://dev.to/pavanbelagatti/why-is-go-so-damn-popular-among-developers-2d6h) for developing backend applications. With first rate support both in [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/golang-handler.html) and [GCP Cloud Functions](https://cloud.google.com/functions/docs/concepts/go-runtime), Go is an excellent choice for serverless development.

@@ -1,8 +1,9 @@
 ---
-title: 'Change the path of applications in Tomcat'
-date: '2011-05-01'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2011-05-01"
+title: Change the path of applications in Tomcat
 ---
 
 ### Problem

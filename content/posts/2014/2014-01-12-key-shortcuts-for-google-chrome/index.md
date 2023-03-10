@@ -1,6 +1,7 @@
 ---
-title: 'Key Shortcuts for Google Chrome'
-date: '2014-01-12'
+blog: maxrohde.com
+date: "2014-01-12"
+title: Key Shortcuts for Google Chrome
 ---
 
 It is no secret that in order to be more productive in software development, it is [good to know the keyboard shortcuts of the IDE](http://netbeanside61.blogspot.co.nz/2008/04/top-10-netbeans-ide-keyboard-shortcuts.html) or editor of your choice. Using the keyboard is an inevitable part of software development and many other tasks we do at a computer, the mouse, however, is often optional and while it may only take a second to move one hand from the keyboard to the mouse, this second repeated a thousand times still amounts to more than 15 minutes.

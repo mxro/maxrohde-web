@@ -1,14 +1,15 @@
 ---
-title: 'Next.js with Bootstrap Getting Started'
-date: '2020-03-05'
+blog: maxrohde.com
 categories:
-  - 'javascript'
+- javascript
+coverImage: banner.png
+date: "2020-03-05"
 tags:
-  - 'bootstrap'
-  - 'next-js-framework'
-  - 'programming'
-  - 'react'
-coverImage: 'banner.png'
+- bootstrap
+- next-js-framework
+- programming
+- react
+title: Next.js with Bootstrap Getting Started
 ---
 
 [Next.js](https://nextjs.org/) is an open-source framework for React that aspires to reduce the amount of boilerplate code required for developing React applications. Key features that Next.js provides out of the box are:

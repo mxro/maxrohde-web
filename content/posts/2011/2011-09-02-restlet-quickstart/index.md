@@ -1,8 +1,9 @@
 ---
-title: 'Restlet Quickstart'
-date: '2011-09-02'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2011-09-02"
+title: Restlet Quickstart
 ---
 
 The Restlet framework is one of the possible options to provide Restful web services in Java. In many framework comparison, Restlet is criticized for being a little bit difficult to understand as well as to perform slightly worse than competing frameworks (e.g. [Apache Wink](http://en.wikipedia.org/wiki/Apache_Wink), [Jersey](http://jersey.java.net/), ...) ([Sangeetha, 2011](http://www.citeulike.org/user/mxro/article/9584259)). However, Restlet is also a very flexible framework and it is very lightweight, in that it has very few dependencies to heavyweight components, for instance servlet containers. This enables Restlet to play nicely with a number of technologies including Google Android, Google App Engine and Google Web Toolkit applications.

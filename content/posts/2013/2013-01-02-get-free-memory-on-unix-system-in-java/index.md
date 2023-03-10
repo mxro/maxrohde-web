@@ -1,8 +1,9 @@
 ---
-title: 'Get Free Memory on Unix System in Java'
-date: '2013-01-02'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2013-01-02"
+title: Get Free Memory on Unix System in Java
 ---
 
 ## Background

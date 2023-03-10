@@ -1,6 +1,7 @@
 ---
-title: 'Links of the Week (weekly)'
-date: '2013-01-27'
+blog: maxrohde.com
+date: "2013-01-27"
+title: Links of the Week (weekly)
 ---
 
 - [How NOT to Design Your API | Javalobby](http://java.dzone.com/articles/how-not-design-your-api?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+javalobby%2Ffrontpage+%28Javalobby+%2F+Java+Zone%29)

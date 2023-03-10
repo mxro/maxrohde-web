@@ -1,8 +1,9 @@
 ---
-title: 'Regular Expression to Find HTML Comments in Java'
-date: '2012-08-17'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2012-08-17"
+title: Regular Expression to Find HTML Comments in Java
 ---
 
 ## Problem

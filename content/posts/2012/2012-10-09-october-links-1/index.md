@@ -1,6 +1,7 @@
 ---
-title: 'October Links 1'
-date: '2012-10-09'
+blog: maxrohde.com
+date: "2012-10-09"
+title: October Links 1
 ---
 
 Interesting Links 1st to 10th of October 2012:

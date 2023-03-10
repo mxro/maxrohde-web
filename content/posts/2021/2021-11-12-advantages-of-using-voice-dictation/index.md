@@ -1,12 +1,13 @@
 ---
-title: 'Advantages of Using Voice Dictation'
-date: '2021-11-12'
+blog: maxrohde.com
+coverImage: ciceron_denuncia_a_catilina_por_cesare_maccari.jpg
+date: "2021-11-12"
 tags:
-  - 'dictation'
-  - 'mastery'
-  - 'productivity'
-  - 'writing'
-coverImage: 'ciceron_denuncia_a_catilina_por_cesare_maccari.jpg'
+- dictation
+- mastery
+- productivity
+- writing
+title: Advantages of Using Voice Dictation
 ---
 
 I've long been on a quest to increase my typing speed; figuring that typing is one of the things that I do for most of the day, and getting faster at it would be of significant advantages for me (see [my notes on trying to form habits](https://spearoflight.wordpress.com/2020/04/04/march-review-embracing-notion/)). However, as I am already typing for work all day, when it comes to writing for my own enjoyment, I often feel not very motivated to do so after having been glued to the keyboard all day.

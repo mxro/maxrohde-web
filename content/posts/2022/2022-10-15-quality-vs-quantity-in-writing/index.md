@@ -1,14 +1,15 @@
 ---
-publish: true
-title: 'Quality vs Quantity in Writing'
-id: 'quality-vs-quantity-in-writing'
-date: '2022-10-15'
-coverImage: 'page.jpg'
-tags:
-  - 'writing'
-  - 'productivity'
+blog: maxrohde.com
 categories:
-  - 'contemplations'
+- contemplations
+coverImage: page.jpg
+date: "2022-10-15"
+id: quality-vs-quantity-in-writing
+publish: true
+tags:
+- writing
+- productivity
+title: Quality vs Quantity in Writing
 ---
 
 When it comes to writing, I often implicitly think that there lies a value in quantity. It is better if I write more often; it is better if I write longer articles; it is better if I write more articles. However, I think the ultimate goal of my writing should be quality. Even if I just write occasionally, I would have written many volumes of books cumulatively. However, most of this writing would probably never be read by anyone but myself.

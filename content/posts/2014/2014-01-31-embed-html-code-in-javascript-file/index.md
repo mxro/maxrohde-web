@@ -1,8 +1,9 @@
 ---
-title: 'Embed HTML Code in JavaScript File'
-date: '2014-01-31'
+blog: maxrohde.com
 categories:
-  - 'javascript'
+- javascript
+date: "2014-01-31"
+title: Embed HTML Code in JavaScript File
 ---
 
 **Problem**

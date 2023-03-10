@@ -1,8 +1,9 @@
 ---
-title: 'SVN Ignore Eclipse Project Files'
-date: '2010-09-27'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-09-27"
+title: SVN Ignore Eclipse Project Files
 ---
 
 **Problem**

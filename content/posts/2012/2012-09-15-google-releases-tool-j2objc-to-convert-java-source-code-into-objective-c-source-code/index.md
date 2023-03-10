@@ -1,10 +1,12 @@
 ---
-title: 'Google Releases Tool J2ObjC to convert Java Source Code into Objective-C Source Code'
-date: '2012-09-15'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2012-09-15"
 tags:
-  - 'google-web-toolkit'
+- google-web-toolkit
+title: Google Releases Tool J2ObjC to convert Java Source Code into Objective-C Source
+  Code
 ---
 
 I love the [Google Web Toolkit](https://developers.google.com/web-toolkit/), a powerful and mature open source library to automatically translate Java Source Code into JavaScript code. While I doubt the merit of using Java to write user interfaces for JavaScript (unfortunately, this is often what the Google Web Toolkit has been advocated for), I think it is a great tool to share **Business Logic** between Java and JavaScript applications.

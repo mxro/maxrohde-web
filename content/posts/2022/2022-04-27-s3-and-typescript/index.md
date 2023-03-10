@@ -1,16 +1,17 @@
 ---
-title: 'S3 and Typescript'
-date: '2022-04-27'
+blog: maxrohde.com
 categories:
-  - 'javascript'
-  - 'serverless'
+- javascript
+- serverless
+coverImage: jessica-johnston-nnh2l-k77nc-unsplash.jpg
+date: "2022-04-27"
 tags:
-  - 'aws'
-  - 'aws-s3'
-  - 'coding'
-  - 'programming'
-  - 'typescript'
-coverImage: 'jessica-johnston-nnh2l-k77nc-unsplash.jpg'
+- aws
+- aws-s3
+- coding
+- programming
+- typescript
+title: S3 and Typescript
 ---
 
 [AWS S3](https://aws.amazon.com/s3/) is a cloud service for storing data using a simple API. In contrast to a traditional database, S3 is more akin to a file system. Data is stored under a certain path. The strengths of S3 are its easy to use API as well as its very low cost for storing data.

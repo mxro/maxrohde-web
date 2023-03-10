@@ -1,11 +1,12 @@
 ---
-title: 'Install Oracle JDK with Puppet'
-date: '2015-04-29'
+blog: maxrohde.com
 categories:
-  - 'linux'
+- linux
+date: "2015-04-29"
 tags:
-  - 'java'
-  - 'puppet'
+- java
+- puppet
+title: Install Oracle JDK with Puppet
 ---
 
 # Problem

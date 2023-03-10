@@ -1,16 +1,17 @@
 ---
-title: 'Identity, Habits and Enlightenment'
-date: '2019-10-13'
+blog: maxrohde.com
 categories:
-  - 'buddhism'
-  - 'philosophy'
-  - 'psychology'
+- buddhism
+- philosophy
+- psychology
+coverImage: chimpanzee-3703230.jpg
+date: "2019-10-13"
 tags:
-  - 'habits'
-  - 'identity'
-  - 'life'
-  - 'self-improvement'
-coverImage: 'chimpanzee-3703230.jpg'
+- habits
+- identity
+- life
+- self-improvement
+title: Identity, Habits and Enlightenment
 ---
 
 I recently read the book [Atomic Habits by James Clear](https://www.goodreads.com/book/show/40121378-atomic-habits). One of the interesting ideas presented in this book was that in order to bring about personal change, we need to start with our identity, then change our practices and processes and thus achieve better outcomes; as in, I am a health conscious person, therefore I will change my habit of eating fast food for lunch and thus eat healthy food for lunch. This is presented as being in contrast to our usual way of trying to facilitate change, which would be to start with outcomes; as in, I will eat healthy food for lunch, thus changing my habit of eating fast food and ultimately become a healthy person.

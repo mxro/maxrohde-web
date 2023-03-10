@@ -1,8 +1,9 @@
 ---
-title: 'Beware of BootstrapCDN :('
-date: '2012-08-23'
+blog: maxrohde.com
 categories:
-  - 'javascript'
+- javascript
+date: "2012-08-23"
+title: Beware of BootstrapCDN :(
 ---
 
 A few days ago, I discovered the [service BootstapCDN](https://twitter.com/mxro/status/235940607695130624). I really like the idea to serve standard libraries such as JQuery or Twitter Bootstrap through central Content Delivery Networks. Especially since serving libraries through a standard location enables clients to not have to download these libraries at all (if the CDN server is configured for caching correctly).

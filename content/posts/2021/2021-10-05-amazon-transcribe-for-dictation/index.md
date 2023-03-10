@@ -1,8 +1,9 @@
 ---
-title: 'Amazon Transcribe for Dictation'
-date: '2021-10-05'
+blog: maxrohde.com
+date: "2021-10-05"
 tags:
-  - 'aws'
+- aws
+title: Amazon Transcribe for Dictation
 ---
 
 I have been doing some research on how to do speech to text conversion. Initially, I thought there may be a good iOS app that I could simply use on my iPhone. But while there were a number of apps available to support dictation most of these seem to be focused on allowing you to upload your files to a page transcription service rather than using the AI transcription services that are available nowadays.

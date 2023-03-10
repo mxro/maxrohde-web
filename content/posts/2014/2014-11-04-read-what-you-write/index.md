@@ -1,12 +1,13 @@
 ---
-title: 'Read What You Write'
-date: '2014-11-04'
+blog: maxrohde.com
 categories:
-  - 'contemplations'
-  - 'productivity'
+- contemplations
+- productivity
+date: "2014-11-04"
 tags:
-  - 'habits'
-  - 'writing'
+- habits
+- writing
+title: Read What You Write
 ---
 
 Unquestionably there is value in the process of writing in itself; previously [muddy ideas are clarified](http://accountingprofessor.wordpress.com/2011/08/21/the-value-of-writing/) and new ideas emerge by bringing them on paper.

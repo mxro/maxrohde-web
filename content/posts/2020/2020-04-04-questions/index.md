@@ -1,13 +1,14 @@
 ---
-title: 'Questions'
-date: '2020-04-04'
+blog: maxrohde.com
 categories:
-  - 'philosophy'
+- philosophy
+coverImage: cave-690348.jpg
+date: "2020-04-04"
 tags:
-  - 'enlightenment'
-  - 'life'
-  - 'questions'
-coverImage: 'cave-690348.jpg'
+- enlightenment
+- life
+- questions
+title: Questions
 ---
 
 We would often find that having many questions and few answers is an undesirable state. This is good since it drives us to find answers but also bad since it encourages us to ask less questions to have a smaller problem to begin with... In my opinion, we are far better off if we acknowledge that there will always be far more questions around than answers, and that there is nothing wrong with that since questions are wonderful.

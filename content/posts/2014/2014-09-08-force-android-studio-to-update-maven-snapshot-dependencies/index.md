@@ -1,9 +1,10 @@
 ---
-title: 'Force Android Studio to Update Maven Snapshot Dependencies'
-date: '2014-09-08'
+blog: maxrohde.com
+date: "2014-09-08"
 tags:
-  - 'gradle'
-  - 'maven'
+- gradle
+- maven
+title: Force Android Studio to Update Maven Snapshot Dependencies
 ---
 
 ## Problem

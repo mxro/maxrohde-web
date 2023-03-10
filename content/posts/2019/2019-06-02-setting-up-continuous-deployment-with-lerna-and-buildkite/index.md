@@ -1,12 +1,13 @@
 ---
-title: 'Setting up Continuous Deployment with Lerna and Buildkite'
-date: '2019-06-02'
+blog: maxrohde.com
 categories:
-  - 'javascript'
+- javascript
+coverImage: screen-shot-2019-06-02-at-8.37.03-pm.png
+date: "2019-06-02"
 tags:
-  - 'devops'
-  - 'lerna-js'
-coverImage: 'screen-shot-2019-06-02-at-8.37.03-pm.png'
+- devops
+- lerna-js
+title: Setting up Continuous Deployment with Lerna and Buildkite
 ---
 
 [Buildkite](https://buildkite.com/) is a great tool for running multi-step build and deployment pipelines. [Lerna](https://github.com/lerna/lerna) is a tool for managing multiple JavaScript packages within one git repository.

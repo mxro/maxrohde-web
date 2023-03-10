@@ -1,8 +1,9 @@
 ---
-title: 'CLAP Protocol in Restlet and OSGi'
-date: '2010-09-28'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-09-28"
+title: CLAP Protocol in Restlet and OSGi
 ---
 
 **Problem:**

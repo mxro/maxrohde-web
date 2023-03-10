@@ -1,17 +1,18 @@
 ---
-title: 'Some Thoughts on Learning'
-date: '2021-09-10'
+blog: maxrohde.com
 categories:
-  - 'philosophy'
-  - 'productivity'
-  - 'psychology'
-  - 'society'
+- philosophy
+- productivity
+- psychology
+- society
+coverImage: watch-4638673.jpg
+date: "2021-09-10"
 tags:
-  - 'life'
-  - 'school'
-  - 'studying'
-  - 'university'
-coverImage: 'watch-4638673.jpg'
+- life
+- school
+- studying
+- university
+title: Some Thoughts on Learning
 ---
 
 Over the past few years I had to study for a few professional certifications and I also spent a very considerable time studying at school and university. Throughout this journey I gained some insights that were useful to me and that I will collect here in the hope that they maybe useful to someone else as well.

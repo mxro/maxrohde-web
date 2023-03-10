@@ -1,8 +1,9 @@
 ---
-title: 'Loading Resources in Class Package for PDE using Eclipse IAM'
-date: '2010-06-04'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-06-04"
+title: Loading Resources in Class Package for PDE using Eclipse IAM
 ---
 
 **The Problem**

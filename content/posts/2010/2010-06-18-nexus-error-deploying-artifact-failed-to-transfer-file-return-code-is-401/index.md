@@ -1,8 +1,10 @@
 ---
-title: 'Nexus: Error deploying artifact: Failed to transfer file: ... Return code is: 401'
-date: '2010-06-18'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-06-18"
+title: 'Nexus: Error deploying artifact: Failed to transfer file: ... Return code
+  is: 401'
 ---
 
 **Problem**

@@ -1,8 +1,9 @@
 ---
-title: 'Cannot add files to svn ignore in eclipse'
-date: '2010-12-11'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-12-11"
+title: Cannot add files to svn ignore in eclipse
 ---
 
 **The Problem**

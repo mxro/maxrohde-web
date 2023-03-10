@@ -1,15 +1,16 @@
 ---
-title: 'Fixing Next.js Error: Invalid next.config.js Options Detected'
-date: '2023-01-06'
-coverImage: 'pexels-markus-spiske-4439901.jpg'
-id: 'fixing-next-js-error-next-config-options-detected'
+blog: maxrohde.com
+categories:
+- code
+coverImage: pexels-markus-spiske-4439901.jpg
+date: "2023-01-06"
+id: fixing-next-js-error-next-config-options-detected
 publish: true
 tags:
-  - 'nextjs'
-  - 'javascript'
-  - 'howto'
-categories:
-  - 'code'
+- nextjs
+- javascript
+- howto
+title: 'Fixing Next.js Error: Invalid next.config.js Options Detected'
 ---
 
 

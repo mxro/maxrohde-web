@@ -1,8 +1,10 @@
 ---
-title: 'GWT: ‘A widget that has an existing parent widget may not be added to the detach list’'
-date: '2012-03-16'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2012-03-16"
+title: 'GWT: ‘A widget that has an existing parent widget may not be added to the
+  detach list’'
 ---
 
 ## Problem

@@ -1,10 +1,11 @@
 ---
-title: 'The Secret of Uncommonness'
-date: '2014-11-04'
+blog: maxrohde.com
 categories:
-  - 'contemplations'
+- contemplations
+date: "2014-11-04"
 tags:
-  - 'writing'
+- writing
+title: The Secret of Uncommonness
 ---
 
 When writing only paraphrases words, phrases, ideas and concepts familiar to us, we often perceive it as boring and dull. If, on the other hand, writing consists mostly of words, phrases, ideas and concepts that are unfamiliar to us, we often perceive it as complex, difficult or even incomprehensible.

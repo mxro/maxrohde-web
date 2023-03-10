@@ -1,10 +1,11 @@
 ---
-title: 'Embedding Jenkins in Java App'
-date: '2012-11-26'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2012-11-26"
 tags:
-  - 'jenkins'
+- jenkins
+title: Embedding Jenkins in Java App
 ---
 
 The Continuous Integration server [Jenkins](http://jenkins-ci.org/) can easily be deployed to any Servlet container or run in standalone mode (see [Starting Jenkins](https://wiki.jenkins-ci.org/display/JENKINS/Starting+and+Accessing+Jenkins)).

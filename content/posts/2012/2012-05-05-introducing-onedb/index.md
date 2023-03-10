@@ -1,9 +1,10 @@
 ---
-title: 'Introducing onedb: Connect Small Data in the Cloud'
-date: '2012-05-05'
+blog: maxrohde.com
 categories:
-  - 'contemplations'
-  - 'java'
+- contemplations
+- java
+date: "2012-05-05"
+title: 'Introducing onedb: Connect Small Data in the Cloud'
 ---
 
 Data is growing bigger.

@@ -1,8 +1,9 @@
 ---
-title: 'Xtend Error: Cannot find class Consumer'
-date: '2014-11-18'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2014-11-18"
+title: 'Xtend Error: Cannot find class Consumer'
 ---
 
 **Problem**

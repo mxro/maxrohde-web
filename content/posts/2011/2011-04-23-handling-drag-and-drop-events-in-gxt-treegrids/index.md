@@ -1,8 +1,9 @@
 ---
-title: 'Handling Drag and Drop Events in Gxt TreeGrids'
-date: '2011-04-23'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2011-04-23"
+title: Handling Drag and Drop Events in Gxt TreeGrids
 ---
 
 The [Ext GWT framework](http://www.sencha.com/products/extgwt/) offers some rather sophisticated support for drag and drop in GWT applications. However dealings with drag and drop in TreeGrids can be complicated at times, since only limited documentation apart from the examples in the showcase is provided.

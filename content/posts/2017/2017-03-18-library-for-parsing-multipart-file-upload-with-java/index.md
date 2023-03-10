@@ -1,11 +1,12 @@
 ---
-title: 'Library for Parsing multipart File Upload with Java'
-date: '2017-03-18'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2017-03-18"
 tags:
-  - 'open-source'
-  - 'programming'
+- open-source
+- programming
+title: Library for Parsing multipart File Upload with Java
 ---
 
 One of the most convinient ways to upload files from the Web Browser to the server is by using [file inputs in HTML forms](https://davidwalsh.name/multiple-file-upload).

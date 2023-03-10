@@ -1,8 +1,9 @@
 ---
-title: 'Jangle Java: Synchronization'
-date: '2012-08-08'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2012-08-08"
+title: 'Jangle Java: Synchronization'
 ---
 
 This tutorial is a continutation of the '[Jangle Java: Upload & Load](http://maxrohde.com/2012/08/08/jangle-java-upload-load-data/)' tutorial. Make sure to follow the steps of this tutorial first before doing this one.

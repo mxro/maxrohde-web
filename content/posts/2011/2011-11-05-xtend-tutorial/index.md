@@ -1,8 +1,9 @@
 ---
-title: 'Xtend Tutorial'
-date: '2011-11-05'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2011-11-05"
+title: Xtend Tutorial
 ---
 
 The world is rife for a new dominant programming language! Actually, has been rife for a couple of years, which, however, does not stop Java and C++ from dominating the screens of many unfortunate developers. Apart from the inarguably impressive features offered by 'new' languages, such as Scala, Goovy, Ruby, Haskell, Clojure, Dart? and Go, I am highly suspicious of these languages: What happens to the **billions of lines of code written in legacy programming languages**? Will my Groovy app work with the next update of Groovy, or will it work in 10 years, when I have to update my app? I don't want something big, not the total reinvention of computing but would already be happy with more concise syntax to create inline objects, type inference and simple closures.

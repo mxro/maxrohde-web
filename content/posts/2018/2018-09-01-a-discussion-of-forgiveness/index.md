@@ -1,18 +1,19 @@
 ---
-title: 'A Discussion of Forgiveness'
-date: '2018-09-01'
+blog: maxrohde.com
 categories:
-  - 'philosophy'
+- philosophy
+coverImage: 785px-rembrandt_harmensz_van_rijn_-_return_of_the_prodigal_son_-_google_art_project.jpg
+date: "2018-09-01"
 tags:
-  - 'beauty'
-  - 'buddhism'
-  - 'forgiveness'
-  - 'goodness'
-  - 'happiness'
-  - 'life'
-  - 'love'
-  - 'virtues'
-coverImage: '785px-rembrandt_harmensz_van_rijn_-_return_of_the_prodigal_son_-_google_art_project.jpg'
+- beauty
+- buddhism
+- forgiveness
+- goodness
+- happiness
+- life
+- love
+- virtues
+title: A Discussion of Forgiveness
 ---
 
 I've already mentioned that I believe that [gratitude and forgiveness are emotions which I believe we should foster within ourselves](https://maxrohde.com/2018/08/20/eight-virtues-which-seem-not-all-that-bad/). Today I want to explore in a little bit further detail what makes up forgiveness and why it is such a powerful force to bring good to ourselves and the world.

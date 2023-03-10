@@ -1,11 +1,12 @@
 ---
-title: 'Install Puppet 3 in Amazon Linux'
-date: '2016-02-09'
+blog: maxrohde.com
 categories:
-  - 'linux'
+- linux
+date: "2016-02-09"
 tags:
-  - 'ec2'
-  - 'puppet'
+- ec2
+- puppet
+title: Install Puppet 3 in Amazon Linux
 ---
 
 The most recent version of the Amazon Linux VMI (2015.09.1) seems to install version 2 of Puppet by default.

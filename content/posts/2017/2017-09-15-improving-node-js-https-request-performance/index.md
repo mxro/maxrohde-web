@@ -1,8 +1,9 @@
 ---
-title: 'Improving Node.js https request performance'
-date: '2017-09-15'
+blog: maxrohde.com
 categories:
-  - 'javascript'
+- javascript
+date: "2017-09-15"
+title: Improving Node.js https request performance
 ---
 
 The [HTTPS module](https://nodejs.org/docs/latest-v6.x/api/https.html#https_https) of Node.js allows making HTTPS request to other servers. Unfortunately, making requests with this module often leads to poor performance.

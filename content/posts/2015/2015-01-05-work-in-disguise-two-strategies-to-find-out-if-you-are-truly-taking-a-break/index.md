@@ -1,12 +1,13 @@
 ---
-title: 'Work in Disguise: Two Strategies to Find Out If You Are Truly Taking a Break'
-date: '2015-01-05'
+blog: maxrohde.com
 categories:
-  - 'productivity'
+- productivity
+date: "2015-01-05"
 tags:
-  - 'life'
-  - 'productivity'
-  - 'stress'
+- life
+- productivity
+- stress
+title: 'Work in Disguise: Two Strategies to Find Out If You Are Truly Taking a Break'
 ---
 
 One of the most challenging aspects of knowledge work is one that is often overlooked: much of what we call knowledge ‘work’ is actually [quite fun](http://hrdictionaryblog.com/2013/11/22/fun-at-work-what-it-means-to-millennials/). Think of an [entrepreneur](https://enterpriseessentials.wordpress.com/2013/12/23/life-work-and-fun-career-coaching-with-a-twist/), a software developer who [likes to write code](http://mariannetwork2015.wordpress.com/2014/11/30/another-one-bytes-the-dust-student-finds-passion-for-programming/), think of a manager who likes to see her objects develop in fruitful ways, think of a [teacher who likes to teach](http://floatingindreams.com/2011/09/22/why-teaching-is-fun/)!

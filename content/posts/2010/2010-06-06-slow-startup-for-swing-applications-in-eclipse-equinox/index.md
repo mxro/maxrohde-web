@@ -1,8 +1,9 @@
 ---
-title: 'Slow Startup for Swing Applications in Eclipse Equinox'
-date: '2010-06-06'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-06-06"
+title: Slow Startup for Swing Applications in Eclipse Equinox
 ---
 
 **The Problem**

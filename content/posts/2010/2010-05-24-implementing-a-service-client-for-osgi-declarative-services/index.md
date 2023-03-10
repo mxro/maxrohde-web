@@ -1,8 +1,9 @@
 ---
-title: 'Implementing a Service Client for OSGi Declarative Services'
-date: '2010-05-24'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-05-24"
+title: Implementing a Service Client for OSGi Declarative Services
 ---
 
 This post is part of a series of posts on [java modularity](http://maxrohde.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/).

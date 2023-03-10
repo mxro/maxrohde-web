@@ -1,11 +1,12 @@
 ---
-title: 'GWT Exclude Package From Source Path'
-date: '2014-01-22'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2014-01-22"
 tags:
-  - 'google-web-toolkit'
-  - 'gwt'
+- google-web-toolkit
+- gwt
+title: GWT Exclude Package From Source Path
 ---
 
 **Problem**

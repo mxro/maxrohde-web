@@ -1,18 +1,18 @@
 ---
-
-title: 'How to Remember 64 Things: A Systematic Memory System'
-id: 'how-to-remember-64-things-a-systematic-memory-system'
+blog: maxrohde.com
 categories:
-  - 'contemplations'
-date: '2022-10-28'
-summary: 'Describes a system to remember a list with 64 items using the Loci technique.'
-tags:
-  - 'memory'
-  - 'productivity'
-  - 'memory-system'
-  - 'self-improvement'
-  - 'life'
+- contemplations
+date: "2022-10-28"
+id: how-to-remember-64-things-a-systematic-memory-system
 publish: true
+summary: Describes a system to remember a list with 64 items using the Loci technique.
+tags:
+- memory
+- productivity
+- memory-system
+- self-improvement
+- life
+title: 'How to Remember 64 Things: A Systematic Memory System'
 ---
 
 I have already discussed a number of possible systems that can be used as mnemonic devices to help us remember information better; for instance by [placing imagined objects into real locations](https://maxrohde.com/2021/11/15/memory-system-part-1-ancient-techniques-and-modern-applications) or to [associate numbers with specific objects](https://maxrohde.com/2022/01/16/memory-system-part-4-symbolic-systems).

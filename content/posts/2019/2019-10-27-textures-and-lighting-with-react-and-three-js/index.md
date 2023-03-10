@@ -1,15 +1,16 @@
 ---
-title: 'Textures and Lighting with React and Three.js'
-date: '2019-10-27'
+blog: maxrohde.com
 categories:
-  - 'javascript'
+- javascript
+coverImage: version-4.png
+date: "2019-10-27"
 tags:
-  - 'open-source'
-  - 'programming'
-  - 'react'
-  - 'react-hooks'
-  - 'three-js'
-coverImage: 'version-4.png'
+- open-source
+- programming
+- react
+- react-hooks
+- three-js
+title: Textures and Lighting with React and Three.js
 ---
 
 In my previous three posts, I have developed a simple WebGL application using [react-three-fiber](https://github.com/react-spring/react-three-fiber) and [three.js](https://threejs.org/). In this post, I am adding texture loading and proper lighting to the application.

@@ -1,12 +1,13 @@
 ---
-title: 'Use Signed SSL Certificate with Java'
-date: '2015-08-03'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2015-08-03"
 tags:
-  - 'programming'
-  - 'security'
-  - 'ssl'
+- programming
+- security
+- ssl
+title: Use Signed SSL Certificate with Java
 ---
 
 It seems to me like every time I have to do something that has to do with SSL certificates – be they self-signed or signed by a certificate authority – things do not go smoothly. I only do this from time to time, so I am by no means an expert; but I do believe my difficulties result to some degree from the intrinsic complexities within SSL and the systems which support it.

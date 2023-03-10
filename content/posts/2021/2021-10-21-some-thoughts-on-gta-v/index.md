@@ -1,13 +1,14 @@
 ---
-title: 'Some Thoughts on GTA V'
-date: '2021-10-21'
+blog: maxrohde.com
 categories:
-  - 'games'
+- games
+coverImage: trunk.jpg
+date: "2021-10-21"
 tags:
-  - 'game-review'
-  - 'gta-v'
-  - 'virtual-worlds'
-coverImage: 'trunk.jpg'
+- game-review
+- gta-v
+- virtual-worlds
+title: Some Thoughts on GTA V
 ---
 
 I must admit that I'm a little bit behind the curve when it comes to playing many popular video games. GTA V is a game that by now came out almost 10 years ago, but I only recently got to play it. I got GTA V for free on the Epic Games store a few months ago but didn't get an opportunity to look into it before. I started playing this on my birthday, figuring that this slightly transgressive entertainment could not be denied to me on this special day.

@@ -1,15 +1,16 @@
 ---
-title: 'GraphQL, Node.JS and React Monorepo Starter Kit'
-date: '2018-12-27'
+blog: maxrohde.com
 categories:
-  - 'javascript'
+- javascript
+date: "2018-12-27"
 tags:
-  - 'graphql'
-  - 'lerna-js'
-  - 'monorepo'
-  - 'node-js'
-  - 'programming'
-  - 'react'
+- graphql
+- lerna-js
+- monorepo
+- node-js
+- programming
+- react
+title: GraphQL, Node.JS and React Monorepo Starter Kit
 ---
 
 Following the [GraphQL Apollo Starter Kit (Lerna, Node.js)](http://maxrohde.com/2018/12/24/graphql-apollo-starter-kit-lerna-node-js/), I wanted to dig deeper into developing a monorepo for a GraphQL/React client-server application.

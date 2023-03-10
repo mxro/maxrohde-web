@@ -1,12 +1,13 @@
 ---
-title: 'Knex and Typescript Starter Project'
-date: '2020-02-18'
+blog: maxrohde.com
 categories:
-  - 'javascript'
+- javascript
+coverImage: annotation-2020-02-18-201721.png
+date: "2020-02-18"
 tags:
-  - 'programming'
-  - 'typescript'
-coverImage: 'annotation-2020-02-18-201721.png'
+- programming
+- typescript
+title: Knex and Typescript Starter Project
 ---
 
 SQL is a very expressive and powerful language. Unfortunately, it has often been difficult to interact with database using SQL from object-oriented languages due to a mismatch of the data structures in the database versus the structures in the application programming language. One common solution to this problem where Object-relational mapping frameworks, which often come with their own issues.

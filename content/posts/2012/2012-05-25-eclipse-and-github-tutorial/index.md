@@ -1,8 +1,9 @@
 ---
-title: 'Eclipse and Github Tutorial'
-date: '2012-05-25'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2012-05-25"
+title: Eclipse and Github Tutorial
 ---
 
 [Github](https://github.com) is an awesome repository to share your source code. Although there are [numerous](http://npascut1.wordpress.com/2011/03/10/eclipseandgit/) [tutorials](http://jeromyanglim.blogspot.co.nz/2010/11/getting-started-with-git-egit-eclipse.html) discussing how to use git and eclipse, I got stuck again today while trying to **upload** an existing eclipse project to git**hub**. This tutorial walks thus through all the steps from signing up for github to uploading an eclipse project to the site!

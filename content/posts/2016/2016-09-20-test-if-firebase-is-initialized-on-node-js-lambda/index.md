@@ -1,11 +1,12 @@
 ---
-title: 'Test if Firebase is Initialized on Node.JS / Lambda'
-date: '2016-09-20'
+blog: maxrohde.com
 categories:
-  - 'javascript'
+- javascript
+date: "2016-09-20"
 tags:
-  - 'firebase'
-  - 'node-js'
+- firebase
+- node-js
+title: Test if Firebase is Initialized on Node.JS / Lambda
 ---
 
 [Firebase](https://firebase.google.com/) is build on the assumption that it will only be initialized once.

@@ -1,16 +1,18 @@
 ---
-title: Big and Small Decisions
-summary: Discusses the differences between deliberate ('big') and subconsious ('small') decisions.
-id: big-and-small-decisions
-date: '2022-10-22'
-coverImage: 'pexels-pixabay-33535.jpg'
-tags:
-  - 'decision-making'
-  - 'psychology'
-  - 'management'
+blog: maxrohde.com
 categories:
-  - 'contemplations'
+- contemplations
+coverImage: pexels-pixabay-33535.jpg
+date: "2022-10-22"
+id: big-and-small-decisions
 publish: true
+summary: Discusses the differences between deliberate ('big') and subconsious ('small')
+  decisions.
+tags:
+- decision-making
+- psychology
+- management
+title: Big and Small Decisions
 ---
 
 We make a lot of decisions in our lives: which food to pick from the menu, which brand of pasta to get from the store, which job offer to accept. I want to argue in this article that it is helpful to divide the decisions we make into two broad categories: big decisions and small decisions. I will start with defining what I mean by these respectively.

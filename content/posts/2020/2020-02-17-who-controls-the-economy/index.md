@@ -1,13 +1,14 @@
 ---
-title: 'Who controls the economy?'
-date: '2020-02-17'
+blog: maxrohde.com
 categories:
-  - 'politics'
+- politics
+coverImage: bills-496229.jpg
+date: "2020-02-17"
 tags:
-  - 'economics'
-  - 'economy'
-  - 'opinion'
-coverImage: 'bills-496229.jpg'
+- economics
+- economy
+- opinion
+title: Who controls the economy?
 ---
 
 The economy shapes much of our lives. It determines what job we can or cannot get; it determines what we can buy or cannot buy; it determines where we live; it determines what healthcare we can get; frankly there is little in our lives which is not influenced by the economy.

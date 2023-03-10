@@ -1,11 +1,12 @@
 ---
-title: 'Overwrite Author in Git History'
-date: '2020-10-21'
+blog: maxrohde.com
+coverImage: image.png
+date: "2020-10-21"
 tags:
-  - 'coding'
-  - 'git'
-  - 'programming'
-coverImage: 'image.png'
+- coding
+- git
+- programming
+title: Overwrite Author in Git History
 ---
 
 With every commit, git records the name of the author as well as the committer along with their respective email addresses. These will be public once you push your project to GitHub. So sometimes it may be advisable to change the email addresses of the author and committer for all the past commits in your repository.

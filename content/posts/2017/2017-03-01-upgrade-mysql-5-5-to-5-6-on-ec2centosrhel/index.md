@@ -1,11 +1,12 @@
 ---
-title: 'Upgrade MySQL 5.5 to 5.6 on EC2/CentOS/RHEL'
-date: '2017-03-01'
+blog: maxrohde.com
 categories:
-  - 'aws'
-  - 'linux'
+- aws
+- linux
+date: "2017-03-01"
 tags:
-  - 'mysql'
+- mysql
+title: Upgrade MySQL 5.5 to 5.6 on EC2/CentOS/RHEL
 ---
 
 ### Problem

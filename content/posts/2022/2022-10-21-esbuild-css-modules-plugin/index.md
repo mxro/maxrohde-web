@@ -1,19 +1,20 @@
 ---
-title: 'esbuild CSS Modules Plugin for Server-Side Rendering'
-id: 'esbuild-css-modules-plugin'
-date: '2022-10-21'
-summary: 'esbuild plugin for supporting CSS Modules in React Server-Side Rendering.'
-coverImage: 'jeffrey-leung-NYcUkFJuxg0-unsplash.jpg'
-tags:
-  - 'esbuild'
-  - 'css-modules'
-  - 'javascript'
-  - 'css'
-  - 'ssr'
-  - 'react'
+blog: maxrohde.com
 categories:
-  - 'code'
-  - 'javascript'
+- code
+- javascript
+coverImage: jeffrey-leung-NYcUkFJuxg0-unsplash.jpg
+date: "2022-10-21"
+id: esbuild-css-modules-plugin
+summary: esbuild plugin for supporting CSS Modules in React Server-Side Rendering.
+tags:
+- esbuild
+- css-modules
+- javascript
+- css
+- ssr
+- react
+title: esbuild CSS Modules Plugin for Server-Side Rendering
 ---
 
 [CSS Modules](https://github.com/css-modules/css-modules) provide a flexible and clean way to provide custom CSS for React components.

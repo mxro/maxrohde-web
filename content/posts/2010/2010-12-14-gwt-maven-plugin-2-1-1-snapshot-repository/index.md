@@ -1,8 +1,9 @@
 ---
-title: 'Gwt-maven-plugin-2.1.1-SNAPSHOT repository'
-date: '2010-12-14'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-12-14"
+title: Gwt-maven-plugin-2.1.1-SNAPSHOT repository
 ---
 
 I just spend a while to find the right repository for the [gwt-maven-plugin](http://people.apache.org/~olamy/staging-sites/gwt-maven-plugin-2.1.1-SNAPSHOT/index.html) version 2.1.1-SNAPSHOT.

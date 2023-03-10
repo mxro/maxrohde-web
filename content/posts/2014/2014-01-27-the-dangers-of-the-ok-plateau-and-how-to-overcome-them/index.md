@@ -1,14 +1,15 @@
 ---
-title: 'The Dangers of the OK Plateau and How to Overcome Them'
-date: '2014-01-27'
+blog: maxrohde.com
 categories:
-  - 'productivity'
+- productivity
+date: "2014-01-27"
 tags:
-  - 'daniel-coyle'
-  - 'daniel-goleman'
-  - 'deliberate-practice'
-  - 'productivity'
-  - 'psychology'
+- daniel-coyle
+- daniel-goleman
+- deliberate-practice
+- productivity
+- psychology
+title: The Dangers of the OK Plateau and How to Overcome Them
 ---
 
 I found the following wonderful quote in Daniel Goleman's [Focus: The Hidden Driver of Excellence](http://www.amazon.com/Focus-The-Hidden-Driver-Excellence/dp/0062114867) via [Brain Pickings](http://www.brainpickings.org/index.php/2014/01/22/daniel-goleman-focus-10000-hours-myth):

@@ -1,13 +1,14 @@
 ---
-title: 'Eight Virtues Which Seem Not All That Bad'
-date: '2018-08-20'
+blog: maxrohde.com
 categories:
-  - 'philosophy'
+- philosophy
+coverImage: 2048px-lorenzo_lotto_-_allc3a9gorie_de_la_vertu_et_du_vice_1.jpg
+date: "2018-08-20"
 tags:
-  - 'happiness'
-  - 'meaning'
-  - 'virtues'
-coverImage: '2048px-lorenzo_lotto_-_allc3a9gorie_de_la_vertu_et_du_vice_1.jpg'
+- happiness
+- meaning
+- virtues
+title: Eight Virtues Which Seem Not All That Bad
 ---
 
 Virtue seems like a dusty old concept which fits in an 18th century - but not in our modern digital age. I disagree! I believe the problem with virtues is not the concept as such but the particular virtues we have long aspired to.

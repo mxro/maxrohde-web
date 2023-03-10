@@ -1,16 +1,17 @@
 ---
-title: 'Tutorial HTTP Endpoints with GCP Function (2nd Gen) and Go'
-date: '2023-01-28'
-id: 'tutorial-http-endpoints-with-gcp-and-go'
+blog: maxrohde.com
 categories:
-  - 'devops'
-  - 'go'
+- devops
+- go
+coverImage: go_cover.png
+date: "2023-01-28"
+id: tutorial-http-endpoints-with-gcp-and-go
 tags:
-  - 'gcp'
-  - 'cloud-functions'
-  - 'programming'
-  - 'go'
-coverImage: 'go_cover.png'
+- gcp
+- cloud-functions
+- programming
+- go
+title: Tutorial HTTP Endpoints with GCP Function (2nd Gen) and Go
 ---
 
 [Cloud Functions](https://cloud.google.com/functions/) provide a lightweight execution environment for code in various languages. They are the serverless compute solutions in Google Cloud Platform (GCP) that is similar to [AWS Lambda](https://aws.amazon.com/lambda/) functions in AWS.

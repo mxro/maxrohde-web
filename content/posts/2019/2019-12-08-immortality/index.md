@@ -1,12 +1,13 @@
 ---
-title: 'Immortality'
-date: '2019-12-08'
+blog: maxrohde.com
 categories:
-  - 'philosophy'
+- philosophy
+coverImage: old-woman-574278.jpg
+date: "2019-12-08"
 tags:
-  - 'death'
-  - 'immortality'
-coverImage: 'old-woman-574278.jpg'
+- death
+- immortality
+title: Immortality
 ---
 
 > The less time you know you have, the richer the experience of living becomes. And your whole perspective changes. All of the little, petty things fall away and you realize how truly wonderful it is to be alive, even if just for a moment. The way I see it — life is all the more beautiful knowing that it can't last forever, accepting that all of us eventually pass away. If I had all the time in the universe, I couldn't truly appreciate it. But knowing that my clock is ticking and that every new day brings one fewer sunrise for me to gaze upon, that makes every sight more colorful, every smell sweeter, and every song lovelier. I want to make the most of every moment. Then, when the end finally does come, I will be ready for it.

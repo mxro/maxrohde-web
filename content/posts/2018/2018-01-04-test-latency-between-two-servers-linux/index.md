@@ -1,10 +1,11 @@
 ---
-title: 'Test Latency Between Two Servers (Linux)'
-date: '2018-01-04'
+blog: maxrohde.com
 categories:
-  - 'linux'
+- linux
+date: "2018-01-04"
 tags:
-  - 'devops'
+- devops
+title: Test Latency Between Two Servers (Linux)
 ---
 
 Today I was looking for a simple way to test the latency and bandwidth between two Linux servers.

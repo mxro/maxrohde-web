@@ -1,8 +1,9 @@
 ---
-title: 'Fix Firefox ‘Permission denied to access property document’'
-date: '2014-10-03'
+blog: maxrohde.com
 categories:
-  - 'javascript'
+- javascript
+date: "2014-10-03"
+title: Fix Firefox ‘Permission denied to access property document’
 ---
 
 ### Problem

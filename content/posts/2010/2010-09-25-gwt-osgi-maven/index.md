@@ -1,8 +1,9 @@
 ---
-title: 'GWT + OSGi + Maven'
-date: '2010-09-25'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-09-25"
+title: GWT + OSGi + Maven
 ---
 
 **Summary:**

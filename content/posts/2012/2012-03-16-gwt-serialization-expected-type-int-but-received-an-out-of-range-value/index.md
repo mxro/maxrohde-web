@@ -1,8 +1,9 @@
 ---
-title: "GWT Serialization: ‘Expected type 'int' but received an out-of-range value’"
-date: '2012-03-16'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2012-03-16"
+title: 'GWT Serialization: ‘Expected type ''int'' but received an out-of-range value’'
 ---
 
 ## Problem

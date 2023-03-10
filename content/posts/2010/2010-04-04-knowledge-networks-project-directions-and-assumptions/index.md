@@ -1,8 +1,9 @@
 ---
-title: 'Knowledge Networks Project Directions and Assumptions'
-date: '2010-04-04'
+blog: maxrohde.com
 categories:
-  - 'contemplations'
+- contemplations
+date: "2010-04-04"
+title: Knowledge Networks Project Directions and Assumptions
 ---
 
 The next generation knowledge networks project follows a number of key directions and assumptions, which guide the research as well as design and implementation of artifacts. Some of these key directions and assumptions are the following:

@@ -1,8 +1,9 @@
 ---
-title: 'IdentityHashMap in Google Web Toolkit (GWT): String Identity'
-date: '2011-05-27'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2011-05-27"
+title: 'IdentityHashMap in Google Web Toolkit (GWT): String Identity'
 ---
 
 ### Problem

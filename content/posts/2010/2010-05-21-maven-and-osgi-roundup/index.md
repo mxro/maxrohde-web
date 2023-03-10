@@ -1,8 +1,9 @@
 ---
-title: 'Maven and OSGi Roundup'
-date: '2010-05-21'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-05-21"
+title: Maven and OSGi Roundup
 ---
 
 A number of links concerning Maven and OSGi. Also see the [Java Modularity Tutorials (OSGi, Declarative Services and Maven)](http://maxrohde.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/).

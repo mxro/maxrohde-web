@@ -1,16 +1,17 @@
 ---
-title: 'Practice: Irrelevance and Impermanence'
-date: '2019-05-18'
+blog: maxrohde.com
 categories:
-  - 'buddhism'
-  - 'philosophy'
+- buddhism
+- philosophy
+coverImage: nasa_earthrise_as08-14-2383_apollo_8_1968-12-24.jpg
+date: "2019-05-18"
 tags:
-  - 'enlightenment'
-  - 'law'
-  - 'life'
-  - 'practice'
-  - 'practices'
-coverImage: 'nasa_earthrise_as08-14-2383_apollo_8_1968-12-24.jpg'
+- enlightenment
+- law
+- life
+- practice
+- practices
+title: 'Practice: Irrelevance and Impermanence'
 ---
 
 The universe is very big. We are very small. The universe exists for an immeasurably long time. Our lives are very short. These are simple facts that we often forget. An omission which easily leads us to overestimate the importance of our life, actions and feelings in the greater context of existence.

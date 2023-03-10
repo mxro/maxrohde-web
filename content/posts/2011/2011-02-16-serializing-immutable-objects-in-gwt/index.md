@@ -1,8 +1,9 @@
 ---
-title: 'Serializing Immutable Objects in GWT'
-date: '2011-02-16'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2011-02-16"
+title: Serializing Immutable Objects in GWT
 ---
 
 Immutable objects are an easy yet powerful way to leverage some of the advantages of functional programming languages when writing plain old java. Such immutable objects declare all their attributes as final and are therewith protected from unforeseen state changes and side-effects. However, unfortunately **the GWT RPC mechanism has problems in dealing with immutable objects**. In particular, GWT RPC does not consider final attributes in serialization and deserialization of objects.

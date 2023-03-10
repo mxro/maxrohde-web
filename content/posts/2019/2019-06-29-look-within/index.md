@@ -1,15 +1,16 @@
 ---
-title: 'Look Within'
-date: '2019-06-29'
+blog: maxrohde.com
 categories:
-  - 'buddhism'
-  - 'philosophy'
-  - 'psychology'
+- buddhism
+- philosophy
+- psychology
+coverImage: spiral-1037508.jpg
+date: "2019-06-29"
 tags:
-  - 'happiness'
-  - 'quotes'
-  - 'stoicism'
-coverImage: 'spiral-1037508.jpg'
+- happiness
+- quotes
+- stoicism
+title: Look Within
 ---
 
 > Look within; within is the fountain of all good.

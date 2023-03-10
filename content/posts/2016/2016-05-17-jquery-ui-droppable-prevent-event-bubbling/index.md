@@ -1,8 +1,9 @@
 ---
-title: 'JQuery UI Droppable: Prevent Event Bubbling'
-date: '2016-05-17'
+blog: maxrohde.com
 categories:
-  - 'javascript'
+- javascript
+date: "2016-05-17"
+title: 'JQuery UI Droppable: Prevent Event Bubbling'
 ---
 
 [JQuery UI Droppable](https://jqueryui.com/droppable/) is a great framework for implementing drag and drop features in a web application.

@@ -1,21 +1,22 @@
 ---
-title: 'Deploy Serverless Next.js to AWS with Terraform 1.1'
-date: '2022-01-21'
+blog: maxrohde.com
 categories:
-  - 'javascript'
+- javascript
+coverImage: developer-g0eeed467d_1920.png
+date: "2022-01-21"
 tags:
-  - 'aws'
-  - 'cloudfront'
-  - 'coding'
-  - 'devops'
-  - 'goldstack'
-  - 'next-js'
-  - 'programming'
-  - 'serverless'
-  - 'starter-project'
-  - 'template'
-  - 'terraform'
-coverImage: 'developer-g0eeed467d_1920.png'
+- aws
+- cloudfront
+- coding
+- devops
+- goldstack
+- next-js
+- programming
+- serverless
+- starter-project
+- template
+- terraform
+title: Deploy Serverless Next.js to AWS with Terraform 1.1
 ---
 
 [Terraform](https://www.terraform.io/) for better or worse is frequently updated with new versions. Many of these introduce incompatibilities with previous versions that require manual rework of Terraform definitions as well as require updating the local or remote Terraform state. I originally developed a solution for [deploying Next.js to AWS](https://maxrohde.com/2021/01/30/deploy-next-js-to-aws/) using Terraform version `0.12` and that has been working well for over a year now. However, recently [AWS announced that changes to their API would require an update](https://github.com/goldstack/goldstack/issues/57) of the [AWS Terraform Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs). While there is an option to patch an older version of the Terraform provider, I figured that may be as good an excuse as any to update the [Goldstack Next.js + Bootstrap Template](https://goldstack.party/templates/nextjs-bootstrap) to the latest version of Terraform, which is `1.1` as of this writing.

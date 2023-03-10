@@ -1,14 +1,15 @@
 ---
-title: 'Mind, Body and Soul'
-date: '2019-07-16'
+blog: maxrohde.com
 categories:
-  - 'philosophy'
-  - 'psychology'
+- philosophy
+- psychology
+coverImage: girl-2696947.jpg
+date: "2019-07-16"
 tags:
-  - 'body'
-  - 'mind'
-  - 'subconscious'
-coverImage: 'girl-2696947.jpg'
+- body
+- mind
+- subconscious
+title: Mind, Body and Soul
 ---
 
 When we think of the mind, we often first think about our thoughts, feelings, beliefs and decisions. When our mind wanders, our thoughts jump from one topic to another. When we change our mind, we have decided to think of something in a different way than we used to or decided to do things in a different way.

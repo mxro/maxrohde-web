@@ -1,8 +1,9 @@
 ---
-title: 'Unit Tests in GWT (using Maven and eclipse PDE/OSGi)'
-date: '2011-02-21'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2011-02-21"
+title: Unit Tests in GWT (using Maven and eclipse PDE/OSGi)
 ---
 
 One of the strengths of GWT, from my point of view, is that large portions of the code (eg business logic) can be tested with plain old JUnit tests, without the slightest interference from servers, web browsers and other constraints.

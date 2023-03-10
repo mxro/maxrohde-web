@@ -1,8 +1,9 @@
 ---
-title: 'SSL Certificate Comparison'
-date: '2014-11-04'
+blog: maxrohde.com
+date: "2014-11-04"
 tags:
-  - 'ssl'
+- ssl
+title: SSL Certificate Comparison
 ---
 
 With recent developments brining Internet security into the spotlight (such as heartbeat), SSL certificates are easily one of the cornerstones of any Internet-enabled application.

@@ -1,13 +1,14 @@
 ---
-title: 'Book Review - The Art of Learning'
-date: '2021-05-08'
+blog: maxrohde.com
 categories:
-  - 'book-reviews'
+- book-reviews
+date: "2021-05-08"
 tags:
-  - 'book-review'
-  - 'learning'
-  - 'martial-arts'
-  - 'psychology'
+- book-review
+- learning
+- martial-arts
+- psychology
+title: Book Review - The Art of Learning
 ---
 
 The Art of Learning is written by Josh Waitzkin, who was a multiple times national chess champion in the U.S. as well as later became an accomplished martial artists, winning the Tai Chi world championships. This I think is interesting background to consider since the author has demonstrated an ability to not only raise to the top of one highly competitive discipline but two, and that within two disciplines that are very different in the kind of skillset and natural talents they require.

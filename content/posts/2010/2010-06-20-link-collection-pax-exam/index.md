@@ -1,8 +1,9 @@
 ---
-title: 'Link Collection: Pax Exam'
-date: '2010-06-20'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-06-20"
+title: 'Link Collection: Pax Exam'
 ---
 
 Pax Exam is a very useful framework to write automatic tests for OSGi bundles in multiple OSGi containers.

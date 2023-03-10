@@ -1,8 +1,9 @@
 ---
-title: 'UNIX Bash: Create incrementally numbered directories'
-date: '2012-04-28'
+blog: maxrohde.com
 categories:
-  - 'linux'
+- linux
+date: "2012-04-28"
+title: 'UNIX Bash: Create incrementally numbered directories'
 ---
 
 **The Problem**

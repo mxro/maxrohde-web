@@ -1,11 +1,12 @@
 ---
-title: 'Import GitHub project to Android Studio'
-date: '2014-08-18'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2014-08-18"
 tags:
-  - 'git'
-  - 'github'
+- git
+- github
+title: Import GitHub project to Android Studio
 ---
 
 ## Problem

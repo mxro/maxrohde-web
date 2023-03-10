@@ -1,8 +1,10 @@
 ---
-title: 'Paper: Innovation Spirals in Cross-Cultural Collaboration: A Case of Software Localization in Africa'
-date: '2010-07-18'
+blog: maxrohde.com
 categories:
-  - 'contemplations'
+- contemplations
+date: "2010-07-18"
+title: 'Paper: Innovation Spirals in Cross-Cultural Collaboration: A Case of Software
+  Localization in Africa'
 ---
 
 See on [citeulike](http://www.citeulike.org/user/mxro/article/7427308)

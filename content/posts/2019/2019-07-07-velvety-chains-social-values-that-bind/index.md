@@ -1,15 +1,16 @@
 ---
-title: 'Velvety Chains: Social Values That Bind'
-date: '2019-07-07'
+blog: maxrohde.com
 categories:
-  - 'economy'
-  - 'philosophy'
-  - 'psychology'
+- economy
+- philosophy
+- psychology
+coverImage: hand-2223109.jpg
+date: "2019-07-07"
 tags:
-  - 'economics'
-  - 'health'
-  - 'life'
-coverImage: 'hand-2223109.jpg'
+- economics
+- health
+- life
+title: 'Velvety Chains: Social Values That Bind'
 ---
 
 Today I came across [an article by Steve Biddulph](http://www.smh.com.au/comment/we-are-trading-away-our-lives-for-the-shallow-rewards-of-capitalism--and-its-harming-our-children-20180125-h0o9b7.html) and one paragraph therein really struck a chord with me:

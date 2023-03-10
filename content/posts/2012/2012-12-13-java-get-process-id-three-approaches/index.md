@@ -1,10 +1,11 @@
 ---
-title: 'Java Get Process Id: Three Approaches'
-date: '2012-12-13'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2012-12-13"
 tags:
-  - 'tutorial'
+- tutorial
+title: 'Java Get Process Id: Three Approaches'
 ---
 
 Java provides no robust way to obtain the id of the OS process in which the application is running.

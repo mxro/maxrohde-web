@@ -1,8 +1,9 @@
 ---
-title: 'Jangle Java: Upload &amp; Load Data'
-date: '2012-08-08'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2012-08-08"
+title: 'Jangle Java: Upload &amp; Load Data'
 ---
 
 This tutorial illustrates in a few simple steps how to upload and download data from a Java application into the [appjangle](http://appjangle.com 'appjangle') platform.

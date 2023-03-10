@@ -1,8 +1,9 @@
 ---
-title: "Solving 'One or more of your origins do not exist' for Cloud Front"
-date: '2016-11-14'
+blog: maxrohde.com
+date: "2016-11-14"
 tags:
-  - 'aws'
+- aws
+title: Solving 'One or more of your origins do not exist' for Cloud Front
 ---
 
 ### Problem

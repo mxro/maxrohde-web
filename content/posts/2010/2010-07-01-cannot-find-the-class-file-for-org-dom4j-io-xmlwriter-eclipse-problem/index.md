@@ -1,8 +1,9 @@
 ---
-title: 'Cannot find the class file for org.dom4j.io.XMLWriter (Eclipse Problem)'
-date: '2010-07-01'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-07-01"
+title: Cannot find the class file for org.dom4j.io.XMLWriter (Eclipse Problem)
 ---
 
 **Problem**

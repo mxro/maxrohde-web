@@ -1,11 +1,12 @@
 ---
-title: 'MySQL ERROR 2026 (HY000): SSL connection error – Some Troubleshooting Ideas'
-date: '2015-04-26'
+blog: maxrohde.com
 categories:
-  - 'linux'
+- linux
+date: "2015-04-26"
 tags:
-  - 'mysql'
-  - 'ssl'
+- mysql
+- ssl
+title: 'MySQL ERROR 2026 (HY000): SSL connection error – Some Troubleshooting Ideas'
 ---
 
 I just spent a fair amount of time setting up MySQL replication between two servers encrypted by SSL (using MySQL 5.1.73).

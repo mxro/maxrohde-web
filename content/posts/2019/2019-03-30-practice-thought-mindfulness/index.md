@@ -1,16 +1,17 @@
 ---
-title: 'Practice: Thought Mindfulness'
-date: '2019-03-30'
+blog: maxrohde.com
 categories:
-  - 'buddhism'
-  - 'psychology'
+- buddhism
+- psychology
+coverImage: meditation-1384758.jpg
+date: "2019-03-30"
 tags:
-  - 'meditation'
-  - 'mind'
-  - 'mindfulness'
-  - 'practice'
-  - 'practices'
-coverImage: 'meditation-1384758.jpg'
+- meditation
+- mind
+- mindfulness
+- practice
+- practices
+title: 'Practice: Thought Mindfulness'
 ---
 
 Although our thoughts are arguably very important for who we are, we are often unaware of what is occupying our mind at any given moment. In this post, I describe a simple practice which helps in increasing awareness of our mind and thoughts.

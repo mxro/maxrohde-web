@@ -1,13 +1,14 @@
 ---
-title: 'Memory System Part 4: Symbolic Systems'
-date: '2022-01-16'
+blog: maxrohde.com
 categories:
-  - 'psychology'
+- psychology
+coverImage: astronomical-clock-408306_1920.jpg
+date: "2022-01-16"
 tags:
-  - 'life'
-  - 'memory'
-  - 'zodiac'
-coverImage: 'astronomical-clock-408306_1920.jpg'
+- life
+- memory
+- zodiac
+title: 'Memory System Part 4: Symbolic Systems'
 ---
 
 In the earlier parts of this series I have discussed the [possible modern applications of ancient memory techniques](https://spearoflight.wordpress.com/2021/11/15/memory-system-part-1-ancient-techniques-and-modern-applications/). I mentioned that not everyone was convinced of the merits of some of the key tenants of the proposed system, chiefly its reliance on adding imagined images to what needs to be learned - specifically to create images for abstract ideas. Probably most important for our modern experience of learning would be the distaste of this approach by the Puritian architects of our education systems, for instance [Erasmus](https://en.wikipedia.org/wiki/Erasmus). I myself have some reservations about the utility of transforming ideas into images, especially if it is done in an arbitrary way.

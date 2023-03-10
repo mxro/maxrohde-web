@@ -1,10 +1,11 @@
 ---
-title: 'When am I Ready to Start Writing: Preparedness of Knowledge and Style'
-date: '2014-10-22'
+blog: maxrohde.com
 categories:
-  - 'contemplations'
+- contemplations
+date: "2014-10-22"
 tags:
-  - 'writing'
+- writing
+title: 'When am I Ready to Start Writing: Preparedness of Knowledge and Style'
 ---
 
 One of the most crucial prerequisites for writing, in my mind, is preparedness of knowledge and style.

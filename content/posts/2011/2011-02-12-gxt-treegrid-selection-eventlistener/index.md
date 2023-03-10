@@ -1,8 +1,9 @@
 ---
-title: 'GXT TreeGrid Selection Event/Listener'
-date: '2011-02-12'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2011-02-12"
+title: GXT TreeGrid Selection Event/Listener
 ---
 
 In the evolution of the Ext GWT (GXT) framework, there seemed to have been some change as to how selection events of trees/tree grids can be intercepted. In release 2.2.1, the following approach works:

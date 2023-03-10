@@ -1,8 +1,9 @@
 ---
-title: 'Remove Hard Disk in Linux in 3 Easy Steps'
-date: '2015-06-08'
+blog: maxrohde.com
 categories:
-  - 'linux'
+- linux
+date: "2015-06-08"
+title: Remove Hard Disk in Linux in 3 Easy Steps
 ---
 
 This guide describes how you can unlink a hard disk from Linux/Unix. This might be useful for instance if you replaced a disk image in Virtual Box or another VM.

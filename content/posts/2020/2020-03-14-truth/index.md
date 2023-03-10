@@ -1,13 +1,14 @@
 ---
-title: 'Truth'
-date: '2020-03-14'
+blog: maxrohde.com
 categories:
-  - 'philosophy'
+- philosophy
+coverImage: sunrise-3850768.jpg
+date: "2020-03-14"
 tags:
-  - 'enlightenment'
-  - 'reason'
-  - 'truth'
-coverImage: 'sunrise-3850768.jpg'
+- enlightenment
+- reason
+- truth
+title: Truth
 ---
 
 It is easy to say and it feels right to say that we should seek truth. Truth is one of the key tenants of the Enlightenment movement. Rather than following superstitions and other socially constructed concepts, the early scientists of the enlightenment sought out truth which may be obtained by measurement, experiment and by application of the rules of logic. After the French revolution this was brought to some extreme, with design to attempt to subject all areas of live to the dictum of reason and truth.

@@ -1,18 +1,20 @@
 ---
-title: 'Serverless React SSR'
-date: '2022-10-16'
-coverImage: 'serverless-react-ssr-cover.jpg'
-id: 'serverless-react-ssr'
-summary: 'Explores how to implement React Server-Side Rendering (SSR) in a serverless way on AWS using a lightweight framework.'
-tags:
-  - 'react'
-  - 'ssr'
-  - 'serverless'
-  - 'aws'
-  - 'lambda'
+blog: maxrohde.com
 categories:
-  - 'javascript' 
-  - 'code'
+- javascript
+- code
+coverImage: serverless-react-ssr-cover.jpg
+date: "2022-10-16"
+id: serverless-react-ssr
+summary: Explores how to implement React Server-Side Rendering (SSR) in a serverless
+  way on AWS using a lightweight framework.
+tags:
+- react
+- ssr
+- serverless
+- aws
+- lambda
+title: Serverless React SSR
 ---
 
 Server-side rendering (SSR) of React applications has become increasingly popular in the past few years. Frameworks such as [Remix](https://remix.run/) and [Next.js](https://nextjs.org/) have demonstrated that rendering pages on the server with React is an effective way to compose applications.

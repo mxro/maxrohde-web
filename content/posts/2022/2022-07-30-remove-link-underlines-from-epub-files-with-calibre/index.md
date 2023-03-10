@@ -1,13 +1,14 @@
 ---
-title: 'Remove Link Underlines from EPUB Files with Calibre'
-date: '2022-07-30'
+blog: maxrohde.com
 categories:
-  - 'coding'
+- coding
+date: "2022-07-30"
 tags:
-  - 'calibre'
-  - 'ebooks'
-  - 'epub'
-  - 'tutorial'
+- calibre
+- ebooks
+- epub
+- tutorial
+title: Remove Link Underlines from EPUB Files with Calibre
 ---
 
 Some [EPUB](https://en.wikipedia.org/wiki/EPUB) documents may display links with an annoying underline in the [calibre](https://calibre-ebook.com/) viewer or your e-book reader.

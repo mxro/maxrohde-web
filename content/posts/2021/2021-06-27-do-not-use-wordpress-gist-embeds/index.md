@@ -1,12 +1,13 @@
 ---
-title: 'Do not use Wordpress gist embeds'
-date: '2021-06-27'
+blog: maxrohde.com
 categories:
-  - 'productivity'
+- productivity
+date: "2021-06-27"
 tags:
-  - 'coding'
-  - 'github'
-  - 'wordpress'
+- coding
+- github
+- wordpress
+title: Do not use Wordpress gist embeds
 ---
 
 I was quite excited when I discovered that it is possible to embed gist links into Wordpress blog posts, and they will render as syntax highlighted code:

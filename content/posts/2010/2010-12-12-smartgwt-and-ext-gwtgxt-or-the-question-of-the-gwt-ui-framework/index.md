@@ -1,6 +1,7 @@
 ---
-title: 'SmartGWT and Ext GWT/GXT (or the question of the GWT UI framework)'
-date: '2010-12-12'
+blog: maxrohde.com
+date: "2010-12-12"
+title: SmartGWT and Ext GWT/GXT (or the question of the GWT UI framework)
 ---
 
 Really exiting about GWT is the promise to develop sleek user interfaces with Java; even the GWT UIs created out of the box look quite impressive when compared for instance, with a vanilla Swing interface. However, a number of frameworks help tremendously in unleashing the full capabilities JavaScript offers nowadays. The brief exploration of some frameworks here is coloured by the requirement to implement a visual tree with drag and drop capabilities. Specifically, the tree should be able to support custom renderers for different kinds of trees.

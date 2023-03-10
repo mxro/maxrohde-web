@@ -1,15 +1,16 @@
 ---
-title: "What I've Learned from Frostpunk"
-date: '2020-04-10'
+blog: maxrohde.com
 categories:
-  - 'games'
+- games
+coverImage: image-3.png
+date: "2020-04-10"
 tags:
-  - 'fate'
-  - 'game-review'
-  - 'gaming'
-  - 'leadership'
-  - 'life'
-coverImage: 'image-3.png'
+- fate
+- game-review
+- gaming
+- leadership
+- life
+title: What I've Learned from Frostpunk
 ---
 
 I have recently finished a play-through of the game Frostpunk. In this article, I briefly discuss what playing this game has taught me.

@@ -1,8 +1,9 @@
 ---
-title: 'Axis2 on Tomcat using Ubuntu: Internal Server Error'
-date: '2010-09-02'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-09-02"
+title: 'Axis2 on Tomcat using Ubuntu: Internal Server Error'
 ---
 
 **Problem**

@@ -1,10 +1,11 @@
 ---
-title: 'Appjangle First Showcase Completed!'
-date: '2013-02-12'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2013-02-12"
 tags:
-  - 'github'
+- github
+title: Appjangle First Showcase Completed!
 ---
 
 Now, after [204 laborious steps](https://github.com/appjangle/appjangle-demos/commits/master), a first version of illustrative demos on the [Appjangle Showcase](http://appjangle.com/showcase) has been completed.

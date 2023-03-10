@@ -1,8 +1,9 @@
 ---
-title: 'Google Docs API: UnsupportedDataTypeException MIME type application/atom+xml'
-date: '2010-06-26'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-06-26"
+title: 'Google Docs API: UnsupportedDataTypeException MIME type application/atom+xml'
 ---
 
 **Problem**

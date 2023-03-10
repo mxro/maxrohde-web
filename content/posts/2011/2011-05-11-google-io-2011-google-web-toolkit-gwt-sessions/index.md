@@ -1,8 +1,9 @@
 ---
-title: 'Google I/O 2011 Google Web Toolkit (GWT) Sessions'
-date: '2011-05-11'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2011-05-11"
+title: Google I/O 2011 Google Web Toolkit (GWT) Sessions
 ---
 
 It seems in the [Session List](http://www.google.com/events/io/2011/sessions.html) for Google I/0 2011 there is no easy way to see all the Google Web Toolkit (GWT) sessions in one glance. So here is a quick overview:

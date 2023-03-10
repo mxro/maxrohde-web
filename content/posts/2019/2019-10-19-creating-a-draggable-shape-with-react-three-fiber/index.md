@@ -1,13 +1,14 @@
 ---
-title: 'Creating a Draggable Shape with React Three Fiber'
-date: '2019-10-19'
+blog: maxrohde.com
 categories:
-  - 'javascript'
+- javascript
+coverImage: draggable.png
+date: "2019-10-19"
 tags:
-  - 'open-source'
-  - 'react'
-  - 'three-js'
-coverImage: 'draggable.png'
+- open-source
+- react
+- three-js
+title: Creating a Draggable Shape with React Three Fiber
 ---
 
 I recently became interested how to render 3D graphics in the browser. I think [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API) is an extremely powerful technology and may one day become an important way of rendering content on the web.

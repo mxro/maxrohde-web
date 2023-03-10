@@ -1,6 +1,7 @@
 ---
+blog: maxrohde.com
+date: "2014-12-08"
 title: 'pdfsam/ PDF Split and Merge: Download without Adware'
-date: '2014-12-08'
 ---
 
 [PDFSAM](http://www.pdfsam.org/) or PDF Split and Merge is a wonderful tool for working with PDF files (e.g. split one PDF into multiple files, join multiple PDFs into one file or reordering the pages within a PDF file).

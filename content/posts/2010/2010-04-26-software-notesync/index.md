@@ -1,8 +1,9 @@
 ---
-title: 'Software: NoteSync'
-date: '2010-04-26'
+blog: maxrohde.com
 categories:
-  - 'contemplations'
+- contemplations
+date: "2010-04-26"
+title: Software: NoteSync
 ---
 
 NoteSync has a similar interface to [Notational Velocity](http://maxrohde.com/2010/04/09/software-notational-velocity-note-taking/). In addition, the software synchronizes with Google Docs. Every note is automatically uploaded to Google Docs. If the Google Document is changed, the note in NoteSync will be updated. The pre-order license costs US$4.99.

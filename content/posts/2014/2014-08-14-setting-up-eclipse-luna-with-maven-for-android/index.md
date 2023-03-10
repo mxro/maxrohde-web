@@ -1,11 +1,12 @@
 ---
-title: 'Setting Up eclipse Luna with Maven for Android'
-date: '2014-08-14'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2014-08-14"
 tags:
-  - 'eclipse'
-  - 'maven'
+- eclipse
+- maven
+title: Setting Up eclipse Luna with Maven for Android
 ---
 
 As of August 2014, **don't even try this**.

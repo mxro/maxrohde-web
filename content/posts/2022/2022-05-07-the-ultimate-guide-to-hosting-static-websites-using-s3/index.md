@@ -1,19 +1,20 @@
 ---
-title: 'The Ultimate Guide to Hosting Static Websites using S3'
-date: '2022-05-07'
+blog: maxrohde.com
 categories:
-  - 'devops'
-  - 'serverless'
+- devops
+- serverless
+coverImage: florian-olivo-4hbj-eymz1o-unsplash.jpg
+date: "2022-05-07"
 tags:
-  - 'amazon-route-53'
-  - 'aws'
-  - 'aws-s3'
-  - 'cloudfront'
-  - 'javascript'
-  - 'programming'
-  - 'ssl'
-  - 'terraform'
-coverImage: 'florian-olivo-4hbj-eymz1o-unsplash.jpg'
+- amazon-route-53
+- aws
+- aws-s3
+- cloudfront
+- javascript
+- programming
+- ssl
+- terraform
+title: The Ultimate Guide to Hosting Static Websites using S3
 ---
 
 [AWS S3](https://aws.amazon.com/s3/) has long been known as an effective way to [host static websites](https://dinfratechsource.wordpress.com/2019/07/28/host-a-static-site-on-aws-using-s3-and-cloudfront/) and assets. Unfortunately, while it is easy to [configure an S3 bucket to enable static file hosting](https://howtoember.wordpress.com/2020/06/11/aws-static-website-hosting-with-cognito-and-s3/), it is quite complicated to achieve the following:

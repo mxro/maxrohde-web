@@ -1,8 +1,9 @@
 ---
-title: 'Work Pattern: Explore, Tag, Collect (ETC)'
-date: '2010-09-17'
+blog: maxrohde.com
 categories:
-  - 'contemplations'
+- contemplations
+date: "2010-09-17"
+title: 'Work Pattern: Explore, Tag, Collect (ETC)'
 ---
 
 A work pattern for explorative investigations, which should result in a structured collection, for instance a Literature Review.

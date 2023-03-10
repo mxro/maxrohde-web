@@ -1,10 +1,11 @@
 ---
-title: 'GWT Object Serialization with gwt-storage'
-date: '2013-11-27'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2013-11-27"
 tags:
-  - 'gwt'
+- gwt
+title: GWT Object Serialization with gwt-storage
 ---
 
 ## Problem

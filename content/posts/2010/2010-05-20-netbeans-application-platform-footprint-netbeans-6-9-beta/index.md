@@ -1,8 +1,9 @@
 ---
-title: 'NetBeans Application Platform Footprint (NetBeans 6.9 Beta)'
-date: '2010-05-20'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-05-20"
+title: NetBeans Application Platform Footprint (NetBeans 6.9 Beta)
 ---
 
 I am in the process of finding a powerful framework for designing a Swing based desktop application. For this I consulted the book „The Definitive Guide to NetBeans™ Platform“ ([Boeck, 2009](http://www.citeulike.org/user/mxro/article/7210866)) and the screencast series TOP 10 NetBeans APIs on the [netbeans platform website](http://netbeans.org/kb/trails/platform.html).

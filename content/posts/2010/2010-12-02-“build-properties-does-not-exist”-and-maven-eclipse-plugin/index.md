@@ -1,6 +1,7 @@
 ---
-title: '“build.properties does not exist” and Maven Eclipse Plugin'
-date: '2010-12-02'
+blog: maxrohde.com
+date: "2010-12-02"
+title: “build.properties does not exist” and Maven Eclipse Plugin
 ---
 
 **The Problem**

@@ -1,8 +1,9 @@
 ---
-title: 'Installing Apache 2 and Tomcat 7'
-date: '2011-04-27'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2011-04-27"
+title: Installing Apache 2 and Tomcat 7
 ---
 
 ### Overview

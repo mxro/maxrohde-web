@@ -1,8 +1,9 @@
 ---
-title: 'NetBeans Application Platform Core Modules'
-date: '2010-05-24'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-05-24"
+title: NetBeans Application Platform Core Modules
 ---
 
 There are many similarities between the NetBeans Application Platform/NetBeans Modules and OSGi container/OSGi bundles.

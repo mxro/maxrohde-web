@@ -1,8 +1,9 @@
 ---
-title: 'Java Modularity: Naming and Versioning Conventions'
-date: '2010-06-03'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-06-03"
+title: 'Java Modularity: Naming and Versioning Conventions'
 ---
 
 **General Guidelines**

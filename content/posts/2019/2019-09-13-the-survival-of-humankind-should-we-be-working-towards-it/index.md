@@ -1,16 +1,17 @@
 ---
-title: 'The Survival of Humankind: Should We Be Working Towards It?'
-date: '2019-09-13'
+blog: maxrohde.com
 categories:
-  - 'philosophy'
-  - 'politics'
-  - 'society'
+- philosophy
+- politics
+- society
+coverImage: art-711273.jpg
+date: "2019-09-13"
 tags:
-  - 'america'
-  - 'economics'
-  - 'environment'
-  - 'world'
-coverImage: 'art-711273.jpg'
+- america
+- economics
+- environment
+- world
+title: 'The Survival of Humankind: Should We Be Working Towards It?'
 ---
 
 Given that there does not appear to be a way open to us to determine what the purpose of life is, and therefore no way to know what is ultimately good and bad, it is only natural that there is some disagreement among us what it means to live a virtuous life.

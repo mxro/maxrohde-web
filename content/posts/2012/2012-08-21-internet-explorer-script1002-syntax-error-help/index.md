@@ -1,8 +1,9 @@
 ---
-title: 'Internet Explorer ‘SCRIPT1002: Syntax error’: Help!?!'
-date: '2012-08-21'
+blog: maxrohde.com
 categories:
-  - 'javascript'
+- javascript
+date: "2012-08-21"
+title: 'Internet Explorer ‘SCRIPT1002: Syntax error’: Help!?!'
 ---
 
 ## Problem

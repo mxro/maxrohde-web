@@ -1,12 +1,13 @@
 ---
-title: 'A gentle introduction to vim'
-date: '2019-04-27'
+blog: maxrohde.com
 categories:
-  - 'productivity'
+- productivity
+date: "2019-04-27"
 tags:
-  - 'linux'
-  - 'productivity'
-  - 'tools'
+- linux
+- productivity
+- tools
+title: A gentle introduction to vim
 ---
 
 vim is a great tool for editing any form of text, be it a blog post, text or programming code. Unfortunately there is a bit of a learning curve when first getting started with vim. In this article I want to provide an overview of some of the key features of vim and how to get started using this editor.

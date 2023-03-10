@@ -1,8 +1,9 @@
 ---
-title: 'Presentation: PhD Proposal and Feedback Doctoral Consortium PACIS 2010'
-date: '2010-07-18'
+blog: maxrohde.com
 categories:
-  - 'contemplations'
+- contemplations
+date: "2010-07-18"
+title: 'Presentation: PhD Proposal and Feedback Doctoral Consortium PACIS 2010'
 ---
 
 Presentation:

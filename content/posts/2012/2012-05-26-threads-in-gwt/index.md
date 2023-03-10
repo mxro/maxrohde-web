@@ -1,8 +1,9 @@
 ---
-title: 'Threads in GWT?'
-date: '2012-05-26'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2012-05-26"
+title: Threads in GWT?
 ---
 
 While it is widely reported that [Google Web Toolkit](https://developers.google.com/web-toolkit/ 'Google Web Toolkit') does [not support Java Threads](http://stackoverflow.com/questions/2590850/threading-in-gwt-client 'Threading in GWT') and [multi-threading](http://groups.google.com/group/google-web-toolkit/browse_thread/thread/2e76af2687b8ecda?pli=1 'java.lang.Thread in GWT'), a number of aspects of concurrent applications can be emulated in GWT's single thread JavaScript world.

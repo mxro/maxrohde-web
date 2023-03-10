@@ -1,8 +1,9 @@
 ---
-title: 'PhD Progress Presentation'
-date: '2010-05-07'
+blog: maxrohde.com
 categories:
-  - 'contemplations'
+- contemplations
+date: "2010-05-07"
+title: PhD Progress Presentation
 ---
 
 [Download (PPT)](http://dl.dropbox.com/u/957046/InstantLinnk/Knowledge_Netwo/Reports/040510/PhD_Progress_Presentation.pptx)

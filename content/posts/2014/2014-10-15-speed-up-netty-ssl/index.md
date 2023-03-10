@@ -1,11 +1,12 @@
 ---
-title: 'Speed Up Netty SSL'
-date: '2014-10-15'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2014-10-15"
 tags:
-  - 'netty'
-  - 'ssl'
+- netty
+- ssl
+title: Speed Up Netty SSL
 ---
 
 ## Knowing Where You Are

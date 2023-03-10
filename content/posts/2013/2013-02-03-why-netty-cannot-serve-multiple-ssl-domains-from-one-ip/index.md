@@ -1,11 +1,12 @@
 ---
-title: 'Why Netty cannot serve multiple SSL domains from one IP'
-date: '2013-02-03'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2013-02-03"
 tags:
-  - 'netty'
-  - 'ssl'
+- netty
+- ssl
+title: Why Netty cannot serve multiple SSL domains from one IP
 ---
 
 ## Background

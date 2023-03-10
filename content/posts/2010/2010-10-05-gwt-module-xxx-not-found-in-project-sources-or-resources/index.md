@@ -1,8 +1,9 @@
 ---
-title: 'GWT Module XXX not found in project sources or resources.'
-date: '2010-10-05'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-10-05"
+title: GWT Module XXX not found in project sources or resources.
 ---
 
 **Problem**

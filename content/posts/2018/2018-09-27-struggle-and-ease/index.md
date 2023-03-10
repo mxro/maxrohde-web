@@ -1,16 +1,17 @@
 ---
-title: 'Struggle and Ease'
-date: '2018-09-27'
+blog: maxrohde.com
 categories:
-  - 'philosophy'
+- philosophy
+coverImage: runners.jpg
+date: "2018-09-27"
 tags:
-  - 'ease'
-  - 'enlightenment'
-  - 'happiness'
-  - 'life'
-  - 'sports'
-  - 'struggle'
-coverImage: 'runners.jpg'
+- ease
+- enlightenment
+- happiness
+- life
+- sports
+- struggle
+title: Struggle and Ease
 ---
 
 I think the tension between the difficult and the easy, between that which we can do only with struggle, and that we we can do with ease, is an important dimension to consider for how we design our lives.

@@ -1,8 +1,9 @@
 ---
-title: 'Fix PhoneGap Shows Black Screen after Splash'
-date: '2016-09-23'
+blog: maxrohde.com
 categories:
-  - 'javascript'
+- javascript
+date: "2016-09-23"
+title: Fix PhoneGap Shows Black Screen after Splash
 ---
 
 In order to test how an [ObjectHub](https://objecthub.io/) Micro App can be packaged as a [PhoneGap](http://phonegap.com/) application, I used [PhoneGap Build](https://build.phonegap.com/) to package up a simple application.

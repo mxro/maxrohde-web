@@ -1,10 +1,11 @@
 ---
-title: 'Cross-Domain Requests in GWT with JSONP'
-date: '2014-03-31'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2014-03-31"
 tags:
-  - 'gwt'
+- gwt
+title: Cross-Domain Requests in GWT with JSONP
 ---
 
 [GWT RPC](http://www.gwtproject.org/doc/latest/tutorial/RPC.html) is built upon AJAX requests and thus is subject to the [Same-Origin Policy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Same_origin_policy_for_JavaScript). However, it is [really easy](http://www.gwtproject.org/javadoc/latest/com/google/gwt/jsonp/client/JsonpRequestBuilder.html) in GWT (as well as in other JavaScript applications) to circumvent this policy using a method called JSON-with-padding ([JSONP](http://json-p.org/)).

@@ -1,20 +1,21 @@
 ---
-title: "A Beginner's Guide to Cognito for Web Applications"
-date: '2023-03-05'
-id: 'beginners-guide-to-cognito-for-web-applications'
-canonicalUrl: 'https://www.freecodecamp.org/news/how-to-use-cognito-for-web-applications/'
+blog: maxrohde.com
+canonicalUrl: https://www.freecodecamp.org/news/how-to-use-cognito-for-web-applications/
 categories:
-  - 'devops'
-  - 'cognito'
-  - 'aws'
+- devops
+- cognito
+- aws
+coverImage: Cognito-Cover.jpg
+date: "2023-03-05"
+id: beginners-guide-to-cognito-for-web-applications
 tags:
-  - 'cognito'
-  - 'serverless'
-  - 'aws'
-  - 'authentication'
-  - 'web'
-  - 'oauth'
-coverImage: 'Cognito-Cover.jpg'
+- cognito
+- serverless
+- aws
+- authentication
+- web
+- oauth
+title: A Beginner's Guide to Cognito for Web Applications
 ---
 
 [Amazon Cognito](https://aws.amazon.com/cognito/) is a cloud-based, serverless solution for identity and access management. It provides similar capabilities as [Auth0](https://aws.amazon.com/cognito/) and [Okta](https://aws.amazon.com/cognito/). The main benefit of Cognito is that it is just another services within the AWS suite of services, and can thus easily be used if other parts of the stack already use AWS.

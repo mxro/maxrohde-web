@@ -1,8 +1,9 @@
 ---
-title: 'onedb Tutorial: Getting Started and First Steps'
-date: '2012-05-06'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2012-05-06"
+title: 'onedb Tutorial: Getting Started and First Steps'
 ---
 
 [onedb](http://www.ononedb.com 'onedb homepage') is the database engine at the heart of the [appjangle](http://appjangle.com) platform. This tutorial gives an overview of a number of capabilities of the onedb engine.

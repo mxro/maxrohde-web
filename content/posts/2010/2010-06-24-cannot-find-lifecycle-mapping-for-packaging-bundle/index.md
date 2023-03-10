@@ -1,8 +1,9 @@
 ---
-title: "Cannot find lifecycle mapping for packaging: 'bundle'."
-date: '2010-06-24'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-06-24"
+title: 'Cannot find lifecycle mapping for packaging: ''bundle''.'
 ---
 
 **Problem**

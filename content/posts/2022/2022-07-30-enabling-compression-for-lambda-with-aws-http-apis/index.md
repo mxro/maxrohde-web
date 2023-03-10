@@ -1,18 +1,19 @@
 ---
-title: 'Enabling Compression for Lambda with AWS HTTP APIs'
-date: '2022-07-30'
+blog: maxrohde.com
 categories:
-  - 'javascript'
-  - 'serverless'
+- javascript
+- serverless
+coverImage: iam_os-pmidin9x1ne-unsplash.jpg
+date: "2022-07-30"
 tags:
-  - 'aws'
-  - 'coding'
-  - 'devops'
-  - 'open-source'
-  - 'programming'
-  - 'rest'
-  - 'typescript'
-coverImage: 'iam_os-pmidin9x1ne-unsplash.jpg'
+- aws
+- coding
+- devops
+- open-source
+- programming
+- rest
+- typescript
+title: Enabling Compression for Lambda with AWS HTTP APIs
 ---
 
 [AWS HTTP APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html) provides a new way to deploy REST-based APIs in AWS; providing a number of simplifications over the original [REST APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-rest-api.html).

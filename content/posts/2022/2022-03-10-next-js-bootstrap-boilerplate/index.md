@@ -1,21 +1,22 @@
 ---
-title: 'Next.js + Bootstrap Boilerplate'
-date: '2022-03-10'
+blog: maxrohde.com
 categories:
-  - 'javascript'
-  - 'serverless'
+- javascript
+- serverless
+coverImage: jaime-spaniol-dsqu3n5o3sg-unsplash.jpg
+date: "2022-03-10"
 tags:
-  - 'aws'
-  - 'boilerplate'
-  - 'bootstrap'
-  - 'coding'
-  - 'devops'
-  - 'goldstack'
-  - 'next-js'
-  - 'open-source'
-  - 'programming'
-  - 'starter-project'
-coverImage: 'jaime-spaniol-dsqu3n5o3sg-unsplash.jpg'
+- aws
+- boilerplate
+- bootstrap
+- coding
+- devops
+- goldstack
+- next-js
+- open-source
+- programming
+- starter-project
+title: Next.js + Bootstrap Boilerplate
 ---
 
 I has been nearly two years since I first wrote about a [Next.js + Bootstrap starter project](https://maxrohde.com/2020/03/06/next-js-with-bootstrap-getting-started/) on this blog. Since then I have been extending the base template and made it easier to configure and use. It is now available as one of the templates on [Goldstack](https://goldstack.party): [Next.js + Bootstrap Template](https://goldstack.party/templates/nextjs-bootstrap).

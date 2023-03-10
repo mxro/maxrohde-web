@@ -1,11 +1,12 @@
 ---
-title: 'The Conscious Mind as Trainer'
-date: '2014-05-19'
+blog: maxrohde.com
 categories:
-  - 'leadership'
-  - 'productivity'
+- leadership
+- productivity
+date: "2014-05-19"
 tags:
-  - 'psychology'
+- psychology
+title: The Conscious Mind as Trainer
 ---
 
 It might be that our subconscious mind ears often in our urban and large-scale world. It might be that reason and traditional intelligence are the most useful devices to navigate this world.

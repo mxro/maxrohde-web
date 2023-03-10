@@ -1,8 +1,9 @@
 ---
-title: 'OSGi: Libraries Requiring Access to Bundle ClassLoader'
-date: '2010-06-06'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-06-06"
+title: 'OSGi: Libraries Requiring Access to Bundle ClassLoader'
 ---
 
 **The Problem**

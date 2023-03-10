@@ -1,11 +1,12 @@
 ---
-title: 'Getting Started with Meteor.js (Review)'
-date: '2013-03-26'
+blog: maxrohde.com
 categories:
-  - 'javascript'
+- javascript
+date: "2013-03-26"
 tags:
-  - 'programming'
-  - 'review'
+- programming
+- review
+title: Getting Started with Meteor.js (Review)
 ---
 
 ![](images/032613_2034_gettingstar1.png)

@@ -1,14 +1,15 @@
 ---
-title: 'To Be Human, To Be Animal'
-date: '2019-09-21'
+blog: maxrohde.com
 categories:
-  - 'philosophy'
-  - 'psychology'
+- philosophy
+- psychology
+coverImage: animal-3892140.jpg
+date: "2019-09-21"
 tags:
-  - 'biology'
-  - 'human'
-  - 'nature'
-coverImage: 'animal-3892140.jpg'
+- biology
+- human
+- nature
+title: To Be Human, To Be Animal
 ---
 
 It is obvious that there are a number of fundamental differences between humans and  other animals on this planet. Humans have a language whose complexity goes far beyond ways in which animals communicate. We have writing. We use very sophisticated tools. We live in large groups made out of individuals with very different personalities.

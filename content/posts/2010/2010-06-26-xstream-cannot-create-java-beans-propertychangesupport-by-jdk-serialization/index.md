@@ -1,8 +1,9 @@
 ---
-title: 'XStream: Cannot create java.beans.PropertyChangeSupport by JDK serialization'
-date: '2010-06-26'
+blog: maxrohde.com
 categories:
-  - 'java'
+- java
+date: "2010-06-26"
+title: 'XStream: Cannot create java.beans.PropertyChangeSupport by JDK serialization'
 ---
 
 **Problem**
