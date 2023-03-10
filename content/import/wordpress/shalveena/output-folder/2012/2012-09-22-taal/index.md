@@ -1,8 +1,9 @@
 ---
-title: "Taal"
+blog: shalveena.com
+categories:
+- journal
 date: "2012-09-22"
-categories: 
-  - "journal"
+title: Taal
 ---
 
 I spend a not so insignificant amount of time watching movies - Bollywood movies to be precise so I have decided to write a little bit about some of the movies that I watched recently. Some are great and some others, which I thought were good at the time, upon watching it again I realise I don't particularly like it.

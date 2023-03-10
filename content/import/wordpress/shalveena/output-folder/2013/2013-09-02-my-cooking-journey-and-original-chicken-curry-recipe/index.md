@@ -1,8 +1,9 @@
 ---
-title: "My cooking journey and original chicken curry recipe"
+blog: shalveena.com
+categories:
+- recipes
 date: "2013-09-02"
-categories: 
-  - "recipes"
+title: My cooking journey and original chicken curry recipe
 ---
 
 I grew up in Fiji, where it is common for girls to learn cooking from a young age. My young cousins and relatives often helped in the kitchen and their parents often thought this is an essential for their young daughters to have. Somehow, this seemed to have completed passed by my parents. They did not believe their daughter should be in the kitchen cooking. Instead, I was encouraged to study, get an education and be career minded. This idea that housework is somehow not as important and the we often view home-makers as "less than thou" is best left for another post. Suffice it to say, I was _envious_ of my friends and relatives who were free to help in the kitchen, learn to make "round rotis" while I was told to bury my head in books.  

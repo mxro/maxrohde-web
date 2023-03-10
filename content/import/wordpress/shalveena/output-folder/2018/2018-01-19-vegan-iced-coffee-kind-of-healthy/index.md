@@ -1,14 +1,15 @@
 ---
-title: "Vegan Iced Coffee (Kind of Healthy)"
+blog: shalveena.com
+categories:
+- recipes
+coverImage: img_3567.jpg
 date: "2018-01-19"
-categories: 
-  - "recipes"
-tags: 
-  - "beverage"
-  - "beverages"
-  - "coffee"
-  - "vegan-recipes"
-coverImage: "img_3567.jpg"
+tags:
+- beverage
+- beverages
+- coffee
+- vegan-recipes
+title: Vegan Iced Coffee (Kind of Healthy)
 ---
 
 The great blue skies brought a pleasant 42 degrees Celsius to Melbourne's West today and everybody felt kind of ... hot! Now my dear wife does not like cooled water, so our only sources of hydration are usually room-temperature warm filtered water or hot beverages. I decided that today we needed a real cold drink: iced coffee!

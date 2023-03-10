@@ -1,8 +1,9 @@
 ---
-title: "Phuket Day 3 - Old Phuket Town"
+blog: shalveena.com
+categories:
+- travels
 date: "2013-06-11"
-categories: 
-  - "travels"
+title: Phuket Day 3 - Old Phuket Town
 ---
 
 <table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2013/06/dscf4576.jpg"><img src="https://shalveena.files.wordpress.com/2013/06/dscf4576.jpg?w=300" width="320" height="240" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">Our room number</td></tr></tbody></table>

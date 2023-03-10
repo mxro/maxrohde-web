@@ -1,8 +1,9 @@
 ---
-title: "Enforcing Overseas Judgment in New Zealand"
+blog: shalveena.com
+categories:
+- journal
 date: "2014-10-19"
-categories: 
-  - "journal"
+title: Enforcing Overseas Judgment in New Zealand
 ---
 
 _Disclaimer: The contents of this article are my musings and opinion. They do not constitute legal advice and are not meant to be acted upon as such. For legal advice please contact a lawyer._

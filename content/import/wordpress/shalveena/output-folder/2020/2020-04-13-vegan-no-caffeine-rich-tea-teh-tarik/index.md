@@ -1,14 +1,15 @@
 ---
-title: "Vegan No-Caffeine Rich Tea (Teh Tarik)"
+blog: shalveena.com
+categories:
+- recipes
 date: "2020-04-13"
-categories: 
-  - "recipes"
-tags: 
-  - "beverage"
-  - "beverages"
-  - "tea"
-  - "vegan"
-  - "vegan-recipes"
+tags:
+- beverage
+- beverages
+- tea
+- vegan
+- vegan-recipes
+title: Vegan No-Caffeine Rich Tea (Teh Tarik)
 ---
 
 ![IMG_3133](https://shalveena.files.wordpress.com/2020/04/img_3133.jpg?w=1536)

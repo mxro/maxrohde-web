@@ -1,8 +1,9 @@
 ---
-title: "Kahaani"
+blog: shalveena.com
+categories:
+- journal
 date: "2012-09-28"
-categories: 
-  - "journal"
+title: Kahaani
 ---
 
 Kahaani is a suspense/thriller with Vidya Balan in the lead female role. As expected, she is very convincing in her role. I quite like her as an actress - she is versatile and she does not play the typical giddy, happy go lucky Indian female.

@@ -1,21 +1,22 @@
 ---
-title: "Mild Spinach Curry"
+blog: shalveena.com
+categories:
+- lunch-and-dinner
+- recipes
+coverImage: img_6126.jpg
 date: "2021-12-09"
-categories: 
-  - "lunch-and-dinner"
-  - "recipes"
-tags: 
-  - "clean-eating"
-  - "curry"
-  - "easy-dinner"
-  - "indian-food"
-  - "indian-vegan-recipes"
-  - "maxs-favourites"
-  - "spinach-curry"
-  - "vegan"
-  - "vegan-recipes"
-  - "whole-food-plant-based"
-coverImage: "img_6126.jpg"
+tags:
+- clean-eating
+- curry
+- easy-dinner
+- indian-food
+- indian-vegan-recipes
+- maxs-favourites
+- spinach-curry
+- vegan
+- vegan-recipes
+- whole-food-plant-based
+title: Mild Spinach Curry
 ---
 
 ## Ingredients

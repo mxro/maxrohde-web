@@ -1,18 +1,19 @@
 ---
-title: "Cannellini Bean Salad with Avocado and Sweet Tomatoes"
+blog: shalveena.com
+categories:
+- lunch-and-dinner
+- recipes
+coverImage: img_7701.jpg
 date: "2022-09-10"
-categories: 
-  - "lunch-and-dinner"
-  - "recipes"
-tags: 
-  - "beans"
-  - "clean-eating"
-  - "easy-salads"
-  - "shallys-favourites"
-  - "vegan"
-  - "vegan-recipes"
-  - "whole-food-plant-based"
-coverImage: "img_7701.jpg"
+tags:
+- beans
+- clean-eating
+- easy-salads
+- shallys-favourites
+- vegan
+- vegan-recipes
+- whole-food-plant-based
+title: Cannellini Bean Salad with Avocado and Sweet Tomatoes
 ---
 
 I've been trying to include more beans in out meals, but I'm not a huge bean fan so it's proving difficult! But I've found the perfect, quick, easy and delicious bean salad. And to my disbelief, I even found myself craving this one day! 😲

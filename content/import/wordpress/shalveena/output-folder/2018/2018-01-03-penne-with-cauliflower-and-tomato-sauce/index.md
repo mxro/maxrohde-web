@@ -1,20 +1,21 @@
 ---
-title: "Penne with Cauliflower and Tomato Sauce"
+blog: shalveena.com
+categories:
+- recipes
+coverImage: img_3380.jpg
 date: "2018-01-03"
-categories: 
-  - "recipes"
-tags: 
-  - "italian-food"
-  - "maxs-favourites"
-  - "pasta"
-  - "shallys-favourites"
-  - "sharlenes-favourites"
-  - "tomato-sauce"
-  - "vegan"
-  - "vegan-pasta"
-  - "vegan-recipes"
-  - "wholegrain-pasta"
-coverImage: "img_3380.jpg"
+tags:
+- italian-food
+- maxs-favourites
+- pasta
+- shallys-favourites
+- sharlenes-favourites
+- tomato-sauce
+- vegan
+- vegan-pasta
+- vegan-recipes
+- wholegrain-pasta
+title: Penne with Cauliflower and Tomato Sauce
 ---
 
 Although it is her holiday at the moment, my dear wife was working very dedicatedly  today and so I got some free reign in the kitchen to prepare some lunch. Generally my attempts at cooking lead to very mixed results but today fortune was with me and the resulting dish turned out really well (or was this because my sister-in-law and father were assisting with me?).

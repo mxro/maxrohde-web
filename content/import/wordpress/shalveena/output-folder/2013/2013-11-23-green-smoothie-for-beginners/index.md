@@ -1,8 +1,9 @@
 ---
-title: "Green Smoothie for Beginners"
+blog: shalveena.com
+categories:
+- recipes
 date: "2013-11-23"
-categories: 
-  - "recipes"
+title: Green Smoothie for Beginners
 ---
 
 This morning, I made my first ever green smoothie! Okay, so it was not exactly green - more like a dark purple but it did have some green in it :) I was a bit skeptical about how raw greens might taste in a smoothie so this was a beginner's version, with mostly fruits in it.  

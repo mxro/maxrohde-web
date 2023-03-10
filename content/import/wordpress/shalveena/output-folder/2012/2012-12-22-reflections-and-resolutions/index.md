@@ -1,8 +1,9 @@
 ---
-title: "Reflections and Resolutions"
+blog: shalveena.com
+categories:
+- journal
 date: "2012-12-22"
-categories: 
-  - "journal"
+title: Reflections and Resolutions
 ---
 
 Its that time of the year - the end of a year and beginning of another. As 2012 comes to an end, 2013 is just around the corner, and each of us can enter it with new resolve, new motivations and new energy. To make this year better than the last.  

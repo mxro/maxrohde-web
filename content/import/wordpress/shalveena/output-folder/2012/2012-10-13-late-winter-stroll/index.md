@@ -1,8 +1,9 @@
 ---
-title: "Late Winter Stroll"
+blog: shalveena.com
+categories:
+- journal
 date: "2012-10-13"
-categories: 
-  - "journal"
+title: Late Winter Stroll
 ---
 
  

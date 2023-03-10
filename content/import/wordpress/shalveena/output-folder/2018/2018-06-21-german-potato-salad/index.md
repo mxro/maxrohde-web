@@ -1,17 +1,18 @@
 ---
-title: "German Potato Salad"
+blog: shalveena.com
+categories:
+- recipes
+coverImage: img_6495.jpg
 date: "2018-06-21"
-categories: 
-  - "recipes"
-tags: 
-  - "german-food"
-  - "potatoes"
-  - "salads"
-  - "shallys-favourites"
-  - "vegan"
-  - "vegan-recipes"
-  - "vegetables"
-coverImage: "img_6495.jpg"
+tags:
+- german-food
+- potatoes
+- salads
+- shallys-favourites
+- vegan
+- vegan-recipes
+- vegetables
+title: German Potato Salad
 ---
 
 We went to a German restaurant, which served Bavarian style dishes, a couple of weeks ago with some visiting friends. Unfortunately, it seems that Bavarian cuisine is a bit light on the vegetarian/vegan dishes, but when we asked which dishes were vegan/could be made vegan, we were surprised to hear that the potato salad was vegan. Ah?! No mayonnaise in it?? Yes, yes, yes! It appears that some German potato salads have no mayonnaise! Instead, it is made using vinegar and herbs.

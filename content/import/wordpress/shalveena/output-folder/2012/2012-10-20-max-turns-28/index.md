@@ -1,8 +1,9 @@
 ---
-title: "Max turns 28"
+blog: shalveena.com
+categories:
+- journal
 date: "2012-10-20"
-categories: 
-  - "journal"
+title: Max turns 28
 ---
 
   

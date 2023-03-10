@@ -91,10 +91,7 @@ func ProcessFrontMatter(path string, processor frontmatterProcessorFn) error {
 		return err
 	}
 
-	if strings.HasPrefix(body, "---") {
-		body = strings.Replace(body, "---\n\n", "", 1)
-	}
-	newContent := "---\n" + string(newFrontmatter) + "---\n\n" + body
+	newContent := "---\n" + string(newFrontmatter) + "---\n" + body
 
 	if err := ioutil.WriteFile(path, []byte(newContent), 0644); err != nil {
 		return err

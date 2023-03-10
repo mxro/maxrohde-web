@@ -1,8 +1,9 @@
 ---
-title: "First Mandarin Chinese Lesson"
+blog: shalveena.com
+categories:
+- journal
 date: "2013-12-04"
-categories: 
-  - "journal"
+title: First Mandarin Chinese Lesson
 ---
 
 Learning new languages is amazing. It brings with it not only the language itself, but the whole culture of the people who speak it. So learning a new language, getting to know a new culture, exploring and growing is a wonderful opportunity.  

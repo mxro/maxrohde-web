@@ -1,15 +1,16 @@
 ---
-title: "Indian-style Tomato Soup with Turmeric"
+blog: shalveena.com
+categories:
+- recipes
+coverImage: img_3347.jpg
 date: "2017-12-30"
-categories: 
-  - "recipes"
-tags: 
-  - "food-for-sick-days"
-  - "indian-food"
-  - "soups"
-  - "tomato-soup"
-  - "vegan-recipes"
-coverImage: "img_3347.jpg"
+tags:
+- food-for-sick-days
+- indian-food
+- soups
+- tomato-soup
+- vegan-recipes
+title: Indian-style Tomato Soup with Turmeric
 ---
 
 Today was an unusually cold day for the Australian summer and, after going for a walk in the morning, I felt that particular feeling which announces the coming of the sore throat. Thankfully an Epiphany came to me presently: **I need tomato soup**.

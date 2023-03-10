@@ -1,17 +1,18 @@
 ---
-title: "Red Kidney Beans Taco"
+blog: shalveena.com
+categories:
+- recipes
+coverImage: img_3402-copy-e1515283474862.jpg
 date: "2018-01-07"
-categories: 
-  - "recipes"
-tags: 
-  - "beans"
-  - "clean-eating"
-  - "lunch-ideas"
-  - "mexican-food"
-  - "plant-based"
-  - "vegan-protein"
-  - "vegan-recipes"
-coverImage: "img_3402-copy-e1515283474862.jpg"
+tags:
+- beans
+- clean-eating
+- lunch-ideas
+- mexican-food
+- plant-based
+- vegan-protein
+- vegan-recipes
+title: Red Kidney Beans Taco
 ---
 
 On those days when I feel like eating something fresh, crunchy, but also warm and filling, tacos hit just the spot. They are so easy to prepare and the best thing is that I can put anything that I have in the fridge. If I don't have a particular vegetable, I can replace it with another. With the exception of beans.....for me, tacos **must** have beans (probably since we can't have meat).

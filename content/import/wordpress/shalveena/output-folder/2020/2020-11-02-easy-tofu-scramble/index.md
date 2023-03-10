@@ -1,20 +1,21 @@
 ---
-title: "Easy Tofu Scramble"
+blog: shalveena.com
+categories:
+- breakfast
+- lunch-and-dinner
+- recipes
+coverImage: img_4111.jpg
 date: "2020-11-02"
-categories: 
-  - "breakfast"
-  - "lunch-and-dinner"
-  - "recipes"
-tags: 
-  - "breakfast-recipes"
-  - "clean-eating"
-  - "plant-based"
-  - "scrambled-tofu"
-  - "tofu-recipes"
-  - "vegan-breakfast"
-  - "vegan-recipes"
-  - "whole-food-plant-based"
-coverImage: "img_4111.jpg"
+tags:
+- breakfast-recipes
+- clean-eating
+- plant-based
+- scrambled-tofu
+- tofu-recipes
+- vegan-breakfast
+- vegan-recipes
+- whole-food-plant-based
+title: Easy Tofu Scramble
 ---
 
 ![IMG_4115](images/img_4115.jpg)

@@ -1,19 +1,20 @@
 ---
-title: "Easy and Tasty Taro Soup"
+blog: shalveena.com
+categories:
+- recipes
+coverImage: img_6092-e1527239473477.jpg
 date: "2018-05-25"
-categories: 
-  - "recipes"
-tags: 
-  - "dinner"
-  - "no-oil"
-  - "one-pot-meal"
-  - "soups"
-  - "stock"
-  - "taro"
-  - "vegan"
-  - "vegetables"
-  - "whole-food-plant-based"
-coverImage: "img_6092-e1527239473477.jpg"
+tags:
+- dinner
+- no-oil
+- one-pot-meal
+- soups
+- stock
+- taro
+- vegan
+- vegetables
+- whole-food-plant-based
+title: Easy and Tasty Taro Soup
 ---
 
 Today was one of those days. I felt tired of cooking all week and wanted to have something easy for dinner. It's winter. It's cold in our house. It was dark outside. It was a day for soup. But not just any soup, a soup that would require little time and work!

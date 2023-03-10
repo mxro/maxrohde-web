@@ -1,8 +1,9 @@
 ---
-title: "Early start to New Year resolutions: Bring on 2013!"
+blog: shalveena.com
+categories:
+- journal
 date: "2012-12-02"
-categories: 
-  - "journal"
+title: 'Early start to New Year resolutions: Bring on 2013!'
 ---
 
 During the last few days of the year, after the excitement and stress of Christmas, we often start to plan for the new year - a new year with new resolutions. I do this without fail, each year. Yet most of the time, for me, the resolutions don't manage to last past the first few weeks of the new year. What happens? Life comes in the way. Something unexpected happens. Or the drive simply fades.  

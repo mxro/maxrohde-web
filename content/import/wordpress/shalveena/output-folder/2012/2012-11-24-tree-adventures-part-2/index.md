@@ -1,8 +1,9 @@
 ---
-title: "Tree Adventures Part 2"
+blog: shalveena.com
+categories:
+- journal
 date: "2012-11-24"
-categories: 
-  - "journal"
+title: Tree Adventures Part 2
 ---
 
 Here are some more pictures!  

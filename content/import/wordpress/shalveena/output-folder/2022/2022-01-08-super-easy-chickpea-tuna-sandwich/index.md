@@ -1,19 +1,20 @@
 ---
-title: "Super Easy Chickpea Tuna Sandwich"
+blog: shalveena.com
+categories:
+- lunch-and-dinner
+- recipes
+coverImage: img_6482.jpg
 date: "2022-01-08"
-categories: 
-  - "lunch-and-dinner"
-  - "recipes"
-tags: 
-  - "beans"
-  - "chickpea-recipes"
-  - "easy-lunch-ideas"
-  - "midweek-lunch"
-  - "no-tuna-salad"
-  - "vegan-lunch-ideas"
-  - "vegan-recipes"
-  - "vegan-tuna-sandwich"
-coverImage: "img_6482.jpg"
+tags:
+- beans
+- chickpea-recipes
+- easy-lunch-ideas
+- midweek-lunch
+- no-tuna-salad
+- vegan-lunch-ideas
+- vegan-recipes
+- vegan-tuna-sandwich
+title: Super Easy Chickpea Tuna Sandwich
 ---
 
 Servings: 4

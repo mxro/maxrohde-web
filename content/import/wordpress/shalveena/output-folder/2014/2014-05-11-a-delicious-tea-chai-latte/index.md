@@ -1,8 +1,9 @@
 ---
-title: "A delicious tea chai latte"
+blog: shalveena.com
+categories:
+- journal
 date: "2014-05-11"
-categories: 
-  - "journal"
+title: A delicious tea chai latte
 ---
 
 [![](images/d71cf-img_1169.jpg)](https://shalveena.files.wordpress.com/2014/05/d71cf-img_1169.jpg)

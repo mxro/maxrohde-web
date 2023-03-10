@@ -1,8 +1,9 @@
 ---
-title: "Workout: Zuzka Light's ZWOD 1"
+blog: shalveena.com
+categories:
+- journal
 date: "2012-12-23"
-categories: 
-  - "journal"
+title: 'Workout: Zuzka Light''s ZWOD 1'
 ---
 
 This is my fitness journey. It is not always straight - that is to say it does not always follow a straight path - sometimes it goes one step forward then one step (sometimes two) back. Sometimes it goes in leaps and bounds but other times it twists around corners and tries to form a new path. But always, overall, it moves towards the end goal.  

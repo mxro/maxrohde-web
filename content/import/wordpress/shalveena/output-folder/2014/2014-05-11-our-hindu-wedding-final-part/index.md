@@ -1,8 +1,9 @@
 ---
-title: "Our Hindu Wedding - Final part"
+blog: shalveena.com
+categories:
+- journal
 date: "2014-05-11"
-categories: 
-  - "journal"
+title: Our Hindu Wedding - Final part
 ---
 
 <table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2014/05/050a1089.jpg?w=200"><img src="https://shalveena.files.wordpress.com/2014/05/050a1089.jpg?w=200" width="213" height="320" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">Max is taken to the <i>Mandap</i>&nbsp;by Vishal</td></tr></tbody></table>

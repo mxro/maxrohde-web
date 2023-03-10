@@ -1,8 +1,9 @@
 ---
-title: "Mince and wood ear mushrooms in black bean sauce"
+blog: shalveena.com
+categories:
+- recipes
 date: "2013-08-26"
-categories: 
-  - "recipes"
+title: Mince and wood ear mushrooms in black bean sauce
 ---
 
 Max and I cook quite a bit at home, and eat out very seldom. When we cook, we tend to become more aware of what goes on our plate and into our bodies. And we therefore start to eat healthier too. Plus, cooking at home tends to be more healthy as we use less oil and no additives and all the bad things :)  

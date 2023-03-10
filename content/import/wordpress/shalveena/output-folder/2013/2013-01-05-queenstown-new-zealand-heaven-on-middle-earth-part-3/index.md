@@ -1,8 +1,9 @@
 ---
-title: "Queenstown, New Zealand: Heaven on Middle Earth (Part 3)"
+blog: shalveena.com
+categories:
+- travels
 date: "2013-01-05"
-categories: 
-  - "travels"
+title: 'Queenstown, New Zealand: Heaven on Middle Earth (Part 3)'
 ---
 
 [![](https://shalveena.files.wordpress.com/2013/01/efd31-p1010892.jpg?w=300)](https://shalveena.files.wordpress.com/2013/01/efd31-p1010892.jpg)

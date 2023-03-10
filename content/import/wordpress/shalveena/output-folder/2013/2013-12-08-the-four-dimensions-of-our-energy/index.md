@@ -1,8 +1,9 @@
 ---
-title: "The Four Dimensions of Our Energy"
+blog: shalveena.com
+categories:
+- journal
 date: "2013-12-08"
-categories: 
-  - "journal"
+title: The Four Dimensions of Our Energy
 ---
 
 Each of us has limited time in this world and a finite number of hours in any given day. Each of us has a number of things we need to or want to get done in our time here. And sometimes the list of things to do keeps growing, in fact, on a personal note this seems to be the case more often than not.  

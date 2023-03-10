@@ -1,16 +1,17 @@
 ---
-title: "Delicious Vegan \"Chicken\" Curry"
+blog: shalveena.com
+categories:
+- recipes
+coverImage: img_3752-e1521074659525.jpg
 date: "2018-02-04"
-categories: 
-  - "recipes"
-tags: 
-  - "curry"
-  - "dinner"
-  - "family-favourites"
-  - "indian-food"
-  - "shallys-favourites"
-  - "vegan-recipes"
-coverImage: "img_3752-e1521074659525.jpg"
+tags:
+- curry
+- dinner
+- family-favourites
+- indian-food
+- shallys-favourites
+- vegan-recipes
+title: Delicious Vegan "Chicken" Curry
 ---
 
 One of the very first dishes that I tried to make when I moved out of home was chicken curry. I'm an a BIG chicken curry FAN. Mmmmmm....the smell when it is cooking, the flavours, the gravy, ah, no words can describe or do it justice.

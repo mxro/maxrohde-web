@@ -1,8 +1,9 @@
 ---
-title: "Restaurant Review: Kampung Story Worst Meal Ever"
+blog: shalveena.com
+categories:
+- journal
 date: "2015-04-28"
-categories: 
-  - "journal"
+title: 'Restaurant Review: Kampung Story Worst Meal Ever'
 ---
 
  

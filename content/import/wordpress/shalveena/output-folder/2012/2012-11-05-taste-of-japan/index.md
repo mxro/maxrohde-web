@@ -1,8 +1,9 @@
 ---
-title: "Taste of Japan"
+blog: shalveena.com
+categories:
+- journal
 date: "2012-11-05"
-categories: 
-  - "journal"
+title: Taste of Japan
 ---
 
 [](https://shalveena.files.wordpress.com/2012/11/880c0-img_0638.jpg)

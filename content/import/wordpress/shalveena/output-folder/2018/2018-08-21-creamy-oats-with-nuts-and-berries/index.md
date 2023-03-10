@@ -1,17 +1,18 @@
 ---
-title: "Creamy Oats with Nuts and Berries"
+blog: shalveena.com
+categories:
+- recipes
+coverImage: img_6980.jpg
 date: "2018-08-21"
-categories: 
-  - "recipes"
-tags: 
-  - "breakfast-recipes"
-  - "clean-eating"
-  - "comfort-food"
-  - "oats"
-  - "shallys-favourites"
-  - "vegan-breakfast"
-  - "whole-food-plant-based"
-coverImage: "img_6980.jpg"
+tags:
+- breakfast-recipes
+- clean-eating
+- comfort-food
+- oats
+- shallys-favourites
+- vegan-breakfast
+- whole-food-plant-based
+title: Creamy Oats with Nuts and Berries
 ---
 
 I posted our favourite [overnight chia seed pudding recipe](http://shalveena.com/2018/03/16/overnight-chia-seed-pudding/) a while back, which is Max's absolute favourite weekday breakfast. BUT, I find that to be toooooooo cold to eat on a freezing cold Winter's morning. Especially since we wake up when it is still dark outside!

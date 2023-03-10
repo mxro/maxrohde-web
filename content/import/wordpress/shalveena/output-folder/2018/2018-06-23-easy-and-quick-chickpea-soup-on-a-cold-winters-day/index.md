@@ -1,17 +1,18 @@
 ---
-title: "Easy and Quick Chickpea Soup on a Cold Winter's Day"
+blog: shalveena.com
+categories:
+- recipes
+coverImage: img_6508.jpg
 date: "2018-06-23"
-categories: 
-  - "recipes"
-tags: 
-  - "beans"
-  - "clean-eating"
-  - "comfort-food"
-  - "dinner"
-  - "soups"
-  - "vegan"
-  - "vegan-recipes"
-coverImage: "img_6508.jpg"
+tags:
+- beans
+- clean-eating
+- comfort-food
+- dinner
+- soups
+- vegan
+- vegan-recipes
+title: Easy and Quick Chickpea Soup on a Cold Winter's Day
 ---
 
 It is freaking COLD here! I read that a few days ago Melbourne was the coldest city in the world one morning! That is crazy cold.

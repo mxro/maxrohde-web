@@ -1,15 +1,16 @@
 ---
-title: "Super Easy 5 Minute Hummus"
+blog: shalveena.com
+categories:
+- recipes
+coverImage: img_3353-e1515201108912.jpg
 date: "2018-01-06"
-categories: 
-  - "recipes"
-tags: 
-  - "clean-eating"
-  - "hummus"
-  - "plant-based"
-  - "vegan"
-  - "vegan-recipes"
-coverImage: "img_3353-e1515201108912.jpg"
+tags:
+- clean-eating
+- hummus
+- plant-based
+- vegan
+- vegan-recipes
+title: Super Easy 5 Minute Hummus
 ---
 
  

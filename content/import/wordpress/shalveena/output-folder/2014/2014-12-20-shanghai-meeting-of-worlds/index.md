@@ -1,8 +1,9 @@
 ---
-title: "Shanghai: Meeting of Worlds"
+blog: shalveena.com
+categories:
+- travels
 date: "2014-12-20"
-categories: 
-  - "travels"
+title: 'Shanghai: Meeting of Worlds'
 ---
 
 China is with me every day. I work for a [New Zealand law firm](http://www.prestigelawyers.kiwi/) leading in the field of helping clients from China and Taiwan with cases in New Zealand. Our clients bring with them a little piece of their home, which I cherish immensely; by getting to know their family stories and business endeavours, I have the privilege of learning a bit more about their culture and customs every day.

@@ -1,8 +1,9 @@
 ---
-title: "The small wonders in life every day"
+blog: shalveena.com
+categories:
+- journal
 date: "2014-06-22"
-categories: 
-  - "journal"
+title: The small wonders in life every day
 ---
 
 I've been looking forward to watching the Germany v Ghana soccer game for some days now. Unfortunately, the soccer games seem to be at a time that we usually are either getting ready for work or already at the office working.

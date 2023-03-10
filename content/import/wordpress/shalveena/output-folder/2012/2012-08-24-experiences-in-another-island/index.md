@@ -1,8 +1,9 @@
 ---
-title: "Experiences in another Island"
+blog: shalveena.com
+categories:
+- travels
 date: "2012-08-24"
-categories: 
-  - "travels"
+title: Experiences in another Island
 ---
 
 [![](https://shalveena.files.wordpress.com/2012/08/a3ef5-dscn1099.jpg?w=300)](https://shalveena.files.wordpress.com/2012/08/a3ef5-dscn1099.jpg)
