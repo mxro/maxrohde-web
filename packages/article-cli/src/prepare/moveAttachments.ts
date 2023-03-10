@@ -1,5 +1,5 @@
 import { cpSync, existsSync, readFileSync, rmSync, writeFileSync } from 'fs';
-import { basename, resolve } from 'path';
+import { basename, dirname, resolve } from 'path';
 import config from '../config.json';
 import { PrepareArgs } from './prepare';
 
@@ -14,7 +14,12 @@ export function moveAttachments(
   let newContent = `${content}`;
   const matches = content.matchAll(/\[[^\]]*\]\(([^)]*)\)*/g);
   for (const match of matches) {
-    const attachmentsDir = config['draftsAttachmentsDir'];
+    let attachmentsDir = config['draftsAttachmentsDir'];
+    const originalMdDir = dirname(file);
+    const originalMdImagesDir = `${originalMdDir}/images`;
+    if (existsSync(originalMdImagesDir)) {
+      attachmentsDir = originalMdImagesDir;
+    }
     const postImageDir = `${postDir}/images`;
     const link = `${attachmentsDir}/${decodeURIComponent(match[1])}`;
     if (existsSync(link)) {
