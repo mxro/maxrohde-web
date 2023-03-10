@@ -1,4 +1,6 @@
 ---
+authors:
+- max
 blog: maxrohde.com
 coverImage: squarspace.png
 date: "2018-01-04"

@@ -1,4 +1,6 @@
 ---
+authors:
+- max
 blog: maxrohde.com
 coverImage: notion-quotes-1.png
 date: "2020-04-04"

@@ -1,4 +1,6 @@
 ---
+authors:
+- max
 blog: maxrohde.com
 coverImage: pexels-realtoughcandycom-11035386.jpg
 date: "2022-08-12"

@@ -1,4 +1,6 @@
 ---
+authors:
+- max
 blog: maxrohde.com
 date: "2012-10-09"
 title: October Links 1

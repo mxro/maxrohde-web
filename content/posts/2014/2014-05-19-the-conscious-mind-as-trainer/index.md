@@ -1,4 +1,6 @@
 ---
+authors:
+- max
 blog: maxrohde.com
 categories:
 - leadership

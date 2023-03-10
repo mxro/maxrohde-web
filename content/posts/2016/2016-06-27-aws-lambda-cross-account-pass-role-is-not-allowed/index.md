@@ -1,4 +1,6 @@
 ---
+authors:
+- max
 blog: maxrohde.com
 date: "2016-06-27"
 tags:

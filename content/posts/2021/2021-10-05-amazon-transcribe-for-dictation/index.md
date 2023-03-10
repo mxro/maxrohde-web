@@ -1,4 +1,6 @@
 ---
+authors:
+- max
 blog: maxrohde.com
 date: "2021-10-05"
 tags:

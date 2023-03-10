@@ -1,4 +1,6 @@
 ---
+authors:
+- max
 blog: maxrohde.com
 date: "2018-04-01"
 title: Upload Elastic Beanstalk Application using Maven

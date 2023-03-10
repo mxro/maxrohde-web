@@ -1,4 +1,6 @@
 ---
+authors:
+- max
 blog: maxrohde.com
 date: "2013-03-12"
 title: 'Appjangle: New Homepage (Again)'

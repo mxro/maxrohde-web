@@ -1,4 +1,6 @@
 ---
+authors:
+- max
 blog: maxrohde.com
 coverImage: workout-program.png
 date: "2020-05-08"

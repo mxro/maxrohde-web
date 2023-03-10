@@ -1,4 +1,6 @@
 ---
+authors:
+- max
 blog: maxrohde.com
 canonicalUrl: https://www.freecodecamp.org/news/how-to-use-cognito-for-web-applications/
 categories:

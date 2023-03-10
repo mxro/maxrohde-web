@@ -1,4 +1,6 @@
 ---
+authors:
+- max
 blog: maxrohde.com
 date: "2020-01-15"
 title: 'Habit Tracking December: Lost in Travel'

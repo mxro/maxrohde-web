@@ -1,4 +1,6 @@
 ---
+authors:
+- max
 blog: maxrohde.com
 date: "2012-10-20"
 title: 'Design Principles for Mobile Apps: (1) Simplicity'

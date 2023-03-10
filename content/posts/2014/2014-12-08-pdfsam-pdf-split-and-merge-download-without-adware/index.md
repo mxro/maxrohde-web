@@ -1,4 +1,6 @@
 ---
+authors:
+- max
 blog: maxrohde.com
 date: "2014-12-08"
 title: 'pdfsam/ PDF Split and Merge: Download without Adware'

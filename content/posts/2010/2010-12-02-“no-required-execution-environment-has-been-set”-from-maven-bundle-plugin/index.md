@@ -1,4 +1,6 @@
 ---
+authors:
+- max
 blog: maxrohde.com
 date: "2010-12-02"
 title: “No required execution environment has been set” from Maven Bundle Plugin
