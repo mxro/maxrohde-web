@@ -1,9 +1,6 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2018-09-02"
 title: 'Tech Tip: Make Spotlight Searches Faster on Mac OS X'
+date: '2018-09-02'
 ---
 
 One of the things I really like about Windows 10, is the ability to hit the Windows key and type the first few letters of the application name to find and open this application. Mac OS X in theory provides the same feature by hitting the Command Key + Space. This opens a spotlight search.

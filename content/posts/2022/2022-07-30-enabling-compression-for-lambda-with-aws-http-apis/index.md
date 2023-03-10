@@ -1,21 +1,18 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Enabling Compression for Lambda with AWS HTTP APIs'
+date: '2022-07-30'
 categories:
-- javascript
-- serverless
-coverImage: iam_os-pmidin9x1ne-unsplash.jpg
-date: "2022-07-30"
+  - 'javascript'
+  - 'serverless'
 tags:
-- aws
-- coding
-- devops
-- open-source
-- programming
-- rest
-- typescript
-title: Enabling Compression for Lambda with AWS HTTP APIs
+  - 'aws'
+  - 'coding'
+  - 'devops'
+  - 'open-source'
+  - 'programming'
+  - 'rest'
+  - 'typescript'
+coverImage: 'iam_os-pmidin9x1ne-unsplash.jpg'
 ---
 
 [AWS HTTP APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api.html) provides a new way to deploy REST-based APIs in AWS; providing a number of simplifications over the original [REST APIs](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-rest-api.html).
@@ -99,3 +96,7 @@ Essentially we need to:
 Compression can be CPU intensive, thus it could be prudent to cache the compressed results if the same result can be expected to be returned repeatedly. It is also possible to place your API behind a [CloudFront Distribution](https://aws.amazon.com/cloudfront/) that can take care of [compressing payloads](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/ServingCompressedFiles.html) under limited circumstances. Lastly, reverting back to using a REST API also enables to use a [built-in compression function](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-enable-compression.html).
 
 If you have any ideas of improving the library, please be welcome to submit an [issue](https://github.com/goldstack/goldstack/issues) 🤗.
+
+---
+
+Cover image by [iam_os](https://unsplash.com/@iam_os).

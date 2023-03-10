@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Render HTML from Object with CoffeeKup'
+date: '2014-01-14'
 categories:
-- javascript
-date: "2014-01-14"
-title: Render HTML from Object with CoffeeKup
+  - 'javascript'
 ---
 
 [CoffeeKup](http://coffeekup.org/) allows to render HTML from multiple sources:

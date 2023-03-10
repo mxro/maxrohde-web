@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- java
-date: "2011-05-20"
 title: 'GWT setSize(): Do not use “inherit”'
+date: '2011-05-20'
+categories:
+  - 'java'
 ---
 
 Widgets in GWT are essentially elements in the DOM tree of a web document. [GWT widgets](http://google-web-toolkit.googlecode.com/svn/javadoc/latest/com/google/gwt/user/client/ui/Widget.html) enable convenient control over these elements. For instance, a call of the widget method setSize(String width, String height) will set the dimensions of the HTML element underlying the widgets. Values to define the size can be anything allowed in HTML and CSS.

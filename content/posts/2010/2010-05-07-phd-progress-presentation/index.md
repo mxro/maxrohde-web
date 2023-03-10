@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'PhD Progress Presentation'
+date: '2010-05-07'
 categories:
-- contemplations
-date: "2010-05-07"
-title: PhD Progress Presentation
+  - 'contemplations'
 ---
 
 [Download (PPT)](http://dl.dropbox.com/u/957046/InstantLinnk/Knowledge_Netwo/Reports/040510/PhD_Progress_Presentation.pptx)

@@ -1,19 +1,16 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- contemplations
-coverImage: pexels-veeterzy-38136.jpg
-date: "2022-11-01"
-id: guidelines-for-fictional-worlds
 publish: true
+title: "Guidelines for Fictional Worlds"
+id: "guidelines-for-fictional-worlds"
+date: "2022-11-01"
+coverImage: "pexels-veeterzy-38136.jpg"
 tags:
-- writing
-- writing tips
-- star-wars
-- lord-of-the-rings
-title: Guidelines for Fictional Worlds
+  - "writing"
+  - "writing tips"
+  - "star-wars"
+  - "lord-of-the-rings"
+categories:
+  - "contemplations"
 ---
 
 For some stories, it is of little importance in which fictional world they are set in. For instance, many Shakespearean classics can be told in the context of different times and places. Other stories such as the Lord of the Rings are deeply interwoven with their context and cannot easily be separated from it. I believe that a rich context for a story, which might be a highly detailed fictional world such as Middle Earth or an authentic account of a real place and time, can make a story more interesting and engaging. I have been thinking about what characteristics a fictional world should have so that it would be interesting for me to write fiction within it, as well as that it is capable of enhancing my message.
@@ -43,3 +40,4 @@ The world should have the potential to crystallise as an easily identifiable con
 The fictional world should provide a platform in which concepts meaningful for our current experiences may be discussed. For instance, the world of Lord of the Rings provides a powerful backdrop for exploring the theme of friendship. The world of Star Wars reflects our own personal "good versus evil" struggles as well as the same on political level.
 
 The most beautiful aspect of writing fiction for me is, that there is no limit as to what we can try and what may make a beautiful story. As such, these guidelines should be seen as nothing but some inspiration and not strict rules. There are limitless ways in which fictional worlds can be conceived, and these guidelines are based on what has worked in the past, rather than what will delight us in the future.
+

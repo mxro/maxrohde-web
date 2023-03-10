@@ -1,9 +1,6 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2013-03-12"
 title: 'Appjangle: New Homepage (Again)'
+date: '2013-03-12'
 ---
 
 After I had recently completed a first version of [interactive showcases](http://appjangle.blogspot.com/2013/02/appjangle-showcase-released.html) for the Appjangle platform, it was now about time to give a little rework to the homepage. Arguably, it was a bit dull and, more importantly, not very informative – in particular in regards to giving an overview of what Appjangle is good for and what it does.

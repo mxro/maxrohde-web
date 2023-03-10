@@ -1,15 +1,12 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Jenkins StackOverflow Exception during JUnit Test'
+date: '2012-11-26'
 categories:
-- java
-date: "2012-11-26"
+  - 'java'
 tags:
-- jenkins
-- junit
-- maven
-title: Jenkins StackOverflow Exception during JUnit Test
+  - 'jenkins'
+  - 'junit'
+  - 'maven'
 ---
 
 **Problem**

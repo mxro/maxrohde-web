@@ -1,14 +1,11 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Why the Ideal Task is Necessary, Rewarding and Fun'
+date: '2014-04-25'
 categories:
-- productivity
-date: "2014-04-25"
+  - 'productivity'
 tags:
-- productivity
-- project-management
-title: Why the Ideal Task is Necessary, Rewarding and Fun
+  - 'productivity'
+  - 'project-management'
 ---
 
 When it comes to organizing our lives, structured and logical approaches are in no short supply. Divide large projects into small tasks. Prioritize what is more important over what is less so. Identify the critical path of tasks leading most surely to success. All these are activities of the conscious and deliberate mind.

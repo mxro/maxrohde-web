@@ -1,22 +1,18 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- javascript
-- code
-coverImage: serverless-react-ssr-cover.jpg
-date: "2022-10-16"
-id: serverless-react-ssr
-summary: Explores how to implement React Server-Side Rendering (SSR) in a serverless
-  way on AWS using a lightweight framework.
+title: 'Serverless React SSR'
+date: '2022-10-16'
+coverImage: 'serverless-react-ssr-cover.jpg'
+id: 'serverless-react-ssr'
+summary: 'Explores how to implement React Server-Side Rendering (SSR) in a serverless way on AWS using a lightweight framework.'
 tags:
-- react
-- ssr
-- serverless
-- aws
-- lambda
-title: Serverless React SSR
+  - 'react'
+  - 'ssr'
+  - 'serverless'
+  - 'aws'
+  - 'lambda'
+categories:
+  - 'javascript' 
+  - 'code'
 ---
 
 Server-side rendering (SSR) of React applications has become increasingly popular in the past few years. Frameworks such as [Remix](https://remix.run/) and [Next.js](https://nextjs.org/) have demonstrated that rendering pages on the server with React is an effective way to compose applications.
@@ -402,3 +398,5 @@ I had a great time developing what in essence is a fullstack framework for devel
 However, if you want to give this for a spin, head over to [Goldstack](https://goldstack.party) and select the _Server-Side Rendering_ template. Alternatively, you can also clone the [`react-srr`](https://github.com/goldstack/react-ssr) repository which is automatically kept in sync with the template.
 
 If you have any thoughts or ideas, please don't hesitate to [reach out on the social platforms](https://maxrohde.com/about) or by creating an [issue](https://github.com/goldstack/goldstack/issues) 🤗.
+
+

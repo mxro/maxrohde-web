@@ -1,18 +1,15 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'The Economy and Happiness'
+date: '2018-09-29'
 categories:
-- economy
-- society
-coverImage: titian_-_the_tribute_money_-_google_art_project_715452.jpg
-date: "2018-09-29"
+  - 'economy'
+  - 'society'
 tags:
-- consumerism
-- economics
-- happiness
-- inequality
-title: The Economy and Happiness
+  - 'consumerism'
+  - 'economics'
+  - 'happiness'
+  - 'inequality'
+coverImage: 'titian_-_the_tribute_money_-_google_art_project_715452.jpg'
 ---
 
 By many measures, there has been tremendous progress in key well-being indicators for all of mankind. There is less poverty, less hunger, less violence and more prosperity than there has ever been in human history.

@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- java
-date: "2010-06-05"
 title: 'Link Collection: Eclipse OSGi OBR (OSGi Bundle Repository)'
+date: '2010-06-05'
+categories:
+  - 'java'
 ---
 
 Although it is quite easy to generate OBR meta data for Maven deployments, the general tool support for OBR seems to be quire weak.

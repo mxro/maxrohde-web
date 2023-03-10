@@ -1,14 +1,11 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'What is Amazon Flourish (for AWS)'
+date: '2016-05-27'
 categories:
-- serverless
-date: "2016-05-27"
+  - 'serverless'
 tags:
-- aws
-- aws-lambda
-title: What is Amazon Flourish (for AWS)
+  - 'aws'
+  - 'aws-lambda'
 ---
 
 According to a [recent article on the New Stack Blog](http://thenewstack.io/amazon-debuts-flourish-runtime-application-model-serverless-computing/), the Amazon Serverless Team (responsible for instance for [Amazon Lambda](https://aws.amazon.com/lambda/details/)) is about to release a new open source product called 'Floruish'.

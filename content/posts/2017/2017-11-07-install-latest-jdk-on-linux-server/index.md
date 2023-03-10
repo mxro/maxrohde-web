@@ -1,12 +1,9 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Install Latest JDK on Linux Server'
+date: '2017-11-07'
 categories:
-- java
-- linux
-date: "2017-11-07"
-title: Install Latest JDK on Linux Server
+  - 'java'
+  - 'linux'
 ---
 
 **Edit**: Updated with new script version [provided by MaxdSre](https://axdlog.com/2018/setting-up-oracle-jdk-on-gnu-linux/).

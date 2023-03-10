@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'GWT Warning “Non-canonical source package”'
+date: '2011-02-15'
 categories:
-- java
-date: "2011-02-15"
-title: GWT Warning “Non-canonical source package”
+  - 'java'
 ---
 
 **The Problem**

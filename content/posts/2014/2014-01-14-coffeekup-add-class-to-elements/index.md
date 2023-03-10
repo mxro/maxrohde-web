@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- javascript
-date: "2014-01-14"
 title: 'CoffeeKup: Add Class to Elements'
+date: '2014-01-14'
+categories:
+  - 'javascript'
 ---
 
 [CoffeeKup](http://coffeekup.org/) is a very succinct and flexible templating engine to define HTML documents in a less verbose manner. It is based on [CoffeeScript](http://coffeescript.org/).

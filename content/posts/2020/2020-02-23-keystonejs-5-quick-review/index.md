@@ -1,16 +1,13 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'KeystoneJS 5 Quick Review'
+date: '2020-02-23'
 categories:
-- javascript
-coverImage: keystone-1.png
-date: "2020-02-23"
+  - 'javascript'
 tags:
-- graphql
-- keystonejs
-- programming
-title: KeystoneJS 5 Quick Review
+  - 'graphql'
+  - 'keystonejs'
+  - 'programming'
+coverImage: 'keystone-1.png'
 ---
 
 I have recently started on a little project to organise the quotes that I have collected in years of reading (see [kindle-citation-extractor](https://github.com/mxro/kindle-citation-extractor)). I originally got my quotes into [Airtable](https://airtable.com/) but I quickly hit the limit for the free tier.

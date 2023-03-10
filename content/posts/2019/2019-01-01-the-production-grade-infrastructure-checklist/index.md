@@ -1,12 +1,9 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2019-01-01"
+title: 'The Production-Grade Infrastructure Checklist'
+date: '2019-01-01'
 tags:
-- devops
-- security
-title: The Production-Grade Infrastructure Checklist
+  - 'devops'
+  - 'security'
 ---
 
 Sometimes it feels that it takes more time setting up the infrastructure of an application that actually writing the application code.

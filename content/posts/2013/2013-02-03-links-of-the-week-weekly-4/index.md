@@ -1,9 +1,6 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2013-02-03"
-title: Links of the Week (weekly)
+title: 'Links of the Week (weekly)'
+date: '2013-02-03'
 ---
 
 - [HTTPS Server in Java using Netty and KeyStore](http://blog.hintcafe.com/post/33709433256/https-server-in-java-using-netty-and-keystore)

@@ -1,9 +1,6 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2011-09-20"
-title: Convert IMG to ISO on Windows 7
+title: 'Convert IMG to ISO on Windows 7'
+date: '2011-09-20'
 ---
 
 In order to mount an image file on VirtualBox, I needed to convert an IMG image file into an ISO format (VirtualBox does not support mounting IMG files). There seem to be a [myriad of applications available for this purpose](http://en.wikipedia.org/wiki/List_of_ISO_image_software); many of them commercial or at least shareware.

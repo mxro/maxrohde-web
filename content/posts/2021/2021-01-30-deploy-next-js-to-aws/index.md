@@ -1,18 +1,15 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Deploy Next.js to AWS'
+date: '2021-01-30'
 categories:
-- javascript
-date: "2021-01-30"
+  - 'javascript'
 tags:
-- aws
-- aws-s3
-- cloudfront
-- goldstack
-- next-js-framework
-- terraform
-title: Deploy Next.js to AWS
+  - 'aws'
+  - 'aws-s3'
+  - 'cloudfront'
+  - 'goldstack'
+  - 'next-js-framework'
+  - 'terraform'
 ---
 
 [Next.js](https://nextjs.org/) is becoming ever more popular these days and rightfully so. It is an extremely powerful and well-made framework that provides some very useful abstractions for developing React applications.

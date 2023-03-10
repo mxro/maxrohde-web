@@ -1,19 +1,16 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'What Is'
+date: '2018-10-16'
 categories:
-- philosophy
-coverImage: 1280px-van_gogh_-_starry_night.jpg
-date: "2018-10-16"
+  - 'philosophy'
 tags:
-- buddhism
-- existence
-- humility
-- philosohpy
-- space
-- universe
-title: What Is
+  - 'buddhism'
+  - 'existence'
+  - 'humility'
+  - 'philosohpy'
+  - 'space'
+  - 'universe'
+coverImage: '1280px-van_gogh_-_starry_night.jpg'
 ---
 
 It seems easy for us to distinguish what exists from what does not exist. If I have a glass standing on the table in front of me, it seems very clear to me that this glass exists. If there is no cup on my table, it is very clear that no cup exists on my table.

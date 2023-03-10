@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'OSGi + Maven + Declarative Services + Apache Felix SCR + NetBeans'
+date: '2010-05-23'
 categories:
-- java
-date: "2010-05-23"
-title: OSGi + Maven + Declarative Services + Apache Felix SCR + NetBeans
+  - 'java'
 ---
 
 This post is part of a series of posts on [java modularity with OSGi and Declarative Services](http://maxrohde.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/).

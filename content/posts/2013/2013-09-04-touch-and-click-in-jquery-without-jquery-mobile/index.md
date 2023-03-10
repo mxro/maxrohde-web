@@ -1,14 +1,11 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Touch and Click in jQuery (without jQuery Mobile)'
+date: '2013-09-04'
 categories:
-- javascript
-date: "2013-09-04"
+  - 'javascript'
 tags:
-- jquery
-- mobile
-title: Touch and Click in jQuery (without jQuery Mobile)
+  - 'jquery'
+  - 'mobile'
 ---
 
 ### Problem

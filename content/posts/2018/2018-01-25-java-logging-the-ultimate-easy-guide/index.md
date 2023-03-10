@@ -1,16 +1,13 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Java Logging - The Ultimate, Easy Guide'
+date: '2018-01-25'
 categories:
-- java
-date: "2018-01-25"
+  - 'java'
 tags:
-- devops
-- log4j
-- logging
-- tutorial
-title: Java Logging - The Ultimate, Easy Guide
+  - 'devops'
+  - 'log4j'
+  - 'logging'
+  - 'tutorial'
 ---
 
 On first glance, logging looks like an exceedingly simple problem to solve. However, it is one of these problems which unfortunately become more and more complex the longer one looks at it.

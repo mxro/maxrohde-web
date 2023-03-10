@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Instructions in Export-Package that are never used'
+date: '2010-08-20'
 categories:
-- java
-date: "2010-08-20"
-title: Instructions in Export-Package that are never used
+  - 'java'
 ---
 
 **Problem**

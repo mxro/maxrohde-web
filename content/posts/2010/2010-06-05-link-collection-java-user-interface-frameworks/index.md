@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- java
-date: "2010-06-05"
 title: 'Link Collection: Java User Interface Frameworks'
+date: '2010-06-05'
+categories:
+  - 'java'
 ---
 
 **Abstract**: It is no secret that end user interfaces are not Java‘s strongest point especially on the desktop. Nonetheless, there is a great choice of interesting frameworks, some of which are listed below.

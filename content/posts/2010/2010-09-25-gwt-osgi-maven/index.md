@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'GWT + OSGi + Maven'
+date: '2010-09-25'
 categories:
-- java
-date: "2010-09-25"
-title: GWT + OSGi + Maven
+  - 'java'
 ---
 
 **Summary:**

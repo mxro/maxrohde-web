@@ -1,9 +1,6 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2020-01-15"
 title: 'Habit Tracking December: Lost in Travel'
+date: '2020-01-15'
 ---
 
 I think I was on a good track in respect to sticking to [my habits in November](https://maxrohde.com/2019/12/05/habit-tracking-november-getting-there/). Alas, things didn't go so well in December:

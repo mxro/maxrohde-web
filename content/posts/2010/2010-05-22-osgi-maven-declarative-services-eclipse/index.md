@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'OSGi + Maven + Declarative Services + eclipse'
+date: '2010-05-22'
 categories:
-- java
-date: "2010-05-22"
-title: OSGi + Maven + Declarative Services + eclipse
+  - 'java'
 ---
 
 This post is part of a series of post on java modularity.

@@ -1,13 +1,10 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Access Apache on VirtualBox OS from Host OS'
+date: '2014-08-19'
 categories:
-- linux
-date: "2014-08-19"
+  - 'linux'
 tags:
-- virtualbox
-title: Access Apache on VirtualBox OS from Host OS
+  - 'virtualbox'
 ---
 
 ## Problem

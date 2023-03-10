@@ -1,14 +1,11 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'A Handy Reference of Maven Parameters'
+date: '2018-01-11'
 categories:
-- java
-coverImage: maven-logo-black-on-white.png
-date: "2018-01-11"
+  - 'java'
 tags:
-- maven
-title: A Handy Reference of Maven Parameters
+  - 'maven'
+coverImage: 'maven-logo-black-on-white.png'
 ---
 
 I cannot count the times I have looked up the following through Google. Thus I decided to put together a few handy parameters (or properties or whatever is the correct term) for Maven builds.

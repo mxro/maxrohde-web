@@ -1,14 +1,11 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Check if MySQL User Exists on Command Line (and in Puppet)'
+date: '2015-04-24'
 categories:
-- linux
-date: "2015-04-24"
+  - 'linux'
 tags:
-- mysql
-- puppet
-title: Check if MySQL User Exists on Command Line (and in Puppet)
+  - 'mysql'
+  - 'puppet'
 ---
 
 If you are using Linux, there is simple way to check if a user exists in MySQL:

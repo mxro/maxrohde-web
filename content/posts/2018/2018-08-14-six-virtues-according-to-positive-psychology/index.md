@@ -1,17 +1,14 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Six Virtues according to Positive Psychology'
+date: '2018-08-14'
 categories:
-- psychology
-coverImage: 1280px-anton_francesco_dello_scheggia_-_the_seven_virtues_-_google_art_project.jpg
-date: "2018-08-14"
+  - 'psychology'
 tags:
-- happiness
-- meaning
-- positive-psychology
-- virtues
-title: Six Virtues according to Positive Psychology
+  - 'happiness'
+  - 'meaning'
+  - 'positive-psychology'
+  - 'virtues'
+coverImage: '1280px-anton_francesco_dello_scheggia_-_the_seven_virtues_-_google_art_project.jpg'
 ---
 
 I have long been an avid follower of the [positive psychology](https://mappalicious.com/2016/02/14/10-more-blogs-on-positive-psychology-and-adjacent-you-need-to-know/) movement. Be it justified or not, I am a bit skeptical about psychology as a discipline in general since I got the impression that a lot of established facts and practices in psychology are [based on poorly executed studies](https://www.smithsonianmag.com/science-nature/scientists-replicated-100-psychology-studies-and-fewer-half-got-same-results-180956426/).

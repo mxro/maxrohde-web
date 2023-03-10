@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- linux
-date: "2015-08-15"
 title: 'newrelic service doesn’t start on CentOS: Solution Run as Root'
+date: '2015-08-15'
+categories:
+  - 'linux'
 ---
 
 Today one of my virtual servers suddenly showed up as offline in my [New Relic](http://newrelic.com/) console (Which is an amazing tool and free by the way).

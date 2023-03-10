@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'CodeMirror 3 Indent All Lines / Autoformat'
+date: '2014-09-24'
 categories:
-- javascript
-date: "2014-09-24"
-title: CodeMirror 3 Indent All Lines / Autoformat
+  - 'javascript'
 ---
 
 ## Problem

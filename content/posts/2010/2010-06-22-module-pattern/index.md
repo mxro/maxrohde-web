@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Module Pattern'
+date: '2010-06-22'
 categories:
-- java
-date: "2010-06-22"
-title: Module Pattern
+  - 'java'
 ---
 
 Design patterns are a well-established concept for the design of classes and their relationships in object oriented programming. Build tools like Maven can encourage us to think of similar patterns for modules or libraries. In Maven, every module or library (a project in Maven terms) is described by a project model (pom file). Modules which share similar pom files can be the building blocks of pattern of modules.

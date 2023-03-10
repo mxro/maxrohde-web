@@ -1,20 +1,16 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- contemplatations
-coverImage: pexels-cao-haiyun-5765826.jpg
-date: "2022-10-29"
-id: levels-of-enlightenment
 publish: true
-summary: Argues that enlightenment is not attained absolutely. Instead it is achieved
-  in steps, including plenty of backsliding.
+title: 'Levels of Enlightenment'
+date: '2022-10-29'
+coverImage: 'pexels-cao-haiyun-5765826.jpg'
+summary: 'Argues that enlightenment is not attained absolutely. Instead it is achieved in steps, including plenty of backsliding.'
+id: 'levels-of-enlightenment'
 tags:
-- buddhism
-- enlightenment
-- psychology
-title: Levels of Enlightenment
+  - 'buddhism'
+  - 'enlightenment'
+  - 'psychology'
+categories:
+  - 'contemplatations'
 ---
 
 Enlightenment is often understood as a singular event in a person's life; such as the enlightenment of the Buddha sitting under the bodhi tree. Consequently it is seen as a step onto a new sphere of existence; one that, once reached, one may never leave during once lifetime (and possibly beyond, given ones spiritual inclinations).

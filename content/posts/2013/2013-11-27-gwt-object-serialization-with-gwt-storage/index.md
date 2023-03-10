@@ -1,13 +1,10 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'GWT Object Serialization with gwt-storage'
+date: '2013-11-27'
 categories:
-- java
-date: "2013-11-27"
+  - 'java'
 tags:
-- gwt
-title: GWT Object Serialization with gwt-storage
+  - 'gwt'
 ---
 
 ## Problem

@@ -1,14 +1,11 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Something other than a Java object was returned from JSNI method'
+date: '2012-08-14'
 categories:
-- java
-date: "2012-08-14"
+  - 'java'
 tags:
-- gwt
-- jsni
-title: Something other than a Java object was returned from JSNI method
+  - 'gwt'
+  - 'jsni'
 ---
 
 [Google Web Toolkit](https://developers.google.com/web-toolkit/) allows building powerful bridges between the world of Java and JavaScript using so called [JS overlay objects](http://googlewebtoolkit.blogspot.co.nz/2008/08/getting-to-really-know-gwt-part-2.html).

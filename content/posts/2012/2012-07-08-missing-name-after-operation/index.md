@@ -1,9 +1,6 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2012-07-08"
-title: Missing Name After . Operation
+title: 'Missing Name After . Operation'
+date: '2012-07-08'
 ---
 
 ## Problem

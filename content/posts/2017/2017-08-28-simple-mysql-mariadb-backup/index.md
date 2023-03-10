@@ -1,13 +1,10 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Simple MySQL / MariaDB Backup'
+date: '2017-08-28'
 categories:
-- linux
-date: "2017-08-28"
+  - 'linux'
 tags:
-- mysql
-title: Simple MySQL / MariaDB Backup
+  - 'mysql'
 ---
 
 There are many ways to back up a MySQL or MariaDB server. Some ways [include using mysqldump, mydumper, LVM Snapshots or XtraBackup](https://www.slideshare.net/MariaDB/best-practices-for-maria-db-and-mysql-backups). However, any robust backup solution boils down to one key requirement:

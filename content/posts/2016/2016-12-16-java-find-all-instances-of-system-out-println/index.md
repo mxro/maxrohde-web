@@ -1,14 +1,11 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- java
-date: "2016-12-16"
-tags:
-- eclipse
-- programming
 title: 'Java: Find all instances of System.out.println()'
+date: '2016-12-16'
+categories:
+  - 'java'
+tags:
+  - 'eclipse'
+  - 'programming'
 ---
 
 A good Java application should print only the absolute necessary to standard out. Not to do so can mean a serious hit in performance and can make it difficult to debug issues.

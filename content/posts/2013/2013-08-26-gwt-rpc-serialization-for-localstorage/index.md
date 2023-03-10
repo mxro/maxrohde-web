@@ -1,13 +1,10 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'GWT RPC Serialization for LocalStorage'
+date: '2013-08-26'
 categories:
-- java
-date: "2013-08-26"
+  - 'java'
 tags:
-- gwt
-title: GWT RPC Serialization for LocalStorage
+  - 'gwt'
 ---
 
 [GWT RPC](http://www.gwtproject.org/doc/latest/tutorial/RPC.html) is a great technology for sending 'Java' objects from a Java sever to a JavaScript client and vice averse. Since GWT RPC provides facilities for serializing and deseralizing Java objects, it seems like a good option, too, for preparing objects to be stored in a browsers [LocalStorage](http://www.html5rocks.com/en/features/storage).

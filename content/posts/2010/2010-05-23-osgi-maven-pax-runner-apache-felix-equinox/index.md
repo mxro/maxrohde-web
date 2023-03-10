@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'OSGi + Maven + Pax Runner + Apache Felix + Equinox'
+date: '2010-05-23'
 categories:
-- java
-date: "2010-05-23"
-title: OSGi + Maven + Pax Runner + Apache Felix + Equinox
+  - 'java'
 ---
 
 This post is part of a series on java modularity.

@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- java
-date: "2010-09-03"
 title: 'Java RPC: An Overview'
+date: '2010-09-03'
+categories:
+  - 'java'
 ---
 
 **Abstract:** A collection of links to frameworks allowing for Remote Procedure Calls between Java applications. I ultimately went with the Restlet framework due to its simplicity and integration with GWT.

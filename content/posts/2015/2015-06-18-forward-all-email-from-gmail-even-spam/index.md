@@ -1,13 +1,10 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Forward All Email from Gmail (even SPAM)'
+date: '2015-06-18'
 categories:
-- productivity
-date: "2015-06-18"
+  - 'productivity'
 tags:
-- productivity
-title: Forward All Email from Gmail (even SPAM)
+  - 'productivity'
 ---
 
 #### Problem

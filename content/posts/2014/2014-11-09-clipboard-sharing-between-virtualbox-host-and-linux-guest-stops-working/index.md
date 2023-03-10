@@ -1,13 +1,10 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Clipboard Sharing Between VirtualBox Host and Linux Guest Stops Working'
+date: '2014-11-09'
 categories:
-- linux
-date: "2014-11-09"
+  - 'linux'
 tags:
-- virtualbox
-title: Clipboard Sharing Between VirtualBox Host and Linux Guest Stops Working
+  - 'virtualbox'
 ---
 
 **Problem**

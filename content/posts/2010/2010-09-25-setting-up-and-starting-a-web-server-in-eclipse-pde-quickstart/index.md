@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Setting up and starting a web server in eclipse PDE (Quickstart)'
+date: '2010-09-25'
 categories:
-- java
-date: "2010-09-25"
-title: Setting up and starting a web server in eclipse PDE (Quickstart)
+  - 'java'
 ---
 
 The following describes a number of simple steps to set up and start up a web server in the eclipse PDE environment.

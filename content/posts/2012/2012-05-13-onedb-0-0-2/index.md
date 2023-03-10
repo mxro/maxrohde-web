@@ -1,9 +1,6 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2012-05-13"
 title: 'onedb 0.0.2: Update for Client Libraries'
+date: '2012-05-13'
 ---
 
 I have just uploaded new [onedb client libraries](http://cms.onedb.de/downloads 'onedb client libraries') with version number 0.0.2.

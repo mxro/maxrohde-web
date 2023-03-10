@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Maven and Eclipse Indigo'
+date: '2011-09-02'
 categories:
-- java
-date: "2011-09-02"
-title: Maven and Eclipse Indigo
+  - 'java'
 ---
 
 It has been a while since the new release of the eclipse IDE, Indigo, [has been released](http://www.eclipse.org/downloads/). One of the most interesting new features seems to be a **better integration with Maven**.

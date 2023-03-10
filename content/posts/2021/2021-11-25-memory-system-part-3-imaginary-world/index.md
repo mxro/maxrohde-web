@@ -1,20 +1,17 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- buddhism
-- philosophy
-- psychology
-coverImage: game-of-thrones-4180794_1920.jpg
-date: "2021-11-25"
-tags:
-- life
-- memory
-- mnemonic
-- productivity
-- writing
 title: 'Memory System Part 3: Imaginary World'
+date: '2021-11-25'
+categories:
+  - 'buddhism'
+  - 'philosophy'
+  - 'psychology'
+tags:
+  - 'life'
+  - 'memory'
+  - 'mnemonic'
+  - 'productivity'
+  - 'writing'
+coverImage: 'game-of-thrones-4180794_1920.jpg'
 ---
 
 In the first and second parts of this series I have discussed the [advantages of a memory system](https://spearoflight.wordpress.com/2021/11/15/memory-system-part-1-ancient-techniques-and-modern-applications/) as well as proposed a [simple technique for organising thinking](https://spearoflight.wordpress.com/2021/11/23/memory-system-part-2-3x3-grid/). A particular focus of the presented technique was to provide a very lightweight way to order thoughts, with minimal requirements to adorn what we want to remember with artificial memory images. However, enriching our thoughts with images can have a number of advantages such as aid our memory or bring more beauty and inspiration to our thoughts.

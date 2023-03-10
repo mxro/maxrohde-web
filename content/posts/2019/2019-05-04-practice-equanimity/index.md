@@ -1,20 +1,17 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- buddhism
-- philosophy
-- psychology
-coverImage: coast-192979.jpg
-date: "2019-05-04"
-tags:
-- equanimity
-- life
-- practice
-- practices
-- stoicism
 title: 'Practice: Equanimity'
+date: '2019-05-04'
+categories:
+  - 'buddhism'
+  - 'philosophy'
+  - 'psychology'
+tags:
+  - 'equanimity'
+  - 'life'
+  - 'practice'
+  - 'practices'
+  - 'stoicism'
+coverImage: 'coast-192979.jpg'
 ---
 
 A key insight of Buddhist philosophy is that the highest goal to strive for should not be boundless happiness - since that is bound to disappoint - but instead a sound evenness of mind, equanimity. Equanimity requires us to overcome attachment, to brace us against the loss of even what is most dear to us.

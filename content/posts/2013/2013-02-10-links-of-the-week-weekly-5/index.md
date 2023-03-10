@@ -1,9 +1,6 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2013-02-10"
-title: Links of the Week (weekly)
+title: 'Links of the Week (weekly)'
+date: '2013-02-10'
 ---
 
 - [What storytelling does to our brains](http://blog.bufferapp.com/science-of-storytelling-why-telling-a-story-is-the-most-powerful-way-to-activate-our-brains)

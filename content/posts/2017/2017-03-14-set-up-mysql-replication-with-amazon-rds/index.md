@@ -1,13 +1,10 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2017-03-14"
+title: 'Set up MySQL Replication with Amazon RDS'
+date: '2017-03-14'
 tags:
-- aws
-- devops
-- mysql
-title: Set up MySQL Replication with Amazon RDS
+  - 'aws'
+  - 'devops'
+  - 'mysql'
 ---
 
 ### Problem

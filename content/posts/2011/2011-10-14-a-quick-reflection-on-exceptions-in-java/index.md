@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'A Quick Reflection on Exceptions in Java'
+date: '2011-10-14'
 categories:
-- java
-date: "2011-10-14"
-title: A Quick Reflection on Exceptions in Java
+  - 'java'
 ---
 
 Exceptions are a necessary evil of most software development endeavours. As much as we would like to design applications, which are equivalent to mathematical functions 'give me one input and always I will trustfully return you the same output', the real world IOExceptions, OutOfMemoryExceptions, DivideByZeroExceptions and their various evil cousins force us to consider a versatile and often unpredictable state often out of our control.

@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- java
-date: "2010-09-19"
 title: 'Restlet Server: OSGi and Maven'
+date: '2010-09-19'
+categories:
+  - 'java'
 ---
 
 Here a collection of links regarding the Restlet Framework ([restlet.org](http://restlet.org)) and how to use it with Maven and OSGi

@@ -1,12 +1,9 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- contemplations
-- java
-date: "2012-05-05"
 title: 'Introducing onedb: Connect Small Data in the Cloud'
+date: '2012-05-05'
+categories:
+  - 'contemplations'
+  - 'java'
 ---
 
 Data is growing bigger.
@@ -129,4 +126,78 @@ One.append(p).to(bar).in(client);
 
 Data in any application of non-trivial size [ceases to exist and is reborn in sheer endless incarnations](http://theholyjava.wordpress.com/2012/05/12/bad-code-too-many-object-conversions-between-application-layers-and-how-to-avoid-them/ 'Bad Code: Too Many Object Conversions Between Application Layers And How to Avoid Them'). For instance, take a user's last name. Initially the last name will be held by a text field as part of the web browser's DOM. It might begin its journey as element in a [JSON data structure being sent to the application server](http://paulgestwicki.blogspot.co.nz/2011/05/json-vs-xml-for-data-representation-in.html 'JSON vs XML for data representation in GWT') as part of a HTTP message. Next, the last name will be deserialized on the server and live, temporarily, as part of a Java or C# object. Then, after being included in an SQL statement the last name might find its final, persisted resting place ... until it is requested by another browser session.
 
-![System with Distributed Databases](https://docs.google.com/drawings/pub?id=1xYhxvEJADdx5lIHtA
+![System with Distributed Databases](https://docs.google.com/drawings/pub?id=1xYhxvEJADdx5lIHtA----wxooeBBYeRvgK3ftMkmu_g&w=400)
+
+The problem here is less that identical data is replicated numerous times (this is unavoidable if multiple devices are involved) but more that the data is represented in various different and incompatible formats for the various involved platforms (Java object, JSON, DOM property, ...).
+
+onedb strives to provide one common platform across devices and environments, which enables to work with and connect heterogeneous pieces of data. The way onedb achieves this is by offering portable and embeddable client libraries for various platforms, which can access one integrated data space: the onedb cloud.
+
+![Distributed Application Using onedb](https://docs.google.com/drawings/pub?id=14TO1hg0N_JB1VeGbg6y21bEbjhfUou61OLumBsPaRKk&w=400)
+
+The onedb client engine is written in vanilla Java with no external dependencies apart from the core JDK classes (java.\*). Moreover, the core engine can be compiled using Google's awesome [Google Web Toolkit](https://developers.google.com/web-toolkit/ 'Google Web Toolkit') (GWT) Java-to-JavaScript compiler. The onedb cloud can therefore be accessed on all Java compatible environments and most modern web browsers. Please bear with me for the web browser part, though. I don't believe it is really increasing developer productivity to require the continuous compilations of a 50,000+ LOC client library with the [not exactly lightning fast](http://supplychaintechnology.wordpress.com/2010/06/04/gwt_compile_times/ 'A Few Ways To Get Better GWT Compile Times') GWT compiler. I therefore plan to provide a precompiled JavaScript client library rather than a GWT library (but I am still working on the API for said library).
+
+#### Testability
+
+Application logic which is tightly coupled to persisted data is [notoriously difficult to test](http://blog.schauderhaft.de/2012/01/15/tipps-for-testing-database-code/ 'Tips for testing database case') using automated unit tests. There are many reasons for this but one key factor is that it is often non-trivial to start up a database with the right configuration and test data for a particular test case.
+
+onedb strives to make code, which relies on data that will be persisted in the production system, both easy and fast to test. For this purpose, an almost fully functional in-memory onedb cloud can be started up for test cases. Starting up the test cloud should take less than 200ms and can therefore be done, if required, for each individual unit test.
+
+I have given an example above for a simple application, which connects two nodes in the onedb cloud. We can test this application locally in far superior speed (since there are no Internet messages being sent) by simply changing the first line of the application code to `OneTestJre.init();`:
+
+```java
+
+OneTestJre.init(); // was: OneJre.init("[your API key]");
+
+One.createRealm("foo").and(new When.RealmCreated() {
+
+    @Override
+    public void thenDo(WithRealmCreatedResult r) {
+        One.append("bar").to(r.root()).in(r.client());
+
+        System.out.println("Created " + r.root() + ":" + r.secret());
+    }
+
+});
+```
+
+\[[full source on github](https://github.com/mxro/onedb-examples/blob/master/src/main/java/one/examples/z_articles/C_IntroductionOnedbTestability.java 'Example App Testability')\]
+
+### Support for Small Data
+
+I have mentioned in the introduction that onedb is a platform to support connected small data. To discuss onedb's ability to support small data, I will use the following definition [from another article](http://maxrohde.com/2012/05/05/small-data/ 'Small data is beautiful: A Case for Connected Applications'):
+
+> Small Data is interconnectable and portable data which can be stored, managed, and processed independently on all components of a distributed system.
+
+The essential idea this definition is based upon is that 'big' data can be made 'small' if three requirements are satisfied: (1) the components of a distributed application are enabled to manage their data independently from other application components, (2) data is portable in that it can be seamlessly moved from one component to the other and (3) data managed by one component can be 'connected' to data being managed by other components. I will briefly describe how onedb fulfills these requirements in the following.
+
+To allow application components to manage data independently from other components (1st requirement of small data), the onedb cloud is divided into a large number of sections in different granularity (e.g. _one last name_ or _all user data_). These sections, called realms, are self-contained and allow application components to manage a set of nodes and their connections. It is very easy to create new realms, so application components are enabled to create and manage their own, independent realms if required.
+
+![onedb cloud divided into realms](https://docs.google.com/drawings/pub?id=1NYO_BM12kwl44GeA-YE9Llsgm3nUmNfjNldXVBPXaHs&w=450)
+
+To allow for data portability (2nd requirement of small data), onedb provides two intertwined features: First, realms or parts of a realm can be shared between various components of an application. Second, data from the onedb cloud is made available locally to system components through means of an automated synchronization process (think fine-grained [Dropbox](https://www.dropbox.com/ 'Dropbox') for applications). This synchronization process is available on all platforms to which the onedb client engine can be deployed.
+
+![onedb Sharing and Synchronization](https://docs.google.com/drawings/pub?id=1cayBuO2MMZx2hoJz1ep20iNcRRNiOgk7U6kcS2uBDHM&w=287&h=290)
+
+Allowing data managed by different components to be connected (3rd requirement of small data) is the core feature of onedb as mentioned above. Any piece of data in the onedb cloud (or node) can be connected to any other piece of data in the onedb cloud.
+
+![Connections between Realms](https://docs.google.com/drawings/pub?id=1pByzw5anFZW4nY7F2vmjaDcf_wdfYE66CLloPTUoezk&w=362)
+
+### Why bother?
+
+onedb is a very young technology and as such I expect there to be bugs, downtimes, and, of course, there is the old friend of any new framework: quite sparse documentation.
+
+However, I do believe that there are many exciting use cases for onedb. You can plug it into your own apps in a matter of minutes and use it to store logs, settings, test data, or test parameters. You can also use onedb as a quick way to publish and update a set of web pages or other REST resources, which may be consumed by any REST capable client.
+
+There are currently two ways, in which you can use onedb. Firstly, you can go to the onedb webpage and [grab an API key for the technology preview server](http://www.onedb.de/#apikeyanchor 'onedb: Get API Key'). The technology preview server allows you to store up to 10,000 nodes/objects in the onedb cloud per API key. Secondly, [you can contact me](mailto:feedback@onedb.de), if you would like to install your own onedb server node, and I will be happy to assist you with installation and configuration procedure.
+
+### Limitations & Last thoughts
+
+onedb is a service focused on one particular task: to help you connect and integrate small data across applications and platforms. onedb is built as a lightweight add-on to existing applications and infrastructures and not as an replacement for these. onedb, in consequence, does not provide many features commonly found in other databases or cloud platforms. However, since onedb is lightweight and generic, it is very easy to integrate it with other technologies, for instance [building an index with Lucene](http://zeroinsertionforce.blogspot.co.nz/2008/11/lucene-overview-part-one-creating-index.html 'Lucene Overview Part One: Creating the Index ') or running a [Hadoop](http://www.slideshare.net/PhilippeJulio/hadoop-architecture 'Hadoop Architecture') job to process data stored in onedb.
+
+Generic software problems, such as the one addressed by onedb, can often be solved by an array of related technologies. I have created a preliminary [list of interesting related technologies](http://cms.onedb.de/related-approaches 'Related Technologies'). Please let me know of any technologies I missed there and I will be happy to include them.
+
+I hope you enjoyed reading this article introducing onedb. If you would like to learn more about onedb, there is a detailed and hands-on guide on how to use the various features: "[onedb Tutorial: Getting started and First Steps](http://maxrohde.com/2012/05/06/onedb-tutorial/)".
+
+onedb is a very important part of my PhD thesis and therefore you could help me a great deal, if you could send me some quick feedback ([@mxro](https://twitter.com/intent/tweet?screen_name=mxro) or [feedback@onedb.de](mailto:feedback@onedb.de)). Please also let me know if you find any bugs and I will try to fix them as quickly as possible.
+
+Looking forward to hear from you and please share :)

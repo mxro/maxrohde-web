@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Eclipse PDE and Maven'
+date: '2010-06-01'
 categories:
-- java
-date: "2010-06-01"
-title: Eclipse PDE and Maven
+  - 'java'
 ---
 
 Eclipse PDE and Maven do not always work together seamlessly. Here a few links that can be of help: (for more help also have a look at the [Maven/OSGi tutorials](http://maxrohde.com/2010/05/26/java-modularity-tutorials-osgi-declarative-services-and-maven/))

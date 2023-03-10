@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- java
-date: "2011-09-12"
 title: 'Java 8: Key Features (I would love to see)'
+date: '2011-09-12'
+categories:
+  - 'java'
 ---
 
 There has been not little critizim of the slow progress made in the core of Java. Java 6 has been released on the 11th of December **2006** (!). Java 7 saw the light of the day almost five years later this July.

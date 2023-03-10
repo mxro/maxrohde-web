@@ -1,19 +1,16 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'S3 and Typescript'
+date: '2022-04-27'
 categories:
-- javascript
-- serverless
-coverImage: jessica-johnston-nnh2l-k77nc-unsplash.jpg
-date: "2022-04-27"
+  - 'javascript'
+  - 'serverless'
 tags:
-- aws
-- aws-s3
-- coding
-- programming
-- typescript
-title: S3 and Typescript
+  - 'aws'
+  - 'aws-s3'
+  - 'coding'
+  - 'programming'
+  - 'typescript'
+coverImage: 'jessica-johnston-nnh2l-k77nc-unsplash.jpg'
 ---
 
 [AWS S3](https://aws.amazon.com/s3/) is a cloud service for storing data using a simple API. In contrast to a traditional database, S3 is more akin to a file system. Data is stored under a certain path. The strengths of S3 are its easy to use API as well as its very low cost for storing data.
@@ -124,3 +121,7 @@ Usually when working with an S3 bucket in an application, we would want the appl
 ## Help Make the Template and Boilerplate Better
 
 Please raise an issue on [GitHub](https://github.com/goldstack/goldstack/issues) if you have an idea of how to improve the S3 template and boilerplate.
+
+---
+
+Cover image by [Jessica Johnston](https://unsplash.com/photos/nnH2l-k77nc)

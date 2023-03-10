@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Hamcrest GWT'
+date: '2010-10-08'
 categories:
-- java
-date: "2010-10-08"
-title: Hamcrest GWT
+  - 'java'
 ---
 
 **Abstract:** The largest parts of the Hamcrest library can be compiled in GWT. Just the IsInstanceOf class needs a bit of tweaking (as well as some other classes depending on reflection). The following provides a brief overview of _some_ of the steps required to compile Hamcrest with GWT.

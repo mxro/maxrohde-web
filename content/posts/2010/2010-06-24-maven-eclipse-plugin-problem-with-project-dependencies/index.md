@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- java
-date: "2010-06-24"
 title: 'Maven-Eclipse-Plugin: Problem with Project Dependencies'
+date: '2010-06-24'
+categories:
+  - 'java'
 ---
 
 **Problem**

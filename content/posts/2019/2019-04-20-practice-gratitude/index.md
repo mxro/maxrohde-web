@@ -1,19 +1,16 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- philosophy
-coverImage: be-511557.jpg
-date: "2019-04-20"
-tags:
-- buddhism
-- gratitude
-- positive-psychology
-- practice
-- practices
-- psychology
 title: 'Practice: Gratitude'
+date: '2019-04-20'
+categories:
+  - 'philosophy'
+tags:
+  - 'buddhism'
+  - 'gratitude'
+  - 'positive-psychology'
+  - 'practice'
+  - 'practices'
+  - 'psychology'
+coverImage: 'be-511557.jpg'
 ---
 
 Positive psychology is a branch of psychology which focuses on what [makes people happy and well](https://maxrohde.com/2018/08/14/six-virtues-according-to-positive-psychology/). Gratitude has featured prominently in [many studies in the field of positive psychology](https://www.amazon.com/Handbook-Positive-Psychology-C-Snyder/dp/0195135334) (see chapter [Gratitude and the Science of Positive Psychology](http://ldysinger.stjohnsem.edu/@books1/Snyder_Hndbk_Positive_Psych/Snyder_Lopez_Handbook_of_Positive_Psychology.pdf#page=478)) since it has been shown that being grateful has many benefits for our emotional well-being.

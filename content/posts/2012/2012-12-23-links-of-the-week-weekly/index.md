@@ -1,9 +1,6 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2012-12-23"
-title: Links of the Week (weekly)
+title: 'Links of the Week (weekly)'
+date: '2012-12-23'
 ---
 
 - [Simone de Beauvoir on Ambiguity, Vitality, and Freedom | Brain Pickings](http://www.brainpickings.org/index.php/2012/12/20/simone-de-beauvoir-on-ambiguity/)

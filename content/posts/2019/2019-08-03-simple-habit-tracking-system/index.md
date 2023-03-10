@@ -1,18 +1,15 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Simple Habit Tracking System'
+date: '2019-08-03'
 categories:
-- psychology
-coverImage: writing-828911.jpg
-date: "2019-08-03"
+  - 'psychology'
 tags:
-- habit
-- habits
-- life
-- productivity
-- system
-title: Simple Habit Tracking System
+  - 'habit'
+  - 'habits'
+  - 'life'
+  - 'productivity'
+  - 'system'
+coverImage: 'writing-828911.jpg'
 ---
 
 I have long been looking for a system that helps me stick to good habits. I used a [time tracking application](http://timetrack.io/) on my iPhone and also created various spreadsheets. Unfortunately the solutions I found so far turned out to be too cumbersome to enter data (spreadsheets) or too difficult to run reports on (time tracking apps).

@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- contemplations
-date: "2010-08-19"
 title: 'Paper: Challenges in Knowledge Management'
+date: '2010-08-19'
+categories:
+  - 'contemplations'
 ---
 
 _Rohde, M. E., & Sundaram, D. (2010). Challenges in knowledge management. In _Proceedings of the 16th Americas Conference on Informaction Systems (AMCIS 2010)_ . Association for Information Systems.\_

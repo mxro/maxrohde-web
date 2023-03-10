@@ -1,14 +1,11 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-coverImage: workout-program.png
-date: "2020-05-08"
-tags:
-- exercise
-- habits
-- tracking
 title: 'April Review: Creating a Workout Program'
+date: '2020-05-08'
+tags:
+  - 'exercise'
+  - 'habits'
+  - 'tracking'
+coverImage: 'workout-program.png'
 ---
 
 April marks the slow descent into Autumn in the Southern Hemisphere. Like everywhere else in the world, we are still in lockdown. I am working from home, which is not too bad.

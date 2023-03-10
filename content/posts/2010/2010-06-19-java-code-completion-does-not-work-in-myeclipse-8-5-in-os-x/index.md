@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Java Code Completion does not work in MyEclipse 8.5 in OS X'
+date: '2010-06-19'
 categories:
-- java
-date: "2010-06-19"
-title: Java Code Completion does not work in MyEclipse 8.5 in OS X
+  - 'java'
 ---
 
 **Problem**

@@ -1,10 +1,7 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-coverImage: squarspace.png
-date: "2018-01-04"
 title: 'Good Web Design: Squarespace'
+date: '2018-01-04'
+coverImage: 'squarspace.png'
 ---
 
 I want to start a new category of articles for this blog where I record web or user experience design I come across and which impresses me. I will start today with the homepage of [Squarespace](https://www.squarespace.com/). Since they are a web design company, good design can be expected of course. Some things which I noticed where the following:

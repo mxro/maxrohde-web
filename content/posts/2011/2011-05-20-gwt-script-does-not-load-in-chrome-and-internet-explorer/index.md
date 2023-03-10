@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'GWT Script does not load in Chrome and Internet Explorer'
+date: '2011-05-20'
 categories:
-- java
-date: "2011-05-20"
-title: GWT Script does not load in Chrome and Internet Explorer
+  - 'java'
 ---
 
 ### The Problem

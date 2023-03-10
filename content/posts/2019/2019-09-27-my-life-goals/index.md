@@ -1,19 +1,16 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'My Life Goals'
+date: '2019-09-27'
 categories:
-- philosophy
-coverImage: way-918900.jpg
-date: "2019-09-27"
+  - 'philosophy'
 tags:
-- blog
-- goals
-- good
-- happiness
-- life
-- purpose
-title: My Life Goals
+  - 'blog'
+  - 'goals'
+  - 'good'
+  - 'happiness'
+  - 'life'
+  - 'purpose'
+coverImage: 'way-918900.jpg'
 ---
 
 I have recently been asked what goals I have for my life. I think I am someone who deeply cares about leading a purposeful life and the very purpose of this blog is finding such. However, I don't think I have recently articulated what my life goals are and I believe this to be a very worthwhile exercise. Really speaking, I think I only have one life goal:

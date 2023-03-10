@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- contemplations
-date: "2010-04-10"
 title: 'Software: PDF Split and Merge'
+date: '2010-04-10'
+categories:
+  - 'contemplations'
 ---
 
 PDF Split and Merge is an utility for OS X, which allows to split and merge pdf files. The interface is not overly pretty but functional.

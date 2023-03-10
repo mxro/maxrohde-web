@@ -1,22 +1,19 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Serverless API with TypeScript on AWS'
+date: '2022-01-04'
 categories:
-- devops
-- javascript
-coverImage: serverless-api-architecture.png
-date: "2022-01-04"
+  - 'devops'
+  - 'javascript'
 tags:
-- aws
-- coding
-- programming
-- rest
-- serverless
-- terraform
-- tutorial
-- typescript
-title: Serverless API with TypeScript on AWS
+  - 'aws'
+  - 'coding'
+  - 'programming'
+  - 'rest'
+  - 'serverless'
+  - 'terraform'
+  - 'tutorial'
+  - 'typescript'
+coverImage: 'serverless-api-architecture.png'
 ---
 
 There are many ways to stand up a REST API. Nearly every programming language provides a way for us to develop a simple web server, such as [Express.js](https://dev.to/geekygeeky/get-started-with-es6-javascript-for-writing-nodejs-using-express-544h), [Go Gin](https://dev.to/21yunbox/how-to-deploy-go-gin-to-a-server-36d) or [Python Flask](https://dev.to/sm0ke/flask-bootstrap-templates-open-source-and-free-m2b). However, with the [advent of serverless computing](https://medium.com/@chakrabartis/server-less-eats-the-infrastructure-2a3d0ef66363), we need to rethink some of the fundamentals of how APIs are developed and deployed. Chiefly:

@@ -1,21 +1,17 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- code
-- javascript
-coverImage: dim-hou-BjD3KhnTIkg-unsplash.jpg
-date: "2022-11-01"
-id: esbuild-ignore-with-comments-plugin
-summary: esbuild plugin that allows ignoring specific files by adding comments into
-  the source code.
+title: 'esbuild Ignore With Comments Plugin'
+id: 'esbuild-ignore-with-comments-plugin'
+date: '2022-11-01'
+summary: 'esbuild plugin that allows ignoring specific files by adding comments into the source code.'
+coverImage: 'dim-hou-BjD3KhnTIkg-unsplash.jpg'
 tags:
-- esbuild
-- javascript
-- programming
-- open-source
-title: esbuild Ignore With Comments Plugin
+  - 'esbuild'
+  - 'javascript'
+  - 'programming'
+  - 'open-source'
+categories:
+  - 'code'
+  - 'javascript'
 ---
 
 With the increasing popularity of full stack frameworks that combine server-side and client-side code, build tools need to support selectively including or ignoring files in a project.

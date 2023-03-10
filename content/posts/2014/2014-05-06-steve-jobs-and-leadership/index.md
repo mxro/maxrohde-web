@@ -1,14 +1,11 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Steve Jobs and Leadership'
+date: '2014-05-06'
 categories:
-- leadership
-date: "2014-05-06"
+  - 'leadership'
 tags:
-- isaacson
-- steve-jobs
-title: Steve Jobs and Leadership
+  - 'isaacson'
+  - 'steve-jobs'
 ---
 
 There is something wrong with the way Steve Jobs led people. The [biography](<http://en.wikipedia.org/wiki/Steve_Jobs_(book)>) from ‪Isaacson‬ is full of examples how Steve Jobs exercised excessive control, restricting the autonomy of talented employees, or outright abused employees in an inhumane way.

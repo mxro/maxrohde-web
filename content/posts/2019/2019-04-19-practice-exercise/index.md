@@ -1,16 +1,13 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-coverImage: discobolus_kleomelos_louvre_g111.jpg
-date: "2019-04-19"
-tags:
-- exercise
-- exercises
-- health
-- practice
-- practices
 title: 'Practice: Exercise'
+date: '2019-04-19'
+tags:
+  - 'exercise'
+  - 'exercises'
+  - 'health'
+  - 'practice'
+  - 'practices'
+coverImage: 'discobolus_kleomelos_louvre_g111.jpg'
 ---
 
 A healthy mind enables a healthy body, and a healthy body enables a healthy mind. Finding spiritual enlightenment and peace requires a strong and healthy mind and thus it is essential that we take good care of our body.

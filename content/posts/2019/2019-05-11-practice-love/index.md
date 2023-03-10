@@ -1,22 +1,19 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- buddhism
-- philosophy
-- psychology
-coverImage: elephant-4120822.jpg
-date: "2019-05-11"
-tags:
-- christianity
-- happiness
-- life
-- love
-- meditation
-- practice
-- practices
 title: 'Practice: Love'
+date: '2019-05-11'
+categories:
+  - 'buddhism'
+  - 'philosophy'
+  - 'psychology'
+tags:
+  - 'christianity'
+  - 'happiness'
+  - 'life'
+  - 'love'
+  - 'meditation'
+  - 'practice'
+  - 'practices'
+coverImage: 'elephant-4120822.jpg'
 ---
 
 One of the most precious gift we have been given is our ability to love. Our love may encompass the big and small, our love may encompass the beautiful and ugly, our love may encompass ourselves and everything around us. Think about the many layers of your love; the romantic love for someone special, the love for something you like to do, the love for your family, the universal love which drives your desire to help those in need and protect everything in creation from harm.

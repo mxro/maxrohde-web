@@ -1,14 +1,11 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Habit Tracking February'
+date: '2020-03-14'
 categories:
-- productivity
-coverImage: annotation-2020-03-14-154027.png
-date: "2020-03-14"
+  - 'productivity'
 tags:
-- habits
-title: Habit Tracking February
+  - 'habits'
+coverImage: 'annotation-2020-03-14-154027.png'
 ---
 
 This post is to document the tracking of my habits for the month of February 2020 according to my [habit tracking system](https://maxrohde.com/2019/08/03/simple-habit-tracking-system/).

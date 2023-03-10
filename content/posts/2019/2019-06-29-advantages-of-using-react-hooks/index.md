@@ -1,17 +1,14 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Advantages of Using React Hooks'
+date: '2019-06-29'
 categories:
-- javascript
-coverImage: screen-shot-2019-06-29-at-5.04.48-pm.png
-date: "2019-06-29"
+  - 'javascript'
 tags:
-- functional-programming
-- programming
-- react
-- react-hooks
-title: Advantages of Using React Hooks
+  - 'functional-programming'
+  - 'programming'
+  - 'react'
+  - 'react-hooks'
+coverImage: 'screen-shot-2019-06-29-at-5.04.48-pm.png'
 ---
 
 I always had the feeling that React is just a bit to complex, a bit to 'heavy' to be a truely elegant solution to the problem of building complex user interfaces in JavaScript. Two issues, for instance, are the general project setup, exemplified by the need to have [create-react-app](https://github.com/facebook/create-react-app), and class-based components, with all their `componentDidMount` and `this` references.

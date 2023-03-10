@@ -1,10 +1,7 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-coverImage: paypal-developer-documentation.png
-date: "2018-01-10"
 title: 'Good Web Design: PayPal Developer Documentation'
+date: '2018-01-10'
+coverImage: 'paypal-developer-documentation.png'
 ---
 
 I find that developer documentation is often not very pleasant to look at and, more importantly, often very difficult to navigate. I worked briefly with the PayPal REST API and, while I found that at times it can be confusing to deal with the numerous APIs PayPal offers, aesthetically their [developer documentation](https://developer.paypal.com/docs/api/overview/) is clear and effective.

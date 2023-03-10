@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Maven Bundle Plugin Configuration'
+date: '2010-06-30'
 categories:
-- java
-date: "2010-06-30"
-title: Maven Bundle Plugin Configuration
+  - 'java'
 ---
 
 In a previous post, I have provided an example of a possible [Maven configuration to use the maven eclipse plugin with eclipse PDE](http://maxrohde.com/2010/06/29/maven-eclipse-plugin-and-eclipse-pde-the-right-configuration/). Besides these settings, which are the same for every project, each bundle needs to be configured as OSGi bundle in order to be usable by eclipse PDE.

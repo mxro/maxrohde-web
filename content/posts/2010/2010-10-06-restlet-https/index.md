@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Restlet HTTPS'
+date: '2010-10-06'
 categories:
-- java
-date: "2010-10-06"
-title: Restlet HTTPS
+  - 'java'
 ---
 
 **Problem**

@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Knowledge Networks and Next Generation Knowledge Networks'
+date: '2010-05-04'
 categories:
-- contemplations
-date: "2010-05-04"
-title: Knowledge Networks and Next Generation Knowledge Networks
+  - 'contemplations'
 ---
 
 Knowledge networks have been discussed as strategy to formalize intra- and inter-organizational knowledge transfer and creation.

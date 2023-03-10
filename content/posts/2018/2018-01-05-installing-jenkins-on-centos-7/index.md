@@ -1,16 +1,13 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Installing Jenkins on Centos 7'
+date: '2018-01-05'
 categories:
-- java
-date: "2018-01-05"
+  - 'java'
 tags:
-- devops
-- jenkins
-- linux
-- programming
-title: Installing Jenkins on Centos 7
+  - 'devops'
+  - 'jenkins'
+  - 'linux'
+  - 'programming'
 ---
 
 I set up a Jenkins server on a brand new Centos 7 VPS. In the following the instructions for doing this in case you are looking at doing the same:

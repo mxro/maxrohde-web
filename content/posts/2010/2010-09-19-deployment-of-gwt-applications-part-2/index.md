@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Deployment of GWT Applications (Part 2)'
+date: '2010-09-19'
 categories:
-- java
-date: "2010-09-19"
-title: Deployment of GWT Applications (Part 2)
+  - 'java'
 ---
 
 **Purpose**

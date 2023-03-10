@@ -1,17 +1,14 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'What I have Learned from Crusader Kings 2'
+date: '2019-05-26'
 categories:
-- games
-coverImage: world.png
-date: "2019-05-26"
+  - 'games'
 tags:
-- crusader-kings
-- crusader-kings-2
-- experiences
-- gaming
-title: What I have Learned from Crusader Kings 2
+  - 'crusader-kings'
+  - 'crusader-kings-2'
+  - 'experiences'
+  - 'gaming'
+coverImage: 'world.png'
 ---
 
 We often find ourselves in discussions if activities such as reading, watching TV, browsing the Internet or playing video games are good for you or not. I think this is like asking if a government is a good thing or not. The question is for the most part pointless since it doesn't matter so much if we do have a government or not but what kind of government it is.

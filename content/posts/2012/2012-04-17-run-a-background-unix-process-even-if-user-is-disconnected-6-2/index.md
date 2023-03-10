@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Run a Background Unix Process (even if user is disconnected)'
+date: '2012-04-17'
 categories:
-- linux
-date: "2012-04-17"
-title: Run a Background Unix Process (even if user is disconnected)
+  - 'linux'
 ---
 
 Given we have a script test.sh, it is easy to run this script in the background while continuing to work in the current shell session. The most cited way is by adding '&' to the end of the command:

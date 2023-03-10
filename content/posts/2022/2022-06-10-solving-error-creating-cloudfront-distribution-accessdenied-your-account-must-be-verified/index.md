@@ -1,13 +1,9 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2022-06-10"
+title: "Solving 'Error creating CloudFront Distribution: AccessDenied: Your account must be verified'"
+date: '2022-06-10'
 tags:
-- aws
-- cloudfront
-title: 'Solving ''Error creating CloudFront Distribution: AccessDenied: Your account
-  must be verified'''
+  - 'aws'
+  - 'cloudfront'
 ---
 
 As part of testing [Goldstack](https://goldstack.party/) templates I often create new AWS accounts and deploy a number or resources to them. Today I came across the following error while trying to stand up a CloudFront Distribution

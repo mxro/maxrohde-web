@@ -1,17 +1,14 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Setting up Prometheus and Grafana for CentOS / RHEL 7 Monitoring'
+date: '2018-01-23'
 categories:
-- linux
-date: "2018-01-23"
+  - 'linux'
 tags:
-- devops
-- grafana
-- metrics
-- programming
-- prometheus
-title: Setting up Prometheus and Grafana for CentOS / RHEL 7 Monitoring
+  - 'devops'
+  - 'grafana'
+  - 'metrics'
+  - 'programming'
+  - 'prometheus'
 ---
 
 As mentioned in [my previous post](https://maxrohde.com/2018/01/23/setting-up-graylog-server/), I have long been looking for a centralised solution for collecting logs and monitoring metrics. I think my search was unsuccessful since I was looking for too many things in one solution. Instead I found now two separate solutions, one for log management ([using Graylog](https://maxrohde.com/2018/01/23/setting-up-graylog-server/)) and one for metrics (using [Prometheus](https://prometheus.io/) and [Grafana](https://grafana.com/)). I deployed both of these on very inexpensive VPS machines and so far I am very happy with them.

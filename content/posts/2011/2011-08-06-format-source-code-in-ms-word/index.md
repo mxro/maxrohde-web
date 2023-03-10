@@ -1,9 +1,6 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2011-08-06"
-title: Format Source Code in MS Word
+title: 'Format Source Code in MS Word'
+date: '2011-08-06'
 ---
 
 ## The Problem

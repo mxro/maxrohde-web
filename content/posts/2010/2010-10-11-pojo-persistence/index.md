@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'POJO Persistence'
+date: '2010-10-11'
 categories:
-- java
-date: "2010-10-11"
-title: POJO Persistence
+  - 'java'
 ---
 
 There are surprisingly few frameworks, which allow to persist and query Java objects independent of relational database management systems. To me, at least for implementations not bound to using existing relational databases, storing information in interrelated tables seems an arbitrary step in object-oriented development. Below a few links ...

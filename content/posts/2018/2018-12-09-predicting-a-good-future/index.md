@@ -1,19 +1,16 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Predicting a Good Future'
+date: '2018-12-09'
 categories:
-- economy
-- philosophy
-- politics
-- society
-coverImage: the_oracle.jpg
-date: "2018-12-09"
+  - 'economy'
+  - 'philosophy'
+  - 'politics'
+  - 'society'
 tags:
-- environment
-- equality
-- future
-title: Predicting a Good Future
+  - 'environment'
+  - 'equality'
+  - 'future'
+coverImage: 'the_oracle.jpg'
 ---
 
 I recently read an article published by a German newspaper which was discussed how our future might look like in 2037. Trying to predict the future is something which has always fascinated me. I think we do far too little of that in comparison with how much of our attention we direct towards the past; just think about how many books are written about history versus those about the future!

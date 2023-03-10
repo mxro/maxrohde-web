@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- java
-date: "2010-10-22"
 title: 'Maven: Compile all projects in eclipse workspace'
+date: '2010-10-22'
+categories:
+  - 'java'
 ---
 
 **The Problem:**

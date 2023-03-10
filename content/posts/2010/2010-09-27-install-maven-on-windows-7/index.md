@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Install Maven on Windows 7'
+date: '2010-09-27'
 categories:
-- java
-date: "2010-09-27"
-title: Install Maven on Windows 7
+  - 'java'
 ---
 
 **Steps**

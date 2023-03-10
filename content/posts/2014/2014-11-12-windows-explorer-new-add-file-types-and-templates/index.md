@@ -1,9 +1,6 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2014-11-12"
 title: 'Windows Explorer New: Add File Types and Templates'
+date: '2014-11-12'
 ---
 
 Right clicking within a folder of the Windows Explorer allows access to a convenient way to create new files through the context menu:

@@ -1,16 +1,13 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- buddhism
-coverImage: mountain-1624284.jpg
-date: "2020-04-12"
-tags:
-- meditation
-- practice
-- practices
 title: 'Practice: Mental Imagery'
+date: '2020-04-12'
+categories:
+  - 'buddhism'
+tags:
+  - 'meditation'
+  - 'practice'
+  - 'practices'
+coverImage: 'mountain-1624284.jpg'
 ---
 
 We should never underestimate the power of our mind to direct and shape itself. We can do so through physical adjustments, such as bringing ourselves into a comfortable position or by controlling our breath. However, we can also affect our mind solely in the world of thoughts. One simple practice, which is both known to Buddhist practitioners as well as to modern psychologist, is to visualise a peaceful picture in our minds. This practice has been shown to reduce stress, pain and generally help us to be more balanced and strong. The simple steps are the following:

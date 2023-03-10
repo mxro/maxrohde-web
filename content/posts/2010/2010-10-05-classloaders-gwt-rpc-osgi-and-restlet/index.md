@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- java
-date: "2010-10-05"
 title: 'Classloaders: GWT RPC, OSGi and Restlet'
+date: '2010-10-05'
+categories:
+  - 'java'
 ---
 
 **Problem**

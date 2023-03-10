@@ -1,17 +1,14 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'On Preventing the Extinction of Mankind'
+date: '2018-09-05'
 categories:
-- economy
-- philosophy
-coverImage: mt-vesuvius.jpg
-date: "2018-09-05"
+  - 'economy'
+  - 'philosophy'
 tags:
-- economics
-- extinction
-- humanity
-title: On Preventing the Extinction of Mankind
+  - 'economics'
+  - 'extinction'
+  - 'humanity'
+coverImage: 'mt-vesuvius.jpg'
 ---
 
 Few will disagree that the continuation of our species as a noble goal to pursue. It just feels inherently plausible to us. But I think that we should nonetheless reflect upon whether this is really such a worthwhile and important goal to pursue.

@@ -1,14 +1,11 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Camera Movement with Three.js'
+date: '2019-10-25'
 categories:
-- javascript
-date: "2019-10-25"
+  - 'javascript'
 tags:
-- open-source
-- three-js
-title: Camera Movement with Three.js
+  - 'open-source'
+  - 'three-js'
 ---
 
 I have recently been working on small example application using [three.js](https://threejs.org/) and [react-three-fiber](https://github.com/react-spring/react-three-fiber). In the first two iterations, I first developed a simple draggable shape floating in space and then supported multiple shapes that can be moved on a physical plane. In this post, I am going to be extending the example to support camera movements. Here links to the previous two iterations and the one developed in this post:

@@ -1,17 +1,14 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- buddhism
-- philosophy
-coverImage: sunrise-over-the-earth.jpg
-date: "2019-04-27"
-tags:
-- interbeing
-- practice
-- practices
 title: 'Practice: Interbeing'
+date: '2019-04-27'
+categories:
+  - 'buddhism'
+  - 'philosophy'
+tags:
+  - 'interbeing'
+  - 'practice'
+  - 'practices'
+coverImage: 'sunrise-over-the-earth.jpg'
 ---
 
 We live in the illusion that we posses a self which is well delineated from the world around us. Whereas in fact, we are interwoven with everything around us in innumerable ways. No particle in the universe exists independently. Everything is affected by everything else.

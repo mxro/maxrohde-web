@@ -1,21 +1,18 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-coverImage: pexels-realtoughcandycom-11035386.jpg
-date: "2022-08-12"
+title: 'A Guide to CSS Modules with React'
+date: '2022-08-12'
 tags:
-- coding
-- css
-- javascript
-- node-js
-- open-source
-- programming
-- react
-- server-side-rendering
-- serverless
-- typescript
-title: A Guide to CSS Modules with React
+  - 'coding'
+  - 'css'
+  - 'javascript'
+  - 'node-js'
+  - 'open-source'
+  - 'programming'
+  - 'react'
+  - 'server-side-rendering'
+  - 'serverless'
+  - 'typescript'
+coverImage: 'pexels-realtoughcandycom-11035386.jpg'
 ---
 
 There are many different ways to provide styling for React components, such as importing plain CSS, using styled components, JS-in-CSS or CSS Modules. These all have various [advantages and disadvantages](https://riichardwilson.wordpress.com/2020/05/15/styling-components-in-react/).
@@ -279,3 +276,7 @@ I explored this in the context of building a lightweight framework for Serverles
 If you are interested in exploring the framework, which includes end-to-end support, please see the Goldstack [Server-Side Rendering template](https://goldstack.party/templates/server-side-rendering).
 
 For any suggestions, ideas and comments, please be welcome to head to GitHub and [create an issue](https://github.com/goldstack/goldstack/issues) 🤗.
+
+---
+
+Image by [RealToughCandy.com](https://www.pexels.com/photo/man-love-people-woman-11035386/)

@@ -1,17 +1,14 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- philosophy
-coverImage: memory_temple.jpg
-date: "2021-11-15"
-tags:
-- mastery
-- memory
-- productivity
-- psychology
 title: 'Memory System Part 1: Ancient Techniques and Modern Applications'
+date: '2021-11-15'
+categories:
+  - 'philosophy'
+tags:
+  - 'mastery'
+  - 'memory'
+  - 'productivity'
+  - 'psychology'
+coverImage: 'memory_temple.jpg'
 ---
 
 I've recently been thinking about how to become better at [dictation or to use speech to compose text](https://spearoflight.wordpress.com/2021/11/13/advantages-of-using-voice-dictation/). One important area of study that I came across in relation to this is rhetoric. Improving memory in turn is an important part of the discipline of rhetoric. In this article, I will briefly describe some ancient techniques to improve memory as well as propose what I think possible modern day uses for an improved memory could be (spoiler, it is not for remembering phone numbers). In future articles I will describe a number of techniques, adapted from the classical ones, I find helpful for the identified modern day usages.

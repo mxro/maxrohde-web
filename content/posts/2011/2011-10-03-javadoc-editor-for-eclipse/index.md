@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'JavaDoc Editor for eclipse'
+date: '2011-10-03'
 categories:
-- java
-date: "2011-10-03"
-title: JavaDoc Editor for eclipse
+  - 'java'
 ---
 
 Formatting JavaDoc using plain HTML can be a troublesome and time-intensive experience. Today I installed the [JDocEditor](http://www.certiv.net/projects/jdoceditor.html) plugin for eclipse, which allows editing JavaDoc in eclipse using a small rich text editor.

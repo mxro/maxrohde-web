@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Embed HTML Code in JavaScript File'
+date: '2014-01-31'
 categories:
-- javascript
-date: "2014-01-31"
-title: Embed HTML Code in JavaScript File
+  - 'javascript'
 ---
 
 **Problem**

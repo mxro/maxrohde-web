@@ -1,9 +1,6 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2013-07-28"
-title: A systematic tool for improving typing speed
+title: 'A systematic tool for improving typing speed'
+date: '2013-07-28'
 ---
 
 ## Background

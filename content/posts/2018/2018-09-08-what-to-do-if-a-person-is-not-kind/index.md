@@ -1,18 +1,15 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'What to do if a person is not kind'
+date: '2018-09-08'
 categories:
-- psychology
-coverImage: jan_de_bray_001.jpg
-date: "2018-09-08"
+  - 'psychology'
 tags:
-- happiness
-- kindness
-- life
-- philosophy
-- wisdom
-title: What to do if a person is not kind
+  - 'happiness'
+  - 'kindness'
+  - 'life'
+  - 'philosophy'
+  - 'wisdom'
+coverImage: 'jan_de_bray_001.jpg'
 ---
 
 I tend to believe in the inherent goodness of whomever I meet. I believe that each one of us has a desire to bring joy and happiness to others; even if that is to the detriment of others. I also think that most people I have know are kind. They are friendly and try to help wherever they can. Some might act unkindly from time to time but I do not think that means they are not kind in other circumstances.

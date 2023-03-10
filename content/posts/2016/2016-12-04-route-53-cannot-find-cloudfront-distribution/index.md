@@ -1,13 +1,10 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2016-12-04"
+title: 'Route 53 Cannot Find CloudFront Distribution'
+date: '2016-12-04'
 tags:
-- amazon-route-53
-- aws
-- cloudfront
-title: Route 53 Cannot Find CloudFront Distribution
+  - 'amazon-route-53'
+  - 'aws'
+  - 'cloudfront'
 ---
 
 ### Problem

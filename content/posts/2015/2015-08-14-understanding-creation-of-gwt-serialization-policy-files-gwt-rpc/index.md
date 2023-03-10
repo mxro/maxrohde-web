@@ -1,14 +1,11 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Understanding Creation of GWT Serialization Policy Files (.gwt.rpc)'
+date: '2015-08-14'
 categories:
-- java
-date: "2015-08-14"
+  - 'java'
 tags:
-- gwt
-- programming
-title: Understanding Creation of GWT Serialization Policy Files (.gwt.rpc)
+  - 'gwt'
+  - 'programming'
 ---
 
 Today I deep-dived a bit into how GWT creates and reads Serialization Policy files. These are the .gwt.rpc files which are generated beside the JavaScript files for GWT modules.

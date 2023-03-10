@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'New Repository for OSGi-ready Maven Artifacts'
+date: '2012-05-27'
 categories:
-- java
-date: "2012-05-27"
-title: New Repository for OSGi-ready Maven Artifacts
+  - 'java'
 ---
 
 **UPDATE 2015:**

@@ -1,19 +1,16 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Some Thoughts on Habits'
+date: '2021-08-25'
 categories:
-- philosophy
-- psychology
-coverImage: monotony-4565247_1920.jpg
-date: "2021-08-25"
+  - 'philosophy'
+  - 'psychology'
 tags:
-- habits
-- life
-- practices
-- productivity
-- self-improvement
-title: Some Thoughts on Habits
+  - 'habits'
+  - 'life'
+  - 'practices'
+  - 'productivity'
+  - 'self-improvement'
+coverImage: 'monotony-4565247_1920.jpg'
 ---
 
 I have long been interested in productivity and the old [Benjamin Franklin quest](https://www.goodreads.com/review/show/1941245176) of finding ways to better myself. One of the more recent themes in this field is habits, which I first came across in Duhigg's book[The Power of Habit](https://www.goodreads.com/review/show/4197238139). The basic promise here is that if we get ourselves to do something regularly, it will eventually become part of our routine, and by doing something repeatedly, even if it is small, we can transform ourselves, achieve more and be healthier of body and mind.

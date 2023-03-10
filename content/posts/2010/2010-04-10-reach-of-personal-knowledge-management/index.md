@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Reach of Personal Knowledge Management'
+date: '2010-04-10'
 categories:
-- contemplations
-date: "2010-04-10"
-title: Reach of Personal Knowledge Management
+  - 'contemplations'
 ---
 
 Personal knowledge management or personal information management is a distinct cross-disciplinary stream of literature. Personal information management in an organizational setting is a special case, as the management of personal information should be aligned with organizational knowledge management efforts. In this article, we provide a framework, which can help understanding the context of personal knowledge management in an organizational setting, by illustrating the different levels of “reach” (for a discussion for reach and range see [Weill and Broadbent, 1998](http://www.citeulike.org/user/mxro/article/4834591), p. 91) for personal knowledge management.

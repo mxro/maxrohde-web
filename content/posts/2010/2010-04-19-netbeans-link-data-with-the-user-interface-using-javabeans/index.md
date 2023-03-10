@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- java
-date: "2010-04-19"
 title: 'NetBeans: Link Data with the User Interface using JavaBeans'
+date: '2010-04-19'
+categories:
+  - 'java'
 ---
 
 The following is a brief description how a java bean can be linked with the UI using NetBeans:

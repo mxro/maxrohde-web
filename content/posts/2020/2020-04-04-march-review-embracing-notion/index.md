@@ -1,14 +1,11 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-coverImage: notion-quotes-1.png
-date: "2020-04-04"
-tags:
-- habits
-- knowledge-management
-- notion
 title: 'March Review: Embracing Notion'
+date: '2020-04-04'
+tags:
+  - 'habits'
+  - 'knowledge-management'
+  - 'notion'
+coverImage: 'notion-quotes-1.png'
 ---
 
 Since July 2019, I have written monthly about how I am going with sticking to my [simple habit tracking system](https://maxrohde.com/2019/08/03/simple-habit-tracking-system/). I think from this month onwards I will try something a little different, where I will write more generally about anything that I would like to reflect upon for the past month, and what I am planning to do for the next.

@@ -1,13 +1,10 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Free Cloud CRM for Small Business'
+date: '2015-01-29'
 categories:
-- productivity
-date: "2015-01-29"
+  - 'productivity'
 tags:
-- productivity
-title: Free Cloud CRM for Small Business
+  - 'productivity'
 ---
 
 I had a brief look around today for Cloud-based (SaaS) CRM solutions which are free and of use for small businesses and startups.

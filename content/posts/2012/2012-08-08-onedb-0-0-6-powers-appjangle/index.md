@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'onedb 0.0.6 powers appjangle'
+date: '2012-08-08'
 categories:
-- java
-date: "2012-08-08"
-title: onedb 0.0.6 powers appjangle
+  - 'java'
 ---
 
 The last few weeks a great number of improvements and changes have been made to the onedb database. Chiefly, with the development of the JavaScript API, onedb has been integrated into the new [appjangle](http://appjangle.com 'appjangle') platform.

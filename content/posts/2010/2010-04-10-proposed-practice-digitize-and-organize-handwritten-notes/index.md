@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-categories:
-- contemplations
-date: "2010-04-10"
 title: 'Proposed Practice: Digitize and Organize Handwritten Notes'
+date: '2010-04-10'
+categories:
+  - 'contemplations'
 ---
 
 Despite omnipresent digital devices such as laptop, smartphones and tablet computers, it is sometimes inevitable to record a note, thought or concept on a profane piece of undigital paper. For me personally, I sometimes have my best thoughts when working with pen and paper, so, producing a few dozen pages a month, I am struggling to find a process to digitize the pages, which can be helpful for later work. I have been trying this for years and, still, I find the process too time consuming, and too often pages get lost. This is my current process:

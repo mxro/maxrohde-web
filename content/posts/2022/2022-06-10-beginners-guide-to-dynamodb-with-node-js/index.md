@@ -1,21 +1,18 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Beginners Guide to DynamoDB with Node.js'
+date: '2022-06-10'
 categories:
-- javascript
-- serverless
-coverImage: tobias-fischer-pkbzaheg2ng-unsplash.jpg
-date: "2022-06-10"
+  - 'javascript'
+  - 'serverless'
 tags:
-- aws
-- coding
-- dynamodb
-- node-js
-- programming
-- tutorial
-- typescript
-title: Beginners Guide to DynamoDB with Node.js
+  - 'aws'
+  - 'coding'
+  - 'dynamodb'
+  - 'node-js'
+  - 'programming'
+  - 'tutorial'
+  - 'typescript'
+coverImage: 'tobias-fischer-pkbzaheg2ng-unsplash.jpg'
 ---
 
 I have long been very sceptical of so called NoSQL databases. I believe that traditional SQL database provided better higher level abstractions for defining data structures and working with data. However, I have received a few queries for a [DynamoDB](https://aws.amazon.com/dynamodb/) template for my project builder [Goldstack](https://goldstack.party/) and I figured a module handling access to DynamoDB could be a good addition to the template library.

@@ -1,15 +1,12 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Optimse Next.js SEO'
+date: '2021-03-14'
 categories:
-- javascript
-coverImage: internet-search-engine-1433323.jpg
-date: "2021-03-14"
+  - 'javascript'
 tags:
-- next-js-framework
-- programming
-title: Optimse Next.js SEO
+  - 'next-js-framework'
+  - 'programming'
+coverImage: 'internet-search-engine-1433323.jpg'
 ---
 
 [Next.js](https://nextjs.org/) is an awesome framework for building websites and web applications. I have covered Next.js in multiple posts on this blog, such as [Next.js with Bootstrap Getting Started](https://maxrohde.com/2020/03/06/next-js-with-bootstrap-getting-started/). One of the advantages of Next.js is that it can generate static or server-side rendered versions of pages developed with React. This is great for making it easy for search engines to crawl your site.

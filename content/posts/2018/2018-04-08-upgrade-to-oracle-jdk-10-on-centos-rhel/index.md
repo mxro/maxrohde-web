@@ -1,13 +1,10 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Upgrade to Oracle JDK 10 on CentOS/RHEL'
+date: '2018-04-08'
 categories:
-- java
-date: "2018-04-08"
+  - 'java'
 tags:
-- linux
-title: Upgrade to Oracle JDK 10 on CentOS/RHEL
+  - 'linux'
 ---
 
 With the release of Java 10 only a few days ago, it seems only prudent to update to Java 10 on suitable systems since the support for [Java 9 official ends with the release of Java 10](http://www.oracle.com/technetwork/java/eol-135779.html). (Note that Java 8 still enjoys long-time support, so it might be the best choice to stick with that on systems which are difficult to change)

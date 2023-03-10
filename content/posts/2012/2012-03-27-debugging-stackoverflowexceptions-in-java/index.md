@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Debugging StackOverflowExceptions in Java'
+date: '2012-03-27'
 categories:
-- java
-date: "2012-03-27"
-title: Debugging StackOverflowExceptions in Java
+  - 'java'
 ---
 
 # Problem

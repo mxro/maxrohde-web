@@ -1,15 +1,12 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Free Tool for Renaming Files with Current Date'
+date: '2018-09-30'
 categories:
-- javascript
-coverImage: date-namer.png
-date: "2018-09-30"
+  - 'javascript'
 tags:
-- open-source
-- tools
-title: Free Tool for Renaming Files with Current Date
+  - 'open-source'
+  - 'tools'
+coverImage: 'date-namer.png'
 ---
 
 For many files, it is good to keep track of when they were originally created. In theory, every file created on any mainstream operating system should have its 'creation date' and 'last date modified' recorded as part of its metadata. This mechanisms, however, is often unreliable, especially when using file synchronisation tools such as Dropbox or Google Drive.

@@ -1,18 +1,15 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Touch Heaven'
+date: '2019-11-15'
 categories:
-- philosophy
-- psychology
-coverImage: michelangelo_-_creation_of_adam_cropped.jpg
-date: "2019-11-15"
+  - 'philosophy'
+  - 'psychology'
 tags:
-- afterlife
-- life
-- purpose
-- spiritual
-title: Touch Heaven
+  - 'afterlife'
+  - 'life'
+  - 'purpose'
+  - 'spiritual'
+coverImage: 'michelangelo_-_creation_of_adam_cropped.jpg'
 ---
 
 By objective standards, our lives are rather drab and pointless. We are biological machines forged by billions of years of natural selection, programmed with the purpose to ensure the propagation of our genes. On a cosmic scale, our lives are insignificant and extremely short. There is little doubt that, in a few thousand years, we ourselves and everything we did, will be completely forgotten by the direct descendants of our children and also by everyone else.

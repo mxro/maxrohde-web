@@ -1,23 +1,20 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-canonicalUrl: https://www.freecodecamp.org/news/how-to-use-cognito-for-web-applications/
+title: "A Beginner's Guide to Cognito for Web Applications"
+date: '2023-03-05'
+id: 'beginners-guide-to-cognito-for-web-applications'
+canonicalUrl: 'https://www.freecodecamp.org/news/how-to-use-cognito-for-web-applications/'
 categories:
-- devops
-- cognito
-- aws
-coverImage: Cognito-Cover.jpg
-date: "2023-03-05"
-id: beginners-guide-to-cognito-for-web-applications
+  - 'devops'
+  - 'cognito'
+  - 'aws'
 tags:
-- cognito
-- serverless
-- aws
-- authentication
-- web
-- oauth
-title: A Beginner's Guide to Cognito for Web Applications
+  - 'cognito'
+  - 'serverless'
+  - 'aws'
+  - 'authentication'
+  - 'web'
+  - 'oauth'
+coverImage: 'Cognito-Cover.jpg'
 ---
 
 [Amazon Cognito](https://aws.amazon.com/cognito/) is a cloud-based, serverless solution for identity and access management. It provides similar capabilities as [Auth0](https://aws.amazon.com/cognito/) and [Okta](https://aws.amazon.com/cognito/). The main benefit of Cognito is that it is just another services within the AWS suite of services, and can thus easily be used if other parts of the stack already use AWS.
@@ -521,4 +518,5 @@ However, as with any out-of-the-box solution, we sacrifice flexibility and exten
 
 All in all, I highly recommend using an existing platform for managing customer identity. [Auth0 and Okta](https://auth0.com/) are probably preferable to Cognito if you are not bound to AWS. For this article, I chose Cognito since I have been working on building a complete [serverless stack](https://goldstack.party/) for AWS.
 
-In my articles, I go beyond providing code snippets and provide libraries and templates that give you a head start in getting your application up and running. You can help make the journey even easier for others, by [reaching out to me](https://maxrohde.com/about) with ideas to improve the article or, even better, by [opening an issue on GitHub](https://github.com/goldstack/goldstack/issues) in the projects where the source code is hosted.
+In my articles, I go beyond providing code snippets and provide libraries and templates that give you a head start in getting your application up and running. You can help make the journey even easier for others, by [reaching out to me](https://maxrohde.com/about) with ideas to improve the article or, even better, by [opening an issue on GitHub](https://github.com/goldstack/goldstack/issues) in the projects where the source code is hosted. 
+

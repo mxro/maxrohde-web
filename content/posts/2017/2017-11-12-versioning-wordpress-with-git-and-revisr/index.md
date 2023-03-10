@@ -1,15 +1,12 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Versioning WordPress with Git and Revisr'
+date: '2017-11-12'
 categories:
-- linux
-date: "2017-11-12"
+  - 'linux'
 tags:
-- git
-- programming
-- wordpress
-title: Versioning WordPress with Git and Revisr
+  - 'git'
+  - 'programming'
+  - 'wordpress'
 ---
 
 [WordPress](https://wordpress.org/) is a powerful platform to just get a simple website up and running. Unfortunately, some things which are considered best practice in software development projects are a bit difficult to realize with WordPress. One of these things is versioning. Thankfully, there is a powerful plug in which enables versioning WordPress using a [git](https://git-scm.com/) repository: [Revisr](https://revisr.io/).

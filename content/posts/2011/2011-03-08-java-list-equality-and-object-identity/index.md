@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Java List Equality and Object Identity'
+date: '2011-03-08'
 categories:
-- java
-date: "2011-03-08"
-title: Java List Equality and Object Identity
+  - 'java'
 ---
 
 ## Problem

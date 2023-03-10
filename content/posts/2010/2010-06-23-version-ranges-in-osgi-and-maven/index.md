@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Version Ranges in OSGi and Maven'
+date: '2010-06-23'
 categories:
-- java
-date: "2010-06-23"
-title: Version Ranges in OSGi and Maven
+  - 'java'
 ---
 
 Version ranges have slightly different meaning in OSGi and Maven.

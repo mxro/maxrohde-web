@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Functional Java'
+date: '2010-09-30'
 categories:
-- java
-date: "2010-09-30"
-title: Functional Java
+  - 'java'
 ---
 
 **+++Google Guava+++**

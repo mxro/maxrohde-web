@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Installing Maven under Windows Vista'
+date: '2010-05-30'
 categories:
-- java
-date: "2010-05-30"
-title: Installing Maven under Windows Vista
+  - 'java'
 ---
 
 It is fairly easy to set up Maven under Windows Vista, following this [Excellent tutorial](http://www.avajava.com/tutorials/lessons/what-is-maven-and-how-do-i-install-it.html).

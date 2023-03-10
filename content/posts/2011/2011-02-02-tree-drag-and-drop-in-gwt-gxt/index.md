@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Tree Drag and Drop in GWT / GXT'
+date: '2011-02-02'
 categories:
-- java
-date: "2011-02-02"
-title: Tree Drag and Drop in GWT / GXT
+  - 'java'
 ---
 
 In Ext Gwt or GXT there are various ways to intercept drag and drop events directed at a Tree or TreeGrid. However, many of these do not necessarily lead to the expected results. There is also not much documentation of how to work with these events.

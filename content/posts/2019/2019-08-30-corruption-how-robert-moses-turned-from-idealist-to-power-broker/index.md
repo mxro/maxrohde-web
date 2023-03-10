@@ -1,18 +1,15 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: "Corruption: How Robert Moses Turned from Idealist to 'Power Broker'"
+date: '2019-08-30'
 categories:
-- politics
-- society
-coverImage: robert_moses_with_battery_bridge_model.jpg
-date: "2019-08-30"
+  - 'politics'
+  - 'society'
 tags:
-- corruption
-- gorbachev
-- new-york
-- robert-moses
-title: 'Corruption: How Robert Moses Turned from Idealist to ''Power Broker'''
+  - 'corruption'
+  - 'gorbachev'
+  - 'new-york'
+  - 'robert-moses'
+coverImage: 'robert_moses_with_battery_bridge_model.jpg'
 ---
 
 I think it is usually better to focus on positive things, on how good things could be, instead of how bad they are or how bad they may turn out. But, notwithstanding this preference, I also think it is necessary to discuss a few key properties of nature and human nature, which are of potential great detriment to our common good.

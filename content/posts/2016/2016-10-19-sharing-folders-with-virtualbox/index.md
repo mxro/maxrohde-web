@@ -1,13 +1,10 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Sharing Folders with VirtualBox'
+date: '2016-10-19'
 categories:
-- linux
-date: "2016-10-19"
+  - 'linux'
 tags:
-- virtualbox
-title: Sharing Folders with VirtualBox
+  - 'virtualbox'
 ---
 
 ### Problem

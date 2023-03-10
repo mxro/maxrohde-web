@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Selenium ChromeDriver Hangs on Startup'
+date: '2017-11-07'
 categories:
-- java
-date: "2017-11-07"
-title: Selenium ChromeDriver Hangs on Startup
+  - 'java'
 ---
 
 ### Problem

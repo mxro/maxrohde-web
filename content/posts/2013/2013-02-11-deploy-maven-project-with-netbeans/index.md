@@ -1,13 +1,10 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Deploy Maven Project with Netbeans'
+date: '2013-02-11'
 categories:
-- java
-date: "2013-02-11"
+  - 'java'
 tags:
-- maven
-title: Deploy Maven Project with Netbeans
+  - 'maven'
 ---
 
 ## Problem

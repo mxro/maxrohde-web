@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Count lines of code and number of classes in eclipse projects'
+date: '2011-03-29'
 categories:
-- java
-date: "2011-03-29"
-title: Count lines of code and number of classes in eclipse projects
+  - 'java'
 ---
 
 There are a number of plugins for eclipse, Maven and/or subversion, which allow the convenient and automatic determination of important project statistics such as the total lines of code in a project or the number of Java classes. However, sometimes one just needs these statistics **quick and dirty** and setting up sophisticated tools represents an unjustifiable overhead.

@@ -1,9 +1,6 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2012-10-20"
 title: 'Design Principles for Mobile Apps: (1) Simplicity'
+date: '2012-10-20'
 ---
 
 Mobile applications are undoubtedly different than traditional desktop applications in many ways. Mostly, we would think of the technical and/or UI limitations that mobile environments impose on application developers.

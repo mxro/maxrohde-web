@@ -1,18 +1,15 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'TypeScript Types for AWS Lambda'
+date: '2022-01-02'
 categories:
-- devops
-- javascript
-coverImage: lambda_handler.png
-date: "2022-01-02"
+  - 'devops'
+  - 'javascript'
 tags:
-- aws
-- aws-lambda
-- programming
-- typescript
-title: TypeScript Types for AWS Lambda
+  - 'aws'
+  - 'aws-lambda'
+  - 'programming'
+  - 'typescript'
+coverImage: 'lambda_handler.png'
 ---
 
 [TypeScript](https://www.typescriptlang.org/) is an excellent language for writing AWS Lambda functions. Its flexible static typing allows for high developer productivity and since it can be transpiled into JavaScript, our code can be bundled into small deployment packages that allow for [fast Lambda cold starts](https://mikhail.io/serverless/coldstarts/aws/languages/), without need for [keeping 'warm' instances of our lambdas](https://dev.to/shivangchauhan7/how-to-prevent-lambda-cold-starts-using-serverless-framework-m44).

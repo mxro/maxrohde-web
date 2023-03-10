@@ -1,18 +1,15 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Next.js 11 Images with Static Export'
+date: '2021-07-25'
 categories:
-- javascript
-date: "2021-07-25"
+  - 'javascript'
 tags:
-- aws
-- next-js
-- next-js-framework
-- react
-- serverless
-- typescript
-title: Next.js 11 Images with Static Export
+  - 'aws'
+  - 'next-js'
+  - 'next-js-framework'
+  - 'react'
+  - 'serverless'
+  - 'typescript'
 ---
 
 [Next.js 11](https://nextjs.org/blog/next-11) includes an exciting new feature for dynamically optimising images using the [<Image>](https://nextjs.org/docs/api-reference/next/image) tag. Unfortunately, this new feature [does not play nicely](https://github.com/vercel/next.js/issues/18356) with exporting a static version of the Next.js app using `yarn next export` by its very design. This is not great for serverless deployments, which often will rely on uploading the static version of web applications to a service like S3 (see [my guide of how to that here](https://maxrohde.com/2021/01/30/deploy-next-js-to-aws/)).

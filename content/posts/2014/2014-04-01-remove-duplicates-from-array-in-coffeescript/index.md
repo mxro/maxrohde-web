@@ -1,11 +1,8 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Remove Duplicates from Array in CoffeeScript'
+date: '2014-04-01'
 categories:
-- javascript
-date: "2014-04-01"
-title: Remove Duplicates from Array in CoffeeScript
+  - 'javascript'
 ---
 
 **Problem**

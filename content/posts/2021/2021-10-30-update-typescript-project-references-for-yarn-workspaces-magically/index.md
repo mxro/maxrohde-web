@@ -1,18 +1,15 @@
 ---
-authors:
-- max
-blog: maxrohde.com
+title: 'Update TypeScript Project References for Yarn Workspaces - magically!'
+date: '2021-10-30'
 categories:
-- javascript
-date: "2021-10-30"
+  - 'javascript'
 tags:
-- coding
-- open-source
-- programming
-- tools
-- typescript
-- yarn
-title: Update TypeScript Project References for Yarn Workspaces - magically!
+  - 'coding'
+  - 'open-source'
+  - 'programming'
+  - 'tools'
+  - 'typescript'
+  - 'yarn'
 ---
 
 As I've written in an earlier post, [TypeScript project references and Yarn Workspaces are powerful tools for managing complex TypeScript projects](https://maxrohde.com/2021/10/01/typescript-monorepo-with-yarn-and-project-references/). Yarn Workspaces manages dependencies between multiple JavaScript packages within one project, and contains tools that let us easily deduce which packages depend on which other packages in our workspace.

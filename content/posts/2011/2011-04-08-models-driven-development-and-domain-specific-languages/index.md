@@ -1,9 +1,6 @@
 ---
-authors:
-- max
-blog: maxrohde.com
-date: "2011-04-08"
-title: Models Driven Development and Domain Specific Languages
+title: 'Models Driven Development and Domain Specific Languages'
+date: '2011-04-08'
 ---
 
 The question of the right programming language is one that has always spurned much controversy. Likewise, the idea that one day we could develop software by simply 'drawing' expressive models has as many advocators as opponents.
