@@ -33,6 +33,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/db-notion"\
       },\
       {\
+        "name": "dynamodb-blog",\
+        "reference": "workspace:packages/dynamodb-blog"\
+      },\
+      {\
         "name": "email-send",\
         "reference": "workspace:packages/email-send"\
       },\
@@ -55,6 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["article-cli", ["workspace:packages/article-cli"]],\
       ["db-blog", ["workspace:packages/db-blog"]],\
       ["db-notion", ["workspace:packages/db-notion"]],\
+      ["dynamodb-blog", ["virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#workspace:packages/dynamodb-blog", "workspace:packages/dynamodb-blog"]],\
       ["email-send", ["workspace:packages/email-send"]],\
       ["go-transform-cli", ["workspace:packages/go-transform-cli"]],\
       ["maxrohde-web", ["workspace:."]],\
@@ -9341,6 +9346,47 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["open", "npm:8.4.0"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["dynamodb-blog", [\
+        ["virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#workspace:packages/dynamodb-blog", {\
+          "packageLocation": "./.yarn/__virtual__/dynamodb-blog-virtual-b9b1c60f29/1/packages/dynamodb-blog/",\
+          "packageDependencies": [\
+            ["dynamodb-blog", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#workspace:packages/dynamodb-blog"],\
+            ["@types/jest", "npm:29.0.1"],\
+            ["@types/react", "npm:18.0.15"],\
+            ["@types/react-dom", null],\
+            ["@types/testing-library__jest-dom", "npm:5.14.5"],\
+            ["@types/testing-library__react", "npm:10.2.0"],\
+            ["jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:28.1.0"],\
+            ["jest-environment-jsdom", "npm:28.1.3"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:18.2.0"],\
+            ["ts-jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:28.0.2"],\
+            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=a1c5e5"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["workspace:packages/dynamodb-blog", {\
+          "packageLocation": "./packages/dynamodb-blog/",\
+          "packageDependencies": [\
+            ["dynamodb-blog", "workspace:packages/dynamodb-blog"],\
+            ["@types/jest", "npm:29.0.1"],\
+            ["@types/react", "npm:18.0.15"],\
+            ["@types/testing-library__jest-dom", "npm:5.14.5"],\
+            ["@types/testing-library__react", "npm:10.2.0"],\
+            ["jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:28.1.0"],\
+            ["jest-environment-jsdom", "npm:28.1.3"],\
+            ["ts-jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:28.0.2"],\
+            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=a1c5e5"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["dynamodb-toolbox", [\
@@ -23051,6 +23097,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["concurrently", "npm:7.3.0"],\
             ["date-fns", "npm:2.28.0"],\
             ["db-blog", "workspace:packages/db-blog"],\
+            ["dynamodb-blog", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#workspace:packages/dynamodb-blog"],\
             ["esbuild", "npm:0.15.5"],\
             ["esbuild-css-modules-client-plugin", "npm:0.3.2"],\
             ["esbuild-ignore-with-comments-plugin", "npm:0.3.2"],\

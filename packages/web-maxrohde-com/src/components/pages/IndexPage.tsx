@@ -1,8 +1,7 @@
 import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
-import BlogList from '../BlogList';
-import { BlogListItemProps } from '../BlogListItem';
+import { BlogList, BlogListItemProps } from 'dynamodb-blog';
 
 export interface IndexProps {
   posts: BlogListItemProps[];

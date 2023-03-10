@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../Footer';
 import Header from '../Header';
-import TagList from '../TagList';
+import { TagList } from 'dynamodb-blog';
 
 import type { Post as PostType } from 'db-blog';
 import ErrorPage from './ErrorPage';
