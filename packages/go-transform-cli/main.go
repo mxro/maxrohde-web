@@ -89,12 +89,13 @@ func ProcessFrontMatter(path string, processor frontmatterProcessorFn) error {
 		return err
 	}
 
-	y, err := yaml.Marshal(frontmatterMap)
+	newFrontmatter, err := yaml.Marshal(frontmatterMap)
 	if err != nil {
 		return err
 	}
 
-	newContent := "---\n" + string(y) + "---\n\n" + body
+	fmt.Printf("%s", string(newFrontmatter))
+	newContent := "---\n" + string(newFrontmatter) + "---\n\n" + body
 
 	if err := ioutil.WriteFile(path, []byte(newContent), 0644); err != nil {
 		return err
