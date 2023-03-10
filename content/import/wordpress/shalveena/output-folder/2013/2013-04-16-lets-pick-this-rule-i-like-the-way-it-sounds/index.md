@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2013-04-16"
+id: lets-pick-this-rule-i-like-the-way-it-sounds
 title: Lets pick this rule, I like the way it sounds
 ---
 

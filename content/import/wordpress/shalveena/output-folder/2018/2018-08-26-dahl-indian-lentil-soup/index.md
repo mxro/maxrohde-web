@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_7012.jpg
 date: "2018-08-26"
+id: dahl-indian-lentil-soup
 tags:
 - beans
 - comfort-food

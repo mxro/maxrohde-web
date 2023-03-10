@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_3350.jpg
 date: "2017-12-30"
+id: vegan-spaghetti-with-tofu-mushroom-sauce
 tags:
 - bolognese
 - italian-food

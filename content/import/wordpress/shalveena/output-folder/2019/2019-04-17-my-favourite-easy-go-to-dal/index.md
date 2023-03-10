@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_9388.jpg
 date: "2019-04-17"
+id: my-favourite-easy-go-to-dal
 tags:
 - dinner
 - indian-food

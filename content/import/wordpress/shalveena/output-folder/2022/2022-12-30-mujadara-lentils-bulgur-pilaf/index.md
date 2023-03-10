@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: img_5094.jpeg
 date: "2022-12-30"
+id: mujadara-lentils-bulgur-pilaf
 tags:
 - beans
 - dinner

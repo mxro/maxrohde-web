@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_6508.jpg
 date: "2018-06-23"
+id: easy-and-quick-chickpea-soup-on-a-cold-winters-day
 tags:
 - beans
 - clean-eating

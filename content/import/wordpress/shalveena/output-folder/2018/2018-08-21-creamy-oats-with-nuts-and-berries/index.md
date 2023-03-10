@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_6980.jpg
 date: "2018-08-21"
+id: creamy-oats-with-nuts-and-berries
 tags:
 - breakfast-recipes
 - clean-eating

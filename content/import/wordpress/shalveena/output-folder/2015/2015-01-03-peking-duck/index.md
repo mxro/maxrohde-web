@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - recipes
 date: "2015-01-03"
+id: peking-duck
 title: Peking Duck
 ---
 

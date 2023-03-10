@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: img_6482.jpg
 date: "2022-01-08"
+id: super-easy-chickpea-tuna-sandwich
 tags:
 - beans
 - chickpea-recipes

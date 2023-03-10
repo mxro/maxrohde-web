@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_3752-e1521074659525.jpg
 date: "2018-02-04"
+id: delicious-vegan-chicken-curry
 tags:
 - curry
 - dinner

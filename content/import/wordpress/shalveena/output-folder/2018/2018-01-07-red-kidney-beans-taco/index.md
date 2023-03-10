@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_3402-copy-e1515283474862.jpg
 date: "2018-01-07"
+id: red-kidney-beans-taco
 tags:
 - beans
 - clean-eating

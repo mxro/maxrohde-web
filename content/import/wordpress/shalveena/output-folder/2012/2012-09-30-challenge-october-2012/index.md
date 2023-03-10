@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2012-09-30"
+id: challenge-october-2012
 title: 'Challenge: October 2012'
 ---
 

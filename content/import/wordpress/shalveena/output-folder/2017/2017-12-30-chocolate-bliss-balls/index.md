@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img20171202151528-e1514874907760.jpg
 date: "2017-12-30"
+id: chocolate-bliss-balls
 tags:
 - raw-food
 - sharlenes-favourites

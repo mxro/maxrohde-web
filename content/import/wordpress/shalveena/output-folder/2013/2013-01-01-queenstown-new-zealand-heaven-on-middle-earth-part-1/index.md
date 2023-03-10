@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - travels
 date: "2013-01-01"
+id: queenstown-new-zealand-heaven-on-middle-earth-part-1
 title: 'Queenstown, New Zealand: Heaven on Middle Earth (Part 1)'
 ---
 

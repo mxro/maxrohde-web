@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2013-08-07"
+id: hot-yoga-review-of-a-new-experience
 title: Hot Yoga - Review of a new experience
 ---
 

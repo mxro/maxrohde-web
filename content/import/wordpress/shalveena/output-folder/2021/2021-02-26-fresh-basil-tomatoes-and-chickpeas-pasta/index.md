@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: img_5203.jpg
 date: "2021-02-26"
+id: fresh-basil-tomatoes-and-chickpeas-pasta
 tags:
 - beans
 - easy-meals

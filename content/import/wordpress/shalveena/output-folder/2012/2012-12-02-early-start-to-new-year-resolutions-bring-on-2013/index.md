@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2012-12-02"
+id: early-start-to-new-year-resolutions-bring-on-2013
 title: 'Early start to New Year resolutions: Bring on 2013!'
 ---
 

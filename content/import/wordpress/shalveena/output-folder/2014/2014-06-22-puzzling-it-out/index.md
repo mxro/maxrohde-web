@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2014-06-22"
+id: puzzling-it-out
 title: Puzzling it out
 ---
 

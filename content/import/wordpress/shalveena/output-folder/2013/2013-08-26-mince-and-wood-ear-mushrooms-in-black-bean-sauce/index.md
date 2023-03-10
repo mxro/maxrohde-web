@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - recipes
 date: "2013-08-26"
+id: mince-and-wood-ear-mushrooms-in-black-bean-sauce
 title: Mince and wood ear mushrooms in black bean sauce
 ---
 

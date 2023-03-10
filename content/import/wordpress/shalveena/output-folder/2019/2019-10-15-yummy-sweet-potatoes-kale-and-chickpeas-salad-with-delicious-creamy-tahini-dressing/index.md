@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: img_0375.jpg
 date: "2019-10-15"
+id: yummy-sweet-potatoes-kale-and-chickpeas-salad-with-delicious-creamy-tahini-dressing
 tags:
 - kale
 - salads

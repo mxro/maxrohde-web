@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - recipes
 date: "2014-02-22"
+id: quick-tomato-and-vegetable-soup
 title: Quick Tomato and Vegetable Soup
 ---
 

@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2014-06-07"
+id: birthday-surprise-day-1
 title: Birthday Surprise - Day 1
 ---
 

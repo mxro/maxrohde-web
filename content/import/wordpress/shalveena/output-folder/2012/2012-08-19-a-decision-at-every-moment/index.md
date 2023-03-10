@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2012-08-19"
+id: a-decision-at-every-moment
 title: A decision at every moment
 ---
 

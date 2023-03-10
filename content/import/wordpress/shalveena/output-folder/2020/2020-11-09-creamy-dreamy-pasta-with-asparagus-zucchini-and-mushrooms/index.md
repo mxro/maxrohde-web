@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: img_4254.jpg
 date: "2020-11-09"
+id: creamy-dreamy-pasta-with-asparagus-zucchini-and-mushrooms
 tags:
 - asparagus-and-mushrooms
 - cashew-cream-pasta

@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2014-04-25"
+id: our-hindu-wedding-last-haldi
 title: 'Our Hindu Wedding: Last Haldi'
 ---
 

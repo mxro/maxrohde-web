@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2013-12-04"
+id: first-mandarin-chinese-lesson
 title: First Mandarin Chinese Lesson
 ---
 

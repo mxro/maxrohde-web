@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - travels
 date: "2013-06-14"
+id: phuket-day-5-stranded-in-the-rain
 title: Phuket Day 5 - Stranded in the rain
 ---
 

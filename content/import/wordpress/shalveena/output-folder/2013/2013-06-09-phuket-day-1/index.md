@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - travels
 date: "2013-06-09"
+id: phuket-day-1
 title: 'Phuket: Day 1'
 ---
 

@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - recipes
 date: "2013-08-31"
+id: super-weekday-breakfast
 title: Super Weekday Breakfast
 ---
 

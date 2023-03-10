@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_32101-e1514875141392.jpg
 date: "2017-12-30"
+id: vegan-tofu-spaghetti-bolognese
 tags:
 - bolognese
 - clean-eating

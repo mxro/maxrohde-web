@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - recipes
 date: "2013-11-23"
+id: green-smoothie-for-beginners
 title: Green Smoothie for Beginners
 ---
 

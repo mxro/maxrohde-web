@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2012-11-10"
+id: my-journey
 title: My Journey
 ---
 

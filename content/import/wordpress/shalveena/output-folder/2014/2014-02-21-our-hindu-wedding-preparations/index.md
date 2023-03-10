@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2014-02-21"
+id: our-hindu-wedding-preparations
 title: Our Hindu Wedding - Preparations
 ---
 

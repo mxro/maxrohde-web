@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_3353-e1515201108912.jpg
 date: "2018-01-06"
+id: super-easy-5-minute-hummus
 tags:
 - clean-eating
 - hummus

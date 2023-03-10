@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2014-05-11"
+id: our-hindu-wedding-final-part
 title: Our Hindu Wedding - Final part
 ---
 

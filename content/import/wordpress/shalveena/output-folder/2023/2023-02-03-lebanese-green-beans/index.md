@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: img_8383.jpg
 date: "2023-02-03"
+id: lebanese-green-beans
 tags:
 - beans
 - cheap-vegan-eats

@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2012-12-14"
+id: take-stock-what-are-you-grateful-for
 title: 'Take stock: What are you grateful for?'
 ---
 

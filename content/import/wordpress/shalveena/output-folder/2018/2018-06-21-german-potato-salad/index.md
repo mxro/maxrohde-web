@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_6495.jpg
 date: "2018-06-21"
+id: german-potato-salad
 tags:
 - german-food
 - potatoes

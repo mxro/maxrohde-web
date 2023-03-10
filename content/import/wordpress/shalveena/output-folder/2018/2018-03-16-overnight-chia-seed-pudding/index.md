@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_5413-e1521161378253.jpg
 date: "2018-03-16"
+id: overnight-chia-seed-pudding
 tags:
 - breakfast-recipes
 - clean-eating

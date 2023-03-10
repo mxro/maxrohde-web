@@ -6,6 +6,7 @@ categories:
 - recipes
 coverImage: img_4111.jpg
 date: "2020-11-02"
+id: easy-tofu-scramble
 tags:
 - breakfast-recipes
 - clean-eating

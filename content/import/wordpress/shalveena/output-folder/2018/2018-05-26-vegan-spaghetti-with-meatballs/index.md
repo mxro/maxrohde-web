@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - recipes
 date: "2018-05-26"
+id: vegan-spaghetti-with-meatballs
 tags:
 - dinner
 - italian-food

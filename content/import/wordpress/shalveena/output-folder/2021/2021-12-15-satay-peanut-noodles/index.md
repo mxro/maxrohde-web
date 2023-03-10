@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: img_6223.jpg
 date: "2021-12-15"
+id: satay-peanut-noodles
 tags:
 - dinner
 - easy-meals

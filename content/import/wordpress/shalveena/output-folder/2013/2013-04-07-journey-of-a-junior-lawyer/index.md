@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2013-04-07"
+id: journey-of-a-junior-lawyer
 title: Journey of a Junior Lawyer
 ---
 

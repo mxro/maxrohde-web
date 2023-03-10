@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: img_7701.jpg
 date: "2022-09-10"
+id: cannellini-bean-salad-with-avocado-and-sweet-tomatoes
 tags:
 - beans
 - clean-eating

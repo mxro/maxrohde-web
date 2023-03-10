@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2014-05-02"
+id: our-hindu-wedding-the-big-day-part-2
 title: 'Our Hindu Wedding: The Big Day Part 2'
 ---
 

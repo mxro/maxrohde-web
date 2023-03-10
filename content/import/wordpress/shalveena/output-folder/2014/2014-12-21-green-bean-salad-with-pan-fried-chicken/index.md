@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - recipes
 date: "2014-12-21"
+id: green-bean-salad-with-pan-fried-chicken
 title: Green bean salad with pan fried chicken
 ---
 

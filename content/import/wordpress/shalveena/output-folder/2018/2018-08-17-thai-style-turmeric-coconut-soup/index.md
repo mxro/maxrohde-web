@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_6961.jpg
 date: "2018-08-17"
+id: thai-style-turmeric-coconut-soup
 tags:
 - asian-food
 - beans

@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2013-12-08"
+id: the-four-dimensions-of-our-energy
 title: The Four Dimensions of Our Energy
 ---
 

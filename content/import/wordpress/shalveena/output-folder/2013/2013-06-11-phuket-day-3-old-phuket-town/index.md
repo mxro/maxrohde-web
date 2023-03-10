@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - travels
 date: "2013-06-11"
+id: phuket-day-3-old-phuket-town
 title: Phuket Day 3 - Old Phuket Town
 ---
 

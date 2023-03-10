@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - recipes
 date: "2013-09-02"
+id: my-cooking-journey-and-original-chicken-curry-recipe
 title: My cooking journey and original chicken curry recipe
 ---
 

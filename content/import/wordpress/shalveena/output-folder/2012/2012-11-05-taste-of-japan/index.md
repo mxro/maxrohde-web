@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2012-11-05"
+id: taste-of-japan
 title: Taste of Japan
 ---
 

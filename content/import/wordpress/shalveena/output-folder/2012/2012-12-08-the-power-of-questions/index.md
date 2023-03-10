@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2012-12-08"
+id: the-power-of-questions
 title: The Power of Questions
 ---
 

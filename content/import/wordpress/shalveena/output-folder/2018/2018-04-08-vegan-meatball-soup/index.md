@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - recipes
 date: "2018-04-08"
+id: vegan-meatball-soup
 tags:
 - dinner
 - soups

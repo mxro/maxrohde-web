@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: img_3857.jpeg
 date: "2020-09-19"
+id: chickpea-sweet-potato-and-rocket-salad
 tags:
 - easy-meals
 - healthy-food

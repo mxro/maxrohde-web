@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_20190222_173410_451.jpg
 date: "2019-02-25"
+id: vegan-lemon-cake
 tags:
 - desserts
 - vegan

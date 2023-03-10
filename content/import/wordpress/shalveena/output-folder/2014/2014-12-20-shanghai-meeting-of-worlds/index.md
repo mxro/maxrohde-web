@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - travels
 date: "2014-12-20"
+id: shanghai-meeting-of-worlds
 title: 'Shanghai: Meeting of Worlds'
 ---
 

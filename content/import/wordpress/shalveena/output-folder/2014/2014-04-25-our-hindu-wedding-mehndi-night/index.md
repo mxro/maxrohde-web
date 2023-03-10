@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2014-04-25"
+id: our-hindu-wedding-mehndi-night
 title: 'Our Hindu Wedding: Mehndi Night'
 ---
 

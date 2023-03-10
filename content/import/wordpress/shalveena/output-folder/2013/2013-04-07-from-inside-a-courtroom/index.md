@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2013-04-07"
+id: from-inside-a-courtroom
 title: From inside a Courtroom
 ---
 

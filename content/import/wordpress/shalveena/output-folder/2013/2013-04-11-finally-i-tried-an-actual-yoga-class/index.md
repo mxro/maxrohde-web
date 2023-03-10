@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2013-04-11"
+id: finally-i-tried-an-actual-yoga-class
 title: Finally, I tried an actual yoga class!
 ---
 

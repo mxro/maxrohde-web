@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_3398-edited.jpeg
 date: "2018-01-06"
+id: home-made-vegetable-stock
 tags:
 - clean-eating
 - crueltyfree

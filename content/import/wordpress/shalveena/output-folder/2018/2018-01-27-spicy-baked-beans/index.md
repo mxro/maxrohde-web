@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_3405.jpg
 date: "2018-01-27"
+id: spicy-baked-beans
 tags:
 - beans
 - family-favourites

@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2014-10-19"
+id: enforcing-overseas-judgment-in-new-zealand
 title: Enforcing Overseas Judgment in New Zealand
 ---
 

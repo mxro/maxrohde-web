@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_0215.jpg
 date: "2019-09-28"
+id: udon-noodle-stir-fry-with-mixed-beans
 title: Udon Noodle Stir Fry with Mixed Beans
 ---
 

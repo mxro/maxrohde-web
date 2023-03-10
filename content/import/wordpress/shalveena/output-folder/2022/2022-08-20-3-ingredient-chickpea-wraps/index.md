@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: img_7569-1.jpg
 date: "2022-08-20"
+id: 3-ingredient-chickpea-wraps
 tags:
 - clean-eating
 - vegan-recipes

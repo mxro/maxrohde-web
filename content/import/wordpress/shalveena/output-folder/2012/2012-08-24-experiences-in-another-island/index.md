@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - travels
 date: "2012-08-24"
+id: experiences-in-another-island
 title: Experiences in another Island
 ---
 

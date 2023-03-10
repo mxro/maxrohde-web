@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2012-12-02"
+id: starting-a-home-yoga-practice
 title: Starting a home yoga practice
 ---
 

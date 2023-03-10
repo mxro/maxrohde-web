@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_0209.jpg
 date: "2019-09-24"
+id: potato-and-leek-soup
 tags:
 - comfort-food
 - potatoes

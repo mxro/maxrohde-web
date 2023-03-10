@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: img_6126.jpg
 date: "2021-12-09"
+id: mild-spinach-curry
 tags:
 - clean-eating
 - curry

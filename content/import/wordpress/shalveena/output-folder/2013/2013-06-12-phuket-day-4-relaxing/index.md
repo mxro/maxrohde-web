@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - travels
 date: "2013-06-12"
+id: phuket-day-4-relaxing
 title: Phuket Day 4 - Relaxing
 ---
 

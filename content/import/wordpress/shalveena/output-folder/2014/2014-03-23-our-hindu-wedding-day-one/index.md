@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2014-03-23"
+id: our-hindu-wedding-day-one
 title: Our Hindu Wedding - Day One
 ---
 

@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_3499-e1521075183858.jpg
 date: "2018-03-15"
+id: korean-spinach-sigeumchi-namul
 tags:
 - asian-food
 - asian-vegan

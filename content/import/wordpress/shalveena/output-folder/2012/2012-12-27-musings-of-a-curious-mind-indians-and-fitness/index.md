@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2012-12-27"
+id: musings-of-a-curious-mind-indians-and-fitness
 title: 'Musings of a curious mind: Indians and Fitness'
 ---
 

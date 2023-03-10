@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2013-06-18"
+id: journey-back-to-our-corner-of-the-world-phuket-international-airport-suvarnabhumi-airport-auckland-international-airport
 title: 'Journey back to our corner of the world: Phuket International Airport - Suvarnabhumi
   Airport - Auckland International Airport'
 ---

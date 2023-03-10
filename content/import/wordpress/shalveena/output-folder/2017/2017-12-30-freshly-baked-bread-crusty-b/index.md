@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: imag1937.jpg
 date: "2017-12-30"
+id: freshly-baked-bread-crusty-b
 tags:
 - bread
 - sharlenes-favourites

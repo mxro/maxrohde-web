@@ -4,6 +4,7 @@ categories:
 - journal
 coverImage: img_3344-e1515039546218.jpg
 date: "2018-01-04"
+id: what-is-in-our-pantry
 tags:
 - kitchen-items
 - organising

@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2012-11-12"
+id: fresh-start-and-first-beginnings
 title: Fresh Start and First Beginnings
 ---
 

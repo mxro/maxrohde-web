@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - travels
 date: "2013-06-16"
+id: phuket-last-day-in-paradise
 title: Phuket - Last Day in Paradise
 ---
 

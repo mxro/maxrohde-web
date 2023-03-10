@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: img_6475.jpg
 date: "2022-01-04"
+id: chickpea-omelette
 tags:
 - breakfast
 - clean-eating

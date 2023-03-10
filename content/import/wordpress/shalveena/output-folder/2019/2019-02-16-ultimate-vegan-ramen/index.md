@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - recipes
 date: "2019-02-16"
+id: ultimate-vegan-ramen
 tags:
 - asian-food
 - comfort-food

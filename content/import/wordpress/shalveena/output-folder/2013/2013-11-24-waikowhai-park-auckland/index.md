@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2013-11-24"
+id: waikowhai-park-auckland
 title: Waikowhai Park Auckland
 ---
 

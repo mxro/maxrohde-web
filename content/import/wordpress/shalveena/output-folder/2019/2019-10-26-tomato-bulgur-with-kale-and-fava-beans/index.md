@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: img_0439.jpg
 date: "2019-10-26"
+id: tomato-bulgur-with-kale-and-fava-beans
 tags:
 - beans
 - bulgur

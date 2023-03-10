@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2013-07-12"
+id: who-do-you-want-to-be
 title: Who do you want to be?
 ---
 

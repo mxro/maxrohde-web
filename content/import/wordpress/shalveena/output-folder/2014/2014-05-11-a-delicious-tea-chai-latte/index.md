@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2014-05-11"
+id: a-delicious-tea-chai-latte
 title: A delicious tea chai latte
 ---
 

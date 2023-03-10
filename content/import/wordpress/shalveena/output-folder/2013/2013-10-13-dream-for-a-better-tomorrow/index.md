@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2013-10-13"
+id: dream-for-a-better-tomorrow
 title: Dream for a better tomorrow
 ---
 

@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_3371.jpg
 date: "2018-08-19"
+id: caramel-popcorn
 tags:
 - vegan-snacks
 title: Caramel Popcorn

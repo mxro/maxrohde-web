@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2012-10-13"
+id: late-winter-stroll
 title: Late Winter Stroll
 ---
 

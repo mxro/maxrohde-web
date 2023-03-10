@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2014-04-06"
+id: our-hindu-wedding-day-two-haldi-on-brides-side
 title: Our Hindu Wedding - Day Two - Haldi on Bride's side
 ---
 

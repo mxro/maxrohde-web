@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_6092-e1527239473477.jpg
 date: "2018-05-25"
+id: easy-and-tasty-taro-soup
 tags:
 - dinner
 - no-oil

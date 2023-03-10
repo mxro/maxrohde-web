@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2012-12-23"
+id: workout-zuzka-lights-zwod-1
 title: 'Workout: Zuzka Light''s ZWOD 1'
 ---
 

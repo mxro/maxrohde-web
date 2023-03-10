@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - travels
 date: "2014-10-04"
+id: honeymoon-in-ubud-bali
 title: Honeymoon in Ubud, Bali
 ---
 

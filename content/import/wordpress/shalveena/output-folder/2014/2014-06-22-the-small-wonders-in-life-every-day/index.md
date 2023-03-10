@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2014-06-22"
+id: the-small-wonders-in-life-every-day
 title: The small wonders in life every day
 ---
 

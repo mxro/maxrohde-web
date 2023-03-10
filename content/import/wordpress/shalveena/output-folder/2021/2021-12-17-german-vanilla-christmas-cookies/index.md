@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: img_6198.jpg
 date: "2021-12-17"
+id: german-vanilla-christmas-cookies
 tags:
 - christmas
 - christmas-cookies

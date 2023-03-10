@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: img_0426.jpg
 date: "2019-10-22"
+id: quick-soba-noodles-salad
 tags:
 - asian-food
 - asian-vegan

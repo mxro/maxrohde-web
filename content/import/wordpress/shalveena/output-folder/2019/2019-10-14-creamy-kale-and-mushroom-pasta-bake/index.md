@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: img_0355.jpg
 date: "2019-10-14"
+id: creamy-kale-and-mushroom-pasta-bake
 tags:
 - comfort-food
 - italian-food

@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2012-10-20"
+id: max-turns-28
 title: Max turns 28
 ---
 

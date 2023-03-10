@@ -4,6 +4,7 @@ categories:
 - travels
 coverImage: img_6620.jpg
 date: "2022-02-09"
+id: you-yang-ranges-branding-yard-trail
 tags:
 - explore-australia
 - explore-victoria

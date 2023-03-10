@@ -5,6 +5,7 @@ categories:
 - recipes
 coverImage: 4f8e69a3-eca9-42c4-96a0-c9aaa7a48264.jpg
 date: "2021-12-15"
+id: creamy-steel-cut-oats-with-fruits
 tags:
 - breakfast-recipes
 - clean-eating

@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2013-11-28"
+id: the-lunch-dialogue-negotiation-for-beginners
 title: 'The Lunch Dialogue: Negotiation for Beginners'
 ---
 

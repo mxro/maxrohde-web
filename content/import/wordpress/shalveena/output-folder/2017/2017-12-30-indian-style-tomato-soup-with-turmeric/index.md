@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_3347.jpg
 date: "2017-12-30"
+id: indian-style-tomato-soup-with-turmeric
 tags:
 - food-for-sick-days
 - indian-food

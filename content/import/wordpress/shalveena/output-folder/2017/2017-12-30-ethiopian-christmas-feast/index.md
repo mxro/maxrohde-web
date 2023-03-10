@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_3311-e1514618887158.jpg
 date: "2017-12-30"
+id: ethiopian-christmas-feast
 tags:
 - christmas-dinner
 - ethiopian-food

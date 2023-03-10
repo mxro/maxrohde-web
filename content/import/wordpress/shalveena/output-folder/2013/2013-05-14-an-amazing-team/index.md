@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2013-05-14"
+id: an-amazing-team
 title: An Amazing Team
 ---
 

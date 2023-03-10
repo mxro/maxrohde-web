@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2014-05-11"
+id: the-beauty-of-autumn-in-auckland
 title: The beauty of Autumn in Auckland
 ---
 

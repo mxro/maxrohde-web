@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2012-10-28"
+id: a-weekend-of-sunshine
 title: A weekend of sunshine
 ---
 

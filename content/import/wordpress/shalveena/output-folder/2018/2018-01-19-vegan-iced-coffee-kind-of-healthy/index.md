@@ -4,6 +4,7 @@ categories:
 - recipes
 coverImage: img_3567.jpg
 date: "2018-01-19"
+id: vegan-iced-coffee-kind-of-healthy
 tags:
 - beverage
 - beverages

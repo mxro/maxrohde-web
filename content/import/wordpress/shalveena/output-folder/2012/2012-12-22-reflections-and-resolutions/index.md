@@ -3,6 +3,7 @@ blog: shalveena.com
 categories:
 - journal
 date: "2012-12-22"
+id: reflections-and-resolutions
 title: Reflections and Resolutions
 ---
 
