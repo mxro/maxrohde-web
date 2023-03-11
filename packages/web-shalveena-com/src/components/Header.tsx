@@ -72,8 +72,8 @@ const HeaderMobile = (): JSX.Element => {
           <a href="/">
             <img
               className="h-16 w-16 rounded-full"
-              src="/_goldstack/static/img/2022/10/max.jpg"
-              alt="Max Rohde portrait"
+              src="/_goldstack/static/img/2023/03/IMG_9686.webp"
+              alt="Shalveena Rohde portrait"
             />
           </a>
           <nav className="space-x-10 flex">

@@ -16,7 +16,7 @@ tags:
 - shallys-favourites
 - vegan
 - vegan-recipes
-title: 'Mujadara: Lentils &amp; Bulgur Pilaf'
+title: 'Mujadara: Lentils & Bulgur Pilaf'
 ---
 
 Our whole family LOVES this dish. It's like a Lebanese version of the pilau that my family used to make in Fiji.
