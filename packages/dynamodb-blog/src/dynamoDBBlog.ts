@@ -20,3 +20,5 @@ export { renderPost } from './ssr/renderPost';
 export type { PostProps, ErrorPageProps } from './ssr/renderPost';
 
 export { renderSitemap } from './ssr/renderSitemap';
+
+export type { BlogConfig } from './blog';

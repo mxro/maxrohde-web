@@ -25,6 +25,7 @@ import {
   connect,
   getTableName,
 } from 'db-blog';
+import { BlogConfig } from '../blog';
 
 import { normalisePath } from './../lib/posts';
 
@@ -32,12 +33,14 @@ export interface ErrorPageProps {
   message: string;
 }
 export async function renderPost({
+  config,
   event,
   renderPage,
   renderErrorPage,
   PageComponent,
   ErrorPageComponent,
 }: {
+  config: BlogConfig;
   event: APIGatewayProxyEventV2;
   renderPage: (
     props: PartialRenderPageProps<PostProps>
@@ -52,7 +55,7 @@ export async function renderPost({
 
   const Posts = new Entity({ ...deepCopy(PostEntity), table } as const);
   const path = normalisePath(event.rawPath);
-  const postQueryResultPromise = Posts.query(PostPK({ blog: 'maxrohde.com' }), {
+  const postQueryResultPromise = Posts.query(PostPK({ blog: config.blog }), {
     reverse: true,
     limit: 10,
     eq: path, //'2022/01/16/memory-system-part-4-symbolic-systems',
@@ -62,12 +65,9 @@ export async function renderPost({
     ...deepCopy(BlogMetricEntity),
     table,
   } as const);
-  const visitsPromise = BlogMetrics.query(
-    BlogMetricPK({ blog: 'maxrohde.com' }),
-    {
-      eq: 'views',
-    }
-  );
+  const visitsPromise = BlogMetrics.query(BlogMetricPK({ blog: config.blog }), {
+    eq: 'views',
+  });
 
   let [postQueryResult, visits] = await Promise.all([
     postQueryResultPromise,
@@ -86,10 +86,15 @@ export async function renderPost({
 
     const newPath = getPreviousDaysPath(path);
     if (!newPath) {
-      return renderNotFound(event, renderErrorPage, ErrorPageComponent);
+      return renderNotFound(
+        config.blog,
+        event,
+        renderErrorPage,
+        ErrorPageComponent
+      );
     }
 
-    postQueryResult = await Posts.query(PostPK({ blog: 'maxrohde.com' }), {
+    postQueryResult = await Posts.query(PostPK({ blog: config.blog }), {
       reverse: true,
       limit: 10,
       eq: newPath,
@@ -97,13 +102,18 @@ export async function renderPost({
     });
 
     if (!postQueryResult.Items || postQueryResult.Count !== 1) {
-      return renderNotFound(event, renderErrorPage, ErrorPageComponent);
+      return renderNotFound(
+        config.blog,
+        event,
+        renderErrorPage,
+        ErrorPageComponent
+      );
     }
 
     return {
       statusCode: 301,
       headers: {
-        Location: `https://maxrohde.com/${newPath}`,
+        Location: `https://${config.blog}/${newPath}`,
       },
     };
   }
@@ -112,7 +122,7 @@ export async function renderPost({
   if (visits.Items && visits.Count === 1) {
     visitsCount = visits.Items[0].value;
     BlogMetrics.put({
-      blog: 'maxrohde.com',
+      blog: config.blog,
       metricId: 'views',
       value: visitsCount + 1,
     }).catch((e) => console.error('Cannot update views', e));
@@ -122,19 +132,24 @@ export async function renderPost({
     return {
       statusCode: 301,
       headers: {
-        Location: `https://maxrohde.com/${path}`,
+        Location: `https://${config.blog}/${path}`,
       },
     };
   }
 
   const post = postQueryResult.Items[0];
   if (!post) {
-    return renderNotFound(event, renderErrorPage, ErrorPageComponent);
+    return renderNotFound(
+      config.blog,
+      event,
+      renderErrorPage,
+      ErrorPageComponent
+    );
   }
   const res = renderPage({
     component: PageComponent,
     appendToHead: `
-      <title>${post.title} - Code of Joy</title>
+      <title>${post.title} - ${config.blogName}</title>
       ${
         post.canonicalUrl
           ? `<link rel="canonical" href="${post.canonicalUrl}" />
@@ -145,14 +160,14 @@ export async function renderPost({
       <meta property="og:title" content="${post.title}" />
       <meta property="article:published_time" content="${post.datePublished}" />
       <meta property="article:modified_time" content="${post.modified}" />
-      <meta property="og:site_name" content="Max Rohde's Blog - Code of Joy" />
+      <meta property="og:site_name" content="${config.title}" />
       ${
         post.coverImage
-          ? `<meta property="og:image" content="https://maxrohde.com${post.coverImage}" />`
+          ? `<meta property="og:image" content="https://${config.blog}${post.coverImage}" />`
           : ''
       }
-      <meta name="twitter:creator" content="@mxro" />
-      <meta name="twitter:site" content="@mxro" />
+      <meta name="twitter:creator" content="${config.creatorTwitterId}" />
+      <meta name="twitter:site" content="${config.creatorTwitterId}" />
       ${
         post.summary
           ? `<meta name="description" content="${post.summary}">`
@@ -161,7 +176,7 @@ export async function renderPost({
       <meta name="twitter:text:title" content="${post.title}" />
       ${
         post.coverImage
-          ? `<meta name="twitter:image" content="https://maxrohde.com${post.coverImage}" />`
+          ? `<meta name="twitter:image" content="https://${config.blog}${post.coverImage}" />`
           : ''
       }
       <meta name="twitter:card" content="summary_large_image" />
@@ -213,6 +228,7 @@ function getPreviousDaysPath(path: string): string | undefined {
 }
 
 async function renderNotFound(
+  blog: string,
   event: APIGatewayProxyEventV2,
   renderErrorPage: (
     props: PartialRenderPageProps<ErrorPageProps>
@@ -234,7 +250,7 @@ async function renderNotFound(
     .updateItem({
       TableName: await getTableName(),
       Key: {
-        pk: { S: BlogMetricPK({ blog: 'maxrohde.com' }) },
+        pk: { S: BlogMetricPK({ blog }) },
         sk: { S: `post-miss#${event.rawPath}` },
       },
       ExpressionAttributeValues: { ':inc': { N: '1' } },

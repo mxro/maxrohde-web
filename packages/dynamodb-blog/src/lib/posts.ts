@@ -3,6 +3,7 @@ import DynamoDB from 'aws-sdk/clients/dynamodb';
 import { getTableName, Post, PostPK } from 'db-blog';
 
 export interface LoadPostsArgs {
+  blog: string;
   postIds: string[];
   dynamodb: DynamoDB;
 }
@@ -18,6 +19,7 @@ export function normalisePath(path: string): string {
 }
 
 export async function loadPosts({
+  blog,
   dynamodb,
   postIds,
 }: LoadPostsArgs): Promise<Post[]> {
@@ -30,7 +32,7 @@ export async function loadPosts({
         [await getTableName()]: {
           Keys: postIds.map((el) => {
             return {
-              pk: DynamoDB.Converter.input(PostPK({ blog: 'maxrohde.com' })),
+              pk: DynamoDB.Converter.input(PostPK({ blog })),
               sk: DynamoDB.Converter.input(el),
             };
           }),
@@ -41,7 +43,7 @@ export async function loadPosts({
   // await dynamodb
   //   .executeStatement({
   //     Statement: `SELECT * FROM "${await getTableName()}"
-  //      WHERE "pk" = '${PostPK({ blog: 'maxrohde.com' })}'
+  //      WHERE "pk" = '${PostPK({ blog })}'
   //      AND "path" IN [${postIds.map((el) => `'${el}'`).join(', ')}]`,
   //     ReturnConsumedCapacity: 'INDEXES',
   //     Limit: 50,

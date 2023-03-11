@@ -19,12 +19,15 @@ import AWS from 'aws-sdk';
 import { loadPosts } from '../lib/posts';
 import { TagProps } from './renderCategory';
 import { PartialRenderPageProps } from '@goldstack/template-ssr';
+import { BlogConfig } from '../blog';
 
 export async function renderTag({
+  config,
   renderPage,
   event,
   PageComponent,
 }: {
+  config: BlogConfig;
   event: APIGatewayProxyEventV2;
   renderPage: (
     props: PartialRenderPageProps<TagProps>
@@ -43,13 +46,13 @@ export async function renderTag({
 
   const TagMappings = new Entity({ ...deepCopy(TagMappingEntity), table });
   const tagMappingResult = await TagMappings.query(
-    TagMappingPK({ blog: 'maxrohde.com', tagId }),
+    TagMappingPK({ blog: config.blog, tagId }),
     {
       limit: 10,
       reverse: true,
       startKey: event.queryStringParameters?.nextToken
         ? {
-            pk: TagMappingPK({ blog: 'maxrohde.com', tagId }),
+            pk: TagMappingPK({ blog: config.blog, tagId }),
             sk: event.queryStringParameters.nextToken,
           }
         : undefined,
@@ -65,13 +68,14 @@ export async function renderTag({
   }
 
   const posts = await loadPosts({
+    blog: config.blog,
     dynamodb,
     postIds,
   });
 
   return renderPage({
     component: PageComponent,
-    appendToHead: `<title>${tagId} - Code of Joy</title>`,
+    appendToHead: `<title>${tagId} - ${config.blogName}</title>`,
     properties: {
       id: tagId,
       nextToken,

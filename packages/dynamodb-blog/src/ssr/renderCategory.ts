@@ -25,12 +25,15 @@ export interface TagProps {
 
 import { loadPosts } from '../lib/posts';
 import { BlogListItemProps } from 'dynamodb-blog';
+import { BlogConfig } from '../blog';
 
 export async function renderCategory({
+  config,
   event,
   renderPage,
   PageComponent,
 }: {
+  config: BlogConfig;
   event: APIGatewayProxyEventV2;
   renderPage: (
     props: PartialRenderPageProps<TagProps>
@@ -53,13 +56,13 @@ export async function renderCategory({
   });
 
   const tagMappingResult = await CategoryMappings.query(
-    CategoryMappingPK({ blog: 'maxrohde.com', categoryId }),
+    CategoryMappingPK({ blog: config.blog, categoryId }),
     {
       limit: 10,
       reverse: true,
       startKey: event.queryStringParameters?.nextToken
         ? {
-            pk: CategoryMappingPK({ blog: 'maxrohde.com', categoryId }),
+            pk: CategoryMappingPK({ blog: config.blog, categoryId }),
             sk: event.queryStringParameters.nextToken,
           }
         : undefined,
@@ -75,13 +78,14 @@ export async function renderCategory({
   }
 
   const posts = await loadPosts({
+    blog: config.blog,
     dynamodb,
     postIds,
   });
 
   return renderPage({
     component: PageComponent,
-    appendToHead: `<title>${categoryId} - Code of Joy</title>`,
+    appendToHead: `<title>${categoryId} - ${config.blogName}</title>`,
     properties: {
       id: categoryId,
       nextToken,

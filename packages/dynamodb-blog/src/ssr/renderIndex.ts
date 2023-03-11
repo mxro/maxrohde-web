@@ -19,6 +19,7 @@ import { loadPosts } from '../lib/posts';
 import { BlogListItemProps } from 'dynamodb-blog';
 import { ErrorPageProps } from './renderPost';
 import { PartialRenderPageProps } from '@goldstack/template-ssr';
+import { BlogConfig } from '../blog';
 
 export interface IndexProps {
   posts: BlogListItemProps[];
@@ -28,12 +29,14 @@ export interface IndexProps {
 }
 
 export async function renderIndex({
+  config,
   event,
   renderPage,
   renderErrorPage,
   PageComponent,
   ErrorPageComponent,
 }: {
+  config: BlogConfig;
   event: APIGatewayProxyEventV2;
   renderPage: (
     props: PartialRenderPageProps<IndexProps>
@@ -51,23 +54,20 @@ export async function renderIndex({
   const startKey = event.queryStringParameters?.loadFrom
     ? {
         sk: event.queryStringParameters.loadFrom,
-        pk: 'maxrohde.com#Post',
+        pk: `${config.blog}#Post`,
       }
     : undefined;
 
-  const latestPostQuery = Posts.query(PostPK({ blog: 'maxrohde.com' }), {
+  const latestPostQuery = Posts.query(PostPK({ blog: config.blog }), {
     reverse: true,
     limit: 10,
     startKey,
   });
 
   const pinnedPostsQuery = loadPosts({
+    blog: config.blog,
     dynamodb,
-    postIds: [
-      '2022/10/16/serverless-react-ssr',
-      '2021/11/20/the-ultimate-guide-to-typescript-monorepos',
-      '2022/06/10/beginners-guide-to-dynamodb-with-node-js',
-    ],
+    postIds: config.pinnedPosts,
   });
 
   const [latestPostQueryResult, pinnedPostsQueryResult] = await Promise.all([
@@ -94,11 +94,11 @@ export async function renderIndex({
     
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Max Rohde&#39;s Blog - Code of Joy</title>
+      <title>${config.title}</title>
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="Max Rohde's Blog - Code of Joy" />
-      <meta property="og:description" content="Code and Contemplations by Max Rohde 🤗" />
-      <meta property="description" content="Code and Contemplations by Max Rohde 🤗" />
+      <meta property="og:site_name" content="${config.title}" />
+      <meta property="og:description" content="${config.description}" />
+      <meta property="description" content="${config.description}" />
     `,
     properties: {
       lastTimestamp: latestPostQueryResult.LastEvaluatedKey?.sk,

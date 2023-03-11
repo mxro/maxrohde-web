@@ -1,6 +1,6 @@
 /* esbuild-ignore ui */
 
-import {
+import type {
   APIGatewayProxyEventV2,
   APIGatewayProxyResultV2,
 } from 'aws-lambda/trigger/api-gateway-proxy';
@@ -14,9 +14,13 @@ import {
   Post,
 } from 'db-blog';
 
+import { BlogConfig } from '../blog';
+
 export async function renderSitemap({
+  config,
   event,
 }: {
+  config: BlogConfig;
   event: APIGatewayProxyEventV2;
 }): Promise<APIGatewayProxyResultV2> {
   const table = await connectTable();
@@ -26,19 +30,16 @@ export async function renderSitemap({
   let loadFrom: string | undefined = undefined;
   const items: Post[] = [];
   do {
-    const postQueryResult = await Posts.query(
-      PostPK({ blog: 'maxrohde.com' }),
-      {
-        reverse: true,
-        limit: 100,
-        startKey: loadFrom
-          ? {
-              sk: loadFrom,
-              pk: 'maxrohde.com#Post',
-            }
-          : undefined,
-      }
-    );
+    const postQueryResult = await Posts.query(PostPK({ blog: config.blog }), {
+      reverse: true,
+      limit: 100,
+      startKey: loadFrom
+        ? {
+            sk: loadFrom,
+            pk: `${config.blog}#Post`,
+          }
+        : undefined,
+    });
 
     loadFrom = postQueryResult.LastEvaluatedKey?.sk;
     items.push(...postQueryResult.Items);
@@ -50,7 +51,7 @@ export async function renderSitemap({
     .map((item) => {
       const d = new Date((item as any).modified);
       return `<url>
-    <loc>https://maxrohde.com/${item.path}</loc>
+    <loc>https://${config.blog}/${item.path}</loc>
     <lastmod>${d.toISOString().slice(0, 10)}</lastmod>
   </url>`;
     })

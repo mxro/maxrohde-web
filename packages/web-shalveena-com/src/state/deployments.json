@@ -1,0 +1,42 @@
+[
+  {
+    "name": "dev",
+    "terraform": {
+      "gateway_url": {
+        "sensitive": false,
+        "type": "string",
+        "value": "https://w27lrgdsia.execute-api.us-west-2.amazonaws.com"
+      },
+      "public_files_bucket": {
+        "sensitive": false,
+        "type": "string",
+        "value": "dev-shally.home.mxro.de-public-files-4f3267b7"
+      },
+      "static_files_bucket": {
+        "sensitive": false,
+        "type": "string",
+        "value": "dev-shally.home.mxro.de-static-files-4f3267b7"
+      }
+    }
+  },
+  {
+    "name": "prod",
+    "terraform": {
+      "gateway_url": {
+        "sensitive": false,
+        "type": "string",
+        "value": "https://fendntl17f.execute-api.us-west-2.amazonaws.com"
+      },
+      "public_files_bucket": {
+        "sensitive": false,
+        "type": "string",
+        "value": "maxrohde.com-public-files-ccad2942"
+      },
+      "static_files_bucket": {
+        "sensitive": false,
+        "type": "string",
+        "value": "maxrohde.com-static-files-ccad2942"
+      }
+    }
+  }
+]

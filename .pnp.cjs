@@ -51,6 +51,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "web-mxro-de",\
         "reference": "workspace:packages/web-mxro-de"\
+      },\
+      {\
+        "name": "web-shalveena-com",\
+        "reference": "workspace:packages/web-shalveena-com"\
       }\
     ],\
     "enableTopLevelFallback": true,\
@@ -64,7 +68,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["go-transform-cli", ["workspace:packages/go-transform-cli"]],\
       ["maxrohde-web", ["workspace:."]],\
       ["web-maxrohde-com", ["workspace:packages/web-maxrohde-com"]],\
-      ["web-mxro-de", ["workspace:packages/web-mxro-de"]]\
+      ["web-mxro-de", ["workspace:packages/web-mxro-de"]],\
+      ["web-shalveena-com", ["workspace:packages/web-shalveena-com"]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -23179,6 +23184,63 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["web-namespaces", "npm:1.1.4"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["web-shalveena-com", [\
+        ["workspace:packages/web-shalveena-com", {\
+          "packageLocation": "./packages/web-shalveena-com/",\
+          "packageDependencies": [\
+            ["web-shalveena-com", "workspace:packages/web-shalveena-com"],\
+            ["@goldstack/template-ssr", "npm:0.3.7"],\
+            ["@goldstack/template-ssr-cli", "npm:0.3.7"],\
+            ["@goldstack/utils-aws-http-api-local", "npm:0.3.5"],\
+            ["@goldstack/utils-esbuild", "npm:0.5.2"],\
+            ["@jest-mock/express", "npm:1.4.5"],\
+            ["@jest/transform", "npm:28.1.3"],\
+            ["@swc/core", "npm:1.2.224"],\
+            ["@swc/jest", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.2.22"],\
+            ["@tailwindcss/typography", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.5.7"],\
+            ["@testing-library/jest-dom", "npm:5.16.4"],\
+            ["@testing-library/react", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:13.3.0"],\
+            ["@types/aws-lambda", "npm:8.10.88"],\
+            ["@types/aws-serverless-express", "npm:3.3.3"],\
+            ["@types/jest", "npm:29.0.1"],\
+            ["@types/node", "npm:18.7.13"],\
+            ["@types/node-fetch", "npm:2.5.12"],\
+            ["@types/react", "npm:18.0.15"],\
+            ["@types/testing-library__jest-dom", "npm:5.14.5"],\
+            ["@types/testing-library__react", "npm:10.2.0"],\
+            ["@yarnpkg/esbuild-plugin-pnp", "virtual:36854d2ebec2b441588e93e6c0dc156bd6f4a6e4d799a582ea13e53c29ba87b5fab9a2aaa59dbcf11e9c67d4a967354ce30a92abde96fce80202300739f5115d#npm:3.0.0-rc.15"],\
+            ["autoprefixer", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:10.4.11"],\
+            ["aws-sdk", "npm:2.1222.0"],\
+            ["concurrently", "npm:7.3.0"],\
+            ["date-fns", "npm:2.28.0"],\
+            ["db-blog", "workspace:packages/db-blog"],\
+            ["dynamodb-blog", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#workspace:packages/dynamodb-blog"],\
+            ["esbuild", "npm:0.15.5"],\
+            ["esbuild-css-modules-client-plugin", "npm:0.3.2"],\
+            ["esbuild-ignore-with-comments-plugin", "npm:0.3.2"],\
+            ["find-free-port", "npm:2.0.0"],\
+            ["jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:28.1.0"],\
+            ["jest-environment-jsdom", "npm:28.1.3"],\
+            ["jest-transform-stub", "npm:2.0.0"],\
+            ["node-css-require", "npm:0.4.2"],\
+            ["node-fetch", "virtual:e414995db9c779306e687c7a7c66965e66d0cd7270f6b9fc4f00cc9772c5d50b305ab83e142e0e21dbf10968f7437cbdfcb170d05f4bde68707ac7d0082c9cca#npm:2.6.7"],\
+            ["postcss", "npm:8.4.16"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:18.2.0"],\
+            ["rimraf", "npm:3.0.2"],\
+            ["source-map-support", "npm:0.5.21"],\
+            ["static-file-mapper-build", "npm:0.3.3"],\
+            ["supertest", "npm:4.0.2"],\
+            ["tailwindcss", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:3.1.8"],\
+            ["ts-jest", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:28.0.2"],\
+            ["ts-node", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:10.9.1"],\
+            ["ts-node-dev", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:2.0.0"],\
+            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=a1c5e5"],\
+            ["typescript-plugin-css-modules", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:3.4.0"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["webidl-conversions", [\
