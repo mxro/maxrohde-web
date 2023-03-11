@@ -33,6 +33,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/db-notion"\
       },\
       {\
+        "name": "dynamodb-blog",\
+        "reference": "workspace:packages/dynamodb-blog"\
+      },\
+      {\
         "name": "email-send",\
         "reference": "workspace:packages/email-send"\
       },\
@@ -55,6 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["article-cli", ["workspace:packages/article-cli"]],\
       ["db-blog", ["workspace:packages/db-blog"]],\
       ["db-notion", ["workspace:packages/db-notion"]],\
+      ["dynamodb-blog", ["virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#workspace:packages/dynamodb-blog", "workspace:packages/dynamodb-blog"]],\
       ["email-send", ["workspace:packages/email-send"]],\
       ["go-transform-cli", ["workspace:packages/go-transform-cli"]],\
       ["maxrohde-web", ["workspace:."]],\
@@ -1825,7 +1830,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/utils-template", "npm:0.4.2"],\
             ["@goldstack/utils-terraform", "npm:0.4.3"],\
             ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:fd4323ccd2313b3d04a02b371fa497209321e36863b1fd36482da9e9f468f37dcc1c8e7c33d3572dc27b9600f548d26696615d9daca5b6fa024c4e43a9231f81#npm:18.2.0"],\
+            ["react-dom", "virtual:ec63f41e5242cdb9c7e81501cde09c9d416bf8f30d4751bc6b8c658a034195b16adfb5a172328dd7ea619727d200342c9dd8bbc0106f0c3d4b935346c015035f#npm:18.2.0"],\
             ["source-map-support", "npm:0.5.21"]\
           ],\
           "linkType": "HARD"\
@@ -1844,7 +1849,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/utils-template", "npm:0.4.2"],\
             ["@goldstack/utils-terraform", "npm:0.4.4"],\
             ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:fd4323ccd2313b3d04a02b371fa497209321e36863b1fd36482da9e9f468f37dcc1c8e7c33d3572dc27b9600f548d26696615d9daca5b6fa024c4e43a9231f81#npm:18.2.0"],\
+            ["react-dom", "virtual:ec63f41e5242cdb9c7e81501cde09c9d416bf8f30d4751bc6b8c658a034195b16adfb5a172328dd7ea619727d200342c9dd8bbc0106f0c3d4b935346c015035f#npm:18.2.0"],\
             ["source-map-support", "npm:0.5.21"]\
           ],\
           "linkType": "HARD"\
@@ -1895,7 +1900,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/utils-terraform", "npm:0.4.3"],\
             ["lambda-compression", "npm:0.2.2"],\
             ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:fd4323ccd2313b3d04a02b371fa497209321e36863b1fd36482da9e9f468f37dcc1c8e7c33d3572dc27b9600f548d26696615d9daca5b6fa024c4e43a9231f81#npm:18.2.0"],\
+            ["react-dom", "virtual:ec63f41e5242cdb9c7e81501cde09c9d416bf8f30d4751bc6b8c658a034195b16adfb5a172328dd7ea619727d200342c9dd8bbc0106f0c3d4b935346c015035f#npm:18.2.0"],\
             ["source-map-support", "npm:0.5.21"],\
             ["static-file-mapper", "npm:0.3.3"]\
           ],\
@@ -1917,7 +1922,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/utils-terraform", "npm:0.4.4"],\
             ["lambda-compression", "npm:0.2.2"],\
             ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:fd4323ccd2313b3d04a02b371fa497209321e36863b1fd36482da9e9f468f37dcc1c8e7c33d3572dc27b9600f548d26696615d9daca5b6fa024c4e43a9231f81#npm:18.2.0"],\
+            ["react-dom", "virtual:ec63f41e5242cdb9c7e81501cde09c9d416bf8f30d4751bc6b8c658a034195b16adfb5a172328dd7ea619727d200342c9dd8bbc0106f0c3d4b935346c015035f#npm:18.2.0"],\
             ["source-map-support", "npm:0.5.21"],\
             ["static-file-mapper", "npm:0.3.3"]\
           ],\
@@ -1941,7 +1946,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["esbuild", "npm:0.15.5"],\
             ["lambda-compression", "npm:0.2.2"],\
             ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:fd4323ccd2313b3d04a02b371fa497209321e36863b1fd36482da9e9f468f37dcc1c8e7c33d3572dc27b9600f548d26696615d9daca5b6fa024c4e43a9231f81#npm:18.2.0"],\
+            ["react-dom", "virtual:ec63f41e5242cdb9c7e81501cde09c9d416bf8f30d4751bc6b8c658a034195b16adfb5a172328dd7ea619727d200342c9dd8bbc0106f0c3d4b935346c015035f#npm:18.2.0"],\
             ["source-map-support", "npm:0.5.21"],\
             ["static-file-mapper-build", "npm:0.3.3"]\
           ],\
@@ -1963,7 +1968,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["esbuild", "npm:0.15.5"],\
             ["lambda-compression", "npm:0.2.2"],\
             ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:fd4323ccd2313b3d04a02b371fa497209321e36863b1fd36482da9e9f468f37dcc1c8e7c33d3572dc27b9600f548d26696615d9daca5b6fa024c4e43a9231f81#npm:18.2.0"],\
+            ["react-dom", "virtual:ec63f41e5242cdb9c7e81501cde09c9d416bf8f30d4751bc6b8c658a034195b16adfb5a172328dd7ea619727d200342c9dd8bbc0106f0c3d4b935346c015035f#npm:18.2.0"],\
             ["source-map-support", "npm:0.5.21"],\
             ["static-file-mapper-build", "npm:0.3.3"]\
           ],\
@@ -2071,7 +2076,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/utils-aws-cli", "npm:0.4.3"],\
             ["@goldstack/utils-log", "npm:0.3.2"],\
             ["@goldstack/utils-sh", "npm:0.5.2"],\
-            ["@yarnpkg/esbuild-plugin-pnp", "virtual:5e8f0b9075f5293a36abaa33c5d9196b855bf217d9af144f2ab8e990aa2ff8cef4bfd113a84f84420b1b48c5fc2b9d54e29a14f1d27405bf163c35df5a36b0f2#npm:3.0.0-rc.15"],\
+            ["@yarnpkg/esbuild-plugin-pnp", "virtual:36854d2ebec2b441588e93e6c0dc156bd6f4a6e4d799a582ea13e53c29ba87b5fab9a2aaa59dbcf11e9c67d4a967354ce30a92abde96fce80202300739f5115d#npm:3.0.0-rc.15"],\
             ["archiver", "npm:5.3.1"],\
             ["aws-sdk", "npm:2.1055.0"],\
             ["esbuild", "npm:0.15.5"],\
@@ -2087,7 +2092,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/utils-aws-cli", "npm:0.4.4"],\
             ["@goldstack/utils-log", "npm:0.3.2"],\
             ["@goldstack/utils-sh", "npm:0.5.2"],\
-            ["@yarnpkg/esbuild-plugin-pnp", "virtual:5e8f0b9075f5293a36abaa33c5d9196b855bf217d9af144f2ab8e990aa2ff8cef4bfd113a84f84420b1b48c5fc2b9d54e29a14f1d27405bf163c35df5a36b0f2#npm:3.0.0-rc.15"],\
+            ["@yarnpkg/esbuild-plugin-pnp", "virtual:36854d2ebec2b441588e93e6c0dc156bd6f4a6e4d799a582ea13e53c29ba87b5fab9a2aaa59dbcf11e9c67d4a967354ce30a92abde96fce80202300739f5115d#npm:3.0.0-rc.15"],\
             ["archiver", "npm:5.3.1"],\
             ["aws-sdk", "npm:2.1222.0"],\
             ["esbuild", "npm:0.15.5"],\
@@ -5476,10 +5481,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:5e8f0b9075f5293a36abaa33c5d9196b855bf217d9af144f2ab8e990aa2ff8cef4bfd113a84f84420b1b48c5fc2b9d54e29a14f1d27405bf163c35df5a36b0f2#npm:3.0.0-rc.15", {\
-          "packageLocation": "./.yarn/__virtual__/@yarnpkg-esbuild-plugin-pnp-virtual-b2964f83b4/0/cache/@yarnpkg-esbuild-plugin-pnp-npm-3.0.0-rc.15-b916c218b3-04da15355a.zip/node_modules/@yarnpkg/esbuild-plugin-pnp/",\
+        ["virtual:36854d2ebec2b441588e93e6c0dc156bd6f4a6e4d799a582ea13e53c29ba87b5fab9a2aaa59dbcf11e9c67d4a967354ce30a92abde96fce80202300739f5115d#npm:3.0.0-rc.15", {\
+          "packageLocation": "./.yarn/__virtual__/@yarnpkg-esbuild-plugin-pnp-virtual-7ffcfd1e0a/0/cache/@yarnpkg-esbuild-plugin-pnp-npm-3.0.0-rc.15-b916c218b3-04da15355a.zip/node_modules/@yarnpkg/esbuild-plugin-pnp/",\
           "packageDependencies": [\
-            ["@yarnpkg/esbuild-plugin-pnp", "virtual:5e8f0b9075f5293a36abaa33c5d9196b855bf217d9af144f2ab8e990aa2ff8cef4bfd113a84f84420b1b48c5fc2b9d54e29a14f1d27405bf163c35df5a36b0f2#npm:3.0.0-rc.15"],\
+            ["@yarnpkg/esbuild-plugin-pnp", "virtual:36854d2ebec2b441588e93e6c0dc156bd6f4a6e4d799a582ea13e53c29ba87b5fab9a2aaa59dbcf11e9c67d4a967354ce30a92abde96fce80202300739f5115d#npm:3.0.0-rc.15"],\
             ["@types/esbuild", null],\
             ["esbuild", "npm:0.15.5"],\
             ["tslib", "npm:2.4.0"]\
@@ -9341,6 +9346,57 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["open", "npm:8.4.0"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["dynamodb-blog", [\
+        ["virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#workspace:packages/dynamodb-blog", {\
+          "packageLocation": "./.yarn/__virtual__/dynamodb-blog-virtual-b9b1c60f29/1/packages/dynamodb-blog/",\
+          "packageDependencies": [\
+            ["dynamodb-blog", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#workspace:packages/dynamodb-blog"],\
+            ["@goldstack/template-ssr", "npm:0.3.7"],\
+            ["@types/aws-lambda", "npm:8.10.88"],\
+            ["@types/jest", "npm:29.0.1"],\
+            ["@types/node", "npm:18.7.13"],\
+            ["@types/react", "npm:18.0.15"],\
+            ["@types/react-dom", null],\
+            ["@types/testing-library__jest-dom", "npm:5.14.5"],\
+            ["@types/testing-library__react", "npm:10.2.0"],\
+            ["aws-sdk", "npm:2.1222.0"],\
+            ["db-blog", "workspace:packages/db-blog"],\
+            ["jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:28.1.0"],\
+            ["jest-environment-jsdom", "npm:28.1.3"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:18.2.0"],\
+            ["ts-jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:28.0.2"],\
+            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=a1c5e5"]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react",\
+            "react-dom",\
+            "react"\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["workspace:packages/dynamodb-blog", {\
+          "packageLocation": "./packages/dynamodb-blog/",\
+          "packageDependencies": [\
+            ["dynamodb-blog", "workspace:packages/dynamodb-blog"],\
+            ["@goldstack/template-ssr", "npm:0.3.7"],\
+            ["@types/aws-lambda", "npm:8.10.88"],\
+            ["@types/jest", "npm:29.0.1"],\
+            ["@types/node", "npm:18.7.13"],\
+            ["@types/react", "npm:18.0.15"],\
+            ["@types/testing-library__jest-dom", "npm:5.14.5"],\
+            ["@types/testing-library__react", "npm:10.2.0"],\
+            ["aws-sdk", "npm:2.1222.0"],\
+            ["db-blog", "workspace:packages/db-blog"],\
+            ["jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:28.1.0"],\
+            ["jest-environment-jsdom", "npm:28.1.3"],\
+            ["ts-jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:28.0.2"],\
+            ["typescript", "patch:typescript@npm%3A4.7.4#~builtin<compat/typescript>::version=4.7.4&hash=a1c5e5"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["dynamodb-toolbox", [\
@@ -18872,10 +18928,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["virtual:fd4323ccd2313b3d04a02b371fa497209321e36863b1fd36482da9e9f468f37dcc1c8e7c33d3572dc27b9600f548d26696615d9daca5b6fa024c4e43a9231f81#npm:18.2.0", {\
-          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-1a34d8fd11/0/cache/react-dom-npm-18.2.0-dd675bca1c-7d323310be.zip/node_modules/react-dom/",\
+        ["virtual:ec63f41e5242cdb9c7e81501cde09c9d416bf8f30d4751bc6b8c658a034195b16adfb5a172328dd7ea619727d200342c9dd8bbc0106f0c3d4b935346c015035f#npm:18.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-f4122f4396/0/cache/react-dom-npm-18.2.0-dd675bca1c-7d323310be.zip/node_modules/react-dom/",\
           "packageDependencies": [\
-            ["react-dom", "virtual:fd4323ccd2313b3d04a02b371fa497209321e36863b1fd36482da9e9f468f37dcc1c8e7c33d3572dc27b9600f548d26696615d9daca5b6fa024c4e43a9231f81#npm:18.2.0"],\
+            ["react-dom", "virtual:ec63f41e5242cdb9c7e81501cde09c9d416bf8f30d4751bc6b8c658a034195b16adfb5a172328dd7ea619727d200342c9dd8bbc0106f0c3d4b935346c015035f#npm:18.2.0"],\
             ["@types/react", null],\
             ["loose-envify", "npm:1.4.0"],\
             ["react", "npm:18.2.0"],\
@@ -23045,12 +23101,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.0.15"],\
             ["@types/testing-library__jest-dom", "npm:5.14.5"],\
             ["@types/testing-library__react", "npm:10.2.0"],\
-            ["@yarnpkg/esbuild-plugin-pnp", "virtual:5e8f0b9075f5293a36abaa33c5d9196b855bf217d9af144f2ab8e990aa2ff8cef4bfd113a84f84420b1b48c5fc2b9d54e29a14f1d27405bf163c35df5a36b0f2#npm:3.0.0-rc.15"],\
+            ["@yarnpkg/esbuild-plugin-pnp", "virtual:36854d2ebec2b441588e93e6c0dc156bd6f4a6e4d799a582ea13e53c29ba87b5fab9a2aaa59dbcf11e9c67d4a967354ce30a92abde96fce80202300739f5115d#npm:3.0.0-rc.15"],\
             ["autoprefixer", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:10.4.11"],\
             ["aws-sdk", "npm:2.1222.0"],\
             ["concurrently", "npm:7.3.0"],\
             ["date-fns", "npm:2.28.0"],\
             ["db-blog", "workspace:packages/db-blog"],\
+            ["dynamodb-blog", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#workspace:packages/dynamodb-blog"],\
             ["esbuild", "npm:0.15.5"],\
             ["esbuild-css-modules-client-plugin", "npm:0.3.2"],\
             ["esbuild-ignore-with-comments-plugin", "npm:0.3.2"],\

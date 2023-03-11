@@ -39,6 +39,9 @@
       "path": "packages/db-notion"
     },
     {
+      "path": "packages/dynamodb-blog"
+    },
+    {
       "path": "packages/email-send"
     },
     {

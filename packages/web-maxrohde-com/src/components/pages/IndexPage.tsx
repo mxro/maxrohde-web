@@ -1,15 +1,8 @@
 import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
-import BlogList from '../BlogList';
-import { BlogListItemProps } from '../BlogListItem';
-
-export interface IndexProps {
-  posts: BlogListItemProps[];
-  pinnedPosts: BlogListItemProps[];
-  firstPage: boolean;
-  lastTimestamp?: string;
-}
+import { BlogList } from 'dynamodb-blog';
+import { IndexProps } from 'dynamodb-blog';
 
 const Index = (props: IndexProps): JSX.Element => {
   return (

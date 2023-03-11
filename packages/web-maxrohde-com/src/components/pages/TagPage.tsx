@@ -1,14 +1,8 @@
 import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
-import BlogList from '../BlogList';
-import { BlogListItemProps } from '../BlogListItem';
-
-export interface TagProps {
-  id: string;
-  posts: BlogListItemProps[];
-  nextToken?: string;
-}
+import { BlogList } from 'dynamodb-blog';
+import { TagProps } from 'dynamodb-blog';
 
 const TagPage = (props: TagProps): JSX.Element => {
   return (

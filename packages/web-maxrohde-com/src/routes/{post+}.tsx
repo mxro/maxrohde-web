@@ -6,14 +6,21 @@ import type {
 } from 'aws-lambda';
 type SSRHandler = Handler<APIGatewayProxyEventV2, APIGatewayProxyResultV2>;
 
-import { hydrate } from '../render';
-import * as renderPost from '../ssr/renderPost';
+import { hydrate, renderPage } from '../render';
 
+import { renderPost } from 'dynamodb-blog';
+import ErrorPage from '../components/pages/ErrorPage';
 import PostPage from '../components/pages/PostPage';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const handler: SSRHandler = async (event, context) => {
-  return renderPost.renderPost({ event });
+  return renderPost({
+    event,
+    renderPage: renderPage,
+    renderErrorPage: renderPage,
+    PageComponent: PostPage,
+    ErrorPageComponent: ErrorPage,
+  });
 };
 
 hydrate(PostPage);

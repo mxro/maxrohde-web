@@ -28,6 +28,9 @@
   "references": [
     {
       "path": "../db-blog"
+    },
+    {
+      "path": "../dynamodb-blog"
     }
   ]
 }
