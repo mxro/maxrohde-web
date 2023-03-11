@@ -1,0 +1,31 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "web-shalveena-com",
+  "template": "server-side-rendering",
+  "templateVersion": "0.1.5",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "dev",
+      "configuration": {
+        "lambdas": {},
+        "lambdaNamePrefix": "shalveena-dev",
+        "domain": "dev-shally.home.mxro.de",
+        "hostedZoneDomain": "mxro.de"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2"
+    },
+    {
+      "name": "prod",
+      "configuration": {
+        "lambdas": {},
+        "lambdaNamePrefix": "shalveena-prod",
+        "domain": "shalveena.com",
+        "hostedZoneDomain": "shalveena.com"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2"
+    }
+  ]
+}
