@@ -8,10 +8,15 @@ export { default as TagList } from './components/TagList';
 export { loadPosts, normalisePath } from './lib/posts';
 
 export { renderIndex } from './ssr/renderIndex';
+
+export type { IndexProps } from './ssr/renderIndex';
+
 export { renderTag } from './ssr/renderTag';
+
 export { renderCategory } from './ssr/renderCategory';
 
+export type { TagProps } from './ssr/renderCategory';
 export { renderPost } from './ssr/renderPost';
-export type { PostProps } from './ssr/renderPost';
+export type { PostProps, ErrorPageProps } from './ssr/renderPost';
 
 export { renderSitemap } from './ssr/renderSitemap';

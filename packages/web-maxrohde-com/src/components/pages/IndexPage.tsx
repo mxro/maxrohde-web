@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
 import { BlogList } from 'dynamodb-blog';
-import { IndexProps } from '../../ssr/renderIndex';
+import { IndexProps } from 'dynamodb-blog';
 
 const Index = (props: IndexProps): JSX.Element => {
   return (

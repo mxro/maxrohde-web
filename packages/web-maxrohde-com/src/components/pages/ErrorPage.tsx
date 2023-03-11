@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
-import { ErrorPageProps } from '../../ssr/renderPost';
+import { ErrorPageProps } from 'dynamodb-blog';
 
 const ErrorPage = (props: ErrorPageProps): JSX.Element => {
   return (
