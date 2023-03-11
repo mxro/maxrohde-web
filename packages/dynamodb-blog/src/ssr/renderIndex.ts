@@ -28,12 +28,14 @@ export interface IndexProps {
 }
 
 export async function renderIndex({
+  blog,
   event,
   renderPage,
   renderErrorPage,
   PageComponent,
   ErrorPageComponent,
 }: {
+  blog: string;
   event: APIGatewayProxyEventV2;
   renderPage: (
     props: PartialRenderPageProps<IndexProps>
@@ -51,17 +53,18 @@ export async function renderIndex({
   const startKey = event.queryStringParameters?.loadFrom
     ? {
         sk: event.queryStringParameters.loadFrom,
-        pk: 'maxrohde.com#Post',
+        pk: `${blog}#Post`,
       }
     : undefined;
 
-  const latestPostQuery = Posts.query(PostPK({ blog: 'maxrohde.com' }), {
+  const latestPostQuery = Posts.query(PostPK({ blog }), {
     reverse: true,
     limit: 10,
     startKey,
   });
 
   const pinnedPostsQuery = loadPosts({
+    blog,
     dynamodb,
     postIds: [
       '2022/10/16/serverless-react-ssr',

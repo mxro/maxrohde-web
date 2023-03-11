@@ -7,6 +7,7 @@ import { APIGatewayProxyEventV2, APIGatewayProxyResultV2 } from 'aws-lambda';
 import IndexPage from './../components/pages/IndexPage';
 import { renderIndex } from 'dynamodb-blog';
 import ErrorPage from '../components/pages/ErrorPage';
+import { BLOG_CONFIG } from '../blog';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const handler: SSRHandler = async (
@@ -14,6 +15,7 @@ export const handler: SSRHandler = async (
   context: APIGatewayProxyResultV2
 ) => {
   return renderIndex({
+    blog: BLOG_CONFIG.blog,
     event,
     renderErrorPage: renderPage,
     renderPage,

@@ -15,8 +15,10 @@ import {
 } from 'db-blog';
 
 export async function renderSitemap({
+  blog,
   event,
 }: {
+  blog: string;
   event: APIGatewayProxyEventV2;
 }): Promise<APIGatewayProxyResultV2> {
   const table = await connectTable();
@@ -26,19 +28,16 @@ export async function renderSitemap({
   let loadFrom: string | undefined = undefined;
   const items: Post[] = [];
   do {
-    const postQueryResult = await Posts.query(
-      PostPK({ blog: 'maxrohde.com' }),
-      {
-        reverse: true,
-        limit: 100,
-        startKey: loadFrom
-          ? {
-              sk: loadFrom,
-              pk: 'maxrohde.com#Post',
-            }
-          : undefined,
-      }
-    );
+    const postQueryResult = await Posts.query(PostPK({ blog }), {
+      reverse: true,
+      limit: 100,
+      startKey: loadFrom
+        ? {
+            sk: loadFrom,
+            pk: `${blog}#Post`,
+          }
+        : undefined,
+    });
 
     loadFrom = postQueryResult.LastEvaluatedKey?.sk;
     items.push(...postQueryResult.Items);
@@ -50,7 +49,7 @@ export async function renderSitemap({
     .map((item) => {
       const d = new Date((item as any).modified);
       return `<url>
-    <loc>https://maxrohde.com/${item.path}</loc>
+    <loc>https://${blog}/${item.path}</loc>
     <lastmod>${d.toISOString().slice(0, 10)}</lastmod>
   </url>`;
     })

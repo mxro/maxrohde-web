@@ -21,10 +21,12 @@ import { TagProps } from './renderCategory';
 import { PartialRenderPageProps } from '@goldstack/template-ssr';
 
 export async function renderTag({
+  blog,
   renderPage,
   event,
   PageComponent,
 }: {
+  blog: string;
   event: APIGatewayProxyEventV2;
   renderPage: (
     props: PartialRenderPageProps<TagProps>
@@ -43,13 +45,13 @@ export async function renderTag({
 
   const TagMappings = new Entity({ ...deepCopy(TagMappingEntity), table });
   const tagMappingResult = await TagMappings.query(
-    TagMappingPK({ blog: 'maxrohde.com', tagId }),
+    TagMappingPK({ blog, tagId }),
     {
       limit: 10,
       reverse: true,
       startKey: event.queryStringParameters?.nextToken
         ? {
-            pk: TagMappingPK({ blog: 'maxrohde.com', tagId }),
+            pk: TagMappingPK({ blog, tagId }),
             sk: event.queryStringParameters.nextToken,
           }
         : undefined,
@@ -65,6 +67,7 @@ export async function renderTag({
   }
 
   const posts = await loadPosts({
+    blog,
     dynamodb,
     postIds,
   });

@@ -32,12 +32,14 @@ export interface ErrorPageProps {
   message: string;
 }
 export async function renderPost({
+  blog,
   event,
   renderPage,
   renderErrorPage,
   PageComponent,
   ErrorPageComponent,
 }: {
+  blog: string;
   event: APIGatewayProxyEventV2;
   renderPage: (
     props: PartialRenderPageProps<PostProps>
@@ -52,7 +54,7 @@ export async function renderPost({
 
   const Posts = new Entity({ ...deepCopy(PostEntity), table } as const);
   const path = normalisePath(event.rawPath);
-  const postQueryResultPromise = Posts.query(PostPK({ blog: 'maxrohde.com' }), {
+  const postQueryResultPromise = Posts.query(PostPK({ blog }), {
     reverse: true,
     limit: 10,
     eq: path, //'2022/01/16/memory-system-part-4-symbolic-systems',
@@ -62,12 +64,9 @@ export async function renderPost({
     ...deepCopy(BlogMetricEntity),
     table,
   } as const);
-  const visitsPromise = BlogMetrics.query(
-    BlogMetricPK({ blog: 'maxrohde.com' }),
-    {
-      eq: 'views',
-    }
-  );
+  const visitsPromise = BlogMetrics.query(BlogMetricPK({ blog }), {
+    eq: 'views',
+  });
 
   let [postQueryResult, visits] = await Promise.all([
     postQueryResultPromise,
@@ -86,10 +85,10 @@ export async function renderPost({
 
     const newPath = getPreviousDaysPath(path);
     if (!newPath) {
-      return renderNotFound(event, renderErrorPage, ErrorPageComponent);
+      return renderNotFound(blog, event, renderErrorPage, ErrorPageComponent);
     }
 
-    postQueryResult = await Posts.query(PostPK({ blog: 'maxrohde.com' }), {
+    postQueryResult = await Posts.query(PostPK({ blog }), {
       reverse: true,
       limit: 10,
       eq: newPath,
@@ -97,13 +96,13 @@ export async function renderPost({
     });
 
     if (!postQueryResult.Items || postQueryResult.Count !== 1) {
-      return renderNotFound(event, renderErrorPage, ErrorPageComponent);
+      return renderNotFound(blog, event, renderErrorPage, ErrorPageComponent);
     }
 
     return {
       statusCode: 301,
       headers: {
-        Location: `https://maxrohde.com/${newPath}`,
+        Location: `https://${blog}/${newPath}`,
       },
     };
   }
@@ -112,7 +111,7 @@ export async function renderPost({
   if (visits.Items && visits.Count === 1) {
     visitsCount = visits.Items[0].value;
     BlogMetrics.put({
-      blog: 'maxrohde.com',
+      blog,
       metricId: 'views',
       value: visitsCount + 1,
     }).catch((e) => console.error('Cannot update views', e));
@@ -122,14 +121,14 @@ export async function renderPost({
     return {
       statusCode: 301,
       headers: {
-        Location: `https://maxrohde.com/${path}`,
+        Location: `https://${blog}/${path}`,
       },
     };
   }
 
   const post = postQueryResult.Items[0];
   if (!post) {
-    return renderNotFound(event, renderErrorPage, ErrorPageComponent);
+    return renderNotFound(blog, event, renderErrorPage, ErrorPageComponent);
   }
   const res = renderPage({
     component: PageComponent,
@@ -213,6 +212,7 @@ function getPreviousDaysPath(path: string): string | undefined {
 }
 
 async function renderNotFound(
+  blog: string,
   event: APIGatewayProxyEventV2,
   renderErrorPage: (
     props: PartialRenderPageProps<ErrorPageProps>
@@ -234,7 +234,7 @@ async function renderNotFound(
     .updateItem({
       TableName: await getTableName(),
       Key: {
-        pk: { S: BlogMetricPK({ blog: 'maxrohde.com' }) },
+        pk: { S: BlogMetricPK({ blog }) },
         sk: { S: `post-miss#${event.rawPath}` },
       },
       ExpressionAttributeValues: { ':inc': { N: '1' } },

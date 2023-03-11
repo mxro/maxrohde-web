@@ -23,7 +23,8 @@ export async function deleteAll(args: DeleteArgs): Promise<void> {
       const unmarshalled = DynamoDB.Converter.unmarshall(item);
       if (
         unmarshalled.pk === '#MIGRATIONS' ||
-        unmarshalled.pk === 'maxrohde.com#Metric'
+        unmarshalled.pk === 'maxrohde.com#Metric' ||
+        unmarshalled.pk === 'shalveena.com#Metric'
       ) {
         console.log('Skipping delete for', unmarshalled.pk);
         return;

@@ -27,10 +27,12 @@ import { loadPosts } from '../lib/posts';
 import { BlogListItemProps } from 'dynamodb-blog';
 
 export async function renderCategory({
+  blog,
   event,
   renderPage,
   PageComponent,
 }: {
+  blog: string;
   event: APIGatewayProxyEventV2;
   renderPage: (
     props: PartialRenderPageProps<TagProps>
@@ -53,13 +55,13 @@ export async function renderCategory({
   });
 
   const tagMappingResult = await CategoryMappings.query(
-    CategoryMappingPK({ blog: 'maxrohde.com', categoryId }),
+    CategoryMappingPK({ blog, categoryId }),
     {
       limit: 10,
       reverse: true,
       startKey: event.queryStringParameters?.nextToken
         ? {
-            pk: CategoryMappingPK({ blog: 'maxrohde.com', categoryId }),
+            pk: CategoryMappingPK({ blog, categoryId }),
             sk: event.queryStringParameters.nextToken,
           }
         : undefined,
@@ -75,6 +77,7 @@ export async function renderCategory({
   }
 
   const posts = await loadPosts({
+    blog,
     dynamodb,
     postIds,
   });
