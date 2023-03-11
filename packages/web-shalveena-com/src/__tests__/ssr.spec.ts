@@ -27,7 +27,7 @@ describe('Should create page', () => {
   test('Should receive response and support parameters', async () => {
     const res = await fetch(`${getEndpoint()}/`);
     const response = await res.text();
-    expect(response).toContain('Code of Joy');
+    expect(response).toContain('Shalveena Rohde');
   });
 
   afterAll(async () => {
