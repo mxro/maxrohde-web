@@ -1,7 +1,8 @@
 import React from 'react';
 import Footer from '../Footer';
 import Header from '../Header';
-import { PostProps, TagList } from 'dynamodb-blog';
+import type { PostProps } from 'dynamodb-blog';
+import TagList from 'dynamodb-blog/src/components/TagList';
 
 import ErrorPage from './ErrorPage';
 

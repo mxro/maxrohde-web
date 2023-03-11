@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
-import { BlogList } from 'dynamodb-blog';
-import { IndexProps } from 'dynamodb-blog';
+import BlogList from 'dynamodb-blog/src/components/BlogList';
+import type { IndexProps } from 'dynamodb-blog';
 
 const Index = (props: IndexProps): JSX.Element => {
   return (

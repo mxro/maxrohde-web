@@ -1,7 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { SSRHandler } from '@goldstack/template-ssr';
+import type { SSRHandler } from '@goldstack/template-ssr';
 
-import { APIGatewayProxyEventV2, APIGatewayProxyResultV2 } from 'aws-lambda';
+import type {
+  APIGatewayProxyEventV2,
+  APIGatewayProxyResultV2,
+} from 'aws-lambda';
 import { BLOG_CONFIG } from '../blog';
 
 export const handler: SSRHandler = async (
