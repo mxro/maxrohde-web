@@ -1,15 +1,22 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { SSRHandler } from '@goldstack/template-ssr';
+import type { SSRHandler } from '@goldstack/template-ssr';
 
-import { APIGatewayProxyEventV2, APIGatewayProxyResultV2 } from 'aws-lambda';
+import type {
+  APIGatewayProxyEventV2,
+  APIGatewayProxyResultV2,
+} from 'aws-lambda';
 
-import { renderSitemap } from 'dynamodb-blog';
+import * as blogLib from 'dynamodb-blog/src/ssr/renderSitemap';
+import { BLOG_CONFIG } from '../blog';
 
 export const handler: SSRHandler = async (
   event: APIGatewayProxyEventV2,
   context: APIGatewayProxyResultV2
 ) => {
-  return renderSitemap({ event });
+  return blogLib.renderSitemap({
+    config: BLOG_CONFIG,
+    event,
+  });
 };
 
 export default handler;

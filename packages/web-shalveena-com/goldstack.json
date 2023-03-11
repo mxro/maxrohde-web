@@ -8,18 +8,77 @@
     {
       "name": "dev",
       "configuration": {
-        "lambdas": {},
+        "lambdas": {
+          "ANY /": {
+            "function_name": "shalveena-dev--__index",
+            "route": "ANY /"
+          },
+          "ANY /about": {
+            "function_name": "shalveena-dev-about",
+            "route": "ANY /about"
+          },
+          "ANY /categories/{id}": {
+            "function_name": "shalveena-dev-categories-_id_",
+            "route": "ANY /categories/{id}"
+          },
+          "ANY /robots.txt": {
+            "function_name": "shalveena-dev-robots_txt",
+            "route": "ANY /robots.txt"
+          },
+          "ANY /sitemap.xml": {
+            "function_name": "shalveena-dev-sitemap_xml",
+            "route": "ANY /sitemap.xml"
+          },
+          "ANY /tags/{id}": {
+            "function_name": "shalveena-dev-tags-_id_",
+            "route": "ANY /tags/{id}"
+          },
+          "ANY /{post+}": {
+            "function_name": "shalveena-dev-_post__",
+            "route": "ANY /{post+}"
+          }
+        },
         "lambdaNamePrefix": "shalveena-dev",
         "domain": "dev-shally.home.mxro.de",
         "hostedZoneDomain": "mxro.de"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2"
+      "awsRegion": "us-west-2",
+      "tfStateKey": "web-shalveena-com-dev-749a72e66e0a830ee2f7.tfstate"
     },
     {
       "name": "prod",
       "configuration": {
-        "lambdas": {},
+        "lambdas": {
+          "ANY /": {
+            "function_name": "shalveena-prod--__index",
+            "route": "ANY /"
+          },
+          "ANY /about": {
+            "function_name": "shalveena-prod-about",
+            "route": "ANY /about"
+          },
+          "ANY /categories/{id}": {
+            "function_name": "shalveena-prod-categories-_id_",
+            "route": "ANY /categories/{id}"
+          },
+          "ANY /robots.txt": {
+            "function_name": "shalveena-prod-robots_txt",
+            "route": "ANY /robots.txt"
+          },
+          "ANY /sitemap.xml": {
+            "function_name": "shalveena-prod-sitemap_xml",
+            "route": "ANY /sitemap.xml"
+          },
+          "ANY /tags/{id}": {
+            "function_name": "shalveena-prod-tags-_id_",
+            "route": "ANY /tags/{id}"
+          },
+          "ANY /{post+}": {
+            "function_name": "shalveena-prod-_post__",
+            "route": "ANY /{post+}"
+          }
+        },
         "lambdaNamePrefix": "shalveena-prod",
         "domain": "shalveena.com",
         "hostedZoneDomain": "shalveena.com"

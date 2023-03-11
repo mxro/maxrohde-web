@@ -1,14 +1,18 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { SSRHandler } from '@goldstack/template-ssr';
+import type { SSRHandler } from '@goldstack/template-ssr';
 
-import { APIGatewayProxyEventV2, APIGatewayProxyResultV2 } from 'aws-lambda';
+import type {
+  APIGatewayProxyEventV2,
+  APIGatewayProxyResultV2,
+} from 'aws-lambda';
+import { BLOG_CONFIG } from '../blog';
 
 export const handler: SSRHandler = async (
   event: APIGatewayProxyEventV2,
   context: APIGatewayProxyResultV2
 ) => {
   return {
-    body: `Sitemap: https://maxrohde.com/sitemap.xml
+    body: `Sitemap: https://${BLOG_CONFIG.blog}/sitemap.xml
 User-agent: *
 ${process.env.GOLDSTACK_DEPLOYMENT !== 'prod' ? 'Disallow: /' : ''}`,
     headers: {

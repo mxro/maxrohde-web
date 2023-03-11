@@ -1,19 +1,26 @@
 import React, { useState } from 'react';
-import { SSRHandler } from '@goldstack/template-ssr';
+import type { SSRHandler } from '@goldstack/template-ssr';
 
-import { renderPage, hydrate } from './../render';
-import { APIGatewayProxyEventV2, APIGatewayProxyResultV2 } from 'aws-lambda';
+import { hydrate, renderPage } from './../render';
+import type {
+  APIGatewayProxyEventV2,
+  APIGatewayProxyResultV2,
+} from 'aws-lambda';
 
 import IndexPage from './../components/pages/IndexPage';
-import { renderIndex } from 'dynamodb-blog';
+
+import * as blogLib from 'dynamodb-blog/src/ssr/renderIndex';
+
 import ErrorPage from '../components/pages/ErrorPage';
+import { BLOG_CONFIG } from '../blog';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const handler: SSRHandler = async (
   event: APIGatewayProxyEventV2,
   context: APIGatewayProxyResultV2
 ) => {
-  return renderIndex({
+  return blogLib.renderIndex({
+    config: BLOG_CONFIG,
     event,
     renderErrorPage: renderPage,
     renderPage,
