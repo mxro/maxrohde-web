@@ -12,7 +12,10 @@ const Footer = (): JSX.Element => {
             <span>Connect on social networks:</span>
           </div>
           <div className="flex justify-center">
-            <a href="https://twitter.com/mxro" className="mr-6 text-gray-600">
+            <a
+              href="https://twitter.com/shalveena_rohde"
+              className="mr-6 text-gray-600"
+            >
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -30,7 +33,7 @@ const Footer = (): JSX.Element => {
               </svg>
             </a>
             <a
-              href="https://www.linkedin.com/in/maxrohde/"
+              href="https://www.linkedin.com/in/shalveena-rohde/"
               className="mr-6 text-gray-600"
             >
               <svg
@@ -49,7 +52,7 @@ const Footer = (): JSX.Element => {
                 ></path>
               </svg>
             </a>
-            <a href="https://github.com/mxro" className="text-gray-600">
+            <a href="https://github.com/Shalveena/" className="text-gray-600">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -82,12 +85,9 @@ const Footer = (): JSX.Element => {
             md:justify-start
           "
               >
-                Code of Joy
+                Shalveena Rohde
               </h6>
-              <p>
-                Coding tutorials and contemplations on leadership and
-                philosophy.
-              </p>
+              <p>Musings on Food &amp; Life</p>
             </div>
 
             <div className="">
@@ -96,15 +96,22 @@ const Footer = (): JSX.Element => {
               </h6>
               <p className="items-center justify-center md:justify-start mb-4">
                 {'Connect and reach out on '}
-                <a href="https://www.linkedin.com/in/maxrohde/"> LinkedIn </a>.
+                <a href="https://www.linkedin.com/in/shalveena-rohde/">
+                  {' '}
+                  LinkedIn{' '}
+                </a>
+                .
               </p>
             </div>
           </div>
         </div>
         <div className="text-center p-6 bg-gray-200">
           <span>© 2023 Copyright: </span>
-          <a className="text-gray-600 font-semibold" href="https://mxro.de/">
-            Max Rohde
+          <a
+            className="text-gray-600 font-semibold"
+            href="https://shalveena.com/"
+          >
+            Shalveena Rohde
           </a>
         </div>
       </footer>

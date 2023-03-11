@@ -8,8 +8,8 @@ const HeaderDesktop = (): JSX.Element => {
           <a href="/">
             <img
               className="h-16 w-16 rounded-full"
-              src="/_goldstack/static/img/2022/10/max.jpg"
-              alt="Max Rohde portrait"
+              src="/_goldstack/static/img/2023/03/IMG_9686.webp"
+              alt="Shalveena Rohde portrait"
             />
           </a>
         </div>
@@ -20,7 +20,7 @@ const HeaderDesktop = (): JSX.Element => {
             <h1 className="text-2xl">Shalveena Rohde</h1>
           </a>
           <h2 className="text-sm align-bottom" style={{ marginTop: '0.75rem' }}>
-            My Blog
+            Food &amp; Life
           </h2>
         </nav>
         <div className="hidden items-center justify-end md:flex sm:flex-1 md:w-0">
@@ -50,8 +50,8 @@ const HeaderMobile = (): JSX.Element => {
           </a>
           <nav className="space-x-10 flex">
             <a href="/">
-              <span className="sr-only">Code of Joy</span>
-              <h1 className="text-2xl">Code of Joy</h1>
+              <span className="sr-only">Shalveena Rohde</span>
+              <h1 className="text-2xl">Shalveena Rohde</h1>
             </a>
           </nav>
         </div>

@@ -13,15 +13,12 @@ const About = (): JSX.Element => {
           About
         </h1>
         <div className="mx-auto mt-14">
-          <p>
-            Coding tutorials and how-tos for small- to mid-size development
-            projects. Contemplations about leadership and philosophy.
-          </p>
+          <p>Musing on Food &amp; Life</p>
           <p className="pt-4">Come and say hi or follow me:</p>
           <ul className="pt-4">
             <li>
               <a
-                href="https://dev.to/mxro"
+                href="https://dev.to/shalveena"
                 className="text-blue-600 hover:text-blue-900 transition duration-300 ease-in-out"
               >
                 <svg
@@ -34,12 +31,12 @@ const About = (): JSX.Element => {
                     d="M120.12 208.29c-3.88-2.9-7.77-4.35-11.65-4.35H91.03v104.47h17.45c3.88 0 7.77-1.45 11.65-4.35 3.88-2.9 5.82-7.25 5.82-13.06v-69.65c-.01-5.8-1.96-10.16-5.83-13.06zM404.1 32H43.9C19.7 32 .06 51.59 0 75.8v360.4C.06 460.41 19.7 480 43.9 480h360.2c24.21 0 43.84-19.59 43.9-43.8V75.8c-.06-24.21-19.7-43.8-43.9-43.8zM154.2 291.19c0 18.81-11.61 47.31-48.36 47.25h-46.4V172.98h47.38c35.44 0 47.36 28.46 47.37 47.28l.01 70.93zm100.68-88.66H201.6v38.42h32.57v29.57H201.6v38.41h53.29v29.57h-62.18c-11.16.29-20.44-8.53-20.72-19.69V193.7c-.27-11.15 8.56-20.41 19.71-20.69h63.19l-.01 29.52zm103.64 115.29c-13.2 30.75-36.85 24.63-47.44 0l-38.53-144.8h32.57l29.71 113.72 29.57-113.72h32.58l-38.46 144.8z"
                   ></path>
                 </svg>{' '}
-                <span className="pl-2">dev.to/mxro</span>
+                <span className="pl-2">dev.to/shalveena</span>
               </a>
             </li>
             <li className="pt-4">
               <a
-                href="https://twitter.com/mxro"
+                href="https://twitter.com/shalveena_rohde"
                 className="text-blue-600 hover:text-blue-900 transition duration-300 ease-in-out"
               >
                 <svg
@@ -52,7 +49,7 @@ const About = (): JSX.Element => {
                     d="M221.95 51.29c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07 7.57 1.46 15.37 1.16 22.8-.87-23.56-4.76-40.51-25.46-40.51-49.5v-.64c7.02 3.91 14.88 6.08 22.92 6.32C11.58 63.31 4.74 33.79 18.14 10.71c25.64 31.55 63.47 50.73 104.08 52.76-4.07-17.54 1.49-35.92 14.61-48.25 20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26-3.77 11.69-11.66 21.62-22.2 27.93 10.01-1.18 19.79-3.86 29-7.95-6.78 10.16-15.32 19.01-25.2 26.16z"
                   />
                 </svg>{' '}
-                <span className="pl-2">@mxro</span>
+                <span className="pl-2">@shalveena_rohde</span>
               </a>
             </li>
             <li className="pt-4">
@@ -78,12 +75,12 @@ const About = (): JSX.Element => {
                     d="M125 173c0-4-2-9-5-11l-31-38v-6h98l75 166 67-166h93v6l-27 26c-2 1-3 4-3 7v190c0 3 1 6 3 8l27 25v6H289v-6l27-26c3-3 3-4 3-8V193l-76 192h-10l-88-192v129c-1 5 1 11 5 15l35 43v5H85v-5l35-43c4-4 6-10 5-15z"
                   />
                 </svg>{' '}
-                <span className="pl-2">mxro.medium.com</span>
+                <span className="pl-2">shalveena.medium.com</span>
               </a>
             </li>
             <li className="pt-4">
               <a
-                href="https://www.linkedin.com/in/maxrohde/"
+                href="https://www.linkedin.com/in/shalveena-rohde/"
                 className="text-blue-600 hover:text-blue-900 transition duration-300 ease-in-out"
               >
                 <svg
@@ -104,7 +101,7 @@ const About = (): JSX.Element => {
 	L341.91,330.654L341.91,330.654z"
                   />
                 </svg>{' '}
-                <span className="pl-2">maxrohde</span>
+                <span className="pl-2">shalveena-rohde</span>
               </a>
             </li>
 
@@ -120,7 +117,7 @@ const About = (): JSX.Element => {
                 <polygon points="309.9,245 490,397.8 490,92.2 			" />
               </svg>{' '}
               <span className="pl-2">
-                [me]@gmail.com, me: “maxrohde.public”
+                [name]@shalveena.com, name: “contact”
               </span>
             </li>
           </ul>
@@ -135,7 +132,7 @@ const About = (): JSX.Element => {
 export const handler: SSRHandler = async (event, context) => {
   return renderPage({
     component: About,
-    appendToHead: '<title>Code of Joy - About</title>',
+    appendToHead: '<title>Shalveena Rohde - About</title>',
     properties: {},
     entryPoint: __filename,
     event,

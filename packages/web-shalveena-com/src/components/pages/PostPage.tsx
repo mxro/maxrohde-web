@@ -54,10 +54,7 @@ const PostPage = (props: PostProps): JSX.Element => {
           )}
         </div>
         <div className="hidden md:block basis-1/5">
-          <p className="pt-24">
-            Insights for developing lean applications with ease 😎 and my
-            musings on life and leadership ✍.
-          </p>
+          <p className="pt-24">Musings on Food &amp; Life</p>
 
           <div className="pt-8 text-center">
             <a

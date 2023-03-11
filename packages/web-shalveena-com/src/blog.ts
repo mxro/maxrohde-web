@@ -6,5 +6,9 @@ export const BLOG_CONFIG: BlogConfig = {
   title: 'Shalveena&#39;s Blog',
   description: 'Musings by Shalveena Rohde',
   creatorTwitterId: '@shalveena_rohde',
-  pinnedPosts: [],
+  pinnedPosts: [
+    '2020/10/10/our-parents-in-us',
+    '2022/03/26/tofu-bolognese',
+    '2022/02/09/you-yang-ranges-branding-yard-trail',
+  ],
 };
