@@ -24,12 +24,40 @@ const HeaderDesktop = (): JSX.Element => {
           </h2>
         </nav>
         <div className="hidden items-center justify-end md:flex sm:flex-1 md:w-0">
-          <a
-            href="/about"
-            className="text-base font-medium text-gray-500 hover:text-gray-900"
-          >
-            About
-          </a>
+          <ul className="flex">
+            <li className="mr-6">
+              <a
+                href="/categories/travels"
+                className="text-base font-medium text-gray-500 hover:text-gray-900"
+              >
+                Travels
+              </a>
+            </li>
+            <li className="mr-6">
+              <a
+                href="/categories/recipes"
+                className="text-base font-medium text-gray-500 hover:text-gray-900"
+              >
+                Recipes
+              </a>
+            </li>
+            <li className="mr-6">
+              <a
+                href="/categories/articles"
+                className="text-base font-medium text-gray-500 hover:text-gray-900"
+              >
+                Articles
+              </a>
+            </li>
+            <li className="mr-6">
+              <a
+                href="/about"
+                className="text-base font-medium text-gray-500 hover:text-gray-900"
+              >
+                About
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
