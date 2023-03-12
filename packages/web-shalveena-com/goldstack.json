@@ -84,7 +84,8 @@
         "hostedZoneDomain": "shalveena.com"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2"
+      "awsRegion": "us-west-2",
+      "tfStateKey": "web-shalveena-com-prod-0339ffeade61fc1cdfa8.tfstate"
     }
   ]
 }

@@ -25,17 +25,17 @@
       "gateway_url": {
         "sensitive": false,
         "type": "string",
-        "value": "https://fendntl17f.execute-api.us-west-2.amazonaws.com"
+        "value": "https://903ih9d4we.execute-api.us-west-2.amazonaws.com"
       },
       "public_files_bucket": {
         "sensitive": false,
         "type": "string",
-        "value": "maxrohde.com-public-files-ccad2942"
+        "value": "shalveena.com-public-files-4ed447fc"
       },
       "static_files_bucket": {
         "sensitive": false,
         "type": "string",
-        "value": "maxrohde.com-static-files-ccad2942"
+        "value": "shalveena.com-static-files-4ed447fc"
       }
     }
   }
