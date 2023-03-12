@@ -18,16 +18,18 @@ const renderDocument = async (
     ${
       process.env.GOLDSTACK_DEPLOYMENT === 'prod'
         ? `
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JJMHNEGWN0"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3FQ4C12DPE"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-JJMHNEGWN0');
+  gtag('config', 'G-3FQ4C12DPE');
 </script>
-<meta name="google-site-verification" content="UStW42ElnbQombE-juP0Q5gmDqmN54dImU-b21VlQ24" />
+
+
     `
         : ''
     }
