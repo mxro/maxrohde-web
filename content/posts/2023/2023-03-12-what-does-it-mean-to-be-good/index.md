@@ -68,7 +68,7 @@ I also want to be very mindful of excuses I may make up to act selfishly; instea
 
 I think it is a very liberating to worry less about ones own happiness, stature, gain and comfort; though admittedly this is sometimes not that easy to do but definitely a skill that is worthwhile investing in. Siddhartha in one of my [all-time favourite books by Herman Hesse](https://www.goodreads.com/book/show/52036.Siddhartha) explains this very nicely when asked what are his most abilities by the merchant Kamaswami.
 
-![Siddhartha talking to Kamaswami](DALL·E%202023-03-12%2016.59.32%20-%20Siddharta%20talking%20with%20Kamaswami%20in%20the%20style%20of%20ancient%20indian%20paintings.png)
+![Siddhartha talking to Kamaswami](images/kamaswami.png)
 
 Kamaswami: “... What is it that you’ve learned, what you’re able to do?”
 

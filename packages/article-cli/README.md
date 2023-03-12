@@ -16,13 +16,19 @@ To prepare an article for publishing, use `yarn article prepare [article name pa
 yarn article prepare "HTTP Endpoint"
 ```
 
+Note preparing an article will *delete* it and its resources from the `Drafts` and `Resources` directories.
+
 ## Publish Article
 
 To publish an article, use `yarn article publish [article folder pattern]`:
 
 ```
-yarn article publish http-endpoint
+yarn article publish -e prod http-endpoint
 ```
+
+Note that after publishing an article, its files will stay in place, so that it can be published again in the future.
+
+After the `yarn article publish` command is run, all the blogs that the article has been published too need to be deployed. This is required so that all additional static resources (e.g. images) are deployed.
 
 ## Publish all articles locally
 
