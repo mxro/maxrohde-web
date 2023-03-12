@@ -4,6 +4,7 @@ distWeb/
 distLambda/
 goldstackLocal/
 packages/web-maxrohde-com/static/generated/
+packages/web-shalveena-com/static/generated/
 coverage/
 node_modules/
 .next/
