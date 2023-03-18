@@ -22,7 +22,7 @@ title: Lebanese Green Beans
 
 If you don't like green breans, if you think they are boring and easily overcooked, you've got to try these!
 
-These beans are out of this world. I am absolutely NOT a bean lover...in fact, I tend to subconsciously avoid them! But my oh my, I'm now a fan. These beans are slowly cooked for 1 hour and the result is flavourful, slightly sweet, garlicy and 100% lick-you-fingers delicious.
+These beans are out of this world! I am absolutely NOT a bean lover...in fact, I tend to subconsciously avoid them! But my oh my, I'm now a fan. These beans are slowly cooked for 1 hour and the result is flavourful, slightly sweet, garlicy and 100% lick-you-fingers delicious.
 
 Go on, try them!
 
