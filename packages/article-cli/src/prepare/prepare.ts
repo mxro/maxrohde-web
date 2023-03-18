@@ -34,6 +34,13 @@ export async function findPrepareFiles(args: PrepareArgs): Promise<string[]> {
   return matches;
 }
 
+function formatDate(date: Date): string {
+  const year = date.getFullYear();
+  const month = ('0' + (date.getMonth() + 1)).slice(-2);
+  const day = ('0' + date.getDate()).slice(-2);
+  return year + '-' + month + '-' + day;
+}
+
 export async function prepare(args: PrepareArgs): Promise<void> {
   const files = await findPrepareFiles(args);
 
@@ -53,10 +60,11 @@ export async function prepare(args: PrepareArgs): Promise<void> {
       if (!post.metadata.blog) {
         throw new Error('Post `blog` needs to be provided');
       }
-      const year = new Date(post.metadata.date).getFullYear();
-      const postDir = `${args.postsDir || config['postsDir']}/${year}/${
-        post.metadata.date
-      }-${post.metadata.id}`;
+      const dateObject = new Date(post.metadata.date);
+      const year = dateObject.getFullYear();
+      const postDir = `${
+        args.postsDir || config['postsDir']
+      }/${year}/${formatDate(dateObject)}-${post.metadata.id}`;
 
       const postFile = `${postDir}/index.md`;
 

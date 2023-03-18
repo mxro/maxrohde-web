@@ -17,11 +17,12 @@ const HeaderDesktop = (): JSX.Element => {
         <nav className="space-x-10 flex">
           <a href="/">
             <span className="sr-only">Shalveena Rohde</span>
-            <h1 className="text-2xl">Shalveena Rohde</h1>
+            <h1 className="text-5xl">Shalveena Rohde</h1>
           </a>
-          <h2 className="text-sm align-bottom" style={{ marginTop: '0.75rem' }}>
-            Food &amp; Life
-          </h2>
+          <h2
+            className="text-sm align-bottom"
+            style={{ marginTop: '0.75rem' }}
+          ></h2>
         </nav>
         <div className="hidden items-center justify-end md:flex sm:flex-1 md:w-0">
           <ul className="flex">
