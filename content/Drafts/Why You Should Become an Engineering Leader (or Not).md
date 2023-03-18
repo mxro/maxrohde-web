@@ -24,7 +24,7 @@ You do your job best not when you are bossing around everyone all day or be the 
 
 It is true that salary in leadership positions is often higher than that for individual contributor positions. However, this is changing in our industry. Individual contributors, also known as ICs, are now able to hold more senior, and better renumerated, positions.
 
-In any case, is it worth to exchange a job that you like for one that you hate for an increase in salary? As long as you don't need the extra money for yours or your loved ones survival, I suggest to put this last in your considerations of whether to become a leader.
+In any case, is it worth to exchange a job that you like for one that you hate for an increase in salary? As long as you don't need the extra money for your or your loved ones' survival, I suggest to put this last in your considerations of whether to become a leader.
 
 ### I Want to Ensure We Don't Write Bad Code
 
