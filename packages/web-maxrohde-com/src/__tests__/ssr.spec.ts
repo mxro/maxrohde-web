@@ -1,3 +1,4 @@
+import { startLocalDynamoDB, stopLocalDynamoDB } from 'db-blog';
 import getPort from 'find-free-port';
 import fetch from 'node-fetch';
 
@@ -9,6 +10,7 @@ describe('Should create page', () => {
   let port: undefined | number = undefined;
 
   beforeAll(async () => {
+    await startLocalDynamoDB();
     port = await new Promise<number>((resolve, reject) => {
       getPort(
         process.env.TEST_SERVER_PORT || '50331',
@@ -32,5 +34,6 @@ describe('Should create page', () => {
 
   afterAll(async () => {
     await stopTestServer();
+    await stopLocalDynamoDB();
   });
 });

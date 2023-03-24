@@ -6,6 +6,7 @@ import {
   TagMappingPK,
   PostPK,
   deepCopy,
+  startLocalDynamoDB,
 } from 'db-blog';
 import { Entity } from 'dynamodb-toolbox';
 import { findPrepareFiles, prepare } from '../prepare/prepare';
@@ -15,6 +16,9 @@ import { publish, extractPathElements } from './publish';
 jest.setTimeout(120000);
 
 describe('Article prepare', () => {
+  beforeAll(async () => {
+    await startLocalDynamoDB();
+  });
   it('Should find articles', async () => {
     const files = await findPrepareFiles({
       directoryToScan: './testData/draft',
