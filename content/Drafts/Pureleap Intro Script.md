@@ -16,7 +16,7 @@ One of the biggest issues is that work takes up so much of our time and energy, 
 
 Max:
 
-But why is this happening? Well, it's largely due to our economic system where companies are incentivized to get as much out of workers as they can. However, we also play a role in this cycle by constantly striving to advance our careers and earn more money.
+But why is this happening? Well, it's largely due to how our world works where companies are incentivized to get as much out of workers as they can. However, we also play a role in this by constantly striving to advance our careers and earn more money.
 
 Shally:
 
@@ -26,7 +26,7 @@ Max:
 
 That's why we created Pureleap - to explore a new way of living and working.
 
-Our idea is simple: live simply so that you need less while still leading a happy life. Pursue meaningful work that brings you joy instead of just chasing after money.
+And here is what it's about: learn to live with less but in a way that still makes you happy. Then use your newfound freedom to pursue work that's meaningful and makes a positive impact on the world.
 
 Shally:
 

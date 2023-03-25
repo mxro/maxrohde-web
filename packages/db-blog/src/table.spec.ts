@@ -8,11 +8,14 @@ import {
   PostGsiName,
 } from './entities';
 import deepCopy from 'deep-copy';
-import { connectTable, stopLocalDynamoDB } from './table';
+import { connectTable, startLocalDynamoDB, stopLocalDynamoDB } from './table';
 
 // needs to be long to download Docker image etc.
 jest.setTimeout(120000);
 describe('DynamoDB Table', () => {
+  beforeAll(async () => {
+    await startLocalDynamoDB();
+  });
   it('Should be able to write and read to the table with entities', async () => {
     const table = await connectTable();
     const Posts = new Entity({ ...deepCopy(PostEntity), table } as const);
@@ -93,8 +96,6 @@ describe('DynamoDB Table', () => {
   });
 
   afterAll(async () => {
-    if (!(process.env.STOP_SERVER === 'false')) {
-      await stopLocalDynamoDB();
-    }
+    await stopLocalDynamoDB();
   });
 });

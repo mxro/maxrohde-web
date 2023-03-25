@@ -24,6 +24,11 @@ jobs:
     name: '🔍 Tests'
     runs-on: ubuntu-latest
     steps:
+      # Java required for running local Dynamo DB
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
       - uses: actions/checkout@v3
       - uses: ./.github/actions/goldstack-setup
       - run: |

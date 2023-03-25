@@ -12,7 +12,7 @@
     "coverage": "jest --collect-coverage --passWithNoTests --config=./jest.config.js --runInBand",
     "deploy": "yarn node dist/src/template.js deploy $@",
     "infra": "yarn node dist/src/template.js infra",
-    "test-ci": "STOP_SERVER=false GOLDSTACK_DEPLOYMENT=local jest --passWithNoTests --config=./jest.config.js --runInBand"
+    "test-ci": "GOLDSTACK_DEPLOYMENT=local jest --passWithNoTests --config=./jest.config.js --runInBand"
   },
   "dependencies": {
     "commander": "^9.4.0",
