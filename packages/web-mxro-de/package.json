@@ -40,8 +40,8 @@
     "@goldstack/utils-sh": "^0.5.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
-    "@types/jest": "^29.0.1",
-    "@types/node": "^18.7.13",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.10",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@types/testing-library__jest-dom": "^5.14.5",
@@ -49,15 +49,15 @@
     "concurrently": "^7.3.0",
     "extracted-loader": "^1.0.7",
     "ignore-loader": "^0.1.2",
-    "jest": "^29.3.1",
+    "jest": "^29.5.0",
     "jest-transform-stub": "^2.0.0",
     "next-compose-plugins": "^2.2.0",
     "next-images": "^1.4.0",
     "node-sass": "^7.0.3",
     "nodemon": "^2.0.15",
     "reload": "^3.1.0",
-    "ts-jest": "^29.0.3",
+    "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
-    "typescript": "^4.8.4"
+    "typescript": "^5.0.2"
   }
 }

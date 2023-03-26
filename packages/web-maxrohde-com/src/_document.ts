@@ -1,9 +1,12 @@
 /* esbuild-ignore ui */
 
-import type { RenderDocumentProps } from '@goldstack/template-ssr';
+import type {
+  ReactPropertiesType,
+  RenderDocumentProps,
+} from '@goldstack/template-ssr';
 
 const renderDocument = async (
-  props: RenderDocumentProps<unknown>
+  props: RenderDocumentProps<ReactPropertiesType>
 ): Promise<string> => {
   const tailwindPath = await props.staticFileMapper.resolve({
     name: 'tailwind.css',

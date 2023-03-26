@@ -2306,16 +2306,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@notionhq/client@npm:^2.1.1":
-  version: 2.2.0
-  resolution: "@notionhq/client@npm:2.2.0"
-  dependencies:
-    "@types/node-fetch": ^2.5.10
-    node-fetch: ^2.6.1
-  checksum: bf8677609505114959b6833371df9ac8f9d635b59cd78012d9ac68308d2128ccd429928985d4bb505d3a96f2cfe3557aadd7adb053deb36c115b3b36f384f218
-  languageName: node
-  linkType: hard
-
 "@npmcli/fs@npm:^1.0.0":
   version: 1.1.1
   resolution: "@npmcli/fs@npm:1.1.1"
@@ -3270,13 +3260,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^29.0.1":
-  version: 29.0.1
-  resolution: "@types/jest@npm:29.0.1"
+"@types/jest@npm:^29.5.0":
+  version: 29.5.0
+  resolution: "@types/jest@npm:29.5.0"
   dependencies:
     expect: ^29.0.0
     pretty-format: ^29.0.0
-  checksum: efd30357c290b5d385382302fae927885f2a9bde0aa45d4c7f970fa6e6d750df83edef73f16d1e9a005e08a5bcd7c6ff56a43f5ac2534a517df9ad1e44dd30c4
+  checksum: cd877e5c56d299cceb8bfdcbb1a77723c706750dd3c3bc47403bc3599b8faff590a3b009c68bb5b11bf7a8c77d1fb01de5e124329b4a08e65f1cdda28b0ecdb8
   languageName: node
   linkType: hard
 
@@ -3359,16 +3349,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-fetch@npm:^2.5.10":
-  version: 2.6.2
-  resolution: "@types/node-fetch@npm:2.6.2"
-  dependencies:
-    "@types/node": "*"
-    form-data: ^3.0.0
-  checksum: 6f73b1470000d303d25a6fb92875ea837a216656cb7474f66cdd67bb014aa81a5a11e7ac9c21fe19bee9ecb2ef87c1962bceeaec31386119d1ac86e4c30ad7a6
-  languageName: node
-  linkType: hard
-
 "@types/node@npm:*":
   version: 14.0.13
   resolution: "@types/node@npm:14.0.13"
@@ -3376,10 +3356,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.7.13":
-  version: 18.7.13
-  resolution: "@types/node@npm:18.7.13"
-  checksum: 45431e7e89ecaf85c7d2c180d801c132a7c59e2f8ad578726b6d71cc74e3267c18f9ccdcad738bc0479790c078f0c79efb0e58da2c6be535c15995dbb19050c9
+"@types/node@npm:^18.15.10":
+  version: 18.15.10
+  resolution: "@types/node@npm:18.15.10"
+  checksum: 9aeae0b683eda82892def5315812bdee3f1a28c4898b7e70f8e2514564538b16c4dccbe8339c1266f8fc1d707a48f152689264a854f5ebc2eba5011e793612d9
   languageName: node
   linkType: hard
 
@@ -4449,9 +4429,9 @@ __metadata:
   dependencies:
     "@types/fs-extra": ^9.0.13
     "@types/html-to-text": ^8
-    "@types/jest": ^29.0.1
+    "@types/jest": ^29.5.0
     "@types/marked": ^4
-    "@types/node": ^18.7.13
+    "@types/node": ^18.15.10
     commander: ^9.4.0
     db-blog: "workspace:^"
     dynamodb-toolbox: ^0.4.3
@@ -4459,13 +4439,13 @@ __metadata:
     fs-extra: ^10.1.0
     gray-matter: ^4.0.3
     html-to-text: ^8.2.1
-    jest: ^29.3.1
+    jest: ^29.5.0
     marked: ^4.0.18
     rimraf: ^3.0.2
     source-map-support: ^0.5.21
-    ts-jest: ^29.0.3
+    ts-jest: ^29.0.5
     ts-node: ^10.9.1
-    typescript: ^4.8.4
+    typescript: ^5.0.2
   languageName: unknown
   linkType: soft
 
@@ -6427,37 +6407,20 @@ __metadata:
     "@goldstack/template-dynamodb-cli": ^0.5.18
     "@goldstack/utils-sh": ^0.5.2
     "@types/ejs": ^3
-    "@types/jest": ^29.0.1
-    "@types/node": ^18.7.13
+    "@types/jest": ^29.5.0
+    "@types/node": ^18.15.10
     aws-sdk: ^2.1222.0
     deep-copy: ^1.4.2
     dynamodb-admin: ^4.4.0
     dynamodb-toolbox: ^0.4.3
     ejs: ^3.1.8
-    jest: ^29.3.1
+    jest: ^29.5.0
     rimraf: ^3.0.2
     source-map-support: ^0.5.21
-    ts-jest: ^29.0.3
+    ts-jest: ^29.0.5
     ts-node: ^10.9.1
-    typescript: ^4.8.4
+    typescript: ^5.0.2
     umzug: ^3.1.1
-  languageName: unknown
-  linkType: soft
-
-"db-notion@workspace:packages/db-notion":
-  version: 0.0.0-use.local
-  resolution: "db-notion@workspace:packages/db-notion"
-  dependencies:
-    "@notionhq/client": ^2.1.1
-    "@types/jest": ^29.0.1
-    "@types/node": ^18.7.13
-    aws-sdk: ^2.1222.0
-    jest: ^29.3.1
-    rimraf: ^3.0.2
-    source-map-support: ^0.5.21
-    ts-jest: ^29.0.3
-    ts-node: ^10.9.1
-    typescript: ^4.8.4
   languageName: unknown
   linkType: soft
 
@@ -7104,17 +7067,17 @@ __metadata:
   dependencies:
     "@goldstack/template-ssr": 0.3.18
     "@types/aws-lambda": ^8.10.88
-    "@types/jest": ^29.0.1
-    "@types/node": ^18.7.13
+    "@types/jest": ^29.5.0
+    "@types/node": ^18.15.10
     "@types/react": ^18.0.17
     "@types/testing-library__jest-dom": ^5.14.5
     "@types/testing-library__react": ^10.2.0
     aws-sdk: ^2.1222.0
     db-blog: "workspace:^"
-    jest: ^29.3.1
+    jest: ^29.5.0
     jest-environment-jsdom: ^28.1.3
-    ts-jest: ^29.0.3
-    typescript: ^4.8.4
+    ts-jest: ^29.0.5
+    typescript: ^5.0.2
   peerDependencies:
     react: ^18.2.0
     react-dom: ^18.2.0
@@ -7202,15 +7165,15 @@ __metadata:
     "@goldstack/template-email-send-cli": 0.5.3
     "@goldstack/utils-git": 0.2.2
     "@goldstack/utils-sh": ^0.5.2
-    "@types/jest": ^29.0.1
-    "@types/node": ^18.7.13
+    "@types/jest": ^29.5.0
+    "@types/node": ^18.15.10
     aws-sdk: ^2.1222.0
-    jest: ^29.3.1
+    jest: ^29.5.0
     nodemon: ^2.0.15
     rimraf: ^3.0.2
-    ts-jest: ^29.0.3
+    ts-jest: ^29.0.5
     ts-node: ^10.9.1
-    typescript: ^4.8.4
+    typescript: ^5.0.2
   languageName: unknown
   linkType: soft
 
@@ -9069,7 +9032,7 @@ __metadata:
 
 "fsevents@patch:fsevents@^1.2.7#~builtin<compat/fsevents>":
   version: 1.2.13
-  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#~builtin<compat/fsevents>::version=1.2.13&hash=18f3a7"
+  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#~builtin<compat/fsevents>::version=1.2.13&hash=d11327"
   dependencies:
     bindings: ^1.5.0
     nan: ^2.12.1
@@ -9079,7 +9042,7 @@ __metadata:
 
 "fsevents@patch:fsevents@^2.3.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -11710,7 +11673,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:^29.3.1":
+"jest@npm:^29.5.0":
   version: 29.5.0
   resolution: "jest@npm:29.5.0"
   dependencies:
@@ -12622,8 +12585,8 @@ __metadata:
   dependencies:
     "@goldstack/nodemonx": 0.4.3
     "@goldstack/utils-typescript-references": 0.3.2
-    "@types/jest": ^29.0.1
-    "@types/node": ^18.7.13
+    "@types/jest": ^29.5.0
+    "@types/node": ^18.15.10
     "@typescript-eslint/eslint-plugin": ^4.14.0
     "@typescript-eslint/parser": ^4.14.0
     eslint: 7.32.0
@@ -12633,12 +12596,13 @@ __metadata:
     eslint-plugin-prettier: ^3.3.1
     eslint-plugin-react: ^7.22.0
     eslint-plugin-yaml: ^0.5.0
+    jest: ^29.5.0
     lighthouse: ^9.6.8
     nodemon: ^2.0.15
     prettier: ^2.2.1
     react: ^18.2.0
     syncpack: ^9.8.4
-    typescript: ^4.8.4
+    typescript: ^5.0.2
   languageName: unknown
   linkType: soft
 
@@ -13441,7 +13405,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:2.6.7, node-fetch@npm:^2.6.1":
+"node-fetch@npm:2.6.7":
   version: 2.6.7
   resolution: "node-fetch@npm:2.6.7"
   dependencies:
@@ -15671,7 +15635,7 @@ resolve@^1.20.0:
 
 "resolve@patch:resolve@^1.0.0#~builtin<compat/resolve>":
   version: 1.20.0
-  resolution: "resolve@patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=07638b"
+  resolution: "resolve@patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=c3c19d"
   dependencies:
     is-core-module: ^2.2.0
     path-parse: ^1.0.6
@@ -15681,7 +15645,7 @@ resolve@^1.20.0:
 
 "resolve@patch:resolve@^1.1.6#~builtin<compat/resolve>, resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.1#~builtin<compat/resolve>":
   version: 1.22.1
-  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=07638b"
+  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
   dependencies:
     is-core-module: ^2.9.0
     path-parse: ^1.0.7
@@ -15694,7 +15658,7 @@ resolve@^1.20.0:
 
 "resolve@patch:resolve@^1.18.1#~builtin<compat/resolve>":
   version: 1.19.0
-  resolution: "resolve@patch:resolve@npm%3A1.19.0#~builtin<compat/resolve>::version=1.19.0&hash=07638b"
+  resolution: "resolve@patch:resolve@npm%3A1.19.0#~builtin<compat/resolve>::version=1.19.0&hash=c3c19d"
   dependencies:
     is-core-module: ^2.1.0
     path-parse: ^1.0.6
@@ -15704,7 +15668,7 @@ resolve@^1.20.0:
 
 "resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>":
   version: 1.22.0
-  resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=07638b"
+  resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=c3c19d"
   dependencies:
     is-core-module: ^2.8.1
     path-parse: ^1.0.7
@@ -16127,8 +16091,8 @@ resolve@^1.20.0:
     "@testing-library/react": ^13.3.0
     "@types/aws-lambda": ^8.10.88
     "@types/aws-serverless-express": ^3.3.3
-    "@types/jest": ^29.0.1
-    "@types/node": ^18.7.13
+    "@types/jest": ^29.5.0
+    "@types/node": ^18.15.10
     "@types/node-fetch": 2
     "@types/react": ^18.0.17
     "@types/testing-library__jest-dom": ^5.14.5
@@ -16140,7 +16104,7 @@ resolve@^1.20.0:
     esbuild-ignore-with-comments-plugin: 0.3.8
     esbuild-ssr-css-modules-plugin: 0.1.6
     find-free-port: ^2.0.0
-    jest: ^29.3.1
+    jest: ^29.5.0
     jest-environment-jsdom: ^28.1.3
     jest-transform-stub: ^2.0.0
     node-css-require: 0.4.6
@@ -16151,10 +16115,10 @@ resolve@^1.20.0:
     source-map-support: ^0.5.21
     static-file-mapper-build: 0.3.7
     supertest: ^4.0.2
-    ts-jest: ^29.0.3
+    ts-jest: ^29.0.5
     ts-node: ^10.9.1
     ts-node-dev: ^2.0.0
-    typescript: ^4.8.4
+    typescript: ^5.0.2
     typescript-plugin-css-modules: ^3.4.0
   languageName: unknown
   linkType: soft
@@ -17615,7 +17579,7 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
-"ts-jest@npm:^29.0.3":
+"ts-jest@npm:^29.0.5":
   version: 29.0.5
   resolution: "ts-jest@npm:29.0.5"
   dependencies:
@@ -17929,23 +17893,23 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.8.4":
-  version: 4.9.5
-  resolution: "typescript@npm:4.9.5"
+"typescript@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "typescript@npm:5.0.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: ee000bc26848147ad423b581bd250075662a354d84f0e06eb76d3b892328d8d4440b7487b5a83e851b12b255f55d71835b008a66cbf8f255a11e4400159237db
+  checksum: bef1dcd166acfc6934b2ec4d72f93edb8961a5fab36b8dd2aaf6f4f4cd5c0210f2e0850aef4724f3b4913d5aef203a94a28ded731b370880c8bcff7e4ff91fc1
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.8.4#~builtin<compat/typescript>":
-  version: 4.9.5
-  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=a1c5e5"
+"typescript@patch:typescript@^5.0.2#~builtin<compat/typescript>":
+  version: 5.0.2
+  resolution: "typescript@patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 2eee5c37cad4390385db5db5a8e81470e42e8f1401b0358d7390095d6f681b410f2c4a0c496c6ff9ebd775423c7785cdace7bcdad76c7bee283df3d9718c0f20
+  checksum: b63cb742fbb9aeb3085e002ad8f10d5fd963606aa4d6b3b65b4e76c396ff09739f03b5dbae08e1698c3bce9d5619d3f67aeb7ee470ed4016bd345b3cfe37b54a
   languageName: node
   linkType: hard
 
@@ -18590,8 +18554,8 @@ resolve@^1.20.0:
     "@testing-library/react": ^13.3.0
     "@types/aws-lambda": ^8.10.88
     "@types/aws-serverless-express": ^3.3.3
-    "@types/jest": ^29.0.1
-    "@types/node": ^18.7.13
+    "@types/jest": ^29.5.0
+    "@types/node": ^18.15.10
     "@types/node-fetch": 2
     "@types/react": ^18.0.17
     "@types/testing-library__jest-dom": ^5.14.5
@@ -18607,7 +18571,7 @@ resolve@^1.20.0:
     esbuild-css-modules-client-plugin: 0.3.2
     esbuild-ignore-with-comments-plugin: 0.3.8
     find-free-port: ^2.0.0
-    jest: ^29.3.1
+    jest: ^29.5.0
     jest-environment-jsdom: ^28.1.3
     jest-transform-stub: ^2.0.0
     node-css-require: 0.4.6
@@ -18620,10 +18584,10 @@ resolve@^1.20.0:
     static-file-mapper-build: 0.3.7
     supertest: ^4.0.2
     tailwindcss: ^3.1.8
-    ts-jest: ^29.0.3
+    ts-jest: ^29.0.5
     ts-node: ^10.9.1
     ts-node-dev: ^2.0.0
-    typescript: ^4.8.4
+    typescript: ^5.0.2
     typescript-plugin-css-modules: ^3.4.0
   languageName: unknown
   linkType: soft
@@ -18636,8 +18600,8 @@ resolve@^1.20.0:
     "@goldstack/utils-sh": ^0.5.2
     "@testing-library/jest-dom": ^5.16.4
     "@testing-library/react": ^13.3.0
-    "@types/jest": ^29.0.1
-    "@types/node": ^18.7.13
+    "@types/jest": ^29.5.0
+    "@types/node": ^18.15.10
     "@types/react": ^18.0.17
     "@types/react-dom": ^18.0.6
     "@types/testing-library__jest-dom": ^5.14.5
@@ -18645,7 +18609,7 @@ resolve@^1.20.0:
     concurrently: ^7.3.0
     extracted-loader: ^1.0.7
     ignore-loader: ^0.1.2
-    jest: ^29.3.1
+    jest: ^29.5.0
     jest-transform-stub: ^2.0.0
     next: ^12.2.5
     next-compose-plugins: ^2.2.0
@@ -18658,9 +18622,9 @@ resolve@^1.20.0:
     react-is: ^18.2.0
     reload: ^3.1.0
     swr: ^0.4.0
-    ts-jest: ^29.0.3
+    ts-jest: ^29.0.5
     ts-node: ^10.9.1
-    typescript: ^4.8.4
+    typescript: ^5.0.2
   languageName: unknown
   linkType: soft
 
@@ -18688,8 +18652,8 @@ resolve@^1.20.0:
     "@testing-library/react": ^13.3.0
     "@types/aws-lambda": ^8.10.88
     "@types/aws-serverless-express": ^3.3.3
-    "@types/jest": ^29.0.1
-    "@types/node": ^18.7.13
+    "@types/jest": ^29.5.0
+    "@types/node": ^18.15.10
     "@types/node-fetch": 2
     "@types/react": ^18.0.17
     "@types/testing-library__jest-dom": ^5.14.5
@@ -18705,7 +18669,7 @@ resolve@^1.20.0:
     esbuild-css-modules-client-plugin: 0.3.2
     esbuild-ignore-with-comments-plugin: 0.3.8
     find-free-port: ^2.0.0
-    jest: ^29.3.1
+    jest: ^29.5.0
     jest-environment-jsdom: ^28.1.3
     jest-transform-stub: ^2.0.0
     node-css-require: 0.4.6
@@ -18718,10 +18682,10 @@ resolve@^1.20.0:
     static-file-mapper-build: 0.3.7
     supertest: ^4.0.2
     tailwindcss: ^3.1.8
-    ts-jest: ^29.0.3
+    ts-jest: ^29.0.5
     ts-node: ^10.9.1
     ts-node-dev: ^2.0.0
-    typescript: ^4.8.4
+    typescript: ^5.0.2
     typescript-plugin-css-modules: ^3.4.0
   languageName: unknown
   linkType: soft
