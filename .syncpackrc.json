@@ -1,0 +1,11 @@
+{
+  "workspace": true,
+  "prod": true,
+  "dev": true,
+  "resolutions": true,
+  "source": [
+    "package.json",
+    "packages/*/package.json"
+  ],
+  "versionGroups": []
+}

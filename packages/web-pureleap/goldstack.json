@@ -1,0 +1,20 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "server-side-rendering",
+  "template": "server-side-rendering",
+  "templateVersion": "0.1.16",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "dev",
+      "configuration": {
+        "lambdas": {},
+        "domain": "dev-pureleap.home.mxro.de",
+        "lambdaNamePrefix": "pureleap-web",
+        "hostedZoneDomain": "mxro.de"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "ap-southeast-2"
+    }
+  ]
+}
