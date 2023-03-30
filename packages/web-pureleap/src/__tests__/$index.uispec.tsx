@@ -5,8 +5,10 @@ import Index from '../routes/$index';
 
 describe('Render tests', () => {
   it('Should render component', () => {
-    render(<Index message="run test"></Index>);
+    render(<Index></Index>);
 
-    expect(screen.getByText('run test', { exact: false })).toBeVisible();
+    expect(
+      screen.getByText('A better way to live and work', { exact: false })
+    ).toBeVisible();
   });
 });
