@@ -5,12 +5,14 @@ import { renderPage, hydrate } from './../render';
 import styles from './$index.module.css';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
+import Video from '../components/Video';
 
 const Index = (): JSX.Element => {
   return (
     <>
       <Header></Header>
       <Hero></Hero>
+      <Video></Video>
     </>
   );
 };
