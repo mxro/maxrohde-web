@@ -18837,6 +18837,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["esbuild", "npm:0.15.5"],\
             ["esbuild-ignore-with-comments-plugin", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.3.8"],\
             ["esbuild-ssr-css-modules-plugin", "virtual:a65820296cce365be2dfdb0529c30702c1eca3597d876edd5c50a999a969c1b188c90f3752706541e580fe71f75cdb88f57e592833fa93dbe993b307aa6101da#npm:0.1.6"],\
+            ["esbuild-tailwind-ssr-plugin", "workspace:packages/esbuild-tailwind-ssr-plugin"],\
             ["find-free-port", "npm:2.0.0"],\
             ["jest", "virtual:7d42466ae6c78580bd9c1e87d13d7ab3ede0127954e482b418663c43b56e1ab487e2b687b40b6aff4fc8c62c5c2760ae3b712417fcad70a07fb1035aa316eb17#npm:29.5.0"],\
             ["jest-environment-jsdom", "npm:28.1.3"],\

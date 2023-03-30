@@ -8,7 +8,16 @@
     {
       "name": "dev",
       "configuration": {
-        "lambdas": {},
+        "lambdas": {
+          "ANY /": {
+            "function_name": "pureleap-web--__index",
+            "route": "ANY /"
+          },
+          "ANY /posts": {
+            "function_name": "pureleap-web-posts",
+            "route": "ANY /posts"
+          }
+        },
         "domain": "dev-pureleap.home.mxro.de",
         "lambdaNamePrefix": "pureleap-web",
         "hostedZoneDomain": "mxro.de"

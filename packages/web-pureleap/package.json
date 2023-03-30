@@ -32,6 +32,7 @@
     "esbuild": "^0.15.5",
     "esbuild-ignore-with-comments-plugin": "0.3.8",
     "esbuild-ssr-css-modules-plugin": "0.1.6",
+    "esbuild-tailwind-ssr-plugin": "workspace:^",
     "jest-transform-stub": "^2.0.0",
     "source-map-support": "^0.5.21",
     "static-file-mapper-build": "0.3.7",
