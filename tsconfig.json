@@ -42,6 +42,9 @@
       "path": "packages/email-send"
     },
     {
+      "path": "packages/esbuild-tailwind-ssr-plugin"
+    },
+    {
       "path": "packages/web-maxrohde-com"
     },
     {

@@ -1,0 +1,26 @@
+{
+  "name": "esbuild-tailwind-ssr-plugin",
+  "main": "./src/tailwindPlugin.ts",
+  "scripts": {
+    "build": "yarn clean && yarn compile",
+    "clean": "rimraf ./dist",
+    "compile": "tsc --build tsconfig.json",
+    "depcheck": "depcheck ."
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.11",
+    "esbuild": "^0.15.5",
+    "postcss": "^8.4.21",
+    "static-file-mapper-build": "0.3.7",
+    "tailwindcss": "^3.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "depcheck": "^1.4.3",
+    "jest": "^29.5.0",
+    "rimraf": "^4.4.1",
+    "typescript": "^5.0.2"
+  },
+  "packageManager": "yarn@3.5.0"
+}

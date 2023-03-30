@@ -6,8 +6,6 @@ import { StaticFileMapperBuild } from 'static-file-mapper-build';
 import autoprefixer from 'autoprefixer';
 import tailwindcss from 'tailwindcss';
 
-export type { CompileCssConfiguration } from 'node-css-require';
-
 export interface TailwindPluginOptions {
   css: string;
   staticFileMapper: StaticFileMapperBuild;
