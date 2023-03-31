@@ -15,10 +15,7 @@ import ErrorPage from '../components/pages/ErrorPage';
 import { BLOG_CONFIG } from '../blog';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const handler: SSRHandler = async (
-  event: APIGatewayProxyEventV2,
-  context: APIGatewayProxyResultV2
-) => {
+export const handler: SSRHandler = async (event, context) => {
   return blogLib.renderIndex({
     config: BLOG_CONFIG,
     event,

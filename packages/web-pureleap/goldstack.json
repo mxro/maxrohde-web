@@ -1,0 +1,29 @@
+{
+  "$schema": "./schemas/package.schema.json",
+  "name": "server-side-rendering",
+  "template": "server-side-rendering",
+  "templateVersion": "0.1.16",
+  "configuration": {},
+  "deployments": [
+    {
+      "name": "dev",
+      "configuration": {
+        "lambdas": {
+          "ANY /": {
+            "function_name": "pureleap-web--__index",
+            "route": "ANY /"
+          },
+          "ANY /posts": {
+            "function_name": "pureleap-web-posts",
+            "route": "ANY /posts"
+          }
+        },
+        "domain": "dev-pureleap.home.mxro.de",
+        "lambdaNamePrefix": "pureleap-web",
+        "hostedZoneDomain": "mxro.de"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "ap-southeast-2"
+    }
+  ]
+}

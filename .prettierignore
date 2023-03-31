@@ -1,6 +1,7 @@
 dist/
 webDist/
 distWeb/
+content/.obsidian/
 distLambda/
 goldstackLocal/
 packages/web-maxrohde-com/static/generated/

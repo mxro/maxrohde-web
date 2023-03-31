@@ -36,19 +36,22 @@
       "path": "packages/db-blog"
     },
     {
-      "path": "packages/db-notion"
-    },
-    {
       "path": "packages/dynamodb-blog"
     },
     {
       "path": "packages/email-send"
     },
     {
+      "path": "packages/esbuild-tailwind-ssr-plugin"
+    },
+    {
       "path": "packages/web-maxrohde-com"
     },
     {
       "path": "packages/web-mxro-de"
+    },
+    {
+      "path": "packages/web-pureleap"
     },
     {
       "path": "packages/web-shalveena-com"

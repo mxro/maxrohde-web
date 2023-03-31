@@ -2,7 +2,7 @@
 /* esbuild-ignore server */
 
 import { pnpPlugin } from '@yarnpkg/esbuild-plugin-pnp';
-import tailwindPlugin from './tailwindPlugin';
+import tailwindPlugin from 'esbuild-tailwind-ssr-plugin';
 import cssPlugin from 'esbuild-css-modules-client-plugin';
 
 import ignorePlugin from 'esbuild-ignore-with-comments-plugin';

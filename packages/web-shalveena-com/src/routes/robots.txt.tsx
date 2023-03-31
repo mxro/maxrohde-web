@@ -7,10 +7,7 @@ import type {
 } from 'aws-lambda';
 import { BLOG_CONFIG } from '../blog';
 
-export const handler: SSRHandler = async (
-  event: APIGatewayProxyEventV2,
-  context: APIGatewayProxyResultV2
-) => {
+export const handler: SSRHandler = async (event, context) => {
   return {
     body: `Sitemap: https://${BLOG_CONFIG.blog}/sitemap.xml
 User-agent: *

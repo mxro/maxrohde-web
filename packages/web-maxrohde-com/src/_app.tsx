@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Wrapped<PropType>({
+function Wrapped<PropType extends JSX.IntrinsicAttributes>({
   Component,
 }: {
   Component: React.FunctionComponent<PropType>;

@@ -1,0 +1,32 @@
+[
+  {
+    "names": [
+      "tailwind.css"
+    ],
+    "generatedName": "tailwind.5ad29ea06a85122f673c2a84c084cd4e.css"
+  },
+  {
+    "names": [
+      "pureleap-web--__index.map"
+    ],
+    "generatedName": "-__index.cc13be28c00feea5e62c7702cd5d856b.map.json"
+  },
+  {
+    "names": [
+      "pureleap-web--__index-bundle.js"
+    ],
+    "generatedName": "-__index-bundle.1920f9f8c0412cba3b37a812c6c21e0b.js"
+  },
+  {
+    "names": [
+      "pureleap-web-posts.map"
+    ],
+    "generatedName": "posts.7c154568e9a7799e17a0236417467056.map.json"
+  },
+  {
+    "names": [
+      "pureleap-web-posts-bundle.js"
+    ],
+    "generatedName": "posts-bundle.361b8c5b69071a728cedca9a551fea85.js"
+  }
+]

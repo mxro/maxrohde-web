@@ -1,12 +1,7 @@
 {
   "extends": "../../tsconfig.base.json",
   "include": [
-    "./src/**/*",
-    "./src/**/*.json",
-    "./scripts/**/*",
-    "./schemas/**/*.json",
-    "./goldstack.json",
-    "./src/typings.d.ts"
+    "./src/**/*"
   ],
   "compilerOptions": {
     "outDir": "dist",
