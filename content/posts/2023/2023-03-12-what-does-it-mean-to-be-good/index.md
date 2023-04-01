@@ -3,6 +3,8 @@ title: 'What Does it Mean to Be Good'
 id: 'what-does-it-mean-to-be-good'
 date: '2023-03-12'
 blog: 'maxrohde.com'
+secondaryBlogs:
+  - 'pureleap.com'
 coverImage: 'clouds-dalle.png'
 authors:
   - max

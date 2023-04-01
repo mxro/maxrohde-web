@@ -11,6 +11,9 @@ export function getCoverImagePath(blog: string): string {
   if (blog === 'shalveena.com') {
     return config['shalveenaCoverImagePath'];
   }
+  if (blog === 'pureleap.com') {
+    return config['pureleapCoverImagePath'];
+  }
   throw new Error('Unknown blog ' + blog);
 }
 
@@ -20,6 +23,9 @@ export function getAttachmentsPath(blog: string): string {
   }
   if (blog === 'shalveena.com') {
     return config['shalveenaAttachmentsImagePath'];
+  }
+  if (blog === 'pureleap.com') {
+    return config['pureleapAttachmentsImagePath'];
   }
   throw new Error('Unknown blog ' + blog);
 }

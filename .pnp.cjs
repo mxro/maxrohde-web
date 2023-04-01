@@ -18834,6 +18834,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@yarnpkg/esbuild-plugin-pnp", "virtual:a65820296cce365be2dfdb0529c30702c1eca3597d876edd5c50a999a969c1b188c90f3752706541e580fe71f75cdb88f57e592833fa93dbe993b307aa6101da#npm:3.0.0-rc.15"],\
             ["concurrently", "npm:7.3.0"],\
             ["date-fns", "npm:2.28.0"],\
+            ["db-blog", "workspace:packages/db-blog"],\
+            ["dynamodb-blog", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#workspace:packages/dynamodb-blog"],\
             ["esbuild", "npm:0.15.5"],\
             ["esbuild-ignore-with-comments-plugin", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.3.8"],\
             ["esbuild-ssr-css-modules-plugin", "virtual:a65820296cce365be2dfdb0529c30702c1eca3597d876edd5c50a999a969c1b188c90f3752706541e580fe71f75cdb88f57e592833fa93dbe993b307aa6101da#npm:0.1.6"],\

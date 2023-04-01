@@ -7359,7 +7359,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dynamodb-blog@0.1.0, dynamodb-blog@workspace:packages/dynamodb-blog":
+"dynamodb-blog@0.1.0, dynamodb-blog@workspace:^, dynamodb-blog@workspace:packages/dynamodb-blog":
   version: 0.0.0-use.local
   resolution: "dynamodb-blog@workspace:packages/dynamodb-blog"
   dependencies:
@@ -16587,6 +16587,8 @@ resolve@^1.20.0:
     "@yarnpkg/esbuild-plugin-pnp": ^3.0.0-rc.15
     concurrently: ^7.3.0
     date-fns: ^2.28.0
+    db-blog: "workspace:^"
+    dynamodb-blog: "workspace:^"
     esbuild: ^0.15.5
     esbuild-ignore-with-comments-plugin: 0.3.8
     esbuild-ssr-css-modules-plugin: 0.1.6
@@ -19106,7 +19108,7 @@ resolve@^1.20.0:
     date-fns: ^2.28.0
     db-blog: "workspace:^"
     depcheck: ^1.4.3
-    dynamodb-blog: 0.1.0
+    dynamodb-blog: "workspace:^"
     esbuild: ^0.15.5
     esbuild-css-modules-client-plugin: 0.3.2
     esbuild-ignore-with-comments-plugin: 0.3.8
