@@ -7,8 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        gruppo: ['Gruppo', 'sans-serif'],
+        robotoslab: ['Roboto Slab', 'serif'],
+      },
       // via https://www.tints.dev
       colors: {
+        black: '#001415',
+        white: '#F7D7CA',
+        orange: '#FF7642',
         scorched: {
           50: '#EFE5E1',
           100: '#E1CEC6',
