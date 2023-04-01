@@ -6,7 +6,7 @@ export function Hero(): JSX.Element {
       className="bg-cover bg-center bg-fixed h-screen"
       style={{
         backgroundImage:
-          "url('/_goldstack/static/img/202303/guillaume-galtier-3YrppYQPoCI-unsplash.jpg')",
+          "url('/_goldstack/static/img/202303/pexels-marko-blazevic-3373183.jpg')",
       }}
       // https://unsplash.com/photos/3YrppYQPoCI
     >
