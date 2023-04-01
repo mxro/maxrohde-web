@@ -1,7 +1,7 @@
 {
-  "name": "server-side-rendering",
+  "name": "web-pureleap",
   "version": "0.1.0",
-  "description": "Template for server-side rendering",
+  "description": "Pureleap main website.",
   "license": "",
   "author": "",
   "sideEffects": false,

@@ -1,6 +1,6 @@
 {
   "$schema": "./schemas/package.schema.json",
-  "name": "server-side-rendering",
+  "name": "web-pureleap",
   "template": "server-side-rendering",
   "templateVersion": "0.1.16",
   "configuration": {},

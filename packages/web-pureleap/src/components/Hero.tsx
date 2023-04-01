@@ -11,7 +11,7 @@ export function Hero(): JSX.Element {
       // https://unsplash.com/photos/3YrppYQPoCI
     >
       <div className="h-screen flex flex-col justify-center items-center">
-        <h1 className="text-white text-5xl font-bold text-center">
+        <h1 className="text-eggyolk text-5xl font-bold text-center mb-24 mr-48">
           A better way to live and work.
         </h1>
       </div>

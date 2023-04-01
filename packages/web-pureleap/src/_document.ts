@@ -11,6 +11,15 @@ const renderDocument = async (
   const tailwindPath = await props.staticFileMapper.resolve({
     name: 'tailwind.css',
   });
+
+  let tailwindConfig: string | undefined = undefined;
+  if (process.env.GOLDSTACK_DEPLOYMENT === 'local') {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const config = require('./../tailwind.config');
+
+    tailwindConfig = JSON.stringify(config.theme);
+  }
+
   const template = `
 <!DOCTYPE html>
 <html>
@@ -24,7 +33,14 @@ const renderDocument = async (
     <link rel="manifest" href="/site.webmanifest">
     ${
       process.env.GOLDSTACK_DEPLOYMENT === 'local'
-        ? '<script src="https://cdn.tailwindcss.com?plugins=typography"></script>'
+        ? `<script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+        `
+        : ''
+    }
+    ${
+      tailwindConfig
+        ? `<script>tailwind.config = {theme: ${tailwindConfig}};</script>
+        `
         : ''
     }
     ${`<link rel="stylesheet" type="text/css" href="${tailwindPath}"  />`}
