@@ -31,8 +31,13 @@ const renderDocument = async (
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-<link href="https://fonts.googleapis.com/css?family=Gruppo&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto%20Slab&display=swap" rel="stylesheet">
+    <style>
+@font-face {
+    font-family: 'Virgil';
+    src: url('./_goldstack/static/img/202304/Virgil.woff2') format('woff2');
+}
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto%20Slab&display=swap" rel="stylesheet">
     <link rel="manifest" href="/site.webmanifest">
     ${
       process.env.GOLDSTACK_DEPLOYMENT === 'local'
