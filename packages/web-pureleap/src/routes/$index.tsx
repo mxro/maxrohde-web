@@ -6,12 +6,25 @@ import styles from './$index.module.css';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Video from '../components/Video';
+import Illustration from '../components/Illustration';
+import IllustrationList from '../components/IllustrationList';
 
 const Index = (): JSX.Element => {
   return (
     <>
       <Header></Header>
       <Hero></Hero>
+      <Illustration
+        img="_goldstack/static/img/202304/office-worker-stressed-1-transparent.png"
+        caption="Work is stressful. Life is stressful."
+        showContent={false}
+      ></Illustration>
+      <Illustration
+        img="_goldstack/static/img/202304/happy-person-1-transparent.png"
+        caption="Explore a new way with us:"
+        showContent={false}
+      ></Illustration>
+      <IllustrationList></IllustrationList>
       <Video></Video>
     </>
   );
