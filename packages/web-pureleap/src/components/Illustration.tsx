@@ -10,10 +10,10 @@ export interface IllustrationProps {
 function Illustration(props: IllustrationProps): JSX.Element {
   return (
     <section className="text-gray-600 body-font bg-gradient-to-r from-white-500 to-orange-500">
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div className="container mx-auto flex px-5 py-12 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
           <img
-            className="object-cover object-center rounded"
+            className="object-cover object-center rounded h-96"
             alt={props.caption}
             src={props.img}
           ></img>

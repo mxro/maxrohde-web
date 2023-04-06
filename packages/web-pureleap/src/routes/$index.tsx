@@ -8,6 +8,7 @@ import Hero from '../components/Hero';
 import Video from '../components/Video';
 import Illustration from '../components/Illustration';
 import IllustrationList from '../components/IllustrationList';
+import Journey from '../components/Journey';
 
 const Index = (): JSX.Element => {
   return (
@@ -19,11 +20,13 @@ const Index = (): JSX.Element => {
         caption="Work is stressful. Life is stressful."
         showContent={false}
       ></Illustration>
+      <Journey></Journey>
       <Illustration
         img="_goldstack/static/img/202304/happy-person-1-transparent.png"
-        caption="Explore a new way with us:"
+        caption="Explore a new way with us!"
         showContent={false}
       ></Illustration>
+
       <IllustrationList></IllustrationList>
       <Video></Video>
     </>
