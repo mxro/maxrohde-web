@@ -7,5 +7,5 @@ export const BLOG_CONFIG: BlogConfig = {
   description:
     'A blog discussing our journey exploring a better way to live and work.',
   creatorTwitterId: '@mxro',
-  pinnedPosts: [],
+  pinnedPosts: ['2023/03/12/what-does-it-mean-to-be-good'],
 };

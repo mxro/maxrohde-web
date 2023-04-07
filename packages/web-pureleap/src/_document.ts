@@ -34,10 +34,13 @@ const renderDocument = async (
     <style>
 @font-face {
     font-family: 'Virgil';
-    src: url('./_goldstack/static/img/202304/Virgil.woff2') format('woff2');
+    src: url('/_goldstack/static/img/202304/Virgil.woff2') format('woff2');
 }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Roboto%20Slab&display=swap" rel="stylesheet">
+    <link
+    href="https://fonts.googleapis.com/css?family=Hind%20Vadodara&display=swap"
+    rel="stylesheet">
     <link rel="manifest" href="/site.webmanifest">
     ${
       process.env.GOLDSTACK_DEPLOYMENT === 'local'

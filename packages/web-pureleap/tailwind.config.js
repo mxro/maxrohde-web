@@ -8,10 +8,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        gruppo: ['Gruppo', 'sans-serif'],
         virgil: ['Virgil', 'sans-serif'],
         robotoslab: ['Roboto Slab', 'serif'],
-        slabo: ['Slabo', 'sans-serif'],
+        hindvadodara: ['Hind Vadodara', 'sans-serif'],
+        serif: ['Roboto Slab', 'serif'],
+        sans: ['Hind Vadodara', 'sans-serif'],
       },
       // via https://www.tints.dev
       colors: {

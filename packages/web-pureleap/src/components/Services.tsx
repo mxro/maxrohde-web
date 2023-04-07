@@ -3,7 +3,7 @@ import ServiceCard from './ServiceCard';
 
 function Services(): JSX.Element {
   return (
-    <section className="pt-24 bg-gradient-to-r from-orange-200 to-orange-400">
+    <section className="pt-24 pb-24 bg-gradient-to-r from-orange-200 to-orange-400">
       <div className="max-w-3xl mx-auto text-center font-robotoslab ">
         <h1 className="h2 mb-4 sm:text-4xl text-3xl">
           What we{' '}
