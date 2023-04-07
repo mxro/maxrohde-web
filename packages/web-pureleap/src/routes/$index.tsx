@@ -5,11 +5,10 @@ import { renderPage, hydrate } from './../render';
 import styles from './$index.module.css';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import Video from '../components/Video';
 import Illustration from '../components/Illustration';
-import IllustrationList from '../components/IllustrationList';
 import Journey from '../components/Journey';
 import Services from '../components/Services';
+import Footer from '../components/Footer';
 
 const Index = (): JSX.Element => {
   return (
@@ -23,6 +22,7 @@ const Index = (): JSX.Element => {
       ></Illustration>
       <Journey></Journey>
       <Services></Services>
+      <Footer></Footer>
     </>
   );
 };
