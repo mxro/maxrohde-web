@@ -19,7 +19,10 @@ const PostPage = (props: PostProps): JSX.Element => {
   return (
     <>
       <div
-        className={`flex bg-gradient-to-b from-orange-600 to-orange-500 bg-[url('${props.post.coverImage}')]`}
+        style={{
+          background: `url('${props.post.coverImage}') no-repeat top/100%, linear-gradient(90deg, rgba(255,118,66,1) 0%, rgba(255,72,0,1) 100%)`,
+        }}
+        className={'flex mt-20'}
       >
         <Header></Header>
         <div className="flex flex-row container mx-auto relative bg-white-300 opacity-90 mt-32 pb-8 mb-24 max-w-7xl px-4 sm:px-6 rounded-[24px]">
@@ -58,25 +61,38 @@ const PostPage = (props: PostProps): JSX.Element => {
               </div>
             )}
           </div>
-          <div className="hidden md:block basis-1/5">
-            <p className="pt-24">
-              Insights for developing lean applications with ease 😎 and my
-              musings on life and leadership ✍.
-            </p>
-
-            <div className="pt-8 text-center">
-              <a
-                href="/about"
-                className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-              >
-                🤗 Follow
-              </a>
+          <div className="hidden md:block basis-2/5 pt-32 fixed right-[20%]">
+            <div className="pl-12 pb-6">
+              <img
+                className="h-32"
+                src="/_goldstack/static/img/202304/shally_and_max.png"
+              ></img>
             </div>
-
-            <h3 className="pt-8 font-medium leading-tight text-xl mt-0 mb-2">
+            <p className="font-virgil text-lg">
+              Thank you for stopping by our blog.
+            </p>
+            <p className="font-virgil text-lg pt-6">
+              Join us on our journey<br></br>
+              <img
+                className="inline h-8"
+                src="/_goldstack/static/img/202304/flower-1-transparent.png"
+              ></img>{' '}
+              to be happy with less and<br></br>
+              <img
+                className="inline h-8"
+                src="/_goldstack/static/img/202304/heart-1-transparent.png"
+              ></img>{' '}
+              work with purpose.
+            </p>
+            <p className="font-virgil text-lg pt-6">
+              <a className="underline" href="/">
+                Learn more
+              </a>
+            </p>
+            <h3 className="pt-8 font-medium leading-tight text-xl mt-0 mb-2 font-robotoslab">
               Blog Stats
             </h3>
-            <p>
+            <p className="font-virgil text-lg">
               {hydrated ? props.visits.toLocaleString() : props.visits} views
             </p>
           </div>

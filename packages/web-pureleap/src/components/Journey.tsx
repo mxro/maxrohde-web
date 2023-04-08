@@ -11,7 +11,7 @@ function Journey(): JSX.Element {
         <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
           <div className="p-4 md:w-1/2 flex-grow flex sm:items-center items-start flex-col sm:flex-row">
             <img
-              src="_goldstack/static/img/202304/flower-1-transparent.png"
+              src="/_goldstack/static/img/202304/flower-1-transparent.png"
               className="flex-shrink-0 w-24 h-24 text-black-500 rounded-full inline-flex items-center justify-center"
             ></img>
             <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -22,7 +22,7 @@ function Journey(): JSX.Element {
           </div>
           <div className="p-4 md:w-1/2 flex-grow flex sm:items-center items-start flex-col sm:flex-row">
             <img
-              src="_goldstack/static/img/202304/heart-1-transparent.png"
+              src="/_goldstack/static/img/202304/heart-1-transparent.png"
               className="flex-shrink-0 w-24 h-24 text-black-500 rounded-full inline-flex items-center justify-center"
             ></img>
             <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">

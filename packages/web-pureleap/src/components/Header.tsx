@@ -12,13 +12,13 @@ export function Header(): JSX.Element {
       </a>
       <nav className="flex items-center justify-end">
         <a
-          href="#"
+          href="/about"
           className="text-black text-xl mx-4 font-virgil hover:text-orange-500"
         >
           about
         </a>
         <a
-          href="#"
+          href="/blog"
           className="text-black text-xl font-virgil mx-4 hover:text-orange-500"
         >
           blog
