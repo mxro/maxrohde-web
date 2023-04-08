@@ -26,7 +26,7 @@ const PostPage = (props: PostProps): JSX.Element => {
       >
         <Header></Header>
         <div className="flex flex-row container mx-auto relative bg-white-300 opacity-90 mt-32 pb-8 mb-24 max-w-7xl px-4 sm:px-6 rounded-[24px]">
-          <div className="basis-4/5 px-4 pt-12 sm:px-6 max-w-full">
+          <div className="basis-3/5 px-4 pt-12 sm:px-6 max-w-full">
             <article className="prose lg:prose-xl border-b border-gray-300 ">
               <h1 className="font-robotoslab">{props.post.title}</h1>
               {props.post.canonicalUrl && (
@@ -61,40 +61,45 @@ const PostPage = (props: PostProps): JSX.Element => {
               </div>
             )}
           </div>
-          <div className="hidden md:block basis-2/5 pt-32 fixed right-[20%]">
-            <div className="pl-12 pb-6">
-              <img
-                className="h-32"
-                src="/_goldstack/static/img/202304/shally_and_max.png"
-              ></img>
+          <div className="max-w-full basis-2/5 ">
+            <div className="hidden md:block pt-32 pl-24 fixed">
+              <div>
+                <div className="pl-12 pb-6">
+                  <img
+                    className="h-32"
+                    src="/_goldstack/static/img/202304/shally_and_max.png"
+                  ></img>
+                </div>
+                <p className="font-virgil text-lg">
+                  Thank you for stopping by our blog.
+                </p>
+                <p className="font-virgil text-lg pt-6">
+                  Join us on our journey<br></br>
+                  <img
+                    className="inline h-8"
+                    src="/_goldstack/static/img/202304/flower-1-transparent.png"
+                  ></img>{' '}
+                  to be happy with less and<br></br>
+                  <img
+                    className="inline h-8"
+                    src="/_goldstack/static/img/202304/heart-1-transparent.png"
+                  ></img>{' '}
+                  work with purpose.
+                </p>
+                <p className="font-virgil text-lg pt-6">
+                  <a className="underline" href="/">
+                    Learn more
+                  </a>
+                </p>
+                <h3 className="pt-8 font-medium leading-tight text-xl mt-0 mb-2 font-robotoslab">
+                  Blog Stats
+                </h3>
+                <p className="font-virgil text-lg">
+                  {hydrated ? props.visits.toLocaleString() : props.visits}{' '}
+                  views
+                </p>
+              </div>
             </div>
-            <p className="font-virgil text-lg">
-              Thank you for stopping by our blog.
-            </p>
-            <p className="font-virgil text-lg pt-6">
-              Join us on our journey<br></br>
-              <img
-                className="inline h-8"
-                src="/_goldstack/static/img/202304/flower-1-transparent.png"
-              ></img>{' '}
-              to be happy with less and<br></br>
-              <img
-                className="inline h-8"
-                src="/_goldstack/static/img/202304/heart-1-transparent.png"
-              ></img>{' '}
-              work with purpose.
-            </p>
-            <p className="font-virgil text-lg pt-6">
-              <a className="underline" href="/">
-                Learn more
-              </a>
-            </p>
-            <h3 className="pt-8 font-medium leading-tight text-xl mt-0 mb-2 font-robotoslab">
-              Blog Stats
-            </h3>
-            <p className="font-virgil text-lg">
-              {hydrated ? props.visits.toLocaleString() : props.visits} views
-            </p>
           </div>
         </div>
       </div>
