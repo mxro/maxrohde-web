@@ -1,9 +1,11 @@
 ---
 authors:
 - max
-blog: maxrohde.com
+blog: pureleap.com
+secondaryBlogs:
+- maxrohde.com
 categories:
-- contemplatations
+- contemplations
 coverImage: pexels-cao-haiyun-5765826.jpg
 date: "2022-10-29"
 id: levels-of-enlightenment

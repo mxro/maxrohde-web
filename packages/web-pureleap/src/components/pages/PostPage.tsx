@@ -25,7 +25,7 @@ const PostPage = (props: PostProps): JSX.Element => {
         className={'flex mt-24'}
       >
         <Header></Header>
-        <div className="flex flex-row container mx-auto relative bg-white-300 opacity-90 mt-24 pb-8 mb-24 max-w-7xl rounded-[24px]">
+        <div className="flex flex-row container mx-auto relative bg-white-300 opacity-95 mt-24 pb-8 mb-24 max-w-7xl rounded-[24px]">
           <div className="basis-full md:basis-3/5 px-4 pt-12 sm:px-6 ">
             <article className="prose lg:prose-xl border-b border-gray-300 ">
               <h1 className="font-robotoslab">{props.post.title}</h1>
