@@ -22,10 +22,10 @@ const PostPage = (props: PostProps): JSX.Element => {
         style={{
           background: `url('${props.post.coverImage}') no-repeat top/100%, linear-gradient(90deg, rgba(255,118,66,1) 0%, rgba(255,72,0,1) 100%)`,
         }}
-        className={'flex mt-20'}
+        className={'flex mt-24'}
       >
         <Header></Header>
-        <div className="flex flex-row container mx-auto relative bg-white-300 opacity-90 mt-32 pb-8 mb-24 max-w-7xl px-4 sm:px-6 rounded-[24px]">
+        <div className="flex flex-row container mx-auto relative bg-white-300 opacity-90 mt-24 pb-8 mb-24 max-w-7xl rounded-[24px]">
           <div className="basis-3/5 px-4 pt-12 sm:px-6 max-w-full">
             <article className="prose lg:prose-xl border-b border-gray-300 ">
               <h1 className="font-robotoslab">{props.post.title}</h1>
