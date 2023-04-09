@@ -3,22 +3,26 @@ import Header from '../Header';
 import Footer from '../Footer';
 import BlogList from 'dynamodb-blog/src/components/BlogList';
 import type { TagProps } from 'dynamodb-blog';
+import PageHeading from '../PageHeading';
 
 const TagPage = (props: TagProps): JSX.Element => {
   return (
     <>
       <Header></Header>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <h1 className="text-3xl font-extrabold pt-24 pb-12">
-          {props.id} - Posts
-        </h1>
-        <div className="pb-24">
-          <BlogList items={props.posts}></BlogList>
-          {props.nextToken && (
-            <a href={`?nextToken=${props.nextToken}`}>Load more →</a>
-          )}
+
+      {!props.nextToken && (
+        <PageHeading heading={`${props.caption}${props.id}`}></PageHeading>
+      )}
+      <section className="bg-white-200">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 pt-24">
+          <div className="pb-24">
+            <BlogList items={props.posts}></BlogList>
+            {props.nextToken && (
+              <a href={`?nextToken=${props.nextToken}`}>Load more →</a>
+            )}
+          </div>
         </div>
-      </div>
+      </section>
       <Footer></Footer>
     </>
   );
