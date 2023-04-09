@@ -5,14 +5,24 @@ import { renderPage, hydrate } from './../render';
 import styles from './$index.module.css';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import Video from '../components/Video';
+import Illustration from '../components/Illustration';
+import Journey from '../components/Journey';
+import Services from '../components/Services';
+import Footer from '../components/Footer';
 
 const Index = (): JSX.Element => {
   return (
     <>
       <Header></Header>
       <Hero></Hero>
-      <Video></Video>
+      <Illustration
+        img="_goldstack/static/img/202304/office-worker-stressed-1-transparent.png"
+        caption="Life is stressful."
+        showContent={false}
+      ></Illustration>
+      <Journey></Journey>
+      <Services></Services>
+      <Footer></Footer>
     </>
   );
 };

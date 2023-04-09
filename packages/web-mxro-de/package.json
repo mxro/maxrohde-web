@@ -38,7 +38,7 @@
   "devDependencies": {
     "@goldstack/template-nextjs": "0.3.119",
     "@goldstack/utils-sh": "^0.5.2",
-    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
     "@types/jest": "^29.5.0",
     "@types/node": "^18.15.10",

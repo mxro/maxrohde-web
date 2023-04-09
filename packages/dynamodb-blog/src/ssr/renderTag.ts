@@ -77,6 +77,7 @@ export async function renderTag({
     component: PageComponent,
     appendToHead: `<title>${tagId} - ${config.blogName}</title>`,
     properties: {
+      caption: 'Tag: ',
       id: tagId,
       nextToken,
       posts,

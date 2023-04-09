@@ -98,5 +98,24 @@ export const createMigrations = (): InputMigrations<DynamoDBContext> => {
         });
       },
     },
+    {
+      name: '2023-04-01-init-view-count-pureleap',
+      up: async (params) => {
+        const table = await connectTable({
+          client: params.context.client,
+        });
+
+        const BlogMetrics = new Entity({
+          ...deepCopy(BlogMetricEntity),
+          table,
+        } as const);
+
+        await BlogMetrics.put({
+          blog: 'pureleap.com',
+          metricId: 'views',
+          value: 1, // as of 1/4/2023
+        });
+      },
+    },
   ];
 };

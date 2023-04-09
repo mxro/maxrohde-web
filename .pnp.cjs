@@ -48,7 +48,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/web-mxro-de"\
       },\
       {\
-        "name": "server-side-rendering",\
+        "name": "web-pureleap",\
         "reference": "workspace:packages/web-pureleap"\
       },\
       {\
@@ -66,9 +66,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["esbuild-tailwind-ssr-plugin", ["workspace:packages/esbuild-tailwind-ssr-plugin"]],\
       ["go-transform-cli", ["workspace:packages/go-transform-cli"]],\
       ["maxrohde-web", ["workspace:."]],\
-      ["server-side-rendering", ["workspace:packages/web-pureleap"]],\
       ["web-maxrohde-com", ["workspace:packages/web-maxrohde-com"]],\
       ["web-mxro-de", ["workspace:packages/web-mxro-de"]],\
+      ["web-pureleap", ["workspace:packages/web-pureleap"]],\
       ["web-shalveena-com", ["workspace:packages/web-shalveena-com"]]\
     ],\
     "fallbackPool": [\
@@ -100,6 +100,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"]\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@adobe/css-tools", [\
+        ["npm:4.2.0", {\
+          "packageLocation": "./.yarn/cache/@adobe-css-tools-npm-4.2.0-26da6de88a-dc5cc92ba3.zip/node_modules/@adobe/css-tools/",\
+          "packageDependencies": [\
+            ["@adobe/css-tools", "npm:4.2.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@ampproject/remapping", [\
@@ -1709,10 +1718,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@goldstack/utils-aws-http-api-local", [\
-        ["npm:0.3.18", {\
-          "packageLocation": "./.yarn/cache/@goldstack-utils-aws-http-api-local-npm-0.3.18-4808fe8eaa-24e304dafc.zip/node_modules/@goldstack/utils-aws-http-api-local/",\
+        ["npm:0.3.19", {\
+          "packageLocation": "./.yarn/cache/@goldstack-utils-aws-http-api-local-npm-0.3.19-1b384afdc8-f9f8943a0a.zip/node_modules/@goldstack/utils-aws-http-api-local/",\
           "packageDependencies": [\
-            ["@goldstack/utils-aws-http-api-local", "npm:0.3.18"],\
+            ["@goldstack/utils-aws-http-api-local", "npm:0.3.19"],\
             ["@goldstack/utils-aws-lambda", "npm:0.3.12"],\
             ["@types/aws-lambda", "npm:8.10.88"],\
             ["cookie", "npm:0.4.1"],\
@@ -3697,15 +3706,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@testing-library/jest-dom", [\
-        ["npm:5.16.4", {\
-          "packageLocation": "./.yarn/cache/@testing-library-jest-dom-npm-5.16.4-0bdb383307-4240501223.zip/node_modules/@testing-library/jest-dom/",\
+        ["npm:5.16.5", {\
+          "packageLocation": "./.yarn/cache/@testing-library-jest-dom-npm-5.16.5-b6d1f4e02f-94911f901a.zip/node_modules/@testing-library/jest-dom/",\
           "packageDependencies": [\
-            ["@testing-library/jest-dom", "npm:5.16.4"],\
+            ["@testing-library/jest-dom", "npm:5.16.5"],\
+            ["@adobe/css-tools", "npm:4.2.0"],\
             ["@babel/runtime", "npm:7.11.2"],\
             ["@types/testing-library__jest-dom", "npm:5.9.2"],\
             ["aria-query", "npm:5.0.0"],\
             ["chalk", "npm:3.0.0"],\
-            ["css", "npm:3.0.0"],\
             ["css.escape", "npm:1.5.1"],\
             ["dom-accessibility-api", "npm:0.5.14"],\
             ["lodash", "npm:4.17.21"],\
@@ -7668,17 +7677,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["source-map", "npm:0.6.1"],\
             ["source-map-resolve", "npm:0.5.3"],\
             ["urix", "npm:0.1.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:3.0.0", {\
-          "packageLocation": "./.yarn/cache/css-npm-3.0.0-ef426b63b3-4273ac816d.zip/node_modules/css/",\
-          "packageDependencies": [\
-            ["css", "npm:3.0.0"],\
-            ["fs", "npm:0.0.2"],\
-            ["inherits", "npm:2.0.4"],\
-            ["source-map", "npm:0.6.1"],\
-            ["source-map-resolve", "npm:0.6.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -18807,59 +18805,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
-      ["server-side-rendering", [\
-        ["workspace:packages/web-pureleap", {\
-          "packageLocation": "./packages/web-pureleap/",\
-          "packageDependencies": [\
-            ["server-side-rendering", "workspace:packages/web-pureleap"],\
-            ["@goldstack/template-ssr", "npm:0.3.18"],\
-            ["@goldstack/template-ssr-cli", "npm:0.3.20"],\
-            ["@goldstack/utils-aws-http-api-local", "npm:0.3.18"],\
-            ["@goldstack/utils-esbuild", "npm:0.5.6"],\
-            ["@jest-mock/express", "npm:1.4.5"],\
-            ["@jest/transform", "npm:29.5.0"],\
-            ["@swc/core", "npm:1.2.224"],\
-            ["@swc/jest", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.2.22"],\
-            ["@tailwindcss/typography", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.5.9"],\
-            ["@testing-library/jest-dom", "npm:5.16.4"],\
-            ["@testing-library/react", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:13.3.0"],\
-            ["@types/aws-lambda", "npm:8.10.88"],\
-            ["@types/aws-serverless-express", "npm:3.3.3"],\
-            ["@types/jest", "npm:29.5.0"],\
-            ["@types/node", "npm:18.15.10"],\
-            ["@types/node-fetch", "npm:2.5.12"],\
-            ["@types/react", "npm:18.0.19"],\
-            ["@types/testing-library__jest-dom", "npm:5.14.5"],\
-            ["@types/testing-library__react", "npm:10.2.0"],\
-            ["@yarnpkg/esbuild-plugin-pnp", "virtual:a65820296cce365be2dfdb0529c30702c1eca3597d876edd5c50a999a969c1b188c90f3752706541e580fe71f75cdb88f57e592833fa93dbe993b307aa6101da#npm:3.0.0-rc.15"],\
-            ["concurrently", "npm:7.3.0"],\
-            ["date-fns", "npm:2.28.0"],\
-            ["esbuild", "npm:0.15.5"],\
-            ["esbuild-ignore-with-comments-plugin", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.3.8"],\
-            ["esbuild-ssr-css-modules-plugin", "virtual:a65820296cce365be2dfdb0529c30702c1eca3597d876edd5c50a999a969c1b188c90f3752706541e580fe71f75cdb88f57e592833fa93dbe993b307aa6101da#npm:0.1.6"],\
-            ["esbuild-tailwind-ssr-plugin", "workspace:packages/esbuild-tailwind-ssr-plugin"],\
-            ["find-free-port", "npm:2.0.0"],\
-            ["jest", "virtual:7d42466ae6c78580bd9c1e87d13d7ab3ede0127954e482b418663c43b56e1ab487e2b687b40b6aff4fc8c62c5c2760ae3b712417fcad70a07fb1035aa316eb17#npm:29.5.0"],\
-            ["jest-environment-jsdom", "npm:28.1.3"],\
-            ["jest-transform-stub", "npm:2.0.0"],\
-            ["node-css-require", "npm:0.4.6"],\
-            ["node-fetch", "virtual:e414995db9c779306e687c7a7c66965e66d0cd7270f6b9fc4f00cc9772c5d50b305ab83e142e0e21dbf10968f7437cbdfcb170d05f4bde68707ac7d0082c9cca#npm:2.6.7"],\
-            ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:18.2.0"],\
-            ["rimraf", "npm:3.0.2"],\
-            ["source-map-support", "npm:0.5.21"],\
-            ["static-file-mapper-build", "npm:0.3.7"],\
-            ["supertest", "npm:4.0.2"],\
-            ["tailwindcss", "virtual:818122d9fc6446df8b88a4e58e7698943dd1905bee7ac86d9352ca6b524ab4813e9e1b3859d836e804d0270a233e55ccf53d9cc6fbf74ce959c0c0d14ed0a79a#npm:3.3.0"],\
-            ["ts-jest", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:29.0.5"],\
-            ["ts-node", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:10.9.1"],\
-            ["ts-node-dev", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:2.0.0"],\
-            ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"],\
-            ["typescript-plugin-css-modules", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:3.4.0"]\
-          ],\
-          "linkType": "SOFT"\
-        }]\
-      ]],\
       ["set-blocking", [\
         ["npm:2.0.0", {\
           "packageLocation": "./.yarn/cache/set-blocking-npm-2.0.0-49e2cffa24-6e65a05f7c.zip/node_modules/set-blocking/",\
@@ -19201,15 +19146,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["resolve-url", "npm:0.2.1"],\
             ["source-map-url", "npm:0.4.0"],\
             ["urix", "npm:0.1.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:0.6.0", {\
-          "packageLocation": "./.yarn/cache/source-map-resolve-npm-0.6.0-6e67c9e55f-fe503b9e5d.zip/node_modules/source-map-resolve/",\
-          "packageDependencies": [\
-            ["source-map-resolve", "npm:0.6.0"],\
-            ["atob", "npm:2.1.2"],\
-            ["decode-uri-component", "npm:0.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -21777,14 +21713,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["web-maxrohde-com", "workspace:packages/web-maxrohde-com"],\
             ["@goldstack/template-ssr", "npm:0.3.18"],\
             ["@goldstack/template-ssr-cli", "npm:0.3.20"],\
-            ["@goldstack/utils-aws-http-api-local", "npm:0.3.18"],\
+            ["@goldstack/utils-aws-http-api-local", "npm:0.3.19"],\
             ["@goldstack/utils-esbuild", "npm:0.5.6"],\
             ["@jest-mock/express", "npm:1.4.5"],\
             ["@jest/transform", "npm:29.5.0"],\
             ["@swc/core", "npm:1.2.224"],\
             ["@swc/jest", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.2.22"],\
             ["@tailwindcss/typography", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.5.9"],\
-            ["@testing-library/jest-dom", "npm:5.16.4"],\
+            ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:13.3.0"],\
             ["@types/aws-lambda", "npm:8.10.88"],\
             ["@types/aws-serverless-express", "npm:3.3.3"],\
@@ -21834,7 +21770,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["web-mxro-de", "workspace:packages/web-mxro-de"],\
             ["@goldstack/template-nextjs", "npm:0.3.119"],\
             ["@goldstack/utils-sh", "npm:0.5.2"],\
-            ["@testing-library/jest-dom", "npm:5.16.4"],\
+            ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:13.3.0"],\
             ["@types/jest", "npm:29.5.0"],\
             ["@types/node", "npm:18.15.10"],\
@@ -21874,6 +21810,61 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["web-pureleap", [\
+        ["workspace:packages/web-pureleap", {\
+          "packageLocation": "./packages/web-pureleap/",\
+          "packageDependencies": [\
+            ["web-pureleap", "workspace:packages/web-pureleap"],\
+            ["@goldstack/template-ssr", "npm:0.3.18"],\
+            ["@goldstack/template-ssr-cli", "npm:0.3.20"],\
+            ["@goldstack/utils-aws-http-api-local", "npm:0.3.19"],\
+            ["@goldstack/utils-esbuild", "npm:0.5.6"],\
+            ["@jest-mock/express", "npm:1.4.5"],\
+            ["@jest/transform", "npm:29.5.0"],\
+            ["@swc/core", "npm:1.2.224"],\
+            ["@swc/jest", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.2.22"],\
+            ["@tailwindcss/typography", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.5.9"],\
+            ["@testing-library/jest-dom", "npm:5.16.5"],\
+            ["@testing-library/react", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:13.3.0"],\
+            ["@types/aws-lambda", "npm:8.10.88"],\
+            ["@types/aws-serverless-express", "npm:3.3.3"],\
+            ["@types/jest", "npm:29.5.0"],\
+            ["@types/node", "npm:18.15.10"],\
+            ["@types/node-fetch", "npm:2.5.12"],\
+            ["@types/react", "npm:18.0.19"],\
+            ["@types/testing-library__jest-dom", "npm:5.14.5"],\
+            ["@types/testing-library__react", "npm:10.2.0"],\
+            ["@yarnpkg/esbuild-plugin-pnp", "virtual:a65820296cce365be2dfdb0529c30702c1eca3597d876edd5c50a999a969c1b188c90f3752706541e580fe71f75cdb88f57e592833fa93dbe993b307aa6101da#npm:3.0.0-rc.15"],\
+            ["concurrently", "npm:7.3.0"],\
+            ["date-fns", "npm:2.28.0"],\
+            ["db-blog", "workspace:packages/db-blog"],\
+            ["dynamodb-blog", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#workspace:packages/dynamodb-blog"],\
+            ["esbuild", "npm:0.15.5"],\
+            ["esbuild-ignore-with-comments-plugin", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.3.8"],\
+            ["esbuild-ssr-css-modules-plugin", "virtual:a65820296cce365be2dfdb0529c30702c1eca3597d876edd5c50a999a969c1b188c90f3752706541e580fe71f75cdb88f57e592833fa93dbe993b307aa6101da#npm:0.1.6"],\
+            ["esbuild-tailwind-ssr-plugin", "workspace:packages/esbuild-tailwind-ssr-plugin"],\
+            ["find-free-port", "npm:2.0.0"],\
+            ["jest", "virtual:7d42466ae6c78580bd9c1e87d13d7ab3ede0127954e482b418663c43b56e1ab487e2b687b40b6aff4fc8c62c5c2760ae3b712417fcad70a07fb1035aa316eb17#npm:29.5.0"],\
+            ["jest-environment-jsdom", "npm:28.1.3"],\
+            ["jest-transform-stub", "npm:2.0.0"],\
+            ["node-css-require", "npm:0.4.6"],\
+            ["node-fetch", "virtual:e414995db9c779306e687c7a7c66965e66d0cd7270f6b9fc4f00cc9772c5d50b305ab83e142e0e21dbf10968f7437cbdfcb170d05f4bde68707ac7d0082c9cca#npm:2.6.7"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:18.2.0"],\
+            ["rimraf", "npm:3.0.2"],\
+            ["source-map-support", "npm:0.5.21"],\
+            ["static-file-mapper-build", "npm:0.3.7"],\
+            ["supertest", "npm:4.0.2"],\
+            ["tailwindcss", "virtual:818122d9fc6446df8b88a4e58e7698943dd1905bee7ac86d9352ca6b524ab4813e9e1b3859d836e804d0270a233e55ccf53d9cc6fbf74ce959c0c0d14ed0a79a#npm:3.3.0"],\
+            ["ts-jest", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:29.0.5"],\
+            ["ts-node", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:10.9.1"],\
+            ["ts-node-dev", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:2.0.0"],\
+            ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"],\
+            ["typescript-plugin-css-modules", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:3.4.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["web-shalveena-com", [\
         ["workspace:packages/web-shalveena-com", {\
           "packageLocation": "./packages/web-shalveena-com/",\
@@ -21881,14 +21872,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["web-shalveena-com", "workspace:packages/web-shalveena-com"],\
             ["@goldstack/template-ssr", "npm:0.3.18"],\
             ["@goldstack/template-ssr-cli", "npm:0.3.20"],\
-            ["@goldstack/utils-aws-http-api-local", "npm:0.3.18"],\
+            ["@goldstack/utils-aws-http-api-local", "npm:0.3.19"],\
             ["@goldstack/utils-esbuild", "npm:0.5.6"],\
             ["@jest-mock/express", "npm:1.4.5"],\
             ["@jest/transform", "npm:29.5.0"],\
             ["@swc/core", "npm:1.2.224"],\
             ["@swc/jest", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.2.22"],\
             ["@tailwindcss/typography", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.5.9"],\
-            ["@testing-library/jest-dom", "npm:5.16.4"],\
+            ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:13.3.0"],\
             ["@types/aws-lambda", "npm:8.10.88"],\
             ["@types/aws-serverless-express", "npm:3.3.3"],\

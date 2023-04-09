@@ -14,5 +14,7 @@
   "maxrohdeCoverImagePath": "./../web-maxrohde-com/static/img/cover",
   "maxrohdeAttachmentsImagePath": "./../web-maxrohde-com/static/img/attachments",
   "shalveenaCoverImagePath": "./../web-shalveena-com/static/img/cover",
-  "shalveenaAttachmentsImagePath": "./../web-shalveena-com/static/img/attachments"
+  "shalveenaAttachmentsImagePath": "./../web-shalveena-com/static/img/attachments",
+  "pureleapCoverImagePath": "./../web-pureleap/static/img/cover",
+  "pureleapAttachmentsImagePath": "./../web-pureleap/static/img/attachments"
 }

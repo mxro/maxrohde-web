@@ -5,6 +5,13 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@adobe/css-tools@npm:^4.0.1":
+  version: 4.2.0
+  resolution: "@adobe/css-tools@npm:4.2.0"
+  checksum: dc5cc92ba3d562e7ffddb79d6d222c7e00b65f255fd2725b3d71490ff268844be322f917415d8c4ab39eca646343b632058db8bd5b1d646193fcc94d1d3e420b
+  languageName: node
+  linkType: hard
+
 "@ampproject/remapping@npm:^2.1.0":
   version: 2.1.2
   resolution: "@ampproject/remapping@npm:2.1.2"
@@ -1250,16 +1257,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@goldstack/utils-aws-http-api-local@npm:0.3.18":
-  version: 0.3.18
-  resolution: "@goldstack/utils-aws-http-api-local@npm:0.3.18"
+"@goldstack/utils-aws-http-api-local@npm:^0.3.19":
+  version: 0.3.19
+  resolution: "@goldstack/utils-aws-http-api-local@npm:0.3.19"
   dependencies:
     "@goldstack/utils-aws-lambda": 0.3.12
     "@types/aws-lambda": ^8.10.88
     cookie: ^0.4.1
     cors: ^2.8.5
     express: 4.17.3
-  checksum: 24e304dafc2b89b4b294e77ac6c2d69594fe1e1af9fb786ddde3e330ca66c52267c89fd274a520bcf6cb13bdc22a17cbabb901a62eff8a5b4300364d502bf684
+  checksum: f9f8943a0a1abde3fb9dd211d52fe2f896356c780cffcf6e8efd099e503e61856eed670285f87d863c675ebd8bb06231c6117cced39dbb7237326064036aa13d
   languageName: node
   linkType: hard
 
@@ -3115,20 +3122,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/jest-dom@npm:^5.16.4":
-  version: 5.16.4
-  resolution: "@testing-library/jest-dom@npm:5.16.4"
+"@testing-library/jest-dom@npm:^5.16.5":
+  version: 5.16.5
+  resolution: "@testing-library/jest-dom@npm:5.16.5"
   dependencies:
+    "@adobe/css-tools": ^4.0.1
     "@babel/runtime": ^7.9.2
     "@types/testing-library__jest-dom": ^5.9.1
     aria-query: ^5.0.0
     chalk: ^3.0.0
-    css: ^3.0.0
     css.escape: ^1.5.1
     dom-accessibility-api: ^0.5.6
     lodash: ^4.17.15
     redent: ^3.0.0
-  checksum: 4240501223b72b97a44d4e3c669f39b208c49fb645d11d08d5f178d607265c5dfad07efbe027f41a0e2458178ff1fd5bf437fc05661b9109dcd013b95a37079e
+  checksum: 94911f901a8031f3e489d04ac057cb5373621230f5d92bed80e514e24b069fb58a3166d1dd86963e55f078a1bd999da595e2ab96ed95f452d477e272937d792a
   languageName: node
   linkType: hard
 
@@ -6559,17 +6566,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "css@npm:3.0.0"
-  dependencies:
-    inherits: ^2.0.4
-    source-map: ^0.6.1
-    source-map-resolve: ^0.6.0
-  checksum: 4273ac816ddf99b99acb9c1d1a27d86d266a533cc01118369d941d8e8a78277a83cad3315e267a398c509d930fbb86504e193ea1ebc620a4a4212e06fe76e8be
-  languageName: node
-  linkType: hard
-
 "cssesc@npm:^3.0.0":
   version: 3.0.0
   resolution: "cssesc@npm:3.0.0"
@@ -7359,7 +7355,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dynamodb-blog@0.1.0, dynamodb-blog@workspace:packages/dynamodb-blog":
+"dynamodb-blog@0.1.0, dynamodb-blog@workspace:^, dynamodb-blog@workspace:packages/dynamodb-blog":
   version: 0.0.0-use.local
   resolution: "dynamodb-blog@workspace:packages/dynamodb-blog"
   dependencies:
@@ -16561,57 +16557,6 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
-"server-side-rendering@workspace:packages/web-pureleap":
-  version: 0.0.0-use.local
-  resolution: "server-side-rendering@workspace:packages/web-pureleap"
-  dependencies:
-    "@goldstack/template-ssr": 0.3.18
-    "@goldstack/template-ssr-cli": 0.3.20
-    "@goldstack/utils-aws-http-api-local": 0.3.18
-    "@goldstack/utils-esbuild": 0.5.6
-    "@jest-mock/express": ^1.4.5
-    "@jest/transform": ^29.3.1
-    "@swc/core": ^1.2.224
-    "@swc/jest": ^0.2.22
-    "@tailwindcss/typography": ^0.5.9
-    "@testing-library/jest-dom": ^5.16.4
-    "@testing-library/react": ^13.3.0
-    "@types/aws-lambda": ^8.10.88
-    "@types/aws-serverless-express": ^3.3.3
-    "@types/jest": ^29.5.0
-    "@types/node": ^18.15.10
-    "@types/node-fetch": 2
-    "@types/react": ^18.0.17
-    "@types/testing-library__jest-dom": ^5.14.5
-    "@types/testing-library__react": ^10.2.0
-    "@yarnpkg/esbuild-plugin-pnp": ^3.0.0-rc.15
-    concurrently: ^7.3.0
-    date-fns: ^2.28.0
-    esbuild: ^0.15.5
-    esbuild-ignore-with-comments-plugin: 0.3.8
-    esbuild-ssr-css-modules-plugin: 0.1.6
-    esbuild-tailwind-ssr-plugin: "workspace:^"
-    find-free-port: ^2.0.0
-    jest: ^29.5.0
-    jest-environment-jsdom: ^28.1.3
-    jest-transform-stub: ^2.0.0
-    node-css-require: 0.4.6
-    node-fetch: 2.6.7
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    rimraf: ^3.0.2
-    source-map-support: ^0.5.21
-    static-file-mapper-build: 0.3.7
-    supertest: ^4.0.2
-    tailwindcss: ^3.3.0
-    ts-jest: ^29.0.5
-    ts-node: ^10.9.1
-    ts-node-dev: ^2.0.0
-    typescript: ^5.0.2
-    typescript-plugin-css-modules: ^3.4.0
-  languageName: unknown
-  linkType: soft
-
 "set-blocking@npm:^2.0.0":
   version: 2.0.0
   resolution: "set-blocking@npm:2.0.0"
@@ -16902,16 +16847,6 @@ resolve@^1.20.0:
     source-map-url: ^0.4.0
     urix: ^0.1.0
   checksum: c73fa44ac00783f025f6ad9e038ab1a2e007cd6a6b86f47fe717c3d0765b4a08d264f6966f3bd7cd9dbcd69e4832783d5472e43247775b2a550d6f2155d24bae
-  languageName: node
-  linkType: hard
-
-"source-map-resolve@npm:^0.6.0":
-  version: 0.6.0
-  resolution: "source-map-resolve@npm:0.6.0"
-  dependencies:
-    atob: ^2.1.2
-    decode-uri-component: ^0.2.0
-  checksum: fe503b9e5dac1c54be835282fcfec10879434e7b3ee08a9774f230299c724a8d403484d9531276d1670c87390e0e4d1d3f92b14cca6e4a2445ea3016b786ecd4
   languageName: node
   linkType: hard
 
@@ -19083,14 +19018,14 @@ resolve@^1.20.0:
   dependencies:
     "@goldstack/template-ssr": 0.3.18
     "@goldstack/template-ssr-cli": 0.3.20
-    "@goldstack/utils-aws-http-api-local": 0.3.18
+    "@goldstack/utils-aws-http-api-local": ^0.3.19
     "@goldstack/utils-esbuild": 0.5.6
     "@jest-mock/express": ^1.4.5
     "@jest/transform": ^29.3.1
     "@swc/core": ^1.2.224
     "@swc/jest": ^0.2.22
     "@tailwindcss/typography": ^0.5.9
-    "@testing-library/jest-dom": ^5.16.4
+    "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.3.0
     "@types/aws-lambda": ^8.10.88
     "@types/aws-serverless-express": ^3.3.3
@@ -19106,7 +19041,7 @@ resolve@^1.20.0:
     date-fns: ^2.28.0
     db-blog: "workspace:^"
     depcheck: ^1.4.3
-    dynamodb-blog: 0.1.0
+    dynamodb-blog: "workspace:^"
     esbuild: ^0.15.5
     esbuild-css-modules-client-plugin: 0.3.2
     esbuild-ignore-with-comments-plugin: 0.3.8
@@ -19138,7 +19073,7 @@ resolve@^1.20.0:
   dependencies:
     "@goldstack/template-nextjs": 0.3.119
     "@goldstack/utils-sh": ^0.5.2
-    "@testing-library/jest-dom": ^5.16.4
+    "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.3.0
     "@types/jest": ^29.5.0
     "@types/node": ^18.15.10
@@ -19175,20 +19110,73 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
-"web-shalveena-com@workspace:packages/web-shalveena-com":
+"web-pureleap@workspace:packages/web-pureleap":
   version: 0.0.0-use.local
-  resolution: "web-shalveena-com@workspace:packages/web-shalveena-com"
+  resolution: "web-pureleap@workspace:packages/web-pureleap"
   dependencies:
     "@goldstack/template-ssr": 0.3.18
     "@goldstack/template-ssr-cli": 0.3.20
-    "@goldstack/utils-aws-http-api-local": 0.3.18
+    "@goldstack/utils-aws-http-api-local": ^0.3.19
     "@goldstack/utils-esbuild": 0.5.6
     "@jest-mock/express": ^1.4.5
     "@jest/transform": ^29.3.1
     "@swc/core": ^1.2.224
     "@swc/jest": ^0.2.22
     "@tailwindcss/typography": ^0.5.9
-    "@testing-library/jest-dom": ^5.16.4
+    "@testing-library/jest-dom": ^5.16.5
+    "@testing-library/react": ^13.3.0
+    "@types/aws-lambda": ^8.10.88
+    "@types/aws-serverless-express": ^3.3.3
+    "@types/jest": ^29.5.0
+    "@types/node": ^18.15.10
+    "@types/node-fetch": 2
+    "@types/react": ^18.0.17
+    "@types/testing-library__jest-dom": ^5.14.5
+    "@types/testing-library__react": ^10.2.0
+    "@yarnpkg/esbuild-plugin-pnp": ^3.0.0-rc.15
+    concurrently: ^7.3.0
+    date-fns: ^2.28.0
+    db-blog: "workspace:^"
+    dynamodb-blog: "workspace:^"
+    esbuild: ^0.15.5
+    esbuild-ignore-with-comments-plugin: 0.3.8
+    esbuild-ssr-css-modules-plugin: 0.1.6
+    esbuild-tailwind-ssr-plugin: "workspace:^"
+    find-free-port: ^2.0.0
+    jest: ^29.5.0
+    jest-environment-jsdom: ^28.1.3
+    jest-transform-stub: ^2.0.0
+    node-css-require: 0.4.6
+    node-fetch: 2.6.7
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    rimraf: ^3.0.2
+    source-map-support: ^0.5.21
+    static-file-mapper-build: 0.3.7
+    supertest: ^4.0.2
+    tailwindcss: ^3.3.0
+    ts-jest: ^29.0.5
+    ts-node: ^10.9.1
+    ts-node-dev: ^2.0.0
+    typescript: ^5.0.2
+    typescript-plugin-css-modules: ^3.4.0
+  languageName: unknown
+  linkType: soft
+
+"web-shalveena-com@workspace:packages/web-shalveena-com":
+  version: 0.0.0-use.local
+  resolution: "web-shalveena-com@workspace:packages/web-shalveena-com"
+  dependencies:
+    "@goldstack/template-ssr": 0.3.18
+    "@goldstack/template-ssr-cli": 0.3.20
+    "@goldstack/utils-aws-http-api-local": ^0.3.19
+    "@goldstack/utils-esbuild": 0.5.6
+    "@jest-mock/express": ^1.4.5
+    "@jest/transform": ^29.3.1
+    "@swc/core": ^1.2.224
+    "@swc/jest": ^0.2.22
+    "@tailwindcss/typography": ^0.5.9
+    "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.3.0
     "@types/aws-lambda": ^8.10.88
     "@types/aws-serverless-express": ^3.3.3

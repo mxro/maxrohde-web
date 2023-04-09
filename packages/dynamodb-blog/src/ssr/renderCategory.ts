@@ -18,6 +18,7 @@ import {
 import AWS from 'aws-sdk';
 
 export interface TagProps {
+  caption: string;
   id: string;
   posts: BlogListItemProps[];
   nextToken?: string;
@@ -85,8 +86,9 @@ export async function renderCategory({
 
   return renderPage({
     component: PageComponent,
-    appendToHead: `<title>${categoryId} - ${config.blogName}</title>`,
+    appendToHead: `<title>Category: ${categoryId} - ${config.blogName}</title>`,
     properties: {
+      caption: 'Category: ',
       id: categoryId,
       nextToken,
       posts,

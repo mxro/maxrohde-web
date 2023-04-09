@@ -3,19 +3,19 @@
     "names": [
       "tailwind.css"
     ],
-    "generatedName": "tailwind.5ad29ea06a85122f673c2a84c084cd4e.css"
+    "generatedName": "tailwind.8584b0956884a054abee4414937fdf9b.css"
   },
   {
     "names": [
       "pureleap-web--__index.map"
     ],
-    "generatedName": "-__index.cc13be28c00feea5e62c7702cd5d856b.map.json"
+    "generatedName": "-__index.8950eec955067126773397b4ba761bb6.map.json"
   },
   {
     "names": [
       "pureleap-web--__index-bundle.js"
     ],
-    "generatedName": "-__index-bundle.1920f9f8c0412cba3b37a812c6c21e0b.js"
+    "generatedName": "-__index-bundle.266bdb8c9e1a4e16984a6b80c68f74c7.js"
   },
   {
     "names": [
@@ -28,5 +28,89 @@
       "pureleap-web-posts-bundle.js"
     ],
     "generatedName": "posts-bundle.361b8c5b69071a728cedca9a551fea85.js"
+  },
+  {
+    "names": [
+      "pureleap-web-about.map"
+    ],
+    "generatedName": "about.c0dbe17cc9a3bf320c82c9796928c18f.map.json"
+  },
+  {
+    "names": [
+      "pureleap-web-about-bundle.js"
+    ],
+    "generatedName": "about-bundle.704ecf9f8765779f552a0bc86891190f.js"
+  },
+  {
+    "names": [
+      "pureleap-web-blog.map"
+    ],
+    "generatedName": "blog.8cb0a4a743abf82d9969ee56356228dc.map.json"
+  },
+  {
+    "names": [
+      "pureleap-web-blog-bundle.js"
+    ],
+    "generatedName": "blog-bundle.c82b863f108e12d4255606ef2bf0d9a3.js"
+  },
+  {
+    "names": [
+      "pureleap-web-categories-_id_.map"
+    ],
+    "generatedName": "categories-_id_.9c3314ecb854c2d035b8cfaa808aeb53.map.json"
+  },
+  {
+    "names": [
+      "pureleap-web-categories-_id_-bundle.js"
+    ],
+    "generatedName": "categories-_id_-bundle.8fb0d13d78c80b0fd1e4de9747dae883.js"
+  },
+  {
+    "names": [
+      "pureleap-web-robots_txt.map"
+    ],
+    "generatedName": "robots_txt.2af8db912735f7b1b37390305b6ba59b.map.json"
+  },
+  {
+    "names": [
+      "pureleap-web-robots_txt-bundle.js"
+    ],
+    "generatedName": "robots_txt-bundle.44177ec796a1de1fd6ecbfeed2ef598c.js"
+  },
+  {
+    "names": [
+      "pureleap-web-sitemap_xml.map"
+    ],
+    "generatedName": "sitemap_xml.3272e42e394908506c1210dc35b158fa.map.json"
+  },
+  {
+    "names": [
+      "pureleap-web-sitemap_xml-bundle.js"
+    ],
+    "generatedName": "sitemap_xml-bundle.2e992837c33c10412067f7611015145e.js"
+  },
+  {
+    "names": [
+      "pureleap-web-tags-_id_.map"
+    ],
+    "generatedName": "tags-_id_.35ec4c9c8f9a4adf7cdb212b3c045101.map.json"
+  },
+  {
+    "names": [
+      "pureleap-web-tags-_id_-bundle.js"
+    ],
+    "generatedName": "tags-_id_-bundle.247d2e649b8f96881fe2845c1ae2e599.js"
+  },
+  {
+    "names": [
+      "pureleap-web-_post__.map"
+    ],
+    "generatedName": "_post__.adff901c5a07c150024092a3f4dc1390.map.json"
+  },
+  {
+    "names": [
+      "pureleap-web-_post__-bundle.js"
+    ],
+    "generatedName": "_post__-bundle.7ad55f8cdea70e84c7e5beceed85975d.js"
   }
 ]

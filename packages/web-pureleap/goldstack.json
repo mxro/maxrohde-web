@@ -1,6 +1,6 @@
 {
   "$schema": "./schemas/package.schema.json",
-  "name": "server-side-rendering",
+  "name": "web-pureleap",
   "template": "server-side-rendering",
   "templateVersion": "0.1.16",
   "configuration": {},
@@ -13,9 +13,33 @@
             "function_name": "pureleap-web--__index",
             "route": "ANY /"
           },
-          "ANY /posts": {
-            "function_name": "pureleap-web-posts",
-            "route": "ANY /posts"
+          "ANY /about": {
+            "function_name": "pureleap-web-about",
+            "route": "ANY /about"
+          },
+          "ANY /blog": {
+            "function_name": "pureleap-web-blog",
+            "route": "ANY /blog"
+          },
+          "ANY /categories/{id}": {
+            "function_name": "pureleap-web-categories-_id_",
+            "route": "ANY /categories/{id}"
+          },
+          "ANY /robots.txt": {
+            "function_name": "pureleap-web-robots_txt",
+            "route": "ANY /robots.txt"
+          },
+          "ANY /sitemap.xml": {
+            "function_name": "pureleap-web-sitemap_xml",
+            "route": "ANY /sitemap.xml"
+          },
+          "ANY /tags/{id}": {
+            "function_name": "pureleap-web-tags-_id_",
+            "route": "ANY /tags/{id}"
+          },
+          "ANY /{post+}": {
+            "function_name": "pureleap-web-_post__",
+            "route": "ANY /{post+}"
           }
         },
         "domain": "dev-pureleap.home.mxro.de",
@@ -23,7 +47,8 @@
         "hostedZoneDomain": "mxro.de"
       },
       "awsUser": "awsUser",
-      "awsRegion": "ap-southeast-2"
+      "awsRegion": "ap-southeast-2",
+      "tfStateKey": "web-pureleap-dev-3348d36abfb49cd4d858.tfstate"
     }
   ]
 }

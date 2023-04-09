@@ -3,6 +3,8 @@ title: 'What Does it Mean to Be Good'
 id: 'what-does-it-mean-to-be-good'
 date: '2023-03-12'
 blog: 'maxrohde.com'
+secondaryBlogs:
+  - 'pureleap.com'
 coverImage: 'clouds-dalle.png'
 authors:
   - max
@@ -30,7 +32,7 @@ I think we really got to give credit to the entertainment industry to be bold en
 
 I will discuss each of these questions in the following.
 
-# What does it mean to be good?
+## What does it mean to be good?
 
 I already mentioned in The Good Place selfless actions helping others would be understood to increase a persons point total and therewith the eligibility to enter The Good Place. I think this is quite a logical and natural way to understand goodness. As has been shown by [Richard Dawkins in The Selfish Gene](https://en.wikipedia.org/wiki/The_Selfish_Gene), humans are hard-wired to be helpful to each other. Unfortunately we are also programmed with the conflicting goal of looking out for ourselves; resulting in endless emotional agony. We all understand from our own experience that it is sometimes difficult to put the need of others before ourselves, but we know that it usually feels right.
 
@@ -40,7 +42,7 @@ While this undoubtedly a very simplistic view on moral philosophy I think it is 
 
 There is a much wider discussion to be had what objective good is (with the definition above being a wholly subjective one). But I think that may be one of the topics where more wisdom can be attained from avoiding discussing it too deeply rather than pondering it too deeply. A strategy the Buddha suggests for a number of questions such as whether the world is eternal or if the self is identical to the body or not (see [The Unanswered Questions](https://en.wikipedia.org/wiki/The_unanswered_questions)).
 
-# Should we be good?
+## Should we be good?
 
 Many religions, such as Christianity and Islam, suggest that good deeds in this life will reward us with eternal bliss in the afterlife. If this were true, that would be an excellent justification for seeking virtue. However, as consoling as this idea is, I don't think there is much wisdom in believing it; since there is absolutely zero evidence that there is any truth to it; and, taking into account all knowledge we have accumulated so far, it also seems very unlikely. For instance, our self and mind is very clearly emergent from our brains, and if our brain is dead, it is likely that who we are is dead as well (Not that we should be pondering this too deeply, to not disappoint the Buddha since if the self is identical to the body or not is one of The Unanswered Questions).
 
@@ -52,7 +54,7 @@ Here I think we can again find guidance in our subjective experience. We know th
 
 Thus I think the reason to be good is that we know that suffering must be avoided, and that others suffer in the same way as us. We can contribute to relive our own suffering and that of others through our actions, and thus should do so.
 
-# Am I good?
+## Am I good?
 
 I think the question that affected me most profoundly from watching The Good Place was asking myself if I am good, and if I would have earned my place in the fictional Good Place. Given the examples of virtuous behaviour of the inhabitants of the Good Place, the answer to that question would clearly be no. All those who dwell in the Good Place (with the exception of Eleanor) sacrificed their life for good causes and for others, to a dramatically larger degree than I ever did.
 
@@ -60,7 +62,7 @@ Also I think, just as any other human being, I am selfish in little things from 
 
 Thus while I am sure that I won't make it to the fictional Good Place, I find some comfort in that often I at least try to be good; but certainly want to try to be better, which leads me to the last question I wanted to discuss:
 
-# How can I be better?
+## How can I be better?
 
 I believe that one of the greatest enablers of being a better person is humility, and specifically the acknowledgement of ignorance; much bad has been brought upon the world that was seeded from good intentions - because we thought we had it all figured out, although we didn't. Thus I want to try to learn to be more humble, and to acknowledge that there is more what I don't know than I think I don't know.
 
