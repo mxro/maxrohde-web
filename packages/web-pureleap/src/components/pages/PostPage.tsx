@@ -26,7 +26,7 @@ const PostPage = (props: PostProps): JSX.Element => {
       >
         <Header></Header>
         <div className="flex flex-row container mx-auto relative bg-white-300 opacity-90 mt-24 pb-8 mb-24 max-w-7xl rounded-[24px]">
-          <div className="basis-3/5 px-4 pt-12 sm:px-6 max-w-full">
+          <div className="basis-full md:basis-3/5 px-4 pt-12 sm:px-6 ">
             <article className="prose lg:prose-xl border-b border-gray-300 ">
               <h1 className="font-robotoslab">{props.post.title}</h1>
               {props.post.canonicalUrl && (
@@ -61,8 +61,8 @@ const PostPage = (props: PostProps): JSX.Element => {
               </div>
             )}
           </div>
-          <div className="max-w-full basis-2/5 ">
-            <div className="hidden md:block pt-32 pl-24 fixed">
+          <div className="hidden md:block max-w-full basis-2/5 ">
+            <div className="pt-32 pl-24 fixed">
               <div>
                 <div className="pl-12 pb-6">
                   <img
