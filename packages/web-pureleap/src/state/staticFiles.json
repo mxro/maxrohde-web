@@ -67,25 +67,29 @@
   },
   {
     "names": [
-      "pureleap-web-robots_txt.map"
+      "pureleap-web-robots_txt.map",
+      "pureleap-web-prod-robots_txt.map"
     ],
     "generatedName": "robots_txt.2af8db912735f7b1b37390305b6ba59b.map.json"
   },
   {
     "names": [
-      "pureleap-web-robots_txt-bundle.js"
+      "pureleap-web-robots_txt-bundle.js",
+      "pureleap-web-prod-robots_txt-bundle.js"
     ],
     "generatedName": "robots_txt-bundle.44177ec796a1de1fd6ecbfeed2ef598c.js"
   },
   {
     "names": [
-      "pureleap-web-sitemap_xml.map"
+      "pureleap-web-sitemap_xml.map",
+      "pureleap-web-prod-sitemap_xml.map"
     ],
     "generatedName": "sitemap_xml.3272e42e394908506c1210dc35b158fa.map.json"
   },
   {
     "names": [
-      "pureleap-web-sitemap_xml-bundle.js"
+      "pureleap-web-sitemap_xml-bundle.js",
+      "pureleap-web-prod-sitemap_xml-bundle.js"
     ],
     "generatedName": "sitemap_xml-bundle.2e992837c33c10412067f7611015145e.js"
   },
@@ -112,5 +116,77 @@
       "pureleap-web-_post__-bundle.js"
     ],
     "generatedName": "_post__-bundle.14cab1095f36ffff27cc5de88dd9eaf1.js"
+  },
+  {
+    "names": [
+      "pureleap-web-prod--__index.map"
+    ],
+    "generatedName": "-__index.6f9ed04438435711cdef76ca74c3a6cd.map.json"
+  },
+  {
+    "names": [
+      "pureleap-web-prod--__index-bundle.js"
+    ],
+    "generatedName": "-__index-bundle.02fed895cca8733e4972d0baea8f2447.js"
+  },
+  {
+    "names": [
+      "pureleap-web-prod-about.map"
+    ],
+    "generatedName": "about.a3ef088234b06672f8bd69ff7d2129e6.map.json"
+  },
+  {
+    "names": [
+      "pureleap-web-prod-about-bundle.js"
+    ],
+    "generatedName": "about-bundle.0b4a95ce95fa8e3b9b9a4116fcdf8777.js"
+  },
+  {
+    "names": [
+      "pureleap-web-prod-blog.map"
+    ],
+    "generatedName": "blog.438a985f1449926bb729f69e7db16b7d.map.json"
+  },
+  {
+    "names": [
+      "pureleap-web-prod-blog-bundle.js"
+    ],
+    "generatedName": "blog-bundle.79b29021739e91750344b9215ae68e58.js"
+  },
+  {
+    "names": [
+      "pureleap-web-prod-categories-_id_.map"
+    ],
+    "generatedName": "categories-_id_.bf3ba28d2ea6c9f7aba0824ede85479f.map.json"
+  },
+  {
+    "names": [
+      "pureleap-web-prod-categories-_id_-bundle.js"
+    ],
+    "generatedName": "categories-_id_-bundle.ff911bbfdc2d6a7ee4f23f613618318c.js"
+  },
+  {
+    "names": [
+      "pureleap-web-prod-tags-_id_.map"
+    ],
+    "generatedName": "tags-_id_.3295c39d7ffe0088437032aaa1d9a23f.map.json"
+  },
+  {
+    "names": [
+      "pureleap-web-prod-tags-_id_-bundle.js"
+    ],
+    "generatedName": "tags-_id_-bundle.d557b2e3a44b4db3ba67deb3bbeb250e.js"
+  },
+  {
+    "names": [
+      "pureleap-web-prod-_post__.map"
+    ],
+    "generatedName": "_post__.64eff2b12e131ad9ee76b4a40b49a4a2.map.json"
+  },
+  {
+    "names": [
+      "pureleap-web-prod-_post__-bundle.js"
+    ],
+    "generatedName": "_post__-bundle.94334d106bf47a3a52446c1f11e6bf9e.js"
   }
 ]

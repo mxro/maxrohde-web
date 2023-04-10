@@ -18,5 +18,25 @@
         "value": "dev-pureleap.home.mxro.de-static-files-2133a7a0"
       }
     }
+  },
+  {
+    "name": "prod",
+    "terraform": {
+      "gateway_url": {
+        "sensitive": false,
+        "type": "string",
+        "value": "https://2h4y80q2s4.execute-api.us-west-2.amazonaws.com"
+      },
+      "public_files_bucket": {
+        "sensitive": false,
+        "type": "string",
+        "value": "pureleap.com-public-files-ffd278e8"
+      },
+      "static_files_bucket": {
+        "sensitive": false,
+        "type": "string",
+        "value": "pureleap.com-static-files-ffd278e8"
+      }
+    }
   }
 ]

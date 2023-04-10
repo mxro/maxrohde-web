@@ -49,6 +49,51 @@
       "awsUser": "awsUser",
       "awsRegion": "ap-southeast-2",
       "tfStateKey": "web-pureleap-dev-3348d36abfb49cd4d858.tfstate"
+    },
+    {
+      "name": "prod",
+      "configuration": {
+        "lambdas": {
+          "ANY /": {
+            "function_name": "pureleap-web-prod--__index",
+            "route": "ANY /"
+          },
+          "ANY /about": {
+            "function_name": "pureleap-web-prod-about",
+            "route": "ANY /about"
+          },
+          "ANY /blog": {
+            "function_name": "pureleap-web-prod-blog",
+            "route": "ANY /blog"
+          },
+          "ANY /categories/{id}": {
+            "function_name": "pureleap-web-prod-categories-_id_",
+            "route": "ANY /categories/{id}"
+          },
+          "ANY /robots.txt": {
+            "function_name": "pureleap-web-prod-robots_txt",
+            "route": "ANY /robots.txt"
+          },
+          "ANY /sitemap.xml": {
+            "function_name": "pureleap-web-prod-sitemap_xml",
+            "route": "ANY /sitemap.xml"
+          },
+          "ANY /tags/{id}": {
+            "function_name": "pureleap-web-prod-tags-_id_",
+            "route": "ANY /tags/{id}"
+          },
+          "ANY /{post+}": {
+            "function_name": "pureleap-web-prod-_post__",
+            "route": "ANY /{post+}"
+          }
+        },
+        "domain": "pureleap.com",
+        "lambdaNamePrefix": "pureleap-web-prod",
+        "hostedZoneDomain": "pureleap.com"
+      },
+      "awsUser": "awsUser",
+      "awsRegion": "us-west-2",
+      "tfStateKey": "web-pureleap-prod-c33db84b5eee3daf4d9a.tfstate"
     }
   ]
 }
