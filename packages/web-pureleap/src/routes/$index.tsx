@@ -29,6 +29,14 @@ const Index = (): JSX.Element => {
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const handler: SSRHandler = async (event, context) => {
+  if (event.rawQueryString && event.rawQueryString.indexOf('resource=') !== 0) {
+    return {
+      statusCode: 301,
+      headers: {
+        Location: '/',
+      },
+    };
+  }
   return renderPage({
     component: Index,
     appendToHead: '<title>Pureleap - Live simply, Serve greatly</title>',

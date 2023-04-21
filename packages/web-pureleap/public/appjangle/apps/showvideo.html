@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>
+            Appjangle Video
+        </title>
+        
+        <link
+              href="../assets/v02/bootstrap-3.0.0/css/bootstrap.min.css"
+              rel="stylesheet">
+        
+        <style>
+            @font-face {
+                font-family:'Appjangle';
+                font-style: normal;
+                font-weight: 400;
+                src: local('Ubuntu'), 
+                url(..//files/resources/fonts/Ubuntu_v1.woff) format('woff');
+            }
+            
+            font {
+                font-family:'Appjangle', sans-serif;
+            }
+            
+            body {
+                
+                background-image:
+                    url(../assets/v02/img/appjangle_background_pattern1.png);
+                /* created with http://bgpatterns.com/ */
+                background-repeat: repeat;
+                background-color: rgb(56, 118, 29);
+                background-repeat: repeat;
+            }
+            .box {
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                border-radius: 20px;   
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div style="padding: 20px; background-color: white;" class="box">
+            <div style="margin-bottom: 10px; ">
+                <button class="btn btn-default backButton" disabled>
+                    <i class="glyphicon glyphicon-chevron-left"></i> Back
+                </button>
+                
+            </div>
+            
+            <iframe class="video" src="" 
+                    width="100%" height="80%"></iframe>
+            
+            <small class="font">Note: Available in HD - switch to HD in the video settings to the right <span class="glyphicon glyphicon-arrow-right"></span> <span class="glyphicon glyphicon-arrow-right"></span> <span class="glyphicon glyphicon-arrow-right"></span></small>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+            $(".backButton").removeAttr('disabled');
+            $(".backButton").click(function(evt) {
+                evt.preventDefault();
+                // window.location.href = "http://appjangle.com/documentation#videoTutorials";
+                window.history.back();
+            });
+            
+            var hash = window.location.hash;
+            
+           
+            $(".video").attr('src', hash.substring(1));
+        </script>
+    </body>
+</html>

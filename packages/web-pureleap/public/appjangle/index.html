@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Appjangle</title>
+        <link rel="icon" 
+      type="image/ico" 
+      href="assets/favicon.ico">
+        
+        
+        <script
+		src="assets/v02/lazyload-130813/lazyload-min.js"></script>
+
+        
+        <link rel="stylesheet" type="text/css" href="assets/v02/bootstrap-3.0.0/css/bootstrap.min.css">
+        
+        
+        <style type='text/css'>
+             @font-face {
+    font-family:'Appjangle';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ubuntu'), 
+          url(files/resources/fonts/Ubuntu_v1.woff) format('woff');
+}
+body {
+    background-image: url(assets/v02/img/appjangle_background_pattern1.png);
+    
+    background-repeat: repeat;
+	background-color: rgb(56, 118, 29);
+	background-repeat: repeat;
+    overflow-y:scroll;
+}
+.roundCorners {
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+.buttonRow {
+    text-align: right;
+}
+.font {
+    color: black;
+    font-size: 16px;
+    letter-spacing:normal;
+    font-family:'Appjangle', sans-serif;
+}
+.mousePointer {
+    cursor: pointer;
+}
+.mainView:hover {
+    transition: 1s;
+    left: -1000;
+}
+.h2 {
+    color: black;
+    font-size: 110%;
+    font-family:'Appjangle', sans-serif;
+    font-weight: bold;
+}
+.fontSmall {
+    color: black;
+    font-size: 100%;
+    font-family:'Appjangle', sans-serif;
+}
+.fontTitle {
+    color: white;
+    font-size: 90%;
+    font-family:'Appjangle', sans-serif;
+}
+.fontLight {
+    color: #525252;
+    font-size: 16px;
+    font-family:'Appjangle', sans-serif;
+}
+.fontLight:hover {
+    color: #525252;
+}
+h2 {
+    color: black;
+    font-size: 140%;
+    font-family:'Appjangle', sans-serif;
+    margin-top: 20px;
+}
+.menu-link {
+    color: white;
+    margin-right: 25px;
+    font-size: 90% !important;
+    font-family:'Open Sans', sans-serif !important;
+}
+.roundButton {
+    -webkit-border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
+    border-radius: 30px !important;
+}
+p {
+    font-family:'Appjangle', sans-serif;
+}
+h4 {
+    font-family:'Appjangle', sans-serif;
+}
+        </style>
+        
+        <script src=""></script>
+        
+        <script type='text/javascript'>//<![CDATA[ 
+            // init home
+            var difficulties, features, renderRow, renderTable, template_row, template_table;
+
+difficulties = [
+  {
+    text: "We model data for computers not humans.",
+    details: "http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/15/n2/7"
+  }, {
+    text: "Clients cannot query and manipulate shared data.",
+    details: "http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/15/n5/7"
+  }, {
+    text: "Data is not connected across databases.",
+    details: "http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/15/n6/7"
+  }, {
+    text: "A lot of code focusses on infrastructure not logic.",
+    details: "http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/15/n7/7"
+  }
+];
+
+features = [
+  {
+    text: "Model data as hyperlinked networks.",
+    details: "http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/15/n9/7"
+  }, {
+    text: "Work with shared data as if it was local data.",
+    details: "http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/17/n2/7"
+  }, {
+    text: "Integrate unlimited data in one database.",
+    details: "http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/17/n3/7"
+  }, {
+    text: "Build on a productive yet open platform.",
+    details: "http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/18/n1/7"
+  }
+];
+
+template_row = function() {
+  return tr('mousePointer moreContent', {
+    'data-details': this.details
+  }, function() {
+    td('font', {
+      style: 'border: none'
+    }, function() {
+      return this.text;
+    });
+    return td('buttonRow', {
+      style: 'border: none'
+    }, function() {
+      return span({
+        "class": 'glyphicon glyphicon-chevron-right'
+      });
+    });
+  });
+};
+
+template_table = function() {
+  return table('table table-hover', function() {
+    return this.content;
+  });
+};
+
+renderRow = function(item) {
+  return CoffeeKup.render(template_row, {
+    text: item.text,
+    details: item.details
+  });
+};
+
+renderTable = function(texts) {
+  var content, text;
+  content = ((function() {
+    var _i, _len, _results;
+    _results = [];
+    for (_i = 0, _len = texts.length; _i < _len; _i++) {
+      text = texts[_i];
+      _results.push(renderRow(text));
+    }
+    return _results;
+  })()).join('');
+  return CoffeeKup.render(template_table, {
+    content: content
+  });
+};
+
+window.Home = window.Home || {};
+
+window.Home.renderDifficulties = function() {
+  return renderTable(difficulties);
+};
+
+window.Home.renderFeatures = function() {
+  return renderTable(features);
+};
+
+                // Page common
+                var common;
+
+common = {};
+
+common.header_template = function() {
+  return div('row back mousePointer', {
+    style: 'margin-bottom: 0px:'
+  }, function() {
+    return div('col-xs-12', function() {
+      return table('table', function() {
+        return tr('mousePointer moreContent', function() {
+          td({
+            width: '20',
+            style: "border: none;"
+          }, function() {
+            return span({
+              "class": 'glyphicon glyphicon-chevron-left'
+            });
+          });
+          return td('font', {
+            style: 'font-weight: bold; border: none;'
+          }, function() {
+            return text("Back");
+          });
+        });
+      });
+    });
+  });
+};
+
+common.header_intro = function() {
+  return div('row', function() {
+    return div('col-lg-12', function() {
+      return p('font', function() {
+        return text(this.content);
+      });
+    });
+  });
+};
+
+common.learn_more_link_template = function() {
+  return a({
+    href: this.link,
+    style: 'color: #2B2B2B',
+    target: '_blank'
+  }, function() {
+    return this.caption;
+  });
+};
+
+common.learn_more_next_feature_button = function() {
+  return button({
+    "class": 'nextSection btn btn-default btn-lg btn-block',
+    style: 'border: 1px solid #d1d1d1; background: none;' + 'margin-top: 40px;',
+    'data-link': this.link
+  }, function() {
+    text('Next Feature ');
+    return span({
+      "class": 'glyphicon glyphicon-chevron-right'
+    });
+  });
+};
+
+common.renderDefaultPage = function(data, elem, callback) {
+  var body, header, intro;
+  header = CoffeeKup.render(common.header_template, {
+    heading: data.heading
+  });
+  intro = CoffeeKup.render(common.header_intro, {
+    content: data.intro
+  });
+  body = "<h2>Why?</h2>" + CoffeeKup.render(data.why);
+  elem.html(header + intro + body);
+  return callback();
+};
+
+common.renderPageWithSlides = function(data, elem, session, callback) {
+  var header, intro, slides, slides_html;
+  slides = window.Home.Slides;
+  header = CoffeeKup.render(common.header_template, {
+    heading: data.heading
+  });
+  intro = CoffeeKup.render(common.header_intro, {
+    content: data.intro
+  });
+  slides_html = slides.renderSlides(data.slides);
+  elem.html(header + intro + slides_html);
+  slides.initSlides(elem, data.slides, session);
+  return callback();
+};
+
+common.displayPage = function(session, link) {
+  $(".mainView").hide();
+  $(".detailsView").fadeIn(350);
+  
+  var common, data, page;
+
+    common = window.Home.pageCommon;
+  page = {};
+  if (link === 'http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/15/n2/7') {
+      data = {
+        heading: 'Data For Computers Not Humans',
+        intro: "Wouldn't it be great if we could model data in a way that is easy and natural to understand for non-expert users?             ",
+        why: function() {
+          p('font', function() {
+            return "  We have been doing it for so long, we don't even realize it most of the time: we model data around the constraints of databases technologies and not around the requirements of a domain. For instance, classes and entity types do no exist 'in reality' but are artificial constructs obligatory in defining data for most applications.";
+          });
+          return p('font', function() {
+            return "This is not to say that classes, entity types and other features of database technologies do not provide value. They do. But they should not be mandatory for every small problem. Since, although these concepts are easy for software professionals to grasps, they are often difficult to understand for non-expert users. And, the better non-expert users can understand the workings of an application, the more they are empowered to utilize an application fully and shape it to their needs.";
+          });
+        }
+      };
+
+      common = window.Home.pageCommon;
+
+      page.init = function(elem, callback) {
+        return common.renderDefaultPage(data, elem, callback);
+      };
+  }
+  if (link === 'http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/15/n5/7') {
+    data = {
+    heading: 'Limited Data Access for Clients',
+    intro: "Wouldn't it be great if we could access data directly from web and desktop applications without the need to go through a server?             ",
+    why: function() {
+      p('font', function() {
+        return "  We accept this as a reality of software development: that most applications are divided into the layers of client, server and database. However, especially for simple applications, the development and maintenanceof a server often introduces unnecessary complexity.";
+      });
+      return p('font', function() {
+        return "Thus, development costs could often be dramatically lowered, if client applications had access to an API which allows accessing persisted data directly and not through custom services hosted on a server.";
+      });
+    }
+    };
+
+    common = window.Home.pageCommon;
+
+    page.init = function(elem, callback) {
+    return common.renderDefaultPage(data, elem, callback);
+    };
+  }
+
+  if (link === 'http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/15/n6/7') {
+    data = {
+      heading: 'Store All Data in One Database',
+      intro: "Wouldn't it be great if we could work with all data as if it belonged to one, world-spanning database?             ",
+      why: function() {
+        p('font', function() {
+          return "  Databases often create artificial barriers around the data they store. This leads to numerous problems. A common problem is that databases run out of space and thus do not allow an application to scale out to support a growing user base. Also, information is inherently connected. Why shouldn't we be able to connect the data of an invoice stored in the ERP system of company A with a project status report in a company B? -, but databases usually allow to establish connections only between items of data stored within one databases and not between items of data stored on different databases.";
+        });
+        return p('font', function() {
+          return "If we could develop applications as if there was only one,  all-encompassing database, we wouldn't have to worry about  scaling our database nor about integrating and connecting  data from different applications and organizations.";
+        });
+      }
+    };
+
+    common = window.Home.pageCommon;
+
+    page.init = function(elem, callback) {
+      return common.renderDefaultPage(data, elem, callback);
+    };
+  }
+
+  if (link === 'http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/15/n7/7') {
+    data = {
+      heading: 'Focus On Infrastructure Not Logic',
+      intro: "Wouldn't it be great if we could focus on application logic and not the internal technical details of an application such as messaging, caching, synchronization and persistence?             ",
+      why: function() {
+        p('font', function() {
+          return "  While we usually do not need to worry about registers and pointers in developing modern applications, getting various implementation details right takes up a significant portion of development time, for instance:";
+        });
+        ul(function() {
+          li('font', function() {
+            return "data serialization";
+          });
+          li('font', function() {
+            return "persistence";
+          });
+          li('font', function() {
+            return "message exchange";
+          });
+          li('font', function() {
+            return "caching";
+          });
+          li('font', function() {
+            return "multithreading";
+          });
+          return li('font', function() {
+            return "data synchronization";
+          });
+        });
+        return p('font', function() {
+          return "Arguably, development time would be spent far more productively on implementing domain-specific logic of an application.";
+        });
+      }
+    };
+
+    common = window.Home.pageCommon;
+
+    page.init = function(elem, callback) {
+      return common.renderDefaultPage(data, elem, callback);
+    };
+  }
+
+  if (link === 'http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/15/n9/7') {
+    data = {
+      heading: 'Model Data as Hyperlinked Networks',
+      intro: "Appjangle supports data that is arranged like pages on the World Wide Web. Data arranged in this structure is very flexible and easy to understand.  ",
+      slides: [
+        {
+          image: "https://docs.google.com/drawings/d/" + "1zeXiEleN9hsG6q7F4uxP2Yzlf3ezK2xOyN47jhh0sGg/pub?w=770&h=360",
+          caption: "        Store values with common data types    as a <b>nodes</b>.          "
+        }, {
+          image: "https://docs.google.com/drawings/d/" + "1I0qvTw61Ly9kf3X6WVNcAH3EyuI1Sj5_nseccaYYsiM/pub?w=770&h=360",
+          caption: "        Define <b>connections</b> between nodes to make data more meaningful.          "
+        }, {
+          content: function() {
+            return div('font', function() {
+              h2(function() {
+                return 'Learn More';
+              });
+              p(function() {
+                return CoffeeKup.render(common.learn_more_link_template, {
+                  caption: "Data Modelling for Interactive Example App" + " 'Wall of the Wise'",
+                  link: 'http://appjangle.com/showcase#salve'
+                });
+              });
+              p(function() {
+                return CoffeeKup.render(common.learn_more_link_template, {
+                  caption: 'Introduction to Data Model and' + ' Examples for Nextweb API',
+                  link: 'http://nextweb.io/docs/nextweb-data-model.value.html'
+                });
+              });
+              return CoffeeKup.render(common.learn_more_next_feature_button, {
+                link: 'http://slicnet.com/mxrogm/mxrogm' + '/data/stream/2014/1/17/n2/7'
+              });
+            });
+          }
+        }
+      ]
+    };
+
+    page.init = function(elem, callback) {
+      return common.renderPageWithSlides(data, elem, session, callback);
+    };
+  }
+
+  if (link === 'http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/17/n2/7') {
+
+    data = {
+      heading: 'Develop Client Centric Applications',
+      intro: "Appjangle enables code running on web, desktop and mobile clients to work with remote data as if it was local data.  ",
+      slides: [
+        {
+          image: "https://docs.google.com/drawings/d/" + "1li6oPpZCauZ8aREM64IehdU4NFuV8MFlTPgVGRDdh30/pub?w=770&h=360",
+          caption: "        Nodes and connections are <b>replicated locally</b> for every client.    Changes are automatically <b>synchronized</b> between clients.          "
+        }, {
+          image: "https://docs.google.com/drawings/d/" + "14uocuYN3cNayfa-h1VEsrtW2NyvkjorKZJFjsdRt8yM/pub?w=770&h=360",
+          caption: "        <b>Native client libraries</b> are provided for JavaScript, Desktop Java,    and Android.          "
+        }, {
+          content: function() {
+            return pre("var socrates = session.seed();\nsocrates.append(\"Socrates\").append(name);\nsocrates.append(-470).append(born);\nsocrates.append(-399).append(died);\n\nsocrates.select(name).get(function(name) {\n    console.log(name);\n});\n");
+          },
+          caption: "        Clients can use a <b>rich API</b> (the Nextweb API).    This API abstracts low-level operations such as    synchronization, message exchange and serialization and    instead focusses on composition and access of data.        "
+        }, {
+          content: function() {
+            return div('font', function() {
+              h2(function() {
+                return 'And More';
+              });
+              ul(function() {
+                li(function() {
+                  return "                        Data synchronized from the server can be stored            in HTML5 local storage, SQLite for Android or as            plain files.                        ";
+                });
+                return li(function() {
+                  return "                        Synchronization server and clients can be embedded            for high-performance tests.                        ";
+                });
+              });
+              return CoffeeKup.render(common.learn_more_next_feature_button, {
+                link: 'http://slicnet.com/mxrogm/mxrogm' + '/data/stream/2014/1/17/n3/7'
+              });
+            });
+          }
+        }
+      ]
+    };
+
+    page.init = function(elem, callback) {
+      return common.renderPageWithSlides(data, elem, session, callback);
+    };
+  }
+
+  if (link === 'http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/17/n3/7') {
+    data = {
+      heading: 'Store, Connect and Share Everything',
+      intro: "Appjangle allows to store nodes on an unlimited number of physical servers. Connections can be established between any two nodes irrespective of the server they are stored on. Fine-grained authorization allows to moderate access to these nodes flexibly and effectively.  ",
+      slides: [
+        {
+          image: "https://docs.google.com/drawings/d/" + "1UcrurztILkoOna1MivlAGbeK88-U4rRbEZQR4y_2aLI/pub?w=770&h=360",
+          caption: "        Store nodes and connections on any commodity server with    a Java Virtual Machine.              "
+        }, {
+          image: "https://docs.google.com/drawings/d/" + "1Z7So8i99kRjGs-qMPejz2PfJ3duV1hoS_wRWJCUPFwk/pub?w=770&h=360",
+          caption: "        Any node can be connected with any other node, even across servers -    allowing to compose truely grand networks.          "
+        }, {
+          image: "https://docs.google.com/drawings/d/" + "1FHuaBJVK_hTufldL7anvYq0HdWcEGeLkg_-xE0CdvFs/pub?w=770&h=360",
+          caption: "        Viewing and editing rights can be granted for each individual node.        "
+        }, {
+          content: function() {
+            return div('font', function() {
+              h2(function() {
+                return 'And More';
+              });
+              ul(function() {
+                li(function() {
+                  return "                        Nodes and connections can be persisted in various databases            such as files or SQL databases.                        ";
+                });
+                return li(function() {
+                  return "                        Servers allow Java, JavaScript and REST clients to access            the nodes and connections managed by them.                        ";
+                });
+              });
+              return CoffeeKup.render(common.learn_more_next_feature_button, {
+                link: 'http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/18/n1/7'
+              });
+            });
+          }
+        }
+      ]
+    };
+
+    if (link === 'http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/18/n1/7') {
+data = {
+  heading: 'Build on a Productive Yet Open Platform',
+  intro: "Appjangle provides powerful and flexible building blocks for developing and deploying applications.  ",
+  slides: [
+    {
+      image: "https://docs.google.com/drawings/d" + "/1uQH-AkLXOlV5VB98jqTk84MCy8uD0STN5wn7fcz0HdU/pub?w=1026&h=480",
+      caption: "        Use storage and synchronization <b>cloud services</b> to jump start    development without need to set up any servers.<br>       ",
+      links: [
+        {
+          link: 'https://appjangle.com/signup',
+          caption: 'Sign up'
+        }
+      ]
+    }, {
+      image: "https://docs.google.com/drawings/d/" + "1u4iVNFEX0-rQXmVTgutEvViHwE5JTmTbjRPwn6mWdGo/pub?w=770&h=360",
+      caption: "        Use the web-based <b>Integrated Development Environment</b> for a    smooth development expierence.          "
+    }, {
+      image: "https://docs.google.com/drawings/d" + "/1g5U8zJgG3oyx8G06pbIrZRT4YXhRRGYjJa2Xm5Ra1dM/pub?w=770&h=360",
+      caption: "         Reuse components from the Appjangle. JavaScript framework as ready-made     solutions for common development scenarios.        "
+    }, {
+      content: function() {
+        return div('font', function() {
+          h2(function() {
+            return 'And More';
+          });
+          return ul(function() {
+            li(function() {
+              text("Use the ");
+              a({
+                href: 'http://u1.linnk.it/qc8sbw/usr' + '/apps/ajFileSync/docs/ajMicroSync.value.html'
+              }, function() {
+                return "TextSync";
+              });
+              return text(" tool to develop in your favourite editor/IDE.");
+            });
+            return li(function() {
+              text("Create nodes and markdown documentation using the ");
+              a({
+                href: 'nodejump.com'
+              }, function() {
+                return "Nodejump";
+              });
+              return text(" web application.");
+            });
+          });
+        });
+      }
+    }
+  ]
+};
+
+page.init = function(elem, callback) {
+  return common.renderPageWithSlides(data, elem, session, callback);
+};
+    }
+
+    page.init = function(elem, callback) {
+      return common.renderPageWithSlides(data, elem, session, callback);
+    };
+  }
+
+  page.init($(".detailsView"), function() {
+    return 'success';
+  });
+  $(".back").unbind();
+  return $(".back").click(function(evt) {
+    evt.preventDefault();
+    $(".detailsView").hide();
+    return $(".mainView").fadeIn(50);
+  });
+  
+};
+
+window.Home = window.Home || {};
+
+window.Home.pageCommon = common;
+
+                    // Slides Common
+                    var initSlideState, renderSlideLinks, renderSlides, slide_content_template, slide_holder_template, slide_link_template, slide_navigation_template, slide_template, updateNavigationButtons, updateSlideVisibility, updateSlides;
+
+slide_holder_template = function() {
+  return div('row', function() {
+    return div('col-xs-12', function() {
+      return div({
+        style: 'padding: 15px;'
+      }, function() {
+        return div({
+          style: 'border: 1px solid #D1D1D1;' + '-moz-border-radius: 4px;' + 'border-radius: 4px;' + 'padding: 5px;'
+        }, function() {
+          return this.content;
+        });
+      });
+    });
+  });
+};
+
+slide_navigation_template = function() {
+  return div('row', function() {
+    return div('col-xs-12 text-center', function() {
+      div('pull-left', function() {
+        return button({
+          "class": 'previousSlide btn btn-default font',
+          style: 'border: 1px solid #d1d1d1;' + 'background: none;'
+        }, function() {
+          span({
+            "class": 'glyphicon glyphicon-arrow-left'
+          });
+          return text(' Previous');
+        });
+      });
+      return div('pull-right', function() {
+        return button({
+          "class": 'nextSlide btn btn-default font',
+          style: 'border: 1px solid #d1d1d1;' + 'background: none; '
+        }, function() {
+          text('Next ');
+          return span({
+            "class": 'glyphicon glyphicon-arrow-right'
+          });
+        });
+      });
+    });
+  });
+};
+
+slide_template = function() {
+  return this.content;
+};
+
+slide_link_template = function() {
+  return tr({
+    'data-link': this.link,
+    "class": 'mousePointer link'
+  }, function() {
+    return td(function() {
+      return text(this.caption);
+    });
+  });
+};
+
+slide_content_template = function() {
+  return div({
+    "class": 'slide',
+    'data-slide-idx': this.idx,
+    style: 'display: none; min-height: 287px;'
+  }, function() {
+    if (this.content) {
+      div('row', function() {
+        return div('col-xs-12', function() {
+          return div({
+            style: 'height: 240px;'
+          }, function() {
+            return div({
+              style: 'padding: 20px;'
+            }, function() {
+              return text(this.content);
+            });
+          });
+        });
+      });
+    }
+    if (this.image) {
+      div({
+        "class": 'row'
+      }, function() {
+        return div('col-xs-12', function() {
+          return div('text-center', function() {
+            return div({
+              "class": 'center-block',
+              style: 'height: 240px;'
+            }, function() {
+              return img('img-responsive', {
+                style: 'margin: 0 auto;' + 'max-height: 240px;',
+                src: this.image
+              });
+            });
+          });
+        });
+      });
+    }
+    if (this.caption) {
+      return div('row', function() {
+        return div('col-xs-12', {
+          style: 'border-top: 1px solid #D1D1D1; min-height: 45px;'
+        }, function() {
+          return p('font', {
+            style: ' margin-bottom: 2px;'
+          }, function() {
+            text(this.caption);
+            if (this.links) {
+              br;
+              return text(this.links);
+            }
+          });
+        });
+      });
+    }
+  });
+};
+
+slide_link_template = function() {
+  span({
+    "class": 'glyphicon glyphicon-arrow-right'
+  });
+  a({
+    href: this.link,
+    target: '_blank'
+  }, function() {
+    return this.caption;
+  });
+  return br;
+};
+
+updateNavigationButtons = function(slideState) {
+  if (slideState.currentSlide === 0) {
+    $(".previousSlide", slideState.elem).hide();
+  } else {
+    $(".previousSlide", slideState.elem).show();
+  }
+  if (slideState.currentSlide === slideState.slides.length - 1) {
+    return $(".nextSlide", slideState.elem).hide();
+  } else {
+    return $(".nextSlide", slideState.elem).show();
+  }
+};
+
+updateSlideVisibility = function(slideState) {
+  $('.slide', slideState.elem).hide();
+  return $('.slide', slideState.elem).each(function() {
+    var slide_idx;
+    slide_idx = $(this).attr('data-slide-idx');
+    if (slide_idx === ("" + slideState.currentSlide)) {
+      return $(this).show();
+    } else {
+      return $(this).hide();
+    }
+  });
+};
+
+renderSlideLinks = function(links) {
+  var html, link, _i, _len, _results;
+  html = "";
+  _results = [];
+  for (_i = 0, _len = links.length; _i < _len; _i++) {
+    link = links[_i];
+    _results.push(html += CoffeeKup.render(slide_link_template, {
+      caption: link.caption,
+      link: link.link
+    }));
+  }
+  return _results;
+};
+
+updateSlides = function(slideState) {
+  updateNavigationButtons(slideState);
+  return updateSlideVisibility(slideState);
+};
+
+renderSlides = function(slides) {
+  var content, idx, navigation, slide, slide_content, slide_links, _i, _len;
+  navigation = CoffeeKup.render(slide_navigation_template);
+  content = "";
+  idx = 0;
+  for (_i = 0, _len = slides.length; _i < _len; _i++) {
+    slide = slides[_i];
+    slide_content = null;
+    if (slide.content) {
+      slide_content = CoffeeKup.render(slide.content);
+    }
+    slide_links = null;
+    if (slide.links) {
+      slide_links = renderSlideLinks(slide.links);
+    }
+    content += CoffeeKup.render(slide_content_template, {
+      idx: "" + idx,
+      totalSlides: "" + slides.length,
+      image: slide.image,
+      caption: slide.caption,
+      content: slide_content,
+      links: slide_links
+    });
+    idx += 1;
+  }
+  return navigation + content;
+};
+
+initSlideState = function(slides) {
+  return {
+    slides: slides,
+    currentSlide: 0,
+    elem: null
+  };
+};
+
+window.Home = window.Home || {};
+
+window.Home.Slides = {
+  renderSlides: function(slides) {
+    return CoffeeKup.render(slide_holder_template, {
+      content: renderSlides(slides)
+    });
+  },
+  initSlides: function(elem, slides, session) {
+    var state;
+    state = initSlideState(slides);
+    state.elem = elem;
+    updateSlides(state);
+    $(".previousSlide", elem).click(function(e) {
+      e.preventDefault();
+      state.currentSlide -= 1;
+      return updateSlides(state);
+    });
+    $(".nextSlide", elem).click(function(e) {
+      e.preventDefault();
+      state.currentSlide += 1;
+      return updateSlides(state);
+    });
+    $(".link", elem).click(function(e) {
+      var link;
+      e.preventDefault();
+      link = $(this).attr('data-link');
+      if (link) {
+        return window.open(link);
+      }
+    });
+    return $(".nextSection", elem).click(function(e) {
+      var common;
+      e.preventDefault();
+      common = window.Home.pageCommon;
+      return common.displayPage(session, $(".nextSection", elem).attr('data-link'));
+    });
+  }
+};
+
+                        //Beta
+                        var template_beta;
+
+template_beta = function() {
+  return div('row', function() {
+    div('col-xs-4 text-center', function() {
+      return a({
+        href: '#',
+        style: 'color: black'
+      }, function() {
+        span({
+          "class": 'glyphicon glyphicon-heart'
+        });
+        return span('font', function() {
+          return " Sign Up";
+        });
+      });
+    });
+    div('col-xs-4 text-center', function() {
+      return a({
+        href: '#',
+        style: 'color: black'
+      }, function() {
+        span({
+          "class": 'glyphicon glyphicon-globe'
+        });
+        return span('font', function() {
+          return " Explore Apps";
+        });
+      });
+    });
+    return div('col-xs-4 text-center', function() {
+      return a({
+        href: 'docs.html',
+        style: 'color: black'
+      }, function() {
+        span({
+          "class": 'glyphicon glyphicon-eye-open'
+        });
+        return span('font', function() {
+          return " Documentation";
+        });
+      });
+    });
+  });
+};
+
+window.Home = window.Home || {};
+
+window.Home.renderBeta = function() {
+  return CoffeeKup.render(template_beta);
+};
+
+                
+            // main script 
+            var init, loadLibraries, reloadPages;
+
+reloadPages = function(session, callback) {
+  var qrs;
+  qrs = [];
+  // $("tr").each(function() {
+  //   if ($(this).attr('data-details')) {
+  //     return qrs.push(session.link($(this).attr('data-details')).reload());
+  //   }
+  // });
+  qrs.push(function() {
+    return callback();
+  });
+  qrs.push(function() {
+    return 'fail';
+  });
+  return session.getAll(qrs);
+};
+
+loadLibraries = function(callback) {
+  var libraries, libraries_js;
+  // libraries = ["http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/15/n1/7", "http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/15/n3/7", "http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/17/n1/7", "http://slicnet.com/mxrogm/mxrogm/data/stream/2014/1/20/n2/7"];
+  libraries_js = [];
+  return LazyLoad.js((["https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js", "files/libraries/coffeekup-0.3.1/coffeekup_v2.js", "assets/v02/asyncjs-20130916/async.min.js"]).valueOf(), (function() {
+    return callback();
+  }));
+};
+
+init = function() {
+  var common;
+  $(".difficulties").html(window.Home.renderDifficulties());
+  $(".features").html(window.Home.renderFeatures());
+  $(".beta").html(window.Home.renderBeta());
+  common = window.Home.pageCommon;
+  return window.onNextwebOnedb = function() {
+    var session;
+    session = AppjangleJs.createSessionWithCache();
+    $(".moreContent").click(function(evt) {
+      var link, tr;
+      evt.preventDefault();
+      tr = $(evt.target);
+      while (tr.attr('data-details') == null) {
+        tr = tr.parent();
+      }
+      link = tr.attr('data-details');
+      $("td", $(this)).removeClass('fontLight');
+      $("td", $(this)).addClass('font');
+      return common.displayPage(session, link);
+    });
+    // reloadPages(session, function() {});
+    $(".reloadButton").removeAttr('disabled');
+    return $(".reloadButton").click(function(evt) {
+      evt.preventDefault();
+      $(".reloadButton").attr('disabled', 'disabled');
+      return async.parallel([
+        (function(cb) {
+          return loadLibraries(cb);
+        })
+      ], function() {
+        return $(".reloadButton").removeAttr('disabled');
+      });
+    });
+  };
+};
+
+loadLibraries(function() {
+  return init();
+});
+
+            //]]>  
+            
+        </script>
+        
+        <script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push([ '_setAccount', 'UA-34013716-1' ]);
+	_gaq.push([ '_trackPageview' ]);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www')
+				+ '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8">
+                    <div class="row" style="margin-top: 40px; margin-bottom: 20px;">
+                            <div class="col-xs-12" align='center'>
+                                <img src="assets/v02/img/appjangle_logo_white_bevel.png" 
+                                alt="Appjangle" 
+                                style="width: 250px;">
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8 roundCorners"
+                     style="background: white; padding-left: 100px; padding-right: 100px; padding-top: 60px; padding-bottom: 60px;  background-image: url(files/apps/home/background_white_v01.png; background-repeat: repeat;) ">
+                    <div class="mainView">
+                        
+                        <div class="row">
+                            <div class="col-xs-12" style="margin-bottom: 30px;">
+                                <p class="font">
+                                    Appjangle enables transparent, real-time synchronization
+                                    of client-based data and new ways to connect data between applications. 
+                                    It's a better way to develop software; enabling shorter development times 
+                                    and more maintainable and extendable applications.
+                                </p>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="row" style="padding-bottom: 60px;">
+                           <div class="col-xs-12">
+                               <p class='font'>
+                                   <b>View Intro</b>
+                               </p>
+                               <div style="text-align: center; padding-top: 15px; padding-left: 30px; padding-right: 30px;">
+                                   <a href="apps/showvideo.html#https://docs.google.com/file/d/0B9zOsH-zk2YyQlo3QW9GeER4Vzg/preview">
+                                   <img class="img img-responsive img-thumbnail" 
+                                        src="files/apps/home-0.0.2/video_thumb_v2.PNG">
+                                   </a>
+                               </div>
+                           </div>
+                        </div> 
+                        
+                        <div class="row" style="padding-bottom: 60px;">
+                         <div class='col-xs-12'>
+                           <p class='font'><b>Try</b></p>
+                           <div class="beta"></div>
+                         </div>
+                       </div>
+                        
+                       
+                       <div class="row" style="margin-top: 20px;">
+                         <div class="col-xs-12">
+                            <p class='font'><b>Features</b> </p>
+                            <div class="features"></div>
+                            
+                         </div>
+                       </div>
+                       
+                         <div class="row" style="margin-top: 20px;">
+                          <div class="col-xs-12">
+                              <p class="font"><b>Motivation</b></p>
+                              <div class="difficulties"></div>
+                           
+                          </div>
+                       </div>
+                       
+                                                    
+                       <!-- <button disabled class='btn btn-default reloadButton'>Reload</button>  -->                          
+                    </div>
+                     
+                    <div class="detailsView" style="display: none; margin-top: -50px;">
+                    
+                    </div> 
+                                        
+                 </div>   
+               </div>     
+             </div>       
+                 
+        </div>
+     
+
+<script>function appjangledebug(){var U='',R=' top: -1000px;',pb='" for "gwt:onLoadErrorFn"',nb='" for "gwt:onPropertyErrorFn"',$='");',qb='#',Tb='.cache.js',sb='/',yb='//',Mb='2C7DBFE4D07885F8D0A7C83555301D28',Nb='48CB42CFF605D1072D97B0B2C729CFBC',Ob='98DE3621727635CFA5534D71CA1A93A2',Sb=':',hb='::',T='<!doctype html>',V='<html><head><\/head><body><\/body><\/html>',kb='=',rb='?',Pb='A2C1B6760C241309550673DFA34AF297',mb='Bad handler "',S='CSS1Compat',Y='Chrome',X='DOMContentLoaded',M='DUMMY',Qb='E6587B0DF83CFC1CCD67301A1AC9439F',Rb='F632E5D40466C7A8B750122C8FDDDF85',K='appjangledebug',Lb='appjangledebug.devmode.js',wb='appjangledebug.nocache.js',gb='appjangledebug::',xb='base',vb='baseUrl',H='begin',N='body',G='bootstrap',ub='clear.cache.gif',jb='content',$b='end',Z='eval("',Hb='gecko',Ib='gecko1_8',I='gwt.codesvr.appjangledebug=',J='gwt.codesvr=',Zb='gwt/standard/standard.css',ob='gwt:onLoadErrorFn',lb='gwt:onPropertyErrorFn',ib='gwt:property',db='head',Xb='href',Gb='ie6',Fb='ie8',Eb='ie9',O='iframe',tb='img',ab='javascript',P='javascript:""',Ub='link',Yb='loadExternalRefs',eb='meta',cb='moduleRequested',bb='moduleStartup',Db='msie',fb='name',Ab='opera',Q='position:absolute; width:0; height:0; border:none; left: -1000px;',Vb='rel',Cb='safari',_='script',Kb='selectingPermutation',L='startup',Wb='stylesheet',W='undefined',Jb='unknown',zb='user.agent',Bb='webkit';var o=window;var p=document;r(G,H);function q(){var a=o.location.search;return a.indexOf(I)!=-1||a.indexOf(J)!=-1}
+function r(a,b){if(o.__gwtStatsEvent){o.__gwtStatsEvent({moduleName:K,sessionId:o.__gwtStatsSessionId,subSystem:L,evtGroup:a,millis:(new Date).getTime(),type:b})}}
+appjangledebug.__sendStats=r;appjangledebug.__moduleName=K;appjangledebug.__errFn=null;appjangledebug.__moduleBase=M;appjangledebug.__softPermutationId=0;appjangledebug.__computePropValue=null;appjangledebug.__getPropMap=null;appjangledebug.__gwtInstallCode=function(){};appjangledebug.__gwtStartLoadingFragment=function(){return null};var s=function(){return false};var t=function(){return null};__propertyErrorFunction=null;var u=o.__gwt_activeModules=o.__gwt_activeModules||{};u[K]={moduleName:K};var v;function w(){y();return v}
+function x(){y();return v.getElementsByTagName(N)[0]}
+function y(){if(v){return}var a=p.createElement(O);a.src=P;a.id=K;a.style.cssText=Q+R;a.tabIndex=-1;p.body.appendChild(a);v=a.contentDocument;if(!v){v=a.contentWindow.document}v.open();var b=document.compatMode==S?T:U;v.write(b+V);v.close()}
+function z(k){function l(a){function b(){if(typeof p.readyState==W){return typeof p.body!=W&&p.body!=null}return /loaded|complete/.test(p.readyState)}
+var c=b();if(c){a();return}function d(){if(!c){c=true;a();if(p.removeEventListener){p.removeEventListener(X,d,false)}if(e){clearInterval(e)}}}
+if(p.addEventListener){p.addEventListener(X,d,false)}var e=setInterval(function(){if(b()){d()}},50)}
+function m(c){function d(a,b){a.removeChild(b)}
+var e=x();var f=w();var g;if(navigator.userAgent.indexOf(Y)>-1&&window.JSON){var h=f.createDocumentFragment();h.appendChild(f.createTextNode(Z));for(var i=0;i<c.length;i++){var j=window.JSON.stringify(c[i]);h.appendChild(f.createTextNode(j.substring(1,j.length-1)))}h.appendChild(f.createTextNode($));g=f.createElement(_);g.language=ab;g.appendChild(h);e.appendChild(g);d(e,g)}else{for(var i=0;i<c.length;i++){g=f.createElement(_);g.language=ab;g.text=c[i];e.appendChild(g);d(e,g)}}}
+appjangledebug.onScriptDownloaded=function(a){l(function(){m(a)})};r(bb,cb);var n=p.createElement(_);n.src=k;p.getElementsByTagName(db)[0].appendChild(n)}
+appjangledebug.__startLoadingFragment=function(a){return C(a)};appjangledebug.__installRunAsyncCode=function(a){var b=x();var c=w().createElement(_);c.language=ab;c.text=a;b.appendChild(c);b.removeChild(c)};function A(){var c={};var d;var e;var f=p.getElementsByTagName(eb);for(var g=0,h=f.length;g<h;++g){var i=f[g],j=i.getAttribute(fb),k;if(j){j=j.replace(gb,U);if(j.indexOf(hb)>=0){continue}if(j==ib){k=i.getAttribute(jb);if(k){var l,m=k.indexOf(kb);if(m>=0){j=k.substring(0,m);l=k.substring(m+1)}else{j=k;l=U}c[j]=l}}else if(j==lb){k=i.getAttribute(jb);if(k){try{d=eval(k)}catch(a){alert(mb+k+nb)}}}else if(j==ob){k=i.getAttribute(jb);if(k){try{e=eval(k)}catch(a){alert(mb+k+pb)}}}}}t=function(a){var b=c[a];return b==null?null:b};__propertyErrorFunction=d;appjangledebug.__errFn=e}
+function B(){function e(a){var b=a.lastIndexOf(qb);if(b==-1){b=a.length}var c=a.indexOf(rb);if(c==-1){c=a.length}var d=a.lastIndexOf(sb,Math.min(c,b));return d>=0?a.substring(0,d+1):U}
+function f(a){if(a.match(/^\w+:\/\//)){}else{var b=p.createElement(tb);b.src=a+ub;a=e(b.src)}return a}
+function g(){var a=t(vb);if(a!=null){return a}return U}
+function h(){var a=p.getElementsByTagName(_);for(var b=0;b<a.length;++b){if(a[b].src.indexOf(wb)!=-1){return e(a[b].src)}}return U}
+function i(){var a=p.getElementsByTagName(xb);if(a.length>0){return a[a.length-1].href}return U}
+function j(){var a=p.location;return a.href==a.protocol+yb+a.host+a.pathname+a.search+a.hash}
+var k=g();if(k==U){k=h()}if(k==U){k=i()}if(k==U&&j()){k=e(p.location.href)}k=f(k);return k}
+function C(a){if(a.match(/^\//)){return a}if(a.match(/^[a-zA-Z]+:\/\//)){return a}return appjangledebug.__moduleBase+a}
+function D(){var f=[];var g;function h(a,b){var c=f;for(var d=0,e=a.length-1;d<e;++d){c=c[a[d]]||(c[a[d]]=[])}c[a[e]]=b}
+var i=[];var j=[];function k(a){var b=j[a](),c=i[a];if(b in c){return b}var d=[];for(var e in c){d[c[e]]=e}if(__propertyErrorFunc){__propertyErrorFunc(a,d,b)}throw null}
+j[zb]=function(){var b=navigator.userAgent.toLowerCase();var c=function(a){return parseInt(a[1])*1000+parseInt(a[2])};if(function(){return b.indexOf(Ab)!=-1}())return Ab;if(function(){return b.indexOf(Bb)!=-1}())return Cb;if(function(){return b.indexOf(Db)!=-1&&p.documentMode>=9}())return Eb;if(function(){return b.indexOf(Db)!=-1&&p.documentMode>=8}())return Fb;if(function(){var a=/msie ([0-9]+)\.([0-9]+)/.exec(b);if(a&&a.length==3)return c(a)>=6000}())return Gb;if(function(){return b.indexOf(Hb)!=-1}())return Ib;return Jb};i[zb]={gecko1_8:0,ie6:1,ie8:2,ie9:3,opera:4,safari:5};s=function(a,b){return b in i[a]};appjangledebug.__getPropMap=function(){var a={};for(var b in i){if(i.hasOwnProperty(b)){a[b]=k(b)}}return a};appjangledebug.__computePropValue=k;o.__gwt_activeModules[K].bindings=appjangledebug.__getPropMap;r(G,Kb);if(q()){return C(Lb)}var l;try{h([Eb],Mb);h([Ab],Nb);h([Ib],Ob);h([Gb],Pb);h([Cb],Qb);h([Fb],Rb);l=f[k(zb)];var m=l.indexOf(Sb);if(m!=-1){g=parseInt(l.substring(m+1),10);l=l.substring(0,m)}}catch(a){}appjangledebug.__softPermutationId=g;return C(l+Tb)}
+function E(){if(!o.__gwt_stylesLoaded){o.__gwt_stylesLoaded={}}function c(a){if(!__gwt_stylesLoaded[a]){var b=p.createElement(Ub);b.setAttribute(Vb,Wb);b.setAttribute(Xb,C(a));p.getElementsByTagName(db)[0].appendChild(b);__gwt_stylesLoaded[a]=true}}
+r(Yb,H);c(Zb);r(Yb,$b)}
+A();appjangledebug.__moduleBase=B();u[K].moduleBase=appjangledebug.__moduleBase;var F=D();E();r(G,$b);z(F);return true}
+appjangledebug.succeeded=appjangledebug();</script>
+
+</body>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-34013716-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>
+

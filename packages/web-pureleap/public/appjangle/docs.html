@@ -1,0 +1,1095 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        
+        <title>Appjangle Documentation</title>
+        <!-- one.download https://u1.linnk.it/qc8sbw/usr/apps/textsync/docs/appjangle-template-head -->
+ <link rel="icon" 
+      type="image/ico" 
+      href="assets/favicon.ico">
+<!-- one.download https://u1.linnk.it/qc8sbw/usr/apps/textsync/docs/appjangle-font-declaration-0.0.1 -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans'
+	rel='stylesheet' type='text/css'>
+<!-- one.end -->
+
+<link
+	href="assets/v02/bootstrap-2.2.2/css/bootstrap.min.css"
+	rel="stylesheet">
+<link
+	href="assets/v02/bootstrap-2.2.2/css/bootstrap-responsive.min.css"
+	rel="stylesheet">
+<link href="assets/v02/prettify-small-1-Jun-2011/tomorrow.css" rel="stylesheet" >
+<link rel="stylesheet"
+    href="assets/v02/codemirror-2.32/codemirror.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style>
+/* <!-- one.download https://u1.linnk.it/qc8sbw/usr/apps/textsync/docs/appjangle-green-css-0.0.3 --> */
+body {
+	background-image:
+		url(assets/v02/img/appjangle_background_pattern1.png);
+	/* created with http://bgpatterns.com/ */
+	background-repeat: repeat;
+	background-color: rgb(56, 118, 29);
+	background-repeat: repeat;
+}
+
+.appjangleContent {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	margin-top: 30px;
+	background-color: white;
+	background-image:
+		url(//dl.dropbox.com/u/957046/static/assets/1210/background%20white.png)
+}
+/* <!-- one.end --> */
+
+/* <!-- one.download https://u1.linnk.it/qc8sbw/usr/apps/textsync/docs/appjangle-font-css-0.0.1 --> */
+.appjangleFont {
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.appjangleFont-important {
+    font-size: 100% !important;
+    font-family: 'Open Sans', sans-serif !important;
+}
+/* <!-- one.end --> */
+.menu-link {
+	color: white;
+	margin-right: 25px;
+	font-size: 90% !important;
+	font-family: 'Open Sans', sans-serif !important;
+}
+
+.roundButton {
+	-webkit-border-radius: 30px !important;
+	-moz-border-radius: 30px !important;
+	border-radius: 30px !important;
+}
+    
+    .appjangle-default-hover:hover {
+                background-color: #eee;
+                cursor: pointer;
+            }
+            
+            .appjangle-default-selected-hover:hover {
+                background-color: #0088cc;
+                color: white;
+                cursor: pointer;
+            }
+    
+    .slItem {
+	padding: 3px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+.slSelected {
+  background-color: #0088cc;
+  color: white;
+}
+
+.slText {
+	line-height: 32px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.slIcon {
+	width: 32px;
+	height: 32px;
+}
+</style>
+
+
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push([ '_setAccount', 'UA-34013716-1' ]);
+    _gaq.push([ '_trackPageview' ]);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+                : 'http://www')
+                + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+</head>
+
+<body>
+
+	<div class="container-fluid" style="margin-top: 0px;">
+
+		<div class="row-fluid" style="text-align: left;">
+
+			<div class="span12" style="margin-top: 10px;">
+				<div class="pull-left">
+					<a href="https://pureleap.com/appjangle"><img alt="Appjangle"
+						style="width: 100%; height: auto; max-width: 100px; width: 100px;"
+						src="assets/v02/img/appjangle_logo_white_bevel.png"></a>
+				</div>
+
+				<div style="margin-left: 180px; margin-top: 7px; height: 35x;">
+					<span class="visible-phone" style="color: green">_</span> <a
+						style="color: white;" class="menu-link hidden-phone"
+						href="https://pureleap.com/appjangle">home</a>
+				</div>
+				<!-- <img alt="The platform for smarter apps."
+                    style="margin-left: 20px; max-width: 300px; width: 300px;"
+                    src="http://appjangle.com/assets/v02/img/the_platform_for_smarter_apps.png"> -->
+
+				<div id="login" class="pull-right"
+					style="margin-top: -25px; height: 40px;">
+					<!-- one.download https://u1.linnk.it/qc8sbw/usr/apps/textsync/docs/aj-login-html-0.0.3 -->
+				<div class="appjangle-login" style="width: 200px;">
+                        <div class="wait pull-right"
+                            style="margin-top: 10px; margin-right: 80px;">
+                            <img
+                                src="//dl.dropbox.com/u/957046/static/assets/1210/ajax-loader-arrows-white.gif">
+                        </div>
+
+                        <div class="signedin pull-right hide" style="margin-top: 2px;">
+                            <ul class="nav nav-pills">
+                                <li class="dropdown"><a class="dropdown-toggle"
+                                    data-toggle="dropdown" href="#" style="color: white;"> <i
+                                        class="icon-user icon-white"></i> <span
+                                        class="appjangle-useremail">email@email.com</span> <b
+                                        class="caret"
+                                        style="border-top-color: white; border-bottom-color: white;"></b>
+                                </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="signout-button">Sign out</a></li>
+                                        <li class="divider"></li>
+                                        
+                                    </ul></li>
+                            </ul>
+                        </div>
+
+                        
+
+                    </div>
+<!-- one.end -->
+				</div>
+
+			</div>
+			<!-- <div class="span4"></div> -->
+		</div>
+
+
+
+		
+
+		<div class="row-fluid appjangleContent appjangleFont">
+			<div class="span12" style="padding: 40px;">
+
+				<div id="notificationBar">
+					<!-- one.download https://u1.linnk.it/qc8sbw/usr/apps/textsync/docs/aj-notification-html-0.0.3 -->
+<div class="notificationBar row-fluid" style="display: none;">
+	<div class="span12">
+		<div class="notificationMessage alert alert-success">
+			<button class="close" data-dismiss="alert">x</button>
+			<div class="notificationText"></div>
+		</div>
+	</div>
+</div>
+<!-- one.end -->
+				</div>
+
+				<!-- one.end -->
+                    
+                   <div class="row-fluid">
+					<div class="span10">
+						
+						<h4>Appjangle Documentation</h4>
+					</div>
+
+				
+				</div>
+
+                
+                
+                <script>
+                  
+                       if (window.location.hash.length > 1) {
+                           $(".docsTab").hide();
+                           $("."+window.location.hash.substring(1)).show();
+                          
+                       }
+                    
+                        $(window).on('hashchange', function() {
+                            
+                                $(".docsTab").hide();
+                                $("."+window.location.hash.substring(1)).show();
+                        
+                    });
+                   
+                    </script>
+                
+                <div class="row-fluid">
+
+					<ul class="thumbnails">
+						<li class="span2" style="text-align: center;"><a
+							href="#videoTutorials" class="thumbnail"
+							id="javaScriptButton"
+    style="height: 162px"> <img
+								src="//docs.google.com/drawings/d/192RRwEyc6vr5VKaYudblhPZzNFw91V9hk8m1iY9QsOk/pub?w=130&h=126">
+								Video Tutorials<br>
+						</a></li>
+						<li class="span2" style="text-align: center;"><a
+							href="#gettingStarted" class="thumbnail"
+               style="height: 162px"> <img
+								src="//docs.google.com/drawings/d/11BkXnlevCoG9Tfq6K4pkJ9hLVPHMuYFgth1K2-RdoG4/pub?w=130&h=126">
+								Getting Started<br>
+						</a></li>
+						<li class="span2" style="text-align: center;"><a
+							href="#core" class="thumbnail" style="height: 162px"> <img
+								src="//docs.google.com/drawings/d/1WIqfwadiNPsryNZCMh8NaMp17ELb9x4Ux_fq3iNJzkk/pub?w=130&h=126">
+								Appjangle Core Reference
+						</a></li>
+                        
+                        <li class="span2" style="text-align: center;"><a
+							href="#nextweb" class="thumbnail" style="height: 162px"> <img
+								src="//docs.google.com/drawings/d/1jxBEGcx64WBSDQ0DanxPvoHbq_9ghxHui7dSbiMH61I/pub?w=130&h=126">
+								Nextweb API Reference
+						</a></li>
+
+						<li class="span2" style="text-align: center;"><a
+							href="#plus" class="thumbnail" style="height: 162px"> <img
+								src="//docs.google.com/drawings/d/1O61T0UnY6UawbOUf4mdP4inLsxhADLiG3-jThKeTIfM/pub?w=130&h=126">
+								Appjangle Plus Reference
+						</a></li>
+
+						<li class="span2" style="text-align: center;"><a
+							href="#moreDocumentation" class="thumbnail" style="height: 162px"> <img
+								src="//docs.google.com/drawings/d/1xhD00A4zVUNMhRTIwczTyOt3Oa0RioeEBJDK_pPVbLo/pub?w=130&h=126">
+								More Documentation
+						</a></li>
+
+
+					</ul>
+
+					<div class="span3">
+						<a href="#" class="hoverArea"> <img src="">
+						</a>
+
+
+					</div>
+
+				</div>
+                
+                    
+                    <div class="row-fluid">
+                       
+                        
+                        <div class="span12">
+                            <div class="well" style="background: white">
+                             <!-- one.notembedText("https://u1.linnk.it/qc8sbw/usr/apps/textsync/files/docs-home") -->
+                               
+                             <div class="docsTab videoTutorials hide" >
+                               <h4>
+    Video Tutorials
+</h4>
+<hr>
+
+<div class="row-fluid" style="margin-bottom: 40px;">
+    
+    <div class="span4">
+       <div class="thumbnail" style="text-align: center;">
+          
+           <a 
+               href="apps/showvideo.html#https://docs.google.com/file/d/0B9zOsH-zk2YyM1Z5Rzg1Vlk5ejg/preview">
+                <img src="https://docs.google.com/drawings/d/10lIIpQ9Be8Ii3aS7nC9lRzgW-K4QHu9Vt3XmNHAvIeo/pub?w=278&h=176" >
+            </a>
+        </div>
+        <div class="caption">
+                <h5>Appjangle Introduction</h5>
+                <p>An introduction to Appjangle and the Appjangle IDE.</p>
+            </div> 
+    </div>
+    
+</div>
+
+<div class="row-fluid">
+    
+    <div class="span4">
+        <div class="thumbnail" style="text-align: center;">
+            <a href="apps/showvideo.html#https://docs.google.com/file/d/0B9zOsH-zk2YyY1JDbURaQkdmbkk/preview">
+                <img src="https://docs.google.com/drawings/d/1iVuReD_w15iptMzV1GRGI9IMtGwP1RA5BJlP0vWS-WE/pub?w=278&h=176" >
+            </a>
+        </div>
+        <div class="caption">
+                <h5>Appjangle Basics</h5>
+                <p>An introduction into basic concepts of the Appjangle platform.</p>
+            </div>
+    </div>
+    
+    
+    
+    <div class="span4">
+        
+        
+        <div class="thumbnail" style="text-align: center;">
+            <a href="apps/showvideo.html#https://docs.google.com/file/d/0B9zOsH-zk2YyaURMenVldUp5TFE/preview">
+                <img src="https://docs.google.com/drawings/d/1e--8_bUgbcjMOm-ory8c5ZyPvu1dNIElW3ceDad7LW0/pub?w=278&h=176" >
+            </a>
+        </div>
+        <div class="caption">
+                <h5>Java Basics</h5>
+                <p>Walking through the steps of creating a simple Java application.</p>
+            </div>
+    </div>
+    
+    <div class="span4">
+        
+        
+        <div class="thumbnail" style="text-align: center;">
+             <a href="apps/showvideo.html#https://docs.google.com/file/d/0B9zOsH-zk2YyODg0UU50RGxRWTA/preview">
+                 <img src="https://docs.google.com/drawings/d/1-TEj6LflQYzrYuNnsdII-9taaSsMLRQf8ZfDft8R1ww/pub?w=278&h=176" >
+            </a>
+        </div>
+        <div class="caption">
+                <h5>Batch Processing and Caching</h5>
+                <p>Demonstration batch processing and caching capabilities of the Appjangle engines.</p>
+            </div>
+    </div>
+    
+</div>
+
+
+                                    
+                                    
+                            </div>
+                            
+                            <div class="docsTab home hide" id="home">
+                                
+<div class="row-fluid">
+	<div class="span12">
+		<h4>Documentation</h4>
+		<hr>
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+		<p>The Appjangle documentation provides resources to get started
+			using the Appjangle client libraries and the Appjangle cloud.</p>
+		<p>
+			Check out the Getting Started guides for <a href="#helloJava">Java</a>
+			and <a href="#helloJavaScript">JavaScript</a>.
+		</p>
+		<p>
+			Also head over to the documentation of the Nextweb API on <a
+				href="http://nextweb.io">nextweb.io</a>. Most features of Appjangle
+			can be accessed through this API easily and quickly.
+		</p>
+	</div>
+	<div class="span6" style="text-align: center;">
+		<img
+			src="http://docs.google.com/drawings/d/1JvMaHQpyFbxiEPG9CZrYmstj8QdYMXNs1ko2nfKSBTM/pub?w=250">
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span12">
+		<hr>
+	</div>
+</div>
+
+
+                            </div>
+                            
+                            <div class="docsTab nextweb hide" id="nextweb">
+                                <i class="icon-hand-right"></i>
+                                <a href="http://nextweb.io"> Nextweb API Reference on nextweb.io</a>
+                                
+                                <!-- one.notembedText("https://u1.linnk.it/qc8sbw/usr/apps/textsync/files/docs-nextweb") -->
+                            </div>
+                            
+                             <div class="docsTab plus hide" id="plus">
+                                 <i class="icon-hand-right"></i>
+                                 <a href="//appjangle.com/plus">Appjangle Plus Reference on appjangle.com/plus</a>    
+                             </div>  
+                            
+                            <div class="docsTab gettingStarted helloJava helloJavaScript hide" >
+                                
+                                <p>
+                                    There are currently two Getting Started guides available for Appjangle:
+                                </p>
+                                
+                                <ul class="nav nav-tabs nav-stacked">
+                                    <li><a href="#helloJava">Hello, Java</a></li>
+                                    <li><a href="#helloJavaScript">Hello, JavaScript</a></li>
+                                    
+                                </ul>
+                                
+                                <span id="helloJava"> </span>
+                                
+
+<div class="row-fluid">
+	<div class="span12">
+		<h4>Hello, Java!</h4>
+		<hr>
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+
+		<p>This section lists all steps required to create a small
+			application that store the text 'Hello, World' in the Appjangle cloud
+			database.</p>
+	</div>
+	<div class="span6" style="text-align: center">
+		<img
+			src="http://docs.google.com/drawings/pub?id=10FudSRmB-4a4r0q5DsgvWqb4Ix-KHF6BFkVCdZHmvrU&w=200">
+	</div>
+
+</div>
+<div class="row-fluid">
+	<div class="span6">
+		<h4>Step 1: Download Client Libraries</h4>
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+		<p>
+			First download the latest version of the Appjangle client libraries <a
+				href="#clientLibraries">from this page</a>.
+		<p>Chose the 'Appjangle Client with Nextweb API'. The Nextweb API
+			is more declarative in nature than the more low-level onedb API and
+			therefore allows in most cases to write more concise code.</p>
+		<p>If you use Maven in your project, you can also use the provided
+			Maven dependencies to link the library to your project.</p>
+	</div>
+	<div class="span6">
+		
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+		<h4>Step 2: Link Client Libraries</h4>
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+		<p>
+			Create a new project in your favourite IDE. This example will make
+			use of <a href="http://eclipse.org">eclipse</a>.
+		</p>
+		<p>Copy the downloaded .jar file into a your project directory
+			(e.g. 'lib') and add the library to the classpath/ build path.</p>
+	</div>
+	<div class="span6">
+		<img class="img-polaroid"
+			src="http://dl.dropbox.com/u/957046/static/assets/1210/scr-appjangle-link-libraries.PNG">
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+		<h4>Step 3: Write App to Upload Data</h4>
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+		<p>
+			Create a new class with the name 'Upload'. Add a Java
+			<code>main</code>
+			method to the class as follows:
+		</p>
+
+		<pre class="prettyprint">import io.nextweb.Query;
+import io.nextweb.Session;
+import io.nextweb.jre.Nextweb;
+
+public class Upload {
+
+    public static void main(String[] args) {
+        Session session = Nextweb.createSession();
+
+        Query hello = session.seed().append("Hello, Java!");
+
+        System.out.println("Created:\n"+hello.get());
+
+        session.close().get();
+    }
+
+}</pre>
+
+		<p>Running this application should result in an output such as the
+			following:</p>
+		<pre>Created:
+node("http://slicnet.com/seed1/seed1/2/1/2/h/sd/Hello__1", 
+  class java.lang.String)
+                        </pre>
+	</div>
+
+	<div class="span6">
+
+		<p>
+			<img class="img-polaroid"
+				src="http://dl.dropbox.com/u/957046/static/assets/1210/scr-appjangle-upload.PNG">
+		</p>
+
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+		<p>
+			You can now access the created node using the reported URI. For
+			instance, by opening <a
+				href="http://slicnet.com/seed1/seed1/2/1/2/h/sd/Hello__1">http://slicnet.com/seed1/seed1/2/1/2/h/sd/Hello__1</a>
+			in a web browser.
+		</p>
+	</div>
+	<div class="span6">
+		<p>
+			
+		</p>
+	</div>
+</div>
+
+
+<div class="row-fluid">
+	<div class="span6">
+		<h4>Step 4: Learn to Write Awesome Apps on Nextweb.io</h4>
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+		<p>
+			Head over to the interactive documentation on <a
+				href="http://nextweb.io">Nextweb.io</a> to learn about all features
+			supported by the Nextweb API.
+		</p>
+		<p>
+			You can also <a href="https://github.com/mxro/appjangle-hello-java">fork
+				the Hello World App on github</a>!
+		</p>
+	</div>
+
+</div>
+
+<div class="row-fluid">
+    <div class="span12">
+        <hr>
+    </div>
+</div>
+
+
+                                
+                                <span id="helloJavaScript"></span>
+                                
+
+<div class="row-fluid">
+    <div class="span12">
+        <h4>Hello, JavaScript!</h4>
+        <hr>
+    </div>
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+		
+		<p>This section lists all steps required to create a small
+			application creates the data for a person on the cloud.</p>
+	</div>
+	<div class="span6" style="text-align: center">
+		<img
+			src="https://docs.google.com/drawings/pub?id=1TrbK89E5KkXcS1dxdIUM-JpHzprT4zzVLEwLTz8B504&w=140">
+	</div>
+
+</div>
+<div class="row-fluid">
+	<div class="span6">
+		<h4>Step 1: Create HTML Wrapper</h4>
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+		<p>
+            Create a new file app.html on your computer and edit it with your favorite HTML editor. Paste the following content into the file:
+        </p>
+        <pre class="prettyprint">&lt;html&gt;
+  &lt;body&gt;
+    &lt;script src='http://appjangle.com/js/v01/appjangle/appjangle.nocache.js'&gt;
+    &lt;/script&gt;
+
+    &lt;script&gt;
+       window.onAJ = function() {
+         // app code
+       };
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+        
+	</div>
+	<div class="span6" style="text-align: center;">
+		<p>
+			<img class="img img-polaroid" src="https://docs.google.com/drawings/d/1kstt4QfAjnRHDjUxOsG2ZjbDRhJ-DIh_VoKtnFNqwuM/pub?w=788&h=424">
+		</p>
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+		<h4>Step 2: Write App to Create Data</h4>
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+		<p>
+			Replace the text
+			<code>// app code</code>
+			with the following application:
+		</p>
+		<pre class="prettyprint">var session = Nextweb.createSession();
+var person = session.seed();
+
+person.append("Jane", "./firstName");
+person.append("Gold", "./lastName");
+
+person.get(function(person) {
+  document.body.innerHTML = '&lt;a href=&quot;'+person.uri()+'&quot;&gt;data&lt;/a&gt;';
+});
+
+session.close().get();
+</pre>
+
+		<p>Save app.html and close your editor.</p>
+	</div>
+	<div class="span6">
+		<p>
+			
+		</p>
+	</div>
+</div>
+
+
+<div class="row-fluid">
+	<div class="span6">
+		<h4>Step 3: Run App</h4>
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+		<p>
+            Open the file 'app.html' with a web browser such as Google Chrome or Firefox.
+		</p>
+        <p>
+            A text 'data' should appear. If you click it, you can explore the data created on the cloud.
+        </p>
+		
+	</div>
+    <div class="span6" style="text-align: center;">
+		<p>
+			<img class="img img-polaroid" src="https://docs.google.com/drawings/d/1uGPVdMgnxAXDx3G_J44Jrh7oFGX3eaZ31T8DPUoAwdM/pub?w=661&h=379">
+		</p>
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+		<h4>Step 4: Build Apps Hosted on Our Cloud</h4>
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span6">
+        <p>
+            Soon you'll be able to develop JS apps on our cloud using the Appjangle IDE.
+        </p>
+        <p>
+            Here, for instance, is the example app uploaded to our server:
+        </p>
+        <p>
+            <a href="http://slicnet.com/mxrogm/mxrogm/xplr/.n/Pages/.n/Appjangle_Home_Page/.n/Documentation/.n/app_html.value.html">app.html</a>
+        </p>
+        
+    </div>
+</div>
+
+
+                                
+                            </div>
+ 
+                            <div class="docsTab core android jre js hide" id="android">
+                                 <p>
+                                     The core Appjangle libraries are available for these platforms:
+                                     
+                                </p>
+                                
+                                <ul class="nav nav-tabs nav-stacked">
+                                    <li><a href="#android">Android</a></li>
+                                    <li><a href="#jre">Desktop Java</a></li>
+                                    <li><a href="#js">JavaScript</a></li>
+                                    
+                                </ul>
+                                
+                                <span id="android"> </span>
+                                
+
+<div class="row-fluid">
+	<div class="span12">
+		<h4>Android</h4>
+		<hr>
+	</div>
+</div>
+
+
+<div class="row-fluid">
+
+	<div class="span8">
+
+		<p>
+			Appjangle provides full support for Android applications. All
+			operations of the <a href="http://nextweb.io">Nextweb API</a> are
+			available on Android.
+		</p>
+
+		<h5>Usage</h5>
+		<p>
+			In order to use Appjangle in an Android project, download the <a
+				href="http://appjangle.com/downloads#androidLibraries">Android
+				Client Libraries</a> and place them in your Android project's 'lib'
+			folder or add gradle compile dependency to the respective Maven artifact.
+		</p>
+		<h5>Local Persistence</h5>
+		<p>
+			The Appjangle client libraries come bundled with a plugin, which
+			allows to persist data replicated from the Appjangle cloud in a local
+			SQLite database (<a
+				href="https://bitbucket.org/zedvoid/androidpersistence">AndroidPersistence
+				by zedvoid</a>).
+		</p>
+		<p>
+			Local persistence of replicated data can be enabled by replacing
+			<code>Nextweb.createSession()</code>
+			with an Android-specific constructor for <a
+                                                        href="http://nextweb.io/docs/nextweb-session.value.html">sessions</a>, 
+            <a href="http://modules.appjangle.com/appjangle-android/latest/apidocs/com/appjangle/android/AppjangleAndroid.html#createSession(android.content.Context)">AppjangleAndroid.createSession(Context context)</a>.
+		</p>
+		<pre>Session session = AppjangleAndroid.
+               createSession(getApplicationContext());</pre>
+		<p>
+			The parameter of
+			<code>createSession</code>
+			should conform to the following:
+		<ul>
+			<li><code>getApplicationContext()</code> should return a valid
+				Android <a
+				href="http://developer.android.com/reference/android/content/Context.html">Context</a>
+				object.</li>
+		</ul>
+		<p>
+            The created session needs to be closed with 
+            <a href="http://modules.appjangle.com/nextweb-java/latest/apidocs/io/nextweb/operations/SessionOperations.html#close()">
+                session.close()</a>. In addition, when the android application is to be closed,
+              <a href="http://modules.appjangle.com/appjangle-android/latest/apidocs/com/appjangle/android/AppjangleAndroid.html#shutdown()">AppjangleAndroid.shutdown()</a>
+             should be called. This will assure that all outstanding writes for the caches are written to disk.
+        </p>
+        
+       
+
+	</div>
+	<div class="span4" style="text-align: center;">
+		<img
+			src="http://docs.google.com/drawings/d/1brMi0WmH43hi_wcnhQO0NZKw5JZwDjXgY5lEp9WVRCs/pub?w=100">
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span12">
+
+		<hr>
+	</div>
+</div>
+
+
+                                
+                                <span id="jre"> </span>
+                                
+
+<div class="row-fluid">
+	<div class="span12">
+		<h4>Desktop Java</h4>
+		<hr>
+	</div>
+</div>
+
+
+<div class="row-fluid">
+	<div class="span8">
+		<p>
+			Appjangle can be used in Desktop Java environments, for instance
+			using <a
+				href="http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html">Oracles
+				JRE</a> or <a href="http://openjdk.java.net/">OpenJDK</a>.
+		</p>
+		<h5>Usage</h5>
+		<p>
+			You can either download the <a
+				href="http://appjangle.com/downloads#javaLibraries">Desktop Java
+				Client libraries</a> and link them directly to your project or add a
+			Maven dependency to the client libraries (find instructions for this
+			on the <a href="http://appjangle.com/downloads#javaLibraries">Downloads</a>
+			page as well).
+		</p>
+		<h5>Local Persistence</h5>
+		<p>The Appjangle client libraries for Desktop Java provide support
+			for creating a local copy of data replicated from the Appjangle
+			cloud. Such a local copy can increase performance for some operations
+			dramaticall, since server round-trips can be omitted.</p>
+		<p>
+			The currently supported persistence saves nodes as files in a folder
+			when a new <a
+				href="http://nextweb.io/docs/nextweb-session.value.html">Nextweb
+				Session</a> is created in the following way:
+		</p>
+		<pre>Session s = AppjangleJre.createSession();</pre>
+        <P>
+            Creating a session in this way will store nodes replicated from the Appjangle cloud in the directory 'user.home'.
+        </P>
+        <p>
+            Optionally, a path to a folder can be supplied to the <a href="http://modules.appjangle.com/appjangle-jre/latest/apidocs/com/appjangle/jre/AppjangleJre.html#createSession()">
+            createSession()</a> method as Java <a
+				href="http://docs.oracle.com/javase/6/docs/api/java/io/File.html">Java
+				File</a> object (see <a href="http://modules.appjangle.com/appjangle-jre/latest/apidocs/com/appjangle/jre/AppjangleJre.html#createSession(java.io.File)">createSession(File sharedCacheFolder)</a>). 
+        </p>
+        <pre>Session s = AppjangleJre.createSession(new File("/path/to/folder"));</pre>
+		<p>Any replication folder should only be used by only one session
+			at any one time. To delete replicated data, simply clear out the folder on the
+			file system.</p>
+	</div>
+	<div class="span4" style="text-align: center;">
+		<img
+			src="http://docs.google.com/drawings/d/1gF0QxQURbKzJvPyS0OexN3LPX5tBsaSxVoZsG_Tpelk/pub?h=150">
+	</div>
+</div>
+
+
+                                
+                                <span id="js"> </span>
+                                 
+
+<div class="row-fluid">
+	<div class="span12">
+		<h4>JavaScript</h4>
+		<hr>
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span8">
+		<p>
+			Appjangle provides JavaScript libraries with full support for the <a
+				href="http://nextweb.io">Nextweb API</a>.
+		</p>
+		<h5>Usage</h5>
+		<p>
+			The JavaScript libraries are hosted on the Appjangle cloud (see <a
+				href="http://appjangle.com/downloads#javaScriptLibraries">Downloads</a>).
+			These libraries can be embedded in any web page.
+		</p>
+        <p>
+            To create a new Nextweb session, add code such as the following to your HTML page: 
+        </p>
+        
+		
+        <pre>window.onAJ = function() {
+    var session = AppjangleJs.createSession();
+};</pre>
+        <p>
+            Note that the Appjangle JavaScript libaries are loaded in an asynchronous way. Thus, <code>AppjangleJs.createSession()</code> should only 
+            be called within a callback function assinged to the global variable <code>window.onAJ</code>.
+        </p>
+        
+        <p>
+			Check out the <a
+				href="http://appjangle.com/build#helloJavaScript">Hello,
+				JavaScript</a> page for more information on how to use Appjangle in JavaScript apps.
+		</p>
+	</div>
+	<div class="span4" style="text-align: center;">
+		<img
+			src="http://docs.google.com/drawings/pub?id=1TrbK89E5KkXcS1dxdIUM-JpHzprT4zzVLEwLTz8B504&w=150">
+	</div>
+</div>
+
+<div class="row-fluid">
+	<div class="span12">
+		<hr>
+	</div>
+</div>
+
+
+                            </div>
+                            
+                          
+                            
+                            <div class="docsTab moreDocumentation hide" id="articles">
+                                <!-- one.notembedText("https://u1.linnk.it/qc8sbw/usr/apps/textsync/files/docs-articles") -->
+                            </div>
+                                </div>
+                        </div>
+                        <small>Icon credits: <a href="http://findicons.com/icon/58541/movies?id=58688">Movie Icon</a> by Mazenl77,
+                           <a href="http://findicons.com/icon/203218/package_games_kids?id=204461">Toybox</a> by Devinatdark,
+                            <a href="http://openclipart.org/detail/170115/files-by-netalloy">Folder</a> by netalloy
+                        </small> 
+                        
+                    </div>
+                    
+                    <script>
+                        
+                        if (window.location.hash.length > 1) {
+                            $(".docsTab").hide();
+                            $("."+window.location.hash.substring(1)).show();
+                            
+                        }
+                        
+                        $(window).on('hashchange', function() {
+                            
+                            $(".docsTab").hide();
+                            $("."+window.location.hash.substring(1)).show();
+                            
+                        });
+                    </script>
+                    
+                    
+                    <!-- one.download https://u1.linnk.it/qc8sbw/usr/apps/textsync/docs/appjangle-template-tail -->
+
+			</div>
+		</div>
+
+		<div class="row-fluid" style="text-align: center; margin-top: 30px;">
+			<div class="span12">
+				<img
+					src="http://dl.dropbox.com/u/957046/static/assets/1210/white_line_1.png">
+			</div>
+		</div>
+
+		<div class="row-fluid" style="text-align: center">
+			<div class="span12">
+				<p>
+					<small><a style="color: white" href="http://pureleap.com/appjangle">powered
+							by Appjangle</a></small>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<script>
+        //window.onNextwebOnedb = function(engine) {
+        //  alert(engine);
+        //};
+    </script>
+
+
+
+	<script>function appjangle(){var U='',R=' top: -1000px;',pb='" for "gwt:onLoadErrorFn"',nb='" for "gwt:onPropertyErrorFn"',$='");',qb='#',Tb='.cache.js',sb='/',yb='//',Mb='4C20526B8700F0EB5A102EC40CDF0A16',Nb='5CA617EAF2D93F861F8CC8D6A8B878C7',Ob='5CFE1DD498D2B1899093E2779FAE6C01',Pb='6335BBC4D5FAAC97263558786E7D89AD',Qb='853FE67478374FA5AF5F9235E44B64D9',Sb=':',hb='::',T='<!doctype html>',V='<html><head><\/head><body><\/body><\/html>',kb='=',rb='?',mb='Bad handler "',S='CSS1Compat',Y='Chrome',X='DOMContentLoaded',M='DUMMY',Rb='E59030589010F7C6F9C0F23C301EBA67',K='appjangle',Lb='appjangle.devmode.js',wb='appjangle.nocache.js',gb='appjangle::',xb='base',vb='baseUrl',H='begin',N='body',G='bootstrap',ub='clear.cache.gif',jb='content',$b='end',Z='eval("',Hb='gecko',Ib='gecko1_8',I='gwt.codesvr.appjangle=',J='gwt.codesvr=',Zb='gwt/standard/standard.css',ob='gwt:onLoadErrorFn',lb='gwt:onPropertyErrorFn',ib='gwt:property',db='head',Xb='href',Gb='ie6',Fb='ie8',Eb='ie9',O='iframe',tb='img',ab='javascript',P='javascript:""',Ub='link',Yb='loadExternalRefs',eb='meta',cb='moduleRequested',bb='moduleStartup',Db='msie',fb='name',Ab='opera',Q='position:absolute; width:0; height:0; border:none; left: -1000px;',Vb='rel',Cb='safari',_='script',Kb='selectingPermutation',L='startup',Wb='stylesheet',W='undefined',Jb='unknown',zb='user.agent',Bb='webkit';var o=window;var p=document;r(G,H);function q(){var a=o.location.search;return a.indexOf(I)!=-1||a.indexOf(J)!=-1}
+function r(a,b){if(o.__gwtStatsEvent){o.__gwtStatsEvent({moduleName:K,sessionId:o.__gwtStatsSessionId,subSystem:L,evtGroup:a,millis:(new Date).getTime(),type:b})}}
+appjangle.__sendStats=r;appjangle.__moduleName=K;appjangle.__errFn=null;appjangle.__moduleBase=M;appjangle.__softPermutationId=0;appjangle.__computePropValue=null;appjangle.__getPropMap=null;appjangle.__gwtInstallCode=function(){};appjangle.__gwtStartLoadingFragment=function(){return null};var s=function(){return false};var t=function(){return null};__propertyErrorFunction=null;var u=o.__gwt_activeModules=o.__gwt_activeModules||{};u[K]={moduleName:K};var v;function w(){y();return v}
+function x(){y();return v.getElementsByTagName(N)[0]}
+function y(){if(v){return}var a=p.createElement(O);a.src=P;a.id=K;a.style.cssText=Q+R;a.tabIndex=-1;p.body.appendChild(a);v=a.contentDocument;if(!v){v=a.contentWindow.document}v.open();var b=document.compatMode==S?T:U;v.write(b+V);v.close()}
+function z(k){function l(a){function b(){if(typeof p.readyState==W){return typeof p.body!=W&&p.body!=null}return /loaded|complete/.test(p.readyState)}
+var c=b();if(c){a();return}function d(){if(!c){c=true;a();if(p.removeEventListener){p.removeEventListener(X,d,false)}if(e){clearInterval(e)}}}
+if(p.addEventListener){p.addEventListener(X,d,false)}var e=setInterval(function(){if(b()){d()}},50)}
+function m(c){function d(a,b){a.removeChild(b)}
+var e=x();var f=w();var g;if(navigator.userAgent.indexOf(Y)>-1&&window.JSON){var h=f.createDocumentFragment();h.appendChild(f.createTextNode(Z));for(var i=0;i<c.length;i++){var j=window.JSON.stringify(c[i]);h.appendChild(f.createTextNode(j.substring(1,j.length-1)))}h.appendChild(f.createTextNode($));g=f.createElement(_);g.language=ab;g.appendChild(h);e.appendChild(g);d(e,g)}else{for(var i=0;i<c.length;i++){g=f.createElement(_);g.language=ab;g.text=c[i];e.appendChild(g);d(e,g)}}}
+appjangle.onScriptDownloaded=function(a){l(function(){m(a)})};r(bb,cb);var n=p.createElement(_);n.src=k;p.getElementsByTagName(db)[0].appendChild(n)}
+appjangle.__startLoadingFragment=function(a){return C(a)};appjangle.__installRunAsyncCode=function(a){var b=x();var c=w().createElement(_);c.language=ab;c.text=a;b.appendChild(c);b.removeChild(c)};function A(){var c={};var d;var e;var f=p.getElementsByTagName(eb);for(var g=0,h=f.length;g<h;++g){var i=f[g],j=i.getAttribute(fb),k;if(j){j=j.replace(gb,U);if(j.indexOf(hb)>=0){continue}if(j==ib){k=i.getAttribute(jb);if(k){var l,m=k.indexOf(kb);if(m>=0){j=k.substring(0,m);l=k.substring(m+1)}else{j=k;l=U}c[j]=l}}else if(j==lb){k=i.getAttribute(jb);if(k){try{d=eval(k)}catch(a){alert(mb+k+nb)}}}else if(j==ob){k=i.getAttribute(jb);if(k){try{e=eval(k)}catch(a){alert(mb+k+pb)}}}}}t=function(a){var b=c[a];return b==null?null:b};__propertyErrorFunction=d;appjangle.__errFn=e}
+function B(){function e(a){var b=a.lastIndexOf(qb);if(b==-1){b=a.length}var c=a.indexOf(rb);if(c==-1){c=a.length}var d=a.lastIndexOf(sb,Math.min(c,b));return d>=0?a.substring(0,d+1):U}
+function f(a){if(a.match(/^\w+:\/\//)){}else{var b=p.createElement(tb);b.src=a+ub;a=e(b.src)}return a}
+function g(){var a=t(vb);if(a!=null){return a}return U}
+function h(){var a=p.getElementsByTagName(_);for(var b=0;b<a.length;++b){if(a[b].src.indexOf(wb)!=-1){return e(a[b].src)}}return U}
+function i(){var a=p.getElementsByTagName(xb);if(a.length>0){return a[a.length-1].href}return U}
+function j(){var a=p.location;return a.href==a.protocol+yb+a.host+a.pathname+a.search+a.hash}
+var k=g();if(k==U){k=h()}if(k==U){k=i()}if(k==U&&j()){k=e(p.location.href)}k=f(k);return k}
+function C(a){if(a.match(/^\//)){return a}if(a.match(/^[a-zA-Z]+:\/\//)){return a}return appjangle.__moduleBase+a}
+function D(){var f=[];var g;function h(a,b){var c=f;for(var d=0,e=a.length-1;d<e;++d){c=c[a[d]]||(c[a[d]]=[])}c[a[e]]=b}
+var i=[];var j=[];function k(a){var b=j[a](),c=i[a];if(b in c){return b}var d=[];for(var e in c){d[c[e]]=e}if(__propertyErrorFunc){__propertyErrorFunc(a,d,b)}throw null}
+j[zb]=function(){var b=navigator.userAgent.toLowerCase();var c=function(a){return parseInt(a[1])*1000+parseInt(a[2])};if(function(){return b.indexOf(Ab)!=-1}())return Ab;if(function(){return b.indexOf(Bb)!=-1}())return Cb;if(function(){return b.indexOf(Db)!=-1&&p.documentMode>=9}())return Eb;if(function(){return b.indexOf(Db)!=-1&&p.documentMode>=8}())return Fb;if(function(){var a=/msie ([0-9]+)\.([0-9]+)/.exec(b);if(a&&a.length==3)return c(a)>=6000}())return Gb;if(function(){return b.indexOf(Hb)!=-1}())return Ib;return Jb};i[zb]={gecko1_8:0,ie6:1,ie8:2,ie9:3,opera:4,safari:5};s=function(a,b){return b in i[a]};appjangle.__getPropMap=function(){var a={};for(var b in i){if(i.hasOwnProperty(b)){a[b]=k(b)}}return a};appjangle.__computePropValue=k;o.__gwt_activeModules[K].bindings=appjangle.__getPropMap;r(G,Kb);if(q()){return C(Lb)}var l;try{h([Gb],Mb);h([Ab],Nb);h([Eb],Ob);h([Fb],Pb);h([Cb],Qb);h([Ib],Rb);l=f[k(zb)];var m=l.indexOf(Sb);if(m!=-1){g=parseInt(l.substring(m+1),10);l=l.substring(0,m)}}catch(a){}appjangle.__softPermutationId=g;return C(l+Tb)}
+function E(){if(!o.__gwt_stylesLoaded){o.__gwt_stylesLoaded={}}function c(a){if(!__gwt_stylesLoaded[a]){var b=p.createElement(Ub);b.setAttribute(Vb,Wb);b.setAttribute(Xb,C(a));p.getElementsByTagName(db)[0].appendChild(b);__gwt_stylesLoaded[a]=true}}
+r(Yb,H);c(Zb);r(Yb,$b)}
+A();appjangle.__moduleBase=B();u[K].moduleBase=appjangle.__moduleBase;var F=D();E();r(G,$b);z(F);return true}
+appjangle.succeeded=appjangle();</script>
+
+	<script type="text/javascript" language="javascript"
+		src="assets/v02/headjs-0.96/head.load.min.js"></script>
+	<script type="text/javascript" language="javascript"
+		src="assets/v02/bootstrap-2.2.2/js/bootstrap.min.js"></script>
+    "
+	<script>
+        // head
+        //         .js(
+                       
+        //                 "http://appjangle.com/assets/v02/bootstrap-2.2.2/js/bootstrap.min.js",
+        //                 "http://u1.linnk.it/qc8sbw/usr/apps/ajMicroSync/docs/bootstrap-utils-js-0.0.1.value.js",
+        //                 "http://u1.linnk.it/qc8sbw/usr/apps/textsync/docs/utils-cookies-0.0.3.value.js",
+        //                 "http://u1.linnk.it/qc8sbw/usr/apps/textsync/docs/aj-core-0.0.3.value.js",
+        //                 "http://u1.linnk.it/qc8sbw/usr/apps/textsync/docs/aj-login-js-0.0.3.value.js",
+        //                 "http://u1.linnk.it/qc8sbw/usr/apps/textsync/docs/aj-notification-js-0.0.3.value.js",
+        //                 function() {
+
+        //                     var loginUi = Appjangle.ui.initLoginUi({
+        //                         loginUi : $("#login"),
+        //                         dialog : $("#loginDialog")
+        //                     });
+
+        //                     Appjangle.ui.loginUi = loginUi;
+
+        //                     Appjangle.ui.notificationBar = Appjangle.ui
+        //                             .initNotificationBar($("#notificationBar"));
+
+        //                     $('.appsSigninButton')
+        //                             .click(
+        //                                     function(evt) {
+        //                                         evt.preventDefault();
+        //                                         if (Appjangle.user) {
+        //                                             alert("You are already signed in for Appjangle with the email: "
+        //                                                     + Appjangle.user
+        //                                                             .email());
+
+        //                                             return;
+        //                                         }
+
+        //                                         loginUi.showLoginDialog();
+        //                                     });
+
+        //                 });
+    </script>
+
+
+
+
+
+	<!-- one.end -->
+    </body>
+    
+</html>
+
