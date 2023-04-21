@@ -2,6 +2,8 @@ dist/
 webDist/
 distWeb/
 content/.obsidian/
+public/objecthub/
+public/appjangle/
 distLambda/
 goldstackLocal/
 packages/web-maxrohde-com/static/generated/
