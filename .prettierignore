@@ -2,12 +2,13 @@ dist/
 webDist/
 distWeb/
 content/.obsidian/
-public/objecthub/
-public/appjangle/
 distLambda/
 goldstackLocal/
 packages/web-maxrohde-com/static/generated/
 packages/web-shalveena-com/static/generated/
+packages/web-pureleap/public/objecthub/
+packages/web-pureleap/public/appjangle/
+public/appjangle/
 coverage/
 node_modules/
 .next/
