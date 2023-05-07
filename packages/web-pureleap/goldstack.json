@@ -25,6 +25,10 @@
             "function_name": "pureleap-web-categories-_id_",
             "route": "ANY /categories/{id}"
           },
+          "ANY /objecthub": {
+            "function_name": "pureleap-web-objecthub",
+            "route": "ANY /objecthub"
+          },
           "ANY /robots.txt": {
             "function_name": "pureleap-web-robots_txt",
             "route": "ANY /robots.txt"
@@ -69,6 +73,10 @@
           "ANY /categories/{id}": {
             "function_name": "pureleap-web-prod-categories-_id_",
             "route": "ANY /categories/{id}"
+          },
+          "ANY /objecthub": {
+            "function_name": "pureleap-web-prod-objecthub",
+            "route": "ANY /objecthub"
           },
           "ANY /robots.txt": {
             "function_name": "pureleap-web-prod-robots_txt",
