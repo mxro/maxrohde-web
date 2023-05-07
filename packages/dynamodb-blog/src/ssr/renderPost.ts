@@ -221,8 +221,8 @@ function getPreviousDaysPath(path: string): string | undefined {
       .replaceAll(/\-/g, '/')}/${pathSegments.slice(3).join('/')}`;
     return newPath;
   } catch (e) {
-    console.error('Cannot get previous date for path', path);
-    console.error(e);
+    console.warn('Cannot get previous date for path', path);
+    console.warn(e);
     return undefined;
   }
 }
