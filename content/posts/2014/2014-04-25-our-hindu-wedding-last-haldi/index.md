@@ -41,7 +41,7 @@ In the meantime, earlier, me and Deepi spent some considerable time getting our 
 
  
 
-<table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2014/04/092c8-dscf6584.jpg"><img src="images/092c8-dscf6584.jpg" width="320" height="240" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">Deepi did Sharlene's hair beautifully. I'm sure Sharlene enjoyed the night and some extra attention :)</td></tr></tbody></table>
+<table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2014/04/092c8-dscf6584.jpg"><img src="https://shalveena.files.wordpress.com/2014/04/092c8-dscf6584.jpg" width="320" height="240" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">Deepi did Sharlene's hair beautifully. I'm sure Sharlene enjoyed the night and some extra attention :)</td></tr></tbody></table>
 
  
 

@@ -31,15 +31,15 @@ Here they are setting up:
 
 Max, Geli and the priest then began the prayers:
 
-<table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2014/04/29220-dsc_0566.jpg"><img src="images/29220-dsc_0566.jpg" width="320" height="212" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">Here is the priest explaining the rituals, I think</td></tr></tbody></table>
+<table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2014/04/29220-dsc_0566.jpg"><img src="https://shalveena.files.wordpress.com/2014/04/29220-dsc_0566.jpg" width="320" height="212" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">Here is the priest explaining the rituals, I think</td></tr></tbody></table>
 
  
 
-<table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2014/04/86f48-dsc_0568.jpg"><img src="images/86f48-dsc_0568.jpg" width="320" height="212" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">Sprinkling water over Max and Geli</td></tr></tbody></table>
+<table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2014/04/86f48-dsc_0568.jpg"><img src="https://shalveena.files.wordpress.com/2014/04/86f48-dsc_0568.jpg" width="320" height="212" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">Sprinkling water over Max and Geli</td></tr></tbody></table>
 
  
 
-<table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2014/04/61881-dsc_0573.jpg"><img src="images/61881-dsc_0573.jpg" width="320" height="212" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">The audience hehehe</td></tr></tbody></table>
+<table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2014/04/61881-dsc_0573.jpg"><img src="https://shalveena.files.wordpress.com/2014/04/61881-dsc_0573.jpg" width="320" height="212" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">The audience hehehe</td></tr></tbody></table>
 
  
 
@@ -71,7 +71,7 @@ Max, Geli and the priest then began the prayers:
 
  
 
-<table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2014/04/d07bd-dsc_0620.jpg"><img src="images/d07bd-dsc_0620.jpg" width="320" height="212" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">Ingrid, putting <i>tika</i>&nbsp;on Max</td></tr></tbody></table>
+<table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2014/04/d07bd-dsc_0620.jpg"><img src="https://shalveena.files.wordpress.com/2014/04/d07bd-dsc_0620.jpg" width="320" height="212" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">Ingrid, putting <i>tika</i>&nbsp;on Max</td></tr></tbody></table>
 
 And then comes the actual haldi - Max gets haldi paste put on him:
 
