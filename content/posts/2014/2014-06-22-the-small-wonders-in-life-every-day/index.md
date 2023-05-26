@@ -21,7 +21,7 @@ Here we are watching with our breakfast in bed (Manni gave us the German jersey 
 
  
 
-[![](images/2475e-img_2060.jpg)](https://shalveena.files.wordpress.com/2014/06/2475e-img_2060.jpg)
+![](https://shalveena.files.wordpress.com/2014/06/2475e-img_2060.jpg)
 
 Later in the morning we went for a walk (its become a bit of a ritual to go on walks in the weekends) around the neighbourhood. It was such a beautiful morning; it had rained overnight and the flowers and leaves were all fresh with drops of water, while the sun was also shinning down.
 
@@ -41,7 +41,7 @@ I spotted the following wonders on our path wandering through Mt Eden:
 
  
 
-[![](images/c6630-img_2077.jpg)](https://shalveena.files.wordpress.com/2014/06/c6630-img_2077.jpg)
+![](https://shalveena.files.wordpress.com/2014/06/c6630-img_2077.jpg)
 
  
 

@@ -9,7 +9,7 @@ id: a-delicious-tea-chai-latte
 title: A delicious tea chai latte
 ---
 
-[![](images/d71cf-img_1169.jpg)](https://shalveena.files.wordpress.com/2014/05/d71cf-img_1169.jpg)
+![](https://shalveena.files.wordpress.com/2014/05/d71cf-img_1169.jpg)
 
   
 
@@ -27,4 +27,4 @@ It was definitely worth the wait. The danger with getting chai tea is that often
 
   
 
-[![](images/223e7-img_1170.jpg)](https://shalveena.files.wordpress.com/2014/05/223e7-img_1170.jpg)
+![](https://shalveena.files.wordpress.com/2014/05/223e7-img_1170.jpg)

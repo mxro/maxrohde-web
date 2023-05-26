@@ -51,6 +51,6 @@ title: 'Queenstown, New Zealand: Heaven on Middle Earth (Part 2)'
 
  
 
-[![](images/p1010866.jpg)![](https://shalveena.files.wordpress.com/2013/01/p1010866.jpg?w=300)](https://shalveena.files.wordpress.com/2013/01/p1010869.jpg)
+![](https://shalveena.files.wordpress.com/2013/01/p1010869.jpg)
 
 [![](https://shalveena.files.wordpress.com/2013/01/p1010870.jpg?w=300)](https://shalveena.files.wordpress.com/2013/01/p1010870.jpg)

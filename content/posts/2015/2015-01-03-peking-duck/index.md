@@ -9,7 +9,7 @@ id: peking-duck
 title: Peking Duck
 ---
 
-[![](images/f872f-img_4887.jpg)![](https://shalveena.files.wordpress.com/2015/01/f872f-img_4887.jpg?w=300)](https://shalveena.files.wordpress.com/2015/01/3c51b-img_4885.jpg)
+![](https://shalveena.files.wordpress.com/2015/01/3c51b-img_4885.jpg)
 
   
 

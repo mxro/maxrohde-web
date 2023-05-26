@@ -59,7 +59,7 @@ title: 'Queenstown, New Zealand: Heaven on Middle Earth (Part 3)'
 
 [![](https://shalveena.files.wordpress.com/2013/01/edca3-p1010901.jpg?w=225)](https://shalveena.files.wordpress.com/2013/01/edca3-p1010901.jpg)
 
-[![](images/d1c77-150.jpg)](https://shalveena.files.wordpress.com/2013/01/9ec20-154.jpg)
+![](https://shalveena.files.wordpress.com/2013/01/9ec20-154.jpg)
 
  [](https://shalveena.files.wordpress.com/2013/01/9ec20-154.jpg)
 

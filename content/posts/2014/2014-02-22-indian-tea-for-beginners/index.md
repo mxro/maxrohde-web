@@ -9,7 +9,7 @@ id: indian-tea-for-beginners
 title: Indian Tea for Beginners
 ---
 
-[![](images/4218e-photo1.jpg)](https://shalveena.files.wordpress.com/2014/02/4218e-photo1.jpg)
+![](https://shalveena.files.wordpress.com/2014/02/4218e-photo1.jpg)
 
   
 
@@ -34,4 +34,4 @@ Bring water to the boil, add the tea and sugar to taste (I put in 3 teaspoons fo
 Add the spices  
 Once the water is beginning to boil, add milk  
 Bring back to boil and let it boil until it reaches the desired strength (darker shade of brown = stronger tea).  
-[![](images/f7201-photo2.jpg)](https://shalveena.files.wordpress.com/2014/02/f7201-photo2.jpg)
+![](https://shalveena.files.wordpress.com/2014/02/f7201-photo2.jpg)

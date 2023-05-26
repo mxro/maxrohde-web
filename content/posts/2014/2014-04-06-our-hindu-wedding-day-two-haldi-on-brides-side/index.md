@@ -13,7 +13,7 @@ Haldi ceremony is when tumeric paste is applied to the hands, feet and face of t
 
 But before I get into the second day of ceremonies, here are some behind the scenes photos from the day before, when I was getting ready for the _Telwan:_
 
-[![](images/2a531-img_0455.jpg)](https://shalveena.files.wordpress.com/2014/04/2a531-img_0455.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/2a531-img_0455.jpg)
 
 The haldi ceremony typically takes place during the morning/day time but we had to wait for the priest to arrive before it could begin. During this time, I was supposed to get changed into my yellow sari (yellow because the haldi paste is yellow hehe) and wait upstairs, safe and sound. But my curiosity got the better of me and I spent some minutes wondering around downstairs, until more and more relatives began arriving (at which point I quickly disappeared into my room).
 
@@ -23,15 +23,15 @@ The rule is that during these days leading up to the actual wedding ceremony, th
 
 Meanwhile, downstairs, the women were busy cooking, preparing food and... dancing!
 
-[![](images/2f407-dscf0816.jpg)](https://shalveena.files.wordpress.com/2014/04/2f407-dscf0816.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/2f407-dscf0816.jpg)
 
 They also prepared the place where the prayers would happen and where the Haldi ceremony would take place:
 
-[![](images/0b1e9-dscf0808.jpg)](https://shalveena.files.wordpress.com/2014/04/0b1e9-dscf0808.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/0b1e9-dscf0808.jpg)
 
  
 
-[![](images/fb34d-dscf0803.jpg)](https://shalveena.files.wordpress.com/2014/04/fb34d-dscf0803.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/fb34d-dscf0803.jpg)
 
  
 
@@ -39,7 +39,7 @@ We choose to have our wedding in Melbourne because in Summer the weather there i
 
 The haldi ceremony started with a small prayer with the priest, who put the first haldi paste on me:
 
-[![](images/ad64e-dscf6447.jpg)](https://shalveena.files.wordpress.com/2014/04/ad64e-dscf6447.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/ad64e-dscf6447.jpg)
 
 <table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2014/04/b187d-dscf6459.jpg"><img src="images/b187d-dscf6459.jpg" width="320" height="240" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">These wonderful ladies (cousins) came to help out with the cooking and preparation</td></tr></tbody></table>
 
@@ -49,17 +49,17 @@ After the ceremony, I was sent upstairs again and was instructed to wait until s
 
 While waiting, Sharlene and I decided to take some selfies:
 
-[![](images/5db63-dscf6444.jpg)](https://shalveena.files.wordpress.com/2014/04/5db63-dscf6444.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/5db63-dscf6444.jpg)
 
 And then it began:
 
 First coming downstairs - I was lead by Tina, a family-friend, who was showing Sharlene how to do the task (Sharlene, being my sister was to lead me down and to the mandap but she was too young and did not know what to do haha). My mum was behind me, with her _dupata_ on my head, to protect and give me her blessings.
 
-[![](images/962be-dscf6466.jpg)](https://shalveena.files.wordpress.com/2014/04/962be-dscf6466.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/962be-dscf6466.jpg)
 
  
 
-[![](images/4ac5f-dscf6468.jpg)](https://shalveena.files.wordpress.com/2014/04/4ac5f-dscf6468.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/4ac5f-dscf6468.jpg)
 
  
 
@@ -67,21 +67,21 @@ First coming downstairs - I was lead by Tina, a family-friend, who was showing S
 
 After the priest, the next haldi was put on by Tina and she really took advantage of the opportunity to paint me totally yellow! She had lots of fun while doing it I believe, and so did the other ladies - especially finding my great distress and reaction to the process hilarious.
 
-[![](images/421f6-dscf0777.jpg)](https://shalveena.files.wordpress.com/2014/04/421f6-dscf0777.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/421f6-dscf0777.jpg)
 
-[![](images/c7c16-dscf6483.jpg)](https://shalveena.files.wordpress.com/2014/04/c7c16-dscf6483.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/c7c16-dscf6483.jpg)
 
-[![](images/342f6-dscf6548.jpg)](https://shalveena.files.wordpress.com/2014/04/342f6-dscf6548.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/342f6-dscf6548.jpg)
 
-[![](images/4ef95-dscf0781.jpg)](https://shalveena.files.wordpress.com/2014/04/4ef95-dscf0781.jpg)
-
- 
-
-[![](images/71a98-dscf6498.jpg)](https://shalveena.files.wordpress.com/2014/04/71a98-dscf6498.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/4ef95-dscf0781.jpg)
 
  
 
-[![](images/d9716-dscf0782.jpg)](https://shalveena.files.wordpress.com/2014/04/d9716-dscf0782.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/71a98-dscf6498.jpg)
+
+ 
+
+![](https://shalveena.files.wordpress.com/2014/04/d9716-dscf0782.jpg)
 
  
 
@@ -99,7 +99,7 @@ Here they are, my lovely friends and relatives:
 
  
 
-[![](images/6bb36-dscf6524.jpg)](https://shalveena.files.wordpress.com/2014/04/6bb36-dscf6524.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/6bb36-dscf6524.jpg)
 
  
 
@@ -135,19 +135,19 @@ Here they are, my lovely friends and relatives:
 
 And now here the me coming down to repeat the whole thing the second time:
 
-[![](images/c4e61-dscf6543.jpg)](https://shalveena.files.wordpress.com/2014/04/c4e61-dscf6543.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/c4e61-dscf6543.jpg)
 
  
 
-[![](images/2428f-dscf0819.jpg)](https://shalveena.files.wordpress.com/2014/04/2428f-dscf0819.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/2428f-dscf0819.jpg)
 
 And now the lovely ladies putting more haldi on:
 
-[![](images/b5275-dscf6533.jpg)](https://shalveena.files.wordpress.com/2014/04/b5275-dscf6533.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/b5275-dscf6533.jpg)
 
  
 
-[![](images/63b6e-dscf6534.jpg)](https://shalveena.files.wordpress.com/2014/04/63b6e-dscf6534.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/63b6e-dscf6534.jpg)
 
  
 
@@ -155,7 +155,7 @@ And now the lovely ladies putting more haldi on:
 
  
 
-[![](images/b9328-dscf6538.jpg)](https://shalveena.files.wordpress.com/2014/04/b9328-dscf6538.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/b9328-dscf6538.jpg)
 
  
 
@@ -165,16 +165,16 @@ We did this 3 times around - Mum and I hatched the plan to do it 3 times in a ro
 
 During this whole thing, the ladies were all also multitasking away - cooking in the garage!
 
-[![](images/3df6d-dscf0817.jpg)](https://shalveena.files.wordpress.com/2014/04/3df6d-dscf0817.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/3df6d-dscf0817.jpg)
 
  
 
-[![](images/704f9-dscf6568.jpg)](https://shalveena.files.wordpress.com/2014/04/704f9-dscf6568.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/704f9-dscf6568.jpg)
 
  
 
-[![](images/7d473-dscf6569.jpg)](https://shalveena.files.wordpress.com/2014/04/7d473-dscf6569.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/7d473-dscf6569.jpg)
 
  
 
-[![](images/a0870-dscf6570.jpg)](https://shalveena.files.wordpress.com/2014/04/a0870-dscf6570.jpg)
+![](https://shalveena.files.wordpress.com/2014/04/a0870-dscf6570.jpg)

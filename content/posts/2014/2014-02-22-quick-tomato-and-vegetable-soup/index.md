@@ -11,7 +11,7 @@ title: Quick Tomato and Vegetable Soup
 
   
 
-[![](images/3b41e-20140222tomatoandvegesoup1.jpg)](https://shalveena.files.wordpress.com/2014/02/3b41e-20140222tomatoandvegesoup1.jpg)
+![](https://shalveena.files.wordpress.com/2014/02/3b41e-20140222tomatoandvegesoup1.jpg)
 
 Some days are soup days. Where a nice bowl of soup with crusty bread or pasta is just the thing the soul needs. Especially when someone is sick or the weather outside is bordering towards the dull, grey shades.
 
@@ -61,8 +61,8 @@ Enjoy with crusty bread, with pasta, or simply on its own :) 
 
   
 
-[![](images/4024a-20140222tomatoandvegesoup2.jpg)](https://shalveena.files.wordpress.com/2014/02/4024a-20140222tomatoandvegesoup2.jpg)
+![](https://shalveena.files.wordpress.com/2014/02/4024a-20140222tomatoandvegesoup2.jpg)
 
   
 
-[![](images/06d76-20140222tomatoandvegesoup3.jpg)](https://shalveena.files.wordpress.com/2014/02/06d76-20140222tomatoandvegesoup3.jpg)
+![](https://shalveena.files.wordpress.com/2014/02/06d76-20140222tomatoandvegesoup3.jpg)

@@ -53,7 +53,7 @@ My parents also gave me a new set of clothes and some small gifts at this time.
 
  
 
-[![](images/2a425-050a1264.jpg)](https://shalveena.files.wordpress.com/2014/05/2a425-050a1264.jpg)
+![](https://shalveena.files.wordpress.com/2014/05/2a425-050a1264.jpg)
 
  
 

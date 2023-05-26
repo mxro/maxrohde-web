@@ -23,7 +23,7 @@ title: 'Queenstown, New Zealand: Heaven on Middle Earth (Part 1)'
 
 **Thinking of Queenstown reminds me of the movie Main Prem Ki Diwani Hoon, which was set in the fictional town of “Sundarnagar” (translates roughly to: beautiful town). The setting of the movie was indeed beautiful: mountains looming in the background, snow, beautiful and natural scenery; and it was shot right here, mainly in the South Island. The line “heaven falls here” perfectly captures my experience of Queenstown and the surrounding area.**
 
-[![](images/46413-images.jpeg)](https://shalveena.files.wordpress.com/2013/01/03525-p1020068.jpg)
+![](https://shalveena.files.wordpress.com/2013/01/03525-p1020068.jpg)
 
 [**We went to Queenstown during March so it was late summer. We also had a trip planned to Fiji immediately after spending a few days in Queenstown. So in all my wisdom, I tried to pack mostly summer clothes and reduce the amount of baggage we had to take with us. Little did I know that ‘summer’ on the South Island of New Zealand still means cold for those like me, coming from the tropics. That said, we were lucky to have beautiful weather while in Queenstown, with clear blue skies (mostly) but it was cold nonetheless.** **We booked accomodation at**](https://shalveena.files.wordpress.com/2013/01/03525-p1020068.jpg) **[Distinction Queenstown Nugget Point Hotel](http://www.nuggetpoint.co.nz/distinction-hotels-queenstown-nugget-point-boutique-hotel-spa/welcome-to-distinction-queenstown_idl=2_idt=3828_id=22069_.html), which has Queenstown’s Shotover River flowing just behind it and overlooks majestic moutains. Our room had a patio and the view from there was serene and calming. The hotel was a bit of a distance from the centre but it was worth the peace and serenity :)**
 

@@ -12,7 +12,7 @@ title: Garlicky Chicken with Lemon-Anchovy Sauce
   
   
 
-[![](images/4f0ea-img_7029.jpg)](https://shalveena.files.wordpress.com/2015/04/4f0ea-img_7029.jpg)
+![](https://shalveena.files.wordpress.com/2015/04/4f0ea-img_7029.jpg)
 
   
 This recipe is adopted from the New York Times: [here](http://cooking.nytimes.com/recipes/1015290-garlicky-chicken-with-lemon-anchovy-sauce) is the original recipe. It involves mixing chicken with anchovy - something that I would never have done normally. I've never cooked with anchovy before (to tell the truth, I have never eaten anchovies before!). I also hardly cook with capers, but this recipe looked good and it had a video accompanying the recipe that made it sound so good that I just had to try it. And it was really, really delicious. One of the best meals I have cooked - so good that I woke up the next morning thinking about how yummy dinner was the night before! I don't usually follow recipes as I found that in the past they didn't lead to good result, but I have to say so far the New York Times has provided very good recipes.  

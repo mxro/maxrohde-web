@@ -9,13 +9,13 @@ id: green-bean-salad-with-pan-fried-chicken
 title: Green bean salad with pan fried chicken
 ---
 
-[![](images/aeed0-img_4709.jpg)](https://shalveena.files.wordpress.com/2014/12/aeed0-img_4709.jpg)
+![](https://shalveena.files.wordpress.com/2014/12/aeed0-img_4709.jpg)
 
   
 
   
 
-[![](images/aa0e7-img_47142bcropped.png)](https://shalveena.files.wordpress.com/2014/12/aa0e7-img_47142bcropped.png)
+![](https://shalveena.files.wordpress.com/2014/12/aa0e7-img_47142bcropped.png)
 
   
   

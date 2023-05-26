@@ -9,7 +9,7 @@ id: honeymoon-in-ubud-bali
 title: Honeymoon in Ubud, Bali
 ---
 
-[![](images/a76ce-fotor0920190336.png)](https://shalveena.files.wordpress.com/2014/10/a76ce-fotor0920190336.png)
+![](https://shalveena.files.wordpress.com/2014/10/a76ce-fotor0920190336.png)
 
 We went to Bali on 25 August 2014, returning to Melbourne in the early morning on Tuesday, 2 September 2014 (yes, Melbourne, not Auckland this time - our home for the last 6 years).
 
@@ -39,7 +39,7 @@ She pointed us in the direction of Ubud town and after asking more people along 
 
 <table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2014/10/e327c-photo7.png"><img src="images/e327c-photo7.png" width="640" height="576" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">Top left: Max walking on the path he thought would lead us to the rice fields walk. Second picture at the top: this is where the path actually led us - to someone's house. We did not know it was a private house so we peeked around from the gates. Top right: yay, we finally found the rice fields! And wow, so lush and green. Bottom row: rows upon rows of rice. Because Ubud is mountainous, I read that the rice farming has to be done manually as it is too difficult to bring machinery there. We saw many farmers busy tending to the rice. We decided to take a break and enjoyed some nice tea at a very nice cafe - it was right in the middle of the walk and was so nicely set out, all open and breezy, and looking out into the rice fields. Bottom row: that was the Ubud Yoga House - looked like an awesome place to practice yoga but unfortunately I did not get a chance to try it out.</td></tr></tbody></table>
 
-[![](images/edecc-photo8.jpg)](https://shalveena.files.wordpress.com/2014/10/edecc-photo8.jpg)
+![](https://shalveena.files.wordpress.com/2014/10/edecc-photo8.jpg)
 
 <table class="tr-caption-container" style="margin-left:auto;margin-right:auto;text-align:center;" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td style="text-align:center;"><a style="margin-left:auto;margin-right:auto;" href="https://shalveena.files.wordpress.com/2014/10/ae0c2-photo9.png"><img src="images/ae0c2-photo9.png" width="600" height="640" border="0"></a></td></tr><tr><td class="tr-caption" style="text-align:center;">This was the old lady's temple. She dressed up very nicely :)</td></tr></tbody></table>
 
@@ -63,7 +63,7 @@ Included in our ticket was also a buffet lunch at the restaurant - it was good, 
 
  
 
-[![](images/c37e0-photo15.png)](https://shalveena.files.wordpress.com/2014/10/c37e0-photo15.png)
+![](https://shalveena.files.wordpress.com/2014/10/c37e0-photo15.png)
 
 At the end of the day, we were (unexpectedly) very tired - actually, now that I remember it, I recall that on the drive back from the Elephant Safari, the other couple were sleeping and even our driver started dozing off from time to time (scaring me very much!). Even so, we were hungry and decided to venture down to Ubud town after returning to the hotel, but it was getting dark so we went to the first Warung that we found, that looked reasonable. It was at someone's house, and although the food was not great it did give us a chance to look inside the compounds of the house. There were many shrines and the smell of incense. I forget to mention, in Ubud it seems that the locals and shop owners put out some offering of food and flowers out into the streets daily and they also do little prayers throughout the day (each shop appeared to have a small shrine it it or nearby).
 
@@ -109,7 +109,7 @@ There were other monkeys, some trying to open empty Coca Cola bottles, another o
 
 Our last real meal:
 
-[![](images/b8a5c-photo27.png)](https://shalveena.files.wordpress.com/2014/10/b8a5c-photo27.png)
+![](https://shalveena.files.wordpress.com/2014/10/b8a5c-photo27.png)
 
 We really loved eating at [Puteri Minang](http://www.tripadvisor.com.au/Restaurant_Review-g297701-d4813591-Reviews-Puteri_Minang-Ubud_Bali.html), our favourite Padang food restaurant in Ubud (it is located on the main road, next to a Ganesha bookstore). Unfortunately, on our last day in Ubud town, that restaurant was closed/getting renovated! We were gutted!!! But after a little bit of walking, we came to another Padang restaurant (pictured above), which was just as local as Puteri Minang, though the food wasn't as nice. We had this delicious spicy boiled egg, rice, sambal chillies, some chicken sauce and beef rendang. We ended up having 3 servings between the two of us. As you can see in the photographs, the place was definitely not geared for tourists and a sure sign of this is the little hand basin and handwash next to the tables, which the locals use for washing their hand after eating.
 
@@ -117,6 +117,6 @@ While we ate, the owner also came and took a few things out of the fridge at the
 
 And here is a picture of our favourite Padang restaurant, which was closed on our last day unfortunately:
 
-[![](images/8bb92-20142b082b312bbali2b063.jpg)](https://shalveena.files.wordpress.com/2014/10/8bb92-20142b082b312bbali2b063.jpg)
+![](https://shalveena.files.wordpress.com/2014/10/8bb92-20142b082b312bbali2b063.jpg)
 
 Ah, happy memories :)

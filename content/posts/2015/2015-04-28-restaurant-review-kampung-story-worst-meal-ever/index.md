@@ -11,7 +11,7 @@ title: 'Restaurant Review: Kampung Story Worst Meal Ever'
 
  
 
-[![](images/ae4e4-img_7178.jpg)](https://shalveena.files.wordpress.com/2015/04/ae4e4-img_7178.jpg)
+![](https://shalveena.files.wordpress.com/2015/04/ae4e4-img_7178.jpg)
 
 Today, we decided to go out for dinner as I wasn't up to cooking at home. We recently moved to a new area and so were keen to try out some of the restaurants nearby to find some good options for eating out.
 
@@ -27,27 +27,27 @@ I ordered a dish called chicken with sambal sauce. I hadn't heard of that dish b
 
 Google images shows these:
 
-[![](images/be5eb-download.jpg)](https://shalveena.files.wordpress.com/2015/04/be5eb-download.jpg)
+![](https://shalveena.files.wordpress.com/2015/04/be5eb-download.jpg)
 
  
 
-[![](images/e1f06-download2b1.jpg)](https://shalveena.files.wordpress.com/2015/04/e1f06-download2b1.jpg)
+![](https://shalveena.files.wordpress.com/2015/04/e1f06-download2b1.jpg)
 
  
 
-[![](images/772a8-download2b2.jpg)](https://shalveena.files.wordpress.com/2015/04/772a8-download2b2.jpg)
+![](https://shalveena.files.wordpress.com/2015/04/772a8-download2b2.jpg)
 
 :
 
 Kampung Story served me this:
 
-[![](images/f5aa7-img_7185.jpg)](https://shalveena.files.wordpress.com/2015/04/f5aa7-img_7185.jpg)
+![](https://shalveena.files.wordpress.com/2015/04/f5aa7-img_7185.jpg)
 
 It was truly disgusting. The chicken was old and/or not cooked fully. The sauce was salty - why was there sauce in it to begin with? The veges were from cheap frozen vege packets. It has a yucky smell of shrimp paste but no tasty goodness of Sambal Chicken. It was no where near my favourite Malaysian Restaurant - [Selera in Newmarket,](http://restaurants.nzherald.co.nz/restaurant/selera-newmarket) Auckland - but I would have settled for anything remotely decent. This was not edible and I had to leave it uneaten mostly.
 
 What is worse, Maxi ordered a dish called chicken in szechuan sauce and his dish looked almost identical to mine! Before ordering he asked the waitress what szechuan sauce was and she told him it was spicy and had whole chillies in it. There was no chilly to be found in the dish and not a hint of spice. Here is his dish:
 
-[![](images/ec5bb-img_7180.jpg)](https://shalveena.files.wordpress.com/2015/04/ec5bb-img_7180.jpg)
+![](https://shalveena.files.wordpress.com/2015/04/ec5bb-img_7180.jpg)
 
 Also super yuck.
 

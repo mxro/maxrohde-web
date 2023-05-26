@@ -27,7 +27,7 @@ We started off with bottled pasta sauces, to which I would add some spices and h
 
   
 
-[![](images/3be75-sugo_al_basilico-zoom.jpg)](https://shalveena.files.wordpress.com/2013/09/3be75-sugo_al_basilico-zoom.jpg)
+![](https://shalveena.files.wordpress.com/2013/09/3be75-sugo_al_basilico-zoom.jpg)
 
   
 
