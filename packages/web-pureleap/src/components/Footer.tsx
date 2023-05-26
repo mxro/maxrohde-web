@@ -92,7 +92,7 @@ export function Footer(): JSX.Element {
           </a>
         </div>
         <p className="mt-8 text-base leading-6 text-center text-gray-400 font-robotoslab ">
-          © 2023 Pureleap Pty. Ltd
+          © 2023 Pureleap Pty. Ltd.
         </p>
       </div>
     </section>
