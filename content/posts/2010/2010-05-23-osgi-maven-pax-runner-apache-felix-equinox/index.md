@@ -4,6 +4,8 @@ authors:
 blog: maxrohde.com
 categories:
 - java
+tags:
+- osgi
 date: "2010-05-23"
 title: OSGi + Maven + Pax Runner + Apache Felix + Equinox
 ---
@@ -24,7 +26,9 @@ The path can be quite long but it can easily be copied by double-clicking on the
 
 The paths can for example look like:
 
+```
 /Users/mx/.m2/repository/de/mxro/osgi/serviceProvider/ServiceProvider/1.0.0/ServiceProvider-1.0.0.jar /Users/mx/.m2/repository/de/mxro/osgi/serviceDefinition/ServiceDefinition/1.0.0/ServiceDefinition-1.0.0.jar
+```
 
 **Test your Maven Packages using Pax Runner**
 
@@ -50,15 +54,25 @@ Here you can open the Empty_OSGi folder configuration. ![bildschirmfoto2010-05-2
 
 The file config.ini should look something like:
 
-#Configuration File #Sun May 23 18:56:27 NZST 2010 osgi.bundles=reference\\:file\\:/Applications/eclipse/plugins/org.eclipse.osgi.services_3.2.0.v20090520-1800.jar@start,reference\\:file\\:/Applications/eclipse/plugins/javax.transaction_1.1.1.v201002111330.jar,reference\\:file\\:/Applications/eclipse/plugins/org.eclipse.equinox.util_1.0.100.v20090520-1800.jar@start,reference\\:file\\:/Applications/eclipse/plugins/org.eclipse.persistence.jpa.equinox.weaving_1.1.3.v20091002-r5404.jar,reference\\:file\\:/Applications/eclipse/plugins/org.eclipse.equinox.ds_1.1.1.R35x_v20090806.jar@start osgi.bundles.defaultStartLevel=4 osgi.install.area=file\\:/Applications/eclipse osgi.framework=file\\:/Applications/eclipse/plugins/org.eclipse.osgi_3.5.2.R35x_v20100126.jar osgi.configuration.cascaded=false
+```
+#Configuration File
+#Sun May 23 18:56:27 NZST 2010
+osgi.bundles=reference\\:file\\:/Applications/eclipse/plugins/org.eclipse.osgi.services_3.2.0.v20090520-1800.jar@start,reference\\:file\\:/Applications/eclipse/plugins/javax.transaction_1.1.1.v201002111330.jar,reference\\:file\\:/Applications/eclipse/plugins/org.eclipse.equinox.util_1.0.100.v20090520-1800.jar@start,reference\\:file\\:/Applications/eclipse/plugins/org.eclipse.persistence.jpa.equinox.weaving_1.1.3.v20091002-r5404.jar,reference\\:file\\:/Applications/eclipse/plugins/org.eclipse.equinox.ds_1.1.1.R35x_v20090806.jar@start osgi.bundles.defaultStartLevel=4 osgi.install.area=file\\:/Applications/eclipse osgi.framework=file\\:/Applications/eclipse/plugins/org.eclipse.osgi_3.5.2.R35x_v20100126.jar osgi.configuration.cascaded=false
+```
 
 When starting Pax Runner, we can provide all the bundles listed under osgi.bundles. These need to be reformatted a bit (remove the backslashes and @ flags). In addition, the paths to the jars deployed with Maven can be added. The result should be a list of packages, which looks similar to the following:
 
+```
 file:///Applications/eclipse/plugins/org.eclipse.osgi.services_3.2.0.v20090520-1800.jar file:///Applications/eclipse/plugins/javax.transaction_1.1.1.v201002111330.jar file:///Applications/eclipse/plugins/org.eclipse.equinox.util_1.0.100.v20090520-1800.jar file:///Applications/eclipse/plugins/org.eclipse.persistence.jpa.equinox.weaving_1.1.3.v20091002-r5404.jar file:///Applications/eclipse/plugins/org.eclipse.equinox.ds_1.1.1.R35x_v20090806.jar **/Users/mx/.m2/repository/de/mxro/osgi/serviceProvider/ServiceProvider/1.0.0/ServiceProvider-1.0.0.jar /Users/mx/.m2/repository/de/mxro/osgi/serviceDefinition/ServiceDefinition/1.0.0/ServiceDefinition-1.0.0.jar**
+```
 
 Using this lists of paths to OSGi bundles, we can start Pax Runner with the following command:
 
-MacBookMX:bin mx$ ./pax-run.sh --clean --platform=equinox file:///Applications/eclipse/plugins/org.eclipse.osgi.services_3.2.0.v20090520-1800.jar file:///Applications/eclipse/plugins/javax.transaction_1.1.1.v201002111330.jar file:///Applications/eclipse/plugins/org.eclipse.equinox.util_1.0.100.v20090520-1800.jar file:///Applications/eclipse/plugins/org.eclipse.persistence.jpa.equinox.weaving_1.1.3.v20091002-r5404.jar file:///Applications/eclipse/plugins/org.eclipse.equinox.ds_1.1.1.R35x_v20090806.jar /Users/mx/.m2/repository/de/mxro/osgi/serviceProvider/ServiceProvider/1.0.0/ServiceProvider-1.0.0.jar /Users/mx/.m2/repository/de/mxro/osgi/serviceDefinition/ServiceDefinition/1.0.0/ServiceDefinition-1.0.0.jar **Attention:** Make sure to include the option **\--clean**. If you do not, Pax Runner will cache your bundles. So, if you change them in eclipse, the changes won‘t be visible when starting the bundles with Pax Runner.
+```
+MacBookMX:bin mx$ ./pax-run.sh --clean --platform=equinox file:///Applications/eclipse/plugins/org.eclipse.osgi.services_3.2.0.v20090520-1800.jar file:///Applications/eclipse/plugins/javax.transaction_1.1.1.v201002111330.jar file:///Applications/eclipse/plugins/org.eclipse.equinox.util_1.0.100.v20090520-1800.jar file:///Applications/eclipse/plugins/org.eclipse.persistence.jpa.equinox.weaving_1.1.3.v20091002-r5404.jar file:///Applications/eclipse/plugins/org.eclipse.equinox.ds_1.1.1.R35x_v20090806.jar /Users/mx/.m2/repository/de/mxro/osgi/serviceProvider/ServiceProvider/1.0.0/ServiceProvider-1.0.0.jar /Users/mx/.m2/repository/de/mxro/osgi/serviceDefinition/ServiceDefinition/1.0.0/ServiceDefinition-1.0.0.jar 
+```
+
+**Attention:** Make sure to include the option **\--clean**. If you do not, Pax Runner will cache your bundles. So, if you change them in eclipse, the changes won‘t be visible when starting the bundles with Pax Runner.
 
 Once equinox has started up, you can list the installed packages using the command „ss“. The packages should look like listed below.
 
@@ -74,7 +88,9 @@ Also the command „ls“ will list our component.
 
 We will need a special [Pax Runner profile](http://paxrunner.ops4j.org/display/paxrunner/Profiles) to be able to use declarative service. We need to use the profile [ds](http://paxrunner.ops4j.org/display/paxrunner/Pax+Runner+profiles+list).
 
+```
 ./pax-run.sh --platform=felix --clean --profiles=ds
+```
 
 Here again, do not forget the **\--clean** option!
 
@@ -96,4 +112,6 @@ You can close Felix using the command „shutdown“.
 
 A quicker way to test your bundles, is to add them to the Pax Runner commands and let them automatically be loaded at startup. For this, use the following command:
 
+```
 ./pax-run.sh --platform=felix --clean --profiles=ds /Users/mx/.m2/repository/de/mxro/osgi/serviceProvider/ServiceProvider/1.0.0/ServiceProvider-1.0.0.jar /Users/mx/.m2/repository/de/mxro/osgi/serviceDefinition/ServiceDefinition/1.0.0/ServiceDefinition-1.0.0.jar
+```
