@@ -9,7 +9,7 @@ authors:
   - max
 tags:
   - 'breathing'
-  - 'buddhims'
+  - 'buddhism'
   - 'waiting'
   - 'happiness'
   - 'life'
@@ -30,7 +30,7 @@ This connection between breathing and emotions forms the foundation of numerous 
 To become better at breathing, there are two things I want to focus on:
 
 - I should strive to cultivate awareness of my breath throughout the day. By frequently checking in on my breath, I can gain valuable insights into my current emotional state. Am I breathing steadily and deeply, or am I caught up in shallow, rapid breaths? This awareness can help me gauge my mood and take necessary steps to restore balance.
-- I can practice breathing through my belly. This technique, often called diaphragmatic breathing, has been proven to be highly beneficial for well-being. By breathing deeply into my belly, I engage the diaphragm, allowing for a more complete exchange of oxygen and carbon dioxide. This activates the body's relaxation response, promoting a sense of calmness and reducing stress. By consciously practicing belly breathing, I can develop a valuable skill that enhances my overall well-being.
+- I can practice breathing through my belly. This technique, often called diaphragmatic breathing, has been proven to be highly beneficial for well-being. By breathing deeply into my belly, I engage the diaphragm, allowing for a more complete exchange of oxygen and carbon dioxide. This activates the body's relaxation response, promoting a sense of calmness and reducing stress. By consciously practising belly breathing, I can develop a valuable skill that enhances my overall well-being.
 
 ## Waiting
 
@@ -50,6 +50,6 @@ Lastly, let's explore the skill of thinking. Renowned philosopher René Descarte
 - I will dedicate time to deep thinking; to really do nothing but thinking without distractions. In these moments of solitude and focused thinking, I can truly explore complex problems and gain valuable insights.
 - I will try to write more. By writing, I can clarify my thoughts and solidify my understanding of complex concepts. Writing brings structure and coherence to my thoughts, allowing me to communicate them effectively and gain new perspectives.
 
-In conclusion, these three skills—breathing, waiting, and thinking—are often overlooked in our productivity-driven culture. However, by embracing them and actively practicing them in my life, I can cultivate a more meaningful and impactful existence. I will personally dedicate myself to breathing mindfully, embracing the art of waiting, and dedicating time to deep thinking. These skills have the potential to bring about lasting transformations and a sense of fulfillment that extends beyond mere productivity.
+In conclusion, these three skills—breathing, waiting, and thinking—are often overlooked in our productivity-driven culture. However, by embracing them and actively practising them in my life, I can cultivate a more meaningful and impactful existence. I will personally dedicate myself to breathing mindfully, embracing the art of waiting, and dedicating time to deep thinking. These skills have the potential to bring about lasting transformations and a sense of fulfilment that extends beyond mere productivity.
 
 Keep in mind that these three skills are just a fraction of the vast array of skills available for exploration. The journey toward a fulfilling life is a personal one, and different skills may resonate more strongly with different individuals. Consider what skills are most aligned with your values, aspirations, and unique path. Embrace the process of growth and self-improvement, and you will undoubtedly uncover the skills that will lead you to reach your greatest potential.
