@@ -34,7 +34,7 @@ To become better at breathing, there are two things I want to focus on:
 
 ## Waiting
 
-Moving on to the second skill, let's explore the often-neglected art of waiting. In today's fast-paced world, waiting has become something to be avoided at all costs. The trillion-dollar tech industry thrives on minimizing waiting time and maximizing efficiency. We expect instant gratification, immediate responses, and constant stimulation. But what if we embraced waiting as an opportunity for growth and self-reflection?
+Moving on to the second skill, let's explore the often-neglected art of waiting. In today's fast-paced world, waiting has become something to be avoided at all costs. The trillion-dollar tech industry thrives on minimising waiting time and maximising efficiency. We expect instant gratification, immediate responses, and constant stimulation. But what if we embraced waiting as an opportunity for growth and self-reflection?
 
 Waiting is deeply intertwined with profound concepts found in various philosophies, such as Buddhism. Buddhism emphasizes the impermanence of all things and the importance of detachment. By recognizing that everything is in a constant state of flux, we can cultivate patience and acceptance. Waiting allows us to practice detachment from our desires and the outcomes we anticipate. It reminds us that life is a continuous flow, and our role is to navigate its currents with grace and equanimity. The challenge lies in knowing how to practically apply these philosophical ideas to our daily lives.
 
@@ -52,4 +52,4 @@ Lastly, let's explore the skill of thinking. Renowned philosopher René Descarte
 
 In conclusion, these three skills—breathing, waiting, and thinking—are often overlooked in our productivity-driven culture. However, by embracing them and actively practising them in my life, I can cultivate a more meaningful and impactful existence. I will personally dedicate myself to breathing mindfully, embracing the art of waiting, and dedicating time to deep thinking. These skills have the potential to bring about lasting transformations and a sense of fulfilment that extends beyond mere productivity.
 
-Keep in mind that these three skills are just a fraction of the vast array of skills available for exploration. The journey toward a fulfilling life is a personal one, and different skills may resonate more strongly with different individuals. Consider what skills are most aligned with your values, aspirations, and unique path. Embrace the process of growth and self-improvement, and you will undoubtedly uncover the skills that will lead you to reach your greatest potential.
+Keep in mind that these three skills are just a fraction of the vast array of skills available for exploration. The journey toward a fulfilling life is a personal one, and different skills may resonate more strongly with different individuals. Consider what skills are most aligned with your values, aspirations, and unique path.
