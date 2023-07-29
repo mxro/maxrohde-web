@@ -1,10 +1,12 @@
 With only one life to live and it being of limited duration, it is important to try to make the most of it. But how? This question is not new; our ancestors contemplated it for thousands of years. I've delved into the wisdom of ancient philosophies of Stoicism and Buddhism, as well as modern scientific disciplines such as positive psychology and social biology in order to find an answer to this question for myself. 
 
-I'm far from finding a fully satisfactory answer. However, I believe there is value in sharing my current state of thinking on this matter, which I present in this article for your consideration. Please note, rather than engaging in discussions about the ultimate purpose and value of life, I want to keep the focus on the practical skills and abilities that can lead to a good and fulfilling existence.
+I'm far from finding a fully satisfactory answer. However, I believe there is value in sharing my current state of thinking on this matter, which I present in this article for your consideration.
 
 In previous articles, I have explored the surprising utility of skills such as [thinking, waiting, and breathing](https://maxrohde.com/2023/06/25/three-useful-skills-breathing-waiting-thinking). In this article, I outline the general areas where gaining mastery can bring significant benefits. These areas draw inspiration from tradition, philosophy, and religious discourse. I do not claim that this list is exhaustive or inherently superior to any other. It simply represents the best compilation I have been able to create thus far.
 
 Without further ado, let me present the key skills or masteries I believe are worth considering for living a good life:
+
+![](Pasted%20image%2020230729102913.png)
 
 - _Mastery of Body_: Nurturing and mastering our bodies for a healthier and more fulfilling existence.
 - _Mastery of Emotion_: Understanding and shaping our emotional landscape.
