@@ -6,7 +6,8 @@ In previous articles, I have explored the surprising utility of skills such as [
 
 Without further ado, let me present the key skills or masteries I believe are worth considering for living a good life:
 
-![](Pasted%20image%2020230729102913.png)
+![](Pasted%20image%2020230729203324.png)
+
 
 - _Mastery of Body_: Nurturing and mastering our bodies for a healthier and more fulfilling existence.
 - _Mastery of Emotion_: Understanding and shaping our emotional landscape.
