@@ -1,10 +1,11 @@
 ---
-title: 'On Waiting'
+title: 'On Waiting: A Skill Often Overlooked'
 publish: true
-coverImage: ''
+coverImage: 'pexels-anton-atanasov-210782.jpg'
 id: 'on-waiting'
 blog: 'maxrohde.com'
-date: 2023-07-29
+summary: Waiting seems like a waste of time. I argue it is actually one of the most powerful things we can learn.
+date: 2023-07-30
 authors:
   - max
 tags:
@@ -13,6 +14,8 @@ tags:
   - 'waiting'
   - 'happiness'
   - 'life'
+  - 'philosophy'
+  - 'patience'
 categories:
   - 'contemplations'
 ---
@@ -47,7 +50,7 @@ The Nicomachean Ethics, a keystone work by Aristotle on the art of living well o
 
 Temperance is described as a measure of moderation, particularly in the face of pleasure and desires. Patience can be seen as a key aspect of temperance, where one refrains from immediate or excessive indulgence in bodily desires such as food, drink, or sex. The virtue of patience can be seen as the skill to hold and control these impulses, to desire in a manner that does not exceed what is healthy, beautiful, or within one's means. A temperate person, inclined to patience, lives in alignment with the right reason, or orthos logos, and as such, is not easily pained in the face of ungratified desires.
 
-The other aspect of patience from an Aristotelian perspective relates to how one deals with anger, under the virtue of gentleness or praótēs. A gentle, patient individual does not get easily angered or irritable and displays good temperance. This, however, does not mean that one should avoid anger completely. Aristotle suggests that anger can have a virtuous and rational place within one's behavior; the art lies in managing it "on the right grounds and against the right persons, also in the right manner and at the right moment and for the right length of time". This again implies an exercise of patience, of waiting for the right conditions before expressing anger, and even erring on the side of forgiveness.
+The other aspect of patience from an Aristotelian perspective relates to how one deals with anger, under the virtue of gentleness or praótēs. A gentle, patient individual does not get easily angered or irritable and displays good temperance. This, however, does not mean that one should avoid anger completely. Aristotle suggests that anger can have a virtuous and rational place within one's behaviour; the art lies in managing it "on the right grounds and against the right persons, also in the right manner and at the right moment and for the right length of time". This again implies an exercise of patience, of waiting for the right conditions before expressing anger, and even erring on the side of forgiveness.
 
 Stoic philosophers regarded patience as a vital virtue in leading a tranquil and virtuous life. Patience, or [hupomonē](https://www.orbcfamily.org/blog/fruit-of-the-spirit/fruit-of-the-spirit-patience-and-why-it-is-important/) in Greek, was highly valued by Stoics such as Epictetus, Seneca, and Marcus Aurelius. They believed that patience involved enduring life's challenges and setbacks with inner strength and resilience, and it played a fundamental role in achieving wisdom, self-mastery, and tranquillity of mind.
 
@@ -82,7 +85,7 @@ Waiting often revolves around the desire for something yet to come—a desired o
 
 > The Buddha taught that everything is impermanent — flowers, tables, mountains, political regimes, bodies, feelings, perceptions, mental formations, and consciousness.
 
-— [The Heart of the Buddha's Teachings - Thich Nhat Hahn](https://www.goodreads.com/review/show/2202433906)
+— [The Heart of the Buddha's Teachings - Thich Nhat Hanh](https://www.goodreads.com/review/show/2202433906)
 
 In this surrender, we discover liberation from the restlessness that arises from clinging to specific outcomes. Waiting becomes a space of surrender and acceptance rather than an endurance test.
 
