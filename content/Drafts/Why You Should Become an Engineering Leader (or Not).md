@@ -1,6 +1,6 @@
 You are probably reasonably happy being a software engineer. Coding is often fun and rewarding.
 
-Many engineers are promoted to leadership positions only to find out that they hate it and end up in a [career dead end](https://www.infoq.com/presentations/hands-on-coding-managers/). Often, the better you are at coding, the more you love it, the more likely it is that you won't enjoy being a leader.
+Many engineers are promoted to leadership positions only to find out that they don't enjoy it and end up in a [career dead end](https://www.infoq.com/presentations/hands-on-coding-managers/). Often, the better you are at coding, the more you love it, the more likely it is that you won't enjoy being a leader.
 
 Being a good and effective leader, especially in this day and age, is incredibly difficult. Thus I recommend that you carefully weigh your reasons why you want to become a leader.
 
@@ -28,7 +28,7 @@ In any case, is it worth to exchange a job that you like for one that you hate f
 
 ### I Want to Ensure We Don't Write Bad Code
 
-If you love coding and care about coding, you without a doubt would have encountered situations in which you disagree with the technical direction of the team: things are not 'done right'.
+If you love coding and care about coding, you would have encountered situations in which you disagree with the technical direction of the team: things are not 'done right'.
 
 A leadership position may seem tempting because it would give you the ability to shape the technical directions and standards better. This is true to some degree. However, there are plenty of other things you have to worry about as a leader.
 

@@ -56,6 +56,8 @@ The first two questions here are pretty self-explanatory, but I think the last o
 
 A further angle often suggested for finding a purpose is to adopt a perspective from our future selves. Austin Kleon suggests starting each day by reading obituaries in his book [Show your Work](goodreads.com/review/show/3352710947) to remind us of the inevitability of death and motivates towards pursuing more meaningful things, even if they may be uncomfortable. Shirzad Chamine recommends in [Positive Intelligence](https://www.goodreads.com/review/show/2809474509) that we should imagine ourselves at the end of our lives and evaluate decisions we are to make here and now from that vantage point.
 
+It is important to remember that when it comes to work we are getting paid for, purpose and passion should be sought with caution. As Erin Cech lays out in ['The Trouble with Passion: How Searching for Fulfillment at Work Fosters Inequality'](https://www.ucpress.edu/book/9780520303232/the-trouble-with-passion), being very passionate at work can lead to exploitation. For further reading also see the article ['Is Following Your Work Passion Overrated?'](https://www.nytimes.com/2023/08/03/business/work-passion-overrated.html). 
+
 We need to be careful to not confuse our purpose with objectives, goals and aspirations. A purpose states _why_ we do what we do, while objectives, goals and aspirations describe _what_ we want to achieve. While it is possible to define a purpose without aspirations, I think it can be useful to look at both at the same time. This provides direction and validation for defining our purpose.
 
 ## Guidance for Questions
