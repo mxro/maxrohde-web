@@ -20,15 +20,15 @@ In order to try out the [Fastlane](https://fastlane.tools/) tool, I needed to in
 
 ## How to Install Ruby
 
-The `tldr;` version to get Ruby up and running on Windows, is to head to:
+The easiest way to install Ruby is to use the excellent RubyInstaller that can be downloaded from:
 
 [RubyInstaller](https://rubyinstaller.org/)
 
-![Ruby Installer](Pasted%20image%2020230811074458.png)
+![Ruby Installer](images/Pasted%20image%2020230811074458.png)
 
 Then click *Download* and next select the latest version of *Ruby+DevKit*:
 
-![Ruby+DevKit](Pasted%20image%2020230811074611.png)
+![Ruby+DevKit](images/Pasted%20image%2020230811074611.png)
 
 **Mistake to Avoid**: Download the version without *DevKit*
 
@@ -36,19 +36,19 @@ After downloading the installer, run it.
 
 When asked to select components, be sure to select *MSYS2 development toolchain*.
 
-![Select Toolchain](Pasted%20image%2020230811074854.png)
+![Select Toolchain](images/Pasted%20image%2020230811074854.png)
 
 **Mistake to avoid**: Not installing the MSYS2 toolchain. Note even if you already have [MSYS2](https://www.msys2.org/) installed, select this option.
 
 When asked to *Run 'rdik install'*, select the option.
 
-![rdik install](Pasted%20image%2020230811075224.png)
+![rdik install](images/Pasted%20image%2020230811075224.png)
 
 **Mistake to avoid**: Not running 'rdik install'. Though you can do [this manually later](https://github.com/oneclick/rubyinstaller2#the-ridk-command).
 
 When prompted which components to install, select *3 - MSYS2 and MINGW development toolchain*:
 
-![MSYS2 toolchain](Pasted%20image%2020230811075430.png)
+![MSYS2 toolchain](images/Pasted%20image%2020230811075430.png)
 
 **Mistake to avoid**: Running the update or the base installation only.
 
