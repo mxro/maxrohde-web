@@ -62,19 +62,21 @@ We need to be careful to not confuse our purpose with objectives, goals and aspi
 
 ## Guidance for Questions
 
-The following 
+As discussed above, I propose four questions to help us identify our purpose: _Why_, _Who_, _How_, and _What_. The following provides some direction about how we could go about answering each of them:
 
 ### Why
 
 > The deep values that define who we are.
 
-The question of why we exist is fiendishly difficult to answer. Thus, I recommend to start with the simpler question of what it is we value most in life. This could be things such as:
+The question of why we exist is fiendishly difficult to answer. Thus, I recommend to start with the question of what it is we value most in life. This could be things such as:
 
 - Our family
 - The environment
 - Animal welfare
 - A religious belief
 - Having a successful career
+
+A question that may be even easier to answer is what it is we deeply enjoy doing. Chances are, we enjoy it because it links to our personal _Why_.
 
 ### Who
 
@@ -105,7 +107,7 @@ The question of how defines our behaviours we achieve to adopt. Example behaviou
 In the final question, we want to define some specific aspirations or objectives we want to achieve. These will likely change throughout our lives. Note that aspirations are different to concrete objectives, and both can be considered. The outcome of an objective should be clearly defined, and it should be possible to achieve. Aspirations, in contrast, may never be achieved. Instead, they provide us with direction. Example aspirations or objectives could be:
 
 - (_Aspiration_) Have a family where everyone can rely on each other
-- (_Objective_) Found a business
+- (_Objective_) Start a business
 - (_Aspiration_) Become a proficient meditator
 
 For a more in-depth discussion of aspirations versus objectives, see [Tiny Habits: The Small Changes That Change Everything](https://www.goodreads.com/book/show/43261127-tiny-habits?from_search=true&from_srp=true&qid=zadcmL27NH&rank=1) by B.J. Fogg.
