@@ -297,30 +297,30 @@ Desire ^wPrjFBLg
 			"baseline": 43
 		},
 		{
-			"id": "T7nyLD7tA6u9e0KIZQ3mg",
 			"type": "ellipse",
-			"x": -227.46277618408203,
-			"y": -203.25,
-			"width": 105,
-			"height": 98.5,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
+			"version": 114,
+			"versionNonce": 1882219923,
+			"isDeleted": false,
+			"id": "T7nyLD7tA6u9e0KIZQ3mg",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
 			"roughness": 1,
 			"opacity": 50,
+			"angle": 0,
+			"x": -227.46277618408203,
+			"y": -203.25,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 105,
+			"height": 98.5,
+			"seed": 583265213,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": {
 				"type": 2
 			},
-			"seed": 583265213,
-			"version": 114,
-			"versionNonce": 1882219923,
-			"isDeleted": false,
-			"boundElements": null,
+			"boundElements": [],
 			"updated": 1690626707278,
 			"link": null,
 			"locked": false
@@ -498,35 +498,6 @@ Desire ^wPrjFBLg
 			"updated": 1690626741839,
 			"link": null,
 			"locked": false
-		},
-		{
-			"id": "XuE4Byb5xTxwRwJXV9odR",
-			"type": "ellipse",
-			"x": -415.96277618408203,
-			"y": -228.25,
-			"width": 463,
-			"height": 431,
-			"angle": 0,
-			"strokeColor": "#1e1e1e",
-			"backgroundColor": "transparent",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 50,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": {
-				"type": 2
-			},
-			"seed": 1190630301,
-			"version": 230,
-			"versionNonce": 521176029,
-			"isDeleted": true,
-			"boundElements": null,
-			"updated": 1690626775773,
-			"link": null,
-			"locked": false
 		}
 	],
 	"appState": {
@@ -544,10 +515,10 @@ Desire ^wPrjFBLg
 		"currentItemTextAlign": "center",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 551.712776184082,
-		"scrollY": 298.25,
+		"scrollX": 489.62493834624416,
+		"scrollY": 215.21959459459458,
 		"zoom": {
-			"value": 2
+			"value": 1.85
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,
