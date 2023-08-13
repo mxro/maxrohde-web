@@ -1,11 +1,10 @@
 ---
-title: 'A Framework for the Matery of Life'
-emotion: how to channel 'negative' emotions
+title: 'A Framework for the Mastery of Life (V0.1)'
 publish: true
-coverImage: ''
-id: 'framework-life-mastery'
+coverImage: 'pexels-matheus-bertelli-573238.jpg'
+id: 'framework-life-mastery-v01'
 blog: 'maxrohde.com'
-date: 2023-03-18
+date: 2023-08-13
 authors:
   - max
 tags:
@@ -14,6 +13,8 @@ tags:
   - 'self-improvement'
   - 'buddhism'
   - 'stoicism'
+  - 'thinking'
+  - 'emotions'
 categories:
   - 'contemplations'
 ---
@@ -70,7 +71,7 @@ To master our emotions, it is essential to develop certain skills and practices.
 
 _Name and Identify_: Emotions are often complex and intertwined, making it challenging to discern their specific nature. However, by dedicating time and effort to introspection, we can become more adept at recognising and labelling our emotional states, whether it be anxiety, anger, annoyance, or frustration. A great resource for starting to map out your emotions is the [Emotion Typology](https://emotiontypology.com/) website, which lists and describes many common emotions we encounter.
 
-_Contain Negative Emotions_: Learning how to contain and transform negative emotions can be very useful. When confronted with anger, for instance, it is vital to acknowledge its presence and explore strategies for controlling it. Redirecting anger towards more constructive emotions, such as focusing on love for a cherished individual rather than dwelling on the cause of anger, can improve our well-being significantly.
+_Contain and Channel Negative Emotions_: Learning how to contain and transform negative emotions into positive action is a very important skill. When confronted with anger, for instance, it is vital to acknowledge its presence and explore strategies for controlling it. Redirecting anger towards more constructive emotions, such as focusing on love for a cherished individual rather than dwelling on the cause of anger, can improve our well-being significantly. However, we should also take note of what causes our anger, since it may be justifiably caused, and explore if we should take it as motivator for further action (with a cool head).
 
 _Embrace Positive Emotions_: Identifying the factors that evoke positive emotions within us and nurturing those experiences allows us to fully embrace and appreciate them. In Buddhism, specific meditative practices are designed to cultivate and deepen positive emotions like the four immeasurable minds, joy, compassion, love, and equanimity, enabling individuals to develop mastery over their emotional landscape.
 
@@ -126,7 +127,7 @@ Mastery of Purpose involves discovering our place in the universe and understand
 
 Purpose encompasses our quest to understand our unique role and contribution within the grand scheme of existence. It involves unravelling the larger meaning behind our actions, seeking clarity on our personal calling, and aligning our pursuits with a deeper sense of purpose.
   
-Identifying and finding purpose is a deeply personal and introspective journey. While religion and tradition used to provide us with clear answers (e.g. 'reach heaven by leading a virtuous life.'), many of us are left seeking a purpose with little guidance. 
+Identifying and finding purpose is a deeply personal and introspective journey. While religion and tradition used to provide us with clear answers (e.g. 'reach heaven by leading a virtuous life.'), many of us are left seeking a purpose with little guidance. A good starting point is to look at what you value or enjoy doing in life. For some further ideas, please see my article [Defining a Personal Purpose: A Practical Guide with Five Questions](https://maxrohde.com/2023/03/15/defining-a-personal-purpose-a-practical-guide).
 
 While I am currently unsure of specific techniques or practices for enhancing our mastery of purpose, I am committed to discovering and [sharing them](https://maxrohde.com/2020/05/23/finding-purpose) as I continue to explore this question.
 
@@ -144,6 +145,8 @@ However, one approach that resonates with me is the idea of identifying the elem
 Our existence is intricately wedged between the realms of body and spirit, and the various masteries we cultivate serve as navigational tools in this space. These interconnected masteries work in harmony, influencing and supporting one another, ultimately bridging the gap between our physical and spiritual selves.  
 
 The Mastery of Emotions plays a significant role in our overall well-being, and it intertwines with the mastery of the body. By understanding and managing our emotions, we can enhance our physical health. For example, cultivating positive emotions and reducing negative ones can contribute to a healthier body by reducing stress, boosting the immune system, and promoting overall vitality. Similarly, by mastering the body, nurturing its well-being through proper nutrition, exercise, and self-care, we can positively influence our emotional state and achieve greater emotional resilience.
+
+The Mastery of Desire allows us to consciously direct our focus and energy (active), ultimately influencing the emotional landscape we inhabit )(reactive). As we align our desires with our core values and release attachments to external outcomes, we navigate emotions with greater composure and serenity. This synergy between mastering desires and emotions leads to a harmonious and balanced internal state.
 
 The Mastery of Thought serves as a powerful tool that connects and influences multiple areas of our lives. By developing our thinking abilities, we can better understand and manage our emotions and desires. Through thoughtful introspection and self-reflection, we gain insights into our emotional landscape, enabling us to navigate and respond to our emotions in a more balanced and constructive manner. Additionally, thinking helps us critically examine our desires, discerning between fleeting wants and deeper needs, thereby guiding our actions and choices towards aligning with our values and aspirations. The Mastery of Thought also fuels our exploration of purpose, as it aids us in contemplating our place in the universe and illuminating the path towards a meaningful existence.
 
