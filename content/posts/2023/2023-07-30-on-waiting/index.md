@@ -22,7 +22,9 @@ categories:
 
 Waiting is becoming an increasingly dreaded aspect of our lives. We live in an era that seeks to minimise waiting wherever possible, driven by our growing intolerance for delays and need for instant gratification. However, is waiting really something that is inherently undesirable and should be avoided? Inspired by Herman Hesse's timeless novel, Siddhartha, this article delves into the art of waiting and how it can be harnessed as a powerful tool for personal growth and enlightenment.
 
-Waiting encompasses various dimensions, ranging from the trivial to the profound. In earlier times, humans had to endure lengthy periods of waiting, whether for news, transportation, or the fulfilment of desires. While our modern world has made significant strides in reducing wait times, our growing impatience has shifted the focus from embracing the act of waiting to the art of avoiding it. I believe this is fundamentally misguided, and will argue for the value in waiting itself in the following.
+Waiting encompasses various dimensions, ranging from the trivial to the profound. In earlier times, humans had to endure lengthy periods of waiting, whether for news, transportation, or the fulfilment of desires. While our modern world has made significant strides in reducing wait times, our growing impatience has shifted the focus from embracing the act of waiting to the art of avoiding it. Take the departure lounge of an airport for example; who rejoices at the announcement of a flight delay? 
+
+I believe this adversity to waiting is fundamentally misguided, and will argue for the value in waiting itself in the following.
 
 ## Siddhartha's Insight: Waiting as a Skill
 
