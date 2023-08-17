@@ -24,12 +24,24 @@ const PostPage = (props: PostProps): JSX.Element => {
         <div className="basis-4/5 px-4 sm:px-6 max-w-full">
           <article className={'prose lg:prose-xl border-b border-gray-300'}>
             <h1>{props.post.title}</h1>
-            {props.post.canonicalUrl && (
-              <div className="text-sm pl-2">
-                Originally published on{' '}
-                <a href={props.post.canonicalUrl}>{props.post.canonicalUrl}</a>.
-              </div>
-            )}
+            <div className="text-sm pl-2">
+              by Max Rohde,{' '}
+              <time dateTime={props.post.datePublished}>
+                {hydrated
+                  ? new Date(props.post.datePublished).toLocaleDateString()
+                  : new Date(props.post.datePublished).toUTCString()}
+              </time>
+              {props.post.canonicalUrl && (
+                <span>
+                  , originally published on{' '}
+                  <a href={props.post.canonicalUrl}>
+                    {props.post.canonicalUrl}
+                  </a>
+                  .
+                </span>
+              )}
+            </div>
+
             <div
               dangerouslySetInnerHTML={{ __html: props.post.contentHtml }}
             ></div>
