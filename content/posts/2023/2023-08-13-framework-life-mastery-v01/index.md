@@ -42,6 +42,8 @@ In the following sections, I will explain each of these masteries and present so
 
 ## Mastery of Body
 
+![Picture of a cat stretching](images/pexels-tamba-budiarsana-979247.jpg)
+
 The body is our manifestation in this world, serving as the vessel that connects our thoughts and spirit with the physical realm. With the body being so important in how we perceive and feel the world, it becomes paramount to nurture and master our bodies for a healthier and more fulfilling existence.
 
 Below a number of ideas how to improve our body to live a better life:
@@ -62,6 +64,8 @@ _Coordination_: Coordination involves harmonising different body movements for e
 
 ## Mastery of Emotion
 
+![Woman expressing different emotions](images/pexels-andrea-piacquadio-3812743.jpg)
+
 Emotions serve as the connection between our thought world and our physical bodies, exerting a profound influence on both. The interrelationship between emotions and the body is significant, and through our thoughts, we possess some degree of control over this intricate connection. For example, by consciously breathing calmly and intentionally directing our thoughts towards tranquillity, we can induce a sense of calmness in our body's emotional state.  
 
 Emotions can be categorised into [positive and negative experiences](https://emotiontypology.com/), each holding a unique impact on our well-being. The ancient philosophy of Stoicism highlights the destructive nature of negative emotions, particularly anger. Seneca, one of the prominent Stoic philosophers, remarked, "Anger, if not restrained, is frequently more hurtful to us than the injury that provokes it." Similarly, Marcus Aurelius, another influential Stoic philosopher and Roman emperor, advocated for the mastery of negative emotions to maintain inner peace and tranquillity.
@@ -80,6 +84,8 @@ By mastering our emotions, we empower ourselves to navigate life's challenges wi
 
 ## Mastery of Desire  
 
+![Picture of a cake](images/pexels-karolina-grabowska-4040691.jpg)
+
 Desire holds a significant place in various philosophical traditions, including Buddhism and Stoicism. In Buddhism, the focal attention given to alleviating suffering led to the recognition that desire is a fundamental cause of human suffering. The impermanence of all things, including life itself, necessitates the cessation of desire to attain true freedom from suffering. Whether it is the desire for good health or the longing to be with loved ones, the inevitability of impermanence means that such desires will ultimately lead to suffering.
 
 Stoicism, too, offers insights into the mastery of desire. Stoic teachings emphasise focusing on what is within our control and relinquishing attachment to what lies beyond our control. By detaching ourselves from desires for things outside our control, we can avoid fruitless efforts and find greater contentment. This notion aligns with the idea of overcoming desire to attain inner peace and freedom from unnecessary suffering.
@@ -95,6 +101,8 @@ _Waiting_: Learning the [art of waiting](https://maxrohde.com/2023/07/30/on-wait
 As we continue our journey towards mastering desire, it is important to approach it with patience and self-compassion. Overcoming desire is not an easy task, and progress may vary for each individual. However, by engaging in practices that allow us to identify desires, quiet their influence, and embrace patience, we can gradually increase our mastery over desire, leading to greater contentment and freedom from unnecessary suffering.  
 
 ## Mastery of Thought
+
+![Woman touched by ray of light](images/pexels-rachel-claire-4992969.jpg)
 
 Thinking plays a crucial role in the mastery of our emotions, desires, and various aspects of our lives. It serves as an overarching skill, enabling us to understand and navigate the complexities of our inner world. Through thinking, we can gain insight into ourselves, our emotions, and our desires. Moreover, it empowers us to become the captains of our own ships, guiding our lives rather than merely being passengers adrift.
 
@@ -112,6 +120,8 @@ By prioritising contemplation, pursuing knowledge, and engaging in meaningful di
 
 ## Mastery of Connection
 
+![Tree in a forest](images/pexels-veeterzy-38136.jpg)
+
 Mastery of Connection involves nurturing our ability to connect with various aspects of our world, including nature, fellow beings, the inanimate world, and, for some, the spiritual realm. While this area is still a work in progress for me personally, I would like to share the insights I have gathered thus far.
 
 Arguably the most important connections for us are our relationships with those close to us, our family and our most dear friends. These are for instance central to the thinking of Confucius, who identified five key relationships important to our lives: between ruler and subject, parent to child, between siblings, between spouses, and between friends. It is easy to see that without having a good relationship with out parents, or having found peace with a lack thereof, it is difficult to lead a good life.
@@ -124,6 +134,8 @@ While my understanding of the mastery of connection is a work in progress, it is
 
 ## Mastery of Purpose
 
+![Mountain peak](images/pexels-vincent-pelletier-908714.jpg)
+
 Mastery of Purpose involves discovering our place in the universe and understanding the ultimate significance and direction of our actions or inactions. 
 
 Purpose encompasses our quest to understand our unique role and contribution within the grand scheme of existence. It involves unravelling the larger meaning behind our actions, seeking clarity on our personal calling, and aligning our pursuits with a deeper sense of purpose.
@@ -133,6 +145,8 @@ Identifying and finding purpose is a deeply personal and introspective journey. 
 While I am currently unsure of specific techniques or practices for enhancing our mastery of purpose, I am committed to discovering and [sharing them](https://maxrohde.com/2020/05/23/finding-purpose) as I continue to explore this question.
 
 ## Mastery of Spirit
+
+![Sky with clouds](images/pexels-rafael-cerqueira-4737484.jpg)
 
 I love the word 'spirit' since it encompasses a broad range of meanings that resonate well with the possible underlying concepts it may represent. Spirit can be understood in a strictly religious sense as the 'Holy Spirit', in a semi-religious sense as the soul which endures after we die, or in a more secular sense as a 'force or principle to animate living beings'.
 
