@@ -1,37 +1,3 @@
----
-
-excalidraw-plugin: parsed
-tags: [excalidraw]
-
----
-==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
-
-
-# Text Elements
-🕺
-Body ^vVPiBMQd
-
-🕊️
-Spirit ^7qPtMJiv
-
-💡
-Thought ^MEkXTV7J
-
-💞
-Connection ^mozhLCXk
-
-🌠
-Purpose ^gLFhYVBr
-
-🎭
-Emotion ^m6Pg8F61
-
-⌛
-Desire ^wPrjFBLg
-
-%%
-# Drawing
-```json
 {
 	"type": "excalidraw",
 	"version": 2,
@@ -531,7 +497,6 @@ Desire ^wPrjFBLg
 			"outline": true
 		}
 	},
+	"prevTextMode": "parsed",
 	"files": {}
 }
-```
-%%

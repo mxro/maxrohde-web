@@ -23,7 +23,11 @@ const PostPage = (props: PostProps): JSX.Element => {
       <div className="flex flex-row container mx-auto relative bg-white md:pt-16 pb-8 max-w-7xl px-4 sm:px-6">
         <div className="basis-4/5 px-4 sm:px-6 max-w-full">
           <article className={'prose lg:prose-xl border-b border-gray-300'}>
-            <img className="hidden md:block" src={props.post.coverImage}></img>
+            <img
+              className="hidden md:block"
+              style={{ maxHeight: '36rem' }}
+              src={props.post.coverImage}
+            ></img>
             <h1>{props.post.title}</h1>
             <div className="text-sm pl-2">
               by Max Rohde,{' '}
