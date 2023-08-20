@@ -80,6 +80,16 @@ _Contain and Channel Negative Emotions_: Learning how to contain and transform n
 
 _Embrace Positive Emotions_: Identifying the factors that evoke positive emotions within us and nurturing those experiences allows us to fully embrace and appreciate them. In Buddhism, specific meditative practices are designed to cultivate and deepen positive emotions like the four immeasurable minds, joy, compassion, love, and equanimity, enabling individuals to develop mastery over their emotional landscape.
 
+_Understand the Fleeting Nature of Feelings_: In Buddhism, feelings both good and bad are seen as something to be accepted but not embraced. This is for instances discussed in _The Discourse-grouping on Feelings (Vedana-Samyutta)_ (also see [Contemplation of Feeling](https://accesstoinsight.org/lib/authors/nyanaponika/wheel303.html)):
+
+<blockquote>
+Be it a pleasant feeling, be it a painful feeling, be it neutral,<br/>
+one's own or others', feelings of all kinds —<br/>
+he knows them all as ill, deceitful, evanescent.<br/>
+Seeing how they impinge again, again, and disappear,<br/>
+he wins detachment from the feelings, passion-free.<br/>
+</blockquote>
+
 By mastering our emotions, we empower ourselves to navigate life's challenges with greater resilience, serenity, and emotional well-being. It is an ongoing process that involves self-reflection, self-regulation, and a willingness to embrace and transform our emotional experiences. Through these efforts, we can enhance our overall quality of life and foster harmonious relationships with ourselves and others.
 
 ## Mastery of Desire  
