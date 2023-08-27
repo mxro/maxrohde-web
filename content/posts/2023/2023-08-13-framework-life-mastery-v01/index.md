@@ -28,7 +28,7 @@ In previous articles, I have explored the surprising utility of skills such as [
 
 Without further ado, let me present the framework of key masteries I deem worth considering for living a good life:
 
-![](images/Pasted%20image%2020230729203324.png)
+![](images/life-mastery-framework-v2.png)
 
 - _Mastery of Body_: Nurturing and mastering our bodies for a healthier and more fulfilling existence.
 - _Mastery of Emotion_: Understanding and shaping our emotional landscape.

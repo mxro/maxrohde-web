@@ -13,7 +13,19 @@ Art of Attention Ebook http://buddhanet.net/pdf_file/artofatt.pdf
 	- Do mindful walking, focus on how your feet touch the ground, sounds, wind on your skin, the movement of your limbs
 	 - Seek out beauty in nature, people and other creatures
 	 - Mindful, slow eating
+	 - Paying attention to feelings as they emerge
 
 - Things during meditation session
 	- same as day to day but just more focussed and intense, practicing during meditation can help us with practicing these skills as we live our day to day lives
 	- body scan: put a flashlight on your body
+
+
+Meditation
+
+Insight meditation (Vipassana)
+
+- [](https://tricycle.org/print/?pid=34748)
+
+
+
+
