@@ -19,6 +19,15 @@ Art of Attention Ebook http://buddhanet.net/pdf_file/artofatt.pdf
 	- same as day to day but just more focussed and intense, practicing during meditation can help us with practicing these skills as we live our day to day lives
 	- body scan: put a flashlight on your body
 
+Be mindful to unleash your inner wellspring of joy
+
+-> breath in, touch top of mouth with the tongue, feel awareness flow through body from head to toes and let it unleash the joy of existence. 
+
+Sharpen the ray of attention to pierce through illusion or widen it to absorb the beauty of existence.
+
+Related to two systems from Thinking Fast and Slow, pierce through: reflective system, widen: automatic system.
+
+But for both of these, don't just see them as shallow, cognitive, link them with Connection, Purpose and Spirit to unleash their full potential.
 
 Meditation
 
