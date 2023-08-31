@@ -6,11 +6,11 @@ Being a good and effective leader, especially in this day and age, is incredibly
 
 Don't become a leader for the wrong reasons, or you set yourself up for unnecessary strive and unhappiness.
 
-In the following, I list some 'wrong' reasons that should make us pause before continuing with aspiring to become a leader, and 'better' reasons that indicate we could be on a more fruitful path.
+In the following, I list some 'doubtful' reasons that should make us pause before continuing with aspiring to become a leader, and 'wholesome' reasons that indicate we could be on a more fruitful path.
 
-Everyone is different, and everyone values different things. So don't take these 'wrong' and 'better' reasons as absolute. Reasons listed as 'wrong' here may work perfectly for you and if that's the case, don't let me stop you!
+Everyone is different, and everyone values different things. So don't take my categorisation of reasons as absolute. Reasons listed as 'doubtful' here may work perfectly for you and if that's the case, don't let me stop you!
 
-## The Wrong Reasons
+## Doubtful Reasons
 
 ### I Want Power
 
@@ -34,7 +34,7 @@ A leadership position may seem tempting because it would give you the ability to
 
 You will probably end up being more disconnected from the code than when you were working as an individual contributor in the team. Being a leader is not about micro-managing what your team does and policing their every line of code.
 
-## Better Reasons
+## Wholesome Reasons
 
 ### Someone Told Me I Could be a Good Leader
 
@@ -52,6 +52,16 @@ However, if you ask leaders what they find most rewarding in their jobs, it is o
 
 If growing and helping others is a key value of yours, the most enjoyable parts of leadership will be even more enjoyable for you. 
 
+### I Want to be Lazy
+
+Laziness is generally not a sure path to success, but there is a certain flavour of laziness that is an [trait of successful engineers](https://boulter.com/blog/2007/02/10/5-dysfunctional-attributes-of-good-engineers/).
+
+Take testing for instance; engineers are too lazy to do the same tests over and over again, thus they create test automation.
+
+This laziness is one of the traits that can make you both a good engineer and a good leader; since a good leader needs to delegate - which is a very sophisticated variation of automation.
+
+But don't get your hopes up; just as an engineer's dream of reaching their nirvana of automation-enabled idleness is never realised, a leader's work never runs out and will keep you busy.
+
 ### I Want to Make an Impact
 
 If you care about making an impact in the world, you will be able to make a bigger impact if you become a leader.
@@ -68,5 +78,4 @@ Your motivations and values will determine whether you will become a good leader
 
 However, everyone is different and you may have your unique reasons that work for you. Key is not whether the reasons listed here apply to you or don't. Key is that you spend some time thinking of what motivates you and if it will align with what will be required of you as a leader.
 
-If you feel like you are lacking knowledge about what it means to be a successful leader, please sign up to my newsletter or follow my blog.
 
