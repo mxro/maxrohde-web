@@ -3,6 +3,7 @@ title: Mindful Practices to Enhance Your Daily Life
 publish: true
 coverImage: pexels-aaron-burden-2449543.jpg
 id: mindful-practices-to-enhance-your-daily-life
+summary: 'Cannot sit still for 5 min? Try these easy practices that allow increasing mindfulness in everyday life.'
 blog: maxrohde.com
 date: 2023-09-03
 authors:
