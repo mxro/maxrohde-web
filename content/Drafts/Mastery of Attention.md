@@ -27,14 +27,18 @@ Sharpen the ray of attention to pierce through illusion or widen it to absorb th
 
 Related to two systems from Thinking Fast and Slow, pierce through: reflective system, widen: automatic system.
 
+
 But for both of these, don't just see them as shallow, cognitive, link them with Connection, Purpose and Spirit to unleash their full potential.
 
+Helps anchor your in the present.
 Meditation
 
 Insight meditation (Vipassana)
 
 - [](https://tricycle.org/print/?pid=34748)
 
+> Then I knew that awareness is how the human being experiences the light of consciousness. I learned the meaning of attention--it is the intentional channeling of awareness. I felt my body again, as a hollow vessel. I looked at my legs; they filled with warm, radiant light, disappearing into brightness. I looked at my arms, with the same result. I focused attention on every part of the body, until I became wholly light once again. Finally, I realized the process of real meditation to expand awareness, to direct attention, to ultimately surrender to the Light of Consciousness.
 
+Way of the Peaceful Warrior
 
 
