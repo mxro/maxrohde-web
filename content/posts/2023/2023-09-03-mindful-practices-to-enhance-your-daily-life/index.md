@@ -30,7 +30,7 @@ Walking doesn't have to be just a mode of transportation. Mindful walking encour
 
 ## 3. Conscious Tongue Placement
 
-This may seem odd initially, but pressing your tongue to the roof of your mouth is a mindful technique that can be practised anywhere and at any time. This simple act, which author Dan Millman illustrates in his book "The Way of the Peaceful Warrior", initiates a conscious focus on an otherwise subconscious act, opening a gateway to present-moment awareness.
+This may seem odd initially, but pressing your tongue to the roof of your mouth is a mindful technique that can be practised anywhere and at any time. This simple act, which author Dan Millman illustrates in his book ["The Way of the Peaceful Warrior"](https://www.goodreads.com/review/show/5779165182), initiates a conscious focus on an otherwise subconscious act, opening a gateway to present-moment awareness.
 
 ## 4. Seeking Beauty 
   
