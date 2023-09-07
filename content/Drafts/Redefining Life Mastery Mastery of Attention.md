@@ -3,7 +3,7 @@ title: "Revising Life Mastery Framework: Mastery of Attention"
 publish: true
 coverImage: pexels-luis-dalvan-3978594.jpg
 id: life-mastery-mastery-of-attention
-summary: Does mastering attention make us better at living our lives.
+summary: Does mastering attention make us better at living our lives?
 blog: maxrohde.com
 date: 2023-09-03
 authors:
