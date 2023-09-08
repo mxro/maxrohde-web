@@ -51,6 +51,22 @@ const PostPage = (props: PostProps): JSX.Element => {
               dangerouslySetInnerHTML={{ __html: props.post.contentHtml }}
             ></div>
           </article>
+          <div
+            style={{ maxWidth: '65ch', fontSize: '1.25rem' }}
+            dangerouslySetInnerHTML={{
+              __html: `
+          <script
+              src="https://utteranc.es/client.js"
+              repo="mxro/maxrohde-web"
+              issue-term="pathname"
+              label="utterance-comment"
+              theme="github-light"
+              crossOrigin="anonymous"
+              async
+            ></script>
+          `,
+            }}
+          ></div>
           {props.post.tags && (
             <div className="pt-8">
               <span className="text-sm inline-block w-28">Tags: </span>
