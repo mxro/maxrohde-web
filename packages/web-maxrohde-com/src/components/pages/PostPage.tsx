@@ -59,6 +59,7 @@ const PostPage = (props: PostProps): JSX.Element => {
               src="https://utteranc.es/client.js"
               repo="mxro/maxrohde-web"
               issue-term="pathname"
+              label="utterance-comment"
               theme="github-light"
               crossOrigin="anonymous"
               async
