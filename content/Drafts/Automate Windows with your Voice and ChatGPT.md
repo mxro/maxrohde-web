@@ -33,7 +33,9 @@ There are three main technologies used in the solution.
  - [fmedia](https://stsaz.github.io/fmedia/), which is a tool to manipulate and record sound for Windows. 
  - `whisper-autohotkey.exe`, a custom application I wrote in Go to communicate with the OpenAI API
 
-This is how they work together.
+This is how they work together:
+
+![](AHK%20ChatGPT.excalidraw)
 
 Step one, we are launching an auto hotkey script and let it run in the background.The script watches for key presses to the F8 and F9 keys.
 Step 2. When the F8 key is pressed we use F media to start recording sound.
