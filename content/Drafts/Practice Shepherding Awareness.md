@@ -18,7 +18,7 @@ categories:
   - 'contemplations'
 ---
 
-I've recently delved into the [connection between attention, awareness and mindfulness](https://maxrohde.com/2023/09/09/life-mastery-mastery-of-attention). I believe these are intimately associated with meditation. as meditation aids in achieving mindfulness by helping us master our attention.
+I've recently delved into the [connection between attention, awareness and mindfulness](https://maxrohde.com/2023/09/09/life-mastery-mastery-of-attention). I believe these are intimately associated with meditation; as meditation aids in achieving mindfulness by helping us gain mastery over our attention.
 
 There's a wealth of information on the benefits of meditation including its capacity to enhance mindfulness and manage stress levels. Many resources also provide how-to guides on practising meditation. However, what seems to be missing is an explanation of how specific practices achieve the desired results. I don't question that these practices work effectively. But I always strive to understand the reasoning of how different elements of a practice contribute to fulfilling our desired outcomes.
 
