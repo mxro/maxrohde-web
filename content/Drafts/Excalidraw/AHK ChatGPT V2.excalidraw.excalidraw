@@ -1,65 +1,3 @@
----
-
-excalidraw-plugin: parsed
-tags: [excalidraw]
-
----
-==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠==
-
-
-# Text Elements
-watch.ahk
-
-AutoHotKey Script - watch for key presses
- ^rrzHNScp
-
-Press F8 ^XWOOybUc
-
-fmedia.exe
-
-Start recording ^oMmQHjaE
-
-Press F8
-again ^yQrZGXbm
-
-fmedia.exe
-
-Stop recording ^NJU9uweP
-
-whisper-autohotkey.exe
-
-Transcribe ^Yn533u2Z
-
-Open AI Whisper ^QiylUB2F
-
-whisper-autohotkey.exe
-
-Generate Script ^F9X12X0x
-
-Open AI GPT4 ^LD7j4svg
-
-mp3
-recording ^85jQsYcY
-
-transcribed
-text ^vptY1HeT
-
-transcribed
-text ^73BBgvl6
-
-ahk
-script ^SAKFqc5J
-
-transcribed
-text ^i5vWRyM5
-
-command.ahk
-
-AutoHotKey Script - execute command ^N5b2Fnkm
-
-%%
-# Drawing
-```json
 {
 	"type": "excalidraw",
 	"version": 2,
@@ -109,8 +47,8 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 		},
 		{
 			"type": "text",
-			"version": 162,
-			"versionNonce": 1749540327,
+			"version": 184,
+			"versionNonce": 548894073,
 			"isDeleted": false,
 			"id": "rrzHNScp",
 			"fillStyle": "hachure",
@@ -119,30 +57,30 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -708.75,
-			"y": -288,
+			"x": -708.703125,
+			"y": -252,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 128.90625,
-			"height": 168,
+			"height": 96,
 			"seed": 1091556839,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1694211911128,
+			"updated": 1694818771422,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 3,
-			"text": "watch.ahk\n\nAutoHotKey \nScript - \nwatch for \nkey presses\n",
-			"rawText": "watch.ahk\n\nAutoHotKey Script - watch for key presses\n",
-			"textAlign": "left",
-			"verticalAlign": "top",
+			"text": "AutoHotKey \nWatch \nScript\n",
+			"rawText": "AutoHotKey Watch Script\n",
+			"textAlign": "center",
+			"verticalAlign": "middle",
 			"containerId": "Ec2b_uyrozDjc7erRWh6V",
-			"originalText": "watch.ahk\n\nAutoHotKey Script - watch for key presses\n",
+			"originalText": "AutoHotKey Watch Script\n",
 			"lineHeight": 1.2,
-			"baseline": 163
+			"baseline": 91
 		},
 		{
 			"type": "rectangle",
@@ -184,8 +122,8 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 		},
 		{
 			"type": "text",
-			"version": 218,
-			"versionNonce": 1703292263,
+			"version": 234,
+			"versionNonce": 150756953,
 			"isDeleted": false,
 			"id": "oMmQHjaE",
 			"fillStyle": "hachure",
@@ -194,35 +132,35 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -333.25,
-			"y": -390.5,
+			"x": -321.484375,
+			"y": -346,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 117.1875,
-			"height": 96,
+			"width": 105.46875,
+			"height": 48,
 			"seed": 2034683271,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1694211780829,
+			"updated": 1694818771423,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 3,
-			"text": "fmedia.exe\n\nStart \nrecording",
-			"rawText": "fmedia.exe\n\nStart recording",
-			"textAlign": "left",
-			"verticalAlign": "top",
+			"text": "Start \nrecording",
+			"rawText": "Start recording",
+			"textAlign": "center",
+			"verticalAlign": "middle",
 			"containerId": "mcX0frzhxmyDOh6av1isH",
-			"originalText": "fmedia.exe\n\nStart recording",
+			"originalText": "Start recording",
 			"lineHeight": 1.2,
-			"baseline": 91
+			"baseline": 43
 		},
 		{
 			"type": "arrow",
-			"version": 598,
-			"versionNonce": 1691087895,
+			"version": 610,
+			"versionNonce": 1335154551,
 			"isDeleted": false,
 			"id": "Lk_w1_L5egpG-ROru3RMZ",
 			"fillStyle": "hachure",
@@ -232,11 +170,11 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 			"opacity": 100,
 			"angle": 0,
 			"x": -563.75,
-			"y": -205.86501264370543,
+			"y": -205.86500942788126,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 210,
-			"height": 115.68704983539567,
+			"height": 115.68705237262014,
 			"seed": 1300036489,
 			"groupIds": [],
 			"frameId": null,
@@ -244,7 +182,7 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1694818657054,
+			"updated": 1694818813671,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -267,7 +205,7 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 				],
 				[
 					210,
-					-115.68704983539567
+					-115.68705237262014
 				]
 			]
 		},
@@ -389,8 +327,8 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 		},
 		{
 			"type": "text",
-			"version": 270,
-			"versionNonce": 2009379879,
+			"version": 286,
+			"versionNonce": 1852910393,
 			"isDeleted": false,
 			"id": "NJU9uweP",
 			"fillStyle": "hachure",
@@ -399,35 +337,35 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -324.25,
-			"y": -177.5,
+			"x": -312.484375,
+			"y": -133,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 117.1875,
-			"height": 96,
+			"width": 105.46875,
+			"height": 48,
 			"seed": 1682181991,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1694211780829,
+			"updated": 1694818771423,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 3,
-			"text": "fmedia.exe\n\nStop \nrecording",
-			"rawText": "fmedia.exe\n\nStop recording",
-			"textAlign": "left",
-			"verticalAlign": "top",
+			"text": "Stop \nrecording",
+			"rawText": "Stop recording",
+			"textAlign": "center",
+			"verticalAlign": "middle",
 			"containerId": "iZoNFw9yZd9LrZ1AT3Hk5",
-			"originalText": "fmedia.exe\n\nStop recording",
+			"originalText": "Stop recording",
 			"lineHeight": 1.2,
-			"baseline": 91
+			"baseline": 43
 		},
 		{
 			"type": "arrow",
-			"version": 665,
-			"versionNonce": 676403799,
+			"version": 677,
+			"versionNonce": 1946199479,
 			"isDeleted": false,
 			"id": "C98dkSoEyVYIe9Vv6mS59",
 			"fillStyle": "hachure",
@@ -437,11 +375,11 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 			"opacity": 100,
 			"angle": 0,
 			"x": -555.4353493544552,
-			"y": -190.53179915368165,
+			"y": -190.53179303515458,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 214,
-			"height": 82.0943081579837,
+			"height": 82.09430337144747,
 			"seed": 273292359,
 			"groupIds": [],
 			"frameId": null,
@@ -449,7 +387,7 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1694818657056,
+			"updated": 1694818813672,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -472,7 +410,7 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 				],
 				[
 					214,
-					82.0943081579837
+					82.09430337144747
 				]
 			]
 		},
@@ -528,8 +466,8 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 		},
 		{
 			"type": "text",
-			"version": 466,
-			"versionNonce": 1676426183,
+			"version": 474,
+			"versionNonce": 1769561113,
 			"isDeleted": false,
 			"id": "Yn533u2Z",
 			"fillStyle": "hachure",
@@ -538,30 +476,30 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": -88.25,
-			"y": -177.5,
+			"x": -82.34375,
+			"y": -121,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 128.90625,
-			"height": 120,
+			"width": 117.1875,
+			"height": 24,
 			"seed": 28309385,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1694211780829,
+			"updated": 1694818771424,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 3,
-			"text": "whisper-\nautohotkey.\nexe\n\nTranscribe",
-			"rawText": "whisper-autohotkey.exe\n\nTranscribe",
-			"textAlign": "left",
-			"verticalAlign": "top",
+			"text": "Transcribe",
+			"rawText": "Transcribe",
+			"textAlign": "center",
+			"verticalAlign": "middle",
 			"containerId": "29MHGQRl9aM1T4BqwW8wB",
-			"originalText": "whisper-autohotkey.exe\n\nTranscribe",
+			"originalText": "Transcribe",
 			"lineHeight": 1.2,
-			"baseline": 115
+			"baseline": 19
 		},
 		{
 			"type": "ellipse",
@@ -644,8 +582,8 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 		},
 		{
 			"type": "arrow",
-			"version": 226,
-			"versionNonce": 445757143,
+			"version": 238,
+			"versionNonce": 1878037047,
 			"isDeleted": false,
 			"id": "IxbIL3pEM4-nJABry2m1h",
 			"fillStyle": "hachure",
@@ -667,7 +605,7 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1694818657058,
+			"updated": 1694818813673,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -746,8 +684,8 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 		},
 		{
 			"type": "text",
-			"version": 599,
-			"versionNonce": 1154334471,
+			"version": 604,
+			"versionNonce": 973631737,
 			"isDeleted": false,
 			"id": "F9X12X0x",
 			"fillStyle": "hachure",
@@ -756,35 +694,35 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 282.75,
-			"y": -167.5,
+			"x": 294.515625,
+			"y": -119.5,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 128.90625,
-			"height": 144,
+			"width": 105.46875,
+			"height": 48,
 			"seed": 899144999,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1694211803681,
+			"updated": 1694818771424,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 3,
-			"text": "whisper-\nautohotkey.\nexe\n\nGenerate \nScript",
-			"rawText": "whisper-autohotkey.exe\n\nGenerate Script",
-			"textAlign": "left",
-			"verticalAlign": "top",
+			"text": "Generate \nScript",
+			"rawText": "Generate Script",
+			"textAlign": "center",
+			"verticalAlign": "middle",
 			"containerId": "8AY2NmkRMATbwXYqbrNR8",
-			"originalText": "whisper-autohotkey.exe\n\nGenerate Script",
+			"originalText": "Generate Script",
 			"lineHeight": 1.2,
-			"baseline": 139
+			"baseline": 43
 		},
 		{
 			"type": "arrow",
-			"version": 325,
-			"versionNonce": 332752407,
+			"version": 337,
+			"versionNonce": 247171447,
 			"isDeleted": false,
 			"id": "9E5MqkiePS0lFNVnr9kF8",
 			"fillStyle": "hachure",
@@ -806,7 +744,7 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1694818657062,
+			"updated": 1694818813675,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -835,8 +773,8 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 		},
 		{
 			"type": "arrow",
-			"version": 282,
-			"versionNonce": 1037840343,
+			"version": 292,
+			"versionNonce": 1277274935,
 			"isDeleted": false,
 			"id": "MxsDErG6uCU02aC9L9d-S",
 			"fillStyle": "hachure",
@@ -858,7 +796,7 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1694818657061,
+			"updated": 1694818813674,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1003,8 +941,8 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 		},
 		{
 			"type": "arrow",
-			"version": 303,
-			"versionNonce": 1163291031,
+			"version": 309,
+			"versionNonce": 1248935159,
 			"isDeleted": false,
 			"id": "0hMtoDBkSvPpVWS3O4ihf",
 			"fillStyle": "hachure",
@@ -1014,11 +952,11 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 			"opacity": 100,
 			"angle": 0,
 			"x": -10.594774080590994,
-			"y": 49.998926784918254,
+			"y": 49.99892678491824,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
 			"width": 3.668329746778518,
-			"height": 73.36594138024664,
+			"height": 73.36594138024662,
 			"seed": 1180967689,
 			"groupIds": [],
 			"frameId": null,
@@ -1026,7 +964,7 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1694818657060,
+			"updated": 1694818813674,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1049,7 +987,7 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 				],
 				[
 					-3.668329746778518,
-					-73.36594138024664
+					-73.36594138024662
 				]
 			]
 		},
@@ -1097,8 +1035,8 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 		},
 		{
 			"type": "arrow",
-			"version": 690,
-			"versionNonce": 56240119,
+			"version": 700,
+			"versionNonce": 51470967,
 			"isDeleted": false,
 			"id": "BzLIwtbYKWKEuBDjJHlBD",
 			"fillStyle": "hachure",
@@ -1120,7 +1058,7 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1694818672352,
+			"updated": 1694818813676,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1186,8 +1124,8 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 		},
 		{
 			"type": "arrow",
-			"version": 801,
-			"versionNonce": 168547895,
+			"version": 811,
+			"versionNonce": 337014967,
 			"isDeleted": false,
 			"id": "6oIhIfhUWurcKbFli7hlR",
 			"fillStyle": "hachure",
@@ -1209,7 +1147,7 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1694818672352,
+			"updated": 1694818813676,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1355,8 +1293,8 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 		},
 		{
 			"type": "text",
-			"version": 714,
-			"versionNonce": 1366349161,
+			"version": 735,
+			"versionNonce": 1436674521,
 			"isDeleted": false,
 			"id": "N5b2Fnkm",
 			"fillStyle": "hachure",
@@ -1365,35 +1303,35 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 			"roughness": 1,
 			"opacity": 100,
 			"angle": 0,
-			"x": 545.75,
-			"y": -170,
+			"x": 563.375,
+			"y": -122,
 			"strokeColor": "#1e1e1e",
 			"backgroundColor": "transparent",
-			"width": 128.90625,
-			"height": 144,
+			"width": 93.75,
+			"height": 48,
 			"seed": 777189607,
 			"groupIds": [],
 			"frameId": null,
 			"roundness": null,
 			"boundElements": [],
-			"updated": 1694211926561,
+			"updated": 1694818771425,
 			"link": null,
 			"locked": false,
 			"fontSize": 20,
 			"fontFamily": 3,
-			"text": "command.ahk\n\nAutoHotKey \nScript - \nexecute \ncommand",
-			"rawText": "command.ahk\n\nAutoHotKey Script - execute command",
-			"textAlign": "left",
-			"verticalAlign": "top",
+			"text": "Execute \nCommand",
+			"rawText": "Execute Command",
+			"textAlign": "center",
+			"verticalAlign": "middle",
 			"containerId": "DQqj2kZdCauAW0Kk7WK6L",
-			"originalText": "command.ahk\n\nAutoHotKey Script - execute command",
+			"originalText": "Execute Command",
 			"lineHeight": 1.2,
-			"baseline": 139
+			"baseline": 43
 		},
 		{
 			"type": "arrow",
-			"version": 403,
-			"versionNonce": 369417111,
+			"version": 415,
+			"versionNonce": 1365044983,
 			"isDeleted": false,
 			"id": "9EWsc-YeBDKcwRjjv44Mo",
 			"fillStyle": "hachure",
@@ -1415,7 +1353,7 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 				"type": 2
 			},
 			"boundElements": [],
-			"updated": 1694818657066,
+			"updated": 1694818813677,
 			"link": null,
 			"locked": false,
 			"startBinding": {
@@ -1455,7 +1393,7 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 		"currentItemOpacity": 100,
 		"currentItemFontFamily": 3,
 		"currentItemFontSize": 20,
-		"currentItemTextAlign": "left",
+		"currentItemTextAlign": "center",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
 		"scrollX": 774.6666666666666,
@@ -1474,7 +1412,6 @@ AutoHotKey Script - execute command ^N5b2Fnkm
 			"outline": true
 		}
 	},
+	"prevTextMode": "parsed",
 	"files": {}
 }
-```
-%%

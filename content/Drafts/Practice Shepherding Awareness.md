@@ -1,11 +1,11 @@
 ---
-title: 'Practice: Shepherding Awarness'
+title: 'Practice: Shepherding Awareness'
 publish: true
 coverImage: 'pexels-arthouse-studio-4339509.jpg'
 id: 'practice-shepherding-awarness'
 blog: 'maxrohde.com'
 summary: Proposes a meditation practice focusses on bridging attention and awarness.
-date: 2023-09-09
+date: 2023-09-16
 authors:
   - max
 tags:
@@ -20,13 +20,13 @@ categories:
 
 I've recently delved into the [connection between attention, awareness and mindfulness](https://maxrohde.com/2023/09/09/life-mastery-mastery-of-attention). I believe these are intimately associated with meditation. as meditation aids in achieving mindfulness by helping us master our attention.
 
-There's a wealth of information on the benefits of meditation including its capacity to enhance mindfulness and manage stress levels. Many resources also provide how-to guides on practicing meditation. However, what seems to be missing is an explanation of how specific practices achieve the desired results. I don't question that these practices work effectively. But I like to understand an the reasoning of how different elements of a practice contribute to fulfilling our desired outcomes.
+There's a wealth of information on the benefits of meditation including its capacity to enhance mindfulness and manage stress levels. Many resources also provide how-to guides on practicing meditation. However, what seems to be missing is an explanation of how specific practices achieve the desired results. I don't question that these practices work effectively. But I always strive to understand the reasoning of how different elements of a practice contribute to fulfilling our desired outcomes.
 
 I believe understanding the dynamics of attention, awareness, and mindfulness can help us comprehend how meditation works and guide us to utilise it effectively.
 
-In my previous article, I mentioned that to master our attention, we need to consider both attention and awareness together. They both play a part in helping us control our thinking processes.
+In my [previous article](https://maxrohde.com/2023/09/09/life-mastery-mastery-of-attention), I mentioned that to master our attention, we need to consider both attention and awareness together. They both play a part in helping us control our thinking processes.
 
-Our thinking can take two different modes. One is rational and directed, while the other is more intuitive and holistic. To fully utilise our mental capacity, we need to engage in both forms of thinking and integrate them efficiently. This integration, I believe, ultimately leads us to mindfulness. For further insight into these thinking styles, refer to Kahneman's book, "Thinking Fast and Slow."
+Our thinking can take two different modes. One is rational and directed, while the other is more intuitive and holistic. To fully utilise our mental capacity, we need to engage in both forms of thinking and integrate them efficiently. This integration, I believe, ultimately leads us to mindfulness. For further insight into these thinking styles, refer to Kahneman's book, "[Thinking Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)".
 
 I hypothesise that meditation's success lies in its ability to support us in understanding and mastering these two ways of thinking. In meditation, we are often asked to focus our mind on certain elements such as our breath or specific sensory impressions, which connects to the rational and directed thinking path. Eventually, we are prompted to widen our awareness, to acknowledge our thoughts or impressions without delving deep into them, and then to let them go.
 
@@ -34,7 +34,7 @@ Meditation can be practised in various ways. One of the most poplar approaches t
 
 Taking inspiration from the Vipassana meditation, I've crafted a unique meditation practice for myself, which I call "the shepherding of awareness".
 
-This is based on the understand that while we can manually direct our attention, our awareness operates subconsciously and is more difficult to manipulate. I believe that attaining mastery over our thinking involves controlling our awareness, which directly links to the intuitive and holistic thinking approach, which is immensely powerful compared to the rational and directed way of thinking.
+This is based on the understanding that while we can manually direct our attention, our awareness operates subconsciously and is more difficult to manipulate. I believe that attaining mastery over our thinking involves controlling our awareness, which directly links to the intuitive and holistic thinking approach, which is immensely powerful compared to the rational and directed way of thinking.
 
 With no more delay, let's walk through my practice.
 
@@ -71,7 +71,7 @@ For further ideas, see my practices on [Interbeing](https://maxrohde.com/2019/04
 
 ## Step 6: Spirit
 
-The next phase involves a mastery of spirit. It's about nurturing our connection to the things we can't see, touch, or completely understand. However, achieving this state should not be a necessity but a possible valuable addition to meditation.
+The next phase involves a connecting to the elusive realm of spirit. It's about nurturing our connection to the things we can't see, touch, or completely understand. However, achieving this state should not be a necessity but a possible valuable addition to meditation.
 
 ## Why these Steps?
 
