@@ -1,17 +1,17 @@
 
-We can speak a lot faster than we can type. A lot.When typing, we rarely type more than 40 words per minute and this we can only achieve after considerable practice.However, it is very easy to speak around 150 words per minute.That's more than three times faster. Source: https://en.wikipedia.org/wiki/Words_per_minuteOf 
+Typing is the most common way we interact with our computers, but we can talk much faster. Even with practiced fingers, we barely type 40 words per minute, yet [we effortlessly speak at around 150 words per minute - triple the speed](https://en.wikipedia.org/wiki/Words_per_minute).
 
-However, there have been two big impediments to instructing our computer with our voice. First of all, computers were terrible at transcribing our voice to text.The leading voice transcription program in 2006, Dragon NaturalSpeaking for instance featured about an 80% accuracy. Source: https://www.cnet.com/reviews/dragon-naturallyspeaking-review/ I've tried this back in the day and found that fixing up all the small mistakes was way more time consuming than just typing it out directly.  
+However, using our voice to instruct our computers had two major hurdles. Firstly, computers used to be quite awful at transcribing our voices into text. Take Dragon NaturalSpeaking 2006, for instance. [It merely decoded our speech with roughly 80% accuracy](https://www.cnet.com/reviews/dragon-naturallyspeaking-review/). I personally found it more time-consuming correcting these minor errors than simply typing the content.
 
-The second impediment was that computers were very bad at understanding the way we naturally communicate.Computers required precision and our spoken word is anything but.
+Secondly, the precision required by computers clashed with our naturally imprecise spoken language. 
 
-Thankfully, as of late last year, both these problems are more or less solved.The excellent OpenAI Whisper model has extremely high accuracy for transcribing voice to text.It even understands my German accent! The OpenAI GPT-3 model is able to understand the way we naturally use language and translate it into something a computer can understand.This is evidenced by its impressive ability to write source code, for instance.
+Fortunately, these issues have somewhat disappeared as of late last year, thanks to technological advances. The remarkable [OpenAI Whisper model](https://openai.com/research/whisper/) excels at voice-to-text transcription - it even has a grip on my German accent! Meanwhile, [OpenAI's GPT-4 model](http://openai.com/product/gpt-4) manages to comprehend our natural language usage, translating it into computer-understandable format. It has shown its merit, for instance, through its remarkable code-writing capability.
 
-I thought, given these two technologies, OpenAI Whisper and GPT, am I able to develop a Windows automation that is better than Cortana Voice?
+With these innovations - OpenAI Whisper and GPT - I wondered if I now  can control my computer - specifically my personal Windows computer with my voice. 
 
-In the remainder of this article, I will describe how I used the OpenAI API, AutoHotKey, and a simple Go program to allow me control Windows with my voice.
+In the rest of this article, I'll explain how I combined the OpenAI API, [AutoHotKey](https://www.autohotkey.com/) and a simple Go program, to control Windows with my voice. 
 
-Anything I've developed I have made available on [GitHub](https://github.com/mxro/autohotkey-chatgpt-voice#autohotkey-chatgpt).
+The read-to-use tool and all source code are on [GitHub](https://github.com/mxro/autohotkey-chatgpt-voice#autohotkey-chatgpt).
 
 ## tldr;
 
@@ -19,13 +19,13 @@ If you want to see what I developed in action, please just have a look at the Yo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k-MRkMN-AMk?si=ptvOfZObIBqgnJLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-The automation allows you to trigger actions such as the following, but actions are not limited to this.
+My tool offers the versatility to trigger numerous actions including, but not confined to, the following:
 
-Open a program "open ..."
-Make a web search "search for ..."
-Open Wikipedia "Open Wikipedia page on ..."
-Ask a question to ChatGPT. "tell me ..."
-Search for images. "search for images of ..."
+- Launching a programme with the command 'open...'
+- Hunting for information online with the instruction 'search for...'
+- Accessing Wikipedia via 'Open Wikipedia page on...'
+- Engaging with ChatGPT using 'tell me...'
+- Scouting for images with the command 'search for images of...'
 
 ## How can I use it?
 
@@ -41,26 +41,31 @@ The following diagram shows the different steps this solution executes:
 
 ![](AHK%20ChatGPT%20V2.excalidraw)
 
-There are three main technologies used in the solution.
+There are three crucial technologies at the heart of this solution. 
 
- - [AutoHotKey](https://www.autohotkey.com/), which is an open source program that allows developing Windows automations.
- - [fmedia](https://stsaz.github.io/fmedia/), which is a tool to manipulate and record sound. 
- - `whisper-autohotkey.exe`, a custom application I wrote in Go to communicate with the OpenAI API
+- [AutoHotKey](https://www.autohotkey.com/) is an open-source program useful for creating Windows automations.
+- [fmedia](https://stsaz.github.io/fmedia/), a tool to record and manipulate sounds.
+- The 'whisper-autohotkey.exe', a bespoke application I created in Go for communication with the OpenAI API.
 
 This is how they work together:
 
-Step one, we are launching an auto hotkey script and let it run in the background.The script watches for key presses to the F8 key.
-Step 2. When the F8 key is pressed we use F media to start recording sound.
-Step 3. When the F8 key is pressed again, we tell Fmedia to stop recording.
-Step four, we use the custom Go application Whisper AutoHotKey I have developed to upload the recording FMedia has created to the OpenAI Whisper API and have it transcribe it to text.
-Step four, we take the transcribed text and send it to the OpenAPI chat GPT API to have it compose an AutoHeadKey script for us.
-Step five, we run the AutoHotKey executable and provide the generated script as input.This will result in the action we have required being executed.
+- **Step One**: Launch an AutoHotKey script and allow it to idly monitor for F8 key strokes. 
 
-In the following, I now provide some more details how the individual components and steps work.
+- **Step Two**: Command Fmedia to begin recording sound when the F8 key is pressed.
+
+- **Step Three**: Instruct Fmedia to cease recording at the next F8 key press.
+
+- **Step Four**: Initiate the custom Go application, 'Whisper-AutoHotKey.exe'. Use it to dispatch the audio file recorded by Fmedia to OpenAI's Whisper API, thus getting it transcribed to text.
+
+- **Step Five**: Convey this transcribed text into the OpenAI Chat GPT API, generating an AutoHotKey script in the process.
+
+- **Step Six**: Run the AutoHotKey executable and input the fresh script, leading to the execution of the required action.
+
+Further explanations detailing the functionality of each component and step are provided in the subsequent section.
 
 ## AutoHotKey Watch Script
 
-The watch script defines an action that happens whenever the user presses the F8 key.
+The watch script defines an action that is triggered whenever the user presses the F8 key.
 
 ```
 F8::
@@ -78,17 +83,17 @@ F8::
   return
 ```
 
-We first check whether we are currently recording or not.If we are not recording, we use fmedia to start the recording.
+We first check whether we are currently recording or not. If we are not recording, we use _fmedia_ to start the recording the command:
 
 ```
 Run %A_WorkingDir%\bin\fmedia-1.31-windows-x64\fmedia\fmedia.exe --record --overwrite --mpeg-quality=16 --rate=12000 --out=rec.mp3 --globcmd=listen,, Hide
 ```
 
-Notice here specifically the globalcmd=listen directive.This allows us to stop this recording through another invocation of fmedia.exe. 
+Notice here specifically the `globalcmd=listen` directive. This allows us to stop this recording through another invocation of `fmedia.exe`. 
 
 Also note the specific quality and sampling rate provided here - I fine-tuned this using a [few experiments](https://maxrohde.com/2023/09/17/optimise-openai-whisper-api-sampling-rate-quality). 
 
-When F8 is pressed and we are currently recording, we use `fmedia.exe` to send the command to stop recording.
+When F8 is pressed and we are currently recording, we use `fmedia.exe` to send the command to stop recording:
 
 ```
 Run %A_WorkingDir%\bin\fmedia-1.31-windows-x64\fmedia\fmedia.exe --globcmd=stop,, Hide 
@@ -207,7 +212,7 @@ Now I will provide the ACTION. Please remember, NEVER respond with ANYTHING ELSE
 
 ---
 
-Note, you can easily customize this prompt after downloading this tool by editing the `prompt.txt` file in the tool folder. For instance, you may want to change the default browser to something else, for instance, for Chrome.
+Note, you can easily customise this prompt after downloading this tool by editing the `prompt.txt` file in the tool folder. For instance, you may want to change the default browser to something else such as Chrome.
 
 ## Execute Script
 
@@ -242,23 +247,26 @@ Run, firefox.exe "https://duckduckgo.com/?q=Whisper`%20OpenAI`%20API`%20Go`%20SD
 return
 ```
 
-## Limitations and Learnings
+## Learnings and Limitations
 
-- Open AI Whisper API often feels a bit sluggish - due to need to upload quite a bit of data and the processing of that taking a bit of time
-- Open AI API latency diverges quite a lot, with often API requests taking 10x longer than usual - at least on my consumer-grade basic account
-- GPT4 is not very great at writing AutoHotKey scripts. It often makes basic logic or syntactical errors. I tried to avoid some of the most common ones by including additional guidiance for it in the prompt. It especially struggled with escaping of characters, which admittedly is a bit weird in AutoHotKey - for instance '%' need to be escapted as '`%'
+The following are the learning and remaining limitations of the developed tool:
+
+- The OpenAI Whisper API can occasionally seem temperamental, primarily due to the data uploading process and the subsequent processing duration. 
+- There's a significant variance in latency, with the API requests sometimes taking up to ten times longer than the average duration. This is common with my basic, consumer-grade account.
+- GPT-4 fails to excel at writing AutoHotKey scripts, usually falling into basic logic or syntax traps. I tried to bypass some of these frequent blunders by giving the model extra guidance within the initial prompt. However, it struggled with character escaping - a common challenge within AutoHotKey. For example, the character '%' had to be escaped as '\`%'.
 
 ## Conclusion
 
-It is safe to assume that controlling windows using Cortana Voice was not the most popular feature given it has been switched off. Source: https://support.microsoft.com/en-gb/topic/end-of-support-for-cortana-in-windows-and-teams-d025b39f-ee5b-4836-a954-0ab646ee1efa
+It's safe to infer that Cortana Voice's capacity to control windows wasn't a hit, given its [discontinuation](https://support.microsoft.com/en-gb/topic/end-of-support-for-cortana-in-windows-and-teams-d025b39f-ee5b-4836-a954-0ab646ee1efa).
 
-I have used the automation described in this post quite extensively and overall found it quite useful.I especially like to use it to trigger web searches.Since this allows me to compress a number of individual actions into a simple voice command. I think this is especially useful since then I do not need to type out search queries.
+Conversely, the tool detailed in this post has been quite useful to me. It's particularly useful for triggering web searches, bundling multiple steps into a straightforward voice command. This feature absolves me from typing out search queries.
 
-The biggest disadvantage I found in my personal use is that the Whisper API doesn't seem to be very fast.Thus, after issuing a command, there is some latency until the command is transcribed, sent to GPT, and then the script executed.
+In terms of disadvantages, the major one I've noticed in my personal use is the Whisper API's sluggishness. A noticeable delay ensues between issuing a command and waiting for it to be transcribed, passed to GPT, and finally executing the script. However, I was able to reduce latency by about 50% using some [fine-tuning of the audio encoding settings used](https://maxrohde.com/2023/09/17/optimise-openai-whisper-api-sampling-rate-quality).
 
-I also found that GPT does not always compose correct Autohotkey scripts. Let's say it is correct in about 90% of the time. And I think probably with further improving the prompt, it should become more accurate.
+Further, it's worth mentioning that GPT-4 isn't always successful in concocting accurate Autohotkey scripts. My experience suggests approximately a 90% success rate. However, I'm optimistic that further refining the prompt can heighten the accuracy rate.
 
-This is all published as an open source project. So please be welcome to step by there. Let me know your thoughts or leave a comment on this post.
+This tool been published as an [open source project](https://github.com/mxro/autohotkey-chatgpt-voice). I encourage you to contribute your observations or thoughts either by visiting the project or leaving a comment on this post.
+
 
 
 
