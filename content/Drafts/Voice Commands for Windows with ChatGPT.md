@@ -86,7 +86,9 @@ Run %A_WorkingDir%\bin\fmedia-1.31-windows-x64\fmedia\fmedia.exe --record --over
 
 Notice here specifically the globalcmd=listen directive.This allows us to stop this recording through another invocation of fmedia.exe. 
 
-When F8 is pressed and we are currently recording, we use fmedia.exe to send the command to stop recording.
+Also note the specific quality and sampling rate provided here - I fine-tuned this using a [few experiments](https://maxrohde.com/2023/09/17/optimise-openai-whisper-api-sampling-rate-quality). 
+
+When F8 is pressed and we are currently recording, we use `fmedia.exe` to send the command to stop recording.
 
 ```
 Run %A_WorkingDir%\bin\fmedia-1.31-windows-x64\fmedia\fmedia.exe --globcmd=stop,, Hide 
