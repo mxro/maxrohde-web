@@ -5,6 +5,7 @@ coverImage: 'genius-einstein.png'
 id: 'max-is-genius'
 blog: 'shalveena.com'
 date: 2023-03-18
+summary: Just an article
 authors:
   - shalveena
 tags:

@@ -1,3 +1,25 @@
+---
+title: 'Optimise OpenAI Whisper API: Audio Format, Sampling Rate and Quality'
+publish: true
+coverImage: 'pexels-karolina-grabowska-4476163.jpg'
+id: 'optimise-openai-whisper-api-sampling-rate-quality'
+blog: 'maxrohde.com'
+date: 2023-09-17
+summary: Provides guidiance on how to reduce latency when working with the OpenAI Whisper API
+authors:
+  - max
+tags:
+  - 'openai'
+  - 'voice'
+  - 'coding'
+  - 'programming'
+  - 'audio'
+  - 'api'
+  - 'performance'
+  - 'whisper'
+categories:
+  - 'code'
+---
 
 Using the OpenAI Whisper model can at times feel sluggish especially when using it through the API. I've recently created a little program that allows controlling windows through your voice. I noticed there that it can take a long time before getting a response from open AI, even for short commands.
 
