@@ -40,7 +40,7 @@ It seems you can reduce latency considerably by lowering quality settings withou
 
 I conducted a series of tests, each time recording the same command, 'Open Firefox'. The table below shows the correlated file sizes once I adjusted MP3 quality from 16 kbps through to 128 kbps and switched the sampling rate from 12k to 24k.
 
-![Recording Sizes](Pasted%20image%2020230917084039.png)
+![Recording Sizes](images/Pasted%20image%2020230917084039.png)
 
 (Note: most microphones sample at 16 kHz)
 
