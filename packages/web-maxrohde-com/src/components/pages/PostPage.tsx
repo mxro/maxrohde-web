@@ -5,6 +5,7 @@ import type { PostProps } from 'dynamodb-blog';
 import TagList from 'dynamodb-blog/src/components/TagList';
 
 import ErrorPage from './ErrorPage';
+import Sidebar from '../Sidebar';
 
 const PostPage = (props: PostProps): JSX.Element => {
   if (!props.post) {
@@ -86,26 +87,11 @@ const PostPage = (props: PostProps): JSX.Element => {
             </div>
           )}
         </div>
-        <div className="hidden md:block basis-1/5">
-          <p className="pt-24">
-            Insights for developing lean applications with ease 😎 and my
-            musings on life and leadership ✍.
-          </p>
-
-          <div className="pt-8 text-center">
-            <a
-              href="/about"
-              className="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-            >
-              🤗 Follow
-            </a>
-          </div>
-
-          <h3 className="pt-8 font-medium leading-tight text-xl mt-0 mb-2">
-            Blog Stats
-          </h3>
-          <p>{hydrated ? props.visits.toLocaleString() : props.visits} views</p>
-        </div>
+        <Sidebar
+          viewCount={
+            hydrated ? props.visits.toLocaleString() : `${props.visits}`
+          }
+        ></Sidebar>
       </div>
 
       <Footer></Footer>

@@ -54,6 +54,7 @@ const buildConfig = (): BuildConfiguration => {
           '@swc/jest',
           '@goldstack/template-ssr-server', // this is only required on the server side
         ],
+        loader: { '.svg': 'dataurl' },
         minify: true,
         sourcemap: 'inline',
         metafile: false,
@@ -79,6 +80,7 @@ const buildConfig = (): BuildConfiguration => {
         minify: true,
         platform: 'node',
         format: 'cjs',
+        loader: { '.svg': 'dataurl' },
         target: 'node16.0',
         treeShaking: true,
         define: {
