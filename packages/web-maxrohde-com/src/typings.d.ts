@@ -3,8 +3,15 @@ declare module '*.css' {
   export default classes;
 }
 
+declare module '*.svg?' {
+  const publicPath: string;
+  export default publicPath;
+}
+
+// with { exportType: "default" }
 declare module '*.svg' {
-  const content: any;
+  import { ReactElement, SVGProps } from 'react';
+  const content: (props: SVGProps<SVGElement>) => ReactElement;
   export default content;
 }
 
