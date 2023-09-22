@@ -88,7 +88,9 @@ const PostPage = (props: PostProps): JSX.Element => {
           )}
         </div>
         <Sidebar
-          viewCount={hydrated ? props.visits.toLocaleString() : props.visits}
+          viewCount={
+            hydrated ? props.visits.toLocaleString() : `${props.visits}`
+          }
         ></Sidebar>
       </div>
 
