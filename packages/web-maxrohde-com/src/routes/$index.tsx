@@ -1,11 +1,6 @@
-import React, { useState } from 'react';
 import type { SSRHandler } from '@goldstack/template-ssr';
 
 import { hydrate, renderPage } from './../render';
-import type {
-  APIGatewayProxyEventV2,
-  APIGatewayProxyResultV2,
-} from 'aws-lambda';
 
 import IndexPage from './../components/pages/IndexPage';
 

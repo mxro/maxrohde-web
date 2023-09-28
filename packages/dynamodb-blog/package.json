@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "main": "./src/dynamoDBBlog",
   "dependencies": {
-    "@goldstack/template-ssr": "0.3.18",
+    "@goldstack/template-ssr": "^0.3.24",
     "aws-sdk": "^2.1222.0",
     "db-blog": "workspace:^"
   },
