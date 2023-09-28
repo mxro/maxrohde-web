@@ -7,7 +7,6 @@ import type { IndexProps } from 'dynamodb-blog';
 import styles from './IndexPage.module.css';
 
 const IndexPage = (props: IndexProps): JSX.Element => {
-  console.log('render it');
   return (
     <>
       <div className={styles.background}>

@@ -11,19 +11,9 @@ import type { IndexProps } from 'dynamodb-blog';
 import ErrorPage from '../components/pages/ErrorPage';
 import { BLOG_CONFIG } from '../blog';
 
-console.log('running through route');
-
 const IndexPageWrapper = (props: IndexProps): JSX.Element => {
-  console.log('do the render', new Date());
   return (
     <>
-      <p
-        onClick={() => {
-          alert('hi');
-        }}
-      >
-        Hello
-      </p>
       <IndexPage {...props}></IndexPage>
     </>
   );
