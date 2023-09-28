@@ -4,9 +4,12 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { hydrate, renderPage } from '../render';
 
+import styles from './about.module.css';
+
 const About = (): JSX.Element => {
   return (
     <>
+      <div className={styles['dummy']}></div>
       <Header></Header>
       <div className="container px-8 py-5 lg:py-8 mx-auto xl:px-5 max-w-screen-lg">
         <h1 className="mt-2 mb-3 text-3xl font-semibold tracking-tight text-center lg:leading-snug text-brand-primary lg:text-4xl ">

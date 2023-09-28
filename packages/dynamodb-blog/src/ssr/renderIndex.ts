@@ -35,6 +35,7 @@ export async function renderIndex({
   renderErrorPage,
   PageComponent,
   ErrorPageComponent,
+  entryPoint,
 }: {
   config: BlogConfig;
   event: APIGatewayProxyEventV2;
@@ -46,6 +47,7 @@ export async function renderIndex({
   ) => Promise<APIGatewayProxyResultV2>;
   PageComponent: (props: IndexProps) => JSX.Element;
   ErrorPageComponent: (props: ErrorPageProps) => JSX.Element;
+  entryPoint: string;
 }): Promise<APIGatewayProxyResultV2> {
   const table = await connectTable();
   const dynamodb = await connect();
@@ -84,16 +86,13 @@ export async function renderIndex({
       properties: {
         message: 'Could not load posts from database.',
       },
-      entryPoint: __filename,
+      entryPoint,
       event: event,
     });
   }
   return renderPage({
     component: PageComponent,
     appendToHead: `
-    
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>${config.title}</title>
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="${config.title}" />
@@ -108,7 +107,7 @@ export async function renderIndex({
       firstPage: startKey === undefined,
       pinnedPosts: pinnedPostsQueryResult,
     },
-    entryPoint: __filename,
+    entryPoint,
     event: event,
   });
 }

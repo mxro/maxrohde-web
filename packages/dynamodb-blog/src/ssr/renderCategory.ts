@@ -33,6 +33,7 @@ export async function renderCategory({
   event,
   renderPage,
   PageComponent,
+  entryPoint,
 }: {
   config: BlogConfig;
   event: APIGatewayProxyEventV2;
@@ -40,6 +41,7 @@ export async function renderCategory({
     props: PartialRenderPageProps<TagProps>
   ) => Promise<APIGatewayProxyResultV2>;
   PageComponent: (props: TagProps) => JSX.Element;
+  entryPoint: string;
 }): Promise<APIGatewayProxyResultV2> {
   const dynamodb = await connect();
   AWS.config.logger = console;
@@ -93,7 +95,7 @@ export async function renderCategory({
       nextToken,
       posts,
     },
-    entryPoint: __filename,
+    entryPoint,
     event: event,
   });
 }

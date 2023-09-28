@@ -6,7 +6,8 @@ import type { IndexProps } from 'dynamodb-blog';
 
 import styles from './IndexPage.module.css';
 
-const Index = (props: IndexProps): JSX.Element => {
+const IndexPage = (props: IndexProps): JSX.Element => {
+  console.log('render it');
   return (
     <>
       <div className={styles.background}>
@@ -20,7 +21,12 @@ const Index = (props: IndexProps): JSX.Element => {
               </div>
             </>
           )}
-          <h1 className="text-3xl font-extrabold pt-12 pb-12">
+          <h1
+            className="text-3xl font-extrabold pt-12 pb-12"
+            onClick={() => {
+              console.log('hi');
+            }}
+          >
             {props.firstPage ? 'Latest Posts' : 'Posts'}
           </h1>
           <div className="pb-24">
@@ -36,4 +42,4 @@ const Index = (props: IndexProps): JSX.Element => {
   );
 };
 
-export default Index;
+export default IndexPage;
