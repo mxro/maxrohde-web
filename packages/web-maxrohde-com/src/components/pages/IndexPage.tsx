@@ -4,24 +4,13 @@ import Footer from '../Footer';
 import BlogList from 'dynamodb-blog/src/components/BlogList';
 import type { IndexProps } from 'dynamodb-blog';
 
-import styles from './IndexPage.module.css';
+import Background from '../Background';
 
 const IndexPage = (props: IndexProps): JSX.Element => {
   return (
     <>
-      <div className={styles.background}>
-        <ul className={styles.circles}>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+      <Background></Background>
+      <div className="absolute z-1">
         <Header></Header>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 pt-12 bg-white rounded-lg m-8">
           {props.firstPage && (
@@ -47,8 +36,8 @@ const IndexPage = (props: IndexProps): JSX.Element => {
             )}
           </div>
         </div>
+        <Footer></Footer>
       </div>
-      <Footer></Footer>
     </>
   );
 };
