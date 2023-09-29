@@ -25,5 +25,15 @@
   "exclude": [
     "node_modules"
   ],
-  "references": []
+  "references": [
+    {
+      "path": "../db-blog"
+    },
+    {
+      "path": "../dynamodb-blog"
+    },
+    {
+      "path": "../esbuild-tailwind-ssr-plugin"
+    }
+  ]
 }

@@ -18,6 +18,7 @@ export const handler: SSRHandler = async (event, context) => {
     renderPage,
     PageComponent: Blog,
     ErrorPageComponent: ErrorPage,
+    entryPoint: __filename,
   });
 };
 
