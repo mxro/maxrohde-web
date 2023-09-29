@@ -31,14 +31,10 @@ const buildConfig = (): BuildConfiguration => {
     staticFileMapper: getStaticFileMapper(),
     createClientBuildOptions: (args: ClientBuildOptionsArgs): BuildOptions => {
       return {
-        logLevel: 'verbose',
         plugins: [
           ignorePlugin({ ignore: ['ui'] }),
           cssPlugin({
             jsCSSInject: args.includeCss,
-            onCSSGenerated: (css) => {
-              console.log(css);
-            },
             cssConfig: {
               plugins: [],
             },

@@ -10,8 +10,20 @@ const IndexPage = (props: IndexProps): JSX.Element => {
   return (
     <>
       <div className={styles.background}>
+        <ul className={styles.circles}>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
         <Header></Header>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 pt-12">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 pt-12 bg-white rounded-lg m-8">
           {props.firstPage && (
             <>
               <h1 className="text-3xl font-extrabold pt-12 pb-12">Pinned</h1>
@@ -35,8 +47,8 @@ const IndexPage = (props: IndexProps): JSX.Element => {
             )}
           </div>
         </div>
-        <Footer></Footer>
       </div>
+      <Footer></Footer>
     </>
   );
 };
