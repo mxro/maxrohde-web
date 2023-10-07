@@ -20,7 +20,7 @@ const PostPage = (props: PostProps): JSX.Element => {
   }, []);
   return (
     <>
-      <Background></Background>
+      {/* <Background></Background> */}
       <div className="absolute z-1">
         <Header></Header>
 
