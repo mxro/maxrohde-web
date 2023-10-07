@@ -39,6 +39,7 @@ export async function renderPost({
   renderErrorPage,
   PageComponent,
   ErrorPageComponent,
+  entryPoint,
 }: {
   config: BlogConfig;
   event: APIGatewayProxyEventV2;
@@ -50,6 +51,7 @@ export async function renderPost({
   ) => Promise<APIGatewayProxyResultV2>;
   PageComponent: (props: PostProps) => JSX.Element;
   ErrorPageComponent: (props: ErrorPageProps) => JSX.Element;
+  entryPoint: string;
 }): Promise<APIGatewayProxyResultV2> {
   const table = await connectTable();
 
@@ -90,7 +92,8 @@ export async function renderPost({
         config.blog,
         event,
         renderErrorPage,
-        ErrorPageComponent
+        ErrorPageComponent,
+        entryPoint
       );
     }
 
@@ -106,7 +109,8 @@ export async function renderPost({
         config.blog,
         event,
         renderErrorPage,
-        ErrorPageComponent
+        ErrorPageComponent,
+        entryPoint
       );
     }
 
@@ -143,7 +147,8 @@ export async function renderPost({
       config.blog,
       event,
       renderErrorPage,
-      ErrorPageComponent
+      ErrorPageComponent,
+      entryPoint
     );
   }
   const res = renderPage({
@@ -194,7 +199,7 @@ export async function renderPost({
       visits: visitsCount,
       exists: true,
     },
-    entryPoint: __filename,
+    entryPoint,
     event: event,
   });
   return res;
@@ -233,7 +238,8 @@ async function renderNotFound(
   renderErrorPage: (
     props: PartialRenderPageProps<ErrorPageProps>
   ) => Promise<APIGatewayProxyResultV2>,
-  ErrorPageComponent: (props: ErrorPageProps) => JSX.Element
+  ErrorPageComponent: (props: ErrorPageProps) => JSX.Element,
+  entryPoint: string
 ): Promise<APIGatewayProxyResultV2> {
   const res: APIGatewayProxyStructuredResultV2 = (await renderErrorPage({
     component: ErrorPageComponent,
@@ -241,7 +247,7 @@ async function renderNotFound(
     properties: {
       message: 'Post not found',
     },
-    entryPoint: __filename,
+    entryPoint,
     event: event,
   })) as APIGatewayProxyStructuredResultV2;
 

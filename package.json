@@ -36,8 +36,8 @@
     "lighthouse": "^9.6.8"
   },
   "devDependencies": {
-    "@goldstack/nodemonx": "0.4.3",
-    "@goldstack/utils-typescript-references": "0.3.2",
+    "@goldstack/nodemonx": "^0.4.10",
+    "@goldstack/utils-typescript-references": "^0.3.9",
     "@types/jest": "^29.5.0",
     "@types/node": "^18.15.10",
     "@typescript-eslint/eslint-plugin": "^4.14.0",

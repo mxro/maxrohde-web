@@ -8,6 +8,7 @@ packages/web-maxrohde-com/static/generated/
 packages/web-shalveena-com/static/generated/
 packages/web-pureleap/public/objecthub/
 packages/web-pureleap/public/appjangle/
+packages/web-pureleap/static/generated/
 public/appjangle/
 coverage/
 node_modules/

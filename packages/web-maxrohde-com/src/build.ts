@@ -3,7 +3,7 @@
 
 import { pnpPlugin } from '@yarnpkg/esbuild-plugin-pnp';
 import tailwindPlugin from 'esbuild-tailwind-ssr-plugin';
-import cssPlugin from 'esbuild-css-modules-client-plugin';
+import cssPlugin from 'esbuild-ssr-css-modules-plugin';
 
 import ignorePlugin from 'esbuild-ignore-with-comments-plugin';
 
@@ -34,7 +34,7 @@ const buildConfig = (): BuildConfiguration => {
         plugins: [
           ignorePlugin({ ignore: ['ui'] }),
           cssPlugin({
-            excludeCSSInject: !args.includeCss,
+            jsCSSInject: args.includeCss,
             cssConfig: {
               plugins: [],
             },
@@ -68,7 +68,7 @@ const buildConfig = (): BuildConfiguration => {
         plugins: [
           ignorePlugin({ ignore: ['server'] }),
           cssPlugin({
-            excludeCSSInject: true,
+            jsCSSInject: false,
             onCSSGenerated: args.onCSSGenerated,
           }),
           pnpPlugin(),

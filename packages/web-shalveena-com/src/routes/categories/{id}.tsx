@@ -19,6 +19,7 @@ export const handler: SSRHandler = async (event, context) => {
     event,
     PageComponent: TagPage,
     renderPage,
+    entryPoint: __filename,
   });
 };
 

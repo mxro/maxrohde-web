@@ -1,4 +1,4 @@
-import { Plugin, PluginBuild } from 'esbuild';
+import { OnLoadArgs, OnLoadResult, Plugin, PluginBuild } from 'esbuild';
 
 import postcss from 'postcss';
 import { StaticFileMapperBuild } from 'static-file-mapper-build';
@@ -15,6 +15,15 @@ const tailwindPlugin = (opts: TailwindPluginOptions) => {
   return {
     name: 'tailwind',
     setup: (build: PluginBuild) => {
+      // build.onLoad(
+      //   {
+      //     filter: /.tsx$/,
+      //   },
+      //   async (args: OnLoadArgs): Promise<OnLoadResult> => {
+      //     console.log(args.path);
+      //     return {};
+      //   }
+      // );
       build.onEnd(async () => {
         await new Promise<void>((resolve, reject) => {
           postcss([tailwindcss(), autoprefixer()])

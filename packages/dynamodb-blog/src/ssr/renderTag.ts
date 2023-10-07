@@ -26,6 +26,7 @@ export async function renderTag({
   renderPage,
   event,
   PageComponent,
+  entryPoint,
 }: {
   config: BlogConfig;
   event: APIGatewayProxyEventV2;
@@ -33,6 +34,7 @@ export async function renderTag({
     props: PartialRenderPageProps<TagProps>
   ) => Promise<APIGatewayProxyResultV2>;
   PageComponent: (props: TagProps) => JSX.Element;
+  entryPoint: string;
 }): Promise<APIGatewayProxyResultV2> {
   const dynamodb = await connect();
   AWS.config.logger = console;
@@ -82,7 +84,7 @@ export async function renderTag({
       nextToken,
       posts,
     },
-    entryPoint: __filename,
+    entryPoint,
     event: event,
   });
 }

@@ -22,6 +22,7 @@ export const handler: SSRHandler = async (event, context) => {
     renderErrorPage: renderPage,
     PageComponent: PostPage,
     ErrorPageComponent: ErrorPage,
+    entryPoint: __filename,
   });
 };
 
