@@ -11,7 +11,7 @@ import styles from './IndexPage.module.css';
 const IndexPage = (props: IndexProps): JSX.Element => {
   return (
     <>
-      {/* <Background></Background> */}
+      <Background></Background>
       <div className="absolute z-1">
         <Header></Header>
         <div
