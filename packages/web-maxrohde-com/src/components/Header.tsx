@@ -2,10 +2,7 @@ import React from 'react';
 
 const HeaderDesktop = (): JSX.Element => {
   return (
-    <div
-      className="hidden sm:block mx-auto max-w-7xl px-4 sm:px-6"
-      style={{ backgroundColor: '#CCE3FF' }}
-    >
+    <div className="hidden sm:block mx-auto max-w-7xl px-4 sm:px-6">
       <div className="flex items-center justify-between border-b-2 border-gray-100 py-3 md:justify-start md:space-x-10">
         <div className="flex justify-start lg:w-0 lg:flex-1">
           <a href="/">

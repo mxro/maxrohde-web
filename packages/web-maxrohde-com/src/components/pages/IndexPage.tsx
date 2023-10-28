@@ -16,7 +16,7 @@ const IndexPage = (props: IndexProps): JSX.Element => {
         <Header></Header>
         <div
           className={`${styles['content-wrapper']}
-          mx-auto max-w-7xl px-4 sm:px-6 pt-12 bg-white rounded-lg m-8 content-wrapper`}
+          mx-auto max-w-7xl px-4 sm:px-6 pt-12 bg-white rounded m-8 content-wrapper`}
         >
           {props.firstPage && (
             <>
