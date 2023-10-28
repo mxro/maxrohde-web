@@ -35,7 +35,7 @@
     "@goldstack/template-dynamodb-cli": "^0.5.24",
     "@types/ejs": "^3",
     "@types/jest": "^29.5.0",
-    "@types/node": "^18.15.10",
+    "@types/node": "^20.8.9",
     "dynamodb-admin": "^4.4.0",
     "ejs": "^3.1.8",
     "jest": "^29.5.0",

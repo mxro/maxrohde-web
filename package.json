@@ -39,7 +39,7 @@
     "@goldstack/nodemonx": "^0.4.10",
     "@goldstack/utils-typescript-references": "^0.3.9",
     "@types/jest": "^29.5.0",
-    "@types/node": "^18.15.10",
+    "@types/node": "^20.8.9",
     "@typescript-eslint/eslint-plugin": "^4.14.0",
     "@typescript-eslint/parser": "^4.14.0",
     "eslint": "7.32.0",

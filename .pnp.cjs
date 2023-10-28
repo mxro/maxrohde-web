@@ -81,7 +81,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/nodemonx", "npm:0.4.10"],\
             ["@goldstack/utils-typescript-references", "npm:0.3.9"],\
             ["@types/jest", "npm:29.5.0"],\
-            ["@types/node", "npm:18.15.10"],\
+            ["@types/node", "npm:20.8.9"],\
             ["@typescript-eslint/eslint-plugin", "virtual:7d42466ae6c78580bd9c1e87d13d7ab3ede0127954e482b418663c43b56e1ab487e2b687b40b6aff4fc8c62c5c2760ae3b712417fcad70a07fb1035aa316eb17#npm:4.14.0"],\
             ["@typescript-eslint/parser", "virtual:7d42466ae6c78580bd9c1e87d13d7ab3ede0127954e482b418663c43b56e1ab487e2b687b40b6aff4fc8c62c5c2760ae3b712417fcad70a07fb1035aa316eb17#npm:4.14.0"],\
             ["eslint", "npm:7.32.0"],\
@@ -4092,17 +4092,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:18.15.10", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-18.15.10-93118095ab-9aeae0b683.zip/node_modules/@types/node/",\
+        ["npm:20.8.9", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-20.8.9-9c9903a005-0c05f3502a.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:18.15.10"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:18.15.11", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-18.15.11-fd8ceaaffd-977b4ad047.zip/node_modules/@types/node/",\
-          "packageDependencies": [\
-            ["@types/node", "npm:18.15.11"]\
+            ["@types/node", "npm:20.8.9"],\
+            ["undici-types", "npm:5.26.5"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -5215,7 +5209,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/html-to-text", "npm:8.1.1"],\
             ["@types/jest", "npm:29.5.0"],\
             ["@types/marked", "npm:4.0.7"],\
-            ["@types/node", "npm:18.15.10"],\
+            ["@types/node", "npm:20.8.9"],\
             ["commander", "npm:9.4.0"],\
             ["db-blog", "workspace:packages/db-blog"],\
             ["dynamodb-toolbox", "npm:0.4.3"],\
@@ -6977,7 +6971,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/utils-sh", "npm:0.5.9"],\
             ["@types/ejs", "npm:3.1.1"],\
             ["@types/jest", "npm:29.5.0"],\
-            ["@types/node", "npm:18.15.10"],\
+            ["@types/node", "npm:20.8.9"],\
             ["aws-sdk", "npm:2.1222.0"],\
             ["deep-copy", "npm:1.4.2"],\
             ["dynamodb-admin", "npm:4.4.0"],\
@@ -7741,7 +7735,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/template-ssr", "npm:0.3.24"],\
             ["@types/aws-lambda", "npm:8.10.88"],\
             ["@types/jest", "npm:29.5.0"],\
-            ["@types/node", "npm:18.15.10"],\
+            ["@types/node", "npm:20.8.9"],\
             ["@types/react", "npm:18.0.19"],\
             ["@types/react-dom", null],\
             ["@types/testing-library__jest-dom", "npm:5.14.5"],\
@@ -7770,7 +7764,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/template-ssr", "npm:0.3.24"],\
             ["@types/aws-lambda", "npm:8.10.88"],\
             ["@types/jest", "npm:29.5.0"],\
-            ["@types/node", "npm:18.15.10"],\
+            ["@types/node", "npm:20.8.9"],\
             ["@types/react", "npm:18.0.19"],\
             ["@types/testing-library__jest-dom", "npm:5.14.5"],\
             ["@types/testing-library__react", "npm:10.2.0"],\
@@ -7857,7 +7851,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/utils-git", "npm:0.2.9"],\
             ["@goldstack/utils-sh", "npm:0.5.9"],\
             ["@types/jest", "npm:29.5.0"],\
-            ["@types/node", "npm:18.15.10"],\
+            ["@types/node", "npm:20.8.9"],\
             ["aws-sdk", "npm:2.1222.0"],\
             ["jest", "virtual:7d42466ae6c78580bd9c1e87d13d7ab3ede0127954e482b418663c43b56e1ab487e2b687b40b6aff4fc8c62c5c2760ae3b712417fcad70a07fb1035aa316eb17#npm:29.5.0"],\
             ["nodemon", "npm:2.0.15"],\
@@ -8300,7 +8294,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["esbuild-tailwind-ssr-plugin", "workspace:packages/esbuild-tailwind-ssr-plugin"],\
             ["@types/jest", "npm:29.5.0"],\
-            ["@types/node", "npm:18.15.11"],\
+            ["@types/node", "npm:20.8.9"],\
             ["autoprefixer", "virtual:818122d9fc6446df8b88a4e58e7698943dd1905bee7ac86d9352ca6b524ab4813e9e1b3859d836e804d0270a233e55ccf53d9cc6fbf74ce959c0c0d14ed0a79a#npm:10.4.11"],\
             ["depcheck", "npm:1.4.3"],\
             ["esbuild", "npm:0.17.18"],\
@@ -13005,7 +12999,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@goldstack/nodemonx", "npm:0.4.10"],\
             ["@goldstack/utils-typescript-references", "npm:0.3.9"],\
             ["@types/jest", "npm:29.5.0"],\
-            ["@types/node", "npm:18.15.10"],\
+            ["@types/node", "npm:20.8.9"],\
             ["@typescript-eslint/eslint-plugin", "virtual:7d42466ae6c78580bd9c1e87d13d7ab3ede0127954e482b418663c43b56e1ab487e2b687b40b6aff4fc8c62c5c2760ae3b712417fcad70a07fb1035aa316eb17#npm:4.14.0"],\
             ["@typescript-eslint/parser", "virtual:7d42466ae6c78580bd9c1e87d13d7ab3ede0127954e482b418663c43b56e1ab487e2b687b40b6aff4fc8c62c5c2760ae3b712417fcad70a07fb1035aa316eb17#npm:4.14.0"],\
             ["eslint", "npm:7.32.0"],\
@@ -18023,7 +18017,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],\
             ["@tsconfig/node14", "npm:1.0.1"],\
             ["@tsconfig/node16", "npm:1.0.2"],\
-            ["@types/node", "npm:18.15.10"],\
+            ["@types/node", "npm:20.8.9"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\
@@ -18059,7 +18053,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],\
             ["@tsconfig/node14", "npm:1.0.1"],\
             ["@tsconfig/node16", "npm:1.0.2"],\
-            ["@types/node", "npm:18.15.10"],\
+            ["@types/node", "npm:20.8.9"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\
@@ -18465,6 +18459,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/undefsafe-npm-2.0.5-8c3bbf9354-f42ab3b577.zip/node_modules/undefsafe/",\
           "packageDependencies": [\
             ["undefsafe", "npm:2.0.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["undici-types", [\
+        ["npm:5.26.5", {\
+          "packageLocation": "./.yarn/cache/undici-types-npm-5.26.5-de4f7c7bb9-3192ef6f3f.zip/node_modules/undici-types/",\
+          "packageDependencies": [\
+            ["undici-types", "npm:5.26.5"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -19019,7 +19022,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/aws-lambda", "npm:8.10.88"],\
             ["@types/aws-serverless-express", "npm:3.3.3"],\
             ["@types/jest", "npm:29.5.0"],\
-            ["@types/node", "npm:18.15.10"],\
+            ["@types/node", "npm:20.8.9"],\
             ["@types/node-fetch", "npm:2.5.12"],\
             ["@types/react", "npm:18.0.19"],\
             ["@types/testing-library__jest-dom", "npm:5.14.5"],\
@@ -19067,7 +19070,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:13.3.0"],\
             ["@types/jest", "npm:29.5.0"],\
-            ["@types/node", "npm:18.15.10"],\
+            ["@types/node", "npm:20.8.9"],\
             ["@types/react", "npm:18.0.19"],\
             ["@types/react-dom", "npm:18.0.6"],\
             ["@types/testing-library__jest-dom", "npm:5.14.5"],\
@@ -19123,7 +19126,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/aws-lambda", "npm:8.10.88"],\
             ["@types/aws-serverless-express", "npm:3.3.3"],\
             ["@types/jest", "npm:29.5.0"],\
-            ["@types/node", "npm:18.15.10"],\
+            ["@types/node", "npm:20.8.9"],\
             ["@types/node-fetch", "npm:2.5.12"],\
             ["@types/react", "npm:18.0.19"],\
             ["@types/testing-library__jest-dom", "npm:5.14.5"],\
@@ -19178,7 +19181,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/aws-lambda", "npm:8.10.88"],\
             ["@types/aws-serverless-express", "npm:3.3.3"],\
             ["@types/jest", "npm:29.5.0"],\
-            ["@types/node", "npm:18.15.10"],\
+            ["@types/node", "npm:20.8.9"],\
             ["@types/node-fetch", "npm:2.5.12"],\
             ["@types/react", "npm:18.0.19"],\
             ["@types/testing-library__jest-dom", "npm:5.14.5"],\
