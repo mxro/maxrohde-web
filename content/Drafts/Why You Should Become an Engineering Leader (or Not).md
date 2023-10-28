@@ -1,3 +1,5 @@
+summary: Discusses a number of good and bad reasons for engineers to pursue leadership positions.
+
 You are probably reasonably happy being a software engineer. Coding is often fun and rewarding.
 
 Many engineers are promoted to leadership positions only to find out that they don't enjoy it and end up in a [career dead end](https://www.infoq.com/presentations/hands-on-coding-managers/). Often, the better you are at coding, the more you love it, the more likely it is that you won't enjoy being a leader.

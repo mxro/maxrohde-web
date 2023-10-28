@@ -1,0 +1,330 @@
+{
+	"type": "excalidraw",
+	"version": 2,
+	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/1.9.18",
+	"elements": [
+		{
+			"type": "line",
+			"version": 59,
+			"versionNonce": 928019937,
+			"isDeleted": false,
+			"id": "9rSCwNQxfrkk9Jmcxp7oh",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -442.5,
+			"y": -182.4921875,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 188,
+			"height": 2,
+			"seed": 481000015,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": {
+				"type": 2
+			},
+			"boundElements": [],
+			"updated": 1697833289890,
+			"link": null,
+			"locked": false,
+			"startBinding": null,
+			"endBinding": null,
+			"lastCommittedPoint": null,
+			"startArrowhead": null,
+			"endArrowhead": null,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					188,
+					-2
+				]
+			]
+		},
+		{
+			"type": "text",
+			"version": 101,
+			"versionNonce": 860108801,
+			"isDeleted": false,
+			"id": "eF2avzXp",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -426.5,
+			"y": -101.4921875,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 159.76792907714844,
+			"height": 35,
+			"seed": 1672598785,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1697833225585,
+			"link": null,
+			"locked": false,
+			"fontSize": 28,
+			"fontFamily": 1,
+			"text": "Less Joyful",
+			"rawText": "Less Joyful",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "Less Joyful",
+			"lineHeight": 1.25,
+			"baseline": 25
+		},
+		{
+			"type": "text",
+			"version": 157,
+			"versionNonce": 1105738767,
+			"isDeleted": false,
+			"id": "valpCjJ8",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -36.38396453857422,
+			"y": -104.9921875,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 161.5879364013672,
+			"height": 35,
+			"seed": 1157950401,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1697833281581,
+			"link": null,
+			"locked": false,
+			"fontSize": 28,
+			"fontFamily": 1,
+			"text": "More Joyful",
+			"rawText": "More Joyful",
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"containerId": null,
+			"originalText": "More Joyful",
+			"lineHeight": 1.25,
+			"baseline": 25
+		},
+		{
+			"type": "freedraw",
+			"version": 82,
+			"versionNonce": 946417807,
+			"isDeleted": false,
+			"id": "-lb_IVHXU9maczjVzHzUb",
+			"fillStyle": "hachure",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"angle": 0,
+			"x": -24.5,
+			"y": -155.4921875,
+			"strokeColor": "#1e1e1e",
+			"backgroundColor": "transparent",
+			"width": 125,
+			"height": 96,
+			"seed": 1786263215,
+			"groupIds": [],
+			"frameId": null,
+			"roundness": null,
+			"boundElements": [],
+			"updated": 1697833268404,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					1,
+					0
+				],
+				[
+					6,
+					0
+				],
+				[
+					18,
+					-3
+				],
+				[
+					31,
+					-9
+				],
+				[
+					44,
+					-20
+				],
+				[
+					58,
+					-31
+				],
+				[
+					67,
+					-39
+				],
+				[
+					71,
+					-45
+				],
+				[
+					72,
+					-49
+				],
+				[
+					72,
+					-52
+				],
+				[
+					72,
+					-55
+				],
+				[
+					72,
+					-56
+				],
+				[
+					72,
+					-57
+				],
+				[
+					71,
+					-57
+				],
+				[
+					67,
+					-57
+				],
+				[
+					64,
+					-55
+				],
+				[
+					62,
+					-52
+				],
+				[
+					61,
+					-51
+				],
+				[
+					59,
+					-50
+				],
+				[
+					58,
+					-49
+				],
+				[
+					58,
+					-48
+				],
+				[
+					60,
+					-45
+				],
+				[
+					63,
+					-41
+				],
+				[
+					69,
+					-36
+				],
+				[
+					76,
+					-33
+				],
+				[
+					88,
+					-32
+				],
+				[
+					101,
+					-32
+				],
+				[
+					110,
+					-36
+				],
+				[
+					119,
+					-47
+				],
+				[
+					123,
+					-62
+				],
+				[
+					125,
+					-80
+				],
+				[
+					125,
+					-92
+				],
+				[
+					123,
+					-96
+				],
+				[
+					123,
+					-96
+				]
+			],
+			"lastCommittedPoint": null,
+			"simulatePressure": true,
+			"pressures": []
+		}
+	],
+	"appState": {
+		"theme": "light",
+		"viewBackgroundColor": "#ffffff",
+		"currentItemStrokeColor": "#1e1e1e",
+		"currentItemBackgroundColor": "transparent",
+		"currentItemFillStyle": "hachure",
+		"currentItemStrokeWidth": 1,
+		"currentItemStrokeStyle": "solid",
+		"currentItemRoughness": 1,
+		"currentItemOpacity": 100,
+		"currentItemFontFamily": 1,
+		"currentItemFontSize": 28,
+		"currentItemTextAlign": "left",
+		"currentItemStartArrowhead": null,
+		"currentItemEndArrowhead": "arrow",
+		"scrollX": 532.8422653558105,
+		"scrollY": 431.24609375,
+		"zoom": {
+			"value": 2
+		},
+		"currentItemRoundness": "round",
+		"gridSize": null,
+		"currentStrokeOptions": null,
+		"previousGridSize": null,
+		"frameRendering": {
+			"enabled": true,
+			"clip": true,
+			"name": true,
+			"outline": true
+		}
+	},
+	"prevTextMode": "parsed",
+	"files": {}
+}
