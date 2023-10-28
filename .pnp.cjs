@@ -6308,6 +6308,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["client-only", [\
+        ["npm:0.0.1", {\
+          "packageLocation": "./.yarn/cache/client-only-npm-0.0.1-07d3e9505c-0c16bf660d.zip/node_modules/client-only/",\
+          "packageDependencies": [\
+            ["client-only", "npm:0.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["clipboard", [\
         ["npm:2.0.11", {\
           "packageLocation": "./.yarn/cache/clipboard-npm-2.0.11-45358b5ae8-413055a603.zip/node_modules/clipboard/",\
@@ -7407,13 +7416,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["dequal", [\
-        ["npm:2.0.2", {\
-          "packageLocation": "./.yarn/cache/dequal-npm-2.0.2-370927eb6c-86c7a2c59f.zip/node_modules/dequal/",\
-          "packageDependencies": [\
-            ["dequal", "npm:2.0.2"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:2.0.3", {\
           "packageLocation": "./.yarn/cache/dequal-npm-2.0.3-53a630c60e-8679b850e1.zip/node_modules/dequal/",\
           "packageDependencies": [\
@@ -17503,20 +17505,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["swr", [\
-        ["npm:0.4.2", {\
-          "packageLocation": "./.yarn/cache/swr-npm-0.4.2-7ac07842af-04ccb0d244.zip/node_modules/swr/",\
+        ["npm:2.2.4", {\
+          "packageLocation": "./.yarn/cache/swr-npm-2.2.4-5bec6d25f9-d1398f89fd.zip/node_modules/swr/",\
           "packageDependencies": [\
-            ["swr", "npm:0.4.2"]\
+            ["swr", "npm:2.2.4"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:a448ba69c2b9eca8e89ba7cb37f7bbbc365991426a9d33abba0e35ac5f4e51ae0c8ef841e5d513410c5dbe882dc42213f27f42dd35615700a9ac31d8e39b1209#npm:0.4.2", {\
-          "packageLocation": "./.yarn/__virtual__/swr-virtual-6dab209505/0/cache/swr-npm-0.4.2-7ac07842af-04ccb0d244.zip/node_modules/swr/",\
+        ["virtual:a448ba69c2b9eca8e89ba7cb37f7bbbc365991426a9d33abba0e35ac5f4e51ae0c8ef841e5d513410c5dbe882dc42213f27f42dd35615700a9ac31d8e39b1209#npm:2.2.4", {\
+          "packageLocation": "./.yarn/__virtual__/swr-virtual-1de08bb95f/0/cache/swr-npm-2.2.4-5bec6d25f9-d1398f89fd.zip/node_modules/swr/",\
           "packageDependencies": [\
-            ["swr", "virtual:a448ba69c2b9eca8e89ba7cb37f7bbbc365991426a9d33abba0e35ac5f4e51ae0c8ef841e5d513410c5dbe882dc42213f27f42dd35615700a9ac31d8e39b1209#npm:0.4.2"],\
+            ["swr", "virtual:a448ba69c2b9eca8e89ba7cb37f7bbbc365991426a9d33abba0e35ac5f4e51ae0c8ef841e5d513410c5dbe882dc42213f27f42dd35615700a9ac31d8e39b1209#npm:2.2.4"],\
             ["@types/react", "npm:18.0.19"],\
-            ["dequal", "npm:2.0.2"],\
-            ["react", "npm:18.2.0"]\
+            ["client-only", "npm:0.0.1"],\
+            ["react", "npm:18.2.0"],\
+            ["use-sync-external-store", "virtual:fd85bafe707b1a5a666c3fd162316123233cb2d557b0ba0ec1acc94828a10cebf385bc68ab9c6745b581849f0b7109541aa0c52451319f18e5548fdad12497f9#npm:1.2.0"]\
           ],\
           "packagePeers": [\
             "@types/react",\
@@ -19129,7 +19132,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-dom", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:18.2.0"],\
             ["react-is", "npm:18.2.0"],\
             ["reload", "npm:3.2.0"],\
-            ["swr", "virtual:a448ba69c2b9eca8e89ba7cb37f7bbbc365991426a9d33abba0e35ac5f4e51ae0c8ef841e5d513410c5dbe882dc42213f27f42dd35615700a9ac31d8e39b1209#npm:0.4.2"],\
+            ["swr", "virtual:a448ba69c2b9eca8e89ba7cb37f7bbbc365991426a9d33abba0e35ac5f4e51ae0c8ef841e5d513410c5dbe882dc42213f27f42dd35615700a9ac31d8e39b1209#npm:2.2.4"],\
             ["ts-jest", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:29.0.5"],\
             ["ts-node", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:10.9.1"],\
             ["typescript", "patch:typescript@npm%3A5.0.2#~builtin<compat/typescript>::version=5.0.2&hash=85af82"]\

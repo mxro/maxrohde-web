@@ -33,7 +33,7 @@
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
-    "swr": "^0.4.0"
+    "swr": "^2.2.4"
   },
   "devDependencies": {
     "@goldstack/template-nextjs": "^0.5.18",
