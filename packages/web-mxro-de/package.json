@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "ignore-loader": "^0.1.2",
-    "next": "^12.2.5",
+    "next": "^13.5.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
