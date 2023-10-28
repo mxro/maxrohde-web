@@ -3,25 +3,29 @@ import React from 'react';
 const HeaderDesktop = (): JSX.Element => {
   return (
     <div className="hidden sm:block mx-auto max-w-7xl px-4 sm:px-6">
-      <div className="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+      <div className="flex items-center justify-between border-b-2 border-gray-100 py-3 md:justify-start md:space-x-10">
         <div className="flex justify-start lg:w-0 lg:flex-1">
           <a href="/">
-            <img
+            {/* <img
               className="h-16 w-16 rounded-full"
               src="/_goldstack/static/img/2022/10/max.jpg"
               alt="Max Rohde portrait"
-            />
+            /> */}
           </a>
         </div>
 
         <nav className="space-x-10 flex">
           <a href="/">
             <span className="sr-only">Code of Joy</span>
-            <h1 className="text-2xl">Code of Joy</h1>
+            <img
+              style={{ width: '600px' }}
+              src="/_goldstack/static/img/2023/10/logo.png"
+            ></img>
+            {/* <h1 className="text-2xl">Code of Joy</h1> */}
           </a>
-          <h2 className="text-sm align-bottom" style={{ marginTop: '0.75rem' }}>
+          {/* <h2 className="text-sm align-bottom" style={{ marginTop: '0.75rem' }}>
             Code &amp; Contemplations by Max Rohde
-          </h2>
+          </h2> */}
         </nav>
         <div className="hidden items-center justify-end md:flex sm:flex-1 md:w-0">
           <a

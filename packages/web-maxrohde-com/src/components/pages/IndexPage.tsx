@@ -16,22 +16,17 @@ const IndexPage = (props: IndexProps): JSX.Element => {
         <Header></Header>
         <div
           className={`${styles['content-wrapper']}
-          mx-auto max-w-7xl px-4 sm:px-6 pt-12 bg-white rounded-lg m-8 content-wrapper`}
+          mx-auto max-w-7xl px-4 sm:px-12 pt-12 bg-white rounded m-8 content-wrapper`}
         >
           {props.firstPage && (
             <>
-              <h1 className="text-3xl font-extrabold pt-12 pb-12">Pinned</h1>
+              <h1 className="text-3xl font-extrabold pt-6 pb-6">Pinned</h1>
               <div className="">
                 <BlogList items={props.pinnedPosts}></BlogList>
               </div>
             </>
           )}
-          <h1
-            className="text-3xl font-extrabold pt-12 pb-12"
-            onClick={() => {
-              console.log('hi');
-            }}
-          >
+          <h1 className="text-3xl font-extrabold pt-6 pb-6">
             {props.firstPage ? 'Latest Posts' : 'Posts'}
           </h1>
           <div className="pb-24">
