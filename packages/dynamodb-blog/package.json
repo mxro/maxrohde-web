@@ -8,7 +8,7 @@
     "db-blog": "workspace:^"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.88",
+    "@types/aws-lambda": "^8.10.125",
     "@types/jest": "^29.5.0",
     "@types/node": "^18.15.10",
     "@types/react": "^18.0.17",

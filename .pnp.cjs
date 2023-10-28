@@ -3760,6 +3760,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/aws-lambda", [\
+        ["npm:8.10.125", {\
+          "packageLocation": "./.yarn/cache/@types-aws-lambda-npm-8.10.125-f72a33deb0-dec6db30ac.zip/node_modules/@types/aws-lambda/",\
+          "packageDependencies": [\
+            ["@types/aws-lambda", "npm:8.10.125"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
         ["npm:8.10.62", {\
           "packageLocation": "./.yarn/cache/@types-aws-lambda-npm-8.10.62-675c3023bb-21afd764cf.zip/node_modules/@types/aws-lambda/",\
           "packageDependencies": [\
@@ -7739,7 +7746,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["dynamodb-blog", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#workspace:packages/dynamodb-blog"],\
             ["@goldstack/template-ssr", "npm:0.3.24"],\
-            ["@types/aws-lambda", "npm:8.10.88"],\
+            ["@types/aws-lambda", "npm:8.10.125"],\
             ["@types/jest", "npm:29.5.0"],\
             ["@types/node", "npm:18.15.10"],\
             ["@types/react", "npm:18.0.19"],\
@@ -7768,7 +7775,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["dynamodb-blog", "workspace:packages/dynamodb-blog"],\
             ["@goldstack/template-ssr", "npm:0.3.24"],\
-            ["@types/aws-lambda", "npm:8.10.88"],\
+            ["@types/aws-lambda", "npm:8.10.125"],\
             ["@types/jest", "npm:29.5.0"],\
             ["@types/node", "npm:18.15.10"],\
             ["@types/react", "npm:18.0.19"],\
@@ -19016,7 +19023,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tailwindcss/typography", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.5.9"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:13.3.0"],\
-            ["@types/aws-lambda", "npm:8.10.88"],\
+            ["@types/aws-lambda", "npm:8.10.125"],\
             ["@types/aws-serverless-express", "npm:3.3.3"],\
             ["@types/jest", "npm:29.5.0"],\
             ["@types/node", "npm:18.15.10"],\
@@ -19120,7 +19127,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tailwindcss/typography", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.5.9"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:13.3.0"],\
-            ["@types/aws-lambda", "npm:8.10.88"],\
+            ["@types/aws-lambda", "npm:8.10.125"],\
             ["@types/aws-serverless-express", "npm:3.3.3"],\
             ["@types/jest", "npm:29.5.0"],\
             ["@types/node", "npm:18.15.10"],\
@@ -19175,7 +19182,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tailwindcss/typography", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:0.5.9"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:13.3.0"],\
-            ["@types/aws-lambda", "npm:8.10.88"],\
+            ["@types/aws-lambda", "npm:8.10.125"],\
             ["@types/aws-serverless-express", "npm:3.3.3"],\
             ["@types/jest", "npm:29.5.0"],\
             ["@types/node", "npm:18.15.10"],\
