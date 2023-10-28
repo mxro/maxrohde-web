@@ -276,13 +276,13 @@ The following are the learning and remaining limitations of the developed tool:
 
 It's safe to infer that Cortana Voice's capacity to control windows wasn't a hit, given its [discontinuation](https://support.microsoft.com/en-gb/topic/end-of-support-for-cortana-in-windows-and-teams-d025b39f-ee5b-4836-a954-0ab646ee1efa).
 
-Conversely, the tool detailed in this post has been quite useful to me. It's particularly useful for triggering web searches, bundling multiple steps into a straightforward voice command. This feature absolves me from typing out search queries.
+Conversely, the tool detailed in this post has been quite useful to me. It's particularly useful for triggering web searches, and bundling multiple steps into a straightforward voice command. This feature absolves me from typing out search queries.
 
 In terms of disadvantages, the major one I've noticed in my personal use is the Whisper API's sluggishness. A noticeable delay ensues between issuing a command and waiting for it to be transcribed, passed to GPT, and finally executing the script. However, I was able to reduce latency by about 50% using some [fine-tuning of the audio encoding settings used](https://maxrohde.com/2023/09/17/optimise-openai-whisper-api-sampling-rate-quality).
 
 Further, it's worth mentioning that GPT-4 isn't always successful in concocting accurate Autohotkey scripts. My experience suggests approximately a 90% success rate. However, I'm optimistic that further refining the prompt can heighten the accuracy rate.
 
-This tool been published as an [open source project](https://github.com/mxro/autohotkey-chatgpt-voice). I encourage you to contribute your observations or thoughts either by visiting the project or leaving a comment on this post.
+This tool has been published as an [open source project](https://github.com/mxro/autohotkey-chatgpt-voice). I encourage you to contribute your observations or thoughts either by visiting the project or leaving a comment on this post.
 
 
 

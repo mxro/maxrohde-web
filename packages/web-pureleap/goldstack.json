@@ -29,6 +29,10 @@
             "function_name": "pureleap-web-objecthub",
             "route": "ANY /objecthub"
           },
+          "ANY /recipes": {
+            "function_name": "pureleap-web-recipes",
+            "route": "ANY /recipes"
+          },
           "ANY /robots.txt": {
             "function_name": "pureleap-web-robots_txt",
             "route": "ANY /robots.txt"
@@ -77,6 +81,10 @@
           "ANY /objecthub": {
             "function_name": "pureleap-web-prod-objecthub",
             "route": "ANY /objecthub"
+          },
+          "ANY /recipes": {
+            "function_name": "pureleap-web-prod-recipes",
+            "route": "ANY /recipes"
           },
           "ANY /robots.txt": {
             "function_name": "pureleap-web-prod-robots_txt",
