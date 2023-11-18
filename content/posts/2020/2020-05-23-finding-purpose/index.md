@@ -32,7 +32,7 @@ I think we need to approach questions of purpose, meaning and morality from a di
 
 There lies opportunity in this, since we now have the power to choose our own purpose. However there also lies potential peril: even if we restrict ourselves to purposes in alignment with scientific knowledge, there are still infinite possibilities of purposes we may choose. If we end up choosing one purpose for ourselves, we would be faced with the inevitable admission that this choice was arbitrary.
 
-\> What does it mean to be human unchained from a central metaphysical purpose? Does a vacuum of meaning occur? If so, what is to fill that vacuum? If the life to come is abolished, ultimate meaning rests in the here and now. Given the power to live without religion, man must take responsibility for his own actions.
+> What does it mean to be human unchained from a central metaphysical purpose? Does a vacuum of meaning occur? If so, what is to fill that vacuum? If the life to come is abolished, ultimate meaning rests in the here and now. Given the power to live without religion, man must take responsibility for his own actions.
 
 [Sue Prideaux - I am Dynamite!](https://www.goodreads.com/review/show/3352769348)
 
@@ -52,13 +52,13 @@ I think most would agree that the second set feels more good and wholesome. I th
 
 Firstly, we are born to empathise and and be altruistic; or as Adam Smith puts is:
 
-\> How selfish soever man may be supposed, there are evidently some principles in his nature, which interest him in the fortune of others, and render their happiness necessary to him, though he derives nothing from it except the pleasure of seeing it.
+> How selfish soever man may be supposed, there are evidently some principles in his nature, which interest him in the fortune of others, and render their happiness necessary to him, though he derives nothing from it except the pleasure of seeing it.
 
 Thus benefiting others feels right to us. When others suffer, we suffer. When others feel joy, we feel joy.
 
 Secondly, we have a natural ability to perceive and appreciate beauty.
 
-\> He looked around, as if he was seeing the world for the first time. Beautiful was the world, colourful was the world, strange and mysterious was the world! Here was blue, here was yellow, here was green, the sky and the river flowed, the forest and the mountains were rigid, all of it was beautiful, all of it was mysterious and magical, and in its midst was he, Siddhartha, the awakening one, on the path to himself.
+> He looked around, as if he was seeing the world for the first time. Beautiful was the world, colourful was the world, strange and mysterious was the world! Here was blue, here was yellow, here was green, the sky and the river flowed, the forest and the mountains were rigid, all of it was beautiful, all of it was mysterious and magical, and in its midst was he, Siddhartha, the awakening one, on the path to himself.
 
 [Herman Hesse - Siddhartha](https://www.goodreads.com/book/show/52036.Siddhartha)
 
@@ -66,7 +66,7 @@ We do not just see and experience things, we imbue them with meaning. That what 
 
 Lastly, we have the ability to perceive a higher, abstract force such as a god, the connectedness of all things or universal love (see also [Touch Heaven](https://maxrohde.com/2019/11/16/touch-heaven/)).
 
-\> In anguish and desperation, I reached out as I had many times before to the presence I call the Beloved. This unconditionally loving and wakeful awareness had always been a refuge for me.
+> In anguish and desperation, I reached out as I had many times before to the presence I call the Beloved. This unconditionally loving and wakeful awareness had always been a refuge for me.
 
 [Tara Brach - Radical Acceptance](https://www.goodreads.com/book/show/173666.Radical_Acceptance)
 

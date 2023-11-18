@@ -57,7 +57,9 @@ DATABASE_URL=postgres://postgres:password@localhost:5432/keystone &amp;&amp; yar
 
 Unfortunately, loading the AdminUI then resulted in the following error:
 
-\> GraphQL error: select count(\*) from "public"."Todo" as "t0" where true - relation "public.Todo" does not exist
+```
+GraphQL error: select count(\*) from "public"."Todo" as "t0" where true - relation "public.Todo" does not exist
+```
 
 There appears to be an open issue for this already: [Trouble running starter](https://github.com/keystonejs/keystone/issues/2159)
 
