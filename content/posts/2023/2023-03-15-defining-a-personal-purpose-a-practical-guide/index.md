@@ -1,5 +1,5 @@
 ---
-title: 'Defining a Personal Purpose: A Practical Guide with Five Questions'
+title: 'Defining a Personal Purpose: A Practical Guide with Four Questions'
 publish: true
 coverImage: 'pexels-andre-furtado-2916820.jpg'
 id: 'defining-a-personal-purpose-a-practical-guide'
@@ -114,7 +114,7 @@ For a more in-depth discussion of aspirations versus objectives, see [Tiny Habit
 
 Note that it is easy to mistake behaviours for aspirations and vice averse. Aspirations should describe future states we want to achieve. Behaviours are concrete ways of doing things we can directly employ in our every day life.
 
-After having defined an initial set of answers for each of these questions, it is important to look at them as a whole and to ensure that the answers are coherent: our answers should not contradict but ideally completed each other. For instance, we should not seek to adopt a behaviour that is not in line with our values. Instead, our values should inform our behaviours and aspirations.
+After having defined an initial set of answers for each of these questions, it is important to look at them as a whole and to ensure that the answers are coherent: our answers should not contradict but ideally complement each other. For instance, we should not seek to adopt a behaviour that is not in line with our values. Instead, our values should inform our behaviours and aspirations.
 
 See some examples below of answers to the questions that align with each other:
 
@@ -124,4 +124,4 @@ See some examples below of answers to the questions that align with each other:
 | Success       | Respected professional | Keep abreast of latest trends | Present at a conference |
 | Enlightenment | A wise teacher         | Meditate                      | Attend a meditation retreat                        |
 
-I have been on a quest to defining a purpose for myself for a long time, and I am certain that I have not reached the end of my journey. I found the five questions proposed here very useful in providing some guidance for defining a purpose. Often if someone creates a purpose statement, these are often answers to these questions in varying degrees; however, to look at the questions independently and then trying to create coherence between our answers is, I believe, an effective way to guide us in defining a purpose.  
+I have been on a quest to defining a purpose for myself for a long time, and I am certain that I have not reached the end of my journey. I found the four questions proposed here very useful in providing some guidance for defining a purpose. Often if someone creates a purpose statement, these are often answers to these questions in varying degrees; however, to look at the questions independently and then trying to create coherence between our answers is, I believe, an effective way to guide us in defining a purpose.  
