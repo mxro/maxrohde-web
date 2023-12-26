@@ -79,7 +79,7 @@ const buildConfig = (): BuildConfiguration => {
         minify: true,
         platform: 'node',
         format: 'cjs',
-        target: 'node16.0',
+        target: 'node18.0',
         treeShaking: true,
         define: {
           'process.env.NODE_ENV': '"production"',

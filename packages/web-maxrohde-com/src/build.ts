@@ -81,7 +81,7 @@ const buildConfig = (): BuildConfiguration => {
         platform: 'node',
         format: 'cjs',
         loader: { '.svg': 'dataurl' },
-        target: 'node16.0',
+        target: 'node18.0',
         treeShaking: true,
         define: {
           'process.env.NODE_ENV': '"production"',
