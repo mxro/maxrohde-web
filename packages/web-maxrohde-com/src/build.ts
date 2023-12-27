@@ -75,13 +75,13 @@ const buildConfig = (): BuildConfiguration => {
         ],
         bundle: true,
         external: [
-          'aws-sdk', // included in Lambda runtime environment
+          // 'aws-sdk', // included in Lambda runtime environment
         ],
         minify: true,
         platform: 'node',
         format: 'cjs',
         loader: { '.svg': 'dataurl' },
-        target: 'node16.0',
+        target: 'node18.0',
         treeShaking: true,
         define: {
           'process.env.NODE_ENV': '"production"',

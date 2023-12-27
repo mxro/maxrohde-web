@@ -44,7 +44,8 @@
       },
       "awsUser": "awsUser",
       "awsRegion": "us-west-2",
-      "tfStateKey": "web-shalveena-com-dev-749a72e66e0a830ee2f7.tfstate"
+      "tfStateKey": "web-shalveena-com-dev-749a72e66e0a830ee2f7.tfstate",
+      "tfVersion": "1.6"
     },
     {
       "name": "prod",
@@ -85,7 +86,8 @@
       },
       "awsUser": "awsUser",
       "awsRegion": "us-west-2",
-      "tfStateKey": "web-shalveena-com-prod-0339ffeade61fc1cdfa8.tfstate"
+      "tfStateKey": "web-shalveena-com-prod-0339ffeade61fc1cdfa8.tfstate",
+      "tfVersion": "1.6"
     }
   ]
 }
