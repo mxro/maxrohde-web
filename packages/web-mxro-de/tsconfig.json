@@ -3,19 +3,24 @@
   "include": [
     "./src/**/*",
     "./src/**/*.json",
+    "./schemas/**/*.json",
+    "./scripts/**/*",
+    "./goldstack.json",
     "./next-env.d.ts"
   ],
   "compilerOptions": {
     "outDir": "dist",
     "baseUrl": ".",
     "jsx": "preserve",
-    "incremental": true,
     "module": "esnext",
-    "noEmit":false,
+    "incremental": true,
+    "noEmit": false,
     "moduleResolution": "node",
     "isolatedModules": true
   },
   "exclude": [
     "node_modules"
+  ],
+  "references": [
   ]
 }

@@ -2627,6 +2627,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-darwin-arm64@npm:1.3.101":
+  version: 1.3.101
+  resolution: "@swc/core-darwin-arm64@npm:1.3.101"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@swc/core-darwin-x64@npm:1.2.218":
   version: 1.2.218
   resolution: "@swc/core-darwin-x64@npm:1.2.218"
@@ -2637,6 +2644,13 @@ __metadata:
 "@swc/core-darwin-x64@npm:1.2.224":
   version: 1.2.224
   resolution: "@swc/core-darwin-x64@npm:1.2.224"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core-darwin-x64@npm:1.3.101":
+  version: 1.3.101
+  resolution: "@swc/core-darwin-x64@npm:1.3.101"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
@@ -2673,6 +2687,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-linux-arm-gnueabihf@npm:1.3.101":
+  version: 1.3.101
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.3.101"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
 "@swc/core-linux-arm64-gnu@npm:1.2.218":
   version: 1.2.218
   resolution: "@swc/core-linux-arm64-gnu@npm:1.2.218"
@@ -2683,6 +2704,13 @@ __metadata:
 "@swc/core-linux-arm64-gnu@npm:1.2.224":
   version: 1.2.224
   resolution: "@swc/core-linux-arm64-gnu@npm:1.2.224"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-arm64-gnu@npm:1.3.101":
+  version: 1.3.101
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.3.101"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
@@ -2701,6 +2729,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-linux-arm64-musl@npm:1.3.101":
+  version: 1.3.101
+  resolution: "@swc/core-linux-arm64-musl@npm:1.3.101"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
 "@swc/core-linux-x64-gnu@npm:1.2.218":
   version: 1.2.218
   resolution: "@swc/core-linux-x64-gnu@npm:1.2.218"
@@ -2715,6 +2750,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-linux-x64-gnu@npm:1.3.101":
+  version: 1.3.101
+  resolution: "@swc/core-linux-x64-gnu@npm:1.3.101"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
 "@swc/core-linux-x64-musl@npm:1.2.218":
   version: 1.2.218
   resolution: "@swc/core-linux-x64-musl@npm:1.2.218"
@@ -2725,6 +2767,13 @@ __metadata:
 "@swc/core-linux-x64-musl@npm:1.2.224":
   version: 1.2.224
   resolution: "@swc/core-linux-x64-musl@npm:1.2.224"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@swc/core-linux-x64-musl@npm:1.3.101":
+  version: 1.3.101
+  resolution: "@swc/core-linux-x64-musl@npm:1.3.101"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
@@ -2745,6 +2794,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-win32-arm64-msvc@npm:1.3.101":
+  version: 1.3.101
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.3.101"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@swc/core-win32-ia32-msvc@npm:1.2.218":
   version: 1.2.218
   resolution: "@swc/core-win32-ia32-msvc@npm:1.2.218"
@@ -2761,6 +2817,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core-win32-ia32-msvc@npm:1.3.101":
+  version: 1.3.101
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.3.101"
+  conditions: os=win32 & cpu=ia32
+  languageName: node
+  linkType: hard
+
 "@swc/core-win32-x64-msvc@npm:1.2.218":
   version: 1.2.218
   resolution: "@swc/core-win32-x64-msvc@npm:1.2.218"
@@ -2771,6 +2834,13 @@ __metadata:
 "@swc/core-win32-x64-msvc@npm:1.2.224":
   version: 1.2.224
   resolution: "@swc/core-win32-x64-msvc@npm:1.2.224"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@swc/core-win32-x64-msvc@npm:1.3.101":
+  version: 1.3.101
+  resolution: "@swc/core-win32-x64-msvc@npm:1.3.101"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -2875,6 +2945,59 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@swc/core@npm:^1.3.74":
+  version: 1.3.101
+  resolution: "@swc/core@npm:1.3.101"
+  dependencies:
+    "@swc/core-darwin-arm64": 1.3.101
+    "@swc/core-darwin-x64": 1.3.101
+    "@swc/core-linux-arm-gnueabihf": 1.3.101
+    "@swc/core-linux-arm64-gnu": 1.3.101
+    "@swc/core-linux-arm64-musl": 1.3.101
+    "@swc/core-linux-x64-gnu": 1.3.101
+    "@swc/core-linux-x64-musl": 1.3.101
+    "@swc/core-win32-arm64-msvc": 1.3.101
+    "@swc/core-win32-ia32-msvc": 1.3.101
+    "@swc/core-win32-x64-msvc": 1.3.101
+    "@swc/counter": ^0.1.1
+    "@swc/types": ^0.1.5
+  peerDependencies:
+    "@swc/helpers": ^0.5.0
+  dependenciesMeta:
+    "@swc/core-darwin-arm64":
+      optional: true
+    "@swc/core-darwin-x64":
+      optional: true
+    "@swc/core-linux-arm-gnueabihf":
+      optional: true
+    "@swc/core-linux-arm64-gnu":
+      optional: true
+    "@swc/core-linux-arm64-musl":
+      optional: true
+    "@swc/core-linux-x64-gnu":
+      optional: true
+    "@swc/core-linux-x64-musl":
+      optional: true
+    "@swc/core-win32-arm64-msvc":
+      optional: true
+    "@swc/core-win32-ia32-msvc":
+      optional: true
+    "@swc/core-win32-x64-msvc":
+      optional: true
+  peerDependenciesMeta:
+    "@swc/helpers":
+      optional: true
+  checksum: d9db5cc3306dc48e3f9fda4597c702de99851156a904be1974d69684589b52c73918270dbef06568e2ba5f9efb17a92333b361a79d1e138fad19a386c0f8c2c1
+  languageName: node
+  linkType: hard
+
+"@swc/counter@npm:^0.1.1":
+  version: 0.1.2
+  resolution: "@swc/counter@npm:0.1.2"
+  checksum: 8427c594f1f0cf44b83885e9c8fe1e370c9db44ae96e07a37c117a6260ee97797d0709483efbcc244e77bac578690215f45b23254c4cd8a70fb25ddbb50bf33e
+  languageName: node
+  linkType: hard
+
 "@swc/helpers@npm:0.4.11":
   version: 0.4.11
   resolution: "@swc/helpers@npm:0.4.11"
@@ -2892,6 +3015,25 @@ __metadata:
   peerDependencies:
     "@swc/core": "*"
   checksum: c624cfcc9325a719fc7d811536011c4bde0c63c808827b47d7bbcc57621323146cb3891d8702fd01c1bebfc54a9148692f772af4db8e839eb2c6ccd7850fa5f5
+  languageName: node
+  linkType: hard
+
+"@swc/jest@npm:^0.2.27":
+  version: 0.2.29
+  resolution: "@swc/jest@npm:0.2.29"
+  dependencies:
+    "@jest/create-cache-key-function": ^27.4.2
+    jsonc-parser: ^3.2.0
+  peerDependencies:
+    "@swc/core": "*"
+  checksum: 9eaad322310f34e81f67d41411a7d60663341af1bd9fb65456faa914c936d849d6f643fa3b942a187d52e71e62c33097098c639d25c2047fa874f49bf51cec76
+  languageName: node
+  linkType: hard
+
+"@swc/types@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "@swc/types@npm:0.1.5"
+  checksum: 6aee11f62d3d805a64848e0bd5f0e0e615f958e327a9e1260056c368d7d28764d89e38bd8005a536c9bf18afbcd303edd84099d60df34a2975d62540f61df13b
   languageName: node
   linkType: hard
 
@@ -10628,6 +10770,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jsonc-parser@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "jsonc-parser@npm:3.2.0"
+  checksum: 946dd9a5f326b745aa326d48a7257e3f4a4b62c5e98ec8e49fa2bdd8d96cef7e6febf1399f5c7016114fd1f68a1c62c6138826d5d90bc650448e3cf0951c53c7
+  languageName: node
+  linkType: hard
+
 "jsonfile@npm:^6.0.1":
   version: 6.0.1
   resolution: "jsonfile@npm:6.0.1"
@@ -16466,6 +16615,8 @@ resolve@^1.20.0:
   dependencies:
     "@goldstack/template-nextjs": ^0.5.19
     "@goldstack/utils-sh": ^0.5.9
+    "@swc/core": ^1.3.74
+    "@swc/jest": ^0.2.27
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.3.0
     "@types/jest": ^29.5.0
@@ -16476,6 +16627,7 @@ resolve@^1.20.0:
     "@types/testing-library__react": ^10.2.0
     concurrently: ^7.3.0
     extracted-loader: ^1.0.7
+    file-loader: ^6.2.0
     ignore-loader: ^0.1.2
     jest: ^29.5.0
     jest-transform-stub: ^2.0.0
@@ -16489,6 +16641,7 @@ resolve@^1.20.0:
     react-dom: ^18.2.0
     react-is: ^18.2.0
     reload: ^3.1.0
+    rimraf: ^3.0.2
     swr: ^0.4.0
     ts-jest: ^29.0.5
     ts-node: ^10.9.1

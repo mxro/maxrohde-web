@@ -1,5 +1,5 @@
 resource "aws_iam_role" "lambda_exec" {
-  name               = "${var.website_domain}-edge"
+  name               = "${var.website_domain}-edge-new2"
   assume_role_policy = <<-EOF
   {
     "Version": "2012-10-17",
@@ -55,7 +55,7 @@ resource "aws_lambda_function" "edge" {
 # granted in the lambda_admin_role_attach above. But added here to make it easier to fine-tune permissions
 # in the above at a later point. 
 resource "aws_iam_policy" "lambda_logging" {
-  name        = "${var.website_domain}-edge-lambda-logging-role"
+  name        = "${var.website_domain}-edge-lambda-logging-role-new2"
   path        = "/"
   description = "IAM policy for logging from a lambda"
 
