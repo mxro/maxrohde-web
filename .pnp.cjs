@@ -19228,6 +19228,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["file-loader", "virtual:a448ba69c2b9eca8e89ba7cb37f7bbbc365991426a9d33abba0e35ac5f4e51ae0c8ef841e5d513410c5dbe882dc42213f27f42dd35615700a9ac31d8e39b1209#npm:6.2.0"],\
             ["ignore-loader", "npm:0.1.2"],\
             ["jest", "virtual:7d42466ae6c78580bd9c1e87d13d7ab3ede0127954e482b418663c43b56e1ab487e2b687b40b6aff4fc8c62c5c2760ae3b712417fcad70a07fb1035aa316eb17#npm:29.5.0"],\
+            ["jest-environment-jsdom", "npm:28.1.3"],\
             ["jest-transform-stub", "npm:2.0.0"],\
             ["next", "virtual:a448ba69c2b9eca8e89ba7cb37f7bbbc365991426a9d33abba0e35ac5f4e51ae0c8ef841e5d513410c5dbe882dc42213f27f42dd35615700a9ac31d8e39b1209#npm:12.3.0"],\
             ["next-compose-plugins", "npm:2.2.1"],\
