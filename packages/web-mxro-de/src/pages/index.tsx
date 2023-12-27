@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import Head from 'next/head';
 
-import RoseBushes from '.../img/looking_at_the_rose_bushes.jpg';
+import RoseBushes from '../img/looking_at_the_rose_bushes.jpg';
 
 const HomePage = (): JSX.Element => {
   return (
