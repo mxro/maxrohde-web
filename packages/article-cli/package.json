@@ -25,6 +25,8 @@
     "marked": "^4.0.18"
   },
   "devDependencies": {
+    "@swc/core": "^1.2.224",
+    "@swc/jest": "^0.2.22",
     "@types/fs-extra": "^9.0.13",
     "@types/html-to-text": "^9",
     "@types/jest": "^29.5.0",

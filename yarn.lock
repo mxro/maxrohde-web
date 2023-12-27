@@ -4424,6 +4424,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "article-cli@workspace:packages/article-cli"
   dependencies:
+    "@swc/core": ^1.2.224
+    "@swc/jest": ^0.2.22
     "@types/fs-extra": ^9.0.13
     "@types/html-to-text": ^9
     "@types/jest": ^29.5.0
@@ -5969,6 +5971,8 @@ __metadata:
     "@goldstack/template-dynamodb": ^0.2.24
     "@goldstack/template-dynamodb-cli": ^0.5.25
     "@goldstack/utils-sh": ^0.5.9
+    "@swc/core": ^1.2.224
+    "@swc/jest": ^0.2.22
     "@types/ejs": ^3
     "@types/jest": ^29.5.0
     "@types/node": ^18.15.10
@@ -6581,6 +6585,8 @@ __metadata:
   resolution: "dynamodb-blog@workspace:packages/dynamodb-blog"
   dependencies:
     "@goldstack/template-ssr": ^0.3.25
+    "@swc/core": ^1.2.224
+    "@swc/jest": ^0.2.22
     "@types/aws-lambda": ^8.10.125
     "@types/jest": ^29.5.0
     "@types/node": ^18.15.10
@@ -6665,6 +6671,8 @@ __metadata:
     "@goldstack/template-email-send-cli": ^0.5.15
     "@goldstack/utils-git": ^0.2.9
     "@goldstack/utils-sh": ^0.5.9
+    "@swc/core": ^1.2.224
+    "@swc/jest": ^0.2.22
     "@types/jest": ^29.5.0
     "@types/node": ^18.15.10
     aws-sdk: 2.1525.0

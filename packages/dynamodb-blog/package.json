@@ -8,6 +8,8 @@
     "db-blog": "workspace:^"
   },
   "devDependencies": {
+    "@swc/core": "^1.2.224",
+    "@swc/jest": "^0.2.22",
     "@types/aws-lambda": "^8.10.125",
     "@types/jest": "^29.5.0",
     "@types/node": "^18.15.10",

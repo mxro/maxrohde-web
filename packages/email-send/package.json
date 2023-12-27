@@ -28,6 +28,8 @@
   },
   "devDependencies": {
     "@goldstack/template-email-send-cli": "^0.5.15",
+    "@swc/core": "^1.2.224",
+    "@swc/jest": "^0.2.22",
     "@types/jest": "^29.5.0",
     "@types/node": "^18.15.10",
     "aws-sdk": "2.1525.0",
