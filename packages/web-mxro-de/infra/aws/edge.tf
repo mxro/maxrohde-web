@@ -1,5 +1,5 @@
 resource "aws_iam_role" "lambda_exec" {
-  name               = "${var.website_domain}-edge-new"
+  name               = "${var.website_domain}-edge-new2"
   assume_role_policy = <<-EOF
   {
     "Version": "2012-10-17",
@@ -19,14 +19,6 @@ resource "aws_iam_role" "lambda_exec" {
   }
   EOF
 
-  # tags = {
-  #   ManagedBy = "terraform"
-  #   Changed   = formatdate("YYYY-MM-DD hh:mm ZZZ", timestamp())
-  # }
-
-  # lifecycle {
-  #   ignore_changes = [tags]
-  # }
 }
 
 data "archive_file" "empty_lambda" {
@@ -41,7 +33,7 @@ data "archive_file" "empty_lambda" {
 
 resource "aws_lambda_function" "edge" {
   provider         = aws.us-east-1
-  function_name    =  "${replace(var.website_domain, ".", "-")}-edge-new"
+  function_name    =  "${replace(var.website_domain, ".", "-")}-edge"
   description      = "Edge Lambda for CloudFront Routing"
   filename         = data.archive_file.empty_lambda.output_path
   handler          = "lambda.handler"
@@ -63,7 +55,7 @@ resource "aws_lambda_function" "edge" {
 # granted in the lambda_admin_role_attach above. But added here to make it easier to fine-tune permissions
 # in the above at a later point. 
 resource "aws_iam_policy" "lambda_logging" {
-  name        = "${var.website_domain}-edge-lambda-logging-role-new"
+  name        = "${var.website_domain}-edge-lambda-logging-role-new2"
   path        = "/"
   description = "IAM policy for logging from a lambda"
 

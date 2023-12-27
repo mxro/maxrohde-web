@@ -2,3 +2,4 @@
 webDist/
 out/
 .env.production
+lambda.zip
