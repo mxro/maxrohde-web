@@ -44,7 +44,8 @@
       },
       "awsUser": "awsUser",
       "awsRegion": "us-west-2",
-      "tfStateKey": "server-side-rendering-dev-946fcb843ad1d06f7e18.tfstate"
+      "tfStateKey": "server-side-rendering-dev-946fcb843ad1d06f7e18.tfstate",
+      "tfVersion": "1.6"
     },
     {
       "name": "prod",
@@ -85,7 +86,8 @@
       },
       "awsUser": "awsUser",
       "awsRegion": "us-west-2",
-      "tfStateKey": "server-side-rendering-prod-9241dfab78652931e675.tfstate"
+      "tfStateKey": "server-side-rendering-prod-9241dfab78652931e675.tfstate",
+      "tfVersion": "1.6"
     }
   ]
 }

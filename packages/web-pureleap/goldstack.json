@@ -56,7 +56,8 @@
       },
       "awsUser": "awsUser",
       "awsRegion": "ap-southeast-2",
-      "tfStateKey": "web-pureleap-dev-3348d36abfb49cd4d858.tfstate"
+      "tfStateKey": "web-pureleap-dev-3348d36abfb49cd4d858.tfstate",
+      "tfVersion": "1.6"
     },
     {
       "name": "prod",
@@ -109,7 +110,8 @@
       },
       "awsUser": "awsUser",
       "awsRegion": "us-west-2",
-      "tfStateKey": "web-pureleap-prod-c33db84b5eee3daf4d9a.tfstate"
+      "tfStateKey": "web-pureleap-prod-c33db84b5eee3daf4d9a.tfstate",
+      "tfVersion": "1.6"
     }
   ]
 }

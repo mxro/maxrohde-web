@@ -75,7 +75,7 @@ const buildConfig = (): BuildConfiguration => {
         ],
         bundle: true,
         external: [
-          'aws-sdk', // included in Lambda runtime environment
+          // 'aws-sdk', // included in Lambda runtime environment
         ],
         minify: true,
         platform: 'node',
