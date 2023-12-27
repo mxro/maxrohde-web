@@ -15,7 +15,7 @@
       },
       "awsUser": "awsUser",
       "awsRegion": "us-west-2",
-      "tfVersion": "0.14",
+      "tfVersion": "1.0",
       "tfStateKey": "app-nextjs-bootstrap-prod-7579fe68c41ee63b85bd.tfstate"
     }
   ]
