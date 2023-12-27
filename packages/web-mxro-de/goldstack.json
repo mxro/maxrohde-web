@@ -14,7 +14,8 @@
         "websiteDomainRedirect": "www.mxro.de"
       },
       "awsUser": "awsUser",
-      "awsRegion": "us-west-2"
+      "awsRegion": "us-west-2",
+      "tfStateKey": "app-nextjs-bootstrap-prod-e5f386ebc8cc756a864e.tfstate"
     }
   ]
 }
