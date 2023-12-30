@@ -25,17 +25,17 @@ title: The Ultimate Guide to TypeScript Monorepos
 
 I've written a couple of posts about how to set up JavaScript and TypeScript Monorepos over the past three years ([#1](https://maxrohde.com/2018/12/19/mastering-modular-javascript/), [#2](https://maxrohde.com/2018/12/24/graphql-apollo-starter-kit-lerna-node-js/), [#3](https://maxrohde.com/2018/12/27/graphql-node-js-and-react-monorepo-starter-kit/), [#4](https://maxrohde.com/2019/06/02/setting-up-continuous-deployment-with-lerna-and-buildkite/), [#5](https://maxrohde.com/2020/02/18/knex-and-typescript-starter-project/), [#6](https://maxrohde.com/2021/05/01/lambda-go-starter-project/), [#7](https://maxrohde.com/2021/10/01/typescript-monorepo-with-yarn-and-project-references/)), and I kind of thought I had it all figured out - but I didn't.
 
-It turned out that for various reasons it is fiendlishly difficult to develop a JavaScript/TypeScript project that is broken up into multiple independent modules. To make this easier, I even created a little website, [Goldstack](https://goldstack.party), that generates modular starter projects.
+It turned out that for various reasons it is fiendishly difficult to develop a JavaScript/TypeScript project that is broken up into multiple independent modules. To make this easier, I even created a little website, [Goldstack](https://goldstack.party), that generates modular starter projects.
 
-However, I have always been somewhat unsatisifed with my solutions - with them often involving clumsy workarounds and issues that would prevent them to scale up to larger projects. Now I believe I have finally arrived at a solution that has minimal remaining workarounds and works well for smaller and larger projects.
+However, I have always been somewhat unsatisfied with my solutions - with them often involving clumsy workarounds and issues that would prevent them to scale up to larger projects. Now I believe I have finally arrived at a solution that has minimal remaining workarounds and works well for smaller and larger projects.
 
 This solution includes:
 
-- [Yarn 2 workspaces](https://yarnpkg.com/features/workspaces) for package management
+- [Yarn 4 workspaces](https://yarnpkg.com/features/workspaces) for package management
 - TypeScript [project references](https://www.typescriptlang.org/docs/handbook/project-references.html) for inter-module dependencies
 - [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) for linting and formatting
 - [Jest](https://jestjs.io/) for unit testing
-- [Webpack](https://webpack.js.org/) and [ESBuild](https://esbuild.github.io/getting-started/) for bundling
+- [ESBuild](https://esbuild.github.io/getting-started/) for bundling
 - [React](https://reactjs.org/)/[Next.js](https://nextjs.org/) for UI development
 - [AWS Lambda](https://aws.amazon.com/lambda/) for backend development
 - [Custom tools](https://github.com/goldstack/goldstack/tree/master/workspaces/templates-lib#goldstack-template-framework) based on [Terraform](https://www.terraform.io/) for infrastructure and deployment
@@ -44,14 +44,14 @@ In this guide, I will briefly go through the challenges and solutions for each o
 
 ## tl;dr
 
-If you just want to get started with an already fully configured TypeScript monorepo for your convienience, consider using one of the open-source templates on [https://goldstack.party/](https://goldstack.party/).
+If you just want to get started with an already fully configured TypeScript monorepo for your convenience, consider using one of the open-source templates on [https://goldstack.party/](https://goldstack.party/).
 
 ## Why Monorepo
 
 Before we go into the implementation, I briefly want to give a few situations when a monorepo may be a good choice for setting up a project:
 
 - **For Fullstack Applications**: When developing frontend and backend code in the same repository, it becomes easier to create end-to-end integration tests as well as allows defining and using types across the frontend and backend. For more sophisticated use cases, it can also be useful to be able to reuse the same logic on frontend and backend, for instance for validation.
-- **For Large Applications**: Being able to divide these larger applications into multiple packages increases modularity and can help reduce complexity. Complexity is reduced chiefly by enforcing a hierarchical dependendcy pattern between modules (npm dependencies cannot be circular) - as opposed to the every file can import any other file free-for-all of a normal JavaScript project.
+- **For Large Applications**: Being able to divide these larger applications into multiple packages increases modularity and can help reduce complexity. Complexity is reduced chiefly by enforcing a hierarchical dependency pattern between modules (npm dependencies cannot be circular) - as opposed to the every file can import any other file free-for-all of a normal JavaScript project.
 - **For Serverless Applications**: While traditional applications can be bundled up and deployed in one big package that contains all application logic, serverless applications are often deployed as many independent components, for instance as serverless functions. This deployment pattern lends itself well to monorepos, since each independently deployed component can live in its own package while still making it easy to share code between components.
 
 ## Yarn 2 Workspaces
@@ -70,7 +70,7 @@ packages/
 
 Yarn enables to run a simple `yarn add [localPackageName]` that will add one local package as the dependency of another.
 
-In addition to this, Yarn 2 ('Berry') gets rid of the dreaded `node_modules` folder that is conventially used in Node.js to save dependencies locally. Instead, every dependency used by any of the local packages is stored as a zip file in a special `.yarn/cache` folder.
+In addition to this, Yarn 2 ('Berry') gets rid of the dreaded `node_modules` folder that is conventionally used in Node.js to save dependencies locally. Instead, every dependency used by any of the local packages is stored as a zip file in a special `.yarn/cache` folder.
 
 [![Dependencies cached by Yarn as zip files](https://nexnet.files.wordpress.com/2021/11/yarn_cache.png?w=426)](https://nexnet.files.wordpress.com/2021/11/yarn_cache.png)
 
@@ -123,7 +123,7 @@ tsc --build
 
 This default setup generally works very well. However, for larger projects, code editors like VSCode may run into performance problems. If that is the case, also enable the option [disableSourceOfProjectReferenceRedirect](https://www.typescriptlang.org/tsconfig#disableSourceOfProjectReferenceRedirect) which will prevent the code editor from constantly recompiling dependent modules. Note though that when enabling this option you will need to ensure that TypeScript files are recompiled when they are changed (e.g. by running the TypeScript compiler in watch mode).
 
-The main issue remaing with respect to TypeScript project references is that these need to manually maintained. When using Yarn workspaces, it is easy to infer what the local references should be, however, TypeScript does not do so by default. For this, I wrote a little tool that keeps the TypeScript project references in sync with Yarn workspace dependencies: [Update TypeScript Project References for Yarn Workspaces – magically!](https://maxrohde.com/2021/10/30/update-typescript-project-references-for-yarn-workspaces-magically/)
+The main issue remaining with respect to TypeScript project references is that these need to manually maintained. When using Yarn workspaces, it is easy to infer what the local references should be, however, TypeScript does not do so by default. For this, I wrote a little tool that keeps the TypeScript project references in sync with Yarn workspace dependencies: [Update TypeScript Project References for Yarn Workspaces – magically!](https://maxrohde.com/2021/10/30/update-typescript-project-references-for-yarn-workspaces-magically/)
 
 ## ESLint and Prettier
 
@@ -248,7 +248,7 @@ However, using Express.js makes it very easy to deploy and to develop locally, a
 
 ## Infrastructure and Deployment
 
-Most solutions presented so far for the JavaScript/TypeScript monorepo have taken advantage of common JavaScript tools, frameworks and libraries. Unfortunately, I was not able to find a framework that met my requirements for setting up infrastructure and deployment. Very important to me was being able to use [Terraform](https://www.terraform.io/), which I believe provides the most 'standard' way to define infrastructure as code. Almost any kind of infrastructure that can be deployed on any of the popular cloud platforms can be defined in Terraform, and there are plenty of examples and documentation available. Alternatives such as the [Serverless framework](https://www.serverless.com/) or [AWS SAM](https://aws.amazon.com/serverless/sam/) in comparison more lean towards being special purpose tools. [Pulumi](https://www.pulumi.com/product/) is also a great option but I am not yet convinced that the additional magic it provides on top of basic infrastructure definition (which is based on Terraform) is required over vanialla Terraform.
+Most solutions presented so far for the JavaScript/TypeScript monorepo have taken advantage of common JavaScript tools, frameworks and libraries. Unfortunately, I was not able to find a framework that met my requirements for setting up infrastructure and deployment. Very important to me was being able to use [Terraform](https://www.terraform.io/), which I believe provides the most 'standard' way to define infrastructure as code. Almost any kind of infrastructure that can be deployed on any of the popular cloud platforms can be defined in Terraform, and there are plenty of examples and documentation available. Alternatives such as the [Serverless framework](https://www.serverless.com/) or [AWS SAM](https://aws.amazon.com/serverless/sam/) in comparison more lean towards being special purpose tools. [Pulumi](https://www.pulumi.com/product/) is also a great option but I am not yet convinced that the additional magic it provides on top of basic infrastructure definition (which is based on Terraform) is required over vanilla Terraform.
 
 Given this, I implemented a collection of lightweight scripts that allow standing up infrastructure in AWS using Terraform and perform deployments using the [AWS CLI](https://aws.amazon.com/cli/) or [SDK](https://aws.amazon.com/tools/). For instance for deploying a lambda function, one can simply define a number of Terraform files (e.g. see [lambda.tf](https://github.com/goldstack/goldstack/blob/master/workspaces/templates/packages/lambda-express/infra/aws/lambda.tf#L12)).
 
