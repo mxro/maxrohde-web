@@ -22,7 +22,7 @@ Given these fundamental insights, we should pause before setting any goals. Why?
 
 Now, if anyone questions that goals can cause suffering, you probably haven't set yourself many goals. Let's go with a classic; the January gym membership. It first gives us a jolt of satisfaction as we sign the contract, but then quickly unleashes an epic struggle between our best intentions and life's realities, usually resulting in an abundance of guilt and self-loathing. Not to talk of the suffering we intermittently have to endure in the gym in the few times we do end up going!
 
-In contrast, the opposite of setting goals, aimlessness, in Buddhism is known as the [Third Door of Liberation](https://awaken.com/2021/10/what-are-the-three-doors-of-liberation/) - and who would not want to be liberated. To explore the merits of non-goal setting or aimlessness, one can try this simple exercise suggested by late Buddhist teacher Thich Nhat Hanh:
+In contrast, the opposite of setting goals, aimlessness, in Buddhism is known as the [Third Door of Liberation](https://awaken.com/2021/10/what-are-the-three-doors-of-liberation/) - which definitely has a nice sound to it. To explore the merits of non-goal setting or aimlessness, one can try this simple exercise suggested by late Buddhist teacher Thich Nhat Hanh:
 
 >Try practicing aimlessness for just five minutes, and you will see how happy you are during those five minutes.
 
@@ -30,7 +30,51 @@ In contrast, the opposite of setting goals, aimlessness, in Buddhism is known as
 
 If you find yourself agreeing with me at this point, you probably haven't thought this through. 
 
-We don't just arbitrarily set goals. We set goals, since doing so is deeply embedded in our culture, and our culture is deeply embedded in us. As a norther German, I should know, since I grew up near what can be described as the medieval epicentre of the movement that leads to today's self-improvement craze: the reformation and the resulting [protestant work ethic](https://en.wikipedia.org/wiki/The_Protestant_Ethic_and_the_Spirit_of_Capitalism). 
+We don't just arbitrarily set goals. We set goals, since doing so is deeply embedded in our culture, and our culture is deeply embedded in us. And, thus, the idea of not setting goals, should at least be mildly offensive.
+
+After all, without setting goals, how can we ever be _successful_?
+
+Without setting goals, aren't we wasting our lives by drifting rudderless through existence?
+
+Plus, isn't not setting goals not a goal in itself?
+
+Let's start with the idea of success. Climber and philosopher Francis Sanzaro relates the following story in the article [Moment to Moment](https://www.nytimes.com/2023/09/17/opinion/sports-zen-mental-subtraction.html):
+
+> A few years ago, I stood underneath a red overhanging cliff near my hometown, Carbondale, Colo. [...] I was attempting to do a route first try, “onsight,” as we call it, which means I didn’t know what I was climbing into. It would have been a hard onsight for me — to onsight hard climbs, you need clarity. No interference.
+> Just as I was about to climb, nerves in my body, which I hadn’t felt yet, said hello. That’s not good for any athlete.
+> Desperate, [...] I visualized myself at the top, celebrating.
+> It didn’t work. I fell near the top. Defeated, I lowered to the ground and realized [...] that the desire to climb the route had kept me from doing it.
+> [...]
+> On a whim, I told myself that on my next attempt, success or failure was irrelevant. “Make one move at a time. That’s all.” I gave myself a pass from whatever would transpire. Case closed.
+> It worked. I floated to the top with poise, clarity and bewilderment.
+
+Not an entirely new idea, as recounted in the following story provided by Anthony de Mello in [Awareness](https://www.goodreads.com/book/show/94318.Awareness):
+
+>There’s a lovely saying of Tranxu, a great Chinese sage [...]. It goes: “When the archer shoots for no particular prize, he has all his skills; when he shoots to win a brass buckle, he is already nervous; when he shoots for a gold prize, he goes blind, sees two targets, and is out of his mind. His skill has not changed, but the prize divides him. He cares! He thinks more of winning than of shooting, and the need to win drains him of power.”
+
+What both of these source suggest is that the more powerful our desire for achieving our goals, the more it hinders our potential. I don't think I agree a 100%, but if being successful is important to you, this is a perspective worth considerting.
+
+As for being rudderless, not being able to live our purpose and make an impact - what's the alternative? Do you really know where you are going, what good you will do and does it make you happy? I have written quite a few articles on [finding](https://maxrohde.com/2020/05/23/finding-purpose) and [defining](https://maxrohde.com/2023/03/15/defining-a-personal-purpose-a-practical-guide) a purpose and have been tinkering with this for a long time - mostly unsuccessful, I have to admit.
+
+Buddhist teacher Thich Nhat Hanh again has some thoughts on this for us:
+
+>To practice aimlessness is to identify what it is you’re looking for, waiting for, or running after, and let it go. By removing these objects of seeking that are pulling you away from the here and now, you will discover that everything you want is already right here in the present moment. You don’t need to “be someone” or do something in order to be happy and free.
+
+Lastly, isn't not setting goals a goal in itself? That's a tricky one, and indeed I think we can easily do some mental gymnastics to show that, "well, we do have goals after all, just better ones", to placate anyone who really doesn't want to let go of goals.
+
+However, I don't think that is in the
+
+
+
+- _To action alone hast thou a right and never at all to its fruits; let not the fruits of action be thy motive; neither let there be in thee any attachment to inaction_.  
+    — Verse 47, Chapter 2-Samkhya theory and Yoga practise, _The Bhagavadgita_[[19]](https://en.wikipedia.org/wiki/Nishkama_Karma#cite_note-19)[[20]](https://en.wikipedia.org/wiki/Nishkama_Karma#cite_note-20)
+
+
+Take instead whose teachings have been, delightfully, labelled 'dangerous' by the Catholic church a few years after his death.
+
+
+
+As a norther German, I should know, since I grew up near what can be described as the medieval epicentre of the movement that leads to today's self-improvement craze: the reformation and the resulting [protestant work ethic](https://en.wikipedia.org/wiki/The_Protestant_Ethic_and_the_Spirit_of_Capitalism). 
 
 The idea in the west for centuries has been that the gift of God's salvation should be repaid through hard work. 
 
