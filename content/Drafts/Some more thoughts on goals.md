@@ -10,9 +10,7 @@ Last year's instalment on the same topic arrived in March, where I suggested [A 
 
 Hold on tight, since this year's goal setting article has a rather scandalous message: **Don't set goals**!
 
-. . .
-
-Let me explain.
+## Why: Desire and Aimlessness
 
 I have spent a fair amount of time in the past years reading what I would call 'pop' Buddhism literature, and though they are certainly simplistic, I do think they managed to get the core message across to my simple mind: there is suffering (such as anxiety, fear, depression, pain, illness, and, the big one, death), suffering is caused by desire, letting go of desire is the way to contain suffering, and there are specific steps open to everyone to achieve just that.
 
@@ -26,17 +24,7 @@ In contrast, the opposite of setting goals, aimlessness, in Buddhism is known as
 
 >Try practicing aimlessness for just five minutes, and you will see how happy you are during those five minutes.
 
-. . .
-
-If you find yourself agreeing with me at this point, you probably haven't thought this through. 
-
-We don't just arbitrarily set goals. We set goals, since doing so is deeply embedded in our culture, and our culture is deeply embedded in us. And, thus, the idea of not setting goals, should at least be mildly offensive.
-
-After all, without setting goals, how can we ever be _successful_?
-
-Without setting goals, aren't we wasting our lives by drifting rudderless through existence?
-
-Plus, isn't not setting goals not a goal in itself?
+## Success
 
 Let's start with the idea of success. Climber and philosopher Francis Sanzaro relates the following story in the article [Moment to Moment](https://www.nytimes.com/2023/09/17/opinion/sports-zen-mental-subtraction.html):
 
@@ -52,9 +40,11 @@ Not an entirely new idea, as recounted in the following story provided by Anthon
 
 >There’s a lovely saying of Tranxu, a great Chinese sage [...]. It goes: “When the archer shoots for no particular prize, he has all his skills; when he shoots to win a brass buckle, he is already nervous; when he shoots for a gold prize, he goes blind, sees two targets, and is out of his mind. His skill has not changed, but the prize divides him. He cares! He thinks more of winning than of shooting, and the need to win drains him of power.”
 
-What both of these source suggest is that the more powerful our desire for achieving our goals, the more it hinders our potential. I don't think I agree a 100%, but if being successful is important to you, this is a perspective worth considerting.
+What both of these source suggest is that the more powerful our desire for achieving our goals, the more it hinders our potential. I don't think I agree 100%, but if being successful is important to you, this is a perspective worth considering.
 
-As for being rudderless, not being able to live our purpose and make an impact - what's the alternative? Do you really know where you are going, what good you will do and does it make you happy? I have written quite a few articles on [finding](https://maxrohde.com/2020/05/23/finding-purpose) and [defining](https://maxrohde.com/2023/03/15/defining-a-personal-purpose-a-practical-guide) a purpose and have been tinkering with this for a long time - mostly unsuccessful, I have to admit.
+## Direction
+
+As for being rudderless, not being able to live our purpose and make an impact - what's the alternative? Do you really know where you are going, what good you will do and does it make you happy? I have written quite a few articles on [finding](https://maxrohde.com/2020/05/23/finding-purpose) and [defining](https://maxrohde.com/2023/03/15/defining-a-personal-purpose-a-practical-guide) a purpose and have been tinkering with this for a long time - mostly unsuccessfully, I have to admit.
 
 Buddhist teacher Thich Nhat Hanh again has some thoughts on this for us:
 
@@ -62,12 +52,39 @@ Buddhist teacher Thich Nhat Hanh again has some thoughts on this for us:
 
 Lastly, isn't not setting goals a goal in itself? That's a tricky one, and indeed I think we can easily do some mental gymnastics to show that, "well, we do have goals after all, just better ones", to placate anyone who really doesn't want to let go of goals.
 
-However, I don't think that is in the
+There is a bit of a paradox here for sure, and one that I don't think can be fully resolved. 
+
+The best way to look at it is I think to separate goals from [intentions](https://dharmawisdom.org/the-hearts-intention/) and preferences.
+
+Intentions - in the sense of Right Intentions from Buddhist teachings, not the dictionary definition of intentions - are different from goals in that they are not directed at future outcomes but rather at how we want to be in the here and now. 'Being aimless' would be an example for an intention.
+
+Preferences are an expression of our personal likes and dislikes. Formalised, they can also act as a guide to provide us with direction. Again, we could say we _prefer_ to be aimless rather than to pursue goals. However, in contrast to goals, achieving these preferences is not linked to personal satisfaction.
+
+## Action
+
+The key in all this is to combat the key evil identified in the Buddhist teachings: desire. However, while desire is undoubtedly a driver for action, having no desire, doesn't mean to act. Indeed, this is a key theme of the ancient Hindu text _The Bhagavadgita_ - how to act without desire:
+
+> _To action alone hast thou a right and never at all to its fruits; let not the fruits of action be thy motive; neither let there be in thee any attachment to inaction_.
+
+— Verse 47, Chapter 2
 
 
 
-- _To action alone hast thou a right and never at all to its fruits; let not the fruits of action be thy motive; neither let there be in thee any attachment to inaction_.  
-    — Verse 47, Chapter 2-Samkhya theory and Yoga practise, _The Bhagavadgita_[[19]](https://en.wikipedia.org/wiki/Nishkama_Karma#cite_note-19)[[20]](https://en.wikipedia.org/wiki/Nishkama_Karma#cite_note-20)
+If you find yourself agreeing with me at this point, you probably haven't thought this through. 
+
+After all, without setting goals, how can we ever be _successful_?
+
+Without setting goals, aren't we wasting our lives by drifting rudderless through existence?
+
+Plus, isn't not setting goals not a goal in itself?
+
+We don't just arbitrarily set goals. We set goals, since doing so is deeply embedded in our culture, and our culture is deeply embedded in us. And, thus, the idea of not setting goals, should at least be mildly offensive.
+
+Let's turn to some more ancient wisdom to unravel
+
+
+-   
+    -Samkhya theory and Yoga practise, _The Bhagavadgita_[[19]](https://en.wikipedia.org/wiki/Nishkama_Karma#cite_note-19)[[20]](https://en.wikipedia.org/wiki/Nishkama_Karma#cite_note-20)
 
 
 Take instead whose teachings have been, delightfully, labelled 'dangerous' by the Catholic church a few years after his death.
