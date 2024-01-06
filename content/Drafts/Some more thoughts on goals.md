@@ -1,5 +1,25 @@
 
 
+Nishkama Karma, self-less or desireless action, is an action performed without any expectation of fruits or results, and the central tenet of Karma Yoga path to liberation.
+
+> You’ve got to make sure of your “being” before you swing into action.
+
+> To practice aimlessness doesn’t mean that we don’t have a dream or aspiration. It means to stay in touch with the ultimate dimension in the present moment, so we can realize our dreams with joy, ease, and freedom.
+
+Thich Nhat Hanh
+
+
+> Aimlessness does not mean doing nothing. It means not putting something in front of you to chase after. When we remove the objects of our craving and desires, we discover that happiness and freedom are available to us right here in the present moment.
+
+Thich Nhat Hanh
+
+> “Our plans miscarry because they have no aim. When a man does not know what harbor he is making for, no wind is the right wind.”
+
+— Seneca
+
+
+---
+
 Anyone noticed a change in the targeted advertising courteously delivered to us at every opportunity to our tiny screens? Got a few more recommendations for weight loss programs, exercise programs, gym memberships or donations?
 
 I certainly did and not by accident! Since any self respecting marketing manager for the industries involved in helping us be more virtuous or just altogether a better me, will ensure the bulk of their budget is spend in the fortuitous months of December and January: New Year's resolution time!
