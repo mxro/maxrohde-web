@@ -5,7 +5,7 @@ coverImage: 'sand-84589_1280.jpg'
 id: 'mock-s3-for-aws-sdk-v3'
 blog: 'maxrohde.com'
 date: 2024-01-20
-summary: 
+summary: Provides an npm package with a local file-based mock for S3 in the AWS JavaScript SDK (v3).
 authors:
   - max
 tags:
@@ -20,7 +20,7 @@ It has been a few years now since AWS [upgraded their official JavaScript SDK to
 
 This is why I had been procrastinating to update the SDK version for my [Goldstack Starter Project Builder](https://goldstack.party/). However, AWS's recent [end of support for Node.js v16 Lambda runtimes](https://awstip.com/action-required-aws-lambda-end-of-support-for-node-js-16-0576051e7cb4) has forced my hand. Since Node.js v18+ runtimes no longer include the v2 `aws-sdk` package and this, in turn, has significantly increased the size of the Lambda's I have to deploy (from ~1 MB to almost 6 MB).
 
-![Function properties on AWS](Pasted%20image%2020240120063323.png)
+![Function properties on AWS](images/Pasted%20image%2020240120063323.png)
 
 I love writing meaningful end-to-end test scenarios in unit tests and ideally limit the use of hand-crafted mocks as much as possible. For instance, I prefer to use in memory databases in tests over mocking individual function calls for database operations.
 
@@ -30,7 +30,7 @@ Thus, when passing in an instance of S3 created with `mock-aws-s3`, complex loca
 
 I have packaged all this up in my [S3 Template](https://goldstack.party/templates/s3).
 
-![Goldstack S3 Template](Pasted%20image%2020240120070224.png)
+![Goldstack S3 Template](images/Pasted%20image%2020240120070224.png)
 
 Unfortunately, the `mock-aws-s3` package [only supports the AWS SDK v2](https://github.com/MathieuLoutre/mock-aws-s3/issues/85#issuecomment-1879251191). Thus, in order to upgrade to v3 of the SDK, I needed an alternative S3 mock, but could not find any that supports in-memory or file-based persistence.
 
