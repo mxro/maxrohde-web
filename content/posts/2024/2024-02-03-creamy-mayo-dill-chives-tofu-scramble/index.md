@@ -52,4 +52,4 @@ The tofu was creamy, taste and just hit the spot. It's a twist on [my original t
 6. In a small bowl, mix together the mayonaise, soy milk and mustard. Add it to the pan along with the nutritional yeast. Mix well and cook until desired consistency is reached.
 7. Enjoy!
 
-![](TofuInPan%201.jpg)
+![](images/TofuInPan%201.jpg)
