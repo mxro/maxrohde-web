@@ -15,8 +15,6 @@ import {
   Entity,
 } from 'db-blog';
 
-import AWS from 'aws-sdk';
-
 export interface TagProps {
   caption: string;
   id: string;
@@ -44,7 +42,6 @@ export async function renderCategory({
   entryPoint: string;
 }): Promise<APIGatewayProxyResultV2> {
   const dynamodb = await connect();
-  AWS.config.logger = console;
   const table = await connectTable();
 
   const categoryId = event.pathParameters?.id;

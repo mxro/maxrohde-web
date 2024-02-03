@@ -1,10 +1,12 @@
 import { Table as ToolboxTable } from 'dynamodb-toolbox';
-import DynamoDB from 'aws-sdk/clients/dynamodb';
+import { GlobalSecondaryIndexUpdate } from '@aws-sdk/client-dynamodb';
+
+import { DynamoDBDocumentClient } from '@aws-sdk/lib-dynamodb';
 
 export type Table = ToolboxTable<string, 'pk', 'sk'>;
 
 export function createTable(
-  dynamoDB: DynamoDB.DocumentClient,
+  dynamoDB: DynamoDBDocumentClient,
   tableName: string
 ): Table {
   const indexes = {};
@@ -62,7 +64,7 @@ export const PostEntity = {
 
 export const PostGsiName = 'published';
 
-export const PostGsi: DynamoDB.GlobalSecondaryIndexUpdate = {
+export const PostGsi: GlobalSecondaryIndexUpdate = {
   Create: {
     IndexName: PostGsiName,
     KeySchema: [

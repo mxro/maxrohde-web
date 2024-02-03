@@ -1,11 +1,13 @@
-import DynamoDB from 'aws-sdk/clients/dynamodb';
+import { BatchGetItemCommand, DynamoDBClient } from '@aws-sdk/client-dynamodb';
+
+import { marshall, unmarshall } from '@aws-sdk/util-dynamodb';
 
 import { getTableName, Post, PostPK } from 'db-blog';
 
 export interface LoadPostsArgs {
   blog: string;
   postIds: string[];
-  dynamodb: DynamoDB;
+  dynamodb: DynamoDBClient;
 }
 
 export function normalisePath(path: string): string {
@@ -26,20 +28,20 @@ export async function loadPosts({
   if (postIds.length === 0) {
     return [];
   }
-  const postQueryResult = await dynamodb
-    .batchGetItem({
+  const postQueryResult = await dynamodb.send(
+    new BatchGetItemCommand({
       RequestItems: {
         [await getTableName()]: {
           Keys: postIds.map((el) => {
             return {
-              pk: DynamoDB.Converter.input(PostPK({ blog })),
-              sk: DynamoDB.Converter.input(el),
+              pk: { S: PostPK({ blog }) },
+              sk: { S: el },
             };
           }),
         },
       },
     })
-    .promise();
+  );
   // await dynamodb
   //   .executeStatement({
   //     Statement: `SELECT * FROM "${await getTableName()}"
@@ -60,7 +62,7 @@ export async function loadPosts({
   }
 
   const posts = postQueryResult.Responses[await getTableName()].map((post) => {
-    const parsedPost = DynamoDB.Converter.unmarshall(post);
+    const parsedPost = unmarshall(post);
     parsedPost.path = parsedPost.sk;
     return parsedPost;
   }) as Post[];

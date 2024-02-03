@@ -1,9 +1,12 @@
 import { DynamoDBContext } from '@goldstack/template-dynamodb';
 import { InputMigrations } from 'umzug/lib/types';
 
-import DynamoDB from 'aws-sdk/clients/dynamodb';
-import { AWSError } from 'aws-sdk/lib/error';
-import { PromiseResult } from 'aws-sdk/lib/request';
+import {
+  DescribeTableCommand,
+  DescribeTableCommandOutput,
+  GlobalSecondaryIndexDescription,
+  UpdateTableCommand,
+} from '@aws-sdk/client-dynamodb';
 import {
   connectTable,
   deepCopy,
@@ -21,8 +24,8 @@ export const createMigrations = (): InputMigrations<DynamoDBContext> => {
     {
       name: '2022-09-19-create-published-gsi',
       up: async (params) => {
-        await params.context.client
-          .updateTable({
+        await params.context.client.send(
+          new UpdateTableCommand({
             TableName: params.context.tableName,
             AttributeDefinitions: [
               {
@@ -36,22 +39,21 @@ export const createMigrations = (): InputMigrations<DynamoDBContext> => {
             ],
             GlobalSecondaryIndexUpdates: [PostGsi],
           })
-          .promise();
-        let status: PromiseResult<DynamoDB.DescribeTableOutput, AWSError>;
-        let gsi: DynamoDB.GlobalSecondaryIndexDescription | undefined;
+        );
+        let status: DescribeTableCommandOutput;
+        let gsi: GlobalSecondaryIndexDescription | undefined;
         do {
           console.log('Checking table status');
-          status = await params.context.client
-            .describeTable({
+          status = await params.context.client.send(
+            new DescribeTableCommand({
               TableName: params.context.tableName,
             })
-            .promise();
-          if (status.$response.error) {
-            throw new Error('Cannot check table status');
-          }
+          );
+          console.log(status);
           gsi = status.Table?.GlobalSecondaryIndexes?.find((idx) => {
             return idx.IndexName === PostGsiName;
           });
+          console.log('gsi', gsi);
         } while (
           status.Table?.TableStatus !== 'ACTIVE' &&
           gsi &&
