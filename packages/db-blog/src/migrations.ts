@@ -49,11 +49,9 @@ export const createMigrations = (): InputMigrations<DynamoDBContext> => {
               TableName: params.context.tableName,
             })
           );
-          console.log(status);
           gsi = status.Table?.GlobalSecondaryIndexes?.find((idx) => {
             return idx.IndexName === PostGsiName;
           });
-          console.log('gsi', gsi);
         } while (
           status.Table?.TableStatus !== 'ACTIVE' &&
           gsi &&
