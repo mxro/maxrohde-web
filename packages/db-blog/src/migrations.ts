@@ -5,6 +5,7 @@ import {
   DescribeTableCommand,
   DescribeTableCommandOutput,
   GlobalSecondaryIndexDescription,
+  PutItemCommand,
   UpdateTableCommand,
 } from '@aws-sdk/client-dynamodb';
 import {
@@ -43,6 +44,7 @@ export const createMigrations = (): InputMigrations<DynamoDBContext> => {
         let status: DescribeTableCommandOutput;
         let gsi: GlobalSecondaryIndexDescription | undefined;
         do {
+          await new Promise((resolve) => setTimeout(resolve, 1000));
           console.log('Checking table status');
           status = await params.context.client.send(
             new DescribeTableCommand({
@@ -53,10 +55,12 @@ export const createMigrations = (): InputMigrations<DynamoDBContext> => {
             return idx.IndexName === PostGsiName;
           });
         } while (
-          status.Table?.TableStatus !== 'ACTIVE' &&
-          gsi &&
-          !gsi.Backfilling &&
-          gsi.IndexStatus === 'ACTIVE'
+          !(
+            status.Table?.TableStatus === 'ACTIVE' &&
+            gsi &&
+            !gsi.Backfilling &&
+            gsi.IndexStatus === 'ACTIVE'
+          )
         );
       },
     },

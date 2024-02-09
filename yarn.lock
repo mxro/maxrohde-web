@@ -279,56 +279,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/client-ses@npm:3.485.0":
-  version: 3.485.0
-  resolution: "@aws-sdk/client-ses@npm:3.485.0"
-  dependencies:
-    "@aws-crypto/sha256-browser": 3.0.0
-    "@aws-crypto/sha256-js": 3.0.0
-    "@aws-sdk/client-sts": 3.485.0
-    "@aws-sdk/core": 3.485.0
-    "@aws-sdk/credential-provider-node": 3.485.0
-    "@aws-sdk/middleware-host-header": 3.485.0
-    "@aws-sdk/middleware-logger": 3.485.0
-    "@aws-sdk/middleware-recursion-detection": 3.485.0
-    "@aws-sdk/middleware-signing": 3.485.0
-    "@aws-sdk/middleware-user-agent": 3.485.0
-    "@aws-sdk/region-config-resolver": 3.485.0
-    "@aws-sdk/types": 3.485.0
-    "@aws-sdk/util-endpoints": 3.485.0
-    "@aws-sdk/util-user-agent-browser": 3.485.0
-    "@aws-sdk/util-user-agent-node": 3.485.0
-    "@smithy/config-resolver": ^2.0.23
-    "@smithy/core": ^1.2.2
-    "@smithy/fetch-http-handler": ^2.3.2
-    "@smithy/hash-node": ^2.0.18
-    "@smithy/invalid-dependency": ^2.0.16
-    "@smithy/middleware-content-length": ^2.0.18
-    "@smithy/middleware-endpoint": ^2.3.0
-    "@smithy/middleware-retry": ^2.0.26
-    "@smithy/middleware-serde": ^2.0.16
-    "@smithy/middleware-stack": ^2.0.10
-    "@smithy/node-config-provider": ^2.1.9
-    "@smithy/node-http-handler": ^2.2.2
-    "@smithy/protocol-http": ^3.0.12
-    "@smithy/smithy-client": ^2.2.1
-    "@smithy/types": ^2.8.0
-    "@smithy/url-parser": ^2.0.16
-    "@smithy/util-base64": ^2.0.1
-    "@smithy/util-body-length-browser": ^2.0.1
-    "@smithy/util-body-length-node": ^2.1.0
-    "@smithy/util-defaults-mode-browser": ^2.0.24
-    "@smithy/util-defaults-mode-node": ^2.0.32
-    "@smithy/util-endpoints": ^1.0.8
-    "@smithy/util-retry": ^2.0.9
-    "@smithy/util-utf8": ^2.0.2
-    "@smithy/util-waiter": ^2.0.16
-    fast-xml-parser: 4.2.5
-    tslib: ^2.5.0
-  checksum: e904a64a5af22c916b06f824fff7b816c3d91bb4400335d42e1bce47981c67ae4151f295763a38bff53599d51a0daaf9711ffcbf6a9a149e37a1de48263c636e
-  languageName: node
-  linkType: hard
-
 "@aws-sdk/client-sso@npm:3.485.0":
   version: 3.485.0
   resolution: "@aws-sdk/client-sso@npm:3.485.0"
@@ -2308,46 +2258,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@goldstack/template-email-send-cli@npm:^0.5.23":
-  version: 0.5.23
-  resolution: "@goldstack/template-email-send-cli@npm:0.5.23"
-  dependencies:
-    "@goldstack/template-email-send": 0.4.23
-    "@goldstack/utils-cli": 0.3.9
-    "@goldstack/utils-package": 0.4.9
-    "@goldstack/utils-package-config": 0.4.9
-    "@goldstack/utils-terraform": 0.4.17
-    "@goldstack/utils-terraform-aws": 0.4.19
-    source-map-support: ^0.5.21
-    yargs: ^17.5.1
-  bin:
-    template: ./bin/template
-    template-email-send: ./bin/template
-  checksum: 13506741e054c0da54df2ef248bfcd3d8c2075b0be2d2097010823955caa4da6290cf2c6068b0e2f792e699b2b8f00cb8fc27a43aad3791985f92fec962ced9f
-  languageName: node
-  linkType: hard
-
-"@goldstack/template-email-send@npm:0.4.23, @goldstack/template-email-send@npm:^0.4.23":
-  version: 0.4.23
-  resolution: "@goldstack/template-email-send@npm:0.4.23"
-  dependencies:
-    "@aws-sdk/client-ses": 3.485.0
-    "@aws-sdk/credential-providers": 3.485.0
-    "@aws-sdk/types": ^3.485.0
-    "@goldstack/infra": 0.4.9
-    "@goldstack/infra-aws": 0.4.15
-    "@goldstack/utils-cli": 0.3.9
-    "@goldstack/utils-esbuild": 0.5.9
-    "@goldstack/utils-package": 0.4.9
-    "@goldstack/utils-package-config-embedded": 0.5.10
-    "@goldstack/utils-terraform": 0.4.17
-    "@goldstack/utils-terraform-aws": 0.4.19
-    aws-sdk-client-mock: ^3.0.1
-    uuid: ^8.3.0
-  checksum: 835f600617129a5a16292db15c27776e07c3038ff8ddfd45dfa1ec0518629b72d578bf9998b3389b9f9d35ac1b44f0f85559a0ae16362ecc549f64f1a059422d
-  languageName: node
-  linkType: hard
-
 "@goldstack/template-nextjs@npm:^0.5.24":
   version: 0.5.24
   resolution: "@goldstack/template-nextjs@npm:0.5.24"
@@ -2618,18 +2528,6 @@ __metadata:
   version: 0.5.9
   resolution: "@goldstack/utils-esbuild@npm:0.5.9"
   checksum: 14bbbb59d12deaaaa2970817980253b040fd9322a3be58df57ec16c9d54b6672da790c17bad716b7f95c8446ecef45db1b1dcca87de56b794b7d41a0f2aa699d
-  languageName: node
-  linkType: hard
-
-"@goldstack/utils-git@npm:^0.2.9":
-  version: 0.2.9
-  resolution: "@goldstack/utils-git@npm:0.2.9"
-  dependencies:
-    command-exists: ^1.2.9
-    source-map-support: ^0.5.21
-  bin:
-    utils-git: ./bin/utils-git
-  checksum: b74ba2619f8ce30a61f53548369852e7a91d8c8469214b12ed4586e1ffcce1cfed61cc11ca8c0a1e48a42cf470958dba3eb742c2d2d8f4d8b5ed7762072e007a
   languageName: node
   linkType: hard
 
@@ -3637,15 +3535,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sinonjs/commons@npm:^3.0.0":
-  version: 3.0.1
-  resolution: "@sinonjs/commons@npm:3.0.1"
-  dependencies:
-    type-detect: 4.0.8
-  checksum: a7c3e7cc612352f4004873747d9d8b2d4d90b13a6d483f685598c945a70e734e255f1ca5dc49702515533c403b32725defff148177453b3f3915bcb60e9d4601
-  languageName: node
-  linkType: hard
-
 "@sinonjs/fake-timers@npm:^10.0.2":
   version: 10.0.2
   resolution: "@sinonjs/fake-timers@npm:10.0.2"
@@ -3655,48 +3544,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sinonjs/fake-timers@npm:^10.3.0":
-  version: 10.3.0
-  resolution: "@sinonjs/fake-timers@npm:10.3.0"
-  dependencies:
-    "@sinonjs/commons": ^3.0.0
-  checksum: 614d30cb4d5201550c940945d44c9e0b6d64a888ff2cd5b357f95ad6721070d6b8839cd10e15b76bf5e14af0bcc1d8f9ec00d49a46318f1f669a4bec1d7f3148
-  languageName: node
-  linkType: hard
-
-"@sinonjs/fake-timers@npm:^11.2.2":
-  version: 11.2.2
-  resolution: "@sinonjs/fake-timers@npm:11.2.2"
-  dependencies:
-    "@sinonjs/commons": ^3.0.0
-  checksum: 68c29b0e1856fdc280df03ddbf57c726420b78e9f943a241b471edc018fb14ff36fdc1daafd6026cba08c3c7f50c976fb7ae11b88ff44cd7f609692ca7d25158
-  languageName: node
-  linkType: hard
-
 "@sinonjs/fake-timers@npm:^9.1.2":
   version: 9.1.2
   resolution: "@sinonjs/fake-timers@npm:9.1.2"
   dependencies:
     "@sinonjs/commons": ^1.7.0
   checksum: 7d3aef54e17c1073101cb64d953157c19d62a40e261a30923fa1ee337b049c5f29cc47b1f0c477880f42b5659848ba9ab897607ac8ea4acd5c30ddcfac57fca6
-  languageName: node
-  linkType: hard
-
-"@sinonjs/samsam@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "@sinonjs/samsam@npm:8.0.0"
-  dependencies:
-    "@sinonjs/commons": ^2.0.0
-    lodash.get: ^4.4.2
-    type-detect: ^4.0.8
-  checksum: 95e40d0bb9f7288e27c379bee1b03c3dc51e7e78b9d5ea6aef66a690da7e81efc4715145b561b449cefc5361a171791e3ce30fb1a46ab247d4c0766024c60a60
-  languageName: node
-  linkType: hard
-
-"@sinonjs/text-encoding@npm:^0.7.2":
-  version: 0.7.2
-  resolution: "@sinonjs/text-encoding@npm:0.7.2"
-  checksum: fe690002a32ba06906cf87e2e8fe84d1590294586f2a7fd180a65355b53660c155c3273d8011a5f2b77209b819aa7306678ae6e4aea0df014bd7ffd4bbbcf1ab
   languageName: node
   linkType: hard
 
@@ -5362,22 +5215,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/sinon@npm:^10.0.10":
-  version: 10.0.20
-  resolution: "@types/sinon@npm:10.0.20"
-  dependencies:
-    "@types/sinonjs__fake-timers": "*"
-  checksum: 7322771345c202b90057f8112e0d34b7339e5ae1827fb1bfe385fc9e38ed6a2f18b4c66e88d27d98c775f7f74fb1167c0c14f61ca64155786534541e6c6eb05f
-  languageName: node
-  linkType: hard
-
-"@types/sinonjs__fake-timers@npm:*":
-  version: 8.1.5
-  resolution: "@types/sinonjs__fake-timers@npm:8.1.5"
-  checksum: 7e3c08f6c13df44f3ea7d9a5155ddf77e3f7314c156fa1c5a829a4f3763bafe2f75b1283b887f06e6b4296996a2f299b70f64ff82625f9af5885436e2524d10c
-  languageName: node
-  linkType: hard
-
 "@types/stack-utils@npm:^2.0.0":
   version: 2.0.0
   resolution: "@types/stack-utils@npm:2.0.0"
@@ -6259,17 +6096,6 @@ __metadata:
   version: 1.0.5
   resolution: "available-typed-arrays@npm:1.0.5"
   checksum: 20eb47b3cefd7db027b9bbb993c658abd36d4edd3fe1060e83699a03ee275b0c9b216cc076ff3f2db29073225fb70e7613987af14269ac1fe2a19803ccc97f1a
-  languageName: node
-  linkType: hard
-
-"aws-sdk-client-mock@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "aws-sdk-client-mock@npm:3.0.1"
-  dependencies:
-    "@types/sinon": ^10.0.10
-    sinon: ^16.1.3
-    tslib: ^2.1.0
-  checksum: e875af24a765d7883059c101a629a58bbb2ec3a055443562f9410ebd96823691dfae25d69b962dc3c22ad5867971c37b378d05f3c8344bbb992b1a624a0fb836
   languageName: node
   linkType: hard
 
@@ -7242,13 +7068,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"command-exists@npm:^1.2.9":
-  version: 1.2.9
-  resolution: "command-exists@npm:1.2.9"
-  checksum: 729ae3d88a2058c93c58840f30341b7f82688a573019535d198b57a4d8cb0135ced0ad7f52b591e5b28a90feb2c675080ce916e56254a0f7c15cb2395277cac3
-  languageName: node
-  linkType: hard
-
 "commander@npm:10.0.0":
   version: 10.0.0
   resolution: "commander@npm:10.0.0"
@@ -8110,13 +7929,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"diff@npm:^5.1.0":
-  version: 5.1.0
-  resolution: "diff@npm:5.1.0"
-  checksum: c7bf0df7c9bfbe1cf8a678fd1b2137c4fb11be117a67bc18a0e03ae75105e8533dbfb1cda6b46beb3586ef5aed22143ef9d70713977d5fb1f9114e21455fba90
-  languageName: node
-  linkType: hard
-
 "dir-glob@npm:^3.0.1":
   version: 3.0.1
   resolution: "dir-glob@npm:3.0.1"
@@ -8431,28 +8243,6 @@ __metadata:
   checksum: 79eae050a775f6f674a24d4541d54cdb1c35e956d6e112ee9ec8d752fa9bcd94739e5f86c58d8e04f85199cf720146aee301b2e397932ad5c8d8e8cffe65a2ee
   languageName: node
   linkType: hard
-
-"email-send@workspace:packages/email-send":
-  version: 0.0.0-use.local
-  resolution: "email-send@workspace:packages/email-send"
-  dependencies:
-    "@goldstack/template-email-send": ^0.4.23
-    "@goldstack/template-email-send-cli": ^0.5.23
-    "@goldstack/utils-git": ^0.2.9
-    "@goldstack/utils-sh": ^0.5.9
-    "@swc/core": ^1.2.224
-    "@swc/jest": ^0.2.22
-    "@types/jest": ^29.5.0
-    "@types/node": ^18.15.10
-    aws-sdk: 2.1525.0
-    jest: ^29.5.0
-    nodemon: ^2.0.15
-    rimraf: ^3.0.2
-    ts-jest: ^29.0.5
-    ts-node: ^10.9.1
-    typescript: ^5.0.2
-  languageName: unknown
-  linkType: soft
 
 "emittery@npm:^0.10.2":
   version: 0.10.2
@@ -12583,13 +12373,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"just-extend@npm:^6.2.0":
-  version: 6.2.0
-  resolution: "just-extend@npm:6.2.0"
-  checksum: 022024d6f687c807963b97a24728a378799f7e4af7357d1c1f90dedb402943d5c12be99a5136654bed8362c37a358b1793feaad3366896f239a44e17c5032d86
-  languageName: node
-  linkType: hard
-
 "keyv@npm:^3.0.0":
   version: 3.1.0
   resolution: "keyv@npm:3.1.0"
@@ -12860,13 +12643,6 @@ __metadata:
   version: 4.4.0
   resolution: "lodash.flatten@npm:4.4.0"
   checksum: 0ac34a393d4b795d4b7421153d27c13ae67e08786c9cbb60ff5b732210d46f833598eee3fb3844bb10070e8488efe390ea53bb567377e0cb47e9e630bf0811cb
-  languageName: node
-  linkType: hard
-
-"lodash.get@npm:^4.4.2":
-  version: 4.4.2
-  resolution: "lodash.get@npm:4.4.2"
-  checksum: e403047ddb03181c9d0e92df9556570e2b67e0f0a930fcbbbd779370972368f5568e914f913e93f3b08f6d492abc71e14d4e9b7a18916c31fa04bd2306efe545
   languageName: node
   linkType: hard
 
@@ -13791,19 +13567,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nise@npm:^5.1.4":
-  version: 5.1.9
-  resolution: "nise@npm:5.1.9"
-  dependencies:
-    "@sinonjs/commons": ^3.0.0
-    "@sinonjs/fake-timers": ^11.2.2
-    "@sinonjs/text-encoding": ^0.7.2
-    just-extend: ^6.2.0
-    path-to-regexp: ^6.2.1
-  checksum: ab9fd6eabc98170f18aef6c9567983145c1dc62c7aef46eda0fea754083316c1f0f9b2c32e9b4bfdd25122276d670293596ed672b54dd1ffa8eb58b56a30ea95
-  languageName: node
-  linkType: hard
-
 "node-css-require@npm:0.4.3":
   version: 0.4.3
   resolution: "node-css-require@npm:0.4.3"
@@ -14485,13 +14248,6 @@ __metadata:
   version: 0.1.7
   resolution: "path-to-regexp@npm:0.1.7"
   checksum: 69a14ea24db543e8b0f4353305c5eac6907917031340e5a8b37df688e52accd09e3cebfe1660b70d76b6bd89152f52183f28c74813dbf454ba1a01c82a38abce
-  languageName: node
-  linkType: hard
-
-"path-to-regexp@npm:^6.2.1":
-  version: 6.2.1
-  resolution: "path-to-regexp@npm:6.2.1"
-  checksum: f0227af8284ea13300f4293ba111e3635142f976d4197f14d5ad1f124aebd9118783dd2e5f1fe16f7273743cc3dbeddfb7493f237bb27c10fdae07020cc9b698
   languageName: node
   linkType: hard
 
@@ -16342,20 +16098,6 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
-"sinon@npm:^16.1.3":
-  version: 16.1.3
-  resolution: "sinon@npm:16.1.3"
-  dependencies:
-    "@sinonjs/commons": ^3.0.0
-    "@sinonjs/fake-timers": ^10.3.0
-    "@sinonjs/samsam": ^8.0.0
-    diff: ^5.1.0
-    nise: ^5.1.4
-    supports-color: ^7.2.0
-  checksum: 83e5ccd724efdb5d1471e41b2cfaf4a46d9fe2cc76c15a23dedfbd741f7d448e6aec3d34a8253a79bdf8ddcc5bd889c5277ae71879e4709c621cb41094fbcdab
-  languageName: node
-  linkType: hard
-
 "sisteransi@npm:^1.0.4":
   version: 1.0.5
   resolution: "sisteransi@npm:1.0.5"
@@ -17141,15 +16883,6 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
-"supports-color@npm:^7.2.0":
-  version: 7.2.0
-  resolution: "supports-color@npm:7.2.0"
-  dependencies:
-    has-flag: ^4.0.0
-  checksum: 3dda818de06ebbe5b9653e07842d9479f3555ebc77e9a0280caf5a14fb877ffee9ed57007c3b78f5a6324b8dbeec648d9e97a24e2ed9fdb81ddc69ea07100f4a
-  languageName: node
-  linkType: hard
-
 "supports-color@npm:^8.0.0, supports-color@npm:^8.1.0":
   version: 8.1.1
   resolution: "supports-color@npm:8.1.1"
@@ -17724,7 +17457,7 @@ resolve@^1.20.0:
   languageName: node
   linkType: hard
 
-"type-detect@npm:4.0.8, type-detect@npm:^4.0.8":
+"type-detect@npm:4.0.8":
   version: 4.0.8
   resolution: "type-detect@npm:4.0.8"
   checksum: 62b5628bff67c0eb0b66afa371bd73e230399a8d2ad30d852716efcc4656a7516904570cd8631a49a3ce57c10225adf5d0cbdcb47f6b0255fe6557c453925a15
@@ -18237,15 +17970,6 @@ resolve@^1.20.0:
   bin:
     uuid: ./bin/uuid
   checksum: 58de2feed61c59060b40f8203c0e4ed7fd6f99d42534a499f1741218a1dd0c129f4aa1de797bcf822c8ea5da7e4137aa3673431a96dae729047f7aca7b27866f
-  languageName: node
-  linkType: hard
-
-"uuid@npm:^8.3.0":
-  version: 8.3.0
-  resolution: "uuid@npm:8.3.0"
-  bin:
-    uuid: dist/bin/uuid
-  checksum: b539886e6a532ba1efdcc7cee02fd561effef820e1c7b27dd3a13e55b893c6615f38dcf1e6909362c9b5af2a2f2ee8f73868ba284481d49feb820a0e17c8017b
   languageName: node
   linkType: hard
 
