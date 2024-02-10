@@ -6,7 +6,7 @@ import {
   migrateDownTo as templateMigrateDownTo,
 } from '@goldstack/template-dynamodb';
 
-import DynamoDB from 'aws-sdk/clients/dynamodb';
+import { DynamoDBClient } from '@aws-sdk/client-dynamodb';
 import { Table as ToolboxTable } from 'dynamodb-toolbox';
 import goldstackConfig from './../goldstack.json';
 import goldstackSchema from './../schemas/package.schema.json';
@@ -14,8 +14,12 @@ import { createTable } from './entities';
 import { createMigrations } from './migrations';
 
 import deepCopy from 'deep-copy';
+import {
+  DynamoDBDocumentClient,
+  DynamoDBDocument,
+} from '@aws-sdk/lib-dynamodb';
 
-export { DynamoDB };
+export { DynamoDBClient };
 export { deepCopy };
 
 export { Entity } from 'dynamodb-toolbox';
@@ -23,7 +27,9 @@ export { Entity } from 'dynamodb-toolbox';
 export * from './entities';
 export type Table = ToolboxTable<string, 'pk', 'sk'>;
 
-export const connect = async (deploymentName?: string): Promise<DynamoDB> => {
+export const connect = async (
+  deploymentName?: string
+): Promise<DynamoDBClient> => {
   return await templateConnect({
     goldstackConfig,
     packageSchema: goldstackSchema,
@@ -34,21 +40,25 @@ export const connect = async (deploymentName?: string): Promise<DynamoDB> => {
 
 export interface ConnectTableParams {
   deploymentName?: string;
-  documentClient?: DynamoDB.DocumentClient;
-  client?: DynamoDB;
+  documentClient?: DynamoDBDocumentClient;
+  client?: DynamoDBClient;
 }
 
 export const connectTable = async (
   params?: ConnectTableParams
 ): Promise<Table> => {
   const tableName = await getTableName(params?.deploymentName);
+
+  if (params?.documentClient) {
+    return createTable(params.documentClient, tableName);
+  }
+
+  if (params?.client) {
+    return createTable(DynamoDBDocumentClient.from(params.client), tableName);
+  }
+
   return createTable(
-    params?.documentClient || params?.client
-      ? new DynamoDB.DocumentClient({ service: params.client })
-      : undefined ||
-          new DynamoDB.DocumentClient({
-            service: await connect(params?.deploymentName),
-          }),
+    DynamoDBDocument.from(await connect(params?.deploymentName)),
     tableName
   );
 };
@@ -56,7 +66,7 @@ export const connectTable = async (
 export const migrateDownTo = async (
   migrationName: string,
   deploymentName?: string
-): Promise<DynamoDB> => {
+): Promise<DynamoDBClient> => {
   return await templateMigrateDownTo({
     migrationName,
     goldstackConfig,
@@ -85,7 +95,6 @@ export const stopLocalDynamoDB = async (
     deploymentName
   );
 };
-
 export const getTableName = async (
   deploymentName?: string
 ): Promise<string> => {

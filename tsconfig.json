@@ -39,9 +39,6 @@
       "path": "packages/dynamodb-blog"
     },
     {
-      "path": "packages/email-send"
-    },
-    {
       "path": "packages/esbuild-tailwind-ssr-plugin"
     },
     {

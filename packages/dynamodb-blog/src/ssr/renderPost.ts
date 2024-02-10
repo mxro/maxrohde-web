@@ -6,7 +6,7 @@ import {
   APIGatewayProxyResultV2,
   APIGatewayProxyStructuredResultV2,
 } from 'aws-lambda/trigger/api-gateway-proxy';
-
+import { UpdateItemCommand } from '@aws-sdk/client-dynamodb';
 import type { Post as PostType } from 'db-blog';
 
 export interface PostProps {
@@ -252,8 +252,8 @@ async function renderNotFound(
   })) as APIGatewayProxyStructuredResultV2;
 
   const dynamoDB = await connect();
-  await dynamoDB
-    .updateItem({
+  await dynamoDB.send(
+    new UpdateItemCommand({
       TableName: await getTableName(),
       Key: {
         pk: { S: BlogMetricPK({ blog }) },
@@ -265,7 +265,7 @@ async function renderNotFound(
         '#v': 'value',
       },
     })
-    .promise();
+  );
 
   res.statusCode = 404;
   return res;

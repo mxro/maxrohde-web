@@ -14,8 +14,6 @@ import {
   TagMappingPK,
 } from 'db-blog';
 
-import AWS from 'aws-sdk';
-
 import { loadPosts } from '../lib/posts';
 import { TagProps } from './renderCategory';
 import { PartialRenderPageProps } from '@goldstack/template-ssr';
@@ -37,7 +35,6 @@ export async function renderTag({
   entryPoint: string;
 }): Promise<APIGatewayProxyResultV2> {
   const dynamodb = await connect();
-  AWS.config.logger = console;
   const table = await connectTable();
 
   const tagId = event.pathParameters?.id;
