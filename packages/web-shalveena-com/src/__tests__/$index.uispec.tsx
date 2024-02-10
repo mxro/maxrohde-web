@@ -4,6 +4,8 @@ import '@testing-library/jest-dom';
 import Index from '../routes/$index';
 import { startLocalDynamoDB, stopLocalDynamoDB } from 'db-blog';
 
+jest.setTimeout(120000);
+
 describe('Render tests', () => {
   beforeAll(async () => {
     await startLocalDynamoDB();

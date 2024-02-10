@@ -313,7 +313,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@smithy/util-utf8", "npm:2.1.1"],\
             ["@smithy/util-waiter", "npm:2.1.1"],\
             ["tslib", "npm:2.6.2"],\
-            ["uuid", "npm:8.3.2"]\
+            ["uuid", "npm:9.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4523,7 +4523,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@smithy/util-middleware", "npm:2.1.1"],\
             ["@smithy/util-retry", "npm:2.1.1"],\
             ["tslib", "npm:2.6.2"],\
-            ["uuid", "npm:8.3.2"]\
+            ["uuid", "npm:9.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7033,7 +7033,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sax", "npm:1.2.1"],\
             ["url", "npm:0.10.3"],\
             ["util", "npm:0.12.4"],\
-            ["uuid", "npm:8.0.0"],\
+            ["uuid", "npm:9.0.1"],\
             ["xml2js", "npm:0.5.0"]\
           ],\
           "linkType": "HARD"\
@@ -7050,7 +7050,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sax", "npm:1.2.1"],\
             ["url", "npm:0.10.3"],\
             ["util", "npm:0.12.4"],\
-            ["uuid", "npm:8.0.0"],\
+            ["uuid", "npm:9.0.1"],\
             ["xml2js", "npm:0.6.2"]\
           ],\
           "linkType": "HARD"\
@@ -17648,7 +17648,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["safe-buffer", "npm:5.2.1"],\
             ["tough-cookie", "npm:2.5.0"],\
             ["tunnel-agent", "npm:0.6.0"],\
-            ["uuid", "npm:3.4.0"]\
+            ["uuid", "npm:9.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -20523,24 +20523,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["uuid", [\
-        ["npm:3.4.0", {\
-          "packageLocation": "./.yarn/cache/uuid-npm-3.4.0-4fd8ef88ad-58de2feed6.zip/node_modules/uuid/",\
+        ["npm:9.0.1", {\
+          "packageLocation": "./.yarn/cache/uuid-npm-9.0.1-39a8442bc6-39931f6da7.zip/node_modules/uuid/",\
           "packageDependencies": [\
-            ["uuid", "npm:3.4.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:8.0.0", {\
-          "packageLocation": "./.yarn/cache/uuid-npm-8.0.0-591e3a2e23-56d4e23aa7.zip/node_modules/uuid/",\
-          "packageDependencies": [\
-            ["uuid", "npm:8.0.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
-        ["npm:8.3.2", {\
-          "packageLocation": "./.yarn/cache/uuid-npm-8.3.2-eca0baba53-5575a8a75c.zip/node_modules/uuid/",\
-          "packageDependencies": [\
-            ["uuid", "npm:8.3.2"]\
+            ["uuid", "npm:9.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
