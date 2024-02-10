@@ -7030,23 +7030,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["aws-sdk", [\
-        ["npm:2.1525.0", {\
-          "packageLocation": "./.yarn/cache/aws-sdk-npm-2.1525.0-335a1826bc-dacbe060c9.zip/node_modules/aws-sdk/",\
-          "packageDependencies": [\
-            ["aws-sdk", "npm:2.1525.0"],\
-            ["buffer", "npm:4.9.2"],\
-            ["events", "npm:1.1.1"],\
-            ["ieee754", "npm:1.1.13"],\
-            ["jmespath", "npm:0.16.0"],\
-            ["querystring", "npm:0.2.0"],\
-            ["sax", "npm:1.2.1"],\
-            ["url", "npm:0.10.3"],\
-            ["util", "npm:0.12.4"],\
-            ["uuid", "npm:8.0.0"],\
-            ["xml2js", "npm:0.5.0"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:2.1550.0", {\
           "packageLocation": "./.yarn/cache/aws-sdk-npm-2.1550.0-d75b4f2096-8fa8c305db.zip/node_modules/aws-sdk/",\
           "packageDependencies": [\
@@ -8671,7 +8654,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/ejs", "npm:3.1.1"],\
             ["@types/jest", "npm:29.5.0"],\
             ["@types/node", "npm:20.11.17"],\
-            ["aws-sdk", "npm:2.1525.0"],\
             ["deep-copy", "npm:1.4.2"],\
             ["dynamodb-admin", "npm:4.6.1"],\
             ["dynamodb-toolbox", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:0.9.2"],\
@@ -20734,7 +20716,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/testing-library__react", "npm:10.2.0"],\
             ["@types/uuid", "npm:9.0.8"],\
             ["@yarnpkg/esbuild-plugin-pnp", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:3.0.0-rc.15"],\
-            ["aws-sdk", "npm:2.1525.0"],\
             ["concurrently", "npm:7.3.0"],\
             ["date-fns", "npm:2.28.0"],\
             ["db-blog", "workspace:packages/db-blog"],\
@@ -20901,7 +20882,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/testing-library__jest-dom", "npm:5.14.5"],\
             ["@types/testing-library__react", "npm:10.2.0"],\
             ["@yarnpkg/esbuild-plugin-pnp", "virtual:5612966d3168d78529e4d87c4ac1cd747f64d3d469eeb194ae4ba2c752011b901a47c7bb65e8ca0bc38ab5a021935aea6cf835566e872f7bd8b5f890f393fb74#npm:3.0.0-rc.15"],\
-            ["aws-sdk", "npm:2.1525.0"],\
             ["concurrently", "npm:7.3.0"],\
             ["date-fns", "npm:2.28.0"],\
             ["db-blog", "workspace:packages/db-blog"],\
@@ -21262,15 +21242,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["xml2js", [\
-        ["npm:0.5.0", {\
-          "packageLocation": "./.yarn/cache/xml2js-npm-0.5.0-06e57a2771-1aa71d62e5.zip/node_modules/xml2js/",\
-          "packageDependencies": [\
-            ["xml2js", "npm:0.5.0"],\
-            ["sax", "npm:1.2.1"],\
-            ["xmlbuilder", "npm:11.0.1"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:0.6.2", {\
           "packageLocation": "./.yarn/cache/xml2js-npm-0.6.2-64cd781d74-458a838061.zip/node_modules/xml2js/",\
           "packageDependencies": [\

@@ -5823,24 +5823,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aws-sdk@npm:2.1525.0":
-  version: 2.1525.0
-  resolution: "aws-sdk@npm:2.1525.0"
-  dependencies:
-    buffer: 4.9.2
-    events: 1.1.1
-    ieee754: 1.1.13
-    jmespath: 0.16.0
-    querystring: 0.2.0
-    sax: 1.2.1
-    url: 0.10.3
-    util: ^0.12.4
-    uuid: 8.0.0
-    xml2js: 0.5.0
-  checksum: dacbe060c99bf6cc7677e30c553883e7c4ca6dd2a26cfa4b20bd6dbec0ad2b272aa054ddb6421badf80a5454d9c475c1094a4eccbdfb1754b092feacff578665
-  languageName: node
-  linkType: hard
-
 "aws-sdk@npm:^2.1225.0":
   version: 2.1550.0
   resolution: "aws-sdk@npm:2.1550.0"
@@ -7276,7 +7258,6 @@ __metadata:
     "@types/ejs": ^3
     "@types/jest": ^29.5.0
     "@types/node": ^20.11.17
-    aws-sdk: 2.1525.0
     deep-copy: ^1.4.2
     dynamodb-admin: ^4.6.1
     dynamodb-toolbox: ^0.9.2
@@ -17945,7 +17926,6 @@ resolve@^1.20.0:
     "@types/testing-library__react": ^10.2.0
     "@types/uuid": ^9
     "@yarnpkg/esbuild-plugin-pnp": ^3.0.0-rc.15
-    aws-sdk: 2.1525.0
     concurrently: ^7.3.0
     date-fns: ^2.28.0
     db-blog: "workspace:^"
@@ -18104,7 +18084,6 @@ resolve@^1.20.0:
     "@types/testing-library__jest-dom": ^5.14.5
     "@types/testing-library__react": ^10.2.0
     "@yarnpkg/esbuild-plugin-pnp": ^3.0.0-rc.15
-    aws-sdk: 2.1525.0
     concurrently: ^7.3.0
     date-fns: ^2.28.0
     db-blog: "workspace:^"
@@ -18404,16 +18383,6 @@ resolve@^1.20.0:
   version: 4.0.0
   resolution: "xml-name-validator@npm:4.0.0"
   checksum: af100b79c29804f05fa35aa3683e29a321db9b9685d5e5febda3fa1e40f13f85abc40f45a6b2bf7bee33f68a1dc5e8eaef4cec100a304a9db565e6061d4cb5ad
-  languageName: node
-  linkType: hard
-
-"xml2js@npm:0.5.0":
-  version: 0.5.0
-  resolution: "xml2js@npm:0.5.0"
-  dependencies:
-    sax: ">=0.6.0"
-    xmlbuilder: ~11.0.0
-  checksum: 1aa71d62e5bc2d89138e3929b9ea46459157727759cbc62ef99484b778641c0cd21fb637696c052d901a22f82d092a3e740a16b4ce218e81ac59b933535124ea
   languageName: node
   linkType: hard
 

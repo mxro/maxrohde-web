@@ -29,7 +29,6 @@
     "@goldstack/utils-esbuild": "^0.5.9",
     "@tailwindcss/typography": "^0.5.9",
     "@yarnpkg/esbuild-plugin-pnp": "^3.0.0-rc.15",
-    "aws-sdk": "2.1525.0",
     "date-fns": "^2.28.0",
     "db-blog": "workspace:^",
     "dynamodb-blog": "workspace:^",
