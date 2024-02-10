@@ -5,7 +5,7 @@
   "dependencies": {
     "@aws-sdk/client-dynamodb": "3.485.0",
     "@aws-sdk/util-dynamodb": "^3.87.0",
-    "@goldstack/template-ssr": "^0.3.28",
+    "@goldstack/template-ssr": "^0.3.29",
     "db-blog": "workspace:^"
   },
   "devDependencies": {
