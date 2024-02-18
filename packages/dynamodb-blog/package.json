@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "main": "./src/dynamoDBBlog",
   "dependencies": {
-    "@aws-sdk/client-dynamodb": "^3.511.0",
-    "@aws-sdk/util-dynamodb": "^3.511.0",
-    "@goldstack/template-ssr": "^0.3.29",
+    "@aws-sdk/client-dynamodb": "^3.515.0",
+    "@aws-sdk/util-dynamodb": "^3.515.0",
+    "@goldstack/template-ssr": "^0.3.30",
     "db-blog": "workspace:^"
   },
   "devDependencies": {
