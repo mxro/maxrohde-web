@@ -10,7 +10,6 @@ module.exports = {
       tsconfig: 'tsconfig.test.json',
     },
   },
-  resolver: `${__dirname}/scripts/resolver.js`,
   transform: {
     '.+\\.(css|style|less|sass|scss|svg|png|jpg|ttf|woff|woff2)$':
       'jest-transform-stub',

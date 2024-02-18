@@ -5,9 +5,6 @@ module.exports = {
   ...base,
   // only run uispec tests since SSR tests do not run in jsdom environment
   testRegex: '\\.(uispec)\\.ts[x]?$',
-  moduleNameMapper: {
-    uuid: require.resolve('uuid'),
-  },
   globals: {
     'ts-jest': {
       tsconfig: 'tsconfig.test.json',
