@@ -136,7 +136,7 @@ And so concludes our journey through five steps to finding peace in a troubled w
 
  As we navigate through the steps outlined in this article, it's important to understand that they are not merely sequential checkpoints but interconnected facets of a holistic process. Embarking on the journey towards peace is not a linear path but rather a dynamic cycle of awareness, where each aspect of our being—mind, body, and soul—plays an integral role.
 
-![Cycle of Awareness](life-mastery-framework-v2(1).png)
+![Cycle of Awareness](images/cycle_of_awareness.png)
 — Cycle of Awareness
 
 The outer layer of this cycle involves our thinking mind—the place where we reflect and gain insights. Our conscious thought is within our control—it's the engine of change that we can harness, albeit not an overwhelmingly powerful one. Here, we confront the self-imposed nature of much of our suffering. By understanding that many of our problems stem from within, we can begin to dismantle the illusions that bind us to unhappiness. Thich Nhat Hanh's teachings remind us that our environment can influence which seeds in our consciousness grow and which wither away.
