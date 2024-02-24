@@ -4,7 +4,7 @@ publish: true
 coverImage: ''
 id: 'five-steps-to-peace'
 blog: 'maxrohde.com'
-date: 2024-01-06
+date: 2024-02-25
 summary: 
 authors:
   - max
@@ -19,7 +19,7 @@ categories:
   - 'contemplations'
 ---
 
-Life can be hectic and sometimes overwhelming, leaving us yearning for a sense of calm amidst the chaos. With so much going on around us and within our own thoughts, finding peace might seem like an impossible task. But what if I told you that inner tranquillity isn't as far out of reach as it may appear? In this article, we're going to explore five straightforward steps that can guide you towards a more peaceful state of mind.
+Life can be hectic and sometimes overwhelming, leaving us yearning for a sense of calm amidst the chaos. With so much going on around us and within our own thoughts, finding peace might seem like an impossible task. But what if I told you that inner tranquillity isn't as far out of reach as it may appear? In this article, I explore five straightforward steps that can guide you towards a more peaceful state of mind.
 
 The five steps I propose are:
 
@@ -31,15 +31,7 @@ The five steps I propose are:
 
 ## Step 1: Understand That Suffering Is Self-Imposed
 
-The quest for peace starts in the mind. Our thoughts shape our reality, and while they may not be the most crucial part of this journey, they are where we must begin. Our conscious thought is within our control—it's the engine of change that we can harness, albeit not an overwhelmingly powerful one.
-
-We improve ourselves by acquiring knowledge and then applying it. In seeking peace, it's essential to absorb wholesome knowledge that helps us alleviate our suffering. However, we should keep in mind that knowledge has its limitations—after all, if happiness could be earned through academic study alone, universities would be overrun with candidates for a 'PhD in Happiness'. 
-
-Thankfully the most important things we need to know are neither plenty, nor very complicated. I suggest as the first step for our path to understand that most of our suffering is self imposed.
-
-Some suffering like physical pain from touching a hot plate is immediate and unavoidable. However, worries about future events or regrets about the past are self 
-
-For instance, to recognise that much of our suffering—particularly mental anguish—is self-imposed. For instance, while physical pain from touching a hot plate is immediate and unavoidable, the worries about future events or regrets about past actions are often self-created burdens. We needn't carry these weights; they live only in our imagination.
+Some suffering like physical pain physical pain from touching a hot plate is immediate and unavoidable. However, worries about future events or regrets about past actions are often self-created burdens. We needn't carry these weights; they live only in our imagination.
 
 Existential suffering—the kind where life seems devoid of meaning—is something we only inflict upon ourselves. No external force mandates this despair; it stems from within us. Acknowledging that much of our suffering is self-imposed is the first step towards liberation from it.
 
@@ -132,6 +124,12 @@ And so concludes our journey through five steps to finding peace in a troubled w
 ## Conclusion
 
  As we navigate through the steps outlined in this article, it's important to understand that they are not merely sequential checkpoints but interconnected facets of a holistic process. Embarking on the journey towards peace is not a linear path but rather a dynamic cycle of awareness, where each aspect of our being—mind, body, and soul—plays an integral role.
+
+REWRITE The quest for peace starts in the mind. Our conscious thought is within our control—it's the engine of change that we can harness, albeit not an overwhelmingly powerful one.
+
+We improve ourselves by acquiring knowledge and then applying it. In seeking peace, it's essential to absorb wholesome knowledge that helps us alleviate our suffering. 
+
+Thankfully the most important things we need to know are neither plenty, nor very complicated. I suggest as the first step for our path to understand that most of our suffering is self imposed.
 
 The outer layer of this cycle involves our thinking mind—the place where we reflect and gain insights. Here, we confront the self-imposed nature of much of our suffering. By understanding that many of our problems stem from within, we can begin to dismantle the illusions that bind us to unhappiness. Thich Nhat Hanh's teachings remind us that our environment can influence which seeds in our consciousness grow and which wither away. It is within our power to choose surroundings that nurture positivity and prevent negative seeds from flourishing.
 
