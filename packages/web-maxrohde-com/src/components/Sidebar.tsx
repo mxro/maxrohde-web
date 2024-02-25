@@ -29,7 +29,16 @@ const Sidebar = (props: { viewCount: string }): JSX.Element => {
                       'my-1 cursor-pointer block rounded bg-white py-4 px-6 text-base font-medium text-black transition hover:bg-opacity-90'
                     }
                   >
-                    <Medium></Medium> · mxro
+                    <Medium></Medium> · mxro (tech articles)
+                  </a>
+
+                  <a
+                    href="https://medium.com/@maxcontemplates"
+                    className={
+                      'my-1 cursor-pointer block rounded bg-white py-4 px-6 text-base font-medium text-black transition hover:bg-opacity-90'
+                    }
+                  >
+                    <Medium></Medium> · maxcontemplates
                   </a>
                   <a
                     href="https://twitter.com/mxro"
