@@ -1,38 +1,54 @@
 
 
-
 ## Introduction
 
-1. I don't really use any social networks or social media websites, with the exception of one, YouTube.
-2. YouTube is perfect for me since it provides a willing canvas for my eclectic interests that change rapidly month to month, and YouTube's recommendation algorithm is quite apt at picking these up and recommending me videos to indulge my interests.
-3. In December last year, the interest I was able to pick up was in late 20th-century philosophers with an Eastern bend, or so to say, those that bridge the West and the East. How I originally came to it is, I guess, by viewing something from Fid Nacht Han and YouTube figuring out the rest.
-4. Among those was Alan Watts, who I think is quite well known, but I also got some recommendations from a little bit unexpected angle of a Jesuit priest called Anthony DeMello, for which a few lectures in very questionable video and audio quality are available on YouTube.
-5. I was at once blown away by his unique style, a sense of thinking, and ideas. Thus, I was quick to have a look around if there would be any books available by him. Which there are technically, but in a way, Awareness and many of his other books are not books in the traditional sense, how we usually find them. But they are chiefly collections of other things, such as small stories in The Prayer of the Frog, but also slightly edited transcripts of his lectures.
-6. The book Awareness falls into the second category. And originally reading it feels a bit strange because it is obviously a transcription of spoken text of a lecture, which doesn't usually come along as smooth as prose written specifically for a book. However, I think that many of the ideas contained within this book make it more than worthwhile to deal with this little bit unusual style.
+YouTube is one social network I frequent, and it serves as a dynamic canvas for my varied passions. Last December, my attention was captured by philosophers who meld Eastern and Western thought—a discovery I credit to YouTube's keen algorithm, which likely picked up on my interest in thinkers like Thich Nhat Hanh.
+
+Among the recommendations were the lectures by Alan Watts, whose name many will recognise. Another recommendation were recordings of Anthony de Mello, a Jesuit priest whose lectures—despite their poor video and audio quality—resonated deeply with me.
+
+De Mello's distinctive approach and profound insights immediately struck a chord with me. Eager to explore his work further, I sought out his books. His books aren't conventional narratives but rather collections of stories like those in "[The Prayer of the Frog](https://www.goodreads.com/book/show/10821776-the-prayer-of-the-frog)," or edited transcripts of his talks.
+
+"Awareness" falls into this latter category. Approaching it is initially odd; it reads like spoken language rather than polished prose. Yet the compelling ideas within make any initial discomfort well worth overcoming.
+
+In this review, I will discuss many of the key ideas in "Awareness" and you can be your own judge if this unconventional book might just change how you see the world.
 
 ## Key Ideas
 
 ### Presence in the Moment
 
-The book is really quite aptly named with the title Awareness, because that relates back to the essential thesis of the book, that by being aware in the present moment, by connecting with the wonder of creation, we are able to connect with the divine and find happiness in our lives. He also refers to this as 'waking up'. 
+Anthony de Mello's book "Awareness" is a guide to living more fully by being present. The title itself captures the essence of his message: by anchoring ourselves in the here and now, we tap into a deeper level of existence. De Mello suggests that this presence allows us to experience life's richness and connect with something greater than ourselves, which he equates with the divine. This state of 'waking up' can lead us to true happiness, as we become more attuned to life's wonders.
 
-### Illusion of the I
+### Illusion of the 'I'
 
-Many other parts of the book are more about what not to know or what not to do. So, for instance, to reach the state of awareness, de Mello argues that we need to strip away at the I, what we define as I. He thinks it's far too expansive. It's things that we just imagine we are and that are important to what we are, but that a matter of fact aren't, but instead are just what he calls illusions. So, for instance, if you happen to be a doctor and then you define yourself as I am a doctor, then he would call this a harmful illusion. Since you may at some point not be able to be a doctor anymore because of health or because of something else, and then you will slide into unhappiness. But he would say you slide into unhappiness for no reason whatsoever. You have just fallen trap to this illusion by defining yourself as something that is actually not the essence of you. But if you define your I, you strip it down to its core elementals, then he says nothing can really harm you, nothing can make you unhappy but yourself and your perspective on yourself.
+De Mello challenges readers to question their self-identity, suggesting that much of what we consider our 'self' is an illusion. He argues that our concept of 'I' is often inflated with roles and titles that are transient—like being a doctor—and when these are stripped away, we suffer unnecessarily. According to de Mello, this suffering stems from mistaking these temporary attributes for our true essence. By peeling back these layers to reach the core of our being, he asserts that we can become impervious to external factors that previously caused us distress.
 
->If you’re lucky and the gods are gracious or if you are gifted with divine grace (use any theological expression you want), you might suddenly understand who “I” is, and you’ll never be the same again, never. Nothing will ever be able to touch you again and no one will ever be able to hurt you again. You will fear no one and you will fear nothing.
+He says:
+
+> If you’re lucky and the gods are gracious or if you are gifted with divine grace [...], you might suddenly understand who “I” is, and you’ll never be the same again, never. Nothing will ever be able to touch you again and no one will ever be able to hurt you again. You will fear no one and you will fear nothing.
+
+This statement encapsulates de Mello's belief in the transformative power of understanding our true nature beyond superficial labels.
 
 ### Attachment and Desire
 
-he also puts a lot of emphasis that what stands in our way to reach deep happiness and contentment are our desires and he challenges the audience towards the beginning of the book that he will give them a way to find this deep happiness or contentment but that he knows that most of them will not be able to want to take that up eventually because it would mean to give up on all your desires and attachments and oftentimes we think of desires as we can easily give that up because maybe that's my desire for eating sweets or having a drink at night but in the back of our minds we distinguish between good and bad desires where bad desires yeah of course we season them with something that we don't want but we have also plenty of desires that we consider good but then he questions why do we consider them good and generally that's so because of societal pressures so let's give an example of that so let's say you would be a student you're pursuing a degree and now his challenge would be would you be willing to give up your degree for your happiness and essentially that is at the root of this question of desire because when you have this desire to have a degree so you can get a stable job so you can buy a house and whatever all these things there are desires and as long as we carry those with us we are bound to be unhappy
+Anthony de Mello's exploration of happiness in "Awareness" delves into the complex web of attachment and desire. He presents a challenging premise: our pursuit of desires is the very obstacle to achieving profound happiness and contentment. De Mello anticipates resistance, understanding that most people are reluctant to relinquish their attachments because it means letting go of not just trivial wants, like a craving for sweets, but also those desires we deem noble or beneficial.
 
-Similar things he says about love. He says you cannot really love somebody truly if you desire them for yourself, even if you just desire their company, or even if you just desire their good health, because he would then argue that by having these desires linked to them, you set yourself up for suffering and unhappiness for when they are unwell, or then you will feel bad, or if they leave you, then you feel bad, and that is in your way of really truly loving them. 
+He questions our categorisation of desires as good or bad, often dictated by societal norms. For instance, consider a student working towards a degree with the hope of securing a stable job and future comforts. De Mello would ask: Are you willing to abandon your degree if it meant attaining true happiness? This question strikes at the heart of our desire-driven existence. As long as we harbour these aspirations—be they for education, career success, or material possessions—we remain shackled to potential unhappiness.
 
->It’s been there all along, staring us in the face in the scriptures, though we never cared to see it because we were so drowned in what our culture calls love with its love songs and poems—that isn’t love at all, that’s the opposite of love. That’s desire and control and possessiveness. That’s manipulation, and fear, and anxiety—that’s not love.
+### The Misconception of Love
 
-So that is something else, I think, that makes this challenge true, what he said in the beginning, that he thinks most people are not wanting to comply with that, because now we have a choice. Do we want to keep our desire, or do we want to get to this nirvana of happiness? And I think most of us, we would probably say the ones that we love, of course we want to continue to love them, we want to continue to care about their well-being, and we don't mind to be affected when they are feeling bad, to maintain that relationship that we have. But he then rightly says, if you do that, if you have that decision, then you set yourself up for suffering in your life and won't be able to follow his recipe of achieving contentment and happiness through this awareness.
+De Mello extends his scrutiny to love—a sentiment often romanticized and misunderstood. He argues that true love is not possible when it's entangled with desire, whether that's desiring someone's company or worrying about their health. Such attachments set us up for suffering because they're rooted in possessiveness and control rather than genuine affection.
+
+He confronts us with a stark truth:
+
+> It’s been there all along, staring us in the face in the scriptures, though we never cared to see it because we were so drowned in what our culture calls love with its love songs and poems—that isn’t love at all, that’s the opposite of love. That’s desire and control and possessiveness. That’s manipulation, and fear, and anxiety—that’s not love.
+
+The challenge he presents is clear: Do we cling to our version of love—with all its conditions—and accept the resulting pain? Or do we strive for an enlightened form of happiness devoid of these binds? Most people would argue that their affection for loved ones is non-negotiable; they accept the emotional impact as part of those relationships. But de Mello counters this by asserting that such choices make us to suffer rather than leading us towards contentment.
+
+He sums up this paradoxical human condition:
 
 > I was saying that we don’t want to be happy. We want other things. Or let’s put it more accurately: We don’t want to be unconditionally happy. I’m ready to be happy provided I have this and that and the other thing.
+
+In "Awareness," Anthony de Mello invites us on a journey towards self-discovery—a path less travelled because it demands shedding layers of deeply ingrained desires and confronting uncomfortable truths about what we mistake for love. His message is both simple yet profoundly difficult: only by releasing these attachments can we hope to achieve true awareness—and with it, an enduring sense of peace.
 
 ### Religion
 
@@ -44,22 +60,67 @@ Being a psychologist, there is also quite a bit of content on how to better unde
 
 > How are you going to understand what you disapprove of, or what you approve of, for that matter? All of this sounds like a new world, doesn’t it? No judgment, no commentary, no attitude: one simply observes, one studies, one watches, without the desire to change what is. Because if you desire to change what is into what you think should be, you no longer understand.
 
-### 'Treating' Depression
+### Religion and Universality
 
-This approach also gives us consolation when we are feeling bad, by being to disentangle ourselves from the emotions we experience:
+Anthony de Mello's take on religion in "Awareness" is quite intriguing, especially given his background as a Jesuit priest. One might expect a heavy reliance on Biblical teachings, but de Mello seems to address an audience already well-versed in such matters. Instead, he adopts a more inclusive perspective, suggesting that all religions share fundamental truths that mirror the principles he espouses.
+
+He speaks with reverence of mystics and sages across various traditions, placing Jesus among them but also acknowledging figures like Buddha and other Eastern philosophers. This inclusive approach to spirituality may explain why, after his death, Cardinal Ratzinger—later Pope Benedict XVI—criticized some of de Mello's ideas. Despite this controversy, his works continue to be available, albeit sometimes with a cautionary note in Catholic bookshops. His view of religion as a tapestry of universal truths challenges us to look beyond dogma and find the common threads that unite different faiths.
+
+## Self-Observation and Understanding
+
+As a psychologist, de Mello offers valuable insights into self-understanding through observation. He encourages readers to become keen observers of their own emotions and reactions without judgment or the impulse to change them. This process of observation allows us to recognise the illusions that cause us pain.
+
+De Mello's advice is simple yet profound:
+
+> How are you going to understand what you disapprove of, or what you approve of, for that matter? All of this sounds like a new world, doesn’t it? No judgment, no commentary, no attitude: one simply observes, one studies, one watches, without the desire to change what is. Because if you desire to change what is into what you think should be, you no longer understand.
+
+By adopting this stance of neutral curiosity towards our inner experiences, we can gain clarity about who we are beneath our conditioned responses and societal roles. This self-awareness is pivotal in moving towards the freedom from illusion that de Mello advocates for throughout "Awareness."
+
+## 'Treating' Depression
+
+Anthony de Mello offers an alternative perspective on dealing with negative emotions such as depression. He suggests a shift in how we perceive our emotional states, which can provide relief from suffering. Instead of identifying with the emotion, he advises recognising it as a transient experience:
 
 > You say, “I’m depressed.” But that is false. You are not depressed. If you want to be accurate, you might say, “I am experiencing a depression right now.”
 
-Here to sum up his suggested approach to reliaving us from suffering. 
+De Mello outlines a method for alleviating suffering through self-awareness:
 
 > Put this program into action, a thousand times: (a) identify the negative feelings in you; (b) understand that they are in you, not in the world, not in external reality; (c) do not see them as an essential part of “I”; these things come and go; (d) understand that when you change, everything changes.
 
-This also includes the element of change. He earlier argues that we should desire nothing, be attached to nothing - so we ask ourselves - shouldn't we be going out and doing good in the world. to that de Mello responsd,, without understanding, we shouldn't be doing anything, since we may do more harm than good, and also, once there is understanding, change will naturally come.
+This approach includes embracing change without attachment. While de Mello argues against desiring anything or being attached to anything, he acknowledges the paradox of wanting to contribute positively to the world. To this end, he asserts that true understanding must precede action to avoid unintentional harm.
 
->When there’s something within you that moves in the right direction, it creates its own discipline.
+> When there’s something within you that moves in the right direction, it creates its own discipline.
 
-### Change
+## Change
 
-de Mello also emphasises that often when we do 'selfless acts' we do those for selfish reasons - e.g. to wanting to be seen as virtuous by others. He also cautions that often when we think we are making things better, we may actually be making them worse. Thus, he suggests, we should focus on understanding, ourselves first but also others. Then he also says we shouldn't want to institute change, neither in ourselves or others, but instead focus on understanding yourself and others, from which he says change will spring forth without having to be forced.
+De Mello critically examines our motivations behind seemingly selfless acts and cautions against actions driven by selfish desires—like wanting to be seen as virtuous by others. He warns that our efforts to improve situations could inadvertently cause more harm than good if we lack awareness and particularly self awareness.
 
->Now, the danger of attempting to change others or change things when you yourself are not aware is that you may be changing things for your own convenience, your pride, your dogmatic convictions and beliefs, or just to relieve your negative feelings.
+His advice is to focus on understanding—both ourselves and others—believing that genuine change will naturally follow without force:
+
+> Now, the danger of attempting to change others or change things when you yourself are not aware is that you may be changing things for your own convenience, your pride, your dogmatic convictions and beliefs, or just to relieve your negative feelings.
+
+By prioritising comprehension over action and letting go of the desire for control or recognition, de Mello believes we can instigate authentic transformation within ourselves and potentially influence our surroundings positively.
+## Conclusion
+
+Anthony de Mello's "Awareness" is not just a book; it's an invitation to embark on a journey of profound self-discovery. It challenges us to confront the illusions that govern our lives—our attachments, desires, and misconceptions about love and happiness. De Mello's insights are as unsettling as they are enlightening, pushing us to question the very foundations of our identity and the way we interact with the world.
+
+Through his teachings on presence, self-observation, and understanding the universality of religious truths, de Mello offers a roadmap to a life of true awareness. His perspective on treating negative emotions like depression with detached observation rather than identification provides practical guidance for those seeking inner peace.
+
+As we close this book review, it's clear that "Awareness" is not for the faint-hearted. It demands an open mind and a willingness to let go of long-held beliefs. Yet, for those ready to take up de Mello's challenge, the rewards are can potentially be great—a sense of liberation from suffering and an enduring contentment that comes from within.
+
+In essence, Anthony de Mello doesn't offer easy answers but instead guides us towards asking better questions—about ourselves, our relationships, and our place in the universe. If you're prepared to dismantle your constructed self and embrace change without attachment or desire for control, "Awareness" might just be the catalyst you need to transform your life.
+
+
+
+## Conclusion
+
+Anthony de Mello's "Awareness" isn't just a book; it's an invitation to embark on a journey towards self-discovery. It asks us not just to read but also to reflect and examine our lives through a new lens—one that brings clarity and resilience. While its format may be unconventional, resembling more a conversation than a traditional text, its content has the potential for profound impact.
+
+As someone who stumbled upon de Mello's wisdom through serendipity on YouTube, I can attest that his teachings resonate long after you close the book. Whether or not "Awareness" will change your worldview as it did mine is something only reading it can determine. But if there’s one thing I am certain of—it’s that Anthony de Mello has crafted an enduring message about understanding oneself that continues to inspire seekers of truth across generations.
+
+ ## Conclusion
+
+In "Awareness," Anthony de Mello invites us into an introspective journey challenging our preconceptions about happiness, love, identity, and spirituality. His teachings encourage us to strip away layers of attachment and societal conditioning to uncover our true selves—a state where enduring peace resides.
+
+While some may find his views controversial or difficult to reconcile with traditional religious doctrines or personal beliefs about love and success, there's an undeniable wisdom in his call for presence and self-observation.
+
+Whether you're seeking spiritual growth or simply looking for a deeper understanding of yourself and the world around you, "Awareness" offers a compelling guide that could very well alter your perception of reality. As with any profound work on spirituality and consciousness, its true value lies not just in reading but in living out its lessons daily.
