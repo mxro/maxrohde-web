@@ -12,6 +12,8 @@ tags:
   - 'chatgpt'
   - 'voice'
   - 'app'
+  - 'ai'
+  - 'productivity'
 categories:
   - 'code'
 ---
