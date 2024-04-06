@@ -52,7 +52,7 @@ export async function createPosts(
         canonicalUrl: post.metadata.canonicalUrl,
       };
 
-      putPost(Posts, result, postData);
+      await putPost(Posts, result, postData);
       // publish for primary blog
       return publishToSecondaryBlogs(Posts, result, postData);
     })
