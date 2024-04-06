@@ -1,0 +1,27 @@
+name: Publish articles 
+run-name: Publish articles through build by ${{ github.actor }} 🚀
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: '🚧 Prepare articles'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/goldstack-setup
+      - run: |
+          cd packages/web-maxrohde-com/packages/articles
+          yarn article prepare * 
+      - run: |
+          yarn article publish -e dev -
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Prepared and published
+    env:
+      AWS_USER_NAME: awsUser
+      AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
+      AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+      AWS_DEFAULT_REGION: us-west-2
