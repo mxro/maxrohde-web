@@ -17,6 +17,7 @@ jobs:
           cd packages/article-cli
           yarn article prepare \*
           yarn article publish -e dev -
+          yarn article publish -e prod -
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Prepared and published

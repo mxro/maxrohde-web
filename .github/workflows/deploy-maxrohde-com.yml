@@ -1,5 +1,5 @@
-name: Deploy maxrohde.com dev
-run-name: Deploy maxrohde.com to dev by ${{ github.actor }} 🚀
+name: Deploy maxrohde.com
+run-name: Deploy maxrohde.com by ${{ github.actor }} 🚀
 on:
   push:
     branches:
@@ -15,6 +15,7 @@ jobs:
       - run: |
           cd packages/web-maxrohde-com
           yarn deploy dev
+          yarn deploy prod
     env:
       AWS_USER_NAME: awsUser
       AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
