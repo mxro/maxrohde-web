@@ -31,7 +31,7 @@ My idea was to use ChatGPT to record voice memos. This uses the transcription ab
 So, I developed a custom "GPT" to make recording voice memos as smooth and effective as possible.
 
 Check out the GPT here: [Voice Memo](https://chat.openai.com/g/g-9okaXHlhe-voice-memo)
-![Voice Memo GPT](Pasted%20image%2020240406110812.png)
+![Voice Memo GPT](images/Pasted%20image%2020240406110812.png)
 
 In the remainder of this article, I explain how this GPT works and provide my impressions of working with GPTs in generatl.
 

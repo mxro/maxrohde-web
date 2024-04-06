@@ -11,52 +11,67 @@ export async function createPosts(
 ): Promise<void> {
   const Posts = new Entity({ ...deepCopy(PostEntity), table: args.table });
 
-  await Promise.all(
-    results.map(async (result) => {
-      const post = result.post;
-      console.log('Publishing article:', result.path);
+  // Chunk the results array into batches of 20 posts
+  const batches = chunkArray(results, 20);
 
-      const fixedHtml = fixAttachmentsLinksInHtml(post.html, result.path);
-      const fixedMarkdown = fixAttachmentsLinksInMarkdown(
-        post.markdown,
-        result.path
-      );
+  // Process each batch sequentially
+  for (const batch of batches) {
+    await Promise.all(
+      batch.map(async (result) => {
+        const post = result.post;
+        console.log('Publishing article:', result.path);
 
-      const postData: Post = {
-        blog: post.metadata.blog,
-        secondaryBlogs: post.metadata.secondaryBlogs
-          ? post.metadata.secondaryBlogs.join(',')
-          : undefined,
-        title: post.metadata.title,
-        contentHtml: fixedHtml,
-        summary:
-          post.metadata.summary ||
-          htmlToText(post.html, {
-            wordwrap: false,
-            selectors: [
-              { selector: 'a', options: { ignoreHref: true } },
-              { selector: 'img', format: 'skip' },
-            ],
-          }).slice(0, 150) + '...',
-        path: result.path,
-        contentMarkdown: fixedMarkdown,
-        authors: 'max',
-        tags: post.metadata.tags ? post.metadata.tags.join(',') : [],
-        categories: post.metadata.categories
-          ? post.metadata.categories.join(',')
-          : [],
-        coverImage: post.metadata.coverImage
-          ? fixCoverImageLink(post.metadata.coverImage)
-          : undefined,
-        datePublished: new Date(post.metadata.date).toISOString(),
-        canonicalUrl: post.metadata.canonicalUrl,
-      };
+        const fixedHtml = fixAttachmentsLinksInHtml(post.html, result.path);
+        const fixedMarkdown = fixAttachmentsLinksInMarkdown(
+          post.markdown,
+          result.path
+        );
 
-      await putPost(Posts, result, postData);
-      // publish for primary blog
-      return publishToSecondaryBlogs(Posts, result, postData);
-    })
-  );
+        const postData: Post = {
+          blog: post.metadata.blog,
+          secondaryBlogs: post.metadata.secondaryBlogs
+            ? post.metadata.secondaryBlogs.join(',')
+            : undefined,
+          title: post.metadata.title,
+          contentHtml: fixedHtml,
+          summary:
+            post.metadata.summary ||
+            htmlToText(post.html, {
+              wordwrap: false,
+              selectors: [
+                { selector: 'a', options: { ignoreHref: true } },
+                { selector: 'img', format: 'skip' },
+              ],
+            }).slice(0, 150) + '...',
+          path: result.path,
+          contentMarkdown: fixedMarkdown,
+          authors: 'max',
+          tags: post.metadata.tags ? post.metadata.tags.join(',') : [],
+          categories: post.metadata.categories
+            ? post.metadata.categories.join(',')
+            : [],
+          coverImage: post.metadata.coverImage
+            ? fixCoverImageLink(post.metadata.coverImage)
+            : undefined,
+          datePublished: new Date(post.metadata.date).toISOString(),
+          canonicalUrl: post.metadata.canonicalUrl,
+        };
+
+        await putPost(Posts, result, postData);
+        // publish for primary blog
+        return publishToSecondaryBlogs(Posts, result, postData);
+      })
+    );
+  }
+}
+
+// Function to chunk an array into smaller arrays of given size
+function chunkArray<T>(arr: T[], size: number): T[][] {
+  const chunkedArr: T[][] = [];
+  for (let i = 0; i < arr.length; i += size) {
+    chunkedArr.push(arr.slice(i, i + size));
+  }
+  return chunkedArr;
 }
 
 export function fixAttachmentsLinksInMarkdown(
