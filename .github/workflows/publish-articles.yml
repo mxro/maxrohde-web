@@ -14,6 +14,9 @@ jobs:
       - uses: ./.github/actions/goldstack-setup
       - run: |
           cd packages/article-cli
+          ls -la
+          cat package.json
+          yarn
           yarn article prepare *
       - run: |
           yarn article publish -e dev -
