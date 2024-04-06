@@ -65,33 +65,19 @@ export const publish = async (args: PublishArgs): Promise<void> => {
   matches = matches.filter((path) => existsSync(path));
   console.log('Found articles');
   console.log(matches);
+  const results: ResultType[] = await Promise.all(
+    matches.map(async (filename) => {
+      return {
+        post: await parseMarkdown(filename),
+        path: extractPathElements(filename).join('/'),
+        filename,
+      };
+    })
+  );
 
-  const batchSize = 20;
-  const results: ResultType[] = [];
+  await createPosts(args, results);
 
-  // Function to process a batch of files
-  const processBatch = async (batch: string[]) => {
-    const batchResults = await Promise.all(
-      batch.map(async (filename) => {
-        return {
-          post: await parseMarkdown(filename),
-          path: extractPathElements(filename).join('/'),
-          filename,
-        };
-      })
-    );
+  await createTags(args, results);
 
-    await createPosts(args, batchResults);
-
-    await createTags(args, batchResults);
-
-    await createCategories(args, batchResults);
-    results.push(...batchResults);
-  };
-
-  // Process files in batches
-  for (let i = 0; i < matches.length; i += batchSize) {
-    const batch = matches.slice(i, i + batchSize);
-    await processBatch(batch);
-  }
+  await createCategories(args, results);
 };
