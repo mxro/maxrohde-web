@@ -1,5 +1,5 @@
 ---
-title: 'Voice Memos with ChatGPT: My First GPT'
+title: 'Voice Memos with ChatGPT: My First "GPT"'
 publish: true
 coverImage: 'chatgpt_voice_conversation.png'
 id: 'voice-memos-with-chatgpt'
