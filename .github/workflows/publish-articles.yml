@@ -1,4 +1,4 @@
-name: Publish articles 
+name: Publish articles
 run-name: Publish articles through build by ${{ github.actor }} 🚀
 on:
   push:
@@ -7,14 +7,14 @@ on:
 
 jobs:
   build:
-    name: '🚧 Prepare articles'
+    name: '🚧 Prepare and publish articles'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: ./.github/actions/goldstack-setup
       - run: |
-          cd packages/web-maxrohde-com/packages/article-cli
-          yarn article prepare * 
+          cd packages/article-cli
+          yarn article prepare *
       - run: |
           yarn article publish -e dev -
       - uses: stefanzweifel/git-auto-commit-action@v5
