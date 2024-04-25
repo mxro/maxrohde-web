@@ -13169,12 +13169,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nan@npm:^2.13.2":
+"nan@github:jkleinsc/nan#remove_accessor_signature":
   version: 2.16.0
-  resolution: "nan@npm:2.16.0"
-  dependencies:
-    node-gyp: latest
-  checksum: cb16937273ea55b01ea47df244094c12297ce6b29b36e845d349f1f7c268b8d7c5abd126a102c5678a1e1afd0d36bba35ea0cc959e364928ce60561c9306064a
+  resolution: "nan@https://github.com/jkleinsc/nan.git#commit=6a2f95a6a2209d8aa7542fb18099fd808a802059"
+  checksum: 926115085fd7e8b088f5f35084aeb51ac668bdf7f867bdec4d235901b3ffb052cd090cbd6d2c74fd17df6b847e181028768052f89d79238676fefea227db099e
   languageName: node
   linkType: hard
 

@@ -15263,11 +15263,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["nan", [\
-        ["npm:2.16.0", {\
-          "packageLocation": "./.yarn/unplugged/nan-npm-2.16.0-cac314a230/node_modules/nan/",\
+        ["https://github.com/jkleinsc/nan.git#commit=6a2f95a6a2209d8aa7542fb18099fd808a802059", {\
+          "packageLocation": "./.yarn/unplugged/nan-https-9b2cd009c5/node_modules/nan/",\
           "packageDependencies": [\
-            ["nan", "npm:2.16.0"],\
-            ["node-gyp", "npm:9.0.0"]\
+            ["nan", "https://github.com/jkleinsc/nan.git#commit=6a2f95a6a2209d8aa7542fb18099fd808a802059"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -15577,7 +15576,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["glob", "npm:7.2.3"],\
             ["lodash", "npm:4.17.21"],\
             ["meow", "npm:9.0.0"],\
-            ["nan", "npm:2.16.0"],\
+            ["nan", "https://github.com/jkleinsc/nan.git#commit=6a2f95a6a2209d8aa7542fb18099fd808a802059"],\
             ["node-gyp", "npm:8.4.1"],\
             ["npmlog", "npm:5.0.1"],\
             ["request", "npm:2.88.2"],\
