@@ -8,6 +8,7 @@ import { wordpressPreprocessFile } from './markdown/wordpressPreprocess';
 import { wordpressToMarkdown } from './markdown/wordpressToMarkdown';
 import { prepare } from './prepare/prepare';
 import { deleteAll } from './database/delete';
+// import { ghostPublish } from './ghost/publish';
 
 (async () => {
   const program = new Command();
@@ -66,6 +67,26 @@ import { deleteAll } from './database/delete';
         categories,
       });
     });
+
+  // program
+  //   .command('publish-ghost')
+  //   .description('Publishes an article to Ghost')
+  //   .argument('<filename>', 'The filename of the article to publish')
+  //   .option('-d, --dry', 'Dry run - do not publish')
+  //   .option(
+  //     '-c, --categories <categories>',
+  //     'Comma separated list of categories'
+  //   )
+  //   .requiredOption('-e, --env <env>', 'Environment to use')
+  //   .action(async (pattern, options) => {
+  //     const dry = options.dry || false;
+  //     const fileNamePattern = pattern;
+
+  //     await ghostPublish({
+  //       fileNamePattern,
+  //       dry,
+  //     });
+  //   });
 
   program
     .command('reset-db')
