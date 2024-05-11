@@ -82,7 +82,15 @@ import { ghostPublish } from './ghost/publish';
       const dry = options.dry || false;
       const fileNamePattern = pattern;
 
+      let serverUrl: string;
+      if (options.env === 'local') {
+        serverUrl = config.ghostLocalServer;
+      } else {
+        throw new Error(`Unknown server ${options.env}`);
+      }
+
       await ghostPublish({
+        serverUrl,
         fileNamePattern,
         dry,
       });

@@ -1,8 +1,8 @@
-import { existsSync } from 'fs';
-import { dirname } from 'path';
-import config from '../config.json';
-
-export function fixAttachmentLinks(content: string, postDir: string): string {
+export function fixAttachmentLinks(
+  serverUrl: string,
+  content: string,
+  postDir: string
+): string {
   let newContent = `${content}`;
   // console.log(newContent);
   // const matches = content.matchAll(/\[[^\]]*\]\(([^)]*)\)*/g);
@@ -10,7 +10,7 @@ export function fixAttachmentLinks(content: string, postDir: string): string {
 
   for (const match of matches) {
     const oldString = match[1];
-    const newString = `/content/images/attachments/${postDir}/${match[2]}`;
+    const newString = `${serverUrl}content/images/attachments/${postDir}/${match[2]}`;
     // Escape special characters in the oldString to create a valid regex
     const escapedOldString = oldString.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
@@ -19,10 +19,6 @@ export function fixAttachmentLinks(content: string, postDir: string): string {
 
     // Replace all occurrences of the oldString with the newString
     newContent = newContent.replace(regex, newString);
-    // newContent = newContent.replaceAll(
-    //   new RegExp(`${match[1]}`, 'g'),
-    //   `${postDir}/${match[1]}`
-    // );
   }
   return newContent;
 }

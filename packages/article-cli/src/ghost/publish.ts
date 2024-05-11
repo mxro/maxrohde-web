@@ -29,6 +29,7 @@ export interface GhostPublishArgs {
   dry: boolean;
   directoryToScan?: string;
   categories?: string[];
+  serverUrl: string;
 }
 
 export const ghostPublish = async (args: GhostPublishArgs): Promise<void> => {
@@ -55,10 +56,13 @@ export const ghostPublish = async (args: GhostPublishArgs): Promise<void> => {
     })
   );
 
-  await ghostPostAll(results);
+  await ghostPostAll(args, results);
 };
 
-async function ghostPostAll(args: ResultType[]): Promise<void> {
+async function ghostPostAll(
+  publishArgs: GhostPublishArgs,
+  args: ResultType[]
+): Promise<void> {
   const api = new GhostAdminAPI({
     url: GHOST_API_URL,
     version: 'v5.0',
@@ -66,24 +70,40 @@ async function ghostPostAll(args: ResultType[]): Promise<void> {
   });
 
   for (const arg of args) {
-    await ghostPostOne(api, arg);
+    await ghostPostOne(publishArgs, api, arg);
   }
 }
 
-function getCoverImageURL(filename: string | undefined): string | undefined {
-  return filename;
+function getCoverImageURL(
+  serverUrl: string,
+  filename: string | undefined
+): string | undefined {
+  return `${serverUrl}content/images/cover/${filename}`;
 }
 
 // see https://github.com/Southpaw1496/obsidian-send-to-ghost/blob/master/src/methods/publishPost.ts
-async function ghostPostOne(api: any, entry: ResultType): Promise<void> {
+async function ghostPostOne(
+  publishArgs: GhostPublishArgs,
+  api: any,
+  entry: ResultType
+): Promise<void> {
+  if (!entry.post.metadata.date) {
+    throw new Error(`No date provided for ${entry.filename}`);
+  }
+  if (!entry.post.metadata.date.toISOString) {
+    entry.post.metadata.date = new Date(entry.post.metadata.date);
+    // throw new Error(
+    //   `Incorrect data format provided for ${entry.filename} - ${entry.post.metadata.date}`
+    // );
+  }
   const date = entry.post.metadata.date.toISOString();
 
-  const fixedHtml = fixAttachmentLinks(entry.post.html, entry.path);
+  const fixedHtml = fixAttachmentLinks(
+    publishArgs.serverUrl,
+    entry.post.html,
+    entry.path
+  );
 
-  // console.log(fixedHtml);
-  // process.exit(0);
-
-  // 2024-05-11T07:19:02.000Z
   const res = await api.posts.add(
     {
       title: entry.post.metadata.title,
@@ -92,7 +112,10 @@ async function ghostPostOne(api: any, entry: ResultType): Promise<void> {
       created_at: date,
       updated_at: date,
       published_at: date,
-      feature_image: getCoverImageURL(entry.post.metadata.coverImage),
+      feature_image: getCoverImageURL(
+        publishArgs.serverUrl,
+        entry.post.metadata.coverImage
+      ),
       slug: entry.post.metadata.id,
       custom_excerpt: entry.post.metadata.summary || undefined, // this does not seem to work
       og_description: entry.post.metadata.summary || undefined,
@@ -107,5 +130,8 @@ async function ghostPostOne(api: any, entry: ResultType): Promise<void> {
 
   if (json.id) {
     console.log('successfully published: ' + json.title);
+  } else {
+    console.error('error publishing ' + entry.filename);
+    console.log(json);
   }
 }
