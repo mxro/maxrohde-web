@@ -1,4 +1,4 @@
-import * as GhostAdminAPI from '@tryghost/admin-api';
+import GhostAdminAPI from '@tryghost/admin-api';
 
 import config from '../config.json';
 
@@ -64,6 +64,9 @@ async function ghostPostAll(args: ResultType[]): Promise<void> {
     key: GHOST_LOCAL_API_KEY,
   });
 
+  // const data = await api.posts.read({ id: '663f1f3a9a5e3b3284276195' });
+  // console.log(JSON.stringify(data, null, 2));
+
   for (const arg of args) {
     await ghostPostOne(api, arg);
   }
@@ -75,28 +78,41 @@ function getCoverImageURL(filename: string | undefined): string | undefined {
 
 // see https://github.com/Southpaw1496/obsidian-send-to-ghost/blob/master/src/methods/publishPost.ts
 async function ghostPostOne(api: any, entry: ResultType): Promise<void> {
+  const date = entry.post.metadata.date.toISOString();
+  // 2024-05-11T07:19:02.000Z
+  console.log(entry.post.metadata.summary);
   const res = await api.posts.add(
     {
       title: entry.post.metadata.title,
+      status: 'published',
       html: entry.post.html,
+      created_at: date,
+      updated_at: date,
+      published_at: date,
       feature_image: getCoverImageURL(entry.post.metadata.coverImage),
       slug: entry.post.metadata.id,
-      excerpt: entry.post.metadata.summary || undefined,
+      custom_excerpt: entry.post.metadata.summary || undefined, // this does not seem to work
+      og_description: entry.post.metadata.summary || undefined,
+      meta_description: entry.post.metadata.summary || undefined,
       tags: entry.post.metadata.tags || [],
       categories: entry.post.metadata.categories || [],
     },
     { source: 'html' } // Tell the API to use HTML as the content source, instead of Lexical
   );
 
-  const json = JSON.parse(res);
-  if (json?.posts) {
-    console.log(
-      `"${json?.posts?.[0]?.title}" has been ${json?.posts?.[0]?.status} successful!`
-    );
-  } else {
-    console.error(`${json.errors[0].context || json.errors[0].message}`);
-    console.error(
-      `${json.errors[0]?.details[0].message} - ${json.errors[0]?.details[0].params.allowedValues}`
-    );
+  const json = res;
+  // console.log(JSON.stringify(json));
+
+  // if (json.id && entry.post.metadata.summary) {
+  //   await api.posts.edit({
+  //     id: json.id,
+  //     fields: ['excerpt'],
+  //     excerpt: entry.post.metadata.summary,
+  //     updated_at: date,
+  //   });
+  // }
+
+  if (json.id) {
+    console.log('successfully published: ' + json.title);
   }
 }
