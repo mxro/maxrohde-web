@@ -73,6 +73,7 @@ import { ghostPublish } from './ghost/publish';
     .description('Publishes an article to Ghost')
     .argument('<filename>', 'The filename of the article to publish')
     .option('-d, --dry', 'Dry run - do not publish')
+    .option('-b, --blog <blog>', 'Which blog to publish to.')
     .option(
       '-c, --categories <categories>',
       'Comma separated list of categories'
@@ -89,7 +90,12 @@ import { ghostPublish } from './ghost/publish';
         throw new Error(`Unknown server ${options.env}`);
       }
 
+      if (!options.blog) {
+        throw new Error('Blog must be defined!');
+      }
+
       await ghostPublish({
+        blog: options.blog,
         serverUrl,
         fileNamePattern,
         dry,

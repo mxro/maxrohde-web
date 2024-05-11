@@ -26,6 +26,7 @@ export type ResultType = {
 
 export interface GhostPublishArgs {
   fileNamePattern: string;
+  blog: string;
   dry: boolean;
   directoryToScan?: string;
   categories?: string[];
@@ -46,7 +47,8 @@ export const ghostPublish = async (args: GhostPublishArgs): Promise<void> => {
   matches = matches.filter((path) => existsSync(path));
   console.log('Found articles');
   console.log(matches);
-  const results: ResultType[] = await Promise.all(
+
+  let results: ResultType[] = await Promise.all(
     matches.map(async (filename) => {
       return {
         post: await parseMarkdown(filename),
@@ -55,6 +57,8 @@ export const ghostPublish = async (args: GhostPublishArgs): Promise<void> => {
       };
     })
   );
+
+  results = results.filter((e) => e.post.metadata.blog === args.blog);
 
   await ghostPostAll(args, results);
 };
