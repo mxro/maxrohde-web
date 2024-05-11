@@ -16,6 +16,7 @@ const GHOST_API_URL = 'http://localhost:2368';
 import { parseMarkdown, ParseMarkdownResult } from '../markdown/markdown';
 
 import { extractPathElements } from './../database/publish';
+import { fixAttachmentLinks } from './fixAttachmentImageLinks';
 
 export type ResultType = {
   post: ParseMarkdownResult;
@@ -64,9 +65,6 @@ async function ghostPostAll(args: ResultType[]): Promise<void> {
     key: GHOST_LOCAL_API_KEY,
   });
 
-  // const data = await api.posts.read({ id: '663f1f3a9a5e3b3284276195' });
-  // console.log(JSON.stringify(data, null, 2));
-
   for (const arg of args) {
     await ghostPostOne(api, arg);
   }
@@ -79,13 +77,18 @@ function getCoverImageURL(filename: string | undefined): string | undefined {
 // see https://github.com/Southpaw1496/obsidian-send-to-ghost/blob/master/src/methods/publishPost.ts
 async function ghostPostOne(api: any, entry: ResultType): Promise<void> {
   const date = entry.post.metadata.date.toISOString();
+
+  const fixedHtml = fixAttachmentLinks(entry.post.html, entry.path);
+
+  // console.log(fixedHtml);
+  // process.exit(0);
+
   // 2024-05-11T07:19:02.000Z
-  console.log(entry.post.metadata.summary);
   const res = await api.posts.add(
     {
       title: entry.post.metadata.title,
       status: 'published',
-      html: entry.post.html,
+      html: fixedHtml,
       created_at: date,
       updated_at: date,
       published_at: date,
@@ -101,16 +104,6 @@ async function ghostPostOne(api: any, entry: ResultType): Promise<void> {
   );
 
   const json = res;
-  // console.log(JSON.stringify(json));
-
-  // if (json.id && entry.post.metadata.summary) {
-  //   await api.posts.edit({
-  //     id: json.id,
-  //     fields: ['excerpt'],
-  //     excerpt: entry.post.metadata.summary,
-  //     updated_at: date,
-  //   });
-  // }
 
   if (json.id) {
     console.log('successfully published: ' + json.title);
