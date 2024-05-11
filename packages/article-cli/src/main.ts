@@ -8,6 +8,7 @@ import { wordpressPreprocessFile } from './markdown/wordpressPreprocess';
 import { wordpressToMarkdown } from './markdown/wordpressToMarkdown';
 import { prepare } from './prepare/prepare';
 import { deleteAll } from './database/delete';
+import { ghostPublish } from './ghost/publish';
 
 (async () => {
   const program = new Command();
@@ -64,6 +65,40 @@ import { deleteAll } from './database/delete';
         dry,
         table,
         categories,
+      });
+    });
+
+  program
+    .command('publish-ghost')
+    .description('Publishes an article to Ghost')
+    .argument('<filename>', 'The filename of the article to publish')
+    .option('-d, --dry', 'Dry run - do not publish')
+    .option('-b, --blog <blog>', 'Which blog to publish to.')
+    .option(
+      '-c, --categories <categories>',
+      'Comma separated list of categories'
+    )
+    .requiredOption('-e, --env <env>', 'Environment to use')
+    .action(async (pattern, options) => {
+      const dry = options.dry || false;
+      const fileNamePattern = pattern;
+
+      let serverUrl: string;
+      if (options.env === 'local') {
+        serverUrl = config.ghostLocalServer;
+      } else {
+        throw new Error(`Unknown server ${options.env}`);
+      }
+
+      if (!options.blog) {
+        throw new Error('Blog must be defined!');
+      }
+
+      await ghostPublish({
+        blog: options.blog,
+        serverUrl,
+        fileNamePattern,
+        dry,
       });
     });
 
