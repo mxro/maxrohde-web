@@ -21,6 +21,7 @@
     "@tryghost/admin-api": "^1.13.12",
     "commander": "^9.4.0",
     "db-blog": "workspace:^",
+    "dotenv": "^16.4.5",
     "dynamodb-toolbox": "^0.9.2",
     "fast-glob": "^3.2.11",
     "fs-extra": "^10.1.0",

@@ -8,6 +8,8 @@ import { resolve } from 'path';
 
 import { existsSync } from 'fs';
 
+import 'dotenv/config';
+
 const GHOST_LOCAL_API_KEY =
   '663f10a59a5e3b328427611b:09871d4cf362b1ae84f4bf2df4d33e5452233c21c28eb095a3568a21b1a1a83d';
 
@@ -67,10 +69,22 @@ async function ghostPostAll(
   publishArgs: GhostPublishArgs,
   args: ResultType[]
 ): Promise<void> {
+  let url: string;
+  let key: string;
+  if (publishArgs.blog === 'local') {
+    url = GHOST_API_URL;
+    key = GHOST_LOCAL_API_KEY;
+  } else if (publishArgs.blog === 'codeofjoy.org') {
+    url = 'https://codeofjoy.org';
+    key = process.env.CODEOFJOY_KEY || '';
+  } else {
+    throw new Error('Cannot determine URL for ' + publishArgs.blog);
+  }
+
   const api = new GhostAdminAPI({
-    url: GHOST_API_URL,
+    url,
     version: 'v5.0',
-    key: GHOST_LOCAL_API_KEY,
+    key,
   });
 
   for (const arg of args) {

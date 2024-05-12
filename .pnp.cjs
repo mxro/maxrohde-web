@@ -6925,6 +6925,7 @@ const RAW_RUNTIME_STATE =
           ["@types/node", "npm:20.11.17"],\
           ["commander", "npm:9.4.0"],\
           ["db-blog", "workspace:packages/db-blog"],\
+          ["dotenv", "npm:16.4.5"],\
           ["dynamodb-toolbox", "virtual:9055fa13e6623c50f8a1c13258f6f84e29dd6f4df6f63faa1203afca45d14cf93a146758faf803a39a9e731a19b84c5716951fd5820a695b8443bc4f61f38ca4#npm:0.9.2"],\
           ["fast-glob", "npm:3.2.12"],\
           ["fs-extra", "npm:10.1.0"],\
@@ -9405,6 +9406,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/dotenv-npm-10.0.0-36b272df25-55f701ae21.zip/node_modules/dotenv/",\
         "packageDependencies": [\
           ["dotenv", "npm:10.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:16.4.5", {\
+        "packageLocation": "./.yarn/cache/dotenv-npm-16.4.5-bcb20eb95d-55a3134601.zip/node_modules/dotenv/",\
+        "packageDependencies": [\
+          ["dotenv", "npm:16.4.5"]\
         ],\
         "linkType": "HARD"\
       }]\

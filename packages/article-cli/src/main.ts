@@ -87,7 +87,11 @@ import { ghostPublish } from './ghost/publish';
       if (options.env === 'local') {
         serverUrl = config.ghostLocalServer;
       } else {
-        throw new Error(`Unknown server ${options.env}`);
+        if (options.blog === 'codeofjoy.org') {
+          serverUrl = config.ghostCodeOfJoyServer;
+        } else {
+          throw new Error('No server url configured for blog ' + options.blog);
+        }
       }
 
       if (!options.blog) {

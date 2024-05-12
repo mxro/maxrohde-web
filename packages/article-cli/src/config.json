@@ -2,6 +2,7 @@
   "postsDir": "./../../content/posts",
   "draftsDir": "./../../content/Publish",
   "ghostLocalServer": "http://localhost:2368/",
+  "ghostCodeOfJoyServer": "https://codeofjoy.org/",
   "draftsAttachmentsDir": "./../../content/Resources",
   "shalveenaPostsDir": "./../../content/import/wordpress/shalveena/output-folder",
   "shalveenaXmlExport": "./../../content/import/wordpress/shalveena.xml",
