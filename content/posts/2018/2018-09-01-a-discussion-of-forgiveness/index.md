@@ -1,7 +1,9 @@
 ---
 authors:
 - max
-blog: maxrohde.com
+blog: 'codeofjoy.org'
+secondaryBlogs:
+- maxrohde.com
 categories:
 - philosophy
 coverImage: 785px-rembrandt_harmensz_van_rijn_-_return_of_the_prodigal_son_-_google_art_project.jpg

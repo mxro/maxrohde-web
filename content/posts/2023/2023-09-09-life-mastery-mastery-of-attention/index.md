@@ -4,7 +4,7 @@ publish: true
 coverImage: pexels-luis-dalvan-3978594.jpg
 id: life-mastery-mastery-of-attention
 summary: Does mastering attention make us better at living our lives?
-blog: maxrohde.com
+blog: 'codeofjoy.org'
 date: 2023-09-09
 authors:
   - max

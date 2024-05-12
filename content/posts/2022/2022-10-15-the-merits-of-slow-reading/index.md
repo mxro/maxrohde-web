@@ -1,7 +1,9 @@
 ---
 authors:
 - max
-blog: maxrohde.com
+blog: 'codeofjoy.org'
+secondaryBlogs:
+- maxrohde.com
 categories:
 - contemplations
 coverImage: perfecto-capucine-3gC4gBnD3Xs-unsplash.jpg

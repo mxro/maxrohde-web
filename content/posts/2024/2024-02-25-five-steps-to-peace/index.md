@@ -3,7 +3,7 @@ title: 'Five Steps to Peace'
 publish: true
 coverImage: 'stairs-338428_1920.jpg'
 id: 'five-steps-to-peace'
-blog: 'maxrohde.com'
+blog: 'codeofjoy.org'
 date: 2024-02-25
 summary: 'Discover the path to inner peace with this enlightening article that outlines five transformative steps towards achieving a serene state of mind grounded in the teachings of Thich Nhat Hanh.'
 authors:

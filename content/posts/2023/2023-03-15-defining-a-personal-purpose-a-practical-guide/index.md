@@ -3,7 +3,7 @@ title: 'Defining a Personal Purpose: A Practical Guide with Four Questions'
 publish: true
 coverImage: 'pexels-andre-furtado-2916820.jpg'
 id: 'defining-a-personal-purpose-a-practical-guide'
-blog: 'maxrohde.com'
+blog: 'codeofjoy.org'
 date: 2023-03-15
 authors:
   - max

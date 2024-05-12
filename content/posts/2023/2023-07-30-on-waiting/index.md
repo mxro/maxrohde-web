@@ -3,7 +3,7 @@ title: 'On Waiting: A Skill Often Overlooked'
 publish: true
 coverImage: 'pexels-anton-atanasov-210782.jpg'
 id: 'on-waiting'
-blog: 'maxrohde.com'
+blog: 'codeofjoy.org'
 summary: Waiting seems like a waste of time. I argue it is actually one of the most powerful things we can learn.
 date: 2023-07-30
 authors:

@@ -1,7 +1,7 @@
 ---
 authors:
 - max
-blog: maxrohde.com
+blog: 'codeofjoy.org'
 categories:
 - book-reviews
 date: "2021-05-08"

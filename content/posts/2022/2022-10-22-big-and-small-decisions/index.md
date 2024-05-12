@@ -1,7 +1,7 @@
 ---
 authors:
 - max
-blog: maxrohde.com
+blog: 'codeofjoy.org'
 categories:
 - contemplations
 coverImage: pexels-pixabay-33535.jpg

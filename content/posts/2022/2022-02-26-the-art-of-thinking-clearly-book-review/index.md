@@ -1,7 +1,9 @@
 ---
 authors:
 - max
-blog: maxrohde.com
+blog: 'codeofjoy.org'
+secondaryBlogs: 
+- maxrohde.com
 categories:
 - psychology
 coverImage: sasha-freemind-pv5weeyxmwu-unsplash.jpg

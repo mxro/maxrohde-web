@@ -3,7 +3,7 @@ title: 'Book Review: Awareness by Anthony de Mello'
 publish: true
 coverImage: 'john-towner-3Kv48NS4WUU-unsplash.jpg'
 id: 'book-review-anthony-de-mello-awareness'
-blog: 'maxrohde.com'
+blog: 'codeofjoy.org'
 date: 2024-03-03
 summary: '"Awareness" is an invitation to embark on a journey of profound self-discovery; but it is not for the faint-hearted.'
 authors:

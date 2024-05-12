@@ -1,7 +1,9 @@
 ---
 authors:
 - max
-blog: maxrohde.com
+blog: 'codeofjoy.org'
+secondaryBlogs:
+- maxrohde.com
 coverImage: discobolus_kleomelos_louvre_g111.jpg
 date: "2019-04-19"
 tags:

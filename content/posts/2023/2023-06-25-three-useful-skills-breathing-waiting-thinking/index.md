@@ -3,7 +3,7 @@ title: 'Three Surprisingly Useful yet Simple Skills: Breathing, Waiting, Thinkin
 publish: true
 coverImage: 'pexels-serkan-goktay-90639.jpg'
 id: 'three-useful-skills-breathing-waiting-thinking'
-blog: 'maxrohde.com'
+blog: 'codeofjoy.org'
 date: 2023-06-25
 authors:
   - max

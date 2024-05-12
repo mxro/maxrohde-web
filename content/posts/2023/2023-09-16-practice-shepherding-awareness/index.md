@@ -3,7 +3,7 @@ title: 'Practice: Shepherding Awareness'
 publish: true
 coverImage: 'pexels-arthouse-studio-4339509.jpg'
 id: 'practice-shepherding-awareness'
-blog: 'maxrohde.com'
+blog: 'codeofjoy.org'
 summary: Proposes a meditation practice focusses on bridging attention and awareness.
 date: 2023-09-16
 authors:

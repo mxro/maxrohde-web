@@ -1,9 +1,7 @@
 ---
 authors:
 - max
-blog: pureleap.com
-secondaryBlogs:
-- maxrohde.com
+blog: maxrohde.com
 categories:
 - contemplations
 coverImage: pexels-cao-haiyun-5765826.jpg

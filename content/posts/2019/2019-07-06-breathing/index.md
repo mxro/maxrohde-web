@@ -1,7 +1,9 @@
 ---
 authors:
 - max
-blog: maxrohde.com
+blog: 'codeofjoy.org'
+secondaryBlogs:
+- maxrohde.com
 categories:
 - psychology
 coverImage: meditation-2214532.jpg

@@ -4,7 +4,7 @@ publish: true
 coverImage: 'pexels-matheus-bertelli-573238.jpg'
 id: 'framework-life-mastery-v01'
 summary: 'Describes a framework for the mastery of life based on various elements of mastery, such as mastery of our body, emotions and thought.'
-blog: 'maxrohde.com'
+blog: 'codeofjoy.org'
 date: 2023-08-13
 authors:
   - max
