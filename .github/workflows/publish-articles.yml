@@ -1,9 +1,12 @@
 name: Publish articles
 run-name: Publish articles through build by ${{ github.actor }} 🚀
 on:
-  push:
+  pull_request:
     branches:
-      - master
+      - 'betternevertrigger/**'
+  # push:
+  #   branches:
+  #     - master
 
 jobs:
   build:
