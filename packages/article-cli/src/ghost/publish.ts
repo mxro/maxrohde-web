@@ -77,6 +77,9 @@ async function ghostPostAll(
   } else if (publishArgs.blog === 'codeofjoy.org') {
     url = 'https://codeofjoy.org';
     key = process.env.CODEOFJOY_KEY || '';
+  } else if (publishArgs.blog === 'shalveena.com') {
+    url = 'https://shalveena.com';
+    key = process.env.SHALVEENA_KEY || '';
   } else {
     throw new Error('Cannot determine URL for ' + publishArgs.blog);
   }

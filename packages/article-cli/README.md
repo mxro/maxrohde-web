@@ -1,8 +1,15 @@
 # article-cli
 
+## Publishing to Ghost
+
+```
+yarn article publish-ghost -b shalveena.com -e prod -
+```
+
 ## Writing Drafts
 
 Drafts are composed in the `/content/Drafts` folder using Obsidian.
+
 
 ## Prepare Article
 
