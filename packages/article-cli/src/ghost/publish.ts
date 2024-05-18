@@ -80,6 +80,9 @@ async function ghostPostAll(
   } else if (publishArgs.blog === 'shalveena.com') {
     url = 'https://shalveena.com';
     key = process.env.SHALVEENA_KEY || '';
+  } else if (publishArgs.blog === 'maxrohde.com') {
+    url = 'https://maxrohde.com';
+    key = process.env.MAXROHDE_KEY || '';
   } else {
     throw new Error('Cannot determine URL for ' + publishArgs.blog);
   }

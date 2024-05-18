@@ -91,6 +91,8 @@ import { ghostPublish } from './ghost/publish';
           serverUrl = config.ghostCodeOfJoyServer;
         } else if (options.blog === 'shalveena.com') {
           serverUrl = config.ghostShalveenaServer;
+        } else if (options.blog === 'maxrohde.com') {
+          serverUrl = config.ghostMaxrohdeServer;
         } else {
           throw new Error('No server url configured for blog ' + options.blog);
         }

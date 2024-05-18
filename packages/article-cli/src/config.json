@@ -4,6 +4,7 @@
   "ghostLocalServer": "http://localhost:2368/",
   "ghostCodeOfJoyServer": "https://codeofjoy.org/",
   "ghostShalveenaServer": "https://shalveena.com/",
+  "ghostMaxrohdeServer": "https://maxrohde.com/",
   "draftsAttachmentsDir": "./../../content/Resources",
   "shalveenaPostsDir": "./../../content/import/wordpress/shalveena/output-folder",
   "shalveenaXmlExport": "./../../content/import/wordpress/shalveena.xml",
